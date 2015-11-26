@@ -1,0 +1,35 @@
+//
+//  CFDataSourceConstants.m
+//  Kapacino
+//
+//  Created by Alan Hsu on 2015-11-26.
+//  Copyright © 2015 Alan Hsu. All rights reserved.
+//
+
+#import "CFDataSourceConstants.h"
+
+/** Tokens **/
+NSString* const CFPreviewToken    = @"ea40f4d68e1983a625ac5330daaaaee3befeda5a26dc4da674ccee3b5dec4037";
+NSString* const CFProductionToken = @"15fb8db3a77203b19bacfd6589be0cf3630c3d7ef3c035049785bf2fc43c8c42";
+
+/** URLs **/
+NSString* const CFBasePreviewURL    = @"https://preview.contentful.com";
+NSString* const CFBaseProductionURL = @"https://cdn.contentful.com";
+
+/** Space **/
+NSString* const CFSpaceIdentifier = @"1oq1lgnwupsh";
+
+/** Content Type Identifier **/
+NSString* const CFArticleTypeIdentifier  = @"1or7CAktokKiIUogkmU8O4";
+NSString* const CFBlogTypeIdentifier     = @"5gLJdg7h32eGomEcAGMGsS";
+NSString* const CFVideoTypeIdentifier    = @"";
+NSString* const CFListingsTypeIdentifier = @"";
+NSString* const CFPlacesTypeIdentifier   = @"2HD2jRsNkQ6Gaqo2aw0qKK";
+
+/** Directories **/
+NSString* const CFContentSpacesDir  = @"/spaces";
+NSString* const CFContentEntriesDir = @"/entries";
+
+/** Queries **/
+NSString* const CFContentTokenQuery = @"access_token";
+NSString* const CFContentTypeQuery  = @"content_type";

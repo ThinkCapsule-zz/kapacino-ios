@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "CFClient.h"
+#import "CFDataSourceConstants.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    
+    // Sample fetch
+    __weak typeof(self)weakSelf = self;
+    [CFClient fetchWithContentTypeId:CFArticleTypeIdentifier completion:^(NSDictionary *response, NSError *error) {
+        [weakSelf parseResponseObjects:response];
+    }];
+}
+
+- (void)parseResponseObjects:(NSDictionary *)response {
+
+
 }
 
 - (void)didReceiveMemoryWarning {

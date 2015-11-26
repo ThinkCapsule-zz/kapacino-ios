@@ -1,0 +1,35 @@
+//
+//  CFDataSourceConstants.h
+//  Kapacino
+//
+//  Created by Alan Hsu on 2015-11-26.
+//  Copyright © 2015 Alan Hsu. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+/** Tokens **/
+extern NSString* const CFPreviewToken;
+extern NSString* const CFProductionToken;
+
+/** URLs **/
+extern NSString* const CFBasePreviewURL;
+extern NSString* const CFBaseProductionURL;
+
+/** Space **/
+extern NSString* const CFSpaceIdentifier;
+
+/** Content Type Identifier **/
+extern NSString* const CFArticleTypeIdentifier;
+extern NSString* const CFBlogTypeIdentifier;
+extern NSString* const CFVideoTypeIdentifier;
+extern NSString* const CFListingsTypeIdentifier;
+extern NSString* const CFPlacesTypeIdentifier;
+
+/** Directories **/
+extern NSString* const CFContentSpacesDir;
+extern NSString* const CFContentEntriesDir;
+
+/** Queries **/
+extern NSString* const CFContentTokenQuery;
+extern NSString* const CFContentTypeQuery;
