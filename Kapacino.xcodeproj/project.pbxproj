@@ -8,10 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		08C823F155CE5C85CB410A0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C28FE3C8B9B07415F6288B /* libPods.a */; };
-		B60EB8431C07513100F3044A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8421C07513100F3044A /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B60EB8431C07513100F3044A /* KCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8421C07513100F3044A /* KCMainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B60EB8481C0751FD00F3044A /* CFClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8471C0751FD00F3044A /* CFClient.m */; settings = {ASSET_TAGS = (); }; };
 		B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB84D1C0754FE00F3044A /* CFDataSource.m */; settings = {ASSET_TAGS = (); }; };
 		B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8501C07552000F3044A /* CFDataSourceConstants.m */; settings = {ASSET_TAGS = (); }; };
+		B636C2AE1C078786003C1E44 /* CFArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2AD1C078786003C1E44 /* CFArticleModel.m */; settings = {ASSET_TAGS = (); }; };
+		B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B01C078799003C1E44 /* CFBlogModel.m */; settings = {ASSET_TAGS = (); }; };
+		B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B31C0787A9003C1E44 /* CFListingModel.m */; settings = {ASSET_TAGS = (); }; };
+		B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B61C0787D5003C1E44 /* CFVideoModel.m */; settings = {ASSET_TAGS = (); }; };
+		B636C2BA1C0787E3003C1E44 /* CFPlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B91C0787E3003C1E44 /* CFPlaceModel.m */; settings = {ASSET_TAGS = (); }; };
+		B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2BC1C078ABA003C1E44 /* CFClientHelper.m */; settings = {ASSET_TAGS = (); }; };
+		B636C2CA1C07AB84003C1E44 /* CFModelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2C91C07AB84003C1E44 /* CFModelFactory.m */; settings = {ASSET_TAGS = (); }; };
 		B6D5C2E41C06E92700699793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E31C06E92700699793 /* main.m */; };
 		B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E61C06E92700699793 /* AppDelegate.m */; };
 		B6D5C2ED1C06E92700699793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D5C2EB1C06E92700699793 /* Main.storyboard */; };
@@ -39,8 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B60EB8411C07513100F3044A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B60EB8421C07513100F3044A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B60EB8411C07513100F3044A /* KCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMainViewController.h; sourceTree = "<group>"; };
+		B60EB8421C07513100F3044A /* KCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMainViewController.m; sourceTree = "<group>"; };
 		B60EB8461C0751FD00F3044A /* CFClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClient.h; sourceTree = "<group>"; };
 		B60EB8471C0751FD00F3044A /* CFClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClient.m; sourceTree = "<group>"; };
 		B60EB84A1C07527600F3044A /* CFContentType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFContentType.h; sourceTree = "<group>"; };
@@ -48,6 +55,20 @@
 		B60EB84D1C0754FE00F3044A /* CFDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFDataSource.m; sourceTree = "<group>"; };
 		B60EB84F1C07552000F3044A /* CFDataSourceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFDataSourceConstants.h; sourceTree = "<group>"; };
 		B60EB8501C07552000F3044A /* CFDataSourceConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFDataSourceConstants.m; sourceTree = "<group>"; };
+		B636C2AC1C078786003C1E44 /* CFArticleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFArticleModel.h; sourceTree = "<group>"; };
+		B636C2AD1C078786003C1E44 /* CFArticleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFArticleModel.m; sourceTree = "<group>"; };
+		B636C2AF1C078799003C1E44 /* CFBlogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFBlogModel.h; sourceTree = "<group>"; };
+		B636C2B01C078799003C1E44 /* CFBlogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFBlogModel.m; sourceTree = "<group>"; };
+		B636C2B21C0787A9003C1E44 /* CFListingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFListingModel.h; sourceTree = "<group>"; };
+		B636C2B31C0787A9003C1E44 /* CFListingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFListingModel.m; sourceTree = "<group>"; };
+		B636C2B51C0787D5003C1E44 /* CFVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFVideoModel.h; sourceTree = "<group>"; };
+		B636C2B61C0787D5003C1E44 /* CFVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFVideoModel.m; sourceTree = "<group>"; };
+		B636C2B81C0787E3003C1E44 /* CFPlaceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFPlaceModel.h; sourceTree = "<group>"; };
+		B636C2B91C0787E3003C1E44 /* CFPlaceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFPlaceModel.m; sourceTree = "<group>"; };
+		B636C2BB1C078ABA003C1E44 /* CFClientHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClientHelper.h; sourceTree = "<group>"; };
+		B636C2BC1C078ABA003C1E44 /* CFClientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClientHelper.m; sourceTree = "<group>"; };
+		B636C2C81C07AB84003C1E44 /* CFModelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFModelFactory.h; sourceTree = "<group>"; };
+		B636C2C91C07AB84003C1E44 /* CFModelFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFModelFactory.m; sourceTree = "<group>"; };
 		B6D5C2DF1C06E92700699793 /* Kapacino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kapacino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D5C2E31C06E92700699793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6D5C2E51C06E92700699793 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +129,7 @@
 				B60EB84B1C0754ED00F3044A /* CFDataSource */,
 				B60EB8441C0751EA00F3044A /* CFClient */,
 				B60EB8451C0751EA00F3044A /* CFModels */,
+				B636C2BE1C078E15003C1E44 /* CFModelFactory */,
 				B60EB8491C07525C00F3044A /* Enums */,
 			);
 			path = Data;
@@ -123,8 +145,8 @@
 		B60EB8401C07513100F3044A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				B60EB8411C07513100F3044A /* ViewController.h */,
-				B60EB8421C07513100F3044A /* ViewController.m */,
+				B60EB8411C07513100F3044A /* KCMainViewController.h */,
+				B60EB8421C07513100F3044A /* KCMainViewController.m */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -134,6 +156,8 @@
 			children = (
 				B60EB8461C0751FD00F3044A /* CFClient.h */,
 				B60EB8471C0751FD00F3044A /* CFClient.m */,
+				B636C2BB1C078ABA003C1E44 /* CFClientHelper.h */,
+				B636C2BC1C078ABA003C1E44 /* CFClientHelper.m */,
 			);
 			path = CFClient;
 			sourceTree = "<group>";
@@ -141,6 +165,16 @@
 		B60EB8451C0751EA00F3044A /* CFModels */ = {
 			isa = PBXGroup;
 			children = (
+				B636C2AC1C078786003C1E44 /* CFArticleModel.h */,
+				B636C2AD1C078786003C1E44 /* CFArticleModel.m */,
+				B636C2AF1C078799003C1E44 /* CFBlogModel.h */,
+				B636C2B01C078799003C1E44 /* CFBlogModel.m */,
+				B636C2B51C0787D5003C1E44 /* CFVideoModel.h */,
+				B636C2B61C0787D5003C1E44 /* CFVideoModel.m */,
+				B636C2B21C0787A9003C1E44 /* CFListingModel.h */,
+				B636C2B31C0787A9003C1E44 /* CFListingModel.m */,
+				B636C2B81C0787E3003C1E44 /* CFPlaceModel.h */,
+				B636C2B91C0787E3003C1E44 /* CFPlaceModel.m */,
 			);
 			path = CFModels;
 			sourceTree = "<group>";
@@ -162,6 +196,15 @@
 				B60EB84D1C0754FE00F3044A /* CFDataSource.m */,
 			);
 			path = CFDataSource;
+			sourceTree = "<group>";
+		};
+		B636C2BE1C078E15003C1E44 /* CFModelFactory */ = {
+			isa = PBXGroup;
+			children = (
+				B636C2C81C07AB84003C1E44 /* CFModelFactory.h */,
+				B636C2C91C07AB84003C1E44 /* CFModelFactory.m */,
+			);
+			path = CFModelFactory;
 			sourceTree = "<group>";
 		};
 		B6D5C2D61C06E92700699793 = {
@@ -419,11 +462,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60EB8431C07513100F3044A /* ViewController.m in Sources */,
+				B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */,
+				B60EB8431C07513100F3044A /* KCMainViewController.m in Sources */,
+				B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */,
+				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,
 				B60EB8481C0751FD00F3044A /* CFClient.m in Sources */,
+				B636C2BA1C0787E3003C1E44 /* CFPlaceModel.m in Sources */,
 				B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */,
+				B636C2CA1C07AB84003C1E44 /* CFModelFactory.m in Sources */,
 				B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */,
+				B636C2AE1C078786003C1E44 /* CFArticleModel.m in Sources */,
 				B6D5C2E41C06E92700699793 /* main.m in Sources */,
+				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

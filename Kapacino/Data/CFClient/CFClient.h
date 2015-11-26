@@ -10,10 +10,10 @@
 #import "CFContentType.h"
 
 
-typedef void (^fetchContentCompletion)(NSDictionary *response, NSError *error);
+typedef void (^fetchContentCompletion)(NSArray *responseItems, NSError *error);
 
 @interface CFClient : NSObject
 
-+ (void)fetchWithContentTypeId:(NSString*)contentTypeId completion:(fetchContentCompletion)completion;
++ (void)fetchWithContentTypeId:(CFContentType)contentType completion:(fetchContentCompletion)completion;
 
 @end
