@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08C823F155CE5C85CB410A0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C28FE3C8B9B07415F6288B /* libPods.a */; };
+		B6D5C2E41C06E92700699793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E31C06E92700699793 /* main.m */; };
+		B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E61C06E92700699793 /* AppDelegate.m */; };
+		B6D5C2EA1C06E92700699793 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E91C06E92700699793 /* ViewController.m */; };
+		B6D5C2ED1C06E92700699793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D5C2EB1C06E92700699793 /* Main.storyboard */; };
+		B6D5C2EF1C06E92700699793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D5C2EE1C06E92700699793 /* Assets.xcassets */; };
+		B6D5C2F21C06E92700699793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D5C2F01C06E92700699793 /* LaunchScreen.storyboard */; };
+		B6D5C2FD1C06E92700699793 /* KapacinoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2FC1C06E92700699793 /* KapacinoTests.m */; };
+		B6D5C3081C06E92700699793 /* KapacinoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C3071C06E92700699793 /* KapacinoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6D5C2F91C06E92700699793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D5C2D71C06E92700699793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D5C2DE1C06E92700699793;
+			remoteInfo = Kapacino;
+		};
+		B6D5C3041C06E92700699793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D5C2D71C06E92700699793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D5C2DE1C06E92700699793;
+			remoteInfo = Kapacino;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6D5C2DF1C06E92700699793 /* Kapacino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kapacino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D5C2E31C06E92700699793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6D5C2E51C06E92700699793 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6D5C2E61C06E92700699793 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6D5C2E81C06E92700699793 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6D5C2E91C06E92700699793 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B6D5C2EC1C06E92700699793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6D5C2EE1C06E92700699793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6D5C2F11C06E92700699793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6D5C2F31C06E92700699793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D5C2F81C06E92700699793 /* KapacinoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KapacinoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D5C2FC1C06E92700699793 /* KapacinoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KapacinoTests.m; sourceTree = "<group>"; };
+		B6D5C2FE1C06E92700699793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D5C3031C06E92700699793 /* KapacinoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KapacinoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D5C3071C06E92700699793 /* KapacinoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KapacinoUITests.m; sourceTree = "<group>"; };
+		B6D5C3091C06E92700699793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C82D419EC931D2622AF4203C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E0762858DA793F08B3BEE8A3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F6C28FE3C8B9B07415F6288B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6D5C2DC1C06E92700699793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C823F155CE5C85CB410A0F /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D5C2F51C06E92700699793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D5C3001C06E92700699793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06ED76228C8FF1C38BE29B65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C82D419EC931D2622AF4203C /* Pods.debug.xcconfig */,
+				E0762858DA793F08B3BEE8A3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6D5C2D61C06E92700699793 = {
+			isa = PBXGroup;
+			children = (
+				B6D5C2E11C06E92700699793 /* Kapacino */,
+				B6D5C2FB1C06E92700699793 /* KapacinoTests */,
+				B6D5C3061C06E92700699793 /* KapacinoUITests */,
+				B6D5C2E01C06E92700699793 /* Products */,
+				06ED76228C8FF1C38BE29B65 /* Pods */,
+				F6E17E9DD3AA42922F8EF9BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6D5C2E01C06E92700699793 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5C2DF1C06E92700699793 /* Kapacino.app */,
+				B6D5C2F81C06E92700699793 /* KapacinoTests.xctest */,
+				B6D5C3031C06E92700699793 /* KapacinoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6D5C2E11C06E92700699793 /* Kapacino */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5C2E51C06E92700699793 /* AppDelegate.h */,
+				B6D5C2E61C06E92700699793 /* AppDelegate.m */,
+				B6D5C2E81C06E92700699793 /* ViewController.h */,
+				B6D5C2E91C06E92700699793 /* ViewController.m */,
+				B6D5C2EB1C06E92700699793 /* Main.storyboard */,
+				B6D5C2EE1C06E92700699793 /* Assets.xcassets */,
+				B6D5C2F01C06E92700699793 /* LaunchScreen.storyboard */,
+				B6D5C2F31C06E92700699793 /* Info.plist */,
+				B6D5C2E21C06E92700699793 /* Supporting Files */,
+			);
+			path = Kapacino;
+			sourceTree = "<group>";
+		};
+		B6D5C2E21C06E92700699793 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5C2E31C06E92700699793 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6D5C2FB1C06E92700699793 /* KapacinoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5C2FC1C06E92700699793 /* KapacinoTests.m */,
+				B6D5C2FE1C06E92700699793 /* Info.plist */,
+			);
+			path = KapacinoTests;
+			sourceTree = "<group>";
+		};
+		B6D5C3061C06E92700699793 /* KapacinoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5C3071C06E92700699793 /* KapacinoUITests.m */,
+				B6D5C3091C06E92700699793 /* Info.plist */,
+			);
+			path = KapacinoUITests;
+			sourceTree = "<group>";
+		};
+		F6E17E9DD3AA42922F8EF9BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6C28FE3C8B9B07415F6288B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6D5C2DE1C06E92700699793 /* Kapacino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D5C30C1C06E92700699793 /* Build configuration list for PBXNativeTarget "Kapacino" */;
+			buildPhases = (
+				0B416FAB1F974E4CADDB5497 /* Check Pods Manifest.lock */,
+				B6D5C2DB1C06E92700699793 /* Sources */,
+				B6D5C2DC1C06E92700699793 /* Frameworks */,
+				B6D5C2DD1C06E92700699793 /* Resources */,
+				C6DC73CED2805CFB2F18B481 /* Embed Pods Frameworks */,
+				580B3992AB965986153291C7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kapacino;
+			productName = Kapacino;
+			productReference = B6D5C2DF1C06E92700699793 /* Kapacino.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6D5C2F71C06E92700699793 /* KapacinoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D5C30F1C06E92700699793 /* Build configuration list for PBXNativeTarget "KapacinoTests" */;
+			buildPhases = (
+				B6D5C2F41C06E92700699793 /* Sources */,
+				B6D5C2F51C06E92700699793 /* Frameworks */,
+				B6D5C2F61C06E92700699793 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D5C2FA1C06E92700699793 /* PBXTargetDependency */,
+			);
+			name = KapacinoTests;
+			productName = KapacinoTests;
+			productReference = B6D5C2F81C06E92700699793 /* KapacinoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6D5C3021C06E92700699793 /* KapacinoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D5C3121C06E92700699793 /* Build configuration list for PBXNativeTarget "KapacinoUITests" */;
+			buildPhases = (
+				B6D5C2FF1C06E92700699793 /* Sources */,
+				B6D5C3001C06E92700699793 /* Frameworks */,
+				B6D5C3011C06E92700699793 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D5C3051C06E92700699793 /* PBXTargetDependency */,
+			);
+			name = KapacinoUITests;
+			productName = KapacinoUITests;
+			productReference = B6D5C3031C06E92700699793 /* KapacinoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6D5C2D71C06E92700699793 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Alan Hsu";
+				TargetAttributes = {
+					B6D5C2DE1C06E92700699793 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = Z6VJV3KRT7;
+					};
+					B6D5C2F71C06E92700699793 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = B6D5C2DE1C06E92700699793;
+					};
+					B6D5C3021C06E92700699793 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = B6D5C2DE1C06E92700699793;
+					};
+				};
+			};
+			buildConfigurationList = B6D5C2DA1C06E92700699793 /* Build configuration list for PBXProject "Kapacino" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6D5C2D61C06E92700699793;
+			productRefGroup = B6D5C2E01C06E92700699793 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6D5C2DE1C06E92700699793 /* Kapacino */,
+				B6D5C2F71C06E92700699793 /* KapacinoTests */,
+				B6D5C3021C06E92700699793 /* KapacinoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6D5C2DD1C06E92700699793 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5C2F21C06E92700699793 /* LaunchScreen.storyboard in Resources */,
+				B6D5C2EF1C06E92700699793 /* Assets.xcassets in Resources */,
+				B6D5C2ED1C06E92700699793 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D5C2F61C06E92700699793 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D5C3011C06E92700699793 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B416FAB1F974E4CADDB5497 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		580B3992AB965986153291C7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6DC73CED2805CFB2F18B481 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6D5C2DB1C06E92700699793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5C2EA1C06E92700699793 /* ViewController.m in Sources */,
+				B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */,
+				B6D5C2E41C06E92700699793 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D5C2F41C06E92700699793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5C2FD1C06E92700699793 /* KapacinoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D5C2FF1C06E92700699793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5C3081C06E92700699793 /* KapacinoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6D5C2FA1C06E92700699793 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D5C2DE1C06E92700699793 /* Kapacino */;
+			targetProxy = B6D5C2F91C06E92700699793 /* PBXContainerItemProxy */;
+		};
+		B6D5C3051C06E92700699793 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D5C2DE1C06E92700699793 /* Kapacino */;
+			targetProxy = B6D5C3041C06E92700699793 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6D5C2EB1C06E92700699793 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D5C2EC1C06E92700699793 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6D5C2F01C06E92700699793 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D5C2F11C06E92700699793 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6D5C30A1C06E92700699793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6D5C30B1C06E92700699793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D5C30D1C06E92700699793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82D419EC931D2622AF4203C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Kapacino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkcapsule.Kapacino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "06f679bc-8450-4a87-903a-3f47d85a9673";
+			};
+			name = Debug;
+		};
+		B6D5C30E1C06E92700699793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0762858DA793F08B3BEE8A3 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Kapacino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkcapsule.Kapacino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "06f679bc-8450-4a87-903a-3f47d85a9673";
+			};
+			name = Release;
+		};
+		B6D5C3101C06E92700699793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KapacinoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkcapsule.KapacinoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kapacino.app/Kapacino";
+			};
+			name = Debug;
+		};
+		B6D5C3111C06E92700699793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KapacinoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkcapsule.KapacinoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kapacino.app/Kapacino";
+			};
+			name = Release;
+		};
+		B6D5C3131C06E92700699793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KapacinoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkcapsule.KapacinoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kapacino;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B6D5C3141C06E92700699793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KapacinoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thinkcapsule.KapacinoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kapacino;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6D5C2DA1C06E92700699793 /* Build configuration list for PBXProject "Kapacino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D5C30A1C06E92700699793 /* Debug */,
+				B6D5C30B1C06E92700699793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D5C30C1C06E92700699793 /* Build configuration list for PBXNativeTarget "Kapacino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D5C30D1C06E92700699793 /* Debug */,
+				B6D5C30E1C06E92700699793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D5C30F1C06E92700699793 /* Build configuration list for PBXNativeTarget "KapacinoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D5C3101C06E92700699793 /* Debug */,
+				B6D5C3111C06E92700699793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D5C3121C06E92700699793 /* Build configuration list for PBXNativeTarget "KapacinoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D5C3131C06E92700699793 /* Debug */,
+				B6D5C3141C06E92700699793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6D5C2D71C06E92700699793 /* Project object */;
+}
