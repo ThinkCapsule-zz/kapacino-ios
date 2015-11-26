@@ -11,4 +11,6 @@
 
 @interface CFModelFactory : NSObject
 
++ (NSArray *)parseResponseObjects:(NSArray *)response forType:(CFContentType)type;
+
 @end

@@ -16,7 +16,6 @@
 		B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B01C078799003C1E44 /* CFBlogModel.m */; settings = {ASSET_TAGS = (); }; };
 		B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B31C0787A9003C1E44 /* CFListingModel.m */; settings = {ASSET_TAGS = (); }; };
 		B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B61C0787D5003C1E44 /* CFVideoModel.m */; settings = {ASSET_TAGS = (); }; };
-		B636C2BA1C0787E3003C1E44 /* CFPlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B91C0787E3003C1E44 /* CFPlaceModel.m */; settings = {ASSET_TAGS = (); }; };
 		B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2BC1C078ABA003C1E44 /* CFClientHelper.m */; settings = {ASSET_TAGS = (); }; };
 		B636C2CA1C07AB84003C1E44 /* CFModelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2C91C07AB84003C1E44 /* CFModelFactory.m */; settings = {ASSET_TAGS = (); }; };
 		B6D5C2E41C06E92700699793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E31C06E92700699793 /* main.m */; };
@@ -63,8 +62,6 @@
 		B636C2B31C0787A9003C1E44 /* CFListingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFListingModel.m; sourceTree = "<group>"; };
 		B636C2B51C0787D5003C1E44 /* CFVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFVideoModel.h; sourceTree = "<group>"; };
 		B636C2B61C0787D5003C1E44 /* CFVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFVideoModel.m; sourceTree = "<group>"; };
-		B636C2B81C0787E3003C1E44 /* CFPlaceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFPlaceModel.h; sourceTree = "<group>"; };
-		B636C2B91C0787E3003C1E44 /* CFPlaceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFPlaceModel.m; sourceTree = "<group>"; };
 		B636C2BB1C078ABA003C1E44 /* CFClientHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClientHelper.h; sourceTree = "<group>"; };
 		B636C2BC1C078ABA003C1E44 /* CFClientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClientHelper.m; sourceTree = "<group>"; };
 		B636C2C81C07AB84003C1E44 /* CFModelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFModelFactory.h; sourceTree = "<group>"; };
@@ -173,8 +170,6 @@
 				B636C2B61C0787D5003C1E44 /* CFVideoModel.m */,
 				B636C2B21C0787A9003C1E44 /* CFListingModel.h */,
 				B636C2B31C0787A9003C1E44 /* CFListingModel.m */,
-				B636C2B81C0787E3003C1E44 /* CFPlaceModel.h */,
-				B636C2B91C0787E3003C1E44 /* CFPlaceModel.m */,
 			);
 			path = CFModels;
 			sourceTree = "<group>";
@@ -467,7 +462,6 @@
 				B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */,
 				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,
 				B60EB8481C0751FD00F3044A /* CFClient.m in Sources */,
-				B636C2BA1C0787E3003C1E44 /* CFPlaceModel.m in Sources */,
 				B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */,
 				B636C2CA1C07AB84003C1E44 /* CFModelFactory.m in Sources */,
 				B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */,

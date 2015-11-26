@@ -8,6 +8,13 @@
 
 #import <Mantle/Mantle.h>
 
-@interface CFBlogModel : MTLModel
+@interface CFBlogModel : MTLModel <MTLJSONSerializing>
+
+@property (nonatomic, readonly) NSString *seriesName;
+@property (nonatomic, readonly) NSString *headline;
+@property (nonatomic, readonly) NSString *byline;
+@property (nonatomic, readonly) NSString *publishDate;
+@property (nonatomic, readonly) NSArray  *thumbnails;
+@property (nonatomic, readonly) NSArray  *tags;
 
 @end

@@ -10,4 +10,17 @@
 
 @implementation CFListingModel
 
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    
+    return @{
+             @"headline"    : @"headline",
+             @"subtitle"    : @"subtitle",
+             @"author"      : @"author",
+             @"body"        : @"body",
+             @"publishDate" : @"publishDate",
+             @"thumbnails"  : @"thumbnails",
+             @"tags"        : @"tags"
+             };
+}
+
 @end

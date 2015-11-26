@@ -11,7 +11,6 @@
 #import "CFBlogModel.h"
 #import "CFVideoModel.h"
 #import "CFListingModel.h"
-#import "CFPlaceModel.h"
 
 @implementation CFModelFactory
 
@@ -29,9 +28,6 @@
             
         case CFContentType_Listing:
             return [CFModelFactory parseListingTypeResponse:response];
-            
-        case CFContentType_Places:
-            return [CFModelFactory parsePlacesTypeResponse:response];
             
         default:
             return nil;
@@ -76,16 +72,6 @@
     
     for (NSDictionary *item in responseObjects) {
         [objectList addObject:[MTLJSONAdapter modelOfClass:[CFListingModel class] fromJSONDictionary:item[@"fields"] error:nil]];
-    }
-    
-    return objectList;
-}
-
-+ (NSArray *)parsePlacesTypeResponse:(NSArray*)responseObjects {
-    NSMutableArray *objectList = [[NSMutableArray alloc] init];
-    
-    for (NSDictionary *item in responseObjects) {
-        [objectList addObject:[MTLJSONAdapter modelOfClass:[CFPlaceModel class] fromJSONDictionary:item[@"fields"] error:nil]];
     }
     
     return objectList;

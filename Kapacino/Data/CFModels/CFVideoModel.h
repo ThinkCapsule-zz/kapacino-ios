@@ -8,6 +8,12 @@
 
 #import <Mantle/Mantle.h>
 
-@interface CFVideoModel : MTLModel
+@interface CFVideoModel : MTLModel <MTLJSONSerializing>
+
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) NSArray  *media;
+@property (nonatomic, readonly) NSString *byline;
+@property (nonatomic, readonly) NSArray  *publishDate;
+@property (nonatomic, readonly) NSArray  *thumbnails;
 
 @end

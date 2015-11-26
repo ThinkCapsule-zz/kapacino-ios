@@ -20,11 +20,11 @@ NSString* const CFBaseProductionURL = @"https://cdn.contentful.com";
 NSString* const CFSpaceIdentifier = @"1oq1lgnwupsh";
 
 /** Content Type Identifier **/
-NSString* const CFArticleTypeIdentifier  = @"1or7CAktokKiIUogkmU8O4";
-NSString* const CFBlogTypeIdentifier     = @"5gLJdg7h32eGomEcAGMGsS";
-NSString* const CFVideoTypeIdentifier    = @"";
-NSString* const CFListingsTypeIdentifier = @"";
-NSString* const CFPlacesTypeIdentifier   = @"2HD2jRsNkQ6Gaqo2aw0qKK";
+NSString* const CFArticleTypeIdentifier  = @"nuHecKQQjmQKgKwu6osYQ";
+NSString* const CFBlogTypeIdentifier     = @"1qeOXb11aEYciiYEGoS06Y";
+NSString* const CFVideoTypeIdentifier    = @"2eL4rLPvkQ0qCWQsooksuK";
+NSString* const CFListingsTypeIdentifier = @"12tqAiosJMaEKMk6682esG";
+
 
 /** Directories **/
 NSString* const CFContentSpacesDir  = @"/spaces";
