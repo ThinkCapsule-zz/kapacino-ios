@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "KCTabBarNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    /* Custom navigation */
+    KCTabBarNavigationController *tabBarController = [[KCTabBarNavigationController alloc] init];
+    self.window.rootViewController = tabBarController;
+    
     return YES;
 }
 

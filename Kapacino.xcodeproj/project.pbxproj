@@ -8,16 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		08C823F155CE5C85CB410A0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C28FE3C8B9B07415F6288B /* libPods.a */; };
-		B60EB8431C07513100F3044A /* KCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8421C07513100F3044A /* KCMainViewController.m */; settings = {ASSET_TAGS = (); }; };
-		B60EB8481C0751FD00F3044A /* CFClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8471C0751FD00F3044A /* CFClient.m */; settings = {ASSET_TAGS = (); }; };
-		B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB84D1C0754FE00F3044A /* CFDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8501C07552000F3044A /* CFDataSourceConstants.m */; settings = {ASSET_TAGS = (); }; };
-		B636C2AE1C078786003C1E44 /* CFArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2AD1C078786003C1E44 /* CFArticleModel.m */; settings = {ASSET_TAGS = (); }; };
-		B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B01C078799003C1E44 /* CFBlogModel.m */; settings = {ASSET_TAGS = (); }; };
-		B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B31C0787A9003C1E44 /* CFListingModel.m */; settings = {ASSET_TAGS = (); }; };
-		B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B61C0787D5003C1E44 /* CFVideoModel.m */; settings = {ASSET_TAGS = (); }; };
-		B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2BC1C078ABA003C1E44 /* CFClientHelper.m */; settings = {ASSET_TAGS = (); }; };
-		B636C2CA1C07AB84003C1E44 /* CFModelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2C91C07AB84003C1E44 /* CFModelFactory.m */; settings = {ASSET_TAGS = (); }; };
+		B60EB8481C0751FD00F3044A /* CFClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8471C0751FD00F3044A /* CFClient.m */; };
+		B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB84D1C0754FE00F3044A /* CFDataSource.m */; };
+		B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8501C07552000F3044A /* CFDataSourceConstants.m */; };
+		B636C2AE1C078786003C1E44 /* CFArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2AD1C078786003C1E44 /* CFArticleModel.m */; };
+		B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B01C078799003C1E44 /* CFBlogModel.m */; };
+		B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B31C0787A9003C1E44 /* CFListingModel.m */; };
+		B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B61C0787D5003C1E44 /* CFVideoModel.m */; };
+		B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2BC1C078ABA003C1E44 /* CFClientHelper.m */; };
+		B636C2CA1C07AB84003C1E44 /* CFModelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2C91C07AB84003C1E44 /* CFModelFactory.m */; };
+		B6D550831C5578330091BF71 /* KCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D550811C5578330091BF71 /* KCMainViewController.m */; };
+		B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D550851C55786C0091BF71 /* KCTabBarNavigationController.m */; };
+		B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5508A1C55846E0091BF71 /* KCSettingsViewController.m */; };
+		B6D5508E1C5584810091BF71 /* KCGPACalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5508D1C5584810091BF71 /* KCGPACalcViewController.m */; };
 		B6D5C2E41C06E92700699793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E31C06E92700699793 /* main.m */; };
 		B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E61C06E92700699793 /* AppDelegate.m */; };
 		B6D5C2ED1C06E92700699793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D5C2EB1C06E92700699793 /* Main.storyboard */; };
@@ -45,8 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B60EB8411C07513100F3044A /* KCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMainViewController.h; sourceTree = "<group>"; };
-		B60EB8421C07513100F3044A /* KCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMainViewController.m; sourceTree = "<group>"; };
 		B60EB8461C0751FD00F3044A /* CFClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClient.h; sourceTree = "<group>"; };
 		B60EB8471C0751FD00F3044A /* CFClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClient.m; sourceTree = "<group>"; };
 		B60EB84A1C07527600F3044A /* CFContentType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFContentType.h; sourceTree = "<group>"; };
@@ -66,6 +67,14 @@
 		B636C2BC1C078ABA003C1E44 /* CFClientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClientHelper.m; sourceTree = "<group>"; };
 		B636C2C81C07AB84003C1E44 /* CFModelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFModelFactory.h; sourceTree = "<group>"; };
 		B636C2C91C07AB84003C1E44 /* CFModelFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFModelFactory.m; sourceTree = "<group>"; };
+		B6D550801C5578330091BF71 /* KCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMainViewController.h; sourceTree = "<group>"; };
+		B6D550811C5578330091BF71 /* KCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMainViewController.m; sourceTree = "<group>"; };
+		B6D550841C55786C0091BF71 /* KCTabBarNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTabBarNavigationController.h; sourceTree = "<group>"; };
+		B6D550851C55786C0091BF71 /* KCTabBarNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCTabBarNavigationController.m; sourceTree = "<group>"; };
+		B6D550891C55846E0091BF71 /* KCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSettingsViewController.h; sourceTree = "<group>"; };
+		B6D5508A1C55846E0091BF71 /* KCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSettingsViewController.m; sourceTree = "<group>"; };
+		B6D5508C1C5584810091BF71 /* KCGPACalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPACalcViewController.h; sourceTree = "<group>"; };
+		B6D5508D1C5584810091BF71 /* KCGPACalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPACalcViewController.m; sourceTree = "<group>"; };
 		B6D5C2DF1C06E92700699793 /* Kapacino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kapacino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D5C2E31C06E92700699793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6D5C2E51C06E92700699793 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,8 +151,10 @@
 		B60EB8401C07513100F3044A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				B60EB8411C07513100F3044A /* KCMainViewController.h */,
-				B60EB8421C07513100F3044A /* KCMainViewController.m */,
+				B6D550871C5584590091BF71 /* GPA Calculator */,
+				B6D550881C5584590091BF71 /* Settings */,
+				B6D5507F1C5578330091BF71 /* Main Feed */,
+				B6D550821C5578330091BF71 /* Navigation */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -200,6 +211,42 @@
 				B636C2C91C07AB84003C1E44 /* CFModelFactory.m */,
 			);
 			path = CFModelFactory;
+			sourceTree = "<group>";
+		};
+		B6D5507F1C5578330091BF71 /* Main Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B6D550801C5578330091BF71 /* KCMainViewController.h */,
+				B6D550811C5578330091BF71 /* KCMainViewController.m */,
+			);
+			path = "Main Feed";
+			sourceTree = "<group>";
+		};
+		B6D550821C5578330091BF71 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B6D550841C55786C0091BF71 /* KCTabBarNavigationController.h */,
+				B6D550851C55786C0091BF71 /* KCTabBarNavigationController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B6D550871C5584590091BF71 /* GPA Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5508C1C5584810091BF71 /* KCGPACalcViewController.h */,
+				B6D5508D1C5584810091BF71 /* KCGPACalcViewController.m */,
+			);
+			path = "GPA Calculator";
+			sourceTree = "<group>";
+		};
+		B6D550881C5584590091BF71 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B6D550891C55846E0091BF71 /* KCSettingsViewController.h */,
+				B6D5508A1C55846E0091BF71 /* KCSettingsViewController.m */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		B6D5C2D61C06E92700699793 = {
@@ -458,7 +505,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */,
-				B60EB8431C07513100F3044A /* KCMainViewController.m in Sources */,
 				B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */,
 				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,
 				B60EB8481C0751FD00F3044A /* CFClient.m in Sources */,
@@ -469,6 +515,10 @@
 				B6D5C2E41C06E92700699793 /* main.m in Sources */,
 				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
+				B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */,
+				B6D5508E1C5584810091BF71 /* KCGPACalcViewController.m in Sources */,
+				B6D550831C5578330091BF71 /* KCMainViewController.m in Sources */,
+				B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
