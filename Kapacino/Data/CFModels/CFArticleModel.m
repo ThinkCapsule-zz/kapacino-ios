@@ -14,11 +14,10 @@
     
     return @{
              @"headline"    : @"headline",
-             @"subtitle"    : @"subtitle",
-             @"author"      : @"author",
-             @"body"        : @"body",
+             @"byline"      : @"byline",
+             @"body"        : @"articleBody",
              @"publishDate" : @"publishDate",
-             @"thumbnails"  : @"thumbnails",
+             @"thumbnails"  : @"thumnails",
              @"tags"        : @"tags"
              };
 }

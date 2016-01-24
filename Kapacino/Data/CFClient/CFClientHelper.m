@@ -9,8 +9,6 @@
 #import "CFClientHelper.h"
 #import "CFDataSourceConstants.h"
 
-
-
 @implementation CFClientHelper
 
 + (NSString *) contentfulIdForContentType:(CFContentType)type {

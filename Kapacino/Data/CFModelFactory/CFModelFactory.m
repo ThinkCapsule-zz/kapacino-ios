@@ -18,16 +18,16 @@
     
     switch (type) {
         case CFContentType_Article:
-            return [CFModelFactory parseArticleTypeResponse:response];
+            return [CFModelFactory parseResponseWithObjects:response class:[CFArticleModel class]];
             
         case CFContentType_Blog:
-            return [CFModelFactory parseBlogTypeResponse:response];
+            return [CFModelFactory parseResponseWithObjects:response class:[CFBlogModel class]];
             
         case CFContentType_Video:
-            return [CFModelFactory parseVideoTypeResponse:response];
+            return [CFModelFactory parseResponseWithObjects:response class:[CFVideoModel class]];
             
         case CFContentType_Listing:
-            return [CFModelFactory parseListingTypeResponse:response];
+            return [CFModelFactory parseResponseWithObjects:response class:[CFListingModel class]];
             
         default:
             return nil;
@@ -36,42 +36,12 @@
 
 #pragma mark - Private
 
-+ (NSArray *)parseArticleTypeResponse:(NSArray*)responseObjects {
++ (NSArray *)parseResponseWithObjects:(NSArray*)responseObjects class:(Class)class{
     
     NSMutableArray *objectList = [[NSMutableArray alloc] init];
     
     for (NSDictionary *item in responseObjects) {
-        [objectList addObject:[MTLJSONAdapter modelOfClass:[CFArticleModel class] fromJSONDictionary:item[@"fields"] error:nil]];
-    }
-    
-    return objectList;
-}
-
-+ (NSArray *)parseBlogTypeResponse:(NSArray*)responseObjects {
-    NSMutableArray *objectList = [[NSMutableArray alloc] init];
-    
-    for (NSDictionary *item in responseObjects) {
-        [objectList addObject:[MTLJSONAdapter modelOfClass:[CFBlogModel class] fromJSONDictionary:item[@"fields"] error:nil]];
-    }
-    
-    return objectList;
-}
-
-+ (NSArray *)parseVideoTypeResponse:(NSArray*)responseObjects {
-    NSMutableArray *objectList = [[NSMutableArray alloc] init];
-    
-    for (NSDictionary *item in responseObjects) {
-        [objectList addObject:[MTLJSONAdapter modelOfClass:[CFVideoModel class] fromJSONDictionary:item[@"fields"] error:nil]];
-    }
-    
-    return objectList;
-}
-
-+ (NSArray *)parseListingTypeResponse:(NSArray*)responseObjects {
-    NSMutableArray *objectList = [[NSMutableArray alloc] init];
-    
-    for (NSDictionary *item in responseObjects) {
-        [objectList addObject:[MTLJSONAdapter modelOfClass:[CFListingModel class] fromJSONDictionary:item[@"fields"] error:nil]];
+        [objectList addObject:[MTLJSONAdapter modelOfClass:class fromJSONDictionary:item[@"fields"] error:nil]];
     }
     
     return objectList;
