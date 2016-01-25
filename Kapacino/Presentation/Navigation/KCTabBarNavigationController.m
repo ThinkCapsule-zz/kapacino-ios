@@ -24,7 +24,7 @@
     NSMutableArray *viewControllers = [[NSMutableArray alloc] init];
     
     /* Main Feed */
-    KCMainViewController *mainVC = [[KCMainViewController alloc] init];
+    KCMainViewController *mainVC = [[KCMainViewController alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
     [viewControllers addObject:mainVC];
     
     /* GPA Calc */

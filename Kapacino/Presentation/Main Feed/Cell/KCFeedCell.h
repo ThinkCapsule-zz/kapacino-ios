@@ -1,5 +1,5 @@
 //
-//  KCMainViewController.h
+//  KCFeedCell.h
 //  Kapacino
 //
 //  Created by Alan Hsu on 2016-01-24.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KCMainViewController : UICollectionViewController
+@interface KCFeedCell : UICollectionViewCell
 
 @end

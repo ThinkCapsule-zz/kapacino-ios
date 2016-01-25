@@ -17,10 +17,22 @@
 		B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2B61C0787D5003C1E44 /* CFVideoModel.m */; };
 		B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2BC1C078ABA003C1E44 /* CFClientHelper.m */; };
 		B636C2CA1C07AB84003C1E44 /* CFModelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B636C2C91C07AB84003C1E44 /* CFModelFactory.m */; };
-		B6D550831C5578330091BF71 /* KCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D550811C5578330091BF71 /* KCMainViewController.m */; };
+		B6431F8A1C55BCEE00546B3A /* SF-UI-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F7F1C55BCEE00546B3A /* SF-UI-Text-BoldItalic.otf */; };
+		B6431F8B1C55BCEE00546B3A /* SF-UI-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F801C55BCEE00546B3A /* SF-UI-Text-Heavy.otf */; };
+		B6431F8C1C55BCEE00546B3A /* SF-UI-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F811C55BCEE00546B3A /* SF-UI-Text-HeavyItalic.otf */; };
+		B6431F8D1C55BCEE00546B3A /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F821C55BCEE00546B3A /* SF-UI-Text-Light.otf */; };
+		B6431F8E1C55BCEE00546B3A /* SF-UI-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F831C55BCEE00546B3A /* SF-UI-Text-LightItalic.otf */; };
+		B6431F8F1C55BCEE00546B3A /* SF-UI-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F841C55BCEE00546B3A /* SF-UI-Text-Medium.otf */; };
+		B6431F901C55BCEE00546B3A /* SF-UI-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F851C55BCEE00546B3A /* SF-UI-Text-MediumItalic.otf */; };
+		B6431F911C55BCEE00546B3A /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F861C55BCEE00546B3A /* SF-UI-Text-Regular.otf */; };
+		B6431F921C55BCEE00546B3A /* SF-UI-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F871C55BCEE00546B3A /* SF-UI-Text-RegularItalic.otf */; };
+		B6431F931C55BCEE00546B3A /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F881C55BCEE00546B3A /* SF-UI-Text-Semibold.otf */; };
+		B6431F941C55BCEE00546B3A /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F891C55BCEE00546B3A /* SF-UI-Text-SemiboldItalic.otf */; };
+		B6431F981C55BD4C00546B3A /* UIFont+KCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6431F971C55BD4C00546B3A /* UIFont+KCAdditions.m */; };
 		B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D550851C55786C0091BF71 /* KCTabBarNavigationController.m */; };
 		B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5508A1C55846E0091BF71 /* KCSettingsViewController.m */; };
 		B6D5508E1C5584810091BF71 /* KCGPACalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5508D1C5584810091BF71 /* KCGPACalcViewController.m */; };
+		B6D550911C55A8390091BF71 /* KCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D550901C55A8390091BF71 /* KCMainViewController.m */; };
 		B6D5C2E41C06E92700699793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E31C06E92700699793 /* main.m */; };
 		B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E61C06E92700699793 /* AppDelegate.m */; };
 		B6D5C2ED1C06E92700699793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D5C2EB1C06E92700699793 /* Main.storyboard */; };
@@ -28,6 +40,8 @@
 		B6D5C2F21C06E92700699793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D5C2F01C06E92700699793 /* LaunchScreen.storyboard */; };
 		B6D5C2FD1C06E92700699793 /* KapacinoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2FC1C06E92700699793 /* KapacinoTests.m */; };
 		B6D5C3081C06E92700699793 /* KapacinoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C3071C06E92700699793 /* KapacinoUITests.m */; };
+		B6DC35CC1C55BA1B00ED0ABC /* KCFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DC35CB1C55BA1B00ED0ABC /* KCFeedCell.m */; };
+		B6DC35CE1C55BA4700ED0ABC /* KCFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DC35CD1C55BA4700ED0ABC /* KCFeedCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,14 +81,28 @@
 		B636C2BC1C078ABA003C1E44 /* CFClientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClientHelper.m; sourceTree = "<group>"; };
 		B636C2C81C07AB84003C1E44 /* CFModelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFModelFactory.h; sourceTree = "<group>"; };
 		B636C2C91C07AB84003C1E44 /* CFModelFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFModelFactory.m; sourceTree = "<group>"; };
-		B6D550801C5578330091BF71 /* KCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMainViewController.h; sourceTree = "<group>"; };
-		B6D550811C5578330091BF71 /* KCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMainViewController.m; sourceTree = "<group>"; };
+		B6431F7F1C55BCEE00546B3A /* SF-UI-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		B6431F801C55BCEE00546B3A /* SF-UI-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Heavy.otf"; sourceTree = "<group>"; };
+		B6431F811C55BCEE00546B3A /* SF-UI-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		B6431F821C55BCEE00546B3A /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Light.otf"; sourceTree = "<group>"; };
+		B6431F831C55BCEE00546B3A /* SF-UI-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		B6431F841C55BCEE00546B3A /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
+		B6431F851C55BCEE00546B3A /* SF-UI-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		B6431F861C55BCEE00546B3A /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
+		B6431F871C55BCEE00546B3A /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		B6431F881C55BCEE00546B3A /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
+		B6431F891C55BCEE00546B3A /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		B6431F961C55BD4C00546B3A /* UIFont+KCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+KCAdditions.h"; sourceTree = "<group>"; };
+		B6431F971C55BD4C00546B3A /* UIFont+KCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+KCAdditions.m"; sourceTree = "<group>"; };
+		B6431F991C55BF2900546B3A /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		B6D550841C55786C0091BF71 /* KCTabBarNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTabBarNavigationController.h; sourceTree = "<group>"; };
 		B6D550851C55786C0091BF71 /* KCTabBarNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCTabBarNavigationController.m; sourceTree = "<group>"; };
 		B6D550891C55846E0091BF71 /* KCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSettingsViewController.h; sourceTree = "<group>"; };
 		B6D5508A1C55846E0091BF71 /* KCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSettingsViewController.m; sourceTree = "<group>"; };
 		B6D5508C1C5584810091BF71 /* KCGPACalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPACalcViewController.h; sourceTree = "<group>"; };
 		B6D5508D1C5584810091BF71 /* KCGPACalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPACalcViewController.m; sourceTree = "<group>"; };
+		B6D5508F1C55A8390091BF71 /* KCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMainViewController.h; sourceTree = "<group>"; };
+		B6D550901C55A8390091BF71 /* KCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMainViewController.m; sourceTree = "<group>"; };
 		B6D5C2DF1C06E92700699793 /* Kapacino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kapacino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D5C2E31C06E92700699793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6D5C2E51C06E92700699793 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +117,9 @@
 		B6D5C3031C06E92700699793 /* KapacinoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KapacinoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D5C3071C06E92700699793 /* KapacinoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KapacinoUITests.m; sourceTree = "<group>"; };
 		B6D5C3091C06E92700699793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6DC35CA1C55BA1B00ED0ABC /* KCFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCFeedCell.h; sourceTree = "<group>"; };
+		B6DC35CB1C55BA1B00ED0ABC /* KCFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCFeedCell.m; sourceTree = "<group>"; };
+		B6DC35CD1C55BA4700ED0ABC /* KCFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KCFeedCell.xib; sourceTree = "<group>"; };
 		C82D419EC931D2622AF4203C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E0762858DA793F08B3BEE8A3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F6C28FE3C8B9B07415F6288B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +175,7 @@
 		B60EB83F1C07513100F3044A /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				B6431F951C55BD2E00546B3A /* Categories */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -213,11 +245,39 @@
 			path = CFModelFactory;
 			sourceTree = "<group>";
 		};
+		B6431F7E1C55BCCC00546B3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6431F7F1C55BCEE00546B3A /* SF-UI-Text-BoldItalic.otf */,
+				B6431F801C55BCEE00546B3A /* SF-UI-Text-Heavy.otf */,
+				B6431F811C55BCEE00546B3A /* SF-UI-Text-HeavyItalic.otf */,
+				B6431F821C55BCEE00546B3A /* SF-UI-Text-Light.otf */,
+				B6431F831C55BCEE00546B3A /* SF-UI-Text-LightItalic.otf */,
+				B6431F841C55BCEE00546B3A /* SF-UI-Text-Medium.otf */,
+				B6431F851C55BCEE00546B3A /* SF-UI-Text-MediumItalic.otf */,
+				B6431F861C55BCEE00546B3A /* SF-UI-Text-Regular.otf */,
+				B6431F871C55BCEE00546B3A /* SF-UI-Text-RegularItalic.otf */,
+				B6431F881C55BCEE00546B3A /* SF-UI-Text-Semibold.otf */,
+				B6431F891C55BCEE00546B3A /* SF-UI-Text-SemiboldItalic.otf */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		B6431F951C55BD2E00546B3A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B6431F961C55BD4C00546B3A /* UIFont+KCAdditions.h */,
+				B6431F971C55BD4C00546B3A /* UIFont+KCAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		B6D5507F1C5578330091BF71 /* Main Feed */ = {
 			isa = PBXGroup;
 			children = (
-				B6D550801C5578330091BF71 /* KCMainViewController.h */,
-				B6D550811C5578330091BF71 /* KCMainViewController.m */,
+				B6DC35C91C55B9F000ED0ABC /* Cell */,
+				B6D5508F1C55A8390091BF71 /* KCMainViewController.h */,
+				B6D550901C55A8390091BF71 /* KCMainViewController.m */,
 			);
 			path = "Main Feed";
 			sourceTree = "<group>";
@@ -274,6 +334,7 @@
 		B6D5C2E11C06E92700699793 /* Kapacino */ = {
 			isa = PBXGroup;
 			children = (
+				B6431F7E1C55BCCC00546B3A /* Resources */,
 				B6D5C2E51C06E92700699793 /* AppDelegate.h */,
 				B6D5C2E61C06E92700699793 /* AppDelegate.m */,
 				B6D5C2EB1C06E92700699793 /* Main.storyboard */,
@@ -291,6 +352,7 @@
 		B6D5C2E21C06E92700699793 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B6431F991C55BF2900546B3A /* Prefix.pch */,
 				B6D5C2E31C06E92700699793 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -312,6 +374,16 @@
 				B6D5C3091C06E92700699793 /* Info.plist */,
 			);
 			path = KapacinoUITests;
+			sourceTree = "<group>";
+		};
+		B6DC35C91C55B9F000ED0ABC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B6DC35CA1C55BA1B00ED0ABC /* KCFeedCell.h */,
+				B6DC35CB1C55BA1B00ED0ABC /* KCFeedCell.m */,
+				B6DC35CD1C55BA4700ED0ABC /* KCFeedCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F6E17E9DD3AA42922F8EF9BD /* Frameworks */ = {
@@ -429,9 +501,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6431F931C55BCEE00546B3A /* SF-UI-Text-Semibold.otf in Resources */,
 				B6D5C2F21C06E92700699793 /* LaunchScreen.storyboard in Resources */,
+				B6DC35CE1C55BA4700ED0ABC /* KCFeedCell.xib in Resources */,
+				B6431F911C55BCEE00546B3A /* SF-UI-Text-Regular.otf in Resources */,
 				B6D5C2EF1C06E92700699793 /* Assets.xcassets in Resources */,
+				B6431F8B1C55BCEE00546B3A /* SF-UI-Text-Heavy.otf in Resources */,
+				B6431F8C1C55BCEE00546B3A /* SF-UI-Text-HeavyItalic.otf in Resources */,
+				B6431F8A1C55BCEE00546B3A /* SF-UI-Text-BoldItalic.otf in Resources */,
+				B6431F8D1C55BCEE00546B3A /* SF-UI-Text-Light.otf in Resources */,
+				B6431F8E1C55BCEE00546B3A /* SF-UI-Text-LightItalic.otf in Resources */,
+				B6431F8F1C55BCEE00546B3A /* SF-UI-Text-Medium.otf in Resources */,
 				B6D5C2ED1C06E92700699793 /* Main.storyboard in Resources */,
+				B6431F941C55BCEE00546B3A /* SF-UI-Text-SemiboldItalic.otf in Resources */,
+				B6431F921C55BCEE00546B3A /* SF-UI-Text-RegularItalic.otf in Resources */,
+				B6431F901C55BCEE00546B3A /* SF-UI-Text-MediumItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,18 +590,20 @@
 			files = (
 				B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */,
 				B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */,
+				B6D550911C55A8390091BF71 /* KCMainViewController.m in Sources */,
 				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,
+				B6431F981C55BD4C00546B3A /* UIFont+KCAdditions.m in Sources */,
 				B60EB8481C0751FD00F3044A /* CFClient.m in Sources */,
 				B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */,
 				B636C2CA1C07AB84003C1E44 /* CFModelFactory.m in Sources */,
 				B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */,
 				B636C2AE1C078786003C1E44 /* CFArticleModel.m in Sources */,
+				B6DC35CC1C55BA1B00ED0ABC /* KCFeedCell.m in Sources */,
 				B6D5C2E41C06E92700699793 /* main.m in Sources */,
 				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
 				B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */,
 				B6D5508E1C5584810091BF71 /* KCGPACalcViewController.m in Sources */,
-				B6D550831C5578330091BF71 /* KCMainViewController.m in Sources */,
 				B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -659,6 +745,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Kapacino/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinkcapsule.Kapacino;
@@ -673,6 +761,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Kapacino/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinkcapsule.Kapacino;

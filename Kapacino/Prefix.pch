@@ -1,13 +1,14 @@
 //
-//  KCMainViewController.h
+//  Prefix.pch
 //  Kapacino
 //
 //  Created by Alan Hsu on 2016-01-24.
 //  Copyright © 2016 Alan Hsu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#ifndef Prefix_pch
+#define Prefix_pch
 
-@interface KCMainViewController : UICollectionViewController
+#import "UIFont+KCAdditions.h"
 
-@end
+#endif /* Prefix_pch */
