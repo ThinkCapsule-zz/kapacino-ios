@@ -8,8 +8,14 @@
 
 #import "KCMainViewController.h"
 #import "KCFeedCell.h"
+#import "CFClient.h"
+#import "CFModelFactory.h"
+#import "KCArticleDetailViewController.h"
 
 @interface KCMainViewController() <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+
+@property (nonatomic, strong) NSArray *contentModels;
+
 @end
 
 static NSString* kCellId = @"kCellId";
@@ -22,10 +28,39 @@ static CGFloat kCellHeight = 230;
 
     [super viewDidLoad];
     
+    /* Setup */
     self.title = @"Explore";
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerNib:[UINib nibWithNibName:@"KCFeedCell" bundle:nil] forCellWithReuseIdentifier:kCellId];
+    [self adjustCollectionViewForInsets];
     
+    /* Fetch data */
+    [self fetchContent:CFContentType_Article];
+    
+}
+
+#pragma mark - Fetch Content
+
+- (void)fetchContent:(CFContentType)contentType {
+    
+    __weak typeof(self)wSelf = self;
+    
+    [CFClient fetchWithContentTypeId:contentType completion:^(NSArray *responseItems, NSError *error) {
+        
+        wSelf.contentModels = [CFModelFactory parseResponseObjects:responseItems forType:contentType];
+        [wSelf.collectionView reloadData];
+        
+    }];
+    
+}
+
+#pragma mark - Adjust Insets
+
+- (void)adjustCollectionViewForInsets {
+    
+    UIEdgeInsets adjustForTabbarInsets = UIEdgeInsetsMake(0, 0, CGRectGetHeight(self.tabBarController.tabBar.frame), 0);
+    self.collectionView.contentInset = adjustForTabbarInsets;
+    self.collectionView.scrollIndicatorInsets = adjustForTabbarInsets;
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -35,12 +70,14 @@ static CGFloat kCellHeight = 230;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return self.contentModels.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     KCFeedCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellId forIndexPath:indexPath];
+    
+    [cell updateWithArticleModel:self.contentModels[indexPath.row]];
     
     return cell;
     
@@ -48,11 +85,14 @@ static CGFloat kCellHeight = 230;
 
 #pragma mark - UICollectionViewDelegate
 
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSLog(@"go to details");
+    KCArticleDetailViewController *articleDetailVC = [[KCArticleDetailViewController alloc] init];
     
-    return YES;
+    [articleDetailVC updateWithModel:self.contentModels[indexPath.row]];
+    
+    [self presentViewController:articleDetailVC animated:YES completion:nil];
+    
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout

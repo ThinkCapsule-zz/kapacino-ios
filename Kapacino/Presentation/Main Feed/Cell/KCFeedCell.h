@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CFArticleModel.h"
 
 @interface KCFeedCell : UICollectionViewCell
+
+- (void)updateWithArticleModel:(CFArticleModel *)articleMode;
 
 @end

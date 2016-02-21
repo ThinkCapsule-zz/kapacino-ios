@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - HexColors (3.1.1)
+  - KeepLayout (1.6.0)
   - Mantle (2.0.5):
     - Mantle/extobjc (= 2.0.5)
   - Mantle/extobjc (2.0.5)
@@ -28,11 +29,22 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (= 2.6.3)
   - HexColors (= 3.1.1)
+  - KeepLayout (from `https://github.com/iMartinKiss/KeepLayout.git`)
   - Mantle (= 2.0.5)
+
+EXTERNAL SOURCES:
+  KeepLayout:
+    :git: https://github.com/iMartinKiss/KeepLayout.git
+
+CHECKOUT OPTIONS:
+  KeepLayout:
+    :commit: 6c464c4c23f31e7aa2a4c9088c0bb029e17ce2eb
+    :git: https://github.com/iMartinKiss/KeepLayout.git
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   HexColors: d837cebe691e52c867d401ecd2374111add5445f
+  KeepLayout: d85a52300a23ba1504ba330c5200bb01ba3baeb0
   Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
 
 COCOAPODS: 0.39.0

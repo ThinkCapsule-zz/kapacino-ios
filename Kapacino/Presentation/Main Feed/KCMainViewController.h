@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CFArticleModel.h"
 
 @interface KCMainViewController : UICollectionViewController
 

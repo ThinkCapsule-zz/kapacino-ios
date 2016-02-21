@@ -93,6 +93,7 @@
                 <outlet property="byline" destination="hAN-Hc-fUJ" id="kyV-8G-J0o"/>
                 <outlet property="dateLine" destination="zop-sr-II3" id="ura-xr-CxC"/>
                 <outlet property="headline" destination="mPZ-hx-BoK" id="OBC-yH-WpH"/>
+                <outlet property="primaryTag" destination="unQ-ou-SEq" id="vho-tn-j0c"/>
             </connections>
             <point key="canvasLocation" x="658" y="286.5"/>
         </collectionViewCell>

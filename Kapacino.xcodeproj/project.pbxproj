@@ -29,6 +29,7 @@
 		B6431F931C55BCEE00546B3A /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F881C55BCEE00546B3A /* SF-UI-Text-Semibold.otf */; };
 		B6431F941C55BCEE00546B3A /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F891C55BCEE00546B3A /* SF-UI-Text-SemiboldItalic.otf */; };
 		B6431F981C55BD4C00546B3A /* UIFont+KCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6431F971C55BD4C00546B3A /* UIFont+KCAdditions.m */; };
+		B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C9BD0E1C74DAED00A2E52C /* KCArticleDetailViewController.m */; };
 		B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D550851C55786C0091BF71 /* KCTabBarNavigationController.m */; };
 		B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5508A1C55846E0091BF71 /* KCSettingsViewController.m */; };
 		B6D5508E1C5584810091BF71 /* KCGPACalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5508D1C5584810091BF71 /* KCGPACalcViewController.m */; };
@@ -95,6 +96,8 @@
 		B6431F961C55BD4C00546B3A /* UIFont+KCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+KCAdditions.h"; sourceTree = "<group>"; };
 		B6431F971C55BD4C00546B3A /* UIFont+KCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+KCAdditions.m"; sourceTree = "<group>"; };
 		B6431F991C55BF2900546B3A /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		B6C9BD0D1C74DAED00A2E52C /* KCArticleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCArticleDetailViewController.h; sourceTree = "<group>"; };
+		B6C9BD0E1C74DAED00A2E52C /* KCArticleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCArticleDetailViewController.m; sourceTree = "<group>"; };
 		B6D550841C55786C0091BF71 /* KCTabBarNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTabBarNavigationController.h; sourceTree = "<group>"; };
 		B6D550851C55786C0091BF71 /* KCTabBarNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCTabBarNavigationController.m; sourceTree = "<group>"; };
 		B6D550891C55846E0091BF71 /* KCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSettingsViewController.h; sourceTree = "<group>"; };
@@ -183,6 +186,7 @@
 		B60EB8401C07513100F3044A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B6C9BD0C1C74DACA00A2E52C /* Article Details */,
 				B6D550871C5584590091BF71 /* GPA Calculator */,
 				B6D550881C5584590091BF71 /* Settings */,
 				B6D5507F1C5578330091BF71 /* Main Feed */,
@@ -270,6 +274,15 @@
 				B6431F971C55BD4C00546B3A /* UIFont+KCAdditions.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		B6C9BD0C1C74DACA00A2E52C /* Article Details */ = {
+			isa = PBXGroup;
+			children = (
+				B6C9BD0D1C74DAED00A2E52C /* KCArticleDetailViewController.h */,
+				B6C9BD0E1C74DAED00A2E52C /* KCArticleDetailViewController.m */,
+			);
+			path = "Article Details";
 			sourceTree = "<group>";
 		};
 		B6D5507F1C5578330091BF71 /* Main Feed */ = {
@@ -602,6 +615,7 @@
 				B6D5C2E41C06E92700699793 /* main.m in Sources */,
 				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
+				B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */,
 				B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */,
 				B6D5508E1C5584810091BF71 /* KCGPACalcViewController.m in Sources */,
 				B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */,

@@ -10,10 +10,12 @@
 #import "UIFont+KCAdditions.h"
 
 @interface KCFeedCell()
+
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UILabel *headline;
 @property (weak, nonatomic) IBOutlet UILabel *byline;
 @property (weak, nonatomic) IBOutlet UILabel *dateLine;
+@property (weak, nonatomic) IBOutlet UILabel *primaryTag;
 @end
 
 @implementation KCFeedCell
@@ -24,10 +26,25 @@
     self.headline.font             = [UIFont kc_MediumFontWithSize:14.0f];
     self.byline.font               = [UIFont kc_RegularFontWithSize:12.0f];
     self.dateLine.font             = [UIFont kc_LightFontWithSize:10.0f];
+    self.primaryTag.font           = [UIFont kc_LightFontWithSize:10.0f];
     
 }
 
 - (void)prepareForReuse {
+    
+    self.headline.text   = @"";
+    self.byline.text     = @"";
+    self.dateLine.text   = @"";
+    self.primaryTag.text = @"";
+}
+
+#pragma mark - Update
+- (void)updateWithArticleModel:(CFArticleModel *)articleModel {
+    
+    self.headline.text = articleModel.headline;
+    self.byline.text   = articleModel.byline;
+    self.dateLine.text = articleModel.publishDate;
+    self.primaryTag.text = [articleModel.tags firstObject];
     
 }
 
