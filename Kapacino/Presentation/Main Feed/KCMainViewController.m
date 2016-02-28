@@ -11,6 +11,7 @@
 #import "CFClient.h"
 #import "CFModelFactory.h"
 #import "KCArticleDetailViewController.h"
+#import "PreflightManager.h"
 
 @interface KCMainViewController() <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -36,7 +37,7 @@ static CGFloat kCellHeight = 230;
     
     /* Fetch data */
     [self fetchContent:CFContentType_Article];
-    
+
 }
 
 #pragma mark - Fetch Content

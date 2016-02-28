@@ -12,4 +12,6 @@
 
 + (NSURL *)querySpace:(NSString *)space contentId:(NSString *)contentTypeId;
 
++ (NSURL *)querySpace:(NSString *)space forAsset:(NSString *)assetId;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Mantle/Mantle.h>
+#import "CFAssetModel.h"
 
 @interface CFArticleModel : MTLModel <MTLJSONSerializing>
 
@@ -16,5 +17,6 @@
 @property (nonatomic, readonly) NSString *publishDate;
 @property (nonatomic, readonly) NSArray  *thumbnails;
 @property (nonatomic, readonly) NSArray  *tags;
+@property (nonatomic, readonly) NSArray  *thumnailURLs;
 
 @end

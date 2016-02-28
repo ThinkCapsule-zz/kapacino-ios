@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "KCTabBarNavigationController.h"
+#import "PreflightManager.h"
 
 @interface AppDelegate ()
 

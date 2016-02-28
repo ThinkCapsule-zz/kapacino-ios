@@ -29,6 +29,12 @@
 		B6431F931C55BCEE00546B3A /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F881C55BCEE00546B3A /* SF-UI-Text-Semibold.otf */; };
 		B6431F941C55BCEE00546B3A /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6431F891C55BCEE00546B3A /* SF-UI-Text-SemiboldItalic.otf */; };
 		B6431F981C55BD4C00546B3A /* UIFont+KCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6431F971C55BD4C00546B3A /* UIFont+KCAdditions.m */; };
+		B69EB4611C820BE8008BA05F /* PreflightManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EB4601C820BE8008BA05F /* PreflightManager.m */; };
+		B69EB4651C82140F008BA05F /* UserRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EB4641C82140F008BA05F /* UserRegistrationViewController.m */; };
+		B69EB4681C821426008BA05F /* SchoolRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EB4671C821426008BA05F /* SchoolRegistrationViewController.m */; };
+		B69EB46B1C8218E2008BA05F /* RegistrationNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EB46A1C8218E2008BA05F /* RegistrationNavigationController.m */; };
+		B69EB46E1C8222CA008BA05F /* UIColor+KCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EB46D1C8222CA008BA05F /* UIColor+KCAdditions.m */; };
+		B6A339FB1C7C13D300F9CC9D /* CFAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A339FA1C7C13D300F9CC9D /* CFAssetModel.m */; };
 		B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C9BD0E1C74DAED00A2E52C /* KCArticleDetailViewController.m */; };
 		B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D550851C55786C0091BF71 /* KCTabBarNavigationController.m */; };
 		B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5508A1C55846E0091BF71 /* KCSettingsViewController.m */; };
@@ -96,6 +102,18 @@
 		B6431F961C55BD4C00546B3A /* UIFont+KCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+KCAdditions.h"; sourceTree = "<group>"; };
 		B6431F971C55BD4C00546B3A /* UIFont+KCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+KCAdditions.m"; sourceTree = "<group>"; };
 		B6431F991C55BF2900546B3A /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		B69EB45F1C820BE8008BA05F /* PreflightManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreflightManager.h; sourceTree = "<group>"; };
+		B69EB4601C820BE8008BA05F /* PreflightManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreflightManager.m; sourceTree = "<group>"; };
+		B69EB4631C82140F008BA05F /* UserRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRegistrationViewController.h; sourceTree = "<group>"; };
+		B69EB4641C82140F008BA05F /* UserRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRegistrationViewController.m; sourceTree = "<group>"; };
+		B69EB4661C821426008BA05F /* SchoolRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolRegistrationViewController.h; sourceTree = "<group>"; };
+		B69EB4671C821426008BA05F /* SchoolRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolRegistrationViewController.m; sourceTree = "<group>"; };
+		B69EB4691C8218E1008BA05F /* RegistrationNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationNavigationController.h; sourceTree = "<group>"; };
+		B69EB46A1C8218E2008BA05F /* RegistrationNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationNavigationController.m; sourceTree = "<group>"; };
+		B69EB46C1C8222CA008BA05F /* UIColor+KCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KCAdditions.h"; sourceTree = "<group>"; };
+		B69EB46D1C8222CA008BA05F /* UIColor+KCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KCAdditions.m"; sourceTree = "<group>"; };
+		B6A339F91C7C13D300F9CC9D /* CFAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFAssetModel.h; sourceTree = "<group>"; };
+		B6A339FA1C7C13D300F9CC9D /* CFAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFAssetModel.m; sourceTree = "<group>"; };
 		B6C9BD0D1C74DAED00A2E52C /* KCArticleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCArticleDetailViewController.h; sourceTree = "<group>"; };
 		B6C9BD0E1C74DAED00A2E52C /* KCArticleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCArticleDetailViewController.m; sourceTree = "<group>"; };
 		B6D550841C55786C0091BF71 /* KCTabBarNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTabBarNavigationController.h; sourceTree = "<group>"; };
@@ -178,6 +196,7 @@
 		B60EB83F1C07513100F3044A /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				B69EB45E1C820BD8008BA05F /* Preflight Manager */,
 				B6431F951C55BD2E00546B3A /* Categories */,
 			);
 			path = Logic;
@@ -186,6 +205,7 @@
 		B60EB8401C07513100F3044A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B69EB4621C8213C2008BA05F /* Onboarding */,
 				B6C9BD0C1C74DACA00A2E52C /* Article Details */,
 				B6D550871C5584590091BF71 /* GPA Calculator */,
 				B6D550881C5584590091BF71 /* Settings */,
@@ -217,6 +237,8 @@
 				B636C2B61C0787D5003C1E44 /* CFVideoModel.m */,
 				B636C2B21C0787A9003C1E44 /* CFListingModel.h */,
 				B636C2B31C0787A9003C1E44 /* CFListingModel.m */,
+				B6A339F91C7C13D300F9CC9D /* CFAssetModel.h */,
+				B6A339FA1C7C13D300F9CC9D /* CFAssetModel.m */,
 			);
 			path = CFModels;
 			sourceTree = "<group>";
@@ -272,8 +294,32 @@
 			children = (
 				B6431F961C55BD4C00546B3A /* UIFont+KCAdditions.h */,
 				B6431F971C55BD4C00546B3A /* UIFont+KCAdditions.m */,
+				B69EB46C1C8222CA008BA05F /* UIColor+KCAdditions.h */,
+				B69EB46D1C8222CA008BA05F /* UIColor+KCAdditions.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		B69EB45E1C820BD8008BA05F /* Preflight Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B69EB45F1C820BE8008BA05F /* PreflightManager.h */,
+				B69EB4601C820BE8008BA05F /* PreflightManager.m */,
+			);
+			path = "Preflight Manager";
+			sourceTree = "<group>";
+		};
+		B69EB4621C8213C2008BA05F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B69EB4691C8218E1008BA05F /* RegistrationNavigationController.h */,
+				B69EB46A1C8218E2008BA05F /* RegistrationNavigationController.m */,
+				B69EB4631C82140F008BA05F /* UserRegistrationViewController.h */,
+				B69EB4641C82140F008BA05F /* UserRegistrationViewController.m */,
+				B69EB4661C821426008BA05F /* SchoolRegistrationViewController.h */,
+				B69EB4671C821426008BA05F /* SchoolRegistrationViewController.m */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		B6C9BD0C1C74DACA00A2E52C /* Article Details */ = {
@@ -603,8 +649,11 @@
 			files = (
 				B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */,
 				B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */,
+				B6A339FB1C7C13D300F9CC9D /* CFAssetModel.m in Sources */,
 				B6D550911C55A8390091BF71 /* KCMainViewController.m in Sources */,
 				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,
+				B69EB46E1C8222CA008BA05F /* UIColor+KCAdditions.m in Sources */,
+				B69EB4611C820BE8008BA05F /* PreflightManager.m in Sources */,
 				B6431F981C55BD4C00546B3A /* UIFont+KCAdditions.m in Sources */,
 				B60EB8481C0751FD00F3044A /* CFClient.m in Sources */,
 				B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */,
@@ -612,13 +661,16 @@
 				B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */,
 				B636C2AE1C078786003C1E44 /* CFArticleModel.m in Sources */,
 				B6DC35CC1C55BA1B00ED0ABC /* KCFeedCell.m in Sources */,
+				B69EB4651C82140F008BA05F /* UserRegistrationViewController.m in Sources */,
 				B6D5C2E41C06E92700699793 /* main.m in Sources */,
+				B69EB46B1C8218E2008BA05F /* RegistrationNavigationController.m in Sources */,
 				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
 				B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */,
 				B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */,
 				B6D5508E1C5584810091BF71 /* KCGPACalcViewController.m in Sources */,
 				B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */,
+				B69EB4681C821426008BA05F /* SchoolRegistrationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,6 +810,7 @@
 			baseConfigurationReference = C82D419EC931D2622AF4203C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
@@ -774,6 +827,7 @@
 			baseConfigurationReference = E0762858DA793F08B3BEE8A3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";

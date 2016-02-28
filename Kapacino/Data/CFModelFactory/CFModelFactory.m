@@ -41,6 +41,7 @@
     NSMutableArray *objectList = [[NSMutableArray alloc] init];
     
     for (NSDictionary *item in responseObjects) {
+        
         [objectList addObject:[MTLJSONAdapter modelOfClass:class fromJSONDictionary:item[@"fields"] error:nil]];
     }
     

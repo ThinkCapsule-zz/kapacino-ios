@@ -15,6 +15,7 @@ extern NSString* const CFProductionToken;
 /** URLs **/
 extern NSString* const CFBasePreviewURL;
 extern NSString* const CFBaseProductionURL;
+extern NSString* const CFBaseAssetURL;
 
 /** Space **/
 extern NSString* const CFSpaceIdentifier;
@@ -29,6 +30,7 @@ extern NSString* const CFPlacesTypeIdentifier;
 /** Directories **/
 extern NSString* const CFContentSpacesDir;
 extern NSString* const CFContentEntriesDir;
+extern NSString* const CFContentAssetsDir;
 
 /** Queries **/
 extern NSString* const CFContentTokenQuery;

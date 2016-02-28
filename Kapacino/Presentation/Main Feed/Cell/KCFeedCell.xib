@@ -50,7 +50,7 @@
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.4130377471446991" green="0.89437121152877808" blue="0.96189326047897339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.29964672565442446" green="0.72939899450343904" blue="0.79675848606305244" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="unQ-ou-SEq" secondAttribute="trailing" constant="5" id="3be-zY-MIG"/>
                             <constraint firstItem="unQ-ou-SEq" firstAttribute="top" secondItem="bkJ-yP-CKa" secondAttribute="top" constant="2" id="QSb-ns-w0z"/>
@@ -94,6 +94,7 @@
                 <outlet property="dateLine" destination="zop-sr-II3" id="ura-xr-CxC"/>
                 <outlet property="headline" destination="mPZ-hx-BoK" id="OBC-yH-WpH"/>
                 <outlet property="primaryTag" destination="unQ-ou-SEq" id="vho-tn-j0c"/>
+                <outlet property="primaryTagBackground" destination="bkJ-yP-CKa" id="dlu-JR-svB"/>
             </connections>
             <point key="canvasLocation" x="658" y="286.5"/>
         </collectionViewCell>

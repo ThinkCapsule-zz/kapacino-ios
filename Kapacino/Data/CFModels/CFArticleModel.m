@@ -18,9 +18,9 @@
              @"body"        : @"articleBody",
              @"publishDate" : @"publishDate",
              @"thumbnails"  : @"thumnails",
-             @"tags"        : @"tags"
+             @"tags"        : @"tags",
+             @"thumnailURLs": @"arrayUrl"
              };
 }
-
 
 @end

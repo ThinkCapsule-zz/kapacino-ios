@@ -30,6 +30,17 @@
     return [queryURL URL];
 }
 
++ (NSURL *)querySpace:(NSString *)space forAsset:(NSString *)assetId {
+    
+    NSString* endpoint         = [NSString stringWithFormat:@"%@%@",[self baseEndpointURLForSpace:space],CFContentAssetsDir];
+    endpoint                   = [endpoint stringByAppendingString:[NSString stringWithFormat:@"/%@",assetId]];
+    NSURLQueryItem *tokenQuery = [[NSURLQueryItem alloc] initWithName:CFContentTokenQuery value:[self token]];
+    NSURLComponents *queryURL  = [[NSURLComponents alloc] initWithString:endpoint];
+    queryURL.queryItems        = @[tokenQuery];
+    
+    return [queryURL URL];
+}
+
 #pragma mark - Private
 
 + (NSString *)baseEndpointURLForSpace:(NSString *)spaceIdentifier{

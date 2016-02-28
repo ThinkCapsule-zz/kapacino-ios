@@ -9,6 +9,7 @@
 #import "KCArticleDetailViewController.h"
 #import <KeepLayout/KeepLayout.h>
 #import "UIFont+KCAdditions.h"
+#import "CFClient.h"
 
 @interface KCArticleDetailViewController ()
 
@@ -48,6 +49,24 @@
 - (void)updateWithModel:(CFArticleModel *)articleModel {
     
     self.articleModel = articleModel;
+    
+    [self updateImage];
+}
+
+- (void)updateImage {
+    
+    NSURL *imageURL = [NSURL URLWithString:[self.articleModel.thumnailURLs firstObject]];
+    
+    __weak typeof(self) wSelf = self;
+    
+    dispatch_async(dispatch_get_global_queue(0, DISPATCH_QUEUE_PRIORITY_HIGH), ^{
+        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:imageURL]];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            wSelf.headerImage.image = image;
+        });
+        
+    });
 
 }
 
@@ -124,7 +143,8 @@
 
 - (UIButton *)closeButton {
     if (!_closeButton) {
-        _closeButton       = [UIButton buttonWithType:UIButtonTypeContactAdd];
+        _closeButton       = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_closeButton setImage:[UIImage imageNamed:@"close_button_pink"] forState:UIControlStateNormal];
         [_closeButton addTarget:self action:@selector(dismissDetail) forControlEvents:UIControlEventTouchUpInside];
     }
     return _closeButton;

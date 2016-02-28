@@ -15,6 +15,7 @@ NSString* const CFProductionToken = @"15fb8db3a77203b19bacfd6589be0cf3630c3d7ef3
 /** URLs **/
 NSString* const CFBasePreviewURL    = @"https://preview.contentful.com";
 NSString* const CFBaseProductionURL = @"https://cdn.contentful.com";
+NSString* const CFBaseAssetURL      = @"https://images.contentful.com";
 
 /** Space **/
 NSString* const CFSpaceIdentifier = @"1oq1lgnwupsh";
@@ -29,6 +30,7 @@ NSString* const CFPlacesTypeIdentifier   = @"12tqAiosJMaEKMk6682esG"; // same as
 /** Directories **/
 NSString* const CFContentSpacesDir  = @"/spaces";
 NSString* const CFContentEntriesDir = @"/entries";
+NSString* const CFContentAssetsDir  = @"/assets";
 
 /** Queries **/
 NSString* const CFContentTokenQuery = @"access_token";
