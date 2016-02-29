@@ -17,7 +17,12 @@
 
 @implementation KCTabBarNavigationController
 
--(void)viewDidLoad {
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.tabBar.frame = CGRectMake(0, 0, 0, 0);
+}
+
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     self.tabBar.tintColor = [UIColor kc_ApplicationColor];
@@ -27,6 +32,8 @@
     /* Main Feed */
     KCMainViewController *mainVC = [[KCMainViewController alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
     [viewControllers addObject:mainVC];
+    
+    
     
 //    /* GPA Calc */
 //    KCGPACalcViewController *gpaCalcVC = [[KCGPACalcViewController alloc] init];

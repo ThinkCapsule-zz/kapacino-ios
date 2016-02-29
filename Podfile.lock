@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - HexColors (3.1.1)
+  - INSPullToRefresh (1.1.4)
   - KeepLayout (1.6.0)
   - Mantle (2.0.5):
     - Mantle/extobjc (= 2.0.5)
@@ -29,6 +30,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (= 2.6.3)
   - HexColors (= 3.1.1)
+  - INSPullToRefresh
   - KeepLayout (from `https://github.com/iMartinKiss/KeepLayout.git`)
   - Mantle (= 2.0.5)
 
@@ -44,6 +46,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   HexColors: d837cebe691e52c867d401ecd2374111add5445f
+  INSPullToRefresh: a27f7faf022f858f02a7680943e11a1f7ce3430a
   KeepLayout: d85a52300a23ba1504ba330c5200bb01ba3baeb0
   Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
 

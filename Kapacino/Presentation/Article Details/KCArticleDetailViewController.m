@@ -221,7 +221,7 @@
     if (!_primaryTag) {
         _primaryTag = [[UILabel alloc] init];
         _primaryTag.textColor = [UIColor whiteColor];
-        _primaryTag.font = [UIFont kc_LightFontWithSize:13.0f];
+        _primaryTag.font = [UIFont kc_LightFontWithSize:15.0f];
         _primaryTag.backgroundColor = [UIColor cyanColor];
     }
     return _primaryTag;

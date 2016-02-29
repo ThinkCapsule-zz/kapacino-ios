@@ -12,8 +12,10 @@
 #import "CFModelFactory.h"
 #import "KCArticleDetailViewController.h"
 #import "PreflightManager.h"
+#import <INSPullToRefresh/UIScrollView+INSPullToRefresh.h>
+#import <INSPullToRefresh/INSDefaultPullToRefresh.h>
 
-@interface KCMainViewController() <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface KCMainViewController() <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, INSPullToRefreshBackgroundViewDelegate>
 
 @property (nonatomic, strong) NSArray *contentModels;
 
@@ -37,7 +39,26 @@ static CGFloat kCellHeight = 230;
     
     /* Fetch data */
     [self fetchContent:CFContentType_Article];
+    
+    [self setupPullToRefresh];
 
+}
+
+#pragma mark - Private
+- (void)setupPullToRefresh {
+    
+    __weak typeof(self)wSelf = self;
+    [self.collectionView ins_addPullToRefreshWithHeight:60.0 handler:^(UIScrollView *scrollView) {
+        [wSelf.collectionView ins_endPullToRefresh];
+        [wSelf fetchContent:CFContentType_Article];
+    }];
+    
+    CGRect defaultFrame = CGRectMake(0, 0, 24, 24);
+    
+    UIView <INSPullToRefreshBackgroundViewDelegate> *pullToRefresh = [[INSDefaultPullToRefresh alloc] initWithFrame:defaultFrame backImage:[UIImage imageNamed:@"circleLight"] frontImage:[UIImage imageNamed:@"circleDark"]];
+    
+    self.collectionView.ins_pullToRefreshBackgroundView.delegate = pullToRefresh;
+    [self.collectionView.ins_pullToRefreshBackgroundView addSubview:pullToRefresh];
 }
 
 #pragma mark - Fetch Content
@@ -104,6 +125,16 @@ static CGFloat kCellHeight = 230;
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
     return 0.0f;
+}
+
+#pragma mark - UICollectionViewDelegateFlowLayout
+
+- (void)pullToRefreshBackgroundView:(INSPullToRefreshBackgroundView *)pullToRefreshBackgroundView didChangeState:(INSPullToRefreshBackgroundViewState)state {
+    
+}
+
+- (void)pullToRefreshBackgroundView:(INSPullToRefreshBackgroundView *)pullToRefreshBackgroundView didChangeTriggerStateProgress:(CGFloat)progress {
+    //
 }
 
 @end
