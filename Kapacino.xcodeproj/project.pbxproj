@@ -49,6 +49,7 @@
 		B6D5C3081C06E92700699793 /* KapacinoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C3071C06E92700699793 /* KapacinoUITests.m */; };
 		B6DC35CC1C55BA1B00ED0ABC /* KCFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DC35CB1C55BA1B00ED0ABC /* KCFeedCell.m */; };
 		B6DC35CE1C55BA4700ED0ABC /* KCFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DC35CD1C55BA4700ED0ABC /* KCFeedCell.xib */; };
+		B6FCB92A1C8420030072AFC8 /* KCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FCB9291C8420030072AFC8 /* KCNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,8 @@
 		B6DC35CA1C55BA1B00ED0ABC /* KCFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCFeedCell.h; sourceTree = "<group>"; };
 		B6DC35CB1C55BA1B00ED0ABC /* KCFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCFeedCell.m; sourceTree = "<group>"; };
 		B6DC35CD1C55BA4700ED0ABC /* KCFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KCFeedCell.xib; sourceTree = "<group>"; };
+		B6FCB9281C8420030072AFC8 /* KCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCNavigationController.h; sourceTree = "<group>"; };
+		B6FCB9291C8420030072AFC8 /* KCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCNavigationController.m; sourceTree = "<group>"; };
 		C82D419EC931D2622AF4203C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E0762858DA793F08B3BEE8A3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F6C28FE3C8B9B07415F6288B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -346,6 +349,8 @@
 			children = (
 				B6D550841C55786C0091BF71 /* KCTabBarNavigationController.h */,
 				B6D550851C55786C0091BF71 /* KCTabBarNavigationController.m */,
+				B6FCB9281C8420030072AFC8 /* KCNavigationController.h */,
+				B6FCB9291C8420030072AFC8 /* KCNavigationController.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -669,6 +674,7 @@
 				B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */,
 				B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */,
 				B6D5508E1C5584810091BF71 /* KCGPACalcViewController.m in Sources */,
+				B6FCB92A1C8420030072AFC8 /* KCNavigationController.m in Sources */,
 				B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */,
 				B69EB4681C821426008BA05F /* SchoolRegistrationViewController.m in Sources */,
 			);
@@ -816,6 +822,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Kapacino/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinkcapsule.kapacino;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -834,6 +841,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Kapacino/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinkcapsule.kapacino;
 				PRODUCT_NAME = "$(TARGET_NAME)";

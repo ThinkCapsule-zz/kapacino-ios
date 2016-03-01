@@ -30,6 +30,10 @@ static CGFloat kCellHeight = 230;
 - (void)viewDidLoad {
 
     [super viewDidLoad];
+
+    UIImageView *titleImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title_image"]];
+    titleImageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.navigationItem.titleView = titleImageView;
     
     /* Setup */
     self.title = @"Explore";

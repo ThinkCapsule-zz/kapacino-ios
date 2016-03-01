@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "KCTabBarNavigationController.h"
 #import "PreflightManager.h"
+#import "KCNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +20,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
     /* Custom navigation */
     KCTabBarNavigationController *tabBarController = [[KCTabBarNavigationController alloc] init];
+    
     self.window.rootViewController = tabBarController;
     
     return YES;

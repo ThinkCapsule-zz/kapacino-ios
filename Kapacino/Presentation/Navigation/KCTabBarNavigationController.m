@@ -14,36 +14,36 @@
 #import "KCSettingsViewController.h"
 #import "KCGPACalcViewController.h"
 #import "PreflightManager.h"
+#import "KCNavigationController.h"
 
 @implementation KCTabBarNavigationController
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.tabBar.frame = CGRectMake(0, 0, 0, 0);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.navigationController.navigationBar setBarTintColor:[UIColor kc_ApplicationColor]];
     self.tabBar.tintColor = [UIColor kc_ApplicationColor];
     
     NSMutableArray *viewControllers = [[NSMutableArray alloc] init];
     
     /* Main Feed */
     KCMainViewController *mainVC = [[KCMainViewController alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
-    [viewControllers addObject:mainVC];
+    KCNavigationController *navigationVC = [[KCNavigationController alloc] initWithRootViewController:mainVC];
+    [viewControllers addObject:navigationVC];
     
+    /* GPA Calc */
+    KCGPACalcViewController *gpaCalcVC = [[KCGPACalcViewController alloc] init];
+    gpaCalcVC.view.backgroundColor = [UIColor redColor];
+    [viewControllers addObject:gpaCalcVC];
     
-    
-//    /* GPA Calc */
-//    KCGPACalcViewController *gpaCalcVC = [[KCGPACalcViewController alloc] init];
-//    gpaCalcVC.view.backgroundColor = [UIColor redColor];
-//    [viewControllers addObject:gpaCalcVC];
-//    
-//    /* Settings view controller */
-//    KCSettingsViewController *settingsVC = [[KCSettingsViewController alloc] init];
-//    settingsVC.view.backgroundColor = [UIColor blueColor];
-//    [viewControllers addObject:settingsVC];
+    /* Settings view controller */
+    KCSettingsViewController *settingsVC = [[KCSettingsViewController alloc] init];
+    settingsVC.view.backgroundColor = [UIColor blueColor];
+    [viewControllers addObject:settingsVC];
     
     self.viewControllers = [viewControllers copy];
 
