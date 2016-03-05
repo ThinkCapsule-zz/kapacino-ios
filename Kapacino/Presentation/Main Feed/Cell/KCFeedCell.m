@@ -27,19 +27,21 @@
 - (void)awakeFromNib {
     
     self.backgroundImageView.image = [UIImage imageNamed:@"cellBackground_placeholder"];
-    self.headline.font             = [UIFont kc_MediumFontWithSize:14.0f];
+    self.headline.font             = [UIFont kc_MediumFontWithSize:16.0f];
     self.byline.font               = [UIFont kc_RegularFontWithSize:12.0f];
-    self.dateLine.font             = [UIFont kc_RegularFontWithSize:10.0f];
-    self.primaryTag.font           = [UIFont kc_RegularFontWithSize:10.0f];
+    self.dateLine.font             = [UIFont kc_RegularFontWithSize:12.0f];
+    self.primaryTag.font           = [UIFont kc_RegularFontWithSize:12.0f];
     
 }
 
 - (void)prepareForReuse {
     
-    self.headline.text   = @"";
-    self.byline.text     = @"";
-    self.dateLine.text   = @"";
-    self.primaryTag.text = @"";
+    self.articleModel              = nil;
+    self.headline.text             = @"";
+    self.byline.text               = @"";
+    self.dateLine.text             = @"";
+    self.primaryTag.text           = @"";
+    self.backgroundImageView.image = nil;
 }
 
 #pragma mark - Update
@@ -61,17 +63,12 @@
 
 - (void)updateCellImage {
     
-    __weak typeof(self)wSelf = self;
+    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[self.articleModel.thumnailURLs firstObject]]];
+    UIImage *image = [UIImage imageWithData:imageData];
+    self.backgroundImageView.image = image ? image : [UIImage imageNamed:@"cellBackground_placeholder"];
+        
+        
     
-    dispatch_async(dispatch_get_global_queue(0, DISPATCH_QUEUE_PRIORITY_HIGH), ^{
-        NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[self.articleModel.thumnailURLs firstObject]]];
-        UIImage *image = [UIImage imageWithData:imageData];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            wSelf.backgroundImageView.image = image ? image : [UIImage imageNamed:@"cellBackground_placeholder"];
-        });
-        
-    });
 }
 
 @end

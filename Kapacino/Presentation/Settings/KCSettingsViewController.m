@@ -13,7 +13,7 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"GPA Calculator";
+    self.title = @"Settings";
 }
 
 @end

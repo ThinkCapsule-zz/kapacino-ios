@@ -16,6 +16,23 @@
 #import "PreflightManager.h"
 #import "KCNavigationController.h"
 
+typedef NS_ENUM(NSInteger, KCTabBarItems) {
+    KCTabBarItems_Home = 0,
+    KCTabBarItems_Calc,
+    KCTabBarItems_Profile,
+    KCTabBarItems_Setting,
+    KCTabBarItems_Count,
+};
+
+@interface  KCTabBarNavigationController()
+
+@property (nonatomic, strong) KCNavigationController *mainVC;
+@property (nonatomic, strong) KCGPACalcViewController *gpaCalcVC;
+@property (nonatomic, strong) KCSettingsViewController *settingsVC;
+
+
+@end
+
 @implementation KCTabBarNavigationController
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -28,25 +45,45 @@
     [self.navigationController.navigationBar setBarTintColor:[UIColor kc_ApplicationColor]];
     self.tabBar.tintColor = [UIColor kc_ApplicationColor];
     
-    NSMutableArray *viewControllers = [[NSMutableArray alloc] init];
+    [self setViewControllers:@[self.mainVC, self.gpaCalcVC, self.settingsVC]];
+
+}
+
+#pragma mark - Getter
+
+- (KCNavigationController *)mainVC {
     
     /* Main Feed */
-    KCMainViewController *mainVC = [[KCMainViewController alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
-    KCNavigationController *navigationVC = [[KCNavigationController alloc] initWithRootViewController:mainVC];
-    [viewControllers addObject:navigationVC];
+    if (!_mainVC) {
+        KCMainViewController *mainVC = [[KCMainViewController alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
+        _mainVC = [[KCNavigationController alloc] initWithRootViewController:mainVC];
+        _mainVC.tabBarItem.image = [UIImage imageNamed:@"tab_bar_home"];
+    }
+    return _mainVC;
+    
+}
+
+- (KCGPACalcViewController *)gpaCalcVC {
     
     /* GPA Calc */
-    KCGPACalcViewController *gpaCalcVC = [[KCGPACalcViewController alloc] init];
-    gpaCalcVC.view.backgroundColor = [UIColor redColor];
-    [viewControllers addObject:gpaCalcVC];
+    if (!_gpaCalcVC) {
+        _gpaCalcVC = [[KCGPACalcViewController alloc] init];
+        _gpaCalcVC.view.backgroundColor = [UIColor redColor];
+        _gpaCalcVC.tabBarItem.image = [UIImage imageNamed:@"tab_bar_calc"];
+    }
+    return _gpaCalcVC;
+}
+
+- (KCSettingsViewController *)settingsVC {
     
     /* Settings view controller */
-    KCSettingsViewController *settingsVC = [[KCSettingsViewController alloc] init];
-    settingsVC.view.backgroundColor = [UIColor blueColor];
-    [viewControllers addObject:settingsVC];
+    if (!_settingsVC) {
+        _settingsVC = [[KCSettingsViewController alloc] init];
+        _settingsVC.view.backgroundColor = [UIColor blueColor];
+        _settingsVC.tabBarItem.image = [UIImage imageNamed:@"tab_bar_setting"];
+    }
+    return _settingsVC;
     
-    self.viewControllers = [viewControllers copy];
-
 }
 
 @end
