@@ -22,7 +22,7 @@
 @end
 
 static NSString* kCellId = @"kCellId";
-static CGFloat kCellHeight = 230;
+static CGFloat kCellRatio = 4.0f/3.0f;
 
 
 @implementation KCMainViewController
@@ -124,7 +124,7 @@ static CGFloat kCellHeight = 230;
 #pragma mark - UICollectionViewDelegateFlowLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(collectionView.frame.size.width, kCellHeight);
+    return CGSizeMake(collectionView.frame.size.width, collectionView.frame.size.width / kCellRatio);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {

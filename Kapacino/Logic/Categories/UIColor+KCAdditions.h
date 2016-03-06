@@ -12,4 +12,6 @@
 
 + (UIColor *)kc_ApplicationColor;
 
++ (UIColor *)kc_PrimaryTagColour;
+
 @end

@@ -15,4 +15,8 @@
     return [UIColor hx_colorWithHexString:@"FF7D7D"];
 }
 
++ (UIColor *)kc_PrimaryTagColour {
+    return [UIColor hx_colorWithHexString:@"009999"];
+}
+
 @end

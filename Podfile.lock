@@ -26,6 +26,9 @@ PODS:
   - Mantle (2.0.5):
     - Mantle/extobjc (= 2.0.5)
   - Mantle/extobjc (2.0.5)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
 
 DEPENDENCIES:
   - AFNetworking (= 2.6.3)
@@ -33,6 +36,7 @@ DEPENDENCIES:
   - INSPullToRefresh
   - KeepLayout (from `https://github.com/iMartinKiss/KeepLayout.git`)
   - Mantle (= 2.0.5)
+  - SDWebImage (= 3.7.5)
 
 EXTERNAL SOURCES:
   KeepLayout:
@@ -49,5 +53,6 @@ SPEC CHECKSUMS:
   INSPullToRefresh: a27f7faf022f858f02a7680943e11a1f7ce3430a
   KeepLayout: d85a52300a23ba1504ba330c5200bb01ba3baeb0
   Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
 COCOAPODS: 0.39.0

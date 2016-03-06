@@ -8,6 +8,8 @@
 
 #import "KCFeedCell.h"
 #import "UIFont+KCAdditions.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "UIColor+KCAdditions.h"
 
 @interface KCFeedCell()
 
@@ -26,11 +28,12 @@
 
 - (void)awakeFromNib {
     
-    self.backgroundImageView.image = [UIImage imageNamed:@"cellBackground_placeholder"];
-    self.headline.font             = [UIFont kc_MediumFontWithSize:16.0f];
-    self.byline.font               = [UIFont kc_RegularFontWithSize:12.0f];
-    self.dateLine.font             = [UIFont kc_RegularFontWithSize:12.0f];
-    self.primaryTag.font           = [UIFont kc_RegularFontWithSize:12.0f];
+    self.backgroundImageView.image            = [UIImage imageNamed:@"cellBackground_placeholder"];
+    self.headline.font                        = [UIFont kc_MediumFontWithSize:16.0f];
+    self.byline.font                          = [UIFont kc_RegularFontWithSize:12.0f];
+    self.dateLine.font                        = [UIFont kc_RegularFontWithSize:12.0f];
+    self.primaryTag.font                      = [UIFont kc_RegularFontWithSize:12.0f];
+    self.primaryTagBackground.backgroundColor = [UIColor kc_PrimaryTagColour];
     
 }
 
@@ -53,7 +56,7 @@
     self.byline.text     = self.articleModel.byline;
     self.dateLine.text   = self.articleModel.publishDate;
     
-    NSString *tag = (NSString*)[self.articleModel.tags firstObject];
+    NSString *tag = [(NSString*)[self.articleModel.tags firstObject] uppercaseString];
     self.primaryTag.text = tag;
     self.primaryTagBackground.hidden = tag ? NO : YES;
     
@@ -63,12 +66,9 @@
 
 - (void)updateCellImage {
     
-    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[self.articleModel.thumnailURLs firstObject]]];
-    UIImage *image = [UIImage imageWithData:imageData];
-    self.backgroundImageView.image = image ? image : [UIImage imageNamed:@"cellBackground_placeholder"];
+    NSURL *url = [self.articleModel.thumnailURLs firstObject];
+    [self.backgroundImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"image_placeholder"]];
         
-        
-    
 }
 
 @end
