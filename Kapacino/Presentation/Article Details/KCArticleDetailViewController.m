@@ -12,8 +12,9 @@
 #import "CFClient.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UIColor+KCAdditions.h"
+#import <WebKit/WebKit.h>
 
-@interface KCArticleDetailViewController ()
+@interface KCArticleDetailViewController () <WKNavigationDelegate>
 
 @property (nonatomic, strong) UIButton     *closeButton;
 
@@ -28,6 +29,8 @@
 @property (nonatomic, strong) UILabel     *updated;
 @property (nonatomic, strong) UILabel     *primaryTag;
 @property (nonatomic, strong) UIView      *primaryTagView;
+
+@property (nonatomic, strong) WKWebView *webview;
 
 @property (nonatomic, strong) CFArticleModel *articleModel;
 
@@ -70,8 +73,7 @@
     self.updated.text    = self.articleModel.publishDate;
     self.primaryTag.text = [[self.articleModel.tags firstObject] uppercaseString];
     self.textArea.text   = self.articleModel.body;
-    
-    [self.textArea sizeToFit];
+
 }
 
 #pragma mark - Setup
@@ -232,6 +234,14 @@
         _primaryTagView.backgroundColor = [UIColor kc_PrimaryTagColour];
     }
     return _primaryTagView;
+}
+
+- (WKWebView *)webview {
+    if (!_webview) {
+        _webview = [[WKWebView alloc] init];
+        _webview.scrollView.scrollEnabled = NO;
+    }
+    return _webview;
 }
 
 #pragma mark - Button actions
