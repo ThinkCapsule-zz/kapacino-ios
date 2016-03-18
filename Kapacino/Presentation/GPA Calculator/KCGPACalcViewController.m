@@ -7,13 +7,96 @@
 //
 
 #import "KCGPACalcViewController.h"
+#import "KCAddClassViewController.h"
+
+#import "KCClassCell.h"
+
+#import "CFClassModel.h"
+
+@interface KCGPACalcViewController () <KCAddClassViewControllerDelegate>
+
+@property (nonatomic, strong) NSMutableArray *model;
+
+@end
 
 @implementation KCGPACalcViewController
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.title = @"GPA Calculator";
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addClassAction:)];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.tableView registerClass:[KCClassCell class] forCellReuseIdentifier:@"ClassCell"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+
+#pragma mark - Custom accessors
+
+- (NSMutableArray *)model {
+    if (!_model) {
+        _model = [[NSMutableArray alloc] init];
+        
+        CFClassModel *class1 = [[CFClassModel alloc] init];
+        class1.name = @"ANAT 4452";
+        class1.mark = @80;
+        
+        CFClassModel *class2 = [[CFClassModel alloc] init];
+        class2.name = @"BUS 2257";
+        class2.mark = @70;
+        
+        CFClassModel *class3 = [[CFClassModel alloc] init];
+        class3.name = @"STATS 2244";
+        class3.mark = @30;
+        
+        [_model addObjectsFromArray:@[ class1, class2, class3 ]];
+    }
+    return _model;
+}
+
+#pragma mark - Actions
+
+- (void)addClassAction:(UIBarButtonItem *)item {
+    KCAddClassViewController *controller = [[KCAddClassViewController alloc] init];
+    controller.delegate = self;
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.model.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    CFClassModel *model = [self.model objectAtIndex:indexPath.row];
     
-    self.title = @"GPA Calculator";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ClassCell" forIndexPath:indexPath];
+    cell.textLabel.text = model.name;
+    cell.detailTextLabel.text = model.mark.stringValue;
+    
+    return cell;
+}
+
+#pragma mark - Table view delegate
+
+
+
+#pragma mark - Add class view controller delegate
+
+- (void)addClassViewController:(KCAddClassViewController *)controller didCreateClassModel:(CFClassModel *)model {
+    [self.model addObject:model];
+    [self.tableView reloadData];
+    [self.navigationController popToViewController:self animated:YES];
 }
 
 @end

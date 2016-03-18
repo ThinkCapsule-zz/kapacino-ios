@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
 @interface  KCTabBarNavigationController()
 
 @property (nonatomic, strong) KCNavigationController *mainVC;
-@property (nonatomic, strong) KCGPACalcViewController *gpaCalcVC;
+@property (nonatomic, strong) KCNavigationController *gpaCalcVC;
 @property (nonatomic, strong) KCSettingsViewController *settingsVC;
 
 
@@ -63,12 +63,12 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
     
 }
 
-- (KCGPACalcViewController *)gpaCalcVC {
+- (KCNavigationController *)gpaCalcVC {
     
     /* GPA Calc */
     if (!_gpaCalcVC) {
-        _gpaCalcVC = [[KCGPACalcViewController alloc] init];
-        _gpaCalcVC.view.backgroundColor = [UIColor redColor];
+        KCGPACalcViewController *gpaCalcVC = [[KCGPACalcViewController alloc] init];
+        _gpaCalcVC = [[KCNavigationController alloc] initWithRootViewController:gpaCalcVC];
         _gpaCalcVC.tabBarItem.image = [UIImage imageNamed:@"tab_bar_calc"];
     }
     return _gpaCalcVC;
