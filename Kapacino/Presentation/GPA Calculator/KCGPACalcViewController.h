@@ -10,4 +10,6 @@
 
 @interface KCGPACalcViewController : UITableViewController
 
+@property (nonatomic, strong) NSMutableArray *model;
+
 @end

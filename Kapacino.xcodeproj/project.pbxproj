@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		08C823F155CE5C85CB410A0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C28FE3C8B9B07415F6288B /* libPods.a */; };
-		0980F56A1C9C41E3002355E8 /* KCAddClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980F5691C9C41E3002355E8 /* KCAddClassViewController.m */; };
+		093A3E9B1CA2E3F000EC91FE /* KCClassItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E891CA2E3F000EC91FE /* KCClassItemTableViewCell.m */; };
+		093A3E9C1CA2E3F000EC91FE /* KCAddClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E8B1CA2E3F000EC91FE /* KCAddClassViewController.m */; };
+		093A3E9D1CA2E3F000EC91FE /* KCAddItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E8D1CA2E3F000EC91FE /* KCAddItemTableViewController.m */; };
+		093A3E9E1CA2E3F000EC91FE /* KCBenchmarkCaculatorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E8F1CA2E3F000EC91FE /* KCBenchmarkCaculatorTableViewController.m */; };
+		093A3E9F1CA2E3F000EC91FE /* KCBenchmarkCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E911CA2E3F000EC91FE /* KCBenchmarkCalculatorViewController.m */; };
+		093A3EA01CA2E3F000EC91FE /* KCClassItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E931CA2E3F000EC91FE /* KCClassItemsTableViewController.m */; };
+		093A3EA11CA2E3F000EC91FE /* KCClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E951CA2E3F000EC91FE /* KCClassViewController.m */; };
+		093A3EA21CA2E3F000EC91FE /* KCGPACalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E971CA2E3F000EC91FE /* KCGPACalcViewController.m */; };
+		093A3EA31CA2E3F000EC91FE /* KCBenchmarkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E9A1CA2E3F000EC91FE /* KCBenchmarkLabel.m */; };
 		0980F5741C9C452D002355E8 /* CFClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980F5731C9C452D002355E8 /* CFClassModel.m */; };
 		09A0F4BE1C9FEEC900C34901 /* GPA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A0F4BD1C9FEEC900C34901 /* GPA.storyboard */; };
-		09A0F4C11CA0004F00C34901 /* KCClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A0F4C01CA0004F00C34901 /* KCClassViewController.m */; };
 		09A0F4C51CA03C1A00C34901 /* UINavigationController+Advanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A0F4C41CA03C1A00C34901 /* UINavigationController+Advanced.m */; };
+		44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */; };
 		B60EB8481C0751FD00F3044A /* CFClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8471C0751FD00F3044A /* CFClient.m */; };
 		B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB84D1C0754FE00F3044A /* CFDataSource.m */; };
 		B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8501C07552000F3044A /* CFDataSourceConstants.m */; };
@@ -43,7 +51,6 @@
 		B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C9BD0E1C74DAED00A2E52C /* KCArticleDetailViewController.m */; };
 		B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D550851C55786C0091BF71 /* KCTabBarNavigationController.m */; };
 		B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5508A1C55846E0091BF71 /* KCSettingsViewController.m */; };
-		B6D5508E1C5584810091BF71 /* KCGPACalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5508D1C5584810091BF71 /* KCGPACalcViewController.m */; };
 		B6D550911C55A8390091BF71 /* KCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D550901C55A8390091BF71 /* KCMainViewController.m */; };
 		B6D5C2E41C06E92700699793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E31C06E92700699793 /* main.m */; };
 		B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5C2E61C06E92700699793 /* AppDelegate.m */; };
@@ -75,15 +82,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0980F5681C9C41E3002355E8 /* KCAddClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAddClassViewController.h; sourceTree = "<group>"; };
-		0980F5691C9C41E3002355E8 /* KCAddClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAddClassViewController.m; sourceTree = "<group>"; };
+		093A3E881CA2E3F000EC91FE /* KCClassItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCClassItemTableViewCell.h; sourceTree = "<group>"; };
+		093A3E891CA2E3F000EC91FE /* KCClassItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCClassItemTableViewCell.m; sourceTree = "<group>"; };
+		093A3E8A1CA2E3F000EC91FE /* KCAddClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAddClassViewController.h; sourceTree = "<group>"; };
+		093A3E8B1CA2E3F000EC91FE /* KCAddClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAddClassViewController.m; sourceTree = "<group>"; };
+		093A3E8C1CA2E3F000EC91FE /* KCAddItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAddItemTableViewController.h; sourceTree = "<group>"; };
+		093A3E8D1CA2E3F000EC91FE /* KCAddItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAddItemTableViewController.m; sourceTree = "<group>"; };
+		093A3E8E1CA2E3F000EC91FE /* KCBenchmarkCaculatorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBenchmarkCaculatorTableViewController.h; sourceTree = "<group>"; };
+		093A3E8F1CA2E3F000EC91FE /* KCBenchmarkCaculatorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBenchmarkCaculatorTableViewController.m; sourceTree = "<group>"; };
+		093A3E901CA2E3F000EC91FE /* KCBenchmarkCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBenchmarkCalculatorViewController.h; sourceTree = "<group>"; };
+		093A3E911CA2E3F000EC91FE /* KCBenchmarkCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBenchmarkCalculatorViewController.m; sourceTree = "<group>"; };
+		093A3E921CA2E3F000EC91FE /* KCClassItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCClassItemsTableViewController.h; sourceTree = "<group>"; };
+		093A3E931CA2E3F000EC91FE /* KCClassItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCClassItemsTableViewController.m; sourceTree = "<group>"; };
+		093A3E941CA2E3F000EC91FE /* KCClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCClassViewController.h; sourceTree = "<group>"; };
+		093A3E951CA2E3F000EC91FE /* KCClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCClassViewController.m; sourceTree = "<group>"; };
+		093A3E961CA2E3F000EC91FE /* KCGPACalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPACalcViewController.h; sourceTree = "<group>"; };
+		093A3E971CA2E3F000EC91FE /* KCGPACalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPACalcViewController.m; sourceTree = "<group>"; };
+		093A3E991CA2E3F000EC91FE /* KCBenchmarkLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBenchmarkLabel.h; sourceTree = "<group>"; };
+		093A3E9A1CA2E3F000EC91FE /* KCBenchmarkLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBenchmarkLabel.m; sourceTree = "<group>"; };
 		0980F5721C9C452D002355E8 /* CFClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClassModel.h; sourceTree = "<group>"; };
 		0980F5731C9C452D002355E8 /* CFClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClassModel.m; sourceTree = "<group>"; };
 		09A0F4BD1C9FEEC900C34901 /* GPA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GPA.storyboard; sourceTree = "<group>"; };
-		09A0F4BF1CA0004F00C34901 /* KCClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCClassViewController.h; sourceTree = "<group>"; };
-		09A0F4C01CA0004F00C34901 /* KCClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCClassViewController.m; sourceTree = "<group>"; };
 		09A0F4C31CA03C1A00C34901 /* UINavigationController+Advanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Advanced.h"; sourceTree = "<group>"; };
 		09A0F4C41CA03C1A00C34901 /* UINavigationController+Advanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Advanced.m"; sourceTree = "<group>"; };
+		44DA4DA41CA18DD700CD4A8A /* CFClassItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClassItem.h; sourceTree = "<group>"; };
+		44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClassItem.m; sourceTree = "<group>"; };
 		B60EB8461C0751FD00F3044A /* CFClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClient.h; sourceTree = "<group>"; };
 		B60EB8471C0751FD00F3044A /* CFClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClient.m; sourceTree = "<group>"; };
 		B60EB84A1C07527600F3044A /* CFContentType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFContentType.h; sourceTree = "<group>"; };
@@ -135,8 +158,6 @@
 		B6D550851C55786C0091BF71 /* KCTabBarNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCTabBarNavigationController.m; sourceTree = "<group>"; };
 		B6D550891C55846E0091BF71 /* KCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSettingsViewController.h; sourceTree = "<group>"; };
 		B6D5508A1C55846E0091BF71 /* KCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSettingsViewController.m; sourceTree = "<group>"; };
-		B6D5508C1C5584810091BF71 /* KCGPACalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPACalcViewController.h; sourceTree = "<group>"; };
-		B6D5508D1C5584810091BF71 /* KCGPACalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPACalcViewController.m; sourceTree = "<group>"; };
 		B6D5508F1C55A8390091BF71 /* KCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMainViewController.h; sourceTree = "<group>"; };
 		B6D550901C55A8390091BF71 /* KCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMainViewController.m; sourceTree = "<group>"; };
 		B6D5C2DF1C06E92700699793 /* Kapacino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kapacino.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +217,24 @@
 				E0762858DA793F08B3BEE8A3 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		093A3E871CA2E3F000EC91FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				093A3E881CA2E3F000EC91FE /* KCClassItemTableViewCell.h */,
+				093A3E891CA2E3F000EC91FE /* KCClassItemTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		093A3E981CA2E3F000EC91FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				093A3E991CA2E3F000EC91FE /* KCBenchmarkLabel.h */,
+				093A3E9A1CA2E3F000EC91FE /* KCBenchmarkLabel.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		09A0F4C21CA03BD000C34901 /* Extensions */ = {
@@ -267,6 +306,8 @@
 				B6A339FA1C7C13D300F9CC9D /* CFAssetModel.m */,
 				0980F5721C9C452D002355E8 /* CFClassModel.h */,
 				0980F5731C9C452D002355E8 /* CFClassModel.m */,
+				44DA4DA41CA18DD700CD4A8A /* CFClassItem.h */,
+				44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */,
 			);
 			path = CFModels;
 			sourceTree = "<group>";
@@ -383,13 +424,23 @@
 		B6D550871C5584590091BF71 /* GPA Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				093A3E871CA2E3F000EC91FE /* Cells */,
+				093A3E981CA2E3F000EC91FE /* Views */,
+				093A3E961CA2E3F000EC91FE /* KCGPACalcViewController.h */,
+				093A3E971CA2E3F000EC91FE /* KCGPACalcViewController.m */,
+				093A3E941CA2E3F000EC91FE /* KCClassViewController.h */,
+				093A3E951CA2E3F000EC91FE /* KCClassViewController.m */,
+				093A3E8A1CA2E3F000EC91FE /* KCAddClassViewController.h */,
+				093A3E8B1CA2E3F000EC91FE /* KCAddClassViewController.m */,
+				093A3E921CA2E3F000EC91FE /* KCClassItemsTableViewController.h */,
+				093A3E931CA2E3F000EC91FE /* KCClassItemsTableViewController.m */,
+				093A3E8C1CA2E3F000EC91FE /* KCAddItemTableViewController.h */,
+				093A3E8D1CA2E3F000EC91FE /* KCAddItemTableViewController.m */,
+				093A3E901CA2E3F000EC91FE /* KCBenchmarkCalculatorViewController.h */,
+				093A3E911CA2E3F000EC91FE /* KCBenchmarkCalculatorViewController.m */,
+				093A3E8E1CA2E3F000EC91FE /* KCBenchmarkCaculatorTableViewController.h */,
+				093A3E8F1CA2E3F000EC91FE /* KCBenchmarkCaculatorTableViewController.m */,
 				09A0F4BD1C9FEEC900C34901 /* GPA.storyboard */,
-				B6D5508C1C5584810091BF71 /* KCGPACalcViewController.h */,
-				B6D5508D1C5584810091BF71 /* KCGPACalcViewController.m */,
-				09A0F4BF1CA0004F00C34901 /* KCClassViewController.h */,
-				09A0F4C01CA0004F00C34901 /* KCClassViewController.m */,
-				0980F5681C9C41E3002355E8 /* KCAddClassViewController.h */,
-				0980F5691C9C41E3002355E8 /* KCAddClassViewController.m */,
 			);
 			path = "GPA Calculator";
 			sourceTree = "<group>";
@@ -686,6 +737,7 @@
 			files = (
 				B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */,
 				B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */,
+				093A3E9F1CA2E3F000EC91FE /* KCBenchmarkCalculatorViewController.m in Sources */,
 				B6A339FB1C7C13D300F9CC9D /* CFAssetModel.m in Sources */,
 				B6D550911C55A8390091BF71 /* KCMainViewController.m in Sources */,
 				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,
@@ -693,26 +745,32 @@
 				B69EB4611C820BE8008BA05F /* PreflightManager.m in Sources */,
 				B6431F981C55BD4C00546B3A /* UIFont+KCAdditions.m in Sources */,
 				B60EB8481C0751FD00F3044A /* CFClient.m in Sources */,
+				093A3E9E1CA2E3F000EC91FE /* KCBenchmarkCaculatorTableViewController.m in Sources */,
 				B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */,
+				093A3EA21CA2E3F000EC91FE /* KCGPACalcViewController.m in Sources */,
 				B636C2CA1C07AB84003C1E44 /* CFModelFactory.m in Sources */,
+				093A3EA31CA2E3F000EC91FE /* KCBenchmarkLabel.m in Sources */,
 				B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */,
 				B636C2AE1C078786003C1E44 /* CFArticleModel.m in Sources */,
+				093A3E9C1CA2E3F000EC91FE /* KCAddClassViewController.m in Sources */,
 				B6DC35CC1C55BA1B00ED0ABC /* KCFeedCell.m in Sources */,
 				B69EB4651C82140F008BA05F /* UserRegistrationViewController.m in Sources */,
 				B6D5C2E41C06E92700699793 /* main.m in Sources */,
+				44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */,
+				093A3EA01CA2E3F000EC91FE /* KCClassItemsTableViewController.m in Sources */,
+				093A3E9D1CA2E3F000EC91FE /* KCAddItemTableViewController.m in Sources */,
 				B69EB46B1C8218E2008BA05F /* RegistrationNavigationController.m in Sources */,
-				09A0F4C11CA0004F00C34901 /* KCClassViewController.m in Sources */,
 				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
 				B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */,
 				B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */,
-				B6D5508E1C5584810091BF71 /* KCGPACalcViewController.m in Sources */,
 				B6FCB92A1C8420030072AFC8 /* KCNavigationController.m in Sources */,
 				B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */,
 				0980F5741C9C452D002355E8 /* CFClassModel.m in Sources */,
-				0980F56A1C9C41E3002355E8 /* KCAddClassViewController.m in Sources */,
 				09A0F4C51CA03C1A00C34901 /* UINavigationController+Advanced.m in Sources */,
+				093A3EA11CA2E3F000EC91FE /* KCClassViewController.m in Sources */,
 				B69EB4681C821426008BA05F /* SchoolRegistrationViewController.m in Sources */,
+				093A3E9B1CA2E3F000EC91FE /* KCClassItemTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

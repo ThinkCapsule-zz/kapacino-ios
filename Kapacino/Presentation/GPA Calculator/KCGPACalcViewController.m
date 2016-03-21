@@ -16,8 +16,6 @@
 
 @interface KCGPACalcViewController () <KCAddClassViewControllerDelegate>
 
-@property (nonatomic, strong) NSMutableArray *model;
-
 @end
 
 @implementation KCGPACalcViewController
@@ -28,8 +26,15 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.destinationViewController respondsToSelector:@selector(setDelegate:)]) {
-        [segue.destinationViewController setDelegate:self];
+    if ([segue.destinationViewController isKindOfClass:[KCAddClassViewController class]]) {
+        KCAddClassViewController *controller = segue.destinationViewController;
+        controller.delegate = self;
+    } else if ([segue.destinationViewController isKindOfClass:[KCClassViewController class]] && [sender isKindOfClass:[UITableViewCell class]]) {
+        KCClassViewController *controller = segue.destinationViewController;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        CFClassModel *model = [self.model objectAtIndex:indexPath.row];
+        controller.model = model;
+        controller.title = model.name;
     }
 }
 
@@ -51,6 +56,14 @@
         class3.name = @"STATS 2244";
         class3.mark = @30;
         
+        CFClassItem *item = [[CFClassItem alloc] init];
+        item.type = @"Assigment";
+        item.name = @"Map Assigment";
+        item.mark = @25;
+        item.weight = @50;
+        
+        class3.items = @[ item ];
+        
         [_model addObjectsFromArray:@[ class1, class2, class3 ]];
     }
     return _model;
@@ -64,24 +77,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CFClassModel *model = [self.model objectAtIndex:indexPath.row];
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ClassCell" forIndexPath:indexPath];
     cell.textLabel.text = model.name;
     cell.detailTextLabel.text = model.mark.stringValue;
-    
     return cell;
 }
-
-#pragma mark - Table view delegate
-
-
 
 #pragma mark - Add class view controller delegate
 
 - (void)addClassViewController:(KCAddClassViewController *)controller didCreateClassModel:(CFClassModel *)model {
     [self.model addObject:model];
     [self.tableView reloadData];
-    
     KCClassViewController *classViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ClassViewController"];
     [self.navigationController pushViewController:classViewController fromViewController:self animated:YES];
 }

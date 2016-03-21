@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CFClassModel.h"
+
 @interface KCClassViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UIView *emptyView;
+
+@property (strong, nonatomic)  CFClassModel *model;
 
 @end
