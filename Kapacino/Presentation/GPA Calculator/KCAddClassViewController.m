@@ -8,29 +8,13 @@
 
 #import "KCAddClassViewController.h"
 
-#import "KCInputCell.h"
-
-@interface KCAddClassViewController () <KCInputCellDelegate>
+@interface KCAddClassViewController ()
 
 @property (nonatomic, strong, readwrite) CFClassModel *model;
 
 @end
 
 @implementation KCAddClassViewController
-
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.title = @"Add Class";
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveClassAction:)];
-    }
-    return self;
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self.tableView registerClass:[KCInputCell class] forCellReuseIdentifier:@"InputCell"];
-}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -48,7 +32,7 @@
 
 #pragma mark - Actions
 
-- (void)saveClassAction:(UIBarButtonItem *)item {
+- (IBAction)doneAction:(UIBarButtonItem *)item {
     CFClassModel *model = self.model;
     
     if (!model.name.length || !model.prof.length) {
@@ -60,49 +44,12 @@
     }
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+- (IBAction)courseTextFieldEditingChanged:(UITextField *)textField {
+    self.model.name = textField.text;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    KCInputCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InputCell" forIndexPath:indexPath];
-    
-    switch (indexPath.row) {
-        case 0:
-            cell.textLabel.text = @"Course";
-            cell.textField.text = self.model.name;
-            break;
-        case 1:
-            cell.textLabel.text = @"Prof";
-            cell.textField.text = self.model.prof;
-            break;
-            
-        default:
-            break;
-    }
-    cell.delegate = self;
-    
-    return cell;
-}
-
-#pragma mark - Input cell delegate
-
-- (void)inputCell:(KCInputCell *)cell didChangeTextFieldText:(NSString *)text {
-    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
-    
-    switch (indexPath.row) {
-        case 0:
-            self.model.name = text;
-            break;
-        case 1:
-            self.model.prof = text;
-            break;
-            
-        default:
-            break;
-    }
+- (IBAction)profTextFieldEditingChanged:(UITextField *)textField {
+    self.model.prof = textField.text;
 }
 
 @end

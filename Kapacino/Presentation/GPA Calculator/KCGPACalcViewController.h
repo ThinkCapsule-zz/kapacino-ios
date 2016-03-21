@@ -6,8 +6,8 @@
 //  Copyright © 2016 Alan Hsu. All rights reserved.
 //
 
-#import "KCTableViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface KCGPACalcViewController : KCTableViewController
+@interface KCGPACalcViewController : UITableViewController
 
 @end

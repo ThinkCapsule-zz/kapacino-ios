@@ -67,9 +67,7 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
     
     /* GPA Calc */
     if (!_gpaCalcVC) {
-        KCGPACalcViewController *gpaCalcVC = [[KCGPACalcViewController alloc] init];
-        _gpaCalcVC = [[KCNavigationController alloc] initWithRootViewController:gpaCalcVC];
-        _gpaCalcVC.tabBarItem.image = [UIImage imageNamed:@"tab_bar_calc"];
+        _gpaCalcVC = [[UIStoryboard storyboardWithName:@"GPA" bundle:nil] instantiateInitialViewController];
     }
     return _gpaCalcVC;
 }

@@ -6,17 +6,20 @@
 //  Copyright © 2016 Alan Hsu. All rights reserved.
 //
 
-#import "KCTableViewController.h"
+#import <UIKit/UIKit.h>
 
 #import "CFClassModel.h"
 
 @protocol KCAddClassViewControllerDelegate;
 
-@interface KCAddClassViewController : KCTableViewController
+@interface KCAddClassViewController : UITableViewController
 
 @property (nonatomic, weak) id<KCAddClassViewControllerDelegate> delegate;
 
 @property (nonatomic, strong, readonly) CFClassModel *model;
+
+@property (nonatomic, weak) IBOutlet UITextField *courseTextField;
+@property (nonatomic, weak) IBOutlet UITextField *profTextField;
 
 @end
 

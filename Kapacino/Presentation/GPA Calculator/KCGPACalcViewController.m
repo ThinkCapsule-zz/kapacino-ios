@@ -7,11 +7,12 @@
 //
 
 #import "KCGPACalcViewController.h"
+#import "KCClassViewController.h"
 #import "KCAddClassViewController.h"
 
-#import "KCClassCell.h"
-
 #import "CFClassModel.h"
+
+#import "UINavigationController+Advanced.h"
 
 @interface KCGPACalcViewController () <KCAddClassViewControllerDelegate>
 
@@ -21,23 +22,15 @@
 
 @implementation KCGPACalcViewController
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.title = @"GPA Calculator";
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addClassAction:)];
-    }
-    return self;
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self.tableView registerClass:[KCClassCell class] forCellReuseIdentifier:@"ClassCell"];
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.destinationViewController respondsToSelector:@selector(setDelegate:)]) {
+        [segue.destinationViewController setDelegate:self];
+    }
 }
 
 #pragma mark - Custom accessors
@@ -61,14 +54,6 @@
         [_model addObjectsFromArray:@[ class1, class2, class3 ]];
     }
     return _model;
-}
-
-#pragma mark - Actions
-
-- (void)addClassAction:(UIBarButtonItem *)item {
-    KCAddClassViewController *controller = [[KCAddClassViewController alloc] init];
-    controller.delegate = self;
-    [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma mark - Table view data source
@@ -96,7 +81,9 @@
 - (void)addClassViewController:(KCAddClassViewController *)controller didCreateClassModel:(CFClassModel *)model {
     [self.model addObject:model];
     [self.tableView reloadData];
-    [self.navigationController popToViewController:self animated:YES];
+    
+    KCClassViewController *classViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ClassViewController"];
+    [self.navigationController pushViewController:classViewController fromViewController:self animated:YES];
 }
 
 @end
