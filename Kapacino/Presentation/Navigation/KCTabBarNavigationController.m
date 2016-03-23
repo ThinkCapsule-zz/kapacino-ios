@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
 
 @property (nonatomic, strong) KCNavigationController *mainVC;
 @property (nonatomic, strong) KCNavigationController *gpaCalcVC;
+@property (nonatomic, strong) KCNavigationController *profileVC;
 @property (nonatomic, strong) KCSettingsViewController *settingsVC;
 
 
@@ -45,7 +46,7 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
     [self.navigationController.navigationBar setBarTintColor:[UIColor kc_ApplicationColor]];
     self.tabBar.tintColor = [UIColor kc_ApplicationColor];
     
-    [self setViewControllers:@[self.mainVC, self.gpaCalcVC, self.settingsVC]];
+    [self setViewControllers:@[self.mainVC, self.profileVC, self.gpaCalcVC, self.settingsVC]];
 
 }
 
@@ -61,6 +62,15 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
     }
     return _mainVC;
     
+}
+
+- (KCNavigationController *)profileVC {
+    
+    /* Profile */
+    if (!_profileVC) {
+        _profileVC = [[UIStoryboard storyboardWithName:@"Profile" bundle:nil] instantiateInitialViewController];
+    }
+    return _profileVC;
 }
 
 - (KCNavigationController *)gpaCalcVC {
