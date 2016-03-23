@@ -27,15 +27,21 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController isKindOfClass:[KCAddClassViewController class]]) {
-        KCAddClassViewController *controller = segue.destinationViewController;
-        controller.delegate = self;
+        [self prepareForSegueWithAddClassViewController:segue.destinationViewController];
     } else if ([segue.destinationViewController isKindOfClass:[KCClassViewController class]] && [sender isKindOfClass:[UITableViewCell class]]) {
-        KCClassViewController *controller = segue.destinationViewController;
-        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
-        CFClassModel *model = [self.model objectAtIndex:indexPath.row];
-        controller.model = model;
-        controller.title = model.name;
+        [self prepareForSegueWithClassViewController:segue.destinationViewController selectedCell:sender];
     }
+}
+
+- (void)prepareForSegueWithAddClassViewController:(KCAddClassViewController *)controller {
+    controller.delegate = self;
+}
+
+- (void)prepareForSegueWithClassViewController:(KCClassViewController *)controller selectedCell:(UITableViewCell *)cell {
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    CFClassModel *model = [self.model objectAtIndex:indexPath.row];
+    controller.model = model;
+    controller.title = model.name;
 }
 
 #pragma mark - Custom accessors
