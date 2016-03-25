@@ -94,7 +94,10 @@
 - (void)addClassViewController:(KCAddClassViewController *)controller didCreateClassModel:(CFClassModel *)model {
     [self.model addObject:model];
     [self.tableView reloadData];
+    
     KCClassViewController *classViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ClassViewController"];
+    classViewController.model = model;
+    
     [self.navigationController pushViewController:classViewController fromViewController:self animated:YES];
 }
 
