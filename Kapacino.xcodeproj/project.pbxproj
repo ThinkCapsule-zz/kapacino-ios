@@ -20,6 +20,8 @@
 		0980F5741C9C452D002355E8 /* CFClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980F5731C9C452D002355E8 /* CFClassModel.m */; };
 		09A0F4BE1C9FEEC900C34901 /* GPA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A0F4BD1C9FEEC900C34901 /* GPA.storyboard */; };
 		09A0F4C51CA03C1A00C34901 /* UINavigationController+Advanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A0F4C41CA03C1A00C34901 /* UINavigationController+Advanced.m */; };
+		443C48381CAD3A6A004436CD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443C48371CAD3A6A004436CD /* Login.storyboard */; };
+		443C483B1CAD487D004436CD /* KCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443C483A1CAD487D004436CD /* KCLoginViewController.m */; };
 		44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */; };
 		B60EB8481C0751FD00F3044A /* CFClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8471C0751FD00F3044A /* CFClient.m */; };
 		B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB84D1C0754FE00F3044A /* CFDataSource.m */; };
@@ -105,6 +107,9 @@
 		09A0F4BD1C9FEEC900C34901 /* GPA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GPA.storyboard; sourceTree = "<group>"; };
 		09A0F4C31CA03C1A00C34901 /* UINavigationController+Advanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Advanced.h"; sourceTree = "<group>"; };
 		09A0F4C41CA03C1A00C34901 /* UINavigationController+Advanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Advanced.m"; sourceTree = "<group>"; };
+		443C48371CAD3A6A004436CD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		443C48391CAD487D004436CD /* KCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLoginViewController.h; sourceTree = "<group>"; };
+		443C483A1CAD487D004436CD /* KCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLoginViewController.m; sourceTree = "<group>"; };
 		44DA4DA41CA18DD700CD4A8A /* CFClassItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClassItem.h; sourceTree = "<group>"; };
 		44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClassItem.m; sourceTree = "<group>"; };
 		B60EB8461C0751FD00F3044A /* CFClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClient.h; sourceTree = "<group>"; };
@@ -246,6 +251,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		443C48361CAD3A4F004436CD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				443C48371CAD3A6A004436CD /* Login.storyboard */,
+				443C48391CAD487D004436CD /* KCLoginViewController.h */,
+				443C483A1CAD487D004436CD /* KCLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		B60EB83E1C07513100F3044A /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +285,7 @@
 		B60EB8401C07513100F3044A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				443C48361CAD3A4F004436CD /* Login */,
 				B69EB4621C8213C2008BA05F /* Onboarding */,
 				B6C9BD0C1C74DACA00A2E52C /* Article Details */,
 				B6D550871C5584590091BF71 /* GPA Calculator */,
@@ -655,6 +671,7 @@
 				B6431F8B1C55BCEE00546B3A /* SF-UI-Text-Heavy.otf in Resources */,
 				B6431F8C1C55BCEE00546B3A /* SF-UI-Text-HeavyItalic.otf in Resources */,
 				B6431F8A1C55BCEE00546B3A /* SF-UI-Text-BoldItalic.otf in Resources */,
+				443C48381CAD3A6A004436CD /* Login.storyboard in Resources */,
 				B6431F8D1C55BCEE00546B3A /* SF-UI-Text-Light.otf in Resources */,
 				B6431F8E1C55BCEE00546B3A /* SF-UI-Text-LightItalic.otf in Resources */,
 				B6431F8F1C55BCEE00546B3A /* SF-UI-Text-Medium.otf in Resources */,
@@ -738,6 +755,7 @@
 				B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */,
 				B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */,
 				093A3E9F1CA2E3F000EC91FE /* KCBenchmarkCalculatorViewController.m in Sources */,
+				443C483B1CAD487D004436CD /* KCLoginViewController.m in Sources */,
 				B6A339FB1C7C13D300F9CC9D /* CFAssetModel.m in Sources */,
 				B6D550911C55A8390091BF71 /* KCMainViewController.m in Sources */,
 				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,

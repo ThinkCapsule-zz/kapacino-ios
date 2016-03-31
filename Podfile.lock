@@ -20,6 +20,17 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Bolts (1.7.0):
+    - Bolts/AppLinks (= 1.7.0)
+    - Bolts/Tasks (= 1.7.0)
+  - Bolts/AppLinks (1.7.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.7.0)
+  - FBSDKCoreKit (4.10.1):
+    - Bolts (~> 1.5)
+  - FBSDKLoginKit (4.10.1):
+    - FBSDKCoreKit
+  - Firebase (2.5.1)
   - HexColors (3.1.1)
   - INSPullToRefresh (1.1.4)
   - KeepLayout (1.6.0)
@@ -32,6 +43,9 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 2.6.3)
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - Firebase
   - HexColors (= 3.1.1)
   - INSPullToRefresh
   - KeepLayout (from `https://github.com/iMartinKiss/KeepLayout.git`)
@@ -49,6 +63,10 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  FBSDKCoreKit: d2aaed5e9ab7d8d6301c533376a1fbff1cf3deb5
+  FBSDKLoginKit: 699ff169080e3072de4b9b0faca90bf23dc36deb
+  Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
   HexColors: d837cebe691e52c867d401ecd2374111add5445f
   INSPullToRefresh: a27f7faf022f858f02a7680943e11a1f7ce3430a
   KeepLayout: d85a52300a23ba1504ba330c5200bb01ba3baeb0
