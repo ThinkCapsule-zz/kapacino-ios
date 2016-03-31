@@ -16,10 +16,10 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
-	<key>URL types</key>
+	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>URL Schemes</key>
+			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb1722551301356620</string>
 			</array>
@@ -31,6 +31,7 @@
 	<array>
 		<string>fbapi</string>
 		<string>fbauth</string>
+		<string>fbauth2</string>
 	</array>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
