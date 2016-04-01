@@ -20,9 +20,19 @@
 		0980F5741C9C452D002355E8 /* CFClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980F5731C9C452D002355E8 /* CFClassModel.m */; };
 		09A0F4BE1C9FEEC900C34901 /* GPA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A0F4BD1C9FEEC900C34901 /* GPA.storyboard */; };
 		09A0F4C51CA03C1A00C34901 /* UINavigationController+Advanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A0F4C41CA03C1A00C34901 /* UINavigationController+Advanced.m */; };
+		443AC22F1CAE6939007EBF23 /* User Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443AC22E1CAE6939007EBF23 /* User Information.storyboard */; };
 		443C48381CAD3A6A004436CD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443C48371CAD3A6A004436CD /* Login.storyboard */; };
 		443C483B1CAD487D004436CD /* KCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443C483A1CAD487D004436CD /* KCLoginViewController.m */; };
 		44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */; };
+		44E8B8F11CAE7A590081DA30 /* KCUserInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B8F01CAE7A590081DA30 /* KCUserInformationViewController.m */; };
+		44E8B8F51CAE803B0081DA30 /* KCUserInfoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B8F41CAE803B0081DA30 /* KCUserInfoLabel.m */; };
+		44E8B8F81CAEA6350081DA30 /* KCSchoolInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B8F71CAEA6350081DA30 /* KCSchoolInformationViewController.m */; };
+		44E8B8FF1CAEA73B0081DA30 /* KCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B8FE1CAEA73B0081DA30 /* KCViewController.m */; };
+		44E8B9071CAEB4D20081DA30 /* KCUserInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B9061CAEB4D20081DA30 /* KCUserInfoTableViewCell.m */; };
+		44E8B90A1CAEB7EE0081DA30 /* KCUserInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B9091CAEB7EE0081DA30 /* KCUserInfoTableViewController.m */; };
+		44E8B9101CAEC0CB0081DA30 /* KCPikerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B90F1CAEC0CB0081DA30 /* KCPikerViewController.m */; };
+		44E8B9131CAEC41B0081DA30 /* KCPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B9121CAEC41B0081DA30 /* KCPickerTableViewController.m */; };
+		44E8B9161CAEC5E20081DA30 /* KCPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B9151CAEC5E20081DA30 /* KCPickerTableViewCell.m */; };
 		B60EB8481C0751FD00F3044A /* CFClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8471C0751FD00F3044A /* CFClient.m */; };
 		B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB84D1C0754FE00F3044A /* CFDataSource.m */; };
 		B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8501C07552000F3044A /* CFDataSourceConstants.m */; };
@@ -107,11 +117,30 @@
 		09A0F4BD1C9FEEC900C34901 /* GPA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GPA.storyboard; sourceTree = "<group>"; };
 		09A0F4C31CA03C1A00C34901 /* UINavigationController+Advanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Advanced.h"; sourceTree = "<group>"; };
 		09A0F4C41CA03C1A00C34901 /* UINavigationController+Advanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Advanced.m"; sourceTree = "<group>"; };
+		443AC22E1CAE6939007EBF23 /* User Information.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "User Information.storyboard"; sourceTree = "<group>"; };
 		443C48371CAD3A6A004436CD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		443C48391CAD487D004436CD /* KCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLoginViewController.h; sourceTree = "<group>"; };
 		443C483A1CAD487D004436CD /* KCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLoginViewController.m; sourceTree = "<group>"; };
 		44DA4DA41CA18DD700CD4A8A /* CFClassItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClassItem.h; sourceTree = "<group>"; };
 		44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClassItem.m; sourceTree = "<group>"; };
+		44E8B8EF1CAE7A590081DA30 /* KCUserInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCUserInformationViewController.h; sourceTree = "<group>"; };
+		44E8B8F01CAE7A590081DA30 /* KCUserInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCUserInformationViewController.m; sourceTree = "<group>"; };
+		44E8B8F31CAE803B0081DA30 /* KCUserInfoLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCUserInfoLabel.h; sourceTree = "<group>"; };
+		44E8B8F41CAE803B0081DA30 /* KCUserInfoLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCUserInfoLabel.m; sourceTree = "<group>"; };
+		44E8B8F61CAEA6350081DA30 /* KCSchoolInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSchoolInformationViewController.h; sourceTree = "<group>"; };
+		44E8B8F71CAEA6350081DA30 /* KCSchoolInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSchoolInformationViewController.m; sourceTree = "<group>"; };
+		44E8B8FD1CAEA73B0081DA30 /* KCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCViewController.h; sourceTree = "<group>"; };
+		44E8B8FE1CAEA73B0081DA30 /* KCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCViewController.m; sourceTree = "<group>"; };
+		44E8B9051CAEB4D20081DA30 /* KCUserInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCUserInfoTableViewCell.h; sourceTree = "<group>"; };
+		44E8B9061CAEB4D20081DA30 /* KCUserInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCUserInfoTableViewCell.m; sourceTree = "<group>"; };
+		44E8B9081CAEB7EE0081DA30 /* KCUserInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCUserInfoTableViewController.h; sourceTree = "<group>"; };
+		44E8B9091CAEB7EE0081DA30 /* KCUserInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCUserInfoTableViewController.m; sourceTree = "<group>"; };
+		44E8B90E1CAEC0CB0081DA30 /* KCPikerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCPikerViewController.h; sourceTree = "<group>"; };
+		44E8B90F1CAEC0CB0081DA30 /* KCPikerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCPikerViewController.m; sourceTree = "<group>"; };
+		44E8B9111CAEC41B0081DA30 /* KCPickerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCPickerTableViewController.h; sourceTree = "<group>"; };
+		44E8B9121CAEC41B0081DA30 /* KCPickerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCPickerTableViewController.m; sourceTree = "<group>"; };
+		44E8B9141CAEC5E20081DA30 /* KCPickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCPickerTableViewCell.h; sourceTree = "<group>"; };
+		44E8B9151CAEC5E20081DA30 /* KCPickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCPickerTableViewCell.m; sourceTree = "<group>"; };
 		B60EB8461C0751FD00F3044A /* CFClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClient.h; sourceTree = "<group>"; };
 		B60EB8471C0751FD00F3044A /* CFClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClient.m; sourceTree = "<group>"; };
 		B60EB84A1C07527600F3044A /* CFContentType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFContentType.h; sourceTree = "<group>"; };
@@ -251,6 +280,25 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		443AC22D1CAE67D5007EBF23 /* User Infomation */ = {
+			isa = PBXGroup;
+			children = (
+				44E8B8F21CAE800B0081DA30 /* Views */,
+				443AC22E1CAE6939007EBF23 /* User Information.storyboard */,
+				44E8B8EF1CAE7A590081DA30 /* KCUserInformationViewController.h */,
+				44E8B8F01CAE7A590081DA30 /* KCUserInformationViewController.m */,
+				44E8B8F61CAEA6350081DA30 /* KCSchoolInformationViewController.h */,
+				44E8B8F71CAEA6350081DA30 /* KCSchoolInformationViewController.m */,
+				44E8B9081CAEB7EE0081DA30 /* KCUserInfoTableViewController.h */,
+				44E8B9091CAEB7EE0081DA30 /* KCUserInfoTableViewController.m */,
+				44E8B90E1CAEC0CB0081DA30 /* KCPikerViewController.h */,
+				44E8B90F1CAEC0CB0081DA30 /* KCPikerViewController.m */,
+				44E8B9111CAEC41B0081DA30 /* KCPickerTableViewController.h */,
+				44E8B9121CAEC41B0081DA30 /* KCPickerTableViewController.m */,
+			);
+			path = "User Infomation";
+			sourceTree = "<group>";
+		};
 		443C48361CAD3A4F004436CD /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +307,28 @@
 				443C483A1CAD487D004436CD /* KCLoginViewController.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		44E8B8F21CAE800B0081DA30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44E8B8F31CAE803B0081DA30 /* KCUserInfoLabel.h */,
+				44E8B8F41CAE803B0081DA30 /* KCUserInfoLabel.m */,
+				44E8B9051CAEB4D20081DA30 /* KCUserInfoTableViewCell.h */,
+				44E8B9061CAEB4D20081DA30 /* KCUserInfoTableViewCell.m */,
+				44E8B9141CAEC5E20081DA30 /* KCPickerTableViewCell.h */,
+				44E8B9151CAEC5E20081DA30 /* KCPickerTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44E8B8F91CAEA6EC0081DA30 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				44E8B8FD1CAEA73B0081DA30 /* KCViewController.h */,
+				44E8B8FE1CAEA73B0081DA30 /* KCViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		B60EB83E1C07513100F3044A /* Data */ = {
@@ -285,6 +355,8 @@
 		B60EB8401C07513100F3044A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				44E8B8F91CAEA6EC0081DA30 /* Base */,
+				443AC22D1CAE67D5007EBF23 /* User Infomation */,
 				443C48361CAD3A4F004436CD /* Login */,
 				B69EB4621C8213C2008BA05F /* Onboarding */,
 				B6C9BD0C1C74DACA00A2E52C /* Article Details */,
@@ -674,6 +746,7 @@
 				443C48381CAD3A6A004436CD /* Login.storyboard in Resources */,
 				B6431F8D1C55BCEE00546B3A /* SF-UI-Text-Light.otf in Resources */,
 				B6431F8E1C55BCEE00546B3A /* SF-UI-Text-LightItalic.otf in Resources */,
+				443AC22F1CAE6939007EBF23 /* User Information.storyboard in Resources */,
 				B6431F8F1C55BCEE00546B3A /* SF-UI-Text-Medium.otf in Resources */,
 				B6D5C2ED1C06E92700699793 /* Main.storyboard in Resources */,
 				B6431F941C55BCEE00546B3A /* SF-UI-Text-SemiboldItalic.otf in Resources */,
@@ -761,33 +834,42 @@
 				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,
 				B69EB46E1C8222CA008BA05F /* UIColor+KCAdditions.m in Sources */,
 				B69EB4611C820BE8008BA05F /* PreflightManager.m in Sources */,
+				44E8B8FF1CAEA73B0081DA30 /* KCViewController.m in Sources */,
 				B6431F981C55BD4C00546B3A /* UIFont+KCAdditions.m in Sources */,
 				B60EB8481C0751FD00F3044A /* CFClient.m in Sources */,
+				44E8B90A1CAEB7EE0081DA30 /* KCUserInfoTableViewController.m in Sources */,
 				093A3E9E1CA2E3F000EC91FE /* KCBenchmarkCaculatorTableViewController.m in Sources */,
 				B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */,
+				44E8B9161CAEC5E20081DA30 /* KCPickerTableViewCell.m in Sources */,
 				093A3EA21CA2E3F000EC91FE /* KCGPACalcViewController.m in Sources */,
 				B636C2CA1C07AB84003C1E44 /* CFModelFactory.m in Sources */,
 				093A3EA31CA2E3F000EC91FE /* KCBenchmarkLabel.m in Sources */,
 				B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */,
+				44E8B9071CAEB4D20081DA30 /* KCUserInfoTableViewCell.m in Sources */,
 				B636C2AE1C078786003C1E44 /* CFArticleModel.m in Sources */,
 				093A3E9C1CA2E3F000EC91FE /* KCAddClassViewController.m in Sources */,
 				B6DC35CC1C55BA1B00ED0ABC /* KCFeedCell.m in Sources */,
+				44E8B8F11CAE7A590081DA30 /* KCUserInformationViewController.m in Sources */,
 				B69EB4651C82140F008BA05F /* UserRegistrationViewController.m in Sources */,
 				B6D5C2E41C06E92700699793 /* main.m in Sources */,
 				44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */,
 				093A3EA01CA2E3F000EC91FE /* KCClassItemsTableViewController.m in Sources */,
+				44E8B9131CAEC41B0081DA30 /* KCPickerTableViewController.m in Sources */,
 				093A3E9D1CA2E3F000EC91FE /* KCAddItemTableViewController.m in Sources */,
 				B69EB46B1C8218E2008BA05F /* RegistrationNavigationController.m in Sources */,
+				44E8B8F51CAE803B0081DA30 /* KCUserInfoLabel.m in Sources */,
 				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
 				B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */,
 				B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */,
 				B6FCB92A1C8420030072AFC8 /* KCNavigationController.m in Sources */,
+				44E8B8F81CAEA6350081DA30 /* KCSchoolInformationViewController.m in Sources */,
 				B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */,
 				0980F5741C9C452D002355E8 /* CFClassModel.m in Sources */,
 				09A0F4C51CA03C1A00C34901 /* UINavigationController+Advanced.m in Sources */,
 				093A3EA11CA2E3F000EC91FE /* KCClassViewController.m in Sources */,
 				B69EB4681C821426008BA05F /* SchoolRegistrationViewController.m in Sources */,
+				44E8B9101CAEC0CB0081DA30 /* KCPikerViewController.m in Sources */,
 				093A3E9B1CA2E3F000EC91FE /* KCClassItemTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
