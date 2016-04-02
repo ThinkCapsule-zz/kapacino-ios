@@ -8,8 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol KCPickerTableViewControllerDelegate;
+
 @interface KCPickerTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSArray *items;
+@property (strong, nonatomic) NSString *categoryName;
+
+@property (nonatomic, weak) id<KCPickerTableViewControllerDelegate> delegate;
 
 @end
+
+@protocol KCPickerTableViewControllerDelegate <NSObject>
+
+@optional
+
+- (void)pickerTableViewController:(KCPickerTableViewController *)controller didSelectValue:(NSString *)value forKey:(NSString *)key;
+
+@end
+

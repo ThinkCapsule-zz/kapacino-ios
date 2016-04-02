@@ -23,6 +23,8 @@
 		443AC22F1CAE6939007EBF23 /* User Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443AC22E1CAE6939007EBF23 /* User Information.storyboard */; };
 		443C48381CAD3A6A004436CD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443C48371CAD3A6A004436CD /* Login.storyboard */; };
 		443C483B1CAD487D004436CD /* KCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443C483A1CAD487D004436CD /* KCLoginViewController.m */; };
+		444F7F7F1CB00148003F7D9B /* KCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7F7E1CB00148003F7D9B /* KCUser.m */; };
+		444F7F861CB012C9003F7D9B /* KCAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7F851CB012C9003F7D9B /* KCAPIClient.m */; };
 		44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */; };
 		44E8B8F11CAE7A590081DA30 /* KCUserInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B8F01CAE7A590081DA30 /* KCUserInformationViewController.m */; };
 		44E8B8F51CAE803B0081DA30 /* KCUserInfoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B8F41CAE803B0081DA30 /* KCUserInfoLabel.m */; };
@@ -121,6 +123,10 @@
 		443C48371CAD3A6A004436CD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		443C48391CAD487D004436CD /* KCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLoginViewController.h; sourceTree = "<group>"; };
 		443C483A1CAD487D004436CD /* KCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLoginViewController.m; sourceTree = "<group>"; };
+		444F7F7D1CB00148003F7D9B /* KCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCUser.h; sourceTree = "<group>"; };
+		444F7F7E1CB00148003F7D9B /* KCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCUser.m; sourceTree = "<group>"; };
+		444F7F841CB012C9003F7D9B /* KCAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAPIClient.h; sourceTree = "<group>"; };
+		444F7F851CB012C9003F7D9B /* KCAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAPIClient.m; sourceTree = "<group>"; };
 		44DA4DA41CA18DD700CD4A8A /* CFClassItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClassItem.h; sourceTree = "<group>"; };
 		44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClassItem.m; sourceTree = "<group>"; };
 		44E8B8EF1CAE7A590081DA30 /* KCUserInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCUserInformationViewController.h; sourceTree = "<group>"; };
@@ -309,6 +315,24 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		444F7F7C1CB00131003F7D9B /* KCModels */ = {
+			isa = PBXGroup;
+			children = (
+				444F7F7D1CB00148003F7D9B /* KCUser.h */,
+				444F7F7E1CB00148003F7D9B /* KCUser.m */,
+			);
+			path = KCModels;
+			sourceTree = "<group>";
+		};
+		444F7F831CB011EE003F7D9B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				444F7F841CB012C9003F7D9B /* KCAPIClient.h */,
+				444F7F851CB012C9003F7D9B /* KCAPIClient.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		44E8B8F21CAE800B0081DA30 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +358,7 @@
 		B60EB83E1C07513100F3044A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				444F7F7C1CB00131003F7D9B /* KCModels */,
 				B60EB84B1C0754ED00F3044A /* CFDataSource */,
 				B60EB8441C0751EA00F3044A /* CFClient */,
 				B60EB8451C0751EA00F3044A /* CFModels */,
@@ -567,6 +592,7 @@
 		B6D5C2E11C06E92700699793 /* Kapacino */ = {
 			isa = PBXGroup;
 			children = (
+				444F7F831CB011EE003F7D9B /* Networking */,
 				B6431F7E1C55BCCC00546B3A /* Resources */,
 				B6D5C2E51C06E92700699793 /* AppDelegate.h */,
 				B6D5C2E61C06E92700699793 /* AppDelegate.m */,
@@ -826,6 +852,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */,
+				444F7F7F1CB00148003F7D9B /* KCUser.m in Sources */,
 				B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */,
 				093A3E9F1CA2E3F000EC91FE /* KCBenchmarkCalculatorViewController.m in Sources */,
 				443C483B1CAD487D004436CD /* KCLoginViewController.m in Sources */,
@@ -870,6 +897,7 @@
 				093A3EA11CA2E3F000EC91FE /* KCClassViewController.m in Sources */,
 				B69EB4681C821426008BA05F /* SchoolRegistrationViewController.m in Sources */,
 				44E8B9101CAEC0CB0081DA30 /* KCPikerViewController.m in Sources */,
+				444F7F861CB012C9003F7D9B /* KCAPIClient.m in Sources */,
 				093A3E9B1CA2E3F000EC91FE /* KCClassItemTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

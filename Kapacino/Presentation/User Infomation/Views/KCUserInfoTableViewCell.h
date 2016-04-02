@@ -13,6 +13,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *title;
 @property (strong, nonatomic) IBOutlet UITextField *subTitle;
 
-
++ (UINib *)nib;
 
 @end

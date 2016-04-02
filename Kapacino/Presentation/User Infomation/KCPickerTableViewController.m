@@ -37,14 +37,23 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     KCPickerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pickerCell" forIndexPath:indexPath];
     cell.title.text = [self.items objectAtIndex:indexPath.row];
+    if (indexPath != self.selectedRowIndexPath) {
+        cell.backgroundColor = [UIColor whiteColor];
+        cell.title .textColor = [UIColor lightGrayColor];
+        cell.titleLeftConstaint.constant = 50;
+    } else {
+        cell.backgroundColor = [UIColor kc_ApplicationColor];
+        cell.title .textColor = [UIColor whiteColor];
+        cell.titleLeftConstaint.constant = 15;
+    }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    KCPickerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pickerCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor kc_ApplicationColor];
-    cell.title .textColor = [UIColor whiteColor];
-    cell.titleLeftConstaint.constant = 15;
+    KCPickerTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if ([self.delegate respondsToSelector:@selector(pickerTableViewController:didSelectValue:forKey:)]) {
+        [self.delegate pickerTableViewController:self didSelectValue:cell.title.text forKey:self.categoryName];
+    }
     self.selectedRowIndexPath = indexPath;
     [tableView reloadData];
 }

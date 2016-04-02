@@ -41,10 +41,10 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-//    UIViewController *loginVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
-//    [self presentViewController:loginVC animated:YES completion:nil];
-    UIViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateInitialViewController];
-    [self presentViewController:userInfoVC animated:YES completion:nil];
+    UIViewController *loginVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
+    [self presentViewController:loginVC animated:YES completion:nil];
+//    UIViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateInitialViewController];
+//    [self presentViewController:userInfoVC animated:YES completion:nil];
 
 }
 

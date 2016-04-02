@@ -7,10 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KCPickerTableViewController.h"
+
+@protocol KCPickerViewControllerDelegate;
 
 @interface KCPikerViewController : UIViewController
 
 @property (strong, nonatomic) NSString *categoryName;
 @property (strong, nonatomic) NSArray *categoryItems;
+@property (strong, nonatomic) KCPickerTableViewController *pickerTableView;
+
+@property (nonatomic, weak) id<KCPickerViewControllerDelegate> delegate;
+
+@end
+
+@protocol KCPickerViewControllerDelegate <NSObject>
+
 
 @end

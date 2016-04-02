@@ -7,12 +7,10 @@
 //
 
 #import "KCPikerViewController.h"
-#import "KCPickerTableViewController.h"
 
 @interface KCPikerViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *categoryNameLabel;
-@property (strong, nonatomic) KCPickerTableViewController *pickerTableView;
 
 @end
 
@@ -27,6 +25,8 @@
     if ([segue.destinationViewController isKindOfClass:[KCPickerTableViewController class]]) {
         self.pickerTableView = segue.destinationViewController;
         self.pickerTableView.items = self.categoryItems;
+        self.pickerTableView.categoryName = self.categoryName;
+        self.pickerTableView.delegate = self.delegate;
     }
 }
 

@@ -10,6 +10,7 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <Firebase/Firebase.h>
+#import "KCAPIClient.h"
 
 @interface KCLoginViewController ()
 
@@ -23,7 +24,6 @@
 
 - (IBAction)facebookButtonAction:(id)sender {
     
-    Firebase *ref = [[Firebase alloc] initWithUrl:@"luminous-inferno-6931.firebaseio.com"];
     FBSDKLoginManager *facebookLogin = [[FBSDKLoginManager alloc] init];
     NSArray *permissions = @[ @"user_about_me", @"user_relationships", @"user_birthday", @"user_location", @"email" ];
     [facebookLogin logInWithReadPermissions:permissions fromViewController:self handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
@@ -32,19 +32,14 @@
         } else if (result.isCancelled) {
             NSLog(@"Facebook login got cancelled.");
         } else {
-            [ref authWithOAuthProvider:@"facebook" token:result.token.tokenString  withCompletionBlock:^(NSError *error, FAuthData *authData) {
-                if (error) {
-                    NSLog(@"Login failed. %@", error);
-                } else {
-                    NSDictionary *alanisawesome = @{ @"full_name" : @"Alan Turing", @"date_of_birth": @"June 23, 1912" };
-                    NSDictionary *gracehop = @{ @"full_name" : @"Grace Hopper", @"date_of_birth": @"December 9, 1906" };
+            [[KCAPIClient sharedClient] loginUserWithProvider:@"facebook" token:result.token.tokenString success:^(FAuthData *authData) {
+                [[KCAPIClient sharedClient] getUserByID:authData.uid success:^(NSDictionary *userData) {
                     
-                    Firebase *usersRef = [ref childByAppendingPath: @"users"];
-                    NSDictionary *users = @{ @"alanisawesome": alanisawesome, @"gracehop": gracehop };
+                } failure:^(NSError *error) {
                     
-                    [usersRef setValue: users];
-                }
-            }];
+                }];
+            } failure:nil];
+            
         }
     }];
 }

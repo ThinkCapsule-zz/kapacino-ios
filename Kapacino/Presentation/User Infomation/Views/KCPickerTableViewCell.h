@@ -10,7 +10,6 @@
 
 @interface KCPickerTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *title;
-@property (nonatomic) BOOL cellSelected;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLeftConstaint;
 
 @end

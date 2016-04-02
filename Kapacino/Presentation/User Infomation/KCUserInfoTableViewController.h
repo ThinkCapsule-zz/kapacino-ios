@@ -10,4 +10,6 @@
 
 @interface KCUserInfoTableViewController : UITableViewController
 
+@property (strong, nonatomic) NSMutableDictionary *userInfo;
+
 @end
