@@ -19,7 +19,6 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-    self.userInfo = [NSMutableDictionary dictionaryWithDictionary:@{ @"Country" : @"Canada", @"Gender" : @"Female"}];
 }
 
 - (NSMutableDictionary *)userInfo {
@@ -56,6 +55,9 @@
         NSArray *items = @[ @"New-York", @"Toronto", @"London", @"L.A.", @"Ottava", @"Liverpool" ];
         controller.categoryItems = items;
     }
+}
+- (IBAction)nameTextFieldEditingChanged:(UITextField *)sender {
+    [self.userInfo setObject:sender.text forKey:@"Name"];
 }
 
 - (void)pickerTableViewController:(KCPickerTableViewController *)controller didSelectValue:(NSString *)value forKey:(NSString *)key {

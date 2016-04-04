@@ -11,4 +11,6 @@
 
 @interface KCUserInformationViewController : KCViewController
 
+@property (strong, nonatomic) NSMutableDictionary *userInfo;
+
 @end

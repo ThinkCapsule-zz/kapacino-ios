@@ -15,6 +15,7 @@
 #import "KCGPACalcViewController.h"
 #import "PreflightManager.h"
 #import "KCNavigationController.h"
+#import "KCAPIClient.h"
 
 typedef NS_ENUM(NSInteger, KCTabBarItems) {
     KCTabBarItems_Home = 0,
@@ -41,11 +42,10 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    UIViewController *loginVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
-    [self presentViewController:loginVC animated:YES completion:nil];
-//    UIViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateInitialViewController];
-//    [self presentViewController:userInfoVC animated:YES completion:nil];
-
+//    if (![KCAPIClient sharedClient].currentUserID) {
+        UIViewController *loginVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
+        [self presentViewController:loginVC animated:YES completion:nil];
+    //}
 }
 
 - (void)viewDidLoad {

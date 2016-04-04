@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KCViewController.h"
 
-@interface KCLoginViewController : UIViewController
+@interface KCLoginViewController : KCViewController
 
 @end

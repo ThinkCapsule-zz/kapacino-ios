@@ -21,7 +21,10 @@ static KCAPIClient *__sharedClient = nil;
 
 @end
 
+
 @implementation KCAPIClient
+
+@synthesize currentUserID = _currentUserID;
 
 + (instancetype)sharedClient
 {
@@ -41,6 +44,18 @@ static KCAPIClient *__sharedClient = nil;
     __sharedClient.userReference = [__sharedClient.baseReference childByAppendingPath:KCUsersPath];
 }
 
+- (NSString *)currentUserID {
+    if (!_currentUserID) {
+        _currentUserID = [[NSUserDefaults standardUserDefaults]objectForKey:@"currentUserID"];
+    }
+    return _currentUserID;
+}
+
+- (void)setCurrentUserID:(NSString *)currentUserID {
+    [[NSUserDefaults standardUserDefaults] setValue:currentUserID forKey:@"currentUserID"];
+}
+
+
 - (void)loginUserWithProvider:(NSString *)provide token:(NSString *)token success:(void (^)(FAuthData *))success failure:(void (^)(NSError *))failure {
     
     [self.baseReference authWithOAuthProvider:provide token:token withCompletionBlock:^(NSError *error, FAuthData *authData) {
@@ -52,20 +67,67 @@ static KCAPIClient *__sharedClient = nil;
     }];
 }
 
-- (void)getUserByID:(NSString *)uID success:(void (^)(NSDictionary *))success failure:(void (^)(NSError *))failure {
-    Firebase *getUser = [self.userReference childByAppendingPath:uID];
-
-    [getUser observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
-        if (snapshot.value == [NSNull null] ) {
-            failure(nil);
+- (void)loginUserWithEmail:(NSString *)email password:(NSString *)password success:(void (^)(FAuthData *))success failure:(void (^)(NSError *))failure {
+    
+    [self.baseReference authUser:email password:password withCompletionBlock:^(NSError *error, FAuthData *authData) {
+        if (error) {
+            failure (error);
         } else {
-            success(snapshot.value);
+            success (authData);
         }
     }];
 }
 
--(void)createUserWithID:(NSString *)uID success:(void (^)(NSDictionary *))success failure:(void (^)(NSError *))failure {
+- (void)createUserWithEmail:(NSString *)email password:(NSString *)password success:(void (^)(Firebase *))success failure:(void (^)(NSError *))failure {
+    [self.baseReference createUser:email password:password withValueCompletionBlock:^(NSError *error, NSDictionary *result) {
+        NSString *uID = [result objectForKey:@"uid"];
+        NSMutableDictionary *userInfo = [[NSMutableDictionary alloc] init];
+        [userInfo setObject:email forKey:@"Email"];
+        [self createUserWithID:uID userInfo:userInfo success:^(Firebase *userRef) {
+            success (userRef);
+        } failure:^(NSError *error) {
+            failure (error);
+        }];
+    }];
+}
+- (void)getUserByID:(NSString *)uID success:(void (^)(NSDictionary *))success failure:(void (^)(NSError *, NSDictionary *))failure {
+    Firebase *getUser = [self.userReference childByAppendingPath:uID];
     
+    [getUser observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
+        if (snapshot.value != [NSNull null]) {
+            BOOL completeUserProfile = [snapshot.value objectForKey:@"complete"];
+            if (completeUserProfile) {
+                success(snapshot.value);
+            } else {
+                failure(nil, snapshot.value);
+            }
+        } else {
+            failure(nil,nil);
+        }
+    }];
+}
+
+- (void)createUserWithID:(NSString *)uID userInfo:(NSDictionary *)userInfo success:(void (^)( Firebase *))success failure:(void (^)(NSError *))failure {
+    Firebase *createUser = [self.userReference childByAppendingPath:uID];
+    [createUser setValue:userInfo withCompletionBlock:^(NSError *error, Firebase *ref) {
+        
+        if (error) {
+            failure (error);
+        } else {
+            success (ref);
+        }
+    }];
+}
+
+- (void)updateUserWithID:(NSString *)uID userInfo:(NSDictionary *)userInfo success:(void (^)(Firebase *))success failure:(void (^)(NSError *))failure {
+    Firebase *updateUser = [self.userReference childByAppendingPath:uID];
+    [updateUser updateChildValues:userInfo withCompletionBlock:^(NSError *error, Firebase *ref) {
+        if (error) {
+            failure (error);
+        } else {
+            success (ref);
+        }
+    }];
 }
 
 @end

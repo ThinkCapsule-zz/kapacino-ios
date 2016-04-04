@@ -23,6 +23,9 @@
 		443AC22F1CAE6939007EBF23 /* User Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443AC22E1CAE6939007EBF23 /* User Information.storyboard */; };
 		443C48381CAD3A6A004436CD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443C48371CAD3A6A004436CD /* Login.storyboard */; };
 		443C483B1CAD487D004436CD /* KCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443C483A1CAD487D004436CD /* KCLoginViewController.m */; };
+		44461DD61CB2728D0018E13E /* KCLoginNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 44461DD51CB2728D0018E13E /* KCLoginNavigationBar.m */; };
+		44461DD91CB274730018E13E /* KCLoginRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 44461DD81CB274730018E13E /* KCLoginRoundedButton.m */; };
+		44461DDC1CB2A0360018E13E /* KCEmailLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44461DDB1CB2A0360018E13E /* KCEmailLoginViewController.m */; };
 		444F7F7F1CB00148003F7D9B /* KCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7F7E1CB00148003F7D9B /* KCUser.m */; };
 		444F7F861CB012C9003F7D9B /* KCAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7F851CB012C9003F7D9B /* KCAPIClient.m */; };
 		44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */; };
@@ -123,6 +126,12 @@
 		443C48371CAD3A6A004436CD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		443C48391CAD487D004436CD /* KCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLoginViewController.h; sourceTree = "<group>"; };
 		443C483A1CAD487D004436CD /* KCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLoginViewController.m; sourceTree = "<group>"; };
+		44461DD41CB2728D0018E13E /* KCLoginNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLoginNavigationBar.h; sourceTree = "<group>"; };
+		44461DD51CB2728D0018E13E /* KCLoginNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLoginNavigationBar.m; sourceTree = "<group>"; };
+		44461DD71CB274730018E13E /* KCLoginRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLoginRoundedButton.h; sourceTree = "<group>"; };
+		44461DD81CB274730018E13E /* KCLoginRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLoginRoundedButton.m; sourceTree = "<group>"; };
+		44461DDA1CB2A0360018E13E /* KCEmailLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCEmailLoginViewController.h; sourceTree = "<group>"; };
+		44461DDB1CB2A0360018E13E /* KCEmailLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCEmailLoginViewController.m; sourceTree = "<group>"; };
 		444F7F7D1CB00148003F7D9B /* KCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCUser.h; sourceTree = "<group>"; };
 		444F7F7E1CB00148003F7D9B /* KCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCUser.m; sourceTree = "<group>"; };
 		444F7F841CB012C9003F7D9B /* KCAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAPIClient.h; sourceTree = "<group>"; };
@@ -308,11 +317,25 @@
 		443C48361CAD3A4F004436CD /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				44461DD31CB272460018E13E /* Views */,
 				443C48371CAD3A6A004436CD /* Login.storyboard */,
 				443C48391CAD487D004436CD /* KCLoginViewController.h */,
 				443C483A1CAD487D004436CD /* KCLoginViewController.m */,
+				44461DDA1CB2A0360018E13E /* KCEmailLoginViewController.h */,
+				44461DDB1CB2A0360018E13E /* KCEmailLoginViewController.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		44461DD31CB272460018E13E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44461DD41CB2728D0018E13E /* KCLoginNavigationBar.h */,
+				44461DD51CB2728D0018E13E /* KCLoginNavigationBar.m */,
+				44461DD71CB274730018E13E /* KCLoginRoundedButton.h */,
+				44461DD81CB274730018E13E /* KCLoginRoundedButton.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		444F7F7C1CB00131003F7D9B /* KCModels */ = {
@@ -865,6 +888,7 @@
 				B6431F981C55BD4C00546B3A /* UIFont+KCAdditions.m in Sources */,
 				B60EB8481C0751FD00F3044A /* CFClient.m in Sources */,
 				44E8B90A1CAEB7EE0081DA30 /* KCUserInfoTableViewController.m in Sources */,
+				44461DDC1CB2A0360018E13E /* KCEmailLoginViewController.m in Sources */,
 				093A3E9E1CA2E3F000EC91FE /* KCBenchmarkCaculatorTableViewController.m in Sources */,
 				B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */,
 				44E8B9161CAEC5E20081DA30 /* KCPickerTableViewCell.m in Sources */,
@@ -886,6 +910,8 @@
 				B69EB46B1C8218E2008BA05F /* RegistrationNavigationController.m in Sources */,
 				44E8B8F51CAE803B0081DA30 /* KCUserInfoLabel.m in Sources */,
 				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,
+				44461DD91CB274730018E13E /* KCLoginRoundedButton.m in Sources */,
+				44461DD61CB2728D0018E13E /* KCLoginNavigationBar.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
 				B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */,
 				B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */,

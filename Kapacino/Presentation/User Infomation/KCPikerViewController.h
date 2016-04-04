@@ -15,7 +15,7 @@
 
 @property (strong, nonatomic) NSString *categoryName;
 @property (strong, nonatomic) NSArray *categoryItems;
-@property (strong, nonatomic) KCPickerTableViewController *pickerTableView;
+@property (strong, nonatomic) KCPickerTableViewController *pickerTableViewController;
 
 @property (nonatomic, weak) id<KCPickerViewControllerDelegate> delegate;
 

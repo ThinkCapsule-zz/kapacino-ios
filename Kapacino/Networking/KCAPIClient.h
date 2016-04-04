@@ -12,6 +12,8 @@
 
 @interface KCAPIClient : NSObject
 
+@property (strong, nonatomic) NSString *currentUserID;
+
 + (instancetype)sharedClient;
 
 - (void)loginUserWithProvider:(NSString *)provide
@@ -19,11 +21,29 @@
                       success:(void (^)(FAuthData *authData))success
                       failure:(void (^)(NSError *error))failure;
 
+- (void)loginUserWithEmail:(NSString *)email
+                  password:(NSString *)password
+                   success:(void (^)(FAuthData *authData))success
+                   failure:(void (^)(NSError *error))failure;
+
+- (void)createUserWithEmail:(NSString *)email
+                  password:(NSString *)password
+                   success:(void (^)(Firebase *userRef))success
+                   failure:(void (^)(NSError *error))failure;
+
+
 - (void)getUserByID:(NSString *)uID
             success:(void (^)(NSDictionary *userData))success
-            failure:(void (^)(NSError *error))failure;
+            failure:(void (^)(NSError *error,NSDictionary *userData))failure;
 
 - (void)createUserWithID:(NSString *)uID
-                 success:(void (^)(NSDictionary *userData))success
+                userInfo:(NSDictionary *)userInfo
+                 success:(void (^)( Firebase *userRef))success
                  failure:(void (^)(NSError *error))failure;
+
+- (void)updateUserWithID:(NSString *)uID
+                userInfo:(NSDictionary *)userInfo
+                 success:(void (^)( Firebase *userRef))success
+                 failure:(void (^)(NSError *error))failure;
+
 @end

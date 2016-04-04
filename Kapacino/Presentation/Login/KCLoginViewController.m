@@ -11,6 +11,8 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <Firebase/Firebase.h>
 #import "KCAPIClient.h"
+#import "KCUserInformationViewController.h"
+#import "KCNavigationController.h"
 
 @interface KCLoginViewController ()
 
@@ -34,12 +36,28 @@
         } else {
             [[KCAPIClient sharedClient] loginUserWithProvider:@"facebook" token:result.token.tokenString success:^(FAuthData *authData) {
                 [[KCAPIClient sharedClient] getUserByID:authData.uid success:^(NSDictionary *userData) {
-                    
-                } failure:^(NSError *error) {
-                    
+                    [KCAPIClient sharedClient].currentUserID = authData.uid;
+                    [self dismissViewControllerAnimated:YES completion:nil];
+                } failure:^(NSError *error,  NSDictionary *userData) {
+                    NSDictionary *facebookUserInfo = [authData.providerData objectForKey:@"cachedUserProfile"];
+                    NSString *name = [facebookUserInfo objectForKey:@"name"];
+                    NSString *firstName = [facebookUserInfo objectForKey:@"first_name"];
+                    NSString *gender = [facebookUserInfo objectForKey:@"gender"];
+                    NSString *email = [facebookUserInfo objectForKey:@"email"];
+                    NSMutableDictionary *userInfo = [[NSMutableDictionary alloc] init];
+                    [userInfo setObject:name forKey:@"Name"];
+                    [userInfo setObject:gender forKey:@"Gender"];
+                    [userInfo setObject:email forKey:@"Email"];
+                    [userInfo setObject:firstName forKey:@"FirstName"];
+                    [[KCAPIClient sharedClient] createUserWithID:authData.uid userInfo:userInfo success:^(Firebase *userRef) {
+                        [KCAPIClient sharedClient].currentUserID = authData.uid;
+                        KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCUserInformationViewController"];
+                        userInfoVC.userInfo = userInfo;
+                        KCNavigationController *navigationController = [[KCNavigationController alloc] initWithRootViewController:userInfoVC];
+                        [self presentViewController:navigationController animated:YES completion:nil];
+                    } failure:nil];
                 }];
             } failure:nil];
-            
         }
     }];
 }

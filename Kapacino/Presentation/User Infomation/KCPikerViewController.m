@@ -23,10 +23,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController isKindOfClass:[KCPickerTableViewController class]]) {
-        self.pickerTableView = segue.destinationViewController;
-        self.pickerTableView.items = self.categoryItems;
-        self.pickerTableView.categoryName = self.categoryName;
-        self.pickerTableView.delegate = self.delegate;
+        self.pickerTableViewController = segue.destinationViewController;
+        self.pickerTableViewController.items = self.categoryItems;
+        self.pickerTableViewController.categoryName = self.categoryName;
+        self.pickerTableViewController.delegate = self.delegate;
     }
 }
 
