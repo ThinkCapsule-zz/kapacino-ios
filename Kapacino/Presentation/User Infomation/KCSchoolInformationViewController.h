@@ -12,5 +12,6 @@
 @interface KCSchoolInformationViewController : KCViewController
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (strong, nonatomic) NSMutableDictionary *userInfo;
 
 @end

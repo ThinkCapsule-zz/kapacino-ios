@@ -7,11 +7,9 @@
 //
 
 #import "KCUserInfoTableViewController.h"
-#import "KCUserInfoTableViewCell.h"
-#import "KCPikerViewController.h"
-#import "KCPickerTableViewController.h"
+#import "KCSearchViewController.h"
 
-@interface KCUserInfoTableViewController () <KCPickerTableViewControllerDelegate>
+@interface KCUserInfoTableViewController ()
 
 @end
 
@@ -29,8 +27,10 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([sender isKindOfClass:[KCUserInfoTableViewCell class]]) {
+    if ([sender isKindOfClass:[KCUserInfoTableViewCell class]] && [segue.destinationViewController isKindOfClass:[KCPikerViewController class]]) {
         [self prepareForSegueWithPickerController:segue.destinationViewController cell:sender];
+    } else if ([sender isKindOfClass:[KCUserInfoTableViewCell class]] && [segue.destinationViewController isKindOfClass:[KCSearchViewController class]]) {
+        [self prepareForSegueWithSearchViewController:segue.destinationViewController cell:sender];
     }
 }
 
@@ -44,6 +44,7 @@
 
 - (void)prepareForSegueWithPickerController:(KCPikerViewController *)controller cell:(KCUserInfoTableViewCell *)cell {
     controller.delegate = self;
+    controller.userInfo = self.userInfo;
     controller.categoryName = cell.title.text;
     if ([cell.title.text isEqualToString:@"Gender*"]) {
         NSArray *items = @[ @"Female", @"Male", @"Other" ];
@@ -56,15 +57,25 @@
         controller.categoryItems = items;
     }
 }
+
+- (void)prepareForSegueWithSearchViewController:(KCSearchViewController *)controller cell:(KCUserInfoTableViewCell *)cell {
+    controller.delegate = self;
+    controller.categoryName = cell.title.text;
+    controller.userInfo = self.userInfo;
+}
+
 - (IBAction)nameTextFieldEditingChanged:(UITextField *)sender {
     [self.userInfo setObject:sender.text forKey:@"Name"];
 }
 
-- (void)pickerTableViewController:(KCPickerTableViewController *)controller didSelectValue:(NSString *)value forKey:(NSString *)key {
-    key = [key substringToIndex:key.length - 1];
-    [self.userInfo setValue:value forKey:key];
-    KCUserInfoTableViewCell *cell = [self.tableView cellForRowAtIndexPath:self.tableView.indexPathForSelectedRow];
-    cell.subTitle.text = value;
+- (void)pickerViewController:(KCPikerViewController *)controller didChangeUserInfo:(NSMutableDictionary *)userInfo {
+    _userInfo = userInfo;
+    [self.tableView reloadData];
+}
+
+- (void)searchViewController:(KCSearchViewController *)controller didChangeUserInfo:(NSMutableDictionary *)userInfo {
+    _userInfo = userInfo;
+    [self.tableView reloadData];
 }
 
 @end

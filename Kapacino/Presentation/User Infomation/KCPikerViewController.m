@@ -8,7 +8,7 @@
 
 #import "KCPikerViewController.h"
 
-@interface KCPikerViewController ()
+@interface KCPikerViewController () <KCPickerTableViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *categoryNameLabel;
 
@@ -25,8 +25,15 @@
     if ([segue.destinationViewController isKindOfClass:[KCPickerTableViewController class]]) {
         self.pickerTableViewController = segue.destinationViewController;
         self.pickerTableViewController.items = self.categoryItems;
-        self.pickerTableViewController.categoryName = self.categoryName;
-        self.pickerTableViewController.delegate = self.delegate;
+        self.pickerTableViewController.delegate = self;
+    }
+}
+
+- (void)pickerTableViewController:(KCPickerTableViewController *)controller didSelectValue:(NSString *)value {
+    NSString *key = [self.categoryName substringToIndex:self.categoryName.length - 1];
+    [self.userInfo setValue:value forKey:key];
+    if ([self.delegate respondsToSelector:@selector(pickerViewController:didChangeUserInfo:)]) {
+        [self.delegate pickerViewController:self didChangeUserInfo:self.userInfo];
     }
 }
 

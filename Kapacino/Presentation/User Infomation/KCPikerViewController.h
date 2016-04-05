@@ -16,6 +16,7 @@
 @property (strong, nonatomic) NSString *categoryName;
 @property (strong, nonatomic) NSArray *categoryItems;
 @property (strong, nonatomic) KCPickerTableViewController *pickerTableViewController;
+@property (strong, nonatomic) NSMutableDictionary *userInfo;
 
 @property (nonatomic, weak) id<KCPickerViewControllerDelegate> delegate;
 
@@ -23,5 +24,6 @@
 
 @protocol KCPickerViewControllerDelegate <NSObject>
 
+- (void)pickerViewController:(KCPikerViewController *)controller didChangeUserInfo:(NSMutableDictionary *)userInfo;
 
 @end

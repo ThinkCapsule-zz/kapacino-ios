@@ -51,8 +51,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     KCPickerTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if ([self.delegate respondsToSelector:@selector(pickerTableViewController:didSelectValue:forKey:)]) {
-        [self.delegate pickerTableViewController:self didSelectValue:cell.title.text forKey:self.categoryName];
+    if ([self.delegate respondsToSelector:@selector(pickerTableViewController:didSelectValue:)]) {
+        [self.delegate pickerTableViewController:self didSelectValue:cell.title.text];
     }
     self.selectedRowIndexPath = indexPath;
     [tableView reloadData];

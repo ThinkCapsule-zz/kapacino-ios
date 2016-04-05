@@ -26,6 +26,10 @@
 		44461DD61CB2728D0018E13E /* KCLoginNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 44461DD51CB2728D0018E13E /* KCLoginNavigationBar.m */; };
 		44461DD91CB274730018E13E /* KCLoginRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 44461DD81CB274730018E13E /* KCLoginRoundedButton.m */; };
 		44461DDC1CB2A0360018E13E /* KCEmailLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44461DDB1CB2A0360018E13E /* KCEmailLoginViewController.m */; };
+		444924B41CB3B9AB008737A6 /* KCSchoolInformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444924B31CB3B9AB008737A6 /* KCSchoolInformationTableViewController.m */; };
+		444924B61CB3E626008737A6 /* countriesToCities.json in Resources */ = {isa = PBXBuildFile; fileRef = 444924B51CB3E626008737A6 /* countriesToCities.json */; };
+		444924B91CB3ECD7008737A6 /* KCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444924B81CB3ECD7008737A6 /* KCSearchViewController.m */; };
+		444924BC1CB40100008737A6 /* KCSearchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 444924BB1CB40100008737A6 /* KCSearchResultTableViewCell.m */; };
 		444F7F7F1CB00148003F7D9B /* KCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7F7E1CB00148003F7D9B /* KCUser.m */; };
 		444F7F861CB012C9003F7D9B /* KCAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7F851CB012C9003F7D9B /* KCAPIClient.m */; };
 		44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */; };
@@ -132,6 +136,13 @@
 		44461DD81CB274730018E13E /* KCLoginRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLoginRoundedButton.m; sourceTree = "<group>"; };
 		44461DDA1CB2A0360018E13E /* KCEmailLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCEmailLoginViewController.h; sourceTree = "<group>"; };
 		44461DDB1CB2A0360018E13E /* KCEmailLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCEmailLoginViewController.m; sourceTree = "<group>"; };
+		444924B21CB3B9AB008737A6 /* KCSchoolInformationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSchoolInformationTableViewController.h; sourceTree = "<group>"; };
+		444924B31CB3B9AB008737A6 /* KCSchoolInformationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSchoolInformationTableViewController.m; sourceTree = "<group>"; };
+		444924B51CB3E626008737A6 /* countriesToCities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countriesToCities.json; sourceTree = "<group>"; };
+		444924B71CB3ECD7008737A6 /* KCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSearchViewController.h; sourceTree = "<group>"; };
+		444924B81CB3ECD7008737A6 /* KCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSearchViewController.m; sourceTree = "<group>"; };
+		444924BA1CB40100008737A6 /* KCSearchResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSearchResultTableViewCell.h; sourceTree = "<group>"; };
+		444924BB1CB40100008737A6 /* KCSearchResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSearchResultTableViewCell.m; sourceTree = "<group>"; };
 		444F7F7D1CB00148003F7D9B /* KCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCUser.h; sourceTree = "<group>"; };
 		444F7F7E1CB00148003F7D9B /* KCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCUser.m; sourceTree = "<group>"; };
 		444F7F841CB012C9003F7D9B /* KCAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAPIClient.h; sourceTree = "<group>"; };
@@ -302,14 +313,18 @@
 				443AC22E1CAE6939007EBF23 /* User Information.storyboard */,
 				44E8B8EF1CAE7A590081DA30 /* KCUserInformationViewController.h */,
 				44E8B8F01CAE7A590081DA30 /* KCUserInformationViewController.m */,
-				44E8B8F61CAEA6350081DA30 /* KCSchoolInformationViewController.h */,
-				44E8B8F71CAEA6350081DA30 /* KCSchoolInformationViewController.m */,
 				44E8B9081CAEB7EE0081DA30 /* KCUserInfoTableViewController.h */,
 				44E8B9091CAEB7EE0081DA30 /* KCUserInfoTableViewController.m */,
+				44E8B8F61CAEA6350081DA30 /* KCSchoolInformationViewController.h */,
+				44E8B8F71CAEA6350081DA30 /* KCSchoolInformationViewController.m */,
+				444924B21CB3B9AB008737A6 /* KCSchoolInformationTableViewController.h */,
+				444924B31CB3B9AB008737A6 /* KCSchoolInformationTableViewController.m */,
 				44E8B90E1CAEC0CB0081DA30 /* KCPikerViewController.h */,
 				44E8B90F1CAEC0CB0081DA30 /* KCPikerViewController.m */,
 				44E8B9111CAEC41B0081DA30 /* KCPickerTableViewController.h */,
 				44E8B9121CAEC41B0081DA30 /* KCPickerTableViewController.m */,
+				444924B71CB3ECD7008737A6 /* KCSearchViewController.h */,
+				444924B81CB3ECD7008737A6 /* KCSearchViewController.m */,
 			);
 			path = "User Infomation";
 			sourceTree = "<group>";
@@ -365,6 +380,8 @@
 				44E8B9061CAEB4D20081DA30 /* KCUserInfoTableViewCell.m */,
 				44E8B9141CAEC5E20081DA30 /* KCPickerTableViewCell.h */,
 				44E8B9151CAEC5E20081DA30 /* KCPickerTableViewCell.m */,
+				444924BA1CB40100008737A6 /* KCSearchResultTableViewCell.h */,
+				444924BB1CB40100008737A6 /* KCSearchResultTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -479,6 +496,7 @@
 		B6431F7E1C55BCCC00546B3A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				444924B51CB3E626008737A6 /* countriesToCities.json */,
 				B6431F7F1C55BCEE00546B3A /* SF-UI-Text-BoldItalic.otf */,
 				B6431F801C55BCEE00546B3A /* SF-UI-Text-Heavy.otf */,
 				B6431F811C55BCEE00546B3A /* SF-UI-Text-HeavyItalic.otf */,
@@ -789,6 +807,7 @@
 				B6DC35CE1C55BA4700ED0ABC /* KCFeedCell.xib in Resources */,
 				B6431F911C55BCEE00546B3A /* SF-UI-Text-Regular.otf in Resources */,
 				B6D5C2EF1C06E92700699793 /* Assets.xcassets in Resources */,
+				444924B61CB3E626008737A6 /* countriesToCities.json in Resources */,
 				B6431F8B1C55BCEE00546B3A /* SF-UI-Text-Heavy.otf in Resources */,
 				B6431F8C1C55BCEE00546B3A /* SF-UI-Text-HeavyItalic.otf in Resources */,
 				B6431F8A1C55BCEE00546B3A /* SF-UI-Text-BoldItalic.otf in Resources */,
@@ -885,6 +904,7 @@
 				B69EB46E1C8222CA008BA05F /* UIColor+KCAdditions.m in Sources */,
 				B69EB4611C820BE8008BA05F /* PreflightManager.m in Sources */,
 				44E8B8FF1CAEA73B0081DA30 /* KCViewController.m in Sources */,
+				444924B91CB3ECD7008737A6 /* KCSearchViewController.m in Sources */,
 				B6431F981C55BD4C00546B3A /* UIFont+KCAdditions.m in Sources */,
 				B60EB8481C0751FD00F3044A /* CFClient.m in Sources */,
 				44E8B90A1CAEB7EE0081DA30 /* KCUserInfoTableViewController.m in Sources */,
@@ -896,6 +916,7 @@
 				B636C2CA1C07AB84003C1E44 /* CFModelFactory.m in Sources */,
 				093A3EA31CA2E3F000EC91FE /* KCBenchmarkLabel.m in Sources */,
 				B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */,
+				444924B41CB3B9AB008737A6 /* KCSchoolInformationTableViewController.m in Sources */,
 				44E8B9071CAEB4D20081DA30 /* KCUserInfoTableViewCell.m in Sources */,
 				B636C2AE1C078786003C1E44 /* CFArticleModel.m in Sources */,
 				093A3E9C1CA2E3F000EC91FE /* KCAddClassViewController.m in Sources */,
@@ -916,6 +937,7 @@
 				B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */,
 				B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */,
 				B6FCB92A1C8420030072AFC8 /* KCNavigationController.m in Sources */,
+				444924BC1CB40100008737A6 /* KCSearchResultTableViewCell.m in Sources */,
 				44E8B8F81CAEA6350081DA30 /* KCSchoolInformationViewController.m in Sources */,
 				B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */,
 				0980F5741C9C452D002355E8 /* CFClassModel.m in Sources */,

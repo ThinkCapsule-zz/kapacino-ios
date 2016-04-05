@@ -110,7 +110,6 @@ static KCAPIClient *__sharedClient = nil;
 - (void)createUserWithID:(NSString *)uID userInfo:(NSDictionary *)userInfo success:(void (^)( Firebase *))success failure:(void (^)(NSError *))failure {
     Firebase *createUser = [self.userReference childByAppendingPath:uID];
     [createUser setValue:userInfo withCompletionBlock:^(NSError *error, Firebase *ref) {
-        
         if (error) {
             failure (error);
         } else {

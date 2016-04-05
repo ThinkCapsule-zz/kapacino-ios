@@ -7,8 +7,12 @@
 //
 
 #import "KCSchoolInformationViewController.h"
+#import "KCSchoolInformationTableViewController.h"
+#import "KCAPIClient.h"
 
 @interface KCSchoolInformationViewController ()
+
+@property (strong, nonatomic) KCSchoolInformationTableViewController *schoolInformationTableViewController;
 
 @end
 
@@ -19,5 +23,22 @@
     self.pageControl.currentPage = 2;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.destinationViewController isKindOfClass:[KCSchoolInformationTableViewController class]]) {
+        self.schoolInformationTableViewController = segue.destinationViewController;
+        self.schoolInformationTableViewController.userInfo = self.userInfo;
+    }
+}
+
+- (IBAction)startExploringButtonAction:(id)sender {
+    NSString *userID = [KCAPIClient sharedClient].currentUserID ;
+    NSMutableDictionary *userInfo = self.schoolInformationTableViewController.userInfo;
+    //[userInfo setValue:@"YES" forKey:@"complete"];
+    [[KCAPIClient sharedClient] updateUserWithID:userID userInfo:userInfo success:^(Firebase *userRef) {
+        
+    } failure:^(NSError *error) {
+        
+    }];
+}
 
 @end

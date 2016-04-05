@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KCPikerViewController.h"
+#import "KCPickerTableViewController.h"
+#import "KCUserInfoTableViewCell.h"
+#import "KCSearchViewController.h"
 
-@interface KCUserInfoTableViewController : UITableViewController
+@interface KCUserInfoTableViewController : UITableViewController <KCPickerViewControllerDelegate, KCSearchViewControllerDelegate>
 
 @property (strong, nonatomic) NSMutableDictionary *userInfo;
+
+- (void)prepareForSegueWithPickerController:(KCPikerViewController *)controller cell:(KCUserInfoTableViewCell *)cell;
 
 @end
