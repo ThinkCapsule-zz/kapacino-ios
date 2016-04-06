@@ -13,6 +13,8 @@
 @interface KCPickerTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSArray *items;
+@property (strong, nonatomic) NSString *categoryName;
+@property (strong, nonatomic) NSMutableDictionary *userInfo;
 
 @property (nonatomic, weak) id<KCPickerTableViewControllerDelegate> delegate;
 
@@ -22,7 +24,7 @@
 
 @optional
 
-- (void)pickerTableViewController:(KCPickerTableViewController *)controller didSelectValue:(NSString *)value;
+- (void)pickerTableViewController:(KCPickerTableViewController *)controller didChangeUserInfo:(NSMutableDictionary *)userInfo;
 
 @end
 

@@ -10,7 +10,7 @@
 #import "KCSearchResultTableViewCell.h"
 #import "UIColor+KCAdditions.h"
 
-@interface KCSearchViewController ()<UITextFieldDelegate>
+@interface KCSearchViewController ()<UITextFieldDelegate, UITableViewDelegate>
 
 @property (strong, nonatomic) NSMutableArray *allCities;
 @property (weak, nonatomic) IBOutlet UITableView *searchResultTableView;
@@ -52,6 +52,15 @@
     [self.searchResultTableView reloadData];
 }
 
+- (void)searchControllerSetValue:(NSString *)value {
+    NSString *key = [self.categoryName substringToIndex:self.categoryName.length - 1];
+    [self.userInfo setObject:value forKey:key];
+    if ([self.delegate respondsToSelector:@selector(searchViewController:didChangeUserInfo:)] ) {
+        [self.delegate searchViewController:self didChangeUserInfo:self.userInfo];
+    }
+
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -75,6 +84,14 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+     NSString *cityName = [self.searchResult objectAtIndex:indexPath.row];
+    self.searchTextField.text = cityName;
+    [self searchControllerSetValue:cityName];
+    
+}
+
+
 - (IBAction)searchTextFieldEditingChanged:(UITextField *)sender {
     [self searchItemWithString:sender.text];
 }
@@ -86,11 +103,7 @@
 #pragma mark - Text field delegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    NSString *key = [self.categoryName substringToIndex:self.categoryName.length - 1];
-    [self.userInfo setObject:self.allCities.firstObject forKey:key];
-    if ([self.delegate respondsToSelector:@selector(searchViewController:didChangeUserInfo:)] ) {
-        [self.delegate searchViewController:self didChangeUserInfo:self.userInfo];
-    }
+    [self searchControllerSetValue:self.searchResult.firstObject];
     [textField endEditing:YES];
     return YES;
 }

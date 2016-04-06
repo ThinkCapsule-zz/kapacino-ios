@@ -31,20 +31,25 @@
 }
 
 - (IBAction)signUpButtonAction:(id)sender {
+    
+    NSMutableDictionary *userInfo = [[NSMutableDictionary alloc] init];
+    [userInfo setObject:self.email forKey:@"Email"];
+    
     [[KCAPIClient sharedClient] loginUserWithEmail:self.email password:self.password success:^(FAuthData *authData) {
-        [[KCAPIClient sharedClient] getUserByID:authData.uid success:^(NSDictionary *userData) {
-            [KCAPIClient sharedClient].currentUserID = authData.uid;
-            [self dismissViewControllerAnimated:YES completion:nil];
-        } failure:^(NSError *error, NSDictionary *userData) {
-            [KCAPIClient sharedClient].currentUserID = authData.uid;
-            [self showUserInformationViewControllerWithUserInfo:[NSMutableDictionary dictionaryWithDictionary:userData]];
-        }];
+        [[KCAPIClient sharedClient] getUserByID:authData.uid success:^(NSDictionary *userData, BOOL completeUserProfile) {
+            if (completeUserProfile) {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            } else {
+                if (![userData isKindOfClass:[NSNull class]]) {
+                    [self showUserInformationViewControllerWithUserInfo:[NSMutableDictionary dictionaryWithDictionary:userData]];
+                } else {
+                    [self showUserInformationViewControllerWithUserInfo:userInfo];
+                }
+            }
+        } failure:nil];
     } failure:^(NSError *error) {
         if (error.code == -8) {
             [[KCAPIClient sharedClient] createUserWithEmail:self.email password:self.password success:^(Firebase *userRef) {
-                [KCAPIClient sharedClient].currentUserID =userRef.authData.uid;
-                 NSMutableDictionary *userInfo = [[NSMutableDictionary alloc] init];
-                [userInfo setObject:self.email forKey:@"Email"];
                 [self showUserInformationViewControllerWithUserInfo:userInfo];
             } failure:nil];
         }

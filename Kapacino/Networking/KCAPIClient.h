@@ -33,8 +33,8 @@
 
 
 - (void)getUserByID:(NSString *)uID
-            success:(void (^)(NSDictionary *userData))success
-            failure:(void (^)(NSError *error,NSDictionary *userData))failure;
+            success:(void (^)(NSDictionary *userData, BOOL completeUserProfile))success
+            failure:(void (^)(NSError *error))failure;
 
 - (void)createUserWithID:(NSString *)uID
                 userInfo:(NSDictionary *)userInfo

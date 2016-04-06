@@ -84,26 +84,28 @@ static KCAPIClient *__sharedClient = nil;
         NSMutableDictionary *userInfo = [[NSMutableDictionary alloc] init];
         [userInfo setObject:email forKey:@"Email"];
         [self createUserWithID:uID userInfo:userInfo success:^(Firebase *userRef) {
+            self.currentUserID = uID;
             success (userRef);
         } failure:^(NSError *error) {
             failure (error);
         }];
     }];
 }
-- (void)getUserByID:(NSString *)uID success:(void (^)(NSDictionary *))success failure:(void (^)(NSError *, NSDictionary *))failure {
+- (void)getUserByID:(NSString *)uID success:(void (^)(NSDictionary *, bool))success failure:(void (^)(NSError *))failure {
     Firebase *getUser = [self.userReference childByAppendingPath:uID];
     
     [getUser observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
+        BOOL completeUserProfile = nil;
+         self.currentUserID = uID;
         if (snapshot.value != [NSNull null]) {
-            BOOL completeUserProfile = [snapshot.value objectForKey:@"complete"];
-            if (completeUserProfile) {
-                success(snapshot.value);
-            } else {
-                failure(nil, snapshot.value);
-            }
+            completeUserProfile = [snapshot.value objectForKey:@"complete"];
+            success(snapshot.value, completeUserProfile);
         } else {
-            failure(nil,nil);
-        }
+            success(snapshot.value, completeUserProfile);
+//            NSError *error = nil;
+//            failure(error);
+    }
+
     }];
 }
 
@@ -113,6 +115,7 @@ static KCAPIClient *__sharedClient = nil;
         if (error) {
             failure (error);
         } else {
+            self.currentUserID = uID;
             success (ref);
         }
     }];

@@ -8,11 +8,10 @@
 
 #import "KCPickerTableViewController.h"
 #import "KCPickerTableViewCell.h"
-#import "UIColor+KCAdditions.h"
 
 @interface KCPickerTableViewController ()
 
-@property (strong, nonatomic) NSIndexPath *selectedRowIndexPath;
+@property (weak, nonatomic) IBOutlet UILabel *headerLabel;
 
 @end
 
@@ -20,8 +19,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.headerLabel.text = self.categoryName;
 }
 
+- (void)viewWillLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    CGFloat contentSize = self.tableView.contentSize.height;
+    CGFloat tableViewHeight = self.tableView.frame.size.height;
+    
+    if (contentSize < tableViewHeight) {
+        UIEdgeInsets contentInset = self.tableView.contentInset;
+        contentInset.top = contentInset.bottom = (tableViewHeight - contentSize) / 2;
+        self.tableView.contentInset = contentInset;
+    }
+}
 
 #pragma mark - Table view data source
 
@@ -33,33 +45,28 @@
     return self.items.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     KCPickerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pickerCell" forIndexPath:indexPath];
     cell.title.text = [self.items objectAtIndex:indexPath.row];
-    if (indexPath != self.selectedRowIndexPath) {
-        cell.backgroundColor = [UIColor whiteColor];
-        cell.title .textColor = [UIColor lightGrayColor];
-        cell.titleLeftConstaint.constant = 50;
-    } else {
-        cell.backgroundColor = [UIColor kc_ApplicationColor];
-        cell.title .textColor = [UIColor whiteColor];
-        cell.titleLeftConstaint.constant = 15;
-    }
     return cell;
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView reloadData];
+    return indexPath;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     KCPickerTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if ([self.delegate respondsToSelector:@selector(pickerTableViewController:didSelectValue:)]) {
-        [self.delegate pickerTableViewController:self didSelectValue:cell.title.text];
+    NSString *key = [self.categoryName substringToIndex:self.categoryName.length - 1];
+    [self.userInfo setValue:cell.title.text forKey:key];
+    if ([self.delegate respondsToSelector:@selector(pickerTableViewController:didChangeUserInfo:)]) {
+        [self.delegate pickerTableViewController:self didChangeUserInfo:self.userInfo];
     }
-    self.selectedRowIndexPath = indexPath;
-    [tableView reloadData];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath == self.selectedRowIndexPath) {
+    if ([indexPath isEqual:tableView.indexPathForSelectedRow]) {
         return 80;
     }
     return 60;

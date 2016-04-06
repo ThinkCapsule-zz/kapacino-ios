@@ -23,22 +23,36 @@
     self.pageControl.currentPage = 2;
 }
 
+
+- (void)updateUserInfo {
+    NSString *userID = [KCAPIClient sharedClient].currentUserID ;
+    self.userInfo = self.schoolInformationTableViewController.userInfo;
+    [self.userInfo setValue:@"YES" forKey:@"complete"];
+    [[KCAPIClient sharedClient] updateUserWithID:userID userInfo:self.userInfo success:^(Firebase *userRef) {
+        
+    } failure:nil];
+}
+
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if ([identifier isEqualToString:@"showLoadingPage"]) {
+        self.userInfo = self.schoolInformationTableViewController.userInfo;
+        NSString *countryOfSchool = [self.userInfo objectForKey:@"Country of school"];
+        NSString *school = [self.userInfo objectForKey:@"School"];
+        NSString *major = [self.userInfo objectForKey:@"Major"];
+        NSString *currently = [self.userInfo objectForKey:@"I'm currently a(n)"];
+        if (!countryOfSchool || !school || !major || !currently) {
+            return NO;
+        }
+        [self updateUserInfo];
+    }
+    return YES;
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController isKindOfClass:[KCSchoolInformationTableViewController class]]) {
         self.schoolInformationTableViewController = segue.destinationViewController;
         self.schoolInformationTableViewController.userInfo = self.userInfo;
     }
-}
-
-- (IBAction)startExploringButtonAction:(id)sender {
-    NSString *userID = [KCAPIClient sharedClient].currentUserID ;
-    NSMutableDictionary *userInfo = self.schoolInformationTableViewController.userInfo;
-    //[userInfo setValue:@"YES" forKey:@"complete"];
-    [[KCAPIClient sharedClient] updateUserWithID:userID userInfo:userInfo success:^(Firebase *userRef) {
-        
-    } failure:^(NSError *error) {
-        
-    }];
 }
 
 @end

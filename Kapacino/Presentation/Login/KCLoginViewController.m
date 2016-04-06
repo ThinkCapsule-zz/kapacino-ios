@@ -35,26 +35,26 @@
             NSLog(@"Facebook login got cancelled.");
         } else {
             [[KCAPIClient sharedClient] loginUserWithProvider:@"facebook" token:result.token.tokenString success:^(FAuthData *authData) {
-                [[KCAPIClient sharedClient] getUserByID:authData.uid success:^(NSDictionary *userData) {
-                    [KCAPIClient sharedClient].currentUserID = authData.uid;
-                    [self dismissViewControllerAnimated:YES completion:nil];
-                } failure:^(NSError *error,  NSDictionary *userData) {
-                    NSDictionary *facebookUserInfo = [authData.providerData objectForKey:@"cachedUserProfile"];
-                    NSString *name = [facebookUserInfo objectForKey:@"name"];
-                    NSString *gender = [facebookUserInfo objectForKey:@"gender"];
-                    NSString *email = [facebookUserInfo objectForKey:@"email"];
-                    NSMutableDictionary *userInfo = [[NSMutableDictionary alloc] init];
-                    [userInfo setObject:name forKey:@"Name"];
-                    [userInfo setObject:gender forKey:@"Gender"];
-                    [userInfo setObject:email forKey:@"Email"];
-                    [[KCAPIClient sharedClient] createUserWithID:authData.uid userInfo:userInfo success:^(Firebase *userRef) {
-                        [KCAPIClient sharedClient].currentUserID = authData.uid;
-                        KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCUserInformationViewController"];
-                        userInfoVC.userInfo = userInfo;
-                        KCNavigationController *navigationController = [[KCNavigationController alloc] initWithRootViewController:userInfoVC];
-                        [self presentViewController:navigationController animated:YES completion:nil];
-                    } failure:nil];
-                }];
+                [[KCAPIClient sharedClient] getUserByID:authData.uid success:^(NSDictionary *userData, BOOL completeUserProfile) {
+                    if (completeUserProfile) {
+                        [self dismissViewControllerAnimated:YES completion:nil];
+                    } else {
+                        NSDictionary *facebookUserInfo = [authData.providerData objectForKey:@"cachedUserProfile"];
+                        NSString *name = [facebookUserInfo objectForKey:@"name"];
+                        NSString *gender = [facebookUserInfo objectForKey:@"gender"];
+                        NSString *email = [facebookUserInfo objectForKey:@"email"];
+                        NSMutableDictionary *userInfo = [[NSMutableDictionary alloc] init];
+                        [userInfo setObject:name forKey:@"Name"];
+                        [userInfo setObject:gender forKey:@"Gender"];
+                        [userInfo setObject:email forKey:@"Email"];
+                        [[KCAPIClient sharedClient] createUserWithID:authData.uid userInfo:userInfo success:^(Firebase *userRef) {
+                            KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCUserInformationViewController"];
+                            userInfoVC.userInfo = userInfo;
+                            KCNavigationController *navigationController = [[KCNavigationController alloc] initWithRootViewController:userInfoVC];
+                            [self presentViewController:navigationController animated:YES completion:nil];
+                        } failure:nil];
+                    }
+                } failure:nil];
             } failure:nil];
         }
     }];

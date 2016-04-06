@@ -39,7 +39,6 @@
 		44E8B8FF1CAEA73B0081DA30 /* KCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B8FE1CAEA73B0081DA30 /* KCViewController.m */; };
 		44E8B9071CAEB4D20081DA30 /* KCUserInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B9061CAEB4D20081DA30 /* KCUserInfoTableViewCell.m */; };
 		44E8B90A1CAEB7EE0081DA30 /* KCUserInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B9091CAEB7EE0081DA30 /* KCUserInfoTableViewController.m */; };
-		44E8B9101CAEC0CB0081DA30 /* KCPikerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B90F1CAEC0CB0081DA30 /* KCPikerViewController.m */; };
 		44E8B9131CAEC41B0081DA30 /* KCPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B9121CAEC41B0081DA30 /* KCPickerTableViewController.m */; };
 		44E8B9161CAEC5E20081DA30 /* KCPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B9151CAEC5E20081DA30 /* KCPickerTableViewCell.m */; };
 		B60EB8481C0751FD00F3044A /* CFClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8471C0751FD00F3044A /* CFClient.m */; };
@@ -161,8 +160,6 @@
 		44E8B9061CAEB4D20081DA30 /* KCUserInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCUserInfoTableViewCell.m; sourceTree = "<group>"; };
 		44E8B9081CAEB7EE0081DA30 /* KCUserInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCUserInfoTableViewController.h; sourceTree = "<group>"; };
 		44E8B9091CAEB7EE0081DA30 /* KCUserInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCUserInfoTableViewController.m; sourceTree = "<group>"; };
-		44E8B90E1CAEC0CB0081DA30 /* KCPikerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCPikerViewController.h; sourceTree = "<group>"; };
-		44E8B90F1CAEC0CB0081DA30 /* KCPikerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCPikerViewController.m; sourceTree = "<group>"; };
 		44E8B9111CAEC41B0081DA30 /* KCPickerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCPickerTableViewController.h; sourceTree = "<group>"; };
 		44E8B9121CAEC41B0081DA30 /* KCPickerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCPickerTableViewController.m; sourceTree = "<group>"; };
 		44E8B9141CAEC5E20081DA30 /* KCPickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCPickerTableViewCell.h; sourceTree = "<group>"; };
@@ -319,8 +316,6 @@
 				44E8B8F71CAEA6350081DA30 /* KCSchoolInformationViewController.m */,
 				444924B21CB3B9AB008737A6 /* KCSchoolInformationTableViewController.h */,
 				444924B31CB3B9AB008737A6 /* KCSchoolInformationTableViewController.m */,
-				44E8B90E1CAEC0CB0081DA30 /* KCPikerViewController.h */,
-				44E8B90F1CAEC0CB0081DA30 /* KCPikerViewController.m */,
 				44E8B9111CAEC41B0081DA30 /* KCPickerTableViewController.h */,
 				44E8B9121CAEC41B0081DA30 /* KCPickerTableViewController.m */,
 				444924B71CB3ECD7008737A6 /* KCSearchViewController.h */,
@@ -944,7 +939,6 @@
 				09A0F4C51CA03C1A00C34901 /* UINavigationController+Advanced.m in Sources */,
 				093A3EA11CA2E3F000EC91FE /* KCClassViewController.m in Sources */,
 				B69EB4681C821426008BA05F /* SchoolRegistrationViewController.m in Sources */,
-				44E8B9101CAEC0CB0081DA30 /* KCPikerViewController.m in Sources */,
 				444F7F861CB012C9003F7D9B /* KCAPIClient.m in Sources */,
 				093A3E9B1CA2E3F000EC91FE /* KCClassItemTableViewCell.m in Sources */,
 			);

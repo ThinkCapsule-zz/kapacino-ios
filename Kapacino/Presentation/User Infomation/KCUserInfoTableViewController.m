@@ -27,7 +27,7 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([sender isKindOfClass:[KCUserInfoTableViewCell class]] && [segue.destinationViewController isKindOfClass:[KCPikerViewController class]]) {
+    if ([sender isKindOfClass:[KCUserInfoTableViewCell class]] && [segue.destinationViewController isKindOfClass:[KCPickerTableViewController class]]) {
         [self prepareForSegueWithPickerController:segue.destinationViewController cell:sender];
     } else if ([sender isKindOfClass:[KCUserInfoTableViewCell class]] && [segue.destinationViewController isKindOfClass:[KCSearchViewController class]]) {
         [self prepareForSegueWithSearchViewController:segue.destinationViewController cell:sender];
@@ -42,19 +42,19 @@
     }
 }
 
-- (void)prepareForSegueWithPickerController:(KCPikerViewController *)controller cell:(KCUserInfoTableViewCell *)cell {
+- (void)prepareForSegueWithPickerController:(KCPickerTableViewController *)controller cell:(KCUserInfoTableViewCell *)cell {
     controller.delegate = self;
     controller.userInfo = self.userInfo;
     controller.categoryName = cell.title.text;
     if ([cell.title.text isEqualToString:@"Gender*"]) {
         NSArray *items = @[ @"Female", @"Male", @"Other" ];
-        controller.categoryItems = items;
+        controller.items = items;
     } else if ([cell.title.text isEqualToString:@"Country*"]) {
         NSArray *items = @[ @"USA", @"Canada", @"UK" ];
-        controller.categoryItems = items;
+        controller.items = items;
     } else if ([cell.title.text isEqualToString:@"Hometown*"]) {
         NSArray *items = @[ @"New-York", @"Toronto", @"London", @"L.A.", @"Ottava", @"Liverpool" ];
-        controller.categoryItems = items;
+        controller.items = items;
     }
 }
 
@@ -68,7 +68,7 @@
     [self.userInfo setObject:sender.text forKey:@"Name"];
 }
 
-- (void)pickerViewController:(KCPikerViewController *)controller didChangeUserInfo:(NSMutableDictionary *)userInfo {
+- (void)pickerTableViewController:(KCPickerTableViewController *)controller didChangeUserInfo:(NSMutableDictionary *)userInfo {
     _userInfo = userInfo;
     [self.tableView reloadData];
 }
@@ -76,6 +76,11 @@
 - (void)searchViewController:(KCSearchViewController *)controller didChangeUserInfo:(NSMutableDictionary *)userInfo {
     _userInfo = userInfo;
     [self.tableView reloadData];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField endEditing:YES];
+    return YES;
 }
 
 @end
