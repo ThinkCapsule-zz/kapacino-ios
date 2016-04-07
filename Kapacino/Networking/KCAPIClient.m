@@ -62,7 +62,9 @@ static KCAPIClient *__sharedClient = nil;
         if (error) {
             failure(error);
         } else {
-            success (authData);
+            if (success) {
+                success (authData);
+            }
         }
     }];
 }
@@ -73,7 +75,9 @@ static KCAPIClient *__sharedClient = nil;
         if (error) {
             failure (error);
         } else {
-            success (authData);
+            if (success) {
+                success (authData);
+            }
         }
     }];
 }
@@ -85,7 +89,9 @@ static KCAPIClient *__sharedClient = nil;
         [userInfo setObject:email forKey:@"Email"];
         [self createUserWithID:uID userInfo:userInfo success:^(Firebase *userRef) {
             self.currentUserID = uID;
-            success (userRef);
+            if (success) {
+                success (userRef);
+            }
         } failure:^(NSError *error) {
             failure (error);
         }];
@@ -96,16 +102,15 @@ static KCAPIClient *__sharedClient = nil;
     
     [getUser observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
         BOOL completeUserProfile = nil;
-         self.currentUserID = uID;
+        self.currentUserID = uID;
         if (snapshot.value != [NSNull null]) {
             completeUserProfile = [snapshot.value objectForKey:@"complete"];
             success(snapshot.value, completeUserProfile);
         } else {
-            success(snapshot.value, completeUserProfile);
-//            NSError *error = nil;
-//            failure(error);
-    }
-
+            if (success) {
+                success(snapshot.value, completeUserProfile);
+            }
+        }
     }];
 }
 
@@ -116,7 +121,9 @@ static KCAPIClient *__sharedClient = nil;
             failure (error);
         } else {
             self.currentUserID = uID;
-            success (ref);
+            if (success) {
+                success (ref);
+            }
         }
     }];
 }
@@ -127,7 +134,9 @@ static KCAPIClient *__sharedClient = nil;
         if (error) {
             failure (error);
         } else {
-            success (ref);
+            if (success) {
+                success (ref);
+            }
         }
     }];
 }

@@ -13,34 +13,27 @@
 
 @interface KCUserInformationViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *headerLabel;
 @property (strong, nonatomic) KCUserInfoTableViewController *userInfoTebleViewController;
 
 @end
 
 @implementation KCUserInformationViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (BOOL)checkUserInfo {
+    self.userInfo = self.userInfoTebleViewController.userInfo;
     NSString *userName = [self.userInfo objectForKey:@"Name"];
-    if (userName) {
-        NSString *firstName = [[userName componentsSeparatedByString:@" "] firstObject];
-        self.headerLabel.text = [NSString stringWithFormat:@"Hello %@",firstName ];
-    } else {
-        self.headerLabel.text = @"Hello";
+    NSString *gender = [self.userInfo objectForKey:@"Gender"];
+    NSString *country = [self.userInfo objectForKey:@"Country"];
+    NSString *hometown = [self.userInfo objectForKey:@"Hometown"];
+    if (!userName.length || !gender || !country || !hometown) {
+        return NO;
     }
+    return YES;
 }
 
--(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     if ([identifier isEqualToString:@"showSchoolInfo"]) {
-        self.userInfo = self.userInfoTebleViewController.userInfo;
-        NSString *userName = [self.userInfo objectForKey:@"Name"];
-        NSString *gender = [self.userInfo objectForKey:@"Gender"];
-        NSString *country = [self.userInfo objectForKey:@"Country"];
-        NSString *hometown = [self.userInfo objectForKey:@"Hometown"];
-        if (!userName.length || !gender || !country || !hometown) {
-            return NO;
-        }
+        return [self checkUserInfo];
     }
     return YES;
 }

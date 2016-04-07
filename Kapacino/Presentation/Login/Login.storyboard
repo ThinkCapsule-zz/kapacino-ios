@@ -8,8 +8,8 @@
         <!--Navigation Controller-->
         <scene sceneID="okV-zV-7Iw">
             <objects>
-                <navigationController id="xIP-t7-D5n" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pa1-75-6iO" customClass="KCLoginNavigationBar">
+                <navigationController id="xIP-t7-D5n" customClass="KCNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pa1-75-6iO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -34,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title_image" translatesAutoresizingMaskIntoConstraints="NO" id="gcq-8g-LeF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kapacino_logo" translatesAutoresizingMaskIntoConstraints="NO" id="gcq-8g-LeF">
                                 <rect key="frame" x="30" y="174" width="260" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Jvs-kL-BYS"/>
@@ -88,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4B1-y6-d61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517" y="449"/>
+            <point key="canvasLocation" x="529" y="470"/>
         </scene>
         <!--Email Login View Controller-->
         <scene sceneID="98P-Ib-f19">
@@ -157,6 +157,6 @@
     </scenes>
     <resources>
         <image name="Facebook_logo" width="18" height="18"/>
-        <image name="title_image" width="120" height="90"/>
+        <image name="kapacino_logo" width="300" height="46"/>
     </resources>
 </document>

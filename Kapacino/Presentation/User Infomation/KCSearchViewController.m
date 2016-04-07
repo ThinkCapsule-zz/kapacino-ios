@@ -88,7 +88,6 @@
      NSString *cityName = [self.searchResult objectAtIndex:indexPath.row];
     self.searchTextField.text = cityName;
     [self searchControllerSetValue:cityName];
-    
 }
 
 

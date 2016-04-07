@@ -11,12 +11,22 @@
 
 @interface KCUserInfoTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *headerLabel;
+
 @end
 
 @implementation KCUserInfoTableViewController
 
--(void)viewDidLoad {
+- (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *userName = [self.userInfo objectForKey:@"Name"];
+    if (userName) {
+        NSString *firstName = [[userName componentsSeparatedByString:@" "] firstObject];
+        self.headerLabel.text = [NSString stringWithFormat:@"Hello %@",firstName ];
+    } else {
+        self.headerLabel.text = @"Hello";
+    }
 }
 
 - (NSMutableDictionary *)userInfo {
@@ -26,7 +36,7 @@
     return _userInfo;
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([sender isKindOfClass:[KCUserInfoTableViewCell class]] && [segue.destinationViewController isKindOfClass:[KCPickerTableViewController class]]) {
         [self prepareForSegueWithPickerController:segue.destinationViewController cell:sender];
     } else if ([sender isKindOfClass:[KCUserInfoTableViewCell class]] && [segue.destinationViewController isKindOfClass:[KCSearchViewController class]]) {
@@ -78,7 +88,7 @@
     [self.tableView reloadData];
 }
 
--(BOOL)textFieldShouldReturn:(UITextField *)textField {
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField endEditing:YES];
     return YES;
 }

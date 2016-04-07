@@ -48,7 +48,7 @@
             }
         } failure:nil];
     } failure:^(NSError *error) {
-        if (error.code == -8) {
+        if (error.code == -8 && [error.domain isEqualToString:@"FirebaseAuthentication"]) {
             [[KCAPIClient sharedClient] createUserWithEmail:self.email password:self.password success:^(Firebase *userRef) {
                 [self showUserInformationViewControllerWithUserInfo:userInfo];
             } failure:nil];
@@ -57,10 +57,9 @@
 }
 
 - (void)showUserInformationViewControllerWithUserInfo:(NSMutableDictionary *)userInfo {
-    KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCUserInformationViewController"];
+    KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateInitialViewController];
     userInfoVC.userInfo = userInfo;
-    KCNavigationController *navigationController = [[KCNavigationController alloc] initWithRootViewController:userInfoVC];
-    [self presentViewController:navigationController animated:YES completion:nil];
+    [self.navigationController setViewControllers:@[userInfoVC] animated:YES];
 }
 
 @end

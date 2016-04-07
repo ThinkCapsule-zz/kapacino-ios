@@ -20,6 +20,7 @@
 		0980F5741C9C452D002355E8 /* CFClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0980F5731C9C452D002355E8 /* CFClassModel.m */; };
 		09A0F4BE1C9FEEC900C34901 /* GPA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A0F4BD1C9FEEC900C34901 /* GPA.storyboard */; };
 		09A0F4C51CA03C1A00C34901 /* UINavigationController+Advanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A0F4C41CA03C1A00C34901 /* UINavigationController+Advanced.m */; };
+		443879771CB6B3DC00071AB8 /* KCLoadingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 443879761CB6B3DC00071AB8 /* KCLoadingPage.m */; };
 		443AC22F1CAE6939007EBF23 /* User Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443AC22E1CAE6939007EBF23 /* User Information.storyboard */; };
 		443C48381CAD3A6A004436CD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443C48371CAD3A6A004436CD /* Login.storyboard */; };
 		443C483B1CAD487D004436CD /* KCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443C483A1CAD487D004436CD /* KCLoginViewController.m */; };
@@ -125,6 +126,8 @@
 		09A0F4BD1C9FEEC900C34901 /* GPA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GPA.storyboard; sourceTree = "<group>"; };
 		09A0F4C31CA03C1A00C34901 /* UINavigationController+Advanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Advanced.h"; sourceTree = "<group>"; };
 		09A0F4C41CA03C1A00C34901 /* UINavigationController+Advanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Advanced.m"; sourceTree = "<group>"; };
+		443879751CB6B3DC00071AB8 /* KCLoadingPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLoadingPage.h; sourceTree = "<group>"; };
+		443879761CB6B3DC00071AB8 /* KCLoadingPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLoadingPage.m; sourceTree = "<group>"; };
 		443AC22E1CAE6939007EBF23 /* User Information.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "User Information.storyboard"; sourceTree = "<group>"; };
 		443C48371CAD3A6A004436CD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		443C48391CAD487D004436CD /* KCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCLoginViewController.h; sourceTree = "<group>"; };
@@ -320,6 +323,8 @@
 				44E8B9121CAEC41B0081DA30 /* KCPickerTableViewController.m */,
 				444924B71CB3ECD7008737A6 /* KCSearchViewController.h */,
 				444924B81CB3ECD7008737A6 /* KCSearchViewController.m */,
+				443879751CB6B3DC00071AB8 /* KCLoadingPage.h */,
+				443879761CB6B3DC00071AB8 /* KCLoadingPage.m */,
 			);
 			path = "User Infomation";
 			sourceTree = "<group>";
@@ -927,6 +932,7 @@
 				44E8B8F51CAE803B0081DA30 /* KCUserInfoLabel.m in Sources */,
 				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,
 				44461DD91CB274730018E13E /* KCLoginRoundedButton.m in Sources */,
+				443879771CB6B3DC00071AB8 /* KCLoadingPage.m in Sources */,
 				44461DD61CB2728D0018E13E /* KCLoginNavigationBar.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
 				B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */,
