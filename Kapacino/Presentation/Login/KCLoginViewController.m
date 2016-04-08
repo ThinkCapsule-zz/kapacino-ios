@@ -48,10 +48,9 @@
                         [userInfo setObject:gender forKey:@"Gender"];
                         [userInfo setObject:email forKey:@"Email"];
                         [[KCAPIClient sharedClient] createUserWithID:authData.uid userInfo:userInfo success:^(Firebase *userRef) {
-                            KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCUserInformationViewController"];
+                            KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateInitialViewController];
                             userInfoVC.userInfo = userInfo;
-                            KCNavigationController *navigationController = [[KCNavigationController alloc] initWithRootViewController:userInfoVC];
-                            [self presentViewController:navigationController animated:YES completion:nil];
+                            [self.navigationController setViewControllers:@[ userInfoVC ] animated:YES];
                         } failure:nil];
                     }
                 } failure:nil];

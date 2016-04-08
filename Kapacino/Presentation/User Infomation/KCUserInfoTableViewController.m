@@ -24,6 +24,8 @@
     if (userName) {
         NSString *firstName = [[userName componentsSeparatedByString:@" "] firstObject];
         self.headerLabel.text = [NSString stringWithFormat:@"Hello %@",firstName ];
+        self.headerLabel.adjustsFontSizeToFitWidth = YES;
+        self.headerLabel.minimumScaleFactor = 0.5;
     } else {
         self.headerLabel.text = @"Hello";
     }
