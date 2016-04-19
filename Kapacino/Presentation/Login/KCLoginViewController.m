@@ -20,8 +20,9 @@
 
 @implementation KCLoginViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 - (IBAction)facebookButtonAction:(id)sender {

@@ -21,6 +21,11 @@
 
 @implementation KCEmailLoginViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.navigationController.navigationBar.hidden = NO;
+}
+
 
 - (IBAction)emailTextFieldEditingChanged:(UITextField *)textField {
     self.email = textField.text;

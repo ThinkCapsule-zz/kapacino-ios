@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="xIP-t7-D5n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="xIP-t7-D5n">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -34,20 +34,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kapacino_logo" translatesAutoresizingMaskIntoConstraints="NO" id="gcq-8g-LeF">
-                                <rect key="frame" x="30" y="174" width="260" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="zX9-Sf-i9a">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kapacino_logo" translatesAutoresizingMaskIntoConstraints="NO" id="gcq-8g-LeF">
+                                <rect key="frame" x="30" y="154" width="260" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Jvs-kL-BYS"/>
+                                    <constraint firstAttribute="height" constant="180" id="Jvs-kL-BYS"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-JQ-Ffm" customClass="KCLoginRoundedButton">
-                                <rect key="frame" x="30" y="274" width="135" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your daily campus fix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGy-yl-EQQ">
+                                <rect key="frame" x="0.0" y="284" width="320" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-JQ-Ffm">
+                                <rect key="frame" x="30" y="467" width="260" height="39"/>
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.3529411764705882" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="8y8-Hd-Ano"/>
-                                    <constraint firstAttribute="height" constant="40" id="Yed-pJ-tJD"/>
+                                    <constraint firstAttribute="height" constant="39" id="Yed-pJ-tJD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="6" maxY="0.0"/>
                                 <state key="normal" title="  Sign Up With Facebook" image="Facebook_logo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,16 +64,15 @@
                                     <action selector="facebookButtonAction:" destination="vYu-ZP-hOx" eventType="touchUpInside" id="Lnx-VC-AUl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwD-2V-Acs" customClass="KCLoginRoundedButton">
-                                <rect key="frame" x="170" y="274" width="120" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwD-2V-Acs">
+                                <rect key="frame" x="30" y="408" width="260" height="39"/>
+                                <color key="backgroundColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="lru-N3-nBf"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="zq8-ZN-ziR"/>
+                                    <constraint firstAttribute="height" constant="39" id="lru-N3-nBf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Sign Up with E-mail">
-                                    <color key="titleColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="s1t-zf-VIN" kind="push" id="3Ca-Nw-I6a"/>
@@ -74,14 +81,22 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="gcq-8g-LeF" secondAttribute="trailing" constant="30" id="AId-Qh-Her"/>
-                            <constraint firstItem="iwD-2V-Acs" firstAttribute="leading" secondItem="8KG-JQ-Ffm" secondAttribute="trailing" constant="5" id="Gbq-WJ-Vw5"/>
-                            <constraint firstItem="iwD-2V-Acs" firstAttribute="top" secondItem="gcq-8g-LeF" secondAttribute="bottom" id="I63-fB-emg"/>
-                            <constraint firstItem="8KG-JQ-Ffm" firstAttribute="top" secondItem="gcq-8g-LeF" secondAttribute="bottom" id="Qdx-cJ-VnZ"/>
-                            <constraint firstItem="gcq-8g-LeF" firstAttribute="centerY" secondItem="hUj-6Q-SWL" secondAttribute="centerY" constant="-60" id="bV2-qH-yId"/>
-                            <constraint firstAttribute="trailing" secondItem="iwD-2V-Acs" secondAttribute="trailing" constant="30" id="he6-vL-a33"/>
-                            <constraint firstItem="8KG-JQ-Ffm" firstAttribute="leading" secondItem="hUj-6Q-SWL" secondAttribute="leading" constant="30" id="hhe-EF-zFD"/>
-                            <constraint firstItem="gcq-8g-LeF" firstAttribute="leading" secondItem="hUj-6Q-SWL" secondAttribute="leading" constant="30" id="seK-qz-rPE"/>
+                            <constraint firstAttribute="trailing" secondItem="zX9-Sf-i9a" secondAttribute="trailing" id="3hi-L6-926"/>
+                            <constraint firstItem="jGy-yl-EQQ" firstAttribute="top" secondItem="gcq-8g-LeF" secondAttribute="bottom" constant="-50" id="5Ab-Rd-X05"/>
+                            <constraint firstAttribute="trailing" secondItem="jGy-yl-EQQ" secondAttribute="trailing" id="5FM-jb-CtX"/>
+                            <constraint firstItem="8KG-JQ-Ffm" firstAttribute="leading" secondItem="hUj-6Q-SWL" secondAttribute="leading" constant="30" id="8BY-Qc-pPA"/>
+                            <constraint firstAttribute="bottom" secondItem="zX9-Sf-i9a" secondAttribute="bottom" id="9nL-CE-euE"/>
+                            <constraint firstItem="gcq-8g-LeF" firstAttribute="centerY" secondItem="hUj-6Q-SWL" secondAttribute="centerY" constant="-40" id="Moe-aj-dzO"/>
+                            <constraint firstItem="iwD-2V-Acs" firstAttribute="top" secondItem="jGy-yl-EQQ" secondAttribute="bottom" constant="100" id="QxD-li-68y"/>
+                            <constraint firstItem="8KG-JQ-Ffm" firstAttribute="top" secondItem="iwD-2V-Acs" secondAttribute="bottom" constant="20" id="Rqo-o7-agO"/>
+                            <constraint firstItem="zX9-Sf-i9a" firstAttribute="leading" secondItem="hUj-6Q-SWL" secondAttribute="leading" id="TpT-OH-c2p"/>
+                            <constraint firstAttribute="trailing" secondItem="8KG-JQ-Ffm" secondAttribute="trailing" constant="30" id="fCY-8k-Rn8"/>
+                            <constraint firstAttribute="trailing" secondItem="gcq-8g-LeF" secondAttribute="trailing" constant="30" id="iI2-nX-e5g"/>
+                            <constraint firstItem="jGy-yl-EQQ" firstAttribute="leading" secondItem="hUj-6Q-SWL" secondAttribute="leading" id="jnu-UV-1Pr"/>
+                            <constraint firstItem="gcq-8g-LeF" firstAttribute="leading" secondItem="hUj-6Q-SWL" secondAttribute="leading" constant="30" id="k7q-0C-qOP"/>
+                            <constraint firstItem="iwD-2V-Acs" firstAttribute="leading" secondItem="hUj-6Q-SWL" secondAttribute="leading" constant="30" id="m17-EX-zea"/>
+                            <constraint firstAttribute="trailing" secondItem="iwD-2V-Acs" secondAttribute="trailing" constant="30" id="pPA-V9-OF4"/>
+                            <constraint firstItem="zX9-Sf-i9a" firstAttribute="top" secondItem="hUj-6Q-SWL" secondAttribute="top" id="poY-Vw-ZlN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YPO-Ts-cds"/>
@@ -157,6 +172,7 @@
     </scenes>
     <resources>
         <image name="Facebook_logo" width="18" height="18"/>
-        <image name="kapacino_logo" width="300" height="46"/>
+        <image name="kapacino_logo" width="320" height="240"/>
+        <image name="loginBackGround" width="375" height="667"/>
     </resources>
 </document>
