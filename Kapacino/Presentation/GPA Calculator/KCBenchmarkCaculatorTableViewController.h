@@ -10,12 +10,22 @@
 
 #import "CFClassModel.h"
 
+@protocol KCBenchmarkCaculatorTableViewControllerDelegate;
+
 @interface KCBenchmarkCaculatorTableViewController : UITableViewController
 
 @property (strong, nonatomic) CFClassModel *model;
+@property (nonatomic, weak) id<KCBenchmarkCaculatorTableViewControllerDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UITextField *currentMarkTextField;
 @property (weak, nonatomic) IBOutlet UITextField *dreamMarkTextField;
 @property (weak, nonatomic) IBOutlet UITextField *weightTextField;
+
+@end
+
+@protocol KCBenchmarkCaculatorTableViewControllerDelegate <NSObject>
+
+
+- (void)benchmarkCaculatorTableViewController:(KCBenchmarkCaculatorTableViewController *)controller didChangeModel:(CFClassModel *)model;
 
 @end

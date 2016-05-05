@@ -15,6 +15,8 @@
     
     self.layer.cornerRadius = self.frame.size.width / 2;
     self.clipsToBounds = YES;
+    self.adjustsFontSizeToFitWidth = YES;
+    self.minimumScaleFactor = 0.5;
 }
 
 @end

@@ -15,6 +15,9 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *prof;
 @property (nonatomic, copy) NSNumber *mark;
+@property (nonatomic, copy) NSNumber *benchmark;
+@property (nonatomic, copy) NSNumber *dreamMark;
+@property (nonatomic, copy) NSNumber *totalWeight;
 @property (nonatomic, copy) NSArray *items;
 
 @end

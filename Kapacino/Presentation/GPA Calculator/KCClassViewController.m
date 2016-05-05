@@ -10,10 +10,12 @@
 #import "KCClassItemsTableViewController.h"
 #import "KCAddItemTableViewController.h"
 #import "KCBenchmarkCalculatorViewController.h"
+#import "CFClassItem.h"
 
 @interface KCClassViewController () <KCAddItemTableViewControllerDelegate>
 
 @property (weak, nonatomic) KCClassItemsTableViewController *itemsTableViewController;
+@property (weak, nonatomic) IBOutlet UILabel *totalMarkLabel;
 
 @end
 
@@ -22,10 +24,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self reloadEmptyView];
+    [self updateTotalMark];
 }
 
 - (void)reloadEmptyView {
     self.emptyView.hidden = self.model.items.count > 0;
+}
+
+- (void)updateTotalMark {
+    NSInteger totalMark = 0;
+    for (CFClassItem *item in self.model.items) {
+        totalMark += item.mark.integerValue;
+    }
+    self.totalMarkLabel.text = [NSString stringWithFormat:@"MARK: %ld",(long)totalMark];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -60,7 +71,7 @@
     
     [self.itemsTableViewController.tableView reloadData];
     [self reloadEmptyView];
-    
+    [self updateTotalMark];
     [self.navigationController popToViewController:self animated:YES];
 }
 

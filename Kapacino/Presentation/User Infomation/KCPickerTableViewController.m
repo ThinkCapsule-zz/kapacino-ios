@@ -35,6 +35,13 @@
     }
 }
 
+- (NSMutableDictionary *)userInfo {
+    if (!_userInfo) {
+        _userInfo = [[NSMutableDictionary alloc] init];
+    }
+    return _userInfo;
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
