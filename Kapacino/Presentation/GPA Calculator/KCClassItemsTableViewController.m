@@ -38,4 +38,21 @@
     return cell;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+         CFClassItem *item = [self.model objectAtIndex:indexPath.row];
+        [self.model removeObject:item];
+        if ([self.delegate respondsToSelector:@selector(classItemsTableViewController:didRemoveItem:)]) {
+            [self.delegate classItemsTableViewController:self didRemoveItem:item];
+        }
+        [tableView reloadData];
+    }
+}
+
 @end

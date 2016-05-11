@@ -12,7 +12,7 @@
 #import "KCBenchmarkCalculatorViewController.h"
 #import "CFClassItem.h"
 
-@interface KCClassViewController () <KCAddItemTableViewControllerDelegate>
+@interface KCClassViewController () <KCAddItemTableViewControllerDelegate, KCClassItemsTableViewControllerDelegate>
 
 @property (weak, nonatomic) KCClassItemsTableViewController *itemsTableViewController;
 @property (weak, nonatomic) IBOutlet UILabel *totalMarkLabel;
@@ -51,6 +51,7 @@
 
 - (void)prepareForSegueWithClassItemsTableViewController:(KCClassItemsTableViewController *)controller {
     controller.model = [self.model.items mutableCopy];
+    controller.delegate = self;
     self.itemsTableViewController = controller;
 }
 
@@ -73,6 +74,14 @@
     [self reloadEmptyView];
     [self updateTotalMark];
     [self.navigationController popToViewController:self animated:YES];
+}
+
+#pragma mark - Class Items table view controller delegate
+
+- (void)classItemsTableViewController:(KCClassItemsTableViewController *)controller didRemoveItem:(CFClassItem *)item {
+    self.model.items = self.itemsTableViewController.model;
+    [self reloadEmptyView];
+    [self updateTotalMark];
 }
 
 @end

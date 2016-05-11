@@ -10,8 +10,19 @@
 
 #import "CFClassItem.h"
 
+@protocol KCClassItemsTableViewControllerDelegate;
+
 @interface KCClassItemsTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSMutableArray *model;
+@property (nonatomic, weak) id<KCClassItemsTableViewControllerDelegate> delegate;
+
+@end
+
+@protocol KCClassItemsTableViewControllerDelegate <NSObject>
+
+@optional
+
+- (void)classItemsTableViewController:(KCClassItemsTableViewController *)controller didRemoveItem:(CFClassItem *)item;
 
 @end

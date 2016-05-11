@@ -49,28 +49,6 @@
 - (NSMutableArray *)model {
     if (!_model) {
         _model = [[NSMutableArray alloc] init];
-        
-        CFClassModel *class1 = [[CFClassModel alloc] init];
-        class1.name = @"ANAT 4452";
-        class1.mark = @80;
-        
-        CFClassModel *class2 = [[CFClassModel alloc] init];
-        class2.name = @"BUS 2257";
-        class2.mark = @70;
-        
-        CFClassModel *class3 = [[CFClassModel alloc] init];
-        class3.name = @"STATS 2244";
-        class3.mark = @30;
-        
-        CFClassItem *item = [[CFClassItem alloc] init];
-        item.type = @"Assigment";
-        item.name = @"Map Assigment";
-        item.mark = @25;
-        item.weight = @50;
-        
-        class3.items = @[ item ];
-        
-        [_model addObjectsFromArray:@[ class1, class2, class3 ]];
     }
     return _model;
 }
@@ -87,6 +65,19 @@
     cell.textLabel.text = model.name;
     cell.detailTextLabel.text = model.mark.stringValue;
     return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [self.model removeObjectAtIndex:indexPath.row];
+        [tableView reloadData];
+    }
 }
 
 #pragma mark - Add class view controller delegate
