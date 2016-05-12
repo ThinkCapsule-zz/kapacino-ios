@@ -8,7 +8,8 @@
 
 #import "KCAPIClient.h"
 
-static NSString *const KCBaseUrlString = @"luminous-inferno-6931.firebaseio.com";
+static NSString *const KCBaseUrlString = @"radiant-inferno-4979.firebaseIO.com";
+
 static NSString *const KCUsersPath= @"users";
 
 static KCAPIClient *__sharedClient = nil;

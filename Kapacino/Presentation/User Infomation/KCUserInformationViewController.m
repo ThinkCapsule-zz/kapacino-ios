@@ -19,6 +19,11 @@
 
 @implementation KCUserInformationViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.navigationController.navigationBar.hidden = NO;
+}
+
 - (BOOL)checkUserInfo {
     self.userInfo = self.userInfoTebleViewController.userInfo;
     NSString *userName = [self.userInfo objectForKey:@"Name"];

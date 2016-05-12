@@ -9,9 +9,9 @@
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>FacebookAppID</key>
-	<string>1722551301356620</string>
+	<string>405902686277256</string>
 	<key>FacebookDisplayName</key>
-	<string>Kapacino</string>
+	<string>kapacino</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -21,7 +21,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1722551301356620</string>
+				<string>fb405902686277256</string>
 			</array>
 		</dict>
 	</array>
