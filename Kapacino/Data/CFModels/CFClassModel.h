@@ -18,6 +18,7 @@
 @property (nonatomic, copy) NSNumber *benchmark;
 @property (nonatomic, copy) NSNumber *dreamMark;
 @property (nonatomic, copy) NSNumber *totalWeight;
+@property (nonatomic, copy) NSNumber *totalMark;
 @property (nonatomic, copy) NSArray *items;
 
 @end

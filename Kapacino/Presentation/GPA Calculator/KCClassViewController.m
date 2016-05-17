@@ -32,11 +32,17 @@
 }
 
 - (void)updateTotalMark {
-    NSInteger totalMark = 0;
+    float totalMark = 0;
+    float totalWieght = 0;
     for (CFClassItem *item in self.model.items) {
-        totalMark += item.mark.integerValue;
+        totalMark += (item.mark.integerValue * (item.weight.integerValue * 0.01));
+        totalWieght += (item.weight.integerValue * 0.01);
+    }
+    if (totalMark > 0) {
+        totalMark = totalMark / totalWieght;
     }
     self.totalMarkLabel.text = [NSString stringWithFormat:@"MARK: %ld",(long)totalMark];
+    self.model.totalMark = @(totalMark);
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

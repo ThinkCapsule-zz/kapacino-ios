@@ -16,11 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSInteger totalMark = 0;
-    for (CFClassItem *item in self.model.items) {
-        totalMark += item.mark.integerValue;
-    }
-    self.currentMarkTextField.text = [NSString stringWithFormat:@"%ld", (long)totalMark];
+
+    self.currentMarkTextField.text = [NSString stringWithFormat:@"%ld", (long)self.model.totalMark.integerValue];
     self.dreamMarkTextField.text = self.model.dreamMark.integerValue != 0 ? self.model.dreamMark.stringValue : nil;
     self.weightTextField.text = self.model.totalWeight.integerValue != 0 ? self.model.totalWeight.stringValue : nil;
     [self updateDiagram];
