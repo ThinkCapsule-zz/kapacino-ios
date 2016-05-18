@@ -38,7 +38,9 @@
             [[KCAPIClient sharedClient] loginUserWithProvider:@"facebook" token:result.token.tokenString success:^(FAuthData *authData) {
                 [[KCAPIClient sharedClient] getUserByID:authData.uid success:^(NSDictionary *userData, BOOL completeUserProfile) {
                     if (completeUserProfile) {
-                        [self dismissViewControllerAnimated:YES completion:nil];
+                        KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateInitialViewController];
+                        userInfoVC.userInfo =[NSMutableDictionary dictionaryWithDictionary:userData];
+                        [self.navigationController setViewControllers:@[ userInfoVC ] animated:YES];
                     } else {
                         NSDictionary *facebookUserInfo = [authData.providerData objectForKey:@"cachedUserProfile"];
                         NSString *name = [facebookUserInfo objectForKey:@"name"];

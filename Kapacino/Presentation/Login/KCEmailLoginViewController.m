@@ -43,7 +43,7 @@
     [[KCAPIClient sharedClient] loginUserWithEmail:self.email password:self.password success:^(FAuthData *authData) {
         [[KCAPIClient sharedClient] getUserByID:authData.uid success:^(NSDictionary *userData, BOOL completeUserProfile) {
             if (completeUserProfile) {
-                [self dismissViewControllerAnimated:YES completion:nil];
+                [self showUserInformationViewControllerWithUserInfo:[NSMutableDictionary dictionaryWithDictionary:userData]];
             } else {
                 if (![userData isKindOfClass:[NSNull class]]) {
                     [self showUserInformationViewControllerWithUserInfo:[NSMutableDictionary dictionaryWithDictionary:userData]];
