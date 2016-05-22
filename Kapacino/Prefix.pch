@@ -1,0 +1,14 @@
+//
+//  Prefix.pch
+//  Kapacino
+//
+//  Created by Alan Hsu on 2016-01-24.
+//  Copyright © 2016 Alan Hsu. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+#import "UIFont+KCAdditions.h"
+
+#endif /* Prefix_pch */
