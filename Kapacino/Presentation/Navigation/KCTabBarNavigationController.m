@@ -28,6 +28,8 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
 @interface  KCTabBarNavigationController()
 
 @property (nonatomic, strong) KCNavigationController *mainVC;
+@property (nonatomic, strong) KCNavigationController *discoverVC;
+@property (nonatomic, strong) KCNavigationController *profileVC;
 @property (nonatomic, strong) KCNavigationController *gpaCalcVC;
 @property (nonatomic, strong) KCSettingsViewController *settingsVC;
 
@@ -54,7 +56,7 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
     [self.navigationController.navigationBar setBarTintColor:[UIColor kc_ApplicationColor]];
     self.tabBar.tintColor = [UIColor kc_ApplicationColor];
     
-    [self setViewControllers:@[self.mainVC, self.gpaCalcVC, self.settingsVC]];
+    [self setViewControllers:@[self.mainVC, self.discoverVC, self.gpaCalcVC, self.settingsVC]];
 
 }
 
@@ -70,6 +72,27 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
     }
     return _mainVC;
     
+}
+
+- (KCNavigationController *)discoverVC{
+    
+    /*listings, places, events*/
+    if (!_discoverVC){
+        KCMainViewController *discoverVC = [[KCMainViewController alloc] initWithCollectionViewLayout: [[UICollectionViewFlowLayout alloc] init]];
+        _discoverVC = [[KCNavigationController alloc] initWithRootViewController:discoverVC];
+        //needs to be updated with new images from Alyssa
+        _discoverVC.tabBarItem.image = [UIImage imageNamed: @"tab_bar_profile"];
+        
+    }
+    return _discoverVC;
+}
+
+- (KCNavigationController *)profileVC{
+    /*user profile*/
+    if(_profileVC){
+        _profileVC = [[UIStoryboard storyboardWithName:@"Profile" bundle:nil]instantiateInitialViewController];
+    }
+    return _profileVC;
 }
 
 - (KCNavigationController *)gpaCalcVC {
