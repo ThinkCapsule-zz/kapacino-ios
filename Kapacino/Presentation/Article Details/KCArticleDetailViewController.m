@@ -13,6 +13,8 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UIColor+KCAdditions.h"
 #import <WebKit/WebKit.h>
+#import <MMMarkdown/MMMarkdown.h>
+
 
 @interface KCArticleDetailViewController () <WKNavigationDelegate>
 
@@ -41,19 +43,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor brownColor];
+    self.view.backgroundColor = [UIColor redColor];
     
     [self setupDetailView];
     [self setupConstraints];
-    
+
     [self updateText];
     
 }
 
+//instances
+- (void)updateText {
+    
+    self.headline.text   = self.articleModel.headline;
+    self.subline.text    = self.articleModel.byline;
+    self.updated.text    = self.articleModel.publishDate;
+    self.primaryTag.text = [[self.articleModel.tags firstObject] uppercaseString];
+    self.textArea.text   = self.articleModel.body;
+    
+}
+
+
 #pragma mark - Update
 
 - (void)updateWithModel:(CFArticleModel *)articleModel {
-    
+    //declaring global variable
     self.articleModel = articleModel;
     
     [self updateImage];
@@ -66,15 +80,7 @@
 
 }
 
-- (void)updateText {
-    
-    self.headline.text   = self.articleModel.headline;
-    self.subline.text    = self.articleModel.byline;
-    self.updated.text    = self.articleModel.publishDate;
-    self.primaryTag.text = [[self.articleModel.tags firstObject] uppercaseString];
-    self.textArea.text   = self.articleModel.body;
 
-}
 
 #pragma mark - Setup
 
@@ -161,12 +167,15 @@
 }
 
 - (UITextView *)textArea {
+
+    
     if (!_textArea) {
         _textArea               = [[UITextView alloc] initWithFrame:self.view.frame];
         _textArea.selectable    = NO;
         _textArea.editable      = NO;
         _textArea.scrollEnabled = NO;
         _textArea.font          = [UIFont kc_RegularFontWithSize:16.0f];
+    
     }
     return _textArea;
 }
@@ -238,7 +247,8 @@
 
 - (WKWebView *)webview {
     if (!_webview) {
-        _webview = [[WKWebView alloc] init];
+        _webview = [[WKWebView alloc] initWithFrame:self.view.bounds];
+        _webview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         _webview.scrollView.scrollEnabled = NO;
     }
     return _webview;

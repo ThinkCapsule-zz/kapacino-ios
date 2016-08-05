@@ -26,6 +26,11 @@ PODS:
   - Bolts/AppLinks (1.7.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.7.0)
+  - Contentful (0.2.1):
+    - Decodable (~> 0.4.2)
+    - Interstellar (~> 1.4.0)
+    - "\U0001F555 (= 0.0.1)"
+  - Decodable (0.4.3)
   - FBSDKCoreKit (4.10.1):
     - Bolts (~> 1.5)
   - FBSDKLoginKit (4.10.1):
@@ -33,6 +38,12 @@ PODS:
   - Firebase (2.5.1)
   - HexColors (3.1.1)
   - INSPullToRefresh (1.1.4)
+  - Interstellar (1.4.0):
+    - Interstellar/Core (= 1.4.0)
+    - Interstellar/Warpdrive (= 1.4.0)
+  - Interstellar/Core (1.4.0)
+  - Interstellar/Warpdrive (1.4.0):
+    - Interstellar/Core
   - KeepLayout (1.6.0)
   - Mantle (2.0.5):
     - Mantle/extobjc (= 2.0.5)
@@ -40,9 +51,11 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - "\U0001F555 (0.0.1)"
 
 DEPENDENCIES:
   - AFNetworking (= 2.6.3)
+  - Contentful
   - FBSDKCoreKit
   - FBSDKLoginKit
   - Firebase
@@ -64,13 +77,19 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  Contentful: de96c3cdf1af4ae28828851a18f95cb2b502f8b8
+  Decodable: ab6c7d02a5df949d3ab16b2696528a3241e37c76
   FBSDKCoreKit: d2aaed5e9ab7d8d6301c533376a1fbff1cf3deb5
   FBSDKLoginKit: 699ff169080e3072de4b9b0faca90bf23dc36deb
   Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
   HexColors: d837cebe691e52c867d401ecd2374111add5445f
   INSPullToRefresh: a27f7faf022f858f02a7680943e11a1f7ce3430a
-  KeepLayout: d85a52300a23ba1504ba330c5200bb01ba3baeb0
+  Interstellar: 40fc666872436d6c1b3524c59437ebdb5dec1c6a
+  KeepLayout: 7e4cc496b5b012a3b85e7ad105ff6f82a582cb9f
   Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  "\U0001F555": 2a41c1f9b76698cb697b8ec9a1db1087f5621187
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 16ef89a99e784213867f08b3f2d88fc608bb527a
+
+COCOAPODS: 1.0.0

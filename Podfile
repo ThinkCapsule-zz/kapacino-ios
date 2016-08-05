@@ -1,5 +1,7 @@
-platform :ios, '8.0'
+target 'Kapacino' do
 
+platform :ios, '8.0'
+use_frameworks!
 pod 'AFNetworking', '2.6.3'
 pod 'Mantle', '2.0.5'
 pod 'HexColors', '3.1.1'
@@ -9,3 +11,5 @@ pod 'SDWebImage', '3.7.5'
 pod 'Firebase'
 pod 'FBSDKLoginKit'
 pod 'FBSDKCoreKit'
+pod 'Contentful'
+end

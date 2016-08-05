@@ -1,0 +1,12 @@
+[submodule "MMMarkdown"]
+	path = MMMarkdown
+	url = https://github.com/mdiep/MMMarkdown
+[submodule "Pods/CocoaMarkdown"]
+	path = Pods/CocoaMarkdown
+	url = https://github.com/indragiek/CocoaMarkdown.git
+[submodule "Pods/--force"]
+	path = Pods/--force
+	url = https://github.com/indragiek/CocoaMarkdown.git
+[submodule "Pods/MMMarkdown"]
+	path = Pods/MMMarkdown
+	url = https://github.com/mdiep/MMMarkdown

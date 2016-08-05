@@ -13,5 +13,11 @@
     "tag": "v1.6.0"
   },
   "source_files": "Sources",
-  "requires_arc": true
+  "requires_arc": true,
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
 }

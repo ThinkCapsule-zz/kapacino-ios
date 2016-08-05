@@ -1,0 +1,6 @@
+framework module Pods_Kapacino {
+  umbrella header "Pods-Kapacino-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,8 +7,10 @@
 //
 
 #import "CFArticleModel.h"
+#import <MMMarkdown/MMMarkdown.h>
 
 @implementation CFArticleModel
+
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     
@@ -22,5 +24,6 @@
              @"thumnailURLs": @"arrayUrl"
              };
 }
+
 
 @end

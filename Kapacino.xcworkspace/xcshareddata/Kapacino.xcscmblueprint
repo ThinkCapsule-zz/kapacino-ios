@@ -1,0 +1,65 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3683A221D3009A11B796AE1F82EEA24647AC1A89",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64" : 0,
+    "AE7FD09FEC8B285AB86A7422A06B8D893FA72957" : 0,
+    "960DCF543335492D3B9E5F6D4B8E1AF53AF06834" : 0,
+    "95438028B10BBB846574013D29F154A00556A9D1" : 0,
+    "3683A221D3009A11B796AE1F82EEA24647AC1A89" : 0,
+    "8E756A5F3B3088D21C2995D34B375B49B53EB485" : 0,
+    "9A76F17C6068412484158A754CBD274391008322" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D62F202F-106C-465E-AACA-9FC96799363C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64" : "kapacino-ios\/Pods\/CocoaMarkdown\/External\/Quick\/",
+    "AE7FD09FEC8B285AB86A7422A06B8D893FA72957" : "kapacino-ios\/Pods\/CocoaMarkdown\/",
+    "960DCF543335492D3B9E5F6D4B8E1AF53AF06834" : "kapacino-ios\/Pods\/CocoaMarkdown\/External\/cmark\/",
+    "95438028B10BBB846574013D29F154A00556A9D1" : "kapacino-ios\/Pods\/CocoaMarkdown\/External\/Quick\/Externals\/Nimble\/",
+    "3683A221D3009A11B796AE1F82EEA24647AC1A89" : "kapacino-ios\/",
+    "8E756A5F3B3088D21C2995D34B375B49B53EB485" : "kapacino-ios\/Pods\/MMMarkdown\/",
+    "9A76F17C6068412484158A754CBD274391008322" : "kapacino-ios\/Pods\/CocoaMarkdown\/External\/Ono\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Kapacino",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Kapacino.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ThinkCapsule\/kapacino-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3683A221D3009A11B796AE1F82EEA24647AC1A89"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mdiep\/MMMarkdown",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8E756A5F3B3088D21C2995D34B375B49B53EB485"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Quick\/Nimble.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "95438028B10BBB846574013D29F154A00556A9D1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jgm\/cmark.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "960DCF543335492D3B9E5F6D4B8E1AF53AF06834"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mattt\/Ono.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9A76F17C6068412484158A754CBD274391008322"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/indragiek\/CocoaMarkdown.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE7FD09FEC8B285AB86A7422A06B8D893FA72957"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Quick\/Quick",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64"
+    }
+  ]
+}

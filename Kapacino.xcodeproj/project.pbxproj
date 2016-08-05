@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08C823F155CE5C85CB410A0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C28FE3C8B9B07415F6288B /* libPods.a */; };
 		093A3E9B1CA2E3F000EC91FE /* KCClassItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E891CA2E3F000EC91FE /* KCClassItemTableViewCell.m */; };
 		093A3E9C1CA2E3F000EC91FE /* KCAddClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E8B1CA2E3F000EC91FE /* KCAddClassViewController.m */; };
 		093A3E9D1CA2E3F000EC91FE /* KCAddItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A3E8D1CA2E3F000EC91FE /* KCAddItemTableViewController.m */; };
@@ -42,6 +41,9 @@
 		44E8B90A1CAEB7EE0081DA30 /* KCUserInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B9091CAEB7EE0081DA30 /* KCUserInfoTableViewController.m */; };
 		44E8B9131CAEC41B0081DA30 /* KCPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B9121CAEC41B0081DA30 /* KCPickerTableViewController.m */; };
 		44E8B9161CAEC5E20081DA30 /* KCPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B9151CAEC5E20081DA30 /* KCPickerTableViewCell.m */; };
+		7518C8951D49DF8C0043A7CA /* CocoaMarkdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7518C88A1D49DF730043A7CA /* CocoaMarkdown.framework */; };
+		7518C8961D49DF8C0043A7CA /* CocoaMarkdown.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7518C88A1D49DF730043A7CA /* CocoaMarkdown.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC12430F9E9765F78D220545 /* Pods_Kapacino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C5C3448987B913AC48DA9E /* Pods_Kapacino.framework */; };
 		B60EB8481C0751FD00F3044A /* CFClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8471C0751FD00F3044A /* CFClient.m */; };
 		B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB84D1C0754FE00F3044A /* CFDataSource.m */; };
 		B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B60EB8501C07552000F3044A /* CFDataSourceConstants.m */; };
@@ -86,6 +88,90 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7518C8891D49DF730043A7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7518C8801D49DF730043A7CA /* CocoaMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 729F53DA1A68641400CC7448;
+			remoteInfo = "CocoaMarkdown-iOS";
+		};
+		7518C88B1D49DF730043A7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7518C8801D49DF730043A7CA /* CocoaMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 729F53E51A68641400CC7448;
+			remoteInfo = "CocoaMarkdownTests-iOS";
+		};
+		7518C88D1D49DF730043A7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7518C8801D49DF730043A7CA /* CocoaMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 729F53FB1A68649200CC7448;
+			remoteInfo = "CocoaMarkdown-Mac";
+		};
+		7518C88F1D49DF730043A7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7518C8801D49DF730043A7CA /* CocoaMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 729F54051A68649200CC7448;
+			remoteInfo = "CocoaMarkdownTests-Mac";
+		};
+		7518C8911D49DF730043A7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7518C8801D49DF730043A7CA /* CocoaMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 72FE7EC91A68692400F23F46;
+			remoteInfo = "Example-iOS";
+		};
+		7518C8931D49DF730043A7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7518C8801D49DF730043A7CA /* CocoaMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 72FE7EF41A68695100F23F46;
+			remoteInfo = "Example-Mac";
+		};
+		7518C8971D49DF8C0043A7CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7518C8801D49DF730043A7CA /* CocoaMarkdown.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 729F53D91A68641400CC7448;
+			remoteInfo = "CocoaMarkdown-iOS";
+		};
+		7599CF981D4B2F120068650C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7599CF8B1D4B2F120068650C /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BED7620F1B37810000687B36;
+			remoteInfo = "MMMarkdown (iOS)";
+		};
+		7599CF9A1D4B2F120068650C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7599CF8B1D4B2F120068650C /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BED761571B374D6700687B36;
+			remoteInfo = "MMMarkdown (OS X)";
+		};
+		7599CF9C1D4B2F120068650C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7599CF8B1D4B2F120068650C /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE23E8F41C0CF3EF0087F587;
+			remoteInfo = "MMMarkdown (tvOS)";
+		};
+		7599CF9E1D4B2F120068650C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7599CF8B1D4B2F120068650C /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE23E9131C0CF77D0087F587;
+			remoteInfo = "MMMarkdown (watchOS)";
+		};
+		7599CFA01D4B2F120068650C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7599CF8B1D4B2F120068650C /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BED761611B374D6700687B36;
+			remoteInfo = MMMarkdownTests;
+		};
 		B6D5C2F91C06E92700699793 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B6D5C2D71C06E92700699793 /* Project object */;
@@ -101,6 +187,19 @@
 			remoteInfo = Kapacino;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75B8572E1D49CD3F0092BC69 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7518C8961D49DF8C0043A7CA /* CocoaMarkdown.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		093A3E881CA2E3F000EC91FE /* KCClassItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCClassItemTableViewCell.h; sourceTree = "<group>"; };
@@ -167,6 +266,12 @@
 		44E8B9121CAEC41B0081DA30 /* KCPickerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCPickerTableViewController.m; sourceTree = "<group>"; };
 		44E8B9141CAEC5E20081DA30 /* KCPickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCPickerTableViewCell.h; sourceTree = "<group>"; };
 		44E8B9151CAEC5E20081DA30 /* KCPickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCPickerTableViewCell.m; sourceTree = "<group>"; };
+		7518C8801D49DF730043A7CA /* CocoaMarkdown.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaMarkdown.xcodeproj; path = Pods/CocoaMarkdown/CocoaMarkdown.xcodeproj; sourceTree = "<group>"; };
+		75462CD91D4DF5ED00BA7620 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/CocoaMarkdown/External/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		7599CF8B1D4B2F120068650C /* MMMarkdown.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MMMarkdown.xcodeproj; path = Pods/MMMarkdown/MMMarkdown.xcodeproj; sourceTree = "<group>"; };
+		75B8572C1D49820B0092BC69 /* MMMarkdown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMMarkdown.framework; path = "Pods/MMMarkdown/build/Debug-iphoneos/MMMarkdown.framework"; sourceTree = "<group>"; };
+		77C5C3448987B913AC48DA9E /* Pods_Kapacino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kapacino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67147A85E09555BA0A5F8C8 /* Pods-Kapacino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kapacino.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kapacino/Pods-Kapacino.release.xcconfig"; sourceTree = "<group>"; };
 		B60EB8461C0751FD00F3044A /* CFClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFClient.h; sourceTree = "<group>"; };
 		B60EB8471C0751FD00F3044A /* CFClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFClient.m; sourceTree = "<group>"; };
 		B60EB84A1C07527600F3044A /* CFContentType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFContentType.h; sourceTree = "<group>"; };
@@ -239,9 +344,7 @@
 		B6DC35CD1C55BA4700ED0ABC /* KCFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KCFeedCell.xib; sourceTree = "<group>"; };
 		B6FCB9281C8420030072AFC8 /* KCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCNavigationController.h; sourceTree = "<group>"; };
 		B6FCB9291C8420030072AFC8 /* KCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCNavigationController.m; sourceTree = "<group>"; };
-		C82D419EC931D2622AF4203C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		E0762858DA793F08B3BEE8A3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		F6C28FE3C8B9B07415F6288B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48C0B83AAA8002187C17D0A /* Pods-Kapacino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kapacino.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kapacino/Pods-Kapacino.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,7 +352,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08C823F155CE5C85CB410A0F /* libPods.a in Frameworks */,
+				AC12430F9E9765F78D220545 /* Pods_Kapacino.framework in Frameworks */,
+				7518C8951D49DF8C0043A7CA /* CocoaMarkdown.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,15 +374,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06ED76228C8FF1C38BE29B65 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C82D419EC931D2622AF4203C /* Pods.debug.xcconfig */,
-				E0762858DA793F08B3BEE8A3 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		093A3E871CA2E3F000EC91FE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +488,40 @@
 				44E8B8FE1CAEA73B0081DA30 /* KCViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		7518C8811D49DF730043A7CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7518C88A1D49DF730043A7CA /* CocoaMarkdown.framework */,
+				7518C88C1D49DF730043A7CA /* CocoaMarkdownTests-iOS.xctest */,
+				7518C88E1D49DF730043A7CA /* CocoaMarkdown.framework */,
+				7518C8901D49DF730043A7CA /* CocoaMarkdownTests-Mac.xctest */,
+				7518C8921D49DF730043A7CA /* Example-iOS.app */,
+				7518C8941D49DF730043A7CA /* Example-Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7599CF8C1D4B2F120068650C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7599CF991D4B2F120068650C /* MMMarkdown.framework */,
+				7599CF9B1D4B2F120068650C /* MMMarkdown.framework */,
+				7599CF9D1D4B2F120068650C /* MMMarkdown.framework */,
+				7599CF9F1D4B2F120068650C /* MMMarkdown.framework */,
+				7599CFA11D4B2F120068650C /* MMMarkdownTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F8D8E29BD15FF90E58DAB92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F48C0B83AAA8002187C17D0A /* Pods-Kapacino.debug.xcconfig */,
+				A67147A85E09555BA0A5F8C8 /* Pods-Kapacino.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		B60EB83E1C07513100F3044A /* Data */ = {
@@ -611,12 +740,14 @@
 		B6D5C2D61C06E92700699793 = {
 			isa = PBXGroup;
 			children = (
+				7599CF8B1D4B2F120068650C /* MMMarkdown.xcodeproj */,
+				7518C8801D49DF730043A7CA /* CocoaMarkdown.xcodeproj */,
 				B6D5C2E11C06E92700699793 /* Kapacino */,
 				B6D5C2FB1C06E92700699793 /* KapacinoTests */,
 				B6D5C3061C06E92700699793 /* KapacinoUITests */,
 				B6D5C2E01C06E92700699793 /* Products */,
-				06ED76228C8FF1C38BE29B65 /* Pods */,
 				F6E17E9DD3AA42922F8EF9BD /* Frameworks */,
+				8F8D8E29BD15FF90E58DAB92 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -690,7 +821,9 @@
 		F6E17E9DD3AA42922F8EF9BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F6C28FE3C8B9B07415F6288B /* libPods.a */,
+				75462CD91D4DF5ED00BA7620 /* Nimble.framework */,
+				75B8572C1D49820B0092BC69 /* MMMarkdown.framework */,
+				77C5C3448987B913AC48DA9E /* Pods_Kapacino.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -702,16 +835,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6D5C30C1C06E92700699793 /* Build configuration list for PBXNativeTarget "Kapacino" */;
 			buildPhases = (
-				0B416FAB1F974E4CADDB5497 /* Check Pods Manifest.lock */,
+				7B66662F7F9FB6C7AB65A2C5 /* 📦 Check Pods Manifest.lock */,
+				CAEB33E63D34D5F52737C349 /* [CP] Check Pods Manifest.lock */,
 				B6D5C2DB1C06E92700699793 /* Sources */,
 				B6D5C2DC1C06E92700699793 /* Frameworks */,
 				B6D5C2DD1C06E92700699793 /* Resources */,
-				C6DC73CED2805CFB2F18B481 /* Embed Pods Frameworks */,
-				580B3992AB965986153291C7 /* Copy Pods Resources */,
+				75B8572E1D49CD3F0092BC69 /* CopyFiles */,
+				4BD8A618A4D69DB098259FA9 /* [CP] Embed Pods Frameworks */,
+				749161ABF72A085B0375AEB7 /* [CP] Copy Pods Resources */,
+				57753E18DF1963D0C9AECACE /* 📦 Embed Pods Frameworks */,
+				EC0127C673DCCC8DF2BC74DB /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7518C8981D49DF8C0043A7CA /* PBXTargetDependency */,
 			);
 			name = Kapacino;
 			productName = Kapacino;
@@ -788,6 +926,16 @@
 			mainGroup = B6D5C2D61C06E92700699793;
 			productRefGroup = B6D5C2E01C06E92700699793 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7518C8811D49DF730043A7CA /* Products */;
+					ProjectRef = 7518C8801D49DF730043A7CA /* CocoaMarkdown.xcodeproj */;
+				},
+				{
+					ProductGroup = 7599CF8C1D4B2F120068650C /* Products */;
+					ProjectRef = 7599CF8B1D4B2F120068650C /* MMMarkdown.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B6D5C2DE1C06E92700699793 /* Kapacino */,
@@ -796,6 +944,86 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7518C88A1D49DF730043A7CA /* CocoaMarkdown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaMarkdown.framework;
+			remoteRef = 7518C8891D49DF730043A7CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7518C88C1D49DF730043A7CA /* CocoaMarkdownTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CocoaMarkdownTests-iOS.xctest";
+			remoteRef = 7518C88B1D49DF730043A7CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7518C88E1D49DF730043A7CA /* CocoaMarkdown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaMarkdown.framework;
+			remoteRef = 7518C88D1D49DF730043A7CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7518C8901D49DF730043A7CA /* CocoaMarkdownTests-Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CocoaMarkdownTests-Mac.xctest";
+			remoteRef = 7518C88F1D49DF730043A7CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7518C8921D49DF730043A7CA /* Example-iOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Example-iOS.app";
+			remoteRef = 7518C8911D49DF730043A7CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7518C8941D49DF730043A7CA /* Example-Mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Example-Mac.app";
+			remoteRef = 7518C8931D49DF730043A7CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7599CF991D4B2F120068650C /* MMMarkdown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MMMarkdown.framework;
+			remoteRef = 7599CF981D4B2F120068650C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7599CF9B1D4B2F120068650C /* MMMarkdown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MMMarkdown.framework;
+			remoteRef = 7599CF9A1D4B2F120068650C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7599CF9D1D4B2F120068650C /* MMMarkdown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MMMarkdown.framework;
+			remoteRef = 7599CF9C1D4B2F120068650C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7599CF9F1D4B2F120068650C /* MMMarkdown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MMMarkdown.framework;
+			remoteRef = 7599CF9E1D4B2F120068650C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7599CFA11D4B2F120068650C /* MMMarkdownTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MMMarkdownTests.xctest;
+			remoteRef = 7599CFA01D4B2F120068650C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B6D5C2DD1C06E92700699793 /* Resources */ = {
@@ -841,14 +1069,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B416FAB1F974E4CADDB5497 /* Check Pods Manifest.lock */ = {
+		4BD8A618A4D69DB098259FA9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kapacino/Pods-Kapacino-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57753E18DF1963D0C9AECACE /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kapacino/Pods-Kapacino-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		749161ABF72A085B0375AEB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kapacino/Pods-Kapacino-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B66662F7F9FB6C7AB65A2C5 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -856,34 +1129,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		580B3992AB965986153291C7 /* Copy Pods Resources */ = {
+		CAEB33E63D34D5F52737C349 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C6DC73CED2805CFB2F18B481 /* Embed Pods Frameworks */ = {
+		EC0127C673DCCC8DF2BC74DB /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kapacino/Pods-Kapacino-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -969,6 +1242,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7518C8981D49DF8C0043A7CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocoaMarkdown-iOS";
+			targetProxy = 7518C8971D49DF8C0043A7CA /* PBXContainerItemProxy */;
+		};
 		B6D5C2FA1C06E92700699793 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B6D5C2DE1C06E92700699793 /* Kapacino */;
@@ -1083,12 +1361,17 @@
 		};
 		B6D5C30D1C06E92700699793 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C82D419EC931D2622AF4203C /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F48C0B83AAA8002187C17D0A /* Pods-Kapacino.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/MMMarkdown/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/CocoaMarkdown/External/Nimble/build/Debug-iphoneos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Kapacino/Info.plist;
@@ -1102,12 +1385,17 @@
 		};
 		B6D5C30E1C06E92700699793 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0762858DA793F08B3BEE8A3 /* Pods.release.xcconfig */;
+			baseConfigurationReference = A67147A85E09555BA0A5F8C8 /* Pods-Kapacino.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/MMMarkdown/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/CocoaMarkdown/External/Nimble/build/Debug-iphoneos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Kapacino/Info.plist;
