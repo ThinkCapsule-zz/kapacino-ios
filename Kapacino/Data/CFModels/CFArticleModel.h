@@ -8,7 +8,7 @@
 
 #import <Mantle/Mantle.h>
 #import "CFAssetModel.h"
-#import <MMMarkdown/MMMarkdown.h>
+//#import <MMMarkdown/MMMarkdown.h>
 
 
 @interface CFArticleModel : MTLModel <MTLJSONSerializing>

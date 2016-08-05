@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CFArticleModel.h"
-#import <MMMarkdown/MMMarkdown.h>
+//#import <MMMarkdown/MMMarkdown.h>
 
 
 @interface KCArticleDetailViewController : UIViewController

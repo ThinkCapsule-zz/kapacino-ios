@@ -7,7 +7,7 @@
 //
 
 #import "CFArticleModel.h"
-#import <MMMarkdown/MMMarkdown.h>
+//#import <MMMarkdown/MMMarkdown.h>
 
 @implementation CFArticleModel
 

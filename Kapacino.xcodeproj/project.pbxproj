@@ -835,7 +835,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6D5C30C1C06E92700699793 /* Build configuration list for PBXNativeTarget "Kapacino" */;
 			buildPhases = (
-				7B66662F7F9FB6C7AB65A2C5 /* 📦 Check Pods Manifest.lock */,
+				7B66662F7F9FB6C7AB65A2C5 /* [CP] Check Pods Manifest.lock */,
 				CAEB33E63D34D5F52737C349 /* [CP] Check Pods Manifest.lock */,
 				B6D5C2DB1C06E92700699793 /* Sources */,
 				B6D5C2DC1C06E92700699793 /* Frameworks */,
@@ -1114,14 +1114,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kapacino/Pods-Kapacino-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7B66662F7F9FB6C7AB65A2C5 /* 📦 Check Pods Manifest.lock */ = {
+		7B66662F7F9FB6C7AB65A2C5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
