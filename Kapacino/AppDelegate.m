@@ -11,6 +11,7 @@
 #import "PreflightManager.h"
 #import "KCNavigationController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 @interface AppDelegate ()
 
@@ -20,6 +21,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [BuddyBuildSDK setup];
+    
     
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     
