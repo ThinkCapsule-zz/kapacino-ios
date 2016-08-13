@@ -26,6 +26,7 @@ PODS:
   - Bolts/AppLinks (1.7.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.7.0)
+  - BuddyBuildSDK (1.0.11)
   - Contentful (0.2.1):
     - Decodable (~> 0.4.2)
     - Interstellar (~> 1.4.0)
@@ -56,6 +57,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 2.6.3)
+  - BuddyBuildSDK
   - Contentful
   - FBSDKCoreKit
   - FBSDKLoginKit
@@ -79,6 +81,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  BuddyBuildSDK: d5398183a8b50432d5cefeb1080f02b8c9b3928a
   Contentful: de96c3cdf1af4ae28828851a18f95cb2b502f8b8
   Decodable: ab6c7d02a5df949d3ab16b2696528a3241e37c76
   FBSDKCoreKit: d2aaed5e9ab7d8d6301c533376a1fbff1cf3deb5
@@ -93,6 +96,6 @@ SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   "\U0001F555": 2a41c1f9b76698cb697b8ec9a1db1087f5621187
 
-PODFILE CHECKSUM: 388a5523366ed71159f0947d24fb0821625abdf9
+PODFILE CHECKSUM: 3b0511e83f854029e52ed3296ff7160993d5254c
 
 COCOAPODS: 1.0.1

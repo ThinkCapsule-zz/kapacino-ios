@@ -13,4 +13,5 @@ pod 'FBSDKLoginKit'
 pod 'FBSDKCoreKit'
 pod 'Contentful'
 pod 'MMMarkdown'
+pod 'BuddyBuildSDK'
 end
