@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KCSettingsViewController : UIViewController
+@interface KCSettingsViewController : UITableViewController
 
 @end

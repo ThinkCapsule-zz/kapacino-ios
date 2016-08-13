@@ -12,4 +12,5 @@ pod 'Firebase'
 pod 'FBSDKLoginKit'
 pod 'FBSDKCoreKit'
 pod 'Contentful'
+pod 'MMMarkdown'
 end

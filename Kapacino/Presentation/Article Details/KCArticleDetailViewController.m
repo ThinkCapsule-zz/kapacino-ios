@@ -13,7 +13,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UIColor+KCAdditions.h"
 #import <WebKit/WebKit.h>
-//#import <MMMarkdown/MMMarkdown.h>
+#import <MMMarkdown/MMMarkdown.h>
 
 
 @interface KCArticleDetailViewController () <WKNavigationDelegate>
@@ -53,14 +53,26 @@
 }
 
 //instances
-- (void)updateText {
-    
+- (void)updateText
+{
     self.headline.text   = self.articleModel.headline;
     self.subline.text    = self.articleModel.byline;
     self.updated.text    = self.articleModel.publishDate;
     self.primaryTag.text = [[self.articleModel.tags firstObject] uppercaseString];
-    self.textArea.text   = self.articleModel.body;
+//    self.textArea.text   = self.articleModel.body;
     
+    NSString *htmlString = self.articleModel.body;
+    //Check if it's html or not
+    if (!([htmlString containsString:@"<html>"]||[htmlString containsString:@"<p>"]))
+    {
+        NSError  *error;
+        htmlString = [MMMarkdown HTMLStringWithMarkdown:htmlString error:&error];
+    }
+
+    //Handle contentful images
+    htmlString = [htmlString stringByReplacingOccurrencesOfString:@"//images.contentful.com" withString:@"https://images.contentful.com"];
+    
+    [self.webview loadHTMLString:htmlString baseURL:[[NSURL alloc] initWithString:@"www.google.com"]];
 }
 
 
@@ -98,7 +110,7 @@
     
     /* Content */
     [self.scrollView addSubview:self.headerView];
-    [self.scrollView addSubview:self.textArea];
+    [self.scrollView addSubview:self.webview];
     
     /* View */
     [self.view addSubview:self.scrollView];
@@ -118,7 +130,7 @@
     /* Header */
     self.headerView.keepTopAlignTo(self.scrollView).equal   = 0;
     self.headerView.keepWidth.equal                         = self.view.frame.size.width;
-    self.headerView.keepHeight.equal                        = self.view.frame.size.height;
+    self.headerView.keepHeight.equal                        = self.view.frame.size.height/2;
 
     self.headerImage.keepInsets.equal                       = 0;
 
@@ -138,10 +150,11 @@
     self.primaryTag.keepHorizontalInsets.equal              = 5;
 
     /* Content */
-    self.textArea.keepTopOffsetTo(self.headerView).equal    = 0;
-    self.textArea.keepWidthTo(self.scrollView).equal        = 1;
-    self.textArea.keepBottomInset.equal                     = 0;
-
+    self.webview.keepTopOffsetTo(self.headerView).equal    = 0;
+    self.webview.keepWidthTo(self.scrollView).equal        = 1;
+//    self.webview.keepBottomInset.equal                     = 0;
+    //TODO: How do I get the height of the webview contents?
+    self.webview.keepHeight.equal = 3000;
 }
 
 #pragma mark - Getter
@@ -247,7 +260,7 @@
 
 - (WKWebView *)webview {
     if (!_webview) {
-        _webview = [[WKWebView alloc] initWithFrame:self.view.bounds];
+        _webview = [[WKWebView alloc] initWithFrame:self.view.frame];
         _webview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         _webview.scrollView.scrollEnabled = NO;
     }

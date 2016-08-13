@@ -36,7 +36,7 @@ static CGFloat kCellRatio = 4.0f/3.0f;
     self.navigationItem.titleView = titleImageView;
     
     /* Setup */
-    self.title = @"Explore";
+    self.title = @"Main";
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerNib:[UINib nibWithNibName:@"KCFeedCell" bundle:nil] forCellWithReuseIdentifier:kCellId];
     [self adjustCollectionViewForInsets];

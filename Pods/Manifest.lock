@@ -48,6 +48,7 @@ PODS:
   - Mantle (2.0.5):
     - Mantle/extobjc (= 2.0.5)
   - Mantle/extobjc (2.0.5)
+  - MMMarkdown (0.5.5)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -63,6 +64,7 @@ DEPENDENCIES:
   - INSPullToRefresh
   - KeepLayout (from `https://github.com/iMartinKiss/KeepLayout.git`)
   - Mantle (= 2.0.5)
+  - MMMarkdown
   - SDWebImage (= 3.7.5)
 
 EXTERNAL SOURCES:
@@ -87,9 +89,10 @@ SPEC CHECKSUMS:
   Interstellar: 40fc666872436d6c1b3524c59437ebdb5dec1c6a
   KeepLayout: 7e4cc496b5b012a3b85e7ad105ff6f82a582cb9f
   Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
+  MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   "\U0001F555": 2a41c1f9b76698cb697b8ec9a1db1087f5621187
 
-PODFILE CHECKSUM: 16ef89a99e784213867f08b3f2d88fc608bb527a
+PODFILE CHECKSUM: 388a5523366ed71159f0947d24fb0821625abdf9
 
 COCOAPODS: 1.0.1

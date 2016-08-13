@@ -11,6 +11,7 @@
 
 /* View controllers */
 #import "KCMainViewController.h"
+#import "KCDiscoverViewController.h"
 #import "KCSettingsViewController.h"
 #import "KCGPACalcViewController.h"
 #import "PreflightManager.h"
@@ -78,10 +79,10 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
     
     /*listings, places, events*/
     if (!_discoverVC){
-        KCMainViewController *discoverVC = [[KCMainViewController alloc] initWithCollectionViewLayout: [[UICollectionViewFlowLayout alloc] init]];
+        KCMainViewController *discoverVC = [[KCDiscoverViewController alloc] initWithCollectionViewLayout: [[UICollectionViewFlowLayout alloc] init]];
         _discoverVC = [[KCNavigationController alloc] initWithRootViewController:discoverVC];
-        //needs to be updated with new images from Alyssa
-        _discoverVC.tabBarItem.image = [UIImage imageNamed: @"tab_bar_profile"];
+        //TODO needs to be updated with new images from Alyssa
+        _discoverVC.tabBarItem.image = [UIImage imageNamed: @"tab_bar_discover"];
         
     }
     return _discoverVC;
@@ -108,8 +109,7 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
     
     /* Settings view controller */
     if (!_settingsVC) {
-        _settingsVC = [[KCSettingsViewController alloc] init];
-        _settingsVC.view.backgroundColor = [UIColor blueColor];
+        _settingsVC = [[UIStoryboard storyboardWithName:@"Settings" bundle:nil] instantiateInitialViewController];        
         _settingsVC.tabBarItem.image = [UIImage imageNamed:@"tab_bar_setting"];
     }
     return _settingsVC;
