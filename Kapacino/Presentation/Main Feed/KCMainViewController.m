@@ -113,7 +113,8 @@ static CGFloat kCellRatio = 4.0f/3.0f;
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    KCArticleDetailViewController *articleDetailVC = [[KCArticleDetailViewController alloc] init];
+    KCArticleDetailViewController *articleDetailVC = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateInitialViewController];
+//    KCArticleDetailViewController *articleDetailVC = [[KCArticleDetailViewController alloc] initWithNibName:@"KCArticleDetailViewController" bundle:nil];
     
     [articleDetailVC updateWithModel:self.contentModels[indexPath.row]];
     

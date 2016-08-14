@@ -85,6 +85,7 @@
 		B6FCB92A1C8420030072AFC8 /* KCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FCB9291C8420030072AFC8 /* KCNavigationController.m */; };
 		C904AF6C1D58D3AC00251A01 /* KCGPAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C904AF6B1D58D3AC00251A01 /* KCGPAMainViewController.m */; };
 		C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */; };
+		C92E3E4C1D5FB3890091A695 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92E3E4B1D5FB3890091A695 /* Home.storyboard */; };
 		C97257BC1D55907E00F8B851 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97257BB1D55907E00F8B851 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -262,6 +263,7 @@
 		C904AF6B1D58D3AC00251A01 /* KCGPAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPAMainViewController.m; sourceTree = "<group>"; };
 		C92E3E3D1D5E95BB0091A695 /* KCDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCDiscoverViewController.h; path = Discover/KCDiscoverViewController.h; sourceTree = "<group>"; };
 		C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCDiscoverViewController.m; path = Discover/KCDiscoverViewController.m; sourceTree = "<group>"; };
+		C92E3E4B1D5FB3890091A695 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C97257BB1D55907E00F8B851 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		F48C0B83AAA8002187C17D0A /* Pods-Kapacino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kapacino.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kapacino/Pods-Kapacino.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -573,6 +575,7 @@
 			children = (
 				B6C9BD0D1C74DAED00A2E52C /* KCArticleDetailViewController.h */,
 				B6C9BD0E1C74DAED00A2E52C /* KCArticleDetailViewController.m */,
+				C92E3E4B1D5FB3890091A695 /* Home.storyboard */,
 			);
 			path = "Article Details";
 			sourceTree = "<group>";
@@ -859,6 +862,7 @@
 				444924B61CB3E626008737A6 /* countriesToCities.json in Resources */,
 				B6431F8B1C55BCEE00546B3A /* SF-UI-Text-Heavy.otf in Resources */,
 				B6431F8C1C55BCEE00546B3A /* SF-UI-Text-HeavyItalic.otf in Resources */,
+				C92E3E4C1D5FB3890091A695 /* Home.storyboard in Resources */,
 				B6431F8A1C55BCEE00546B3A /* SF-UI-Text-BoldItalic.otf in Resources */,
 				C97257BC1D55907E00F8B851 /* Settings.storyboard in Resources */,
 				443C48381CAD3A6A004436CD /* Login.storyboard in Resources */,
