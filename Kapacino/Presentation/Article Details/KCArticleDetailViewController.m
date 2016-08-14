@@ -39,6 +39,8 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
+@property (nonatomic) BOOL isAlreadyUpdated;
+
 @end
 
 @implementation KCArticleDetailViewController
@@ -73,6 +75,8 @@
     self.webview.keepSizeTo(self.webviewContainer).equal = 1;
     
     self.webview.scrollView.scrollEnabled = NO;
+    
+    self.isAlreadyUpdated = NO;
 }
 
 -(void) viewWillAppear:(BOOL)animated
@@ -82,8 +86,12 @@
 
 -(void) viewDidLayoutSubviews
 {
-    [self updateText];
-    [self updateImage];
+    if (!self.isAlreadyUpdated)
+    {
+        self.isAlreadyUpdated = YES;
+        [self updateText];
+        [self updateImage];
+    }
 }
 
 -(void) viewWillDisappear:(BOOL)animated
@@ -114,76 +122,24 @@
 //    [self.webview loadRequest:[[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"http://www.cnn.com"]]];
 }
 
-//
-//- (UIImageView *)headerImage {
-//
-//    if (!_headerImage) {
-//        _headerImage             = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cellBackground"]];
-//        _headerImage.contentMode = UIViewContentModeScaleAspectFill;
-//    }
-//    return _headerImage;
-//}
-//
-//- (UILabel *)headline {
-//    if (!_headline) {
-//        _headline               = [[UILabel alloc] init];
-//        _headline.textColor     = [UIColor whiteColor];
-//        _headline.font          = [UIFont kc_HeavyFontWithSize:23.0f];
-//        _headline.lineBreakMode = NSLineBreakByWordWrapping;
-//        _headline.numberOfLines = 0;
-//    }
-//    return _headline;
-//}
-//
-//- (UILabel *)subline {
-//    if (!_subline) {
-//        _subline           = [[UILabel alloc] init];
-//        _subline.textColor = [UIColor whiteColor];
-//        _subline.font      = [UIFont kc_RegularFontWithSize:15.0f];
-//    }
-//    return _subline;
-//}
-//
-//- (UILabel *)updated {
-//    if (!_updated) {
-//        _updated           = [[UILabel alloc] init];
-//        _updated.textColor = [UIColor whiteColor];
-//        _updated.font      = [UIFont kc_LightFontWithSize:13.0f];
-//    }
-//    return _updated;
-//}
-//
-//- (UILabel *)primaryTag {
-//    if (!_primaryTag) {
-//        _primaryTag                 = [[UILabel alloc] init];
-//        _primaryTag.textColor       = [UIColor whiteColor];
-//        _primaryTag.font            = [UIFont kc_RegularFontWithSize:15.0f];
-//        _primaryTag.backgroundColor = [UIColor clearColor];
-//    }
-//    return _primaryTag;
-//
-//}
-
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     if ([keyPath isEqualToString: @"loading"]) {
-//        webView.evaluateJavaScript("document.height") { (result, error) in
-//            if error == nil {
-//                print(result)
-//            }
-//        }
-        
-//        [self.webview evaluateJavaScript:@"document.height" completionHandler:^(NSNumber* result, NSError * _Nullable  error) {
-//            if (error == nil)
-//            {
-                float height1 = self.webview.scrollView.contentSize.height;
-//                self.webview.bounds = CGRectMake(0, 0, self.webview.scrollView.contentSize.width, self.webview.scrollView.contentSize.height);
-//                float height2 = [result floatValue];
-                self.constraintWebviewHeight.constant = height1;
-        self.scrollView.contentSize = CGSizeMake(self.webview.scrollView.contentSize.width, self.webview.scrollView.contentSize.height + self.headerView.bounds.size.height);
+
+        [self.webview evaluateJavaScript:@"document.height" completionHandler:^(NSNumber* result, NSError * _Nullable  error) {
+            if (error == nil)
+            {
+                //Disregard the result, as we are just using side-effect of evaluateJavaScript
+                float contentHeight = self.webview.scrollView.contentSize.height;
+                
+                if (contentHeight > 0)
+                {
+                    self.constraintWebviewHeight.constant = contentHeight;
+                }
+
                 [self.view setNeedsLayout];
-//            }
-//        }];
+            }
+        }];
     } else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
