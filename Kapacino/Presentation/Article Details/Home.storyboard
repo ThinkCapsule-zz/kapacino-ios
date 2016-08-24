@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Article Detail View Controller-->
@@ -27,33 +28,22 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="aYQ-e3-R7O">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dy-Ng-ifJ">
-                                                <rect key="frame" x="10" y="10" width="50" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="7dy-Ng-ifJ" secondAttribute="height" multiplier="1:1" id="eSP-xd-ELj"/>
-                                                    <constraint firstAttribute="width" constant="50" id="zYj-hp-YU9"/>
-                                                </constraints>
-                                                <state key="normal" image="close_button_pink"/>
-                                                <connections>
-                                                    <action selector="onCloseButtonTapped:" destination="bvU-1a-Ef0" eventType="touchUpInside" id="IIZ-tm-HCt"/>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7q-C9-dAe">
                                                 <rect key="frame" x="10" y="167" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02j-MK-MS6">
                                                 <rect key="frame" x="10" y="198" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utE-4b-2i5">
                                                 <rect key="frame" x="10" y="229" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyV-l5-erb">
@@ -62,7 +52,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK8-ef-O9F">
                                                         <rect key="frame" x="29" y="5" width="42" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -85,12 +75,10 @@
                                             <constraint firstItem="utE-4b-2i5" firstAttribute="leading" secondItem="G58-NE-ZXo" secondAttribute="leading" constant="10" id="EfG-ZI-a1n"/>
                                             <constraint firstItem="aYQ-e3-R7O" firstAttribute="leading" secondItem="G58-NE-ZXo" secondAttribute="leading" id="KEz-pq-9Fq"/>
                                             <constraint firstItem="02j-MK-MS6" firstAttribute="top" secondItem="R7q-C9-dAe" secondAttribute="bottom" constant="10" id="QGu-8U-8I0"/>
-                                            <constraint firstItem="7dy-Ng-ifJ" firstAttribute="leading" secondItem="G58-NE-ZXo" secondAttribute="leading" constant="10" id="SeN-mi-qI4"/>
                                             <constraint firstAttribute="bottom" secondItem="fyV-l5-erb" secondAttribute="bottom" constant="10" id="gH1-ta-5by"/>
                                             <constraint firstAttribute="trailing" secondItem="aYQ-e3-R7O" secondAttribute="trailing" id="jXN-gg-Mzo"/>
                                             <constraint firstItem="fyV-l5-erb" firstAttribute="top" secondItem="utE-4b-2i5" secondAttribute="bottom" constant="10" id="k8p-IR-4HQ"/>
                                             <constraint firstItem="02j-MK-MS6" firstAttribute="leading" secondItem="G58-NE-ZXo" secondAttribute="leading" constant="10" id="lJP-fl-RRW"/>
-                                            <constraint firstItem="7dy-Ng-ifJ" firstAttribute="top" secondItem="G58-NE-ZXo" secondAttribute="top" constant="10" id="r3i-Vj-nRQ"/>
                                             <constraint firstItem="aYQ-e3-R7O" firstAttribute="top" secondItem="G58-NE-ZXo" secondAttribute="top" id="uOY-Gh-kXy"/>
                                         </constraints>
                                     </view>
@@ -112,12 +100,25 @@
                                     <constraint firstAttribute="trailing" secondItem="Fdz-eu-RJ8" secondAttribute="trailing" id="zQw-G7-WaJ"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dy-Ng-ifJ">
+                                <rect key="frame" x="30" y="30" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7dy-Ng-ifJ" secondAttribute="height" multiplier="1:1" id="eSP-xd-ELj"/>
+                                    <constraint firstAttribute="width" constant="50" id="zYj-hp-YU9"/>
+                                </constraints>
+                                <state key="normal" image="close_button_pink"/>
+                                <connections>
+                                    <action selector="onCloseButtonTapped:" destination="bvU-1a-Ef0" eventType="touchUpInside" id="IIZ-tm-HCt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="N0z-YQ-Ngm" firstAttribute="leading" secondItem="7bk-zh-4ay" secondAttribute="leading" id="Bvd-Zg-v0N"/>
                             <constraint firstAttribute="trailing" secondItem="N0z-YQ-Ngm" secondAttribute="trailing" id="SHJ-yE-aXE"/>
+                            <constraint firstItem="7dy-Ng-ifJ" firstAttribute="top" secondItem="KMG-VS-jlM" secondAttribute="bottom" constant="10" id="eKi-kk-LQN"/>
                             <constraint firstItem="G58-NE-ZXo" firstAttribute="width" secondItem="7bk-zh-4ay" secondAttribute="width" id="iil-No-UOh"/>
+                            <constraint firstItem="7dy-Ng-ifJ" firstAttribute="leading" secondItem="7bk-zh-4ay" secondAttribute="leadingMargin" constant="10" id="r30-3M-SlJ"/>
                             <constraint firstItem="65U-ow-um2" firstAttribute="top" secondItem="N0z-YQ-Ngm" secondAttribute="bottom" id="sZH-08-RKl"/>
                             <constraint firstItem="N0z-YQ-Ngm" firstAttribute="top" secondItem="7bk-zh-4ay" secondAttribute="top" id="y9d-0Q-Hjp"/>
                         </constraints>

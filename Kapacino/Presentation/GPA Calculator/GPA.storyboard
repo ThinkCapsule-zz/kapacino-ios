@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YeU-0E-Dsi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-3n-X0U">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -85,13 +85,19 @@
             </objects>
             <point key="canvasLocation" x="450" y="1899.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--GPA Calculator-->
         <scene sceneID="8yu-FY-7dR">
             <objects>
                 <navigationController id="8YX-3n-X0U" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zs9-Xb-YjJ">
+                    <tabBarItem key="tabBarItem" title="GPA Calculator" image="tab_bar_calc" id="JTg-sn-EGm"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zs9-Xb-YjJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="VmG-UG-ckm" kind="relationship" relationship="rootViewController" id="y7K-0a-Pkq"/>
@@ -101,7 +107,7 @@
             </objects>
             <point key="canvasLocation" x="397" y="2834"/>
         </scene>
-        <!--GPA-->
+        <!--GPA Calculator-->
         <scene sceneID="FOK-a7-V88">
             <objects>
                 <viewController id="VmG-UG-ckm" sceneMemberID="viewController">
@@ -110,7 +116,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wI2-Tu-aV8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MKg-2A-IJh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="77M-7E-C5Q">
@@ -135,9 +141,9 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l3b-sX-4E9">
-                                <rect key="frame" x="0.0" y="64" width="320" height="170.5"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="151"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDB-RM-rIl">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nDB-RM-rIl">
                                         <rect key="frame" x="30" y="35.5" width="100" height="100"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -145,7 +151,7 @@
                                             <constraint firstAttribute="width" constant="100" id="JTM-sG-4WY"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0C-x3-rbW">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y0C-x3-rbW">
                                         <rect key="frame" x="190" y="35.5" width="100" height="100"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -177,7 +183,7 @@
                             <constraint firstItem="77M-7E-C5Q" firstAttribute="centerX" secondItem="MKg-2A-IJh" secondAttribute="centerX" id="z7x-Ns-ljV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="GPA" id="ViP-wq-37J">
+                    <navigationItem key="navigationItem" title="GPA Calculator" id="ViP-wq-37J">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="I3n-eg-r55">
                             <connections>
                                 <segue destination="62l-sj-JpQ" kind="push" id="Xq5-D9-lrQ"/>
@@ -198,7 +204,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jQR-xC-uEp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lGr-BG-2fG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -853,7 +859,7 @@
         <!--GPA Calculator-->
         <scene sceneID="9v7-Zn-ijv">
             <objects>
-                <tableViewController id="ISC-EP-Or9" customClass="KCGPACalcViewController" sceneMemberID="viewController">
+                <tableViewController id="ISC-EP-Or9" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eAq-Za-Exe">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -935,7 +941,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ex5-4a-VOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="497"/>
+            <point key="canvasLocation" x="144" y="492"/>
         </scene>
     </scenes>
     <resources>

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CFArticleModel.h"
+#import "CFContentType.h"
 
 @interface KCMainViewController : UICollectionViewController
-
+    @property (nonatomic, readonly) CFContentType contentType;
 @end

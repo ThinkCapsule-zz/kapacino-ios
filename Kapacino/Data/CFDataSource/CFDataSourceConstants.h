@@ -26,6 +26,7 @@ extern NSString* const CFBlogTypeIdentifier;
 extern NSString* const CFVideoTypeIdentifier;
 extern NSString* const CFListingsTypeIdentifier;
 extern NSString* const CFPlacesTypeIdentifier;
+extern NSString* const CFEventsTypeIdentifier;
 
 /** Directories **/
 extern NSString* const CFContentSpacesDir;

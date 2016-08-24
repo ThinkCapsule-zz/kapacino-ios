@@ -26,6 +26,7 @@ NSString* const CFBlogTypeIdentifier     = @"1qeOXb11aEYciiYEGoS06Y";
 NSString* const CFVideoTypeIdentifier    = @"2eL4rLPvkQ0qCWQsooksuK";
 NSString* const CFListingsTypeIdentifier = @"12tqAiosJMaEKMk6682esG";
 NSString* const CFPlacesTypeIdentifier   = @"12tqAiosJMaEKMk6682esG"; // same as listing for now
+NSString* const CFEventsTypeIdentifier   = @"events"; // same as listing for now
 
 /** Directories **/
 NSString* const CFContentSpacesDir  = @"/spaces";

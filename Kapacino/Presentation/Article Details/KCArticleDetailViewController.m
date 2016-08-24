@@ -65,24 +65,7 @@
     _primaryTagView.backgroundColor = [UIColor kc_PrimaryTagColour];
     
     //Webview
-    // Javascript that disables pinch-to-zoom by inserting the HTML viewport meta tag into <head>
-    NSString *source = @"var meta = document.createElement('meta'); \
-    meta.name = 'viewport'; \
-    meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'; \
-    var head = document.getElementsByTagName('head')[0];\
-    head.appendChild(meta);";
-    WKUserScript *script = [[WKUserScript alloc] initWithSource:source injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
-    
-    // Create the user content controller and add the script to it
-    WKUserContentController *userContentController = [WKUserContentController new];
-    [userContentController addUserScript:script];
-    
-    // Create the configuration with the user content controller
-    WKWebViewConfiguration *configuration = [WKWebViewConfiguration new];
-    configuration.userContentController = userContentController;
-    
-    // Create the web view with the configuration
-    self.webview = [[WKWebView alloc] initWithFrame:CGRectZero configuration:configuration];
+    self.webview = [[WKWebView alloc] init];
     [self.webviewContainer addSubview:self.webview];
     
     //Add observer for loading

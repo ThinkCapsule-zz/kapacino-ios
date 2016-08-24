@@ -11,6 +11,7 @@
 #import "CFBlogModel.h"
 #import "CFVideoModel.h"
 #import "CFListingModel.h"
+#import "CFEventModel.h"
 
 @implementation CFModelFactory
 
@@ -28,6 +29,9 @@
             
         case CFContentType_Listing:
             return [CFModelFactory parseResponseWithObjects:response class:[CFListingModel class]];
+        
+        case CFContentType_Events:
+            return [CFModelFactory parseResponseWithObjects:response class:[CFEventModel class]];
             
         default:
             return nil;

@@ -16,9 +16,7 @@
 #import <INSPullToRefresh/INSDefaultPullToRefresh.h>
 
 @interface KCMainViewController() <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, INSPullToRefreshBackgroundViewDelegate>
-
-@property (nonatomic, strong) NSArray *contentModels;
-
+    @property (nonatomic, strong) NSArray *contentModels;
 @end
 
 static NSString* kCellId = @"kCellId";
@@ -42,10 +40,15 @@ static CGFloat kCellRatio = 4.0f/3.0f;
     [self adjustCollectionViewForInsets];
     
     /* Fetch data */
-    [self fetchContent:CFContentType_Article];
+    [self fetchContent];
     
     [self setupPullToRefresh];
 
+}
+
+-(CFContentType) contentType
+{
+    return CFContentType_Article;
 }
 
 #pragma mark - Private
@@ -54,7 +57,7 @@ static CGFloat kCellRatio = 4.0f/3.0f;
     __weak typeof(self)wSelf = self;
     [self.collectionView ins_addPullToRefreshWithHeight:60.0 handler:^(UIScrollView *scrollView) {
         [wSelf.collectionView ins_endPullToRefresh];
-        [wSelf fetchContent:CFContentType_Article];
+        [wSelf fetchContent];
     }];
     
     CGRect defaultFrame = CGRectMake(0, 0, 24, 24);
@@ -67,9 +70,11 @@ static CGFloat kCellRatio = 4.0f/3.0f;
 
 #pragma mark - Fetch Content
 
-- (void)fetchContent:(CFContentType)contentType {
+- (void)fetchContent {
     
     __weak typeof(self)wSelf = self;
+    
+    CFContentType contentType = [wSelf contentType];
     
     [CFClient fetchWithContentTypeId:contentType completion:^(NSArray *responseItems, NSError *error) {
         

@@ -79,11 +79,12 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
     
     /*listings, places, events*/
     if (!_discoverVC){
-        KCMainViewController *discoverVC = [[KCDiscoverViewController alloc] initWithCollectionViewLayout: [[UICollectionViewFlowLayout alloc] init]];
-        _discoverVC = [[KCNavigationController alloc] initWithRootViewController:discoverVC];
-        //TODO needs to be updated with new images from Alyssa
-        _discoverVC.tabBarItem.image = [UIImage imageNamed: @"tab_bar_discover"];
-        
+//        KCMainViewController *discoverVC = [[KCDiscoverViewController alloc] initWithCollectionViewLayout: [[UICollectionViewFlowLayout alloc] init]];
+//        _discoverVC = [[KCNavigationController alloc] initWithRootViewController:discoverVC];
+//        //TODO needs to be updated with new images from Alyssa
+//        _discoverVC.tabBarItem.image = [UIImage imageNamed: @"tab_bar_discover"];
+        _discoverVC = [[UIStoryboard storyboardWithName:@"Discover" bundle:nil] instantiateInitialViewController];
+        _discoverVC.tabBarItem.image = [UIImage imageNamed:@"tab_bar_discover"];
     }
     return _discoverVC;
 }

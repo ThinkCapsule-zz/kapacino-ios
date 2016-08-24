@@ -17,8 +17,9 @@
                                    @(CFContentType_Blog): CFBlogTypeIdentifier,
                                    @(CFContentType_Video): CFVideoTypeIdentifier,
                                    @(CFContentType_Listing): CFListingsTypeIdentifier,
-                                   @(CFContentType_Places): CFPlacesTypeIdentifier};
-    
+                                   @(CFContentType_Places): CFPlacesTypeIdentifier,
+                                   @(CFContentType_Events): CFEventsTypeIdentifier};
+
     return [contentIdMap objectForKey:@(type)];
 }
 

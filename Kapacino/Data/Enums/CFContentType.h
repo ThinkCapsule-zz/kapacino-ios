@@ -15,5 +15,6 @@ typedef NS_ENUM (NSInteger, CFContentType){
     CFContentType_Video,
     CFContentType_Listing,
     CFContentType_Places,
+    CFContentType_Events
     
 };
