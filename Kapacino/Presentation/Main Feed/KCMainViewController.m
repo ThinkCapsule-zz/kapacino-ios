@@ -39,16 +39,20 @@ static CGFloat kCellRatio = 4.0f/3.0f;
     [self.collectionView registerNib:[UINib nibWithNibName:@"KCFeedCell" bundle:nil] forCellWithReuseIdentifier:kCellId];
     [self adjustCollectionViewForInsets];
     
-    /* Fetch data */
-    [self fetchContent];
-    
     [self setupPullToRefresh];
-
 }
 
--(CFContentType) contentType
+-(void) viewWillAppear:(BOOL)animated
 {
-    return CFContentType_Article;
+    [super viewWillAppear:animated];
+    /* Fetch data */
+    [self fetchContent];
+}
+
+-(void) setContentType:(CFContentType)contentType
+{
+    _contentType = contentType;
+    [self fetchContent];
 }
 
 #pragma mark - Private
@@ -72,17 +76,19 @@ static CGFloat kCellRatio = 4.0f/3.0f;
 
 - (void)fetchContent {
     
-    __weak typeof(self)wSelf = self;
-    
-    CFContentType contentType = [wSelf contentType];
-    
-    [CFClient fetchWithContentTypeId:contentType completion:^(NSArray *responseItems, NSError *error) {
+    if (self.collectionView != nil)
+    {
+        __weak typeof(self)wSelf = self;
         
-        wSelf.contentModels = [CFModelFactory parseResponseObjects:responseItems forType:contentType];
-        [wSelf.collectionView reloadData];
+        CFContentType contentType = [wSelf contentType];
         
-    }];
-    
+        [CFClient fetchWithContentTypeId:contentType completion:^(NSArray *responseItems, NSError *error) {
+            
+            wSelf.contentModels = [CFModelFactory parseResponseObjects:responseItems forType:contentType];
+            [wSelf.collectionView reloadData];
+            
+        }];
+    }
 }
 
 #pragma mark - Adjust Insets
@@ -108,9 +114,15 @@ static CGFloat kCellRatio = 4.0f/3.0f;
     
     KCFeedCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellId forIndexPath:indexPath];
     
-    [cell updateWithArticleModel:self.contentModels[indexPath.row]];
+//    [cell updateWithArticleModel:self.contentModels[indexPath.row]];
+    [self updateCell:cell forContentModel:self.contentModels[indexPath.row]];
     
     return cell;
+    
+}
+
+-(void) updateCell:(KCFeedCell*) cell forContentModel:(NSObject*) contentModel
+{
     
 }
 

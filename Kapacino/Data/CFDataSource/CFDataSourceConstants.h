@@ -24,9 +24,10 @@ extern NSString* const CFSpaceIdentifier;
 extern NSString* const CFArticleTypeIdentifier;
 extern NSString* const CFBlogTypeIdentifier;
 extern NSString* const CFVideoTypeIdentifier;
-extern NSString* const CFListingsTypeIdentifier;
-extern NSString* const CFPlacesTypeIdentifier;
-extern NSString* const CFEventsTypeIdentifier;
+extern NSString* const CFListingTypeIdentifier;
+extern NSString* const CFPlaceTypeIdentifier;
+extern NSString* const CFEventTypeIdentifier;
+extern NSString* const CFRestaurantTypeIdentifier;
 
 /** Directories **/
 extern NSString* const CFContentSpacesDir;

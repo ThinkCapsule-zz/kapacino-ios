@@ -10,8 +10,7 @@
 #import "UIColor+KCAdditions.h"
 
 /* View controllers */
-#import "KCMainViewController.h"
-#import "KCDiscoverViewController.h"
+#import "KCArticleViewController.h"
 #import "KCSettingsViewController.h"
 #import "KCGPACalcViewController.h"
 #import "PreflightManager.h"
@@ -28,7 +27,7 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
 
 @interface  KCTabBarNavigationController()
 
-@property (nonatomic, strong) KCNavigationController *mainVC;
+@property (nonatomic, strong) KCNavigationController *articleVC;
 @property (nonatomic, strong) KCNavigationController *discoverVC;
 @property (nonatomic, strong) KCNavigationController *profileVC;
 @property (nonatomic, strong) KCNavigationController *gpaCalcVC;
@@ -57,21 +56,21 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
     [self.navigationController.navigationBar setBarTintColor:[UIColor kc_ApplicationColor]];
     self.tabBar.tintColor = [UIColor kc_ApplicationColor];
     
-    [self setViewControllers:@[self.mainVC, self.discoverVC, self.gpaCalcVC, self.settingsVC]];
+    [self setViewControllers:@[self.articleVC, self.discoverVC, self.gpaCalcVC, self.settingsVC]];
 
 }
 
 #pragma mark - Getter
 
-- (KCNavigationController *)mainVC {
+- (KCNavigationController *)articleVC {
     
     /* Main Feed */
-    if (!_mainVC) {
-        KCMainViewController *mainVC = [[KCMainViewController alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
-        _mainVC = [[KCNavigationController alloc] initWithRootViewController:mainVC];
-        _mainVC.tabBarItem.image = [UIImage imageNamed:@"tab_bar_home"];
+    if (!_articleVC) {
+        KCArticleViewController *articleVC = [[KCArticleViewController alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
+        _articleVC = [[KCNavigationController alloc] initWithRootViewController:articleVC];
+        _articleVC.tabBarItem.image = [UIImage imageNamed:@"tab_bar_home"];
     }
-    return _mainVC;
+    return _articleVC;
     
 }
 

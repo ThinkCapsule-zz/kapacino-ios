@@ -11,6 +11,6 @@
 
 @interface KCFeedCell : UICollectionViewCell
 
-- (void)updateWithArticleModel:(CFArticleModel *)articleMode;
+- (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andThumbnails:(NSArray<NSURL*>*) thumbnailURLs;
 
 @end

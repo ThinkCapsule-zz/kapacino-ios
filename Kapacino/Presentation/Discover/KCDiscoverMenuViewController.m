@@ -7,10 +7,15 @@
 //
 
 #import "KCDiscoverMenuViewController.h"
+#import "KCDiscoverViewController.h"
+#import "CFContentType.h"
 
 @interface KCDiscoverMenuViewController ()
     @property (strong, nonatomic) NSArray* discoverCategories;
+    @property (strong, nonatomic) NSArray* discoverCategoryContentTypes;
 @end
+
+static NSString* kDiscoverSegue = @"showDiscoverScreen";
 
 @implementation KCDiscoverMenuViewController
 
@@ -18,6 +23,7 @@
     [super viewDidLoad];
     
     self.discoverCategories = @[@"restaurants", @"events", @"listings"];
+    self.discoverCategoryContentTypes = @[@(CFContentType_Restaurant), @(CFContentType_Event), @(CFContentType_Listing)];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -47,6 +53,22 @@
     cell.textLabel.text = self.discoverCategories[indexPath.row];
     cell.imageView.image = [UIImage imageNamed:@"tab_bar_setting"];
     return cell;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSNumber* contentTypeWrapped = self.discoverCategoryContentTypes[indexPath.row];
+    [self performSegueWithIdentifier:kDiscoverSegue sender:contentTypeWrapped];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CFContentType contentType = [((NSNumber*) sender) intValue];
+    
+    if ([segue.identifier isEqualToString:kDiscoverSegue])
+    {
+        ((KCDiscoverViewController*) segue.destinationViewController).contentType = contentType;
+    }
 }
 
 /*

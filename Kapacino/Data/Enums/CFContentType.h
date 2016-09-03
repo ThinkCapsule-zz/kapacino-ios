@@ -14,7 +14,7 @@ typedef NS_ENUM (NSInteger, CFContentType){
     CFContentType_Blog,
     CFContentType_Video,
     CFContentType_Listing,
-    CFContentType_Places,
-    CFContentType_Events
-    
+    CFContentType_Place,
+    CFContentType_Event,
+    CFContentType_Restaurant    
 };

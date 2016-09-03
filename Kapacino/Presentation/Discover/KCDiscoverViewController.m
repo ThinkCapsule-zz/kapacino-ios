@@ -7,6 +7,9 @@
 //
 
 #import "KCDiscoverViewController.h"
+#import "CFRestaurantModel.h"
+#import "CFListingModel.h"
+#import "CFEventModel.h"
 
 @interface KCDiscoverViewController ()
 
@@ -16,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.    
+    // Do any additional setup after loading the view.
 }
 
 
@@ -25,10 +28,25 @@
     // Dispose of any resources that can be recreated.
 }
 
--(CFContentType) contentType
+-(void) updateCell:(KCFeedCell*)cell forContentModel:(NSObject *)contentModel
 {
-    return CFContentType_Events;
+    if (self.contentType == CFContentType_Restaurant)
+    {
+        CFRestaurantModel* model = (CFRestaurantModel*) contentModel;
+        [cell updateWithHeadline:model.name andByline:model.descriptionText andDateLine:nil andTags:model.tags andThumbnails:model.thumbnails];
+    }
+    else if (self.contentType == CFContentType_Listing)
+    {
+        CFListingModel* model = (CFListingModel*) contentModel;
+        [cell updateWithHeadline:model.listname andByline:model.location andDateLine:nil andTags:nil andThumbnails:model.thumbnails];
+    }
+    else if (self.contentType == CFContentType_Event)
+    {
+        CFEventModel* model = (CFEventModel*) contentModel;
+        [cell updateWithHeadline:model.listname andByline:model.location andDateLine:nil andTags:nil andThumbnails:model.thumbnails];
+    }
 }
+
 /*
 #pragma mark - Navigation
 

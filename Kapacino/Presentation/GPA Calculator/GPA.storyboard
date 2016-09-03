@@ -190,12 +190,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="MF8-9h-dLe" kind="push" id="VE9-su-X22"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yU-iQ-lY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="840" y="2834"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Course-->
         <scene sceneID="Z3L-Yy-vhx">
             <objects>
                 <viewController id="62l-sj-JpQ" sceneMemberID="viewController">
@@ -208,11 +211,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oo1-gI-EC5"/>
+                    <navigationItem key="navigationItem" title="Add Course" id="oo1-gI-EC5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYE-uj-90t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1271" y="2834"/>
+            <point key="canvasLocation" x="1353" y="2834"/>
+        </scene>
+        <!--Edit Course-->
+        <scene sceneID="GBI-2Z-VMy">
+            <objects>
+                <viewController id="MF8-9h-dLe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uvg-pJ-fiC"/>
+                        <viewControllerLayoutGuide type="bottom" id="MM2-XB-37c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eHz-pS-PKh">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Course" id="v0t-Kc-eTd"/>
+                    <connections>
+                        <segue destination="SSW-tP-H1a" kind="push" id="9es-EY-vBf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPN-dD-KUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1353" y="3578"/>
+        </scene>
+        <!--Add Mark-->
+        <scene sceneID="JA7-ov-X9i">
+            <objects>
+                <viewController id="SSW-tP-H1a" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8BS-Rc-EjW"/>
+                        <viewControllerLayoutGuide type="bottom" id="jHC-6n-TJr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xhs-Pg-hay">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Mark" id="Jid-Fk-SEj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wm9-H2-thJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="3578"/>
         </scene>
         <!--Benchmark Calculator-->
         <scene sceneID="9hn-BM-TjJ">

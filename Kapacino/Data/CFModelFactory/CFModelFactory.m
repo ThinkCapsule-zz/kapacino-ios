@@ -12,6 +12,7 @@
 #import "CFVideoModel.h"
 #import "CFListingModel.h"
 #import "CFEventModel.h"
+#import "CFRestaurantModel.h"
 
 @implementation CFModelFactory
 
@@ -30,8 +31,11 @@
         case CFContentType_Listing:
             return [CFModelFactory parseResponseWithObjects:response class:[CFListingModel class]];
         
-        case CFContentType_Events:
+        case CFContentType_Event:
             return [CFModelFactory parseResponseWithObjects:response class:[CFEventModel class]];
+            
+        case CFContentType_Restaurant:
+            return [CFModelFactory parseResponseWithObjects:response class:[CFRestaurantModel class]];
             
         default:
             return nil;

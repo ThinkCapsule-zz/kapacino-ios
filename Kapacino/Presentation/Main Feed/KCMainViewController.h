@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "CFContentType.h"
+#import "KCFeedCell.h"
 
 @interface KCMainViewController : UICollectionViewController
-    @property (nonatomic, readonly) CFContentType contentType;
+    @property (nonatomic) CFContentType contentType;
+    -(void) updateCell:(KCFeedCell*) cell forContentModel:(NSObject*) contentModel;
 @end

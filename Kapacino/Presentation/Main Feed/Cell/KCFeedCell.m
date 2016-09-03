@@ -20,8 +20,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *primaryTag;
 @property (weak, nonatomic) IBOutlet UIView *primaryTagBackground;
 
-@property (nonatomic, strong) CFArticleModel *articleModel;
-
 @end
 
 @implementation KCFeedCell
@@ -38,8 +36,6 @@
 }
 
 - (void)prepareForReuse {
-    
-    self.articleModel              = nil;
     self.headline.text             = @"";
     self.byline.text               = @"";
     self.dateLine.text             = @"";
@@ -48,26 +44,22 @@
 }
 
 #pragma mark - Update
-- (void)updateWithArticleModel:(CFArticleModel *)articleModel {
+- (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andThumbnails:(NSArray<NSURL*>*) thumbnailURLs{
     
-    self.articleModel = articleModel;
+    self.headline.text   = headline;
+    self.byline.text     = byline;
+    self.dateLine.text   = dateLine;
     
-    self.headline.text   = self.articleModel.headline;
-    self.byline.text     = self.articleModel.byline;
-    self.dateLine.text   = self.articleModel.publishDate;
-    
-    NSString *tag = [(NSString*)[self.articleModel.tags firstObject] uppercaseString];
+    NSString *tag = [(NSString*)[tags firstObject] uppercaseString];
     self.primaryTag.text = tag;
     self.primaryTagBackground.hidden = tag ? NO : YES;
     
-    [self updateCellImage];
+    [self updateCellImage:[thumbnailURLs firstObject]];
     
 }
 
-- (void)updateCellImage {
-    
-    NSURL *url = [self.articleModel.thumnailURLs firstObject];
-    [self.backgroundImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"image_placeholder"]];
+- (void)updateCellImage:(NSURL*) imageUrl {
+    [self.backgroundImageView sd_setImageWithURL:imageUrl placeholderImage:[UIImage imageNamed:@"image_placeholder"]];
         
 }
 

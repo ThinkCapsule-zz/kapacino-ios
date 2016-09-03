@@ -88,8 +88,11 @@
 		C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */; };
 		C92E3E4C1D5FB3890091A695 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92E3E4B1D5FB3890091A695 /* Home.storyboard */; };
 		C97257BC1D55907E00F8B851 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97257BB1D55907E00F8B851 /* Settings.storyboard */; };
+		C97C35AE1D7B2CB100C48279 /* KCRestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97C35AD1D7B2CB100C48279 /* KCRestaurantViewController.m */; };
 		C9DF9C641D6B53C400DA8D4C /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DF9C631D6B53C400DA8D4C /* Discover.storyboard */; };
 		C9DF9C671D6B560B00DA8D4C /* KCDiscoverMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DF9C661D6B560B00DA8D4C /* KCDiscoverMenuViewController.m */; };
+		C9F540C51D7756080025FE6F /* KCArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F540C41D7756080025FE6F /* KCArticleViewController.m */; };
+		C9F540C91D775AF80025FE6F /* CFRestaurantModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F540C81D775AF80025FE6F /* CFRestaurantModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -270,9 +273,15 @@
 		C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCDiscoverViewController.m; path = Discover/KCDiscoverViewController.m; sourceTree = "<group>"; };
 		C92E3E4B1D5FB3890091A695 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C97257BB1D55907E00F8B851 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		C97C35AC1D7B2CB100C48279 /* KCRestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCRestaurantViewController.h; path = Discover/KCRestaurantViewController.h; sourceTree = "<group>"; };
+		C97C35AD1D7B2CB100C48279 /* KCRestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCRestaurantViewController.m; path = Discover/KCRestaurantViewController.m; sourceTree = "<group>"; };
 		C9DF9C631D6B53C400DA8D4C /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = Discover/Discover.storyboard; sourceTree = "<group>"; };
 		C9DF9C651D6B560B00DA8D4C /* KCDiscoverMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCDiscoverMenuViewController.h; path = Discover/KCDiscoverMenuViewController.h; sourceTree = "<group>"; };
 		C9DF9C661D6B560B00DA8D4C /* KCDiscoverMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCDiscoverMenuViewController.m; path = Discover/KCDiscoverMenuViewController.m; sourceTree = "<group>"; };
+		C9F540C31D7756080025FE6F /* KCArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCArticleViewController.h; sourceTree = "<group>"; };
+		C9F540C41D7756080025FE6F /* KCArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCArticleViewController.m; sourceTree = "<group>"; };
+		C9F540C71D775AF80025FE6F /* CFRestaurantModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFRestaurantModel.h; sourceTree = "<group>"; };
+		C9F540C81D775AF80025FE6F /* CFRestaurantModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFRestaurantModel.m; sourceTree = "<group>"; };
 		F48C0B83AAA8002187C17D0A /* Pods-Kapacino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kapacino.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kapacino/Pods-Kapacino.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -452,12 +461,12 @@
 		B60EB8401C07513100F3044A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				C9F540C61D77573C0025FE6F /* Article */,
 				C92E3E321D5E95620091A695 /* Discover */,
 				44E8B8F91CAEA6EC0081DA30 /* Base */,
 				443AC22D1CAE67D5007EBF23 /* User Infomation */,
 				443C48361CAD3A4F004436CD /* Login */,
 				B69EB4621C8213C2008BA05F /* Onboarding */,
-				B6C9BD0C1C74DACA00A2E52C /* Article Details */,
 				B6D550871C5584590091BF71 /* GPA Calculator */,
 				B6D550881C5584590091BF71 /* Settings */,
 				B6D5507F1C5578330091BF71 /* Main Feed */,
@@ -480,6 +489,8 @@
 		B60EB8451C0751EA00F3044A /* CFModels */ = {
 			isa = PBXGroup;
 			children = (
+				C9F540C71D775AF80025FE6F /* CFRestaurantModel.h */,
+				C9F540C81D775AF80025FE6F /* CFRestaurantModel.m */,
 				C923ACCD1D627A870088530B /* CFEventModel.h */,
 				C923ACCE1D627A870088530B /* CFEventModel.m */,
 				B636C2AC1C078786003C1E44 /* CFArticleModel.h */,
@@ -741,9 +752,38 @@
 				C9DF9C661D6B560B00DA8D4C /* KCDiscoverMenuViewController.m */,
 				C92E3E3D1D5E95BB0091A695 /* KCDiscoverViewController.h */,
 				C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */,
+				C97C35AB1D7B2C8900C48279 /* Restaurant */,
 				C9DF9C631D6B53C400DA8D4C /* Discover.storyboard */,
 			);
 			name = Discover;
+			sourceTree = "<group>";
+		};
+		C97C35AB1D7B2C8900C48279 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				C97C35AC1D7B2CB100C48279 /* KCRestaurantViewController.h */,
+				C97C35AD1D7B2CB100C48279 /* KCRestaurantViewController.m */,
+			);
+			name = Restaurant;
+			sourceTree = "<group>";
+		};
+		C9F540C21D7755ED0025FE6F /* KCArticleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9F540C31D7756080025FE6F /* KCArticleViewController.h */,
+				C9F540C41D7756080025FE6F /* KCArticleViewController.m */,
+			);
+			name = KCArticleViewController;
+			path = "Main Feed";
+			sourceTree = "<group>";
+		};
+		C9F540C61D77573C0025FE6F /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				C9F540C21D7755ED0025FE6F /* KCArticleViewController */,
+				B6C9BD0C1C74DACA00A2E52C /* Article Details */,
+			);
+			name = Article;
 			sourceTree = "<group>";
 		};
 		F6E17E9DD3AA42922F8EF9BD /* Frameworks */ = {
@@ -1015,6 +1055,7 @@
 				B6D550911C55A8390091BF71 /* KCMainViewController.m in Sources */,
 				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,
 				B69EB46E1C8222CA008BA05F /* UIColor+KCAdditions.m in Sources */,
+				C9F540C91D775AF80025FE6F /* CFRestaurantModel.m in Sources */,
 				B69EB4611C820BE8008BA05F /* PreflightManager.m in Sources */,
 				44E8B8FF1CAEA73B0081DA30 /* KCViewController.m in Sources */,
 				444924B91CB3ECD7008737A6 /* KCSearchViewController.m in Sources */,
@@ -1033,6 +1074,7 @@
 				444924B41CB3B9AB008737A6 /* KCSchoolInformationTableViewController.m in Sources */,
 				44E8B9071CAEB4D20081DA30 /* KCUserInfoTableViewCell.m in Sources */,
 				C904AF6C1D58D3AC00251A01 /* KCGPAMainViewController.m in Sources */,
+				C9F540C51D7756080025FE6F /* KCArticleViewController.m in Sources */,
 				B636C2AE1C078786003C1E44 /* CFArticleModel.m in Sources */,
 				093A3E9C1CA2E3F000EC91FE /* KCAddClassViewController.m in Sources */,
 				B6DC35CC1C55BA1B00ED0ABC /* KCFeedCell.m in Sources */,
@@ -1051,6 +1093,7 @@
 				C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */,
 				44461DD61CB2728D0018E13E /* KCLoginNavigationBar.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
+				C97C35AE1D7B2CB100C48279 /* KCRestaurantViewController.m in Sources */,
 				B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */,
 				B6D5508B1C55846E0091BF71 /* KCSettingsViewController.m in Sources */,
 				B6FCB92A1C8420030072AFC8 /* KCNavigationController.m in Sources */,

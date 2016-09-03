@@ -16,9 +16,10 @@
     NSDictionary* contentIdMap = @{@(CFContentType_Article): CFArticleTypeIdentifier,
                                    @(CFContentType_Blog): CFBlogTypeIdentifier,
                                    @(CFContentType_Video): CFVideoTypeIdentifier,
-                                   @(CFContentType_Listing): CFListingsTypeIdentifier,
-                                   @(CFContentType_Places): CFPlacesTypeIdentifier,
-                                   @(CFContentType_Events): CFEventsTypeIdentifier};
+                                   @(CFContentType_Listing): CFListingTypeIdentifier,
+                                   @(CFContentType_Place): CFPlaceTypeIdentifier,
+                                   @(CFContentType_Event): CFEventTypeIdentifier,
+                                   @(CFContentType_Restaurant): CFRestaurantTypeIdentifier};
 
     return [contentIdMap objectForKey:@(type)];
 }
