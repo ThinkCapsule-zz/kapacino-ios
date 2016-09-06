@@ -35,9 +35,7 @@ static NSString* kRestaurantSegue = @"showRestaurantDetail";
     if (self.contentType == CFContentType_Restaurant)
     {
         CFRestaurantModel* model = (CFRestaurantModel*) contentModel;
-        NSDictionary* dictionary = [model.thumbnails firstObject];
-        NSString* assetId = dictionary[@"sys"][@"id"];
-        [cell updateWithHeadline:model.name andByline:model.descriptionText andDateLine:nil andTags:model.tags andImageId:assetId];
+        [cell updateWithHeadline:model.name andByline:model.descriptionText andDateLine:nil andTags:model.tags andImageId:model.backgroundImageId];
     }
     else if (self.contentType == CFContentType_Listing)
     {

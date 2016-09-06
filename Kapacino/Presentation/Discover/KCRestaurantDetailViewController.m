@@ -39,7 +39,7 @@ static NSString* kCellIdentifier = @"cell";
 
 -(NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return self.model.thumbnails.count;
+    return self.model.thumbnailIds.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
