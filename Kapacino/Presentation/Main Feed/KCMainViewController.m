@@ -10,13 +10,11 @@
 #import "KCFeedCell.h"
 #import "CFClient.h"
 #import "CFModelFactory.h"
-#import "KCArticleDetailViewController.h"
 #import "PreflightManager.h"
 #import <INSPullToRefresh/UIScrollView+INSPullToRefresh.h>
 #import <INSPullToRefresh/INSDefaultPullToRefresh.h>
 
-@interface KCMainViewController() <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, INSPullToRefreshBackgroundViewDelegate>
-    @property (nonatomic, strong) NSArray *contentModels;
+@interface KCMainViewController() <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, INSPullToRefreshBackgroundViewDelegate>    
 @end
 
 static NSString* kCellId = @"kCellId";
@@ -129,14 +127,6 @@ static CGFloat kCellRatio = 4.0f/3.0f;
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    KCArticleDetailViewController *articleDetailVC = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateInitialViewController];
-//    KCArticleDetailViewController *articleDetailVC = [[KCArticleDetailViewController alloc] initWithNibName:@"KCArticleDetailViewController" bundle:nil];
-    
-    [articleDetailVC updateWithModel:self.contentModels[indexPath.row]];
-    
-    [self presentViewController:articleDetailVC animated:YES completion:nil];
-    
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout

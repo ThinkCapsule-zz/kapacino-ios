@@ -13,7 +13,7 @@
 @property (nonatomic, readonly) NSString *name;
 @property (nonatomic, readonly) NSString *descriptionText;
 @property (nonatomic, readonly) NSString *website;
-@property (nonatomic, readonly) NSString *location;
+@property (nonatomic, readonly) NSString *address;
 @property (nonatomic, readonly) NSString *telephoneNumber;
 @property (nonatomic, readonly) NSString *menu;
 @property (nonatomic, readonly) NSDictionary  *hours;

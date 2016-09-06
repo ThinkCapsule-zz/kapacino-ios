@@ -10,10 +10,12 @@
 #import "CFRestaurantModel.h"
 #import "CFListingModel.h"
 #import "CFEventModel.h"
+#import "KCRestaurantDetailViewController.h"
 
-@interface KCDiscoverViewController ()
-
+@interface KCDiscoverViewController()
 @end
+
+static NSString* kRestaurantSegue = @"showRestaurantDetail";
 
 @implementation KCDiscoverViewController
 
@@ -33,17 +35,39 @@
     if (self.contentType == CFContentType_Restaurant)
     {
         CFRestaurantModel* model = (CFRestaurantModel*) contentModel;
-        [cell updateWithHeadline:model.name andByline:model.descriptionText andDateLine:nil andTags:model.tags andThumbnails:model.thumbnails];
+        NSDictionary* dictionary = [model.thumbnails firstObject];
+        NSString* assetId = dictionary[@"sys"][@"id"];
+        [cell updateWithHeadline:model.name andByline:model.descriptionText andDateLine:nil andTags:model.tags andImageId:assetId];
     }
     else if (self.contentType == CFContentType_Listing)
     {
         CFListingModel* model = (CFListingModel*) contentModel;
-        [cell updateWithHeadline:model.listname andByline:model.location andDateLine:nil andTags:nil andThumbnails:model.thumbnails];
+        NSDictionary* dictionary = [model.thumbnails firstObject];
+        NSString* assetId = dictionary[@"sys"][@"id"];
+        [cell updateWithHeadline:model.listname andByline:model.location andDateLine:nil andTags:nil andImageId:assetId];
     }
     else if (self.contentType == CFContentType_Event)
     {
         CFEventModel* model = (CFEventModel*) contentModel;
-        [cell updateWithHeadline:model.listname andByline:model.location andDateLine:nil andTags:nil andThumbnails:model.thumbnails];
+        NSDictionary* dictionary = [model.thumbnails firstObject];
+        NSString* assetId = dictionary[@"sys"][@"id"];
+        [cell updateWithHeadline:model.listname andByline:model.location andDateLine:nil andTags:nil andImageId:assetId];
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    [self performSegueWithIdentifier:kRestaurantSegue sender:self.contentModels[indexPath.row]];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:kRestaurantSegue])
+    {
+        KCRestaurantDetailViewController* detailVC = segue.destinationViewController;
+        
+        detailVC.model = (CFRestaurantModel*) sender;
     }
 }
 

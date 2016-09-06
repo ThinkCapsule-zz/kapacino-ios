@@ -10,6 +10,7 @@
 #import "UIFont+KCAdditions.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UIColor+KCAdditions.h"
+#import "CFClient.h"
 
 @interface KCFeedCell()
 
@@ -44,7 +45,16 @@
 }
 
 #pragma mark - Update
-- (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andThumbnails:(NSArray<NSURL*>*) thumbnailURLs{
+- (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andImageId:(NSString*) assetId {
+    [CFClient fetchAssetWithId:assetId completion:^(NSString *imageURL, NSError *error) {
+        if (error == nil)
+        {
+            [self updateWithHeadline:headline andByline:byline andDateLine:dateLine andTags:tags andImageUrl:[[NSURL alloc] initWithString:imageURL]];
+        }
+    }];
+}
+
+- (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andImageUrl:(NSURL*) imageUrl {
     
     self.headline.text   = headline;
     self.byline.text     = byline;
@@ -54,13 +64,11 @@
     self.primaryTag.text = tag;
     self.primaryTagBackground.hidden = tag ? NO : YES;
     
-    [self updateCellImage:[thumbnailURLs firstObject]];
-    
+    [self updateCellImage:imageUrl];
 }
 
 - (void)updateCellImage:(NSURL*) imageUrl {
     [self.backgroundImageView sd_setImageWithURL:imageUrl placeholderImage:[UIImage imageNamed:@"image_placeholder"]];
-        
 }
 
 @end

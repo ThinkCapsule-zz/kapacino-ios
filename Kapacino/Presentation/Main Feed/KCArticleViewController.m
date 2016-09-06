@@ -9,6 +9,7 @@
 #import "KCArticleViewController.h"
 #import "KCFeedCell.h"
 #import "CFArticleModel.h"
+#import "KCArticleDetailViewController.h"
 
 @interface KCArticleViewController ()
 
@@ -34,7 +35,17 @@
 -(void) updateCell:(KCFeedCell*)cell forContentModel:(NSObject *)contentModel
 {
     CFArticleModel* model = (CFArticleModel*) contentModel;
-    [cell updateWithHeadline:model.headline andByline:model.byline andDateLine:model.publishDate andTags:model.tags andThumbnails:model.thumnailURLs];
+    [cell updateWithHeadline:model.headline andByline:model.byline andDateLine:model.publishDate andTags:model.tags andImageUrl:[model.thumnailURLs firstObject]];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    KCArticleDetailViewController *articleDetailVC = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateInitialViewController];
+    //    KCArticleDetailViewController *articleDetailVC = [[KCArticleDetailViewController alloc] initWithNibName:@"KCArticleDetailViewController" bundle:nil];
+    
+    [articleDetailVC updateWithModel:self.contentModels[indexPath.row]];
+    
+    [self presentViewController:articleDetailVC animated:YES completion:nil];
 }
 
 /*
