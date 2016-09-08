@@ -11,7 +11,6 @@
 @implementation CFAssetModel
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
-    
     return @{@"sys" : @"sys",};
 }
 

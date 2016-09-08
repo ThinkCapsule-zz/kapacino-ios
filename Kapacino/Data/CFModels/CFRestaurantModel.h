@@ -17,8 +17,8 @@
 @property (nonatomic, readonly) NSString *telephoneNumber;
 @property (nonatomic, readonly) NSString *menu;
 @property (nonatomic, readonly) NSDictionary  *hours;
-@property (nonatomic, readonly) NSURL  *backgroundImageId;
-@property (nonatomic, readonly) NSArray<NSURL *>  *thumbnailIds;
+@property (nonatomic, readonly) NSString  *backgroundImageId;
+@property (nonatomic, readonly) NSArray<NSString *>  *thumbnailIds;
 @property (nonatomic, readonly) NSDate *updatedAt;
 @property (nonatomic, readonly) NSArray  *tags;
 @end

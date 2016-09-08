@@ -7,10 +7,18 @@
 //
 
 #import "KCRestaurantDetailViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "CFClient.h"
+#import "KCImageCell.h"
 
 @interface KCRestaurantDetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewBackground;
 @property (weak, nonatomic) IBOutlet UILabel *labelName;
 @property (weak, nonatomic) IBOutlet UILabel *labelAddressAndTime;
+@property (weak, nonatomic) IBOutlet UIView *viewInfo;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionViewImages;
+@property (weak, nonatomic) IBOutlet UIView *constraintContainerViewHeight;
+@property (weak, nonatomic) IBOutlet UICollectionView *constraintCollectionViewHeight;
 @property (weak, nonatomic) IBOutlet UITextView *labelDescription;
 @end
 
@@ -25,6 +33,10 @@ static NSString* kCellIdentifier = @"cell";
     self.labelName.text = self.model.name;
 //    self.labelAddressAndTime.text = self.model.address;
     self.labelDescription.text = self.model.descriptionText;
+    
+    [CFClient fetchAssetWithId:self.model.backgroundImageId completion:^(NSURL *imageURL, NSError *error) {
+        [self.imageViewBackground sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"image_placeholder"]];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,11 +56,39 @@ static NSString* kCellIdentifier = @"cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellIdentifier forIndexPath:indexPath];
+    KCImageCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellIdentifier forIndexPath:indexPath];
     
-//    cell.image =
+    cell.imageId = self.model.thumbnailIds[indexPath.item];
+    
     return cell;
 }
+
+#pragma mark - CollectionViewLayout
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    float width = floor(collectionView.bounds.size.width/3);
+    return CGSizeMake(width, width);
+}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsZero;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                   layout:(UICollectionViewLayout *)collectionViewLayout
+minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 0;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                   layout:(UICollectionViewLayout *)collectionViewLayout
+minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 0;
+}
+
 /*
 #pragma mark - Navigation
 

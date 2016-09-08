@@ -43,8 +43,10 @@
     [requestOperation start];
 }
 
+//TODO Might want to cache this
 + (void)fetchAssetWithId:(NSString *)assetId completion:(fetchAssetCompletion)completion {
-
+    NSAssert(assetId != nil, @"Asset id must not be null.");
+    
     /** Prepare Request **/
     NSURL *baseURL                           = [CFDataSource querySpace:CFSpaceIdentifier forAsset:assetId];
     NSURLRequest *request                    = [NSURLRequest requestWithURL:baseURL];
@@ -57,7 +59,7 @@
         NSString *imageURL = response[@"fields"][@"file"][@"url"];
         imageURL = [NSString stringWithFormat:@"http:%@",imageURL];
         
-        completion(imageURL, nil);
+        completion([[NSURL alloc] initWithString:imageURL], nil);
         
     } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
         

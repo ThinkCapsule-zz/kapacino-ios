@@ -7,6 +7,7 @@
 //
 
 #import "CFRestaurantModel.h"
+#import "CFModelHelper.h"
 
 @implementation CFRestaurantModel
 
@@ -28,27 +29,10 @@
 
 + (NSValueTransformer *)JSONTransformerForKey:(NSString *)key {
     if ([key isEqualToString:@"backgroundImageId"]) {
-        return [MTLValueTransformer transformerUsingForwardBlock:^id(id value, BOOL *success, NSError *__autoreleasing *error) {
-            NSDictionary* dictionary = (NSDictionary*) value;
-            NSAssert([dictionary isKindOfClass:NSDictionary.class], @"Expected a dictionary or an NSNull, got: %@", dictionary);
-            return [[NSURL alloc] initWithString:dictionary[@"sys"][@"id"]];
-        }];
+        return [CFModelHelper getAssetDictionaryTransformer];
     }
-    else if ([key isEqualToString:@"imageIds"]) {
-        return [MTLValueTransformer transformerUsingForwardBlock:^id(id value, BOOL *success, NSError *__autoreleasing *error) {
-            NSArray* dictionaries = (NSArray*) value;
-
-            NSAssert([dictionaries isKindOfClass:NSArray.class], @"Expected a array of dictionaries, got: %@", dictionaries);
-
-            NSMutableArray* newDictionaries = [NSMutableArray arrayWithCapacity:dictionaries.count];
-            for (NSDictionary* dictionary in dictionaries) {
-                NSAssert([dictionary isKindOfClass:NSDictionary.class], @"Expected a dictionary or an NSNull, got: %@", dictionary);
-                NSURL* assetURL = [[NSURL alloc] initWithString:dictionary[@"sys"][@"id"]];
-                [newDictionaries addObject:assetURL];
-            }
-            
-            return newDictionaries;
-        }];
+    else if ([key isEqualToString:@"thumbnailIds"]) {
+        return [CFModelHelper getAssetDictionaryArrayTransformer];
     }
     
     return nil;

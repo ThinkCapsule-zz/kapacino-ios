@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CFRestaurantModel.h"
 
-@interface KCRestaurantDetailViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface KCRestaurantDetailViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
     @property (strong, nonatomic) CFRestaurantModel* model;
+    @property (strong, nonatomic) UIImage* image;
 @end

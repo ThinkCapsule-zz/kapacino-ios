@@ -55,7 +55,6 @@ static NSString* kRestaurantSegue = @"showRestaurantDetail";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     [self performSegueWithIdentifier:kRestaurantSegue sender:self.contentModels[indexPath.row]];
 }
 

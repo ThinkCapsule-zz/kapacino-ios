@@ -84,6 +84,8 @@
 		B6DC35CE1C55BA4700ED0ABC /* KCFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DC35CD1C55BA4700ED0ABC /* KCFeedCell.xib */; };
 		B6FCB92A1C8420030072AFC8 /* KCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FCB9291C8420030072AFC8 /* KCNavigationController.m */; };
 		C904AF6C1D58D3AC00251A01 /* KCGPAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C904AF6B1D58D3AC00251A01 /* KCGPAMainViewController.m */; };
+		C9169BA91D7F517700CC507C /* CFModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C9169BA81D7F517700CC507C /* CFModelHelper.m */; };
+		C9169BAC1D7F5C3700CC507C /* KCImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9169BAB1D7F5C3700CC507C /* KCImageCell.m */; };
 		C923ACCF1D627A870088530B /* CFEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C923ACCE1D627A870088530B /* CFEventModel.m */; };
 		C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */; };
 		C92E3E4C1D5FB3890091A695 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92E3E4B1D5FB3890091A695 /* Home.storyboard */; };
@@ -268,6 +270,10 @@
 		B6FCB9291C8420030072AFC8 /* KCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCNavigationController.m; sourceTree = "<group>"; };
 		C904AF6A1D58D3AC00251A01 /* KCGPAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPAMainViewController.h; sourceTree = "<group>"; };
 		C904AF6B1D58D3AC00251A01 /* KCGPAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPAMainViewController.m; sourceTree = "<group>"; };
+		C9169BA71D7F517700CC507C /* CFModelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFModelHelper.h; sourceTree = "<group>"; };
+		C9169BA81D7F517700CC507C /* CFModelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFModelHelper.m; sourceTree = "<group>"; };
+		C9169BAA1D7F5C3700CC507C /* KCImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCImageCell.h; path = Discover/KCImageCell.h; sourceTree = "<group>"; };
+		C9169BAB1D7F5C3700CC507C /* KCImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCImageCell.m; path = Discover/KCImageCell.m; sourceTree = "<group>"; };
 		C923ACCD1D627A870088530B /* CFEventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFEventModel.h; sourceTree = "<group>"; };
 		C923ACCE1D627A870088530B /* CFEventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFEventModel.m; sourceTree = "<group>"; };
 		C92E3E3D1D5E95BB0091A695 /* KCDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCDiscoverViewController.h; path = Discover/KCDiscoverViewController.h; sourceTree = "<group>"; };
@@ -510,6 +516,8 @@
 				0980F5731C9C452D002355E8 /* CFClassModel.m */,
 				44DA4DA41CA18DD700CD4A8A /* CFClassItem.h */,
 				44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */,
+				C9169BA71D7F517700CC507C /* CFModelHelper.h */,
+				C9169BA81D7F517700CC507C /* CFModelHelper.m */,
 			);
 			path = CFModels;
 			sourceTree = "<group>";
@@ -768,6 +776,8 @@
 				C98751021D7DD4330080365C /* KCRestaurantDetailTableViewController.m */,
 				C97C35AC1D7B2CB100C48279 /* KCRestaurantDetailViewController.h */,
 				C97C35AD1D7B2CB100C48279 /* KCRestaurantDetailViewController.m */,
+				C9169BAA1D7F5C3700CC507C /* KCImageCell.h */,
+				C9169BAB1D7F5C3700CC507C /* KCImageCell.m */,
 			);
 			name = Restaurant;
 			sourceTree = "<group>";
@@ -1069,6 +1079,7 @@
 				44E8B90A1CAEB7EE0081DA30 /* KCUserInfoTableViewController.m in Sources */,
 				44461DDC1CB2A0360018E13E /* KCEmailLoginViewController.m in Sources */,
 				093A3E9E1CA2E3F000EC91FE /* KCBenchmarkCaculatorTableViewController.m in Sources */,
+				C9169BAC1D7F5C3700CC507C /* KCImageCell.m in Sources */,
 				B6D5C2E71C06E92700699793 /* AppDelegate.m in Sources */,
 				44E8B9161CAEC5E20081DA30 /* KCPickerTableViewCell.m in Sources */,
 				C923ACCF1D627A870088530B /* CFEventModel.m in Sources */,
@@ -1086,6 +1097,7 @@
 				44E8B8F11CAE7A590081DA30 /* KCUserInformationViewController.m in Sources */,
 				B69EB4651C82140F008BA05F /* UserRegistrationViewController.m in Sources */,
 				B6D5C2E41C06E92700699793 /* main.m in Sources */,
+				C9169BA91D7F517700CC507C /* CFModelHelper.m in Sources */,
 				44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */,
 				093A3EA01CA2E3F000EC91FE /* KCClassItemsTableViewController.m in Sources */,
 				44E8B9131CAEC41B0081DA30 /* KCPickerTableViewController.m in Sources */,

@@ -10,7 +10,7 @@
 #import "CFContentType.h"
 
 typedef void (^fetchContentCompletion)(NSArray *responseItems, NSError *error);
-typedef void (^fetchAssetCompletion)(NSString *imageURL, NSError *error);
+typedef void (^fetchAssetCompletion)(NSURL *imageURL, NSError *error);
 
 @interface CFClient : NSObject
 
