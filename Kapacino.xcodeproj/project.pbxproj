@@ -87,6 +87,9 @@
 		C9169BA91D7F517700CC507C /* CFModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C9169BA81D7F517700CC507C /* CFModelHelper.m */; };
 		C9169BAC1D7F5C3700CC507C /* KCImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9169BAB1D7F5C3700CC507C /* KCImageCell.m */; };
 		C923ACCF1D627A870088530B /* CFEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C923ACCE1D627A870088530B /* CFEventModel.m */; };
+		C9297FD91D8735FE00B3B1C5 /* KCHoursTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9297FD81D8735FE00B3B1C5 /* KCHoursTableViewController.m */; };
+		C92CC9481D865B6D00A3C4A2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92CC9471D865B6D00A3C4A2 /* MapKit.framework */; };
+		C92CC94B1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CC94A1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m */; };
 		C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */; };
 		C92E3E4C1D5FB3890091A695 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92E3E4B1D5FB3890091A695 /* Home.storyboard */; };
 		C97257BC1D55907E00F8B851 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97257BB1D55907E00F8B851 /* Settings.storyboard */; };
@@ -276,6 +279,11 @@
 		C9169BAB1D7F5C3700CC507C /* KCImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCImageCell.m; path = Discover/KCImageCell.m; sourceTree = "<group>"; };
 		C923ACCD1D627A870088530B /* CFEventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFEventModel.h; sourceTree = "<group>"; };
 		C923ACCE1D627A870088530B /* CFEventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFEventModel.m; sourceTree = "<group>"; };
+		C9297FD71D8735FE00B3B1C5 /* KCHoursTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCHoursTableViewController.h; path = Discover/KCHoursTableViewController.h; sourceTree = "<group>"; };
+		C9297FD81D8735FE00B3B1C5 /* KCHoursTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCHoursTableViewController.m; path = Discover/KCHoursTableViewController.m; sourceTree = "<group>"; };
+		C92CC9471D865B6D00A3C4A2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C92CC9491D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCRestaurantDetailMoreDetailTableViewController.h; path = Discover/KCRestaurantDetailMoreDetailTableViewController.h; sourceTree = "<group>"; };
+		C92CC94A1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCRestaurantDetailMoreDetailTableViewController.m; path = Discover/KCRestaurantDetailMoreDetailTableViewController.m; sourceTree = "<group>"; };
 		C92E3E3D1D5E95BB0091A695 /* KCDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCDiscoverViewController.h; path = Discover/KCDiscoverViewController.h; sourceTree = "<group>"; };
 		C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCDiscoverViewController.m; path = Discover/KCDiscoverViewController.m; sourceTree = "<group>"; };
 		C92E3E4B1D5FB3890091A695 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -299,6 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92CC9481D865B6D00A3C4A2 /* MapKit.framework in Frameworks */,
 				AC12430F9E9765F78D220545 /* Pods_Kapacino.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -778,6 +787,10 @@
 				C97C35AD1D7B2CB100C48279 /* KCRestaurantDetailViewController.m */,
 				C9169BAA1D7F5C3700CC507C /* KCImageCell.h */,
 				C9169BAB1D7F5C3700CC507C /* KCImageCell.m */,
+				C92CC9491D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.h */,
+				C92CC94A1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m */,
+				C9297FD71D8735FE00B3B1C5 /* KCHoursTableViewController.h */,
+				C9297FD81D8735FE00B3B1C5 /* KCHoursTableViewController.m */,
 			);
 			name = Restaurant;
 			sourceTree = "<group>";
@@ -804,6 +817,7 @@
 		F6E17E9DD3AA42922F8EF9BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C92CC9471D865B6D00A3C4A2 /* MapKit.framework */,
 				75462CD91D4DF5ED00BA7620 /* Nimble.framework */,
 				75B8572C1D49820B0092BC69 /* MMMarkdown.framework */,
 				77C5C3448987B913AC48DA9E /* Pods_Kapacino.framework */,
@@ -1109,6 +1123,7 @@
 				443879771CB6B3DC00071AB8 /* KCLoadingPage.m in Sources */,
 				C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */,
 				44461DD61CB2728D0018E13E /* KCLoginNavigationBar.m in Sources */,
+				C92CC94B1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
 				C97C35AE1D7B2CB100C48279 /* KCRestaurantDetailViewController.m in Sources */,
 				B6C9BD0F1C74DAED00A2E52C /* KCArticleDetailViewController.m in Sources */,
@@ -1125,6 +1140,7 @@
 				B69EB4681C821426008BA05F /* SchoolRegistrationViewController.m in Sources */,
 				444F7F861CB012C9003F7D9B /* KCAPIClient.m in Sources */,
 				093A3E9B1CA2E3F000EC91FE /* KCClassItemTableViewCell.m in Sources */,
+				C9297FD91D8735FE00B3B1C5 /* KCHoursTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

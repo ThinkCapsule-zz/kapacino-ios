@@ -18,7 +18,13 @@
 @property (nonatomic, readonly) NSString *menu;
 @property (nonatomic, readonly) NSDictionary  *hours;
 @property (nonatomic, readonly) NSString  *backgroundImageId;
+@property (nonatomic, readonly) NSString  *type;
 @property (nonatomic, readonly) NSArray<NSString *>  *thumbnailIds;
 @property (nonatomic, readonly) NSDate *updatedAt;
 @property (nonatomic, readonly) NSArray  *tags;
+
+@property (nonatomic, readonly) BOOL isOnCampus;
+@property (nonatomic, readonly) BOOL isStudentCardAccepted;
+@property (nonatomic, readonly) BOOL isCreditCardAccepted;
+@property (nonatomic, readonly) BOOL isDeliveryAccepted;
 @end

@@ -7,9 +7,13 @@
 //
 
 #import "KCRestaurantDetailViewController.h"
+#import "KCRestaurantDetailTableViewController.h"
+#import "KCRestaurantDetailMoreDetailTableViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "CFClient.h"
 #import "KCImageCell.h"
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
 @interface KCRestaurantDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewBackground;
@@ -20,11 +24,14 @@
 @property (weak, nonatomic) IBOutlet UIView *constraintContainerViewHeight;
 @property (weak, nonatomic) IBOutlet UICollectionView *constraintCollectionViewHeight;
 @property (weak, nonatomic) IBOutlet UITextView *labelDescription;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @end
 
 @implementation KCRestaurantDetailViewController
 
 static NSString* kCellIdentifier = @"cell";
+static NSString* kEmbedSegue = @"embedSegue";
+static NSString* kMoreDetailSegue = @"showMoreDetail";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,11 +44,33 @@ static NSString* kCellIdentifier = @"cell";
     [CFClient fetchAssetWithId:self.model.backgroundImageId completion:^(NSURL *imageURL, NSError *error) {
         [self.imageViewBackground sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"image_placeholder"]];
     }];
+    
+    [self updateMap:self.model.address];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) updateMap:(NSString*) address
+{
+    NSString *location = address;
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    [geocoder geocodeAddressString:location
+                 completionHandler:^(NSArray* placemarks, NSError* error){
+                     if (placemarks && placemarks.count > 0) {
+                         CLPlacemark *topResult = [placemarks objectAtIndex:0];
+                         MKPlacemark *placemark = [[MKPlacemark alloc] initWithPlacemark:topResult];
+                         
+                         CLLocationCoordinate2D center = [(CLCircularRegion *)placemark.region center];
+                         MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(center, 500, 500);
+                         
+                         [self.mapView setRegion:region animated:YES];
+                         [self.mapView addAnnotation:placemark];
+                     }
+                 }
+     ];
 }
 
 -(NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -98,6 +127,20 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:kEmbedSegue])
+    {
+        KCRestaurantDetailTableViewController* restaurantDetailVC = segue.destinationViewController;
+        restaurantDetailVC.model = self.model;
+    }
+    else if ([segue.identifier isEqualToString:kMoreDetailSegue])
+    {
+        KCRestaurantDetailMoreDetailTableViewController* moreDetailVC = segue.destinationViewController;
+        moreDetailVC.model = self.model;
+    }
+}
 
 @end
 

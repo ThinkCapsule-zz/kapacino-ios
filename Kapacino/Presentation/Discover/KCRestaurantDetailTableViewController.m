@@ -9,6 +9,9 @@
 #import "KCRestaurantDetailTableViewController.h"
 
 @interface KCRestaurantDetailTableViewController ()
+    @property (weak, nonatomic) IBOutlet UILabel *labelType;
+    @property (weak, nonatomic) IBOutlet UILabel *labelAddress;
+    @property (weak, nonatomic) IBOutlet UILabel *labelPhoneNumber;
     @property (weak, nonatomic) IBOutlet UILabel *labelHours;
 @end
 
@@ -22,8 +25,18 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self updateViews];
+}
+
+-(void) updateViews
+{
     NSString* dayOfWeek = @"Monday";
-    self.labelHours.text = self.model.hours[dayOfWeek];
+    NSDictionary* hoursDictionary = self.model.hours[dayOfWeek];
+    self.labelHours.text = [NSString stringWithFormat:@"%@ to %@",  hoursDictionary[@"start"], hoursDictionary[@"end"]];
+    self.labelPhoneNumber.text = self.model.telephoneNumber;
+    self.labelAddress.text = self.model.address;
+    self.labelType.text = self.model.type;
 }
 
 - (void)didReceiveMemoryWarning {

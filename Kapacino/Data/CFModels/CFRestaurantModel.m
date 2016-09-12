@@ -14,7 +14,7 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     
     return @{@"hours": @"hours",
-//             @"address": @"address",
+             @"address": @"address",
              @"menu": @"menu",
              @"name": @"name",
              @"tags": @"tags",
@@ -23,7 +23,12 @@
              @"thumbnailIds": @"thumbnails",
              @"updatedAt": @"updatedAt",
              @"website": @"website",
-             @"backgroundImageId": @"backgroundImage"
+             @"backgroundImageId": @"backgroundImage",
+             @"type": @"type",
+             @"isOnCampus": @"isOnCampus",
+             @"isStudentCardAccepted": @"isStudentCardAccepted",
+             @"isCreditCardAccepted": @"isCreditCardAccepted",
+             @"isDeliveryAccepted": @"isDeliveryAccepted"
             };
 }
 
