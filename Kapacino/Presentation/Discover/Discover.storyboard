@@ -210,7 +210,7 @@
                                                             <constraint firstAttribute="height" constant="1" id="1O2-6g-pta"/>
                                                         </constraints>
                                                     </view>
-                                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1E-xn-I4F">
+                                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1E-xn-I4F">
                                                         <rect key="frame" x="0.0" y="28" width="600" height="311.5"/>
                                                     </mapView>
                                                 </subviews>
