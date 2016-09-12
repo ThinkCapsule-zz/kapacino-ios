@@ -14,7 +14,7 @@
 @property (nonatomic, readonly) NSString *descriptionText;
 @property (nonatomic, readonly) NSString *website;
 @property (nonatomic, readonly) NSString *address;
-@property (nonatomic, readonly) NSString *telephoneNumber;
+@property (nonatomic, readonly) NSString *phoneNumber;
 @property (nonatomic, readonly) NSString *menu;
 @property (nonatomic, readonly) NSDictionary  *hours;
 @property (nonatomic, readonly) NSString  *backgroundImageId;
@@ -25,6 +25,6 @@
 
 @property (nonatomic, readonly) BOOL isOnCampus;
 @property (nonatomic, readonly) BOOL isStudentCardAccepted;
-@property (nonatomic, readonly) BOOL isCreditCardAccepted;
+@property (nonatomic, readonly) NSArray* creditCardsAccepted;
 @property (nonatomic, readonly) BOOL isDeliveryAccepted;
 @end

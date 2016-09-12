@@ -31,10 +31,13 @@
 
 -(void) updateViews
 {
-    NSString* dayOfWeek = @"Monday";
+    NSDateFormatter* dayFormatter = [[NSDateFormatter alloc] init];
+    [dayFormatter setDateFormat: @"EEEE"];
+    NSString* dayOfWeek = [dayFormatter stringFromDate:[NSDate date]];
+    
     NSDictionary* hoursDictionary = self.model.hours[dayOfWeek];
     self.labelHours.text = [NSString stringWithFormat:@"%@ to %@",  hoursDictionary[@"start"], hoursDictionary[@"end"]];
-    self.labelPhoneNumber.text = self.model.telephoneNumber;
+    self.labelPhoneNumber.text = self.model.phoneNumber;
     self.labelAddress.text = self.model.address;
     self.labelType.text = self.model.type;
 }

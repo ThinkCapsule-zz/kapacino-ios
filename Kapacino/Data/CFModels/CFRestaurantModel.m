@@ -19,16 +19,16 @@
              @"name": @"name",
              @"tags": @"tags",
              @"descriptionText": @"description",
-             @"telephoneNumber": @"telephoneNumber",
+             @"phoneNumber": @"phoneNumber",
              @"thumbnailIds": @"thumbnails",
              @"updatedAt": @"updatedAt",
              @"website": @"website",
              @"backgroundImageId": @"backgroundImage",
              @"type": @"type",
-             @"isOnCampus": @"isOnCampus",
-             @"isStudentCardAccepted": @"isStudentCardAccepted",
-             @"isCreditCardAccepted": @"isCreditCardAccepted",
-             @"isDeliveryAccepted": @"isDeliveryAccepted"
+             @"isOnCampus": @"onCampus",
+             @"isStudentCardAccepted": @"studentCard",
+             @"creditCardsAccepted": @"creditCard",
+             @"isDeliveryAccepted": @"delivery"
             };
 }
 

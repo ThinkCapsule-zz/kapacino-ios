@@ -39,8 +39,8 @@
     self.labelWebsite.text = self.model.website;
     self.labelCuisine.text = self.model.type;
     self.labelOnCampus.text = self.model.isOnCampus ? @"YES" : @"NO";
-    self.labelStudentCard.text = self.model.isStudentCardAccepted ? @"YES" : @"NO";
-    self.labelCreditCard.text = self.model.isCreditCardAccepted ? @"YES" : @"NO";
+    self.labelStudentCard.text = self.model.isStudentCardAccepted > 0 ? @"YES" : @"NO";
+    self.labelCreditCard.text = self.model.creditCardsAccepted.count ? @"YES" : @"NO";
     self.labelDelivery.text = self.model.isDeliveryAccepted ? @"YES" : @"NO";
 }
 

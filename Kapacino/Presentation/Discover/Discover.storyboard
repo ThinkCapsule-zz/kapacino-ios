@@ -690,14 +690,15 @@
                                                         <constraint firstAttribute="width" secondItem="ISc-BI-0ao" secondAttribute="height" multiplier="1:1" id="N9l-DO-rw9"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11am - 11pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yn-HU-JnZ">
-                                                    <rect key="frame" x="225" y="12" width="95" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.reallylongnamerestaurant.com/reallylongsubdirectory" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yn-HU-JnZ">
+                                                    <rect key="frame" x="225" y="12" width="367" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0yn-HU-JnZ" secondAttribute="trailing" id="AIK-g0-LqO"/>
                                                 <constraint firstItem="0yn-HU-JnZ" firstAttribute="centerY" secondItem="apX-kH-BM0" secondAttribute="centerY" id="B9s-eT-5o2"/>
                                                 <constraint firstItem="ISc-BI-0ao" firstAttribute="top" secondItem="apX-kH-BM0" secondAttribute="topMargin" id="Cdp-bn-az3"/>
                                                 <constraint firstItem="ISc-BI-0ao" firstAttribute="leading" secondItem="apX-kH-BM0" secondAttribute="leadingMargin" constant="10" id="Eca-5G-ZLG"/>

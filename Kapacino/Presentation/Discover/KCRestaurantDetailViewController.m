@@ -38,7 +38,14 @@ static NSString* kMoreDetailSegue = @"showMoreDetail";
     // Do any additional setup after loading the view.
     
     self.labelName.text = self.model.name;
-//    self.labelAddressAndTime.text = self.model.address;
+    
+    //Get day of week
+    NSDateFormatter* dayFormatter = [[NSDateFormatter alloc] init];
+    [dayFormatter setDateFormat: @"EEEE"];
+    NSString* dayOfWeek = [dayFormatter stringFromDate:[NSDate date]];
+    NSString* endTimeForTheDay = self.model.hours[dayOfWeek][@"end"];
+    
+    self.labelAddressAndTime.text = [NSString stringWithFormat:@"%@ - Closes at %@", self.model.address, endTimeForTheDay];
     self.labelDescription.text = self.model.descriptionText;
     
     [CFClient fetchAssetWithId:self.model.backgroundImageId completion:^(NSURL *imageURL, NSError *error) {
