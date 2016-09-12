@@ -14,4 +14,5 @@ pod 'FBSDKCoreKit'
 pod 'Contentful'
 pod 'MMMarkdown'
 pod 'BuddyBuildSDK'
+pod 'FSImageViewer'
 end

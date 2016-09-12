@@ -14,6 +14,9 @@
 #import "KCImageCell.h"
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
+#import "FSImageViewer.h"
+#import "FSBasicImage.h"
+#import "FSBasicImageSource.h"
 
 @interface KCRestaurantDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewBackground;
@@ -123,6 +126,32 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section
 minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
     return 0;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString* imageId = self.model.thumbnailIds[indexPath.item];
+    
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc]
+                                        initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    spinner.center = self.view.center;
+    spinner.hidesWhenStopped = YES;
+    [self.view addSubview:spinner];
+    [spinner startAnimating];
+    
+    [CFClient fetchAssetWithId:imageId completion:^(NSURL *imageURL, NSError *error) {
+        [spinner stopAnimating];
+        [spinner removeFromSuperview];
+        
+        if (error == nil)
+        {
+            FSBasicImage *firstPhoto = [[FSBasicImage alloc] initWithImageURL:imageURL name:@""];
+            FSBasicImageSource *photoSource = [[FSBasicImageSource alloc] initWithImages:@[firstPhoto]];
+            
+            FSImageViewerViewController *imageViewController = [[FSImageViewerViewController alloc] initWithImageSource:photoSource];
+            [self.navigationController pushViewController:imageViewController animated:YES];
+        }
+    }];
 }
 
 /*

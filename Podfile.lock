@@ -32,11 +32,16 @@ PODS:
     - Interstellar (~> 1.4.0)
     - "\U0001F555 (= 0.0.1)"
   - Decodable (0.4.3)
+  - EGOCache (2.1.3)
   - FBSDKCoreKit (4.10.1):
     - Bolts (~> 1.5)
   - FBSDKLoginKit (4.10.1):
     - FBSDKCoreKit
   - Firebase (2.5.1)
+  - FSImageViewer (3.4):
+    - AFNetworking (~> 2.5)
+    - EGOCache (~> 2.1)
+    - UAProgressView (~> 0.1)
   - HexColors (3.1.1)
   - INSPullToRefresh (1.1.4)
   - Interstellar (1.4.0):
@@ -53,6 +58,7 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - UAProgressView (0.1.3)
   - "\U0001F555 (0.0.1)"
 
 DEPENDENCIES:
@@ -62,6 +68,7 @@ DEPENDENCIES:
   - FBSDKCoreKit
   - FBSDKLoginKit
   - Firebase
+  - FSImageViewer
   - HexColors (= 3.1.1)
   - INSPullToRefresh
   - KeepLayout (from `https://github.com/iMartinKiss/KeepLayout.git`)
@@ -84,9 +91,11 @@ SPEC CHECKSUMS:
   BuddyBuildSDK: d5398183a8b50432d5cefeb1080f02b8c9b3928a
   Contentful: de96c3cdf1af4ae28828851a18f95cb2b502f8b8
   Decodable: ab6c7d02a5df949d3ab16b2696528a3241e37c76
+  EGOCache: f0295dbe041156acabd39021354ad1045ee49e72
   FBSDKCoreKit: d2aaed5e9ab7d8d6301c533376a1fbff1cf3deb5
   FBSDKLoginKit: 699ff169080e3072de4b9b0faca90bf23dc36deb
   Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
+  FSImageViewer: 0dea92069cce74a800b75cb8777c923f2be59124
   HexColors: d837cebe691e52c867d401ecd2374111add5445f
   INSPullToRefresh: a27f7faf022f858f02a7680943e11a1f7ce3430a
   Interstellar: 40fc666872436d6c1b3524c59437ebdb5dec1c6a
@@ -94,8 +103,9 @@ SPEC CHECKSUMS:
   Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  UAProgressView: ce49aee47c14df6dc372f6fd57852f570ca97e6b
   "\U0001F555": 2a41c1f9b76698cb697b8ec9a1db1087f5621187
 
-PODFILE CHECKSUM: 3b0511e83f854029e52ed3296ff7160993d5254c
+PODFILE CHECKSUM: d6c8ab9043b53bded7acd3ff058a2d5a0337abda
 
 COCOAPODS: 1.0.1
