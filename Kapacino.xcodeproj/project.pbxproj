@@ -88,6 +88,7 @@
 		C9169BAC1D7F5C3700CC507C /* KCImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9169BAB1D7F5C3700CC507C /* KCImageCell.m */; };
 		C923ACCF1D627A870088530B /* CFEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C923ACCE1D627A870088530B /* CFEventModel.m */; };
 		C9297FD91D8735FE00B3B1C5 /* KCHoursTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9297FD81D8735FE00B3B1C5 /* KCHoursTableViewController.m */; };
+		C9297FDC1D8756A500B3B1C5 /* KCDiscoverMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9297FDB1D8756A500B3B1C5 /* KCDiscoverMenuCell.m */; };
 		C92CC9481D865B6D00A3C4A2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92CC9471D865B6D00A3C4A2 /* MapKit.framework */; };
 		C92CC94B1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CC94A1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m */; };
 		C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */; };
@@ -281,6 +282,8 @@
 		C923ACCE1D627A870088530B /* CFEventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFEventModel.m; sourceTree = "<group>"; };
 		C9297FD71D8735FE00B3B1C5 /* KCHoursTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCHoursTableViewController.h; path = Discover/KCHoursTableViewController.h; sourceTree = "<group>"; };
 		C9297FD81D8735FE00B3B1C5 /* KCHoursTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCHoursTableViewController.m; path = Discover/KCHoursTableViewController.m; sourceTree = "<group>"; };
+		C9297FDA1D8756A500B3B1C5 /* KCDiscoverMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCDiscoverMenuCell.h; sourceTree = "<group>"; };
+		C9297FDB1D8756A500B3B1C5 /* KCDiscoverMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCDiscoverMenuCell.m; sourceTree = "<group>"; };
 		C92CC9471D865B6D00A3C4A2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C92CC9491D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCRestaurantDetailMoreDetailTableViewController.h; path = Discover/KCRestaurantDetailMoreDetailTableViewController.h; sourceTree = "<group>"; };
 		C92CC94A1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCRestaurantDetailMoreDetailTableViewController.m; path = Discover/KCRestaurantDetailMoreDetailTableViewController.m; sourceTree = "<group>"; };
@@ -768,6 +771,8 @@
 		C92E3E321D5E95620091A695 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				C9297FDA1D8756A500B3B1C5 /* KCDiscoverMenuCell.h */,
+				C9297FDB1D8756A500B3B1C5 /* KCDiscoverMenuCell.m */,
 				C9DF9C651D6B560B00DA8D4C /* KCDiscoverMenuViewController.h */,
 				C9DF9C661D6B560B00DA8D4C /* KCDiscoverMenuViewController.m */,
 				C92E3E3D1D5E95BB0091A695 /* KCDiscoverViewController.h */,
@@ -1114,6 +1119,7 @@
 				C9169BA91D7F517700CC507C /* CFModelHelper.m in Sources */,
 				44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */,
 				093A3EA01CA2E3F000EC91FE /* KCClassItemsTableViewController.m in Sources */,
+				C9297FDC1D8756A500B3B1C5 /* KCDiscoverMenuCell.m in Sources */,
 				44E8B9131CAEC41B0081DA30 /* KCPickerTableViewController.m in Sources */,
 				093A3E9D1CA2E3F000EC91FE /* KCAddItemTableViewController.m in Sources */,
 				B69EB46B1C8218E2008BA05F /* RegistrationNavigationController.m in Sources */,

@@ -8,11 +8,14 @@
 
 #import "KCDiscoverMenuViewController.h"
 #import "KCDiscoverViewController.h"
+#import "KCDiscoverMenuCell.h"
 #import "CFContentType.h"
 
 @interface KCDiscoverMenuViewController ()
     @property (strong, nonatomic) NSArray* discoverCategories;
+    @property (strong, nonatomic) NSArray* discoverSubtitles;
     @property (strong, nonatomic) NSArray* discoverCategoryContentTypes;
+    @property (strong, nonatomic) NSArray* discoverImageNames;
 @end
 
 static NSString* kDiscoverSegue = @"showDiscoverScreen";
@@ -22,9 +25,10 @@ static NSString* kDiscoverSegue = @"showDiscoverScreen";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.discoverCategories = @[@"restaurants", @"events", @"listings"];
+    self.discoverCategories = @[@"Restaurants", @"Events", @"Listings"];
+    self.discoverSubtitles = @[@"Find great eats on or off campus", @"Find out what's going around campus", @"Find great spots to live close to campus"];
     self.discoverCategoryContentTypes = @[@(CFContentType_Restaurant), @(CFContentType_Event), @(CFContentType_Listing)];
-    
+    self.discoverImageNames = @[@"",@"",@""];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -48,10 +52,11 @@ static NSString* kDiscoverSegue = @"showDiscoverScreen";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
-    cell.textLabel.text = self.discoverCategories[indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:@"tab_bar_setting"];
+    KCDiscoverMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    // Initialization code
+    cell.imageViewIcon.image = [UIImage imageNamed:self.discoverImageNames[indexPath.row]];
+    cell.labelTitle.text = self.discoverCategories[indexPath.row];
+    cell.labelSubtitle.text = self.discoverSubtitles[indexPath.row];
     return cell;
 }
 
@@ -70,49 +75,5 @@ static NSString* kDiscoverSegue = @"showDiscoverScreen";
         ((KCDiscoverViewController*) segue.destinationViewController).contentType = contentType;
     }
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
