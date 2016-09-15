@@ -46,12 +46,20 @@
 
 #pragma mark - Update
 - (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andImageId:(NSString*) assetId {
-    [CFClient fetchAssetWithId:assetId completion:^(NSURL *imageURL, NSError *error) {
-        if (error == nil)
-        {
-            [self updateWithHeadline:headline andByline:byline andDateLine:dateLine andTags:tags andImageUrl:imageURL];
-        }
-    }];
+    
+    if (assetId != nil)
+    {
+        [CFClient fetchAssetWithId:assetId completion:^(NSURL *imageURL, NSError *error) {
+            if (error == nil)
+            {
+                [self updateWithHeadline:headline andByline:byline andDateLine:dateLine andTags:tags andImageUrl:imageURL];
+            }
+        }];
+    }
+    else
+    {
+        [self updateWithHeadline:headline andByline:byline andDateLine:dateLine andTags:tags andImageUrl:nil];
+    }
 }
 
 - (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andImageUrl:(NSURL*) imageUrl {
