@@ -13,6 +13,7 @@
 #import "CFListingModel.h"
 #import "CFEventModel.h"
 #import "CFRestaurantModel.h"
+#import "CFPlaceModel.h"
 
 @implementation CFModelFactory
 
@@ -36,6 +37,9 @@
             
         case CFContentType_Restaurant:
             return [CFModelFactory parseResponseWithObjects:response class:[CFRestaurantModel class]];
+            
+        case CFContentType_Place:
+            return [CFModelFactory parseResponseWithObjects:response class:[CFPlaceModel class]];
             
         default:
             return nil;
