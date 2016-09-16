@@ -53,18 +53,17 @@ static NSString* kEventSegue = @"showEventDetail";
         CFEventModel* model = (CFEventModel*) contentModel;
         
         NSDictionary* venueDictionary = model.venue;
+        
+        [cell updateWithHeadline:model.name andByline:nil andDateLine:nil andTags:model.types andImageId:model.backgroundImageId];
+        
         if (venueDictionary != nil)
         {
             //Get the venue
             [CFClient fetchWithContentTypeId:CFContentType_Place andEntryId:venueDictionary[@"sys"][@"id"] completion:^(NSDictionary *result, NSError *error) {
                 CFPlaceModel* place = [MTLJSONAdapter modelOfClass:[CFPlaceModel class] fromJSONDictionary:result[@"fields"] error:nil];
                 
-                [cell updateWithHeadline:model.name andByline:place.name andDateLine:nil andTags:model.types andImageId:model.backgroundImageId];
+                [cell updateByline:place.name];
             }];
-        }
-        else
-        {
-            [cell updateWithHeadline:model.name andByline:nil andDateLine:nil andTags:model.types andImageId:model.backgroundImageId];
         }
     }
 }

@@ -11,7 +11,6 @@
 
 @interface CFEventModel : MTLModel <MTLJSONSerializing>
 @property (nonatomic, readonly) NSString  *name;
-@property (nonatomic, readonly) NSString *address;
 @property (nonatomic, readonly) NSString *phoneNumber;
 @property (nonatomic, readonly) NSString *descriptionText;
 @property (nonatomic, readonly) NSArray  *types;

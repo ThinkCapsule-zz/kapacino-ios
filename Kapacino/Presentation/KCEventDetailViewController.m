@@ -55,10 +55,12 @@ static NSString* kMoreDetailSegue = @"showMoreDetail";
 //    self.labelAddressAndTime.text = [NSString stringWithFormat:@"%@ - Closes at %@", self.model.address, endTimeForTheDay];
     self.labelDescription.text = self.model.descriptionText;
     
-    [CFClient fetchImageWithId:self.model.backgroundImageId completion:^(NSURL *imageURL, NSError *error) {
-        [self.imageViewBackground sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"image_placeholder"]];
-    }];
-    
+    if (self.model.backgroundImageId != nil)
+    {
+        [CFClient fetchImageWithId:self.model.backgroundImageId completion:^(NSURL *imageURL, NSError *error) {
+            [self.imageViewBackground sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"image_placeholder"]];
+        }];
+    }
 //    [self updateMap:self.model.address];
 }
 

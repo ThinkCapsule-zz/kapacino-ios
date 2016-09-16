@@ -62,6 +62,11 @@
     }
 }
 
+- (void) updateByline:(NSString*) byline
+{
+    self.byline.text = byline;
+}
+
 - (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andImageUrl:(NSURL*) imageUrl {
     
     self.headline.text   = headline;
