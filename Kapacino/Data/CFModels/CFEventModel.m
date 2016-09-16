@@ -24,6 +24,12 @@
              @"endTime": @"endTime",
              @"name": @"name",
              @"backgroundImageId": @"backgroundImage",
+             @"email" : @"email",
+             @"website" : @"website",
+             @"crowd" : @"crowd",
+             @"drinks" : @"drinks",
+             @"music" : @"music",
+             @"dressCode" : @"dressCode"
              };
 }
 

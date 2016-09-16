@@ -21,4 +21,12 @@
 @property (nonatomic, readonly) NSDate  *startTime;
 @property (nonatomic, readonly) NSDate  *endTime;
 @property (nonatomic, readonly) NSString  *backgroundImageId;
+
+@property (nonatomic, readonly) NSString  *email;
+@property (nonatomic, readonly) NSString  *website;
+@property (nonatomic, readonly) NSArray  *crowd;
+@property (nonatomic, readonly) NSArray  *dressCode;
+@property (nonatomic, readonly) NSArray  *music;
+@property (nonatomic, readonly) NSArray  *drinks;
 @end
+

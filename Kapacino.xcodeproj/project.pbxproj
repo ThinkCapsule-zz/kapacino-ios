@@ -94,6 +94,8 @@
 		C92CC94B1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CC94A1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m */; };
 		C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */; };
 		C92E3E4C1D5FB3890091A695 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92E3E4B1D5FB3890091A695 /* Home.storyboard */; };
+		C96CEE131D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96CEE121D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.m */; };
+		C96CEE161D8C5B5200BC48FF /* KCEventDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96CEE151D8C5B5200BC48FF /* KCEventDetailTableViewController.m */; };
 		C97257BC1D55907E00F8B851 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97257BB1D55907E00F8B851 /* Settings.storyboard */; };
 		C97C35AE1D7B2CB100C48279 /* KCRestaurantDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97C35AD1D7B2CB100C48279 /* KCRestaurantDetailViewController.m */; };
 		C98751031D7DD4330080365C /* KCRestaurantDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98751021D7DD4330080365C /* KCRestaurantDetailTableViewController.m */; };
@@ -294,6 +296,10 @@
 		C92E3E3D1D5E95BB0091A695 /* KCDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCDiscoverViewController.h; path = Discover/KCDiscoverViewController.h; sourceTree = "<group>"; };
 		C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCDiscoverViewController.m; path = Discover/KCDiscoverViewController.m; sourceTree = "<group>"; };
 		C92E3E4B1D5FB3890091A695 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C96CEE111D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCEventDetailMoreDetailTableViewController.h; path = Discover/KCEventDetailMoreDetailTableViewController.h; sourceTree = "<group>"; };
+		C96CEE121D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCEventDetailMoreDetailTableViewController.m; path = Discover/KCEventDetailMoreDetailTableViewController.m; sourceTree = "<group>"; };
+		C96CEE141D8C5B5200BC48FF /* KCEventDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCEventDetailTableViewController.h; path = Discover/KCEventDetailTableViewController.h; sourceTree = "<group>"; };
+		C96CEE151D8C5B5200BC48FF /* KCEventDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCEventDetailTableViewController.m; path = Discover/KCEventDetailTableViewController.m; sourceTree = "<group>"; };
 		C97257BB1D55907E00F8B851 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		C97C35AC1D7B2CB100C48279 /* KCRestaurantDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCRestaurantDetailViewController.h; path = Discover/KCRestaurantDetailViewController.h; sourceTree = "<group>"; };
 		C97C35AD1D7B2CB100C48279 /* KCRestaurantDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCRestaurantDetailViewController.m; path = Discover/KCRestaurantDetailViewController.m; sourceTree = "<group>"; };
@@ -779,8 +785,12 @@
 		C9297FDD1D87616E00B3B1C5 /* Event */ = {
 			isa = PBXGroup;
 			children = (
+				C96CEE111D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.h */,
+				C96CEE121D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.m */,
 				C9297FDE1D87618C00B3B1C5 /* KCEventDetailViewController.h */,
 				C9297FDF1D87618C00B3B1C5 /* KCEventDetailViewController.m */,
+				C96CEE141D8C5B5200BC48FF /* KCEventDetailTableViewController.h */,
+				C96CEE151D8C5B5200BC48FF /* KCEventDetailTableViewController.m */,
 			);
 			name = Event;
 			sourceTree = "<group>";
@@ -1115,6 +1125,7 @@
 				B60EB8481C0751FD00F3044A /* CFClient.m in Sources */,
 				44E8B90A1CAEB7EE0081DA30 /* KCUserInfoTableViewController.m in Sources */,
 				44461DDC1CB2A0360018E13E /* KCEmailLoginViewController.m in Sources */,
+				C96CEE131D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.m in Sources */,
 				093A3E9E1CA2E3F000EC91FE /* KCBenchmarkCaculatorTableViewController.m in Sources */,
 				C9297FE01D87618C00B3B1C5 /* KCEventDetailViewController.m in Sources */,
 				C9169BAC1D7F5C3700CC507C /* KCImageCell.m in Sources */,
@@ -1142,6 +1153,7 @@
 				C9297FDC1D8756A500B3B1C5 /* KCDiscoverMenuCell.m in Sources */,
 				44E8B9131CAEC41B0081DA30 /* KCPickerTableViewController.m in Sources */,
 				093A3E9D1CA2E3F000EC91FE /* KCAddItemTableViewController.m in Sources */,
+				C96CEE161D8C5B5200BC48FF /* KCEventDetailTableViewController.m in Sources */,
 				B69EB46B1C8218E2008BA05F /* RegistrationNavigationController.m in Sources */,
 				44E8B8F51CAE803B0081DA30 /* KCUserInfoLabel.m in Sources */,
 				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,

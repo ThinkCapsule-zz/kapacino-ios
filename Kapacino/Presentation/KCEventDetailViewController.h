@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CFEventModel.h"
 
-@interface KCEventDetailViewController : UIViewController
-
+@interface KCEventDetailViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+    @property (strong, nonatomic) CFEventModel* model;
+    @property (strong, nonatomic) UIImage* image;
 @end

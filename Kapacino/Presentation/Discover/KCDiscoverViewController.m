@@ -11,6 +11,7 @@
 #import "CFListingModel.h"
 #import "CFEventModel.h"
 #import "KCRestaurantDetailViewController.h"
+#import "KCEventDetailViewController.h"
 #import "CFClient.h"
 #import "CFPlaceModel.h"
 
@@ -18,6 +19,7 @@
 @end
 
 static NSString* kRestaurantSegue = @"showRestaurantDetail";
+static NSString* kEventSegue = @"showEventDetail";
 
 @implementation KCDiscoverViewController
 
@@ -69,7 +71,18 @@ static NSString* kRestaurantSegue = @"showRestaurantDetail";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:kRestaurantSegue sender:self.contentModels[indexPath.row]];
+    switch (self.contentType)
+    {
+        case CFContentType_Restaurant:
+            [self performSegueWithIdentifier:kRestaurantSegue sender:self.contentModels[indexPath.row]];
+            break;
+        case CFContentType_Event:
+            [self performSegueWithIdentifier:kEventSegue sender:self.contentModels[indexPath.row]];
+            break;
+        default:
+            break;
+    }
+    
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -79,6 +92,12 @@ static NSString* kRestaurantSegue = @"showRestaurantDetail";
         KCRestaurantDetailViewController* detailVC = segue.destinationViewController;
         
         detailVC.model = (CFRestaurantModel*) sender;
+    }
+    else if ([segue.identifier isEqualToString:kEventSegue])
+    {
+        KCEventDetailViewController* detailVC = segue.destinationViewController;
+        
+        detailVC.model = (CFEventModel*) sender;
     }
 }
 
