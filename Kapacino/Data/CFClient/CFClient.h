@@ -10,12 +10,16 @@
 #import "CFContentType.h"
 
 typedef void (^fetchContentCompletion)(NSArray *responseItems, NSError *error);
-typedef void (^fetchAssetCompletion)(NSURL *imageURL, NSError *error);
+typedef void (^fetchAssetCompletion)(NSDictionary* result, NSError *error);
+typedef void (^fetchImageCompletion)(NSURL *imageURL, NSError *error);
 
 @interface CFClient : NSObject
 
 + (void)fetchWithContentTypeId:(CFContentType)contentType completion:(fetchContentCompletion)completion;
 
++ (void)fetchWithContentTypeId:(CFContentType)contentType andEntryId:(NSString*)entryId completion:(fetchAssetCompletion)completion;
+
 + (void)fetchAssetWithId:(NSString *)assetId completion:(fetchAssetCompletion)completion;
 
++ (void)fetchImageWithId:(NSString *)assetId completion:(fetchImageCompletion)completion;
 @end

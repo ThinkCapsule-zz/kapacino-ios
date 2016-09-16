@@ -43,7 +43,38 @@
     [requestOperation start];
 }
 
++ (void)fetchWithContentTypeId:(CFContentType)contentType andEntryId:(NSString*)entryId completion:(fetchAssetCompletion)completion {
+    /** Prepare Request **/
+    NSURL *baseURL                           = [CFDataSource querySpace:CFSpaceIdentifier contentId:[CFClientHelper contentfulIdForContentType:contentType] entryId:entryId];
+    NSURLRequest *request                    = [NSURLRequest requestWithURL:baseURL];
+    AFHTTPRequestOperation* requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    
+    /** Send Request **/
+    [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+        
+        NSDictionary *response = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+        
+        completion(response, nil);
+        
+    } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
+        
+        completion(nil, error);
+        
+    }];
+    
+    [requestOperation start];
+}
+
 //TODO Might want to cache this
++ (void)fetchImageWithId:(NSString *)assetId completion:(fetchImageCompletion)completion {
+    return [self fetchAssetWithId:assetId completion:^(NSDictionary *result, NSError *error) {
+        NSString *imageURL = result[@"fields"][@"file"][@"url"];
+        imageURL = [NSString stringWithFormat:@"http:%@",imageURL];
+        
+        completion([[NSURL alloc] initWithString:imageURL], nil);
+    }];
+}
+
 + (void)fetchAssetWithId:(NSString *)assetId completion:(fetchAssetCompletion)completion {
     NSAssert(assetId != nil, @"Asset id must not be null.");
     
@@ -56,19 +87,14 @@
     [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
         
         NSDictionary *response = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
-        NSString *imageURL = response[@"fields"][@"file"][@"url"];
-        imageURL = [NSString stringWithFormat:@"http:%@",imageURL];
         
-        completion([[NSURL alloc] initWithString:imageURL], nil);
-        
+        completion(response, nil);
     } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
         
         completion(nil, error);
-        
     }];
     
-    [requestOperation start];
-    
+    [requestOperation start];    
 }
 
 

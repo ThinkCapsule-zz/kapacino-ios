@@ -11,6 +11,8 @@
 #import "CFListingModel.h"
 #import "CFEventModel.h"
 #import "KCRestaurantDetailViewController.h"
+#import "CFClient.h"
+#import "CFPlaceModel.h"
 
 @interface KCDiscoverViewController()
 @end
@@ -47,9 +49,21 @@ static NSString* kRestaurantSegue = @"showRestaurantDetail";
     else if (self.contentType == CFContentType_Event)
     {
         CFEventModel* model = (CFEventModel*) contentModel;
-        NSDictionary* dictionary = [model.thumbnails firstObject];
-        NSString* assetId = dictionary[@"sys"][@"id"];
-        [cell updateWithHeadline:model.listname andByline:model.location andDateLine:nil andTags:nil andImageId:assetId];
+        
+        NSDictionary* venueDictionary = model.venue;
+        if (venueDictionary != nil)
+        {
+            //Get the venue
+            [CFClient fetchWithContentTypeId:CFContentType_Place andEntryId:venueDictionary[@"sys"][@"id"] completion:^(NSDictionary *result, NSError *error) {
+                CFPlaceModel* place = [MTLJSONAdapter modelOfClass:[CFPlaceModel class] fromJSONDictionary:result[@"fields"] error:nil];
+                
+                [cell updateWithHeadline:model.name andByline:place.name andDateLine:nil andTags:model.types andImageId:model.backgroundImageId];
+            }];
+        }
+        else
+        {
+            [cell updateWithHeadline:model.name andByline:nil andDateLine:nil andTags:model.types andImageId:model.backgroundImageId];
+        }
     }
 }
 

@@ -49,7 +49,7 @@
     
     if (assetId != nil)
     {
-        [CFClient fetchAssetWithId:assetId completion:^(NSURL *imageURL, NSError *error) {
+        [CFClient fetchImageWithId:assetId completion:^(NSURL *imageURL, NSError *error) {
             if (error == nil)
             {
                 [self updateWithHeadline:headline andByline:byline andDateLine:dateLine andTags:tags andImageUrl:imageURL];

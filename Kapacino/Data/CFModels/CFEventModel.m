@@ -7,20 +7,34 @@
 //
 
 #import "CFEventModel.h"
+#import "CFModelHelper.h"
 
 @implementation CFEventModel
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     
     return @{
-             @"hours": @"hours",
-             @"descriptionText"    : @"description",
-             @"telephoneNumber"      : @"telephoneNumber",
-             @"types"      : @"types",
-             @"tags"      : @"tags",
-             @"gallery"  : @"gallery",
-             @"venue"  : @"venue"
+             @"descriptionText": @"description",
+             @"phoneNumber": @"phoneNumber",
+             @"types": @"types",
+             @"tags": @"tags",
+             @"gallery": @"gallery",
+             @"venue": @"venue",
+             @"startTime": @"startTime",
+             @"endTime": @"endTime",
+             @"name": @"name",
+             @"backgroundImageId": @"backgroundImage",
              };
 }
 
++ (NSValueTransformer *)JSONTransformerForKey:(NSString *)key {
+    if ([key isEqualToString:@"backgroundImageId"]) {
+        return [CFModelHelper getAssetDictionaryTransformer];
+    }
+    else if ([key isEqualToString:@"gallery"]) {
+        return [CFModelHelper getAssetDictionaryArrayTransformer];
+    }
+    
+    return nil;
+}
 @end

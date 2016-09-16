@@ -20,7 +20,7 @@
     {
         _imageId = imageId;
         
-        [CFClient fetchAssetWithId:imageId completion:^(NSURL *imageURL, NSError *error) {
+        [CFClient fetchImageWithId:imageId completion:^(NSURL *imageURL, NSError *error) {
             if (error == nil)
             {
                 [self.imageView sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"image_placeholder"]];

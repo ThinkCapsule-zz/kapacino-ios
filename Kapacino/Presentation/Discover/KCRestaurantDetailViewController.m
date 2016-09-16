@@ -51,7 +51,7 @@ static NSString* kMoreDetailSegue = @"showMoreDetail";
     self.labelAddressAndTime.text = [NSString stringWithFormat:@"%@ - Closes at %@", self.model.address, endTimeForTheDay];
     self.labelDescription.text = self.model.descriptionText;
     
-    [CFClient fetchAssetWithId:self.model.backgroundImageId completion:^(NSURL *imageURL, NSError *error) {
+    [CFClient fetchImageWithId:self.model.backgroundImageId completion:^(NSURL *imageURL, NSError *error) {
         [self.imageViewBackground sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"image_placeholder"]];
     }];
     
@@ -139,7 +139,7 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
     [self.view addSubview:spinner];
     [spinner startAnimating];
     
-    [CFClient fetchAssetWithId:imageId completion:^(NSURL *imageURL, NSError *error) {
+    [CFClient fetchImageWithId:imageId completion:^(NSURL *imageURL, NSError *error) {
         [spinner stopAnimating];
         [spinner removeFromSuperview];
         

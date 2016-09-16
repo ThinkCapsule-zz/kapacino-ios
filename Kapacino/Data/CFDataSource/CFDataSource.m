@@ -30,6 +30,18 @@
     return [queryURL URL];
 }
 
++ (NSURL *)querySpace:(NSString *)space contentId:(NSString *)contentTypeId entryId:(NSString *) entryId {
+    
+    NSString* endpoint               = [NSString stringWithFormat:@"%@%@/%@",[self baseEndpointURLForSpace:space],CFContentEntriesDir, entryId];
+    NSURLQueryItem *tokenQuery       = [[NSURLQueryItem alloc] initWithName:CFContentTokenQuery value:[self token]];
+    NSURLQueryItem *contentTypeQuery = [[NSURLQueryItem alloc] initWithName:CFContentTypeQuery value:contentTypeId];
+    NSURLComponents *queryURL        = [[NSURLComponents alloc] initWithString:endpoint];
+    
+    queryURL.queryItems              = @[tokenQuery,contentTypeQuery];
+    
+    return [queryURL URL];
+}
+
 + (NSURL *)querySpace:(NSString *)space forAsset:(NSString *)assetId {
     
     NSString* endpoint         = [NSString stringWithFormat:@"%@%@",[self baseEndpointURLForSpace:space],CFContentAssetsDir];
