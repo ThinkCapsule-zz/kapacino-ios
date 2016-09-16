@@ -40,12 +40,14 @@
 //    self.labelHours.text = [NSString stringWithFormat:@"%@ to %@",  hoursDictionary[@"start"], hoursDictionary[@"end"]];
     self.labelPhoneNumber.text = self.model.phoneNumber;
     self.labelType.text = [self.model.types componentsJoinedByString:@", "];
+}
+
+-(void) setPlace:(CFPlaceModel *)place
+{
+    _place = place;
     
     //Get the venue
-    [CFClient fetchWithContentTypeId:CFContentType_Place andEntryId:self.model.venue[@"sys"][@"id"] completion:^(NSDictionary *result, NSError *error) {
-        CFPlaceModel* place = [MTLJSONAdapter modelOfClass:[CFPlaceModel class] fromJSONDictionary:result[@"fields"] error:nil];
-        self.labelAddress.text = place.address;
-    }];
+    self.labelAddress.text = place.address;
 }
 
 - (void)didReceiveMemoryWarning {

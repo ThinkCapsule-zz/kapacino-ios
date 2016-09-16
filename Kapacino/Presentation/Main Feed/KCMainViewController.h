@@ -13,5 +13,5 @@
 @interface KCMainViewController : UICollectionViewController
     @property (nonatomic) CFContentType contentType;
     @property (nonatomic, strong) NSArray *contentModels;
-    -(void) updateCell:(KCFeedCell*) cell forContentModel:(NSObject*) contentModel;
+    -(void) updateCell:(KCFeedCell*) cell forContentModel:(NSObject*) contentModel atRow:(NSInteger) row;
 @end

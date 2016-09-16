@@ -31,6 +31,8 @@
 
     @property (weak, nonatomic) IBOutlet UILabel *labelVenueName;
     @property (weak, nonatomic) IBOutlet UITextView *labelVenueDescription;
+
+@property (weak, nonatomic) KCEventDetailTableViewController* detailTableVC;
 @end
 
 @implementation KCEventDetailViewController
@@ -59,6 +61,17 @@ static NSString* kMoreDetailSegue = @"showMoreDetail";
     {
         [CFClient fetchImageWithId:self.model.backgroundImageId completion:^(NSURL *imageURL, NSError *error) {
             [self.imageViewBackground sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"image_placeholder"]];
+        }];
+    }
+    
+    if (self.model.venue != nil)
+    {
+        //Get the venue
+        [CFClient fetchWithContentTypeId:CFContentType_Place andEntryId:self.model.venue[@"sys"][@"id"] completion:^(NSDictionary *result, NSError *error) {
+            CFPlaceModel* place = [MTLJSONAdapter modelOfClass:[CFPlaceModel class] fromJSONDictionary:result[@"fields"] error:nil];
+            self.detailTableVC.place = place;
+            self.labelVenueName.text = place.name;
+            self.labelVenueDescription.text = place.descriptionText;
         }];
     }
 //    [self updateMap:self.model.address];
@@ -174,8 +187,8 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
     if ([segue.identifier isEqualToString:kEmbedSegue])
     {
-        KCEventDetailTableViewController* detailVC = segue.destinationViewController;
-        detailVC.model = self.model;
+        self.detailTableVC = segue.destinationViewController;
+        self.detailTableVC.model = self.model;
     }
     else if ([segue.identifier isEqualToString:kMoreDetailSegue])
     {

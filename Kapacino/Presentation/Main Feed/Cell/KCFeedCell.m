@@ -45,12 +45,12 @@
 }
 
 #pragma mark - Update
-- (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andImageId:(NSString*) assetId {
+- (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andImageId:(NSString*) assetId andRow:(NSInteger) row {
     
     if (assetId != nil)
     {
         [CFClient fetchImageWithId:assetId completion:^(NSURL *imageURL, NSError *error) {
-            if (error == nil)
+            if ((error == nil)&&(self.tag == row))
             {
                 [self updateWithHeadline:headline andByline:byline andDateLine:dateLine andTags:tags andImageUrl:imageURL];
             }

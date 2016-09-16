@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "CFEventModel.h"
+#import "CFPlaceModel.h"
 
 @interface KCEventDetailTableViewController : UITableViewController
     @property (strong, nonatomic) CFEventModel* model;
+    @property (strong, nonatomic) CFPlaceModel* place;
 @end

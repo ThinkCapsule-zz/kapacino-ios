@@ -34,19 +34,21 @@ static NSString* kEventSegue = @"showEventDetail";
     // Dispose of any resources that can be recreated.
 }
 
--(void) updateCell:(KCFeedCell*)cell forContentModel:(NSObject *)contentModel
+-(void) updateCell:(KCFeedCell*)cell forContentModel:(NSObject *)contentModel atRow:(NSInteger)row
 {
+    cell.tag = row;
     if (self.contentType == CFContentType_Restaurant)
     {
         CFRestaurantModel* model = (CFRestaurantModel*) contentModel;
-        [cell updateWithHeadline:model.name andByline:model.descriptionText andDateLine:nil andTags:model.tags andImageId:model.backgroundImageId];
+        
+        [cell updateWithHeadline:model.name andByline:model.descriptionText andDateLine:nil andTags:model.tags andImageId:model.backgroundImageId andRow:row];
     }
     else if (self.contentType == CFContentType_Listing)
     {
         CFListingModel* model = (CFListingModel*) contentModel;
         NSDictionary* dictionary = [model.thumbnails firstObject];
         NSString* assetId = dictionary[@"sys"][@"id"];
-        [cell updateWithHeadline:model.listname andByline:model.location andDateLine:nil andTags:nil andImageId:assetId];
+        [cell updateWithHeadline:model.listname andByline:model.location andDateLine:nil andTags:nil andImageId:assetId andRow:row];
     }
     else if (self.contentType == CFContentType_Event)
     {
@@ -54,16 +56,19 @@ static NSString* kEventSegue = @"showEventDetail";
         
         NSDictionary* venueDictionary = model.venue;
         
-        [cell updateWithHeadline:model.name andByline:nil andDateLine:nil andTags:model.types andImageId:model.backgroundImageId];
+        [cell updateWithHeadline:model.name andByline:nil andDateLine:nil andTags:model.types andImageId:model.backgroundImageId andRow:row];
         
         if (venueDictionary != nil)
         {
-            //Get the venue
-            [CFClient fetchWithContentTypeId:CFContentType_Place andEntryId:venueDictionary[@"sys"][@"id"] completion:^(NSDictionary *result, NSError *error) {
-                CFPlaceModel* place = [MTLJSONAdapter modelOfClass:[CFPlaceModel class] fromJSONDictionary:result[@"fields"] error:nil];
-                
-                [cell updateByline:place.name];
-            }];
+            if (cell.tag == row)
+            {
+                //Get the venue
+                [CFClient fetchWithContentTypeId:CFContentType_Place andEntryId:venueDictionary[@"sys"][@"id"] completion:^(NSDictionary *result, NSError *error) {
+                    CFPlaceModel* place = [MTLJSONAdapter modelOfClass:[CFPlaceModel class] fromJSONDictionary:result[@"fields"] error:nil];
+                    
+                    [cell updateByline:place.name];
+                }];
+            }
         }
     }
 }

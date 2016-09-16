@@ -113,13 +113,13 @@ static CGFloat kCellRatio = 4.0f/3.0f;
     KCFeedCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellId forIndexPath:indexPath];
     
 //    [cell updateWithArticleModel:self.contentModels[indexPath.row]];
-    [self updateCell:cell forContentModel:self.contentModels[indexPath.row]];
+    [self updateCell:cell forContentModel:self.contentModels[indexPath.row] atRow:indexPath.row];
     
     return cell;
     
 }
 
--(void) updateCell:(KCFeedCell*) cell forContentModel:(NSObject*) contentModel
+-(void) updateCell:(KCFeedCell*) cell forContentModel:(NSObject*) contentModel atRow:(NSInteger) row
 {
     
 }

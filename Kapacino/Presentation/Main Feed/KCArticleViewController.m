@@ -32,7 +32,7 @@
     return CFContentType_Article;
 }
 
--(void) updateCell:(KCFeedCell*)cell forContentModel:(NSObject *)contentModel
+-(void) updateCell:(KCFeedCell*)cell forContentModel:(NSObject *)contentModel atRow:(NSInteger)row
 {
     CFArticleModel* model = (CFArticleModel*) contentModel;
     [cell updateWithHeadline:model.headline andByline:model.byline andDateLine:model.publishDate andTags:model.tags andImageUrl:[model.thumnailURLs firstObject]];

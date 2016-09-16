@@ -10,7 +10,7 @@
 #import "CFArticleModel.h"
 
 @interface KCFeedCell : UICollectionViewCell
-    - (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andImageId:(NSString*) assetId;
+    - (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andImageId:(NSString*) assetId andRow:(NSInteger) row;
 
     - (void)updateWithHeadline:(NSString *)headline andByline:(NSString *)byline andDateLine:(NSString *)dateLine andTags:(NSArray*) tags andImageUrl:(NSURL*) imageUrl;
 
