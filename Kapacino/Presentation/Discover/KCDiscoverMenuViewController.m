@@ -28,7 +28,7 @@ static NSString* kDiscoverSegue = @"showDiscoverScreen";
     self.discoverCategories = @[@"Restaurants", @"Events", @"Listings"];
     self.discoverSubtitles = @[@"Find great eats on or off campus", @"Find out what's going around campus", @"Find great spots to live close to campus"];
     self.discoverCategoryContentTypes = @[@(CFContentType_Restaurant), @(CFContentType_Event), @(CFContentType_Listing)];
-    self.discoverImageNames = @[@"",@"",@""];
+    self.discoverImageNames = @[@"discover_restaurants",@"discover_events",@"discover_listings"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

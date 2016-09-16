@@ -42,8 +42,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_building" translatesAutoresizingMaskIntoConstraints="NO" id="wTr-D3-YzW">
-                                            <rect key="frame" x="58" y="9" width="80" height="80.5"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_building" translatesAutoresizingMaskIntoConstraints="NO" id="wTr-D3-YzW">
+                                            <rect key="frame" x="38" y="9" width="80" height="80.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="wTr-D3-YzW" secondAttribute="height" multiplier="1:1" id="PKu-OK-iTB"/>
                                                 <constraint firstAttribute="width" constant="80" id="uTu-3n-w1x"/>
@@ -55,22 +55,22 @@
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQx-iH-iap">
-                                            <rect key="frame" x="148" y="26" width="117" height="30.5"/>
+                                            <rect key="frame" x="148.5" y="26" width="117" height="30.5"/>
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
                                             <color key="textColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find great eats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5r-MV-DGm">
-                                            <rect key="frame" x="147.5" y="62" width="87" height="18"/>
+                                            <rect key="frame" x="148" y="62" width="87" height="18"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
                                             <color key="textColor" red="0.57647058823529407" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="wTr-D3-YzW" firstAttribute="leading" secondItem="Whl-ok-DHK" secondAttribute="leadingMargin" constant="50" id="Be0-55-w6Q"/>
+                                        <constraint firstItem="wTr-D3-YzW" firstAttribute="leading" secondItem="Whl-ok-DHK" secondAttribute="leadingMargin" constant="30" id="Be0-55-w6Q"/>
                                         <constraint firstItem="a5r-MV-DGm" firstAttribute="bottom" secondItem="wTr-D3-YzW" secondAttribute="bottom" constant="-10" id="In7-88-jcw"/>
-                                        <constraint firstItem="a5r-MV-DGm" firstAttribute="leading" secondItem="wTr-D3-YzW" secondAttribute="trailing" constant="10" id="J9i-9d-hv9"/>
+                                        <constraint firstItem="a5r-MV-DGm" firstAttribute="leading" secondItem="wTr-D3-YzW" secondAttribute="trailing" constant="30" id="J9i-9d-hv9"/>
                                         <constraint firstItem="oQx-iH-iap" firstAttribute="leading" secondItem="a5r-MV-DGm" secondAttribute="leading" id="Jv7-n5-imA"/>
                                         <constraint firstItem="wTr-D3-YzW" firstAttribute="centerY" secondItem="Whl-ok-DHK" secondAttribute="centerY" id="sN6-pP-AAb"/>
                                         <constraint firstItem="a5r-MV-DGm" firstAttribute="top" secondItem="oQx-iH-iap" secondAttribute="bottom" constant="5" id="wun-gk-zKD"/>
