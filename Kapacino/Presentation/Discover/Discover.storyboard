@@ -1154,7 +1154,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5h-f8-gbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3519" y="455"/>
+            <point key="canvasLocation" x="3527" y="900"/>
         </scene>
         <!--Event Detail View Controller-->
         <scene sceneID="EgS-Fg-kCn">
@@ -1669,18 +1669,30 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HkG-X0-wRo">
+                                                    <rect key="frame" x="70.5" y="31.5" width="240" height="180"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="s9J-Rf-eqE"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <segue destination="qSB-d6-xHr" kind="embed" identifier="embedSegue" id="ZH1-CK-8bO"/>
+                                                    </connections>
+                                                </containerView>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpY-Uc-bjW">
-                                                    <rect key="frame" x="-68" y="-47" width="0.0" height="0.0"/>
+                                                    <rect key="frame" x="1" y="5" width="0.0" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="HkG-X0-wRo" secondAttribute="bottom" id="8vl-jb-EVB"/>
                                                 <constraint firstItem="FKq-Xt-q6U" firstAttribute="leading" secondItem="9z4-e5-wkf" secondAttribute="trailing" constant="40" id="GNY-MT-4Cb"/>
                                                 <constraint firstItem="9z4-e5-wkf" firstAttribute="leading" secondItem="mZw-t0-Wx3" secondAttribute="leadingMargin" constant="10" id="IGD-r0-uq2"/>
                                                 <constraint firstItem="FKq-Xt-q6U" firstAttribute="centerY" secondItem="9z4-e5-wkf" secondAttribute="centerY" id="IWc-uv-jJ1"/>
+                                                <constraint firstItem="HkG-X0-wRo" firstAttribute="top" secondItem="FKq-Xt-q6U" secondAttribute="bottom" id="bPA-IU-Dq9"/>
                                                 <constraint firstItem="9z4-e5-wkf" firstAttribute="top" secondItem="mZw-t0-Wx3" secondAttribute="topMargin" id="gtz-VP-Z62"/>
+                                                <constraint firstItem="HkG-X0-wRo" firstAttribute="leading" secondItem="FKq-Xt-q6U" secondAttribute="leading" constant="-15" id="s66-Hf-sZ5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -2001,4 +2013,7 @@
         <image name="restaurant_studentID" width="30" height="30"/>
         <image name="tab_bar_calc" width="28" height="19"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZH1-CK-8bO"/>
+    </inferredMetricsTieBreakers>
 </document>

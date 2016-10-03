@@ -32,7 +32,9 @@
     @property (weak, nonatomic) IBOutlet UILabel *labelVenueName;
     @property (weak, nonatomic) IBOutlet UITextView *labelVenueDescription;
 
-@property (weak, nonatomic) KCEventDetailTableViewController* detailTableVC;
+    @property (strong, nonatomic) CFPlaceModel* place;
+
+    @property (weak, nonatomic) KCEventDetailTableViewController* detailTableVC;
 @end
 
 @implementation KCEventDetailViewController
@@ -70,6 +72,7 @@ static NSString* kMoreDetailSegue = @"showMoreDetail";
         [CFClient fetchWithContentTypeId:CFContentType_Place andEntryId:self.model.venue[@"sys"][@"id"] completion:^(NSDictionary *result, NSError *error) {
             CFPlaceModel* place = [MTLJSONAdapter modelOfClass:[CFPlaceModel class] fromJSONDictionary:result[@"fields"] error:nil];
             self.detailTableVC.place = place;
+            self.place = place;
             self.labelVenueName.text = place.name;
             self.labelVenueDescription.text = place.descriptionText;
         }];
@@ -194,6 +197,7 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
     {
         KCEventDetailMoreDetailTableViewController* moreDetailVC = segue.destinationViewController;
         moreDetailVC.model = self.model;
+        moreDetailVC.place = self.place;
     }
 }
 

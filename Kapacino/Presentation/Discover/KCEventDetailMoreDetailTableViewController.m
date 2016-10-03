@@ -59,8 +59,8 @@
     // Pass the selected object to the new view controller.
     if ([segue.identifier isEqualToString:kEmbedSegue])
     {
-//        KCHoursTableViewController* hoursVC = segue.destinationViewController;
-//        hoursVC.hours = self.model.hours;
+        KCHoursTableViewController* hoursVC = segue.destinationViewController;
+        hoursVC.hours = self.place.hours;
     }
 }
 

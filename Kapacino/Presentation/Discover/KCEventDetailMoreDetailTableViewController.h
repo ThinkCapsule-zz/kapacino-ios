@@ -11,4 +11,5 @@
 
 @interface KCEventDetailMoreDetailTableViewController : UITableViewController
     @property (strong, nonatomic) CFEventModel* model;
+    @property (strong, nonatomic) CFPlaceModel* place;
 @end
