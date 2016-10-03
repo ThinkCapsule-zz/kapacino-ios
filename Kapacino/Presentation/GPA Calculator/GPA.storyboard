@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -110,7 +111,7 @@
         <!--GPA Calculator-->
         <scene sceneID="FOK-a7-V88">
             <objects>
-                <viewController id="VmG-UG-ckm" sceneMemberID="viewController">
+                <viewController id="VmG-UG-ckm" customClass="KCGPAMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NiC-jF-hrz"/>
                         <viewControllerLayoutGuide type="bottom" id="wI2-Tu-aV8"/>
@@ -145,29 +146,80 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDB-RM-rIl">
                                         <rect key="frame" x="30" y="25.5" width="100" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q7F-od-hWd">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="q7F-od-hWd" firstAttribute="leading" secondItem="nDB-RM-rIl" secondAttribute="leading" id="7Sl-2B-Eij"/>
+                                            <constraint firstItem="q7F-od-hWd" firstAttribute="top" secondItem="nDB-RM-rIl" secondAttribute="top" id="AbG-CO-Eb0"/>
                                             <constraint firstAttribute="width" secondItem="nDB-RM-rIl" secondAttribute="height" multiplier="1:1" id="FFr-85-Deq"/>
                                             <constraint firstAttribute="width" constant="100" id="JTM-sG-4WY"/>
+                                            <constraint firstAttribute="bottom" secondItem="q7F-od-hWd" secondAttribute="bottom" id="O8u-Ee-qCl"/>
+                                            <constraint firstAttribute="trailing" secondItem="q7F-od-hWd" secondAttribute="trailing" id="YCV-ud-iHz"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0C-x3-rbW">
                                         <rect key="frame" x="190" y="25.5" width="100" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QND-EU-tvc">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="y0C-x3-rbW" secondAttribute="height" multiplier="1:1" id="1RK-7f-ItJ"/>
+                                            <constraint firstItem="QND-EU-tvc" firstAttribute="top" secondItem="y0C-x3-rbW" secondAttribute="top" id="8qV-rn-CVv"/>
+                                            <constraint firstAttribute="bottom" secondItem="QND-EU-tvc" secondAttribute="bottom" id="BpI-GY-Jxe"/>
                                             <constraint firstAttribute="width" constant="100" id="KLw-4U-d3a"/>
+                                            <constraint firstItem="QND-EU-tvc" firstAttribute="leading" secondItem="y0C-x3-rbW" secondAttribute="leading" id="NbP-1k-Kxk"/>
+                                            <constraint firstAttribute="trailing" secondItem="QND-EU-tvc" secondAttribute="trailing" id="ceu-An-30N"/>
                                         </constraints>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current GPA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sr8-Mp-xjl">
+                                        <rect key="frame" x="32.5" y="130" width="95.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall GPA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POx-qB-IG0">
+                                        <rect key="frame" x="195" y="130.5" width="91" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="sr8-Mp-xjl" firstAttribute="centerX" secondItem="nDB-RM-rIl" secondAttribute="centerX" id="5HL-S9-HrW"/>
                                     <constraint firstItem="y0C-x3-rbW" firstAttribute="centerY" secondItem="nDB-RM-rIl" secondAttribute="centerY" id="MUp-sW-KR4"/>
                                     <constraint firstItem="nDB-RM-rIl" firstAttribute="trailing" secondItem="l3b-sX-4E9" secondAttribute="centerX" constant="-30" id="WJC-Qf-Qr7"/>
+                                    <constraint firstItem="POx-qB-IG0" firstAttribute="centerX" secondItem="y0C-x3-rbW" secondAttribute="centerX" id="YHe-7X-mqQ"/>
                                     <constraint firstItem="y0C-x3-rbW" firstAttribute="leading" secondItem="l3b-sX-4E9" secondAttribute="centerX" constant="30" id="cEc-Xq-rhy"/>
                                     <constraint firstItem="nDB-RM-rIl" firstAttribute="centerY" secondItem="l3b-sX-4E9" secondAttribute="centerY" id="kCx-u0-2Fc"/>
+                                    <constraint firstItem="POx-qB-IG0" firstAttribute="top" secondItem="y0C-x3-rbW" secondAttribute="bottom" constant="5" id="opR-Ns-11G"/>
+                                    <constraint firstItem="sr8-Mp-xjl" firstAttribute="top" secondItem="nDB-RM-rIl" secondAttribute="bottom" constant="5" id="xrI-Kk-SVN"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bl2-1S-EeD" customClass="FabButton" customModule="Material">
+                                <rect key="frame" x="254" y="385" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bl2-1S-EeD" secondAttribute="height" multiplier="1:1" id="E6k-xJ-qty"/>
+                                    <constraint firstAttribute="width" constant="50" id="Ww8-7L-SLj"/>
+                                </constraints>
+                                <state key="normal" image="cm_add_white"/>
+                                <state key="highlighted" image="cm_add_white"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="62l-sj-JpQ" kind="push" id="fz3-Rd-TMW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -175,22 +227,19 @@
                             <constraint firstItem="fKc-Uo-VvX" firstAttribute="width" secondItem="MKg-2A-IJh" secondAttribute="width" id="JbB-2j-ZQa"/>
                             <constraint firstItem="fKc-Uo-VvX" firstAttribute="top" secondItem="77M-7E-C5Q" secondAttribute="bottom" constant="20" id="QNI-aE-mtw"/>
                             <constraint firstItem="77M-7E-C5Q" firstAttribute="top" secondItem="l3b-sX-4E9" secondAttribute="bottom" constant="20" id="ShY-XQ-zBl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bl2-1S-EeD" secondAttribute="trailing" id="TdF-SE-eaX"/>
                             <constraint firstItem="l3b-sX-4E9" firstAttribute="top" secondItem="NiC-jF-hrz" secondAttribute="bottom" id="Zd3-sc-hxJ"/>
                             <constraint firstItem="l3b-sX-4E9" firstAttribute="centerX" secondItem="MKg-2A-IJh" secondAttribute="centerX" id="aCb-kA-seP"/>
                             <constraint firstItem="l3b-sX-4E9" firstAttribute="width" secondItem="MKg-2A-IJh" secondAttribute="width" id="e85-O2-Lo1"/>
+                            <constraint firstItem="wI2-Tu-aV8" firstAttribute="top" secondItem="bl2-1S-EeD" secondAttribute="bottom" constant="20" id="j8U-jF-wxS"/>
                             <constraint firstItem="fKc-Uo-VvX" firstAttribute="centerX" secondItem="MKg-2A-IJh" secondAttribute="centerX" id="wyN-oa-Dg4"/>
                             <constraint firstItem="wI2-Tu-aV8" firstAttribute="top" secondItem="fKc-Uo-VvX" secondAttribute="bottom" id="z7V-Pl-Q7R"/>
                             <constraint firstItem="77M-7E-C5Q" firstAttribute="centerX" secondItem="MKg-2A-IJh" secondAttribute="centerX" id="z7x-Ns-ljV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="GPA Calculator" id="ViP-wq-37J">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="I3n-eg-r55">
-                            <connections>
-                                <segue destination="62l-sj-JpQ" kind="push" id="Xq5-D9-lrQ"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="GPA Calculator" id="ViP-wq-37J"/>
                     <connections>
+                        <outlet property="tableView" destination="fKc-Uo-VvX" id="zEa-rd-1ea"/>
                         <segue destination="MF8-9h-dLe" kind="push" id="VE9-su-X22"/>
                     </connections>
                 </viewController>
@@ -990,6 +1039,7 @@
     </scenes>
     <resources>
         <image name="calculator" width="32" height="32"/>
+        <image name="cm_add_white" width="24" height="24"/>
         <image name="doneIcon" width="24" height="24"/>
         <image name="markList" width="128" height="128"/>
         <image name="tab_bar_calc" width="28" height="19"/>

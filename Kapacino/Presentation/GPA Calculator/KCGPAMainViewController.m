@@ -9,7 +9,7 @@
 #import "KCGPAMainViewController.h"
 
 @interface KCGPAMainViewController () <UITableViewDataSource, UITableViewDelegate>
-
+    @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation KCGPAMainViewController
@@ -18,7 +18,6 @@ const NSString* kCellIdentifier = @"cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

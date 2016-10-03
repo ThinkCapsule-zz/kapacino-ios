@@ -15,4 +15,6 @@ pod 'Contentful'
 pod 'MMMarkdown'
 pod 'BuddyBuildSDK'
 pod 'FSImageViewer'
+pod 'FSImageViewer'
+pod 'Material'
 end
