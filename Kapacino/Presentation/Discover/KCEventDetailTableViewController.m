@@ -28,6 +28,8 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [self updateViews];
+    
+    self.tableView.estimatedRowHeight = 45;
 }
 
 -(void) updateViews
@@ -42,12 +44,21 @@
     self.labelType.text = [self.model.types componentsJoinedByString:@", "];
 }
 
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
+}
+
 -(void) setPlace:(CFPlaceModel *)place
 {
     _place = place;
     
     //Get the venue
     self.labelAddress.text = place.address;
+    
+    [self.labelAddress setNeedsLayout];
+    [self.labelAddress layoutIfNeeded];
+    [self.view setNeedsDisplay];
 }
 
 - (void)didReceiveMemoryWarning {

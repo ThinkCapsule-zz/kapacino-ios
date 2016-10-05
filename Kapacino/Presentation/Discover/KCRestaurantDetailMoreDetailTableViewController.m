@@ -32,6 +32,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [self updateViews];
+    
+    self.tableView.estimatedRowHeight = 45;
 }
 
 -(void) updateViews
@@ -42,6 +44,11 @@
     self.labelStudentCard.text = self.model.isStudentCardAccepted > 0 ? @"YES" : @"NO";
     self.labelCreditCard.text = self.model.creditCardsAccepted.count ? @"YES" : @"NO";
     self.labelDelivery.text = self.model.isDeliveryAccepted ? @"YES" : @"NO";
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
 }
 
 - (void)didReceiveMemoryWarning {

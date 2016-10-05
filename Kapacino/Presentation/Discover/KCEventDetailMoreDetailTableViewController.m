@@ -32,6 +32,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [self updateViews];
+    
+    //    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 45;
 }
 
 -(void) updateViews
@@ -44,6 +47,11 @@
     self.labelMusic.text = [self.model.music componentsJoinedByString:@", "];
     self.labelDrinks.text = [self.model.drinks componentsJoinedByString:@", "];
     self.labelDressCode.text = [self.model.dressCode componentsJoinedByString:@", "];
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
 }
 
 - (void)didReceiveMemoryWarning {
