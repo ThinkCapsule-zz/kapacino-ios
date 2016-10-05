@@ -27,6 +27,9 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [self updateViews];
+    
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 45;
 }
 
 -(void) updateViews
@@ -40,6 +43,11 @@
     self.labelPhoneNumber.text = self.model.phoneNumber;
     self.labelAddress.text = self.model.address;
     self.labelType.text = self.model.type;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
 }
 
 - (void)didReceiveMemoryWarning {

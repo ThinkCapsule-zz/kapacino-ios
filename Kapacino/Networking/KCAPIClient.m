@@ -15,6 +15,8 @@ static NSString *const KCUsersPath= @"users";
 
 static NSString *const KCCoursesPath= @"courses";
 
+//static NSString *const KCCoursesPath= @"marks";
+
 static KCAPIClient *__sharedClient = nil;
 
 @interface KCAPIClient ()
@@ -22,6 +24,7 @@ static KCAPIClient *__sharedClient = nil;
 @property (strong, nonatomic) FIRDatabaseReference *baseReference;
 @property (strong, nonatomic) FIRDatabaseReference *usersReference;
 @property (strong, nonatomic) FIRDatabaseReference *coursesReference;
+@property (strong, nonatomic) FIRDatabaseReference *marksReference;
 
 @end
 
@@ -48,6 +51,7 @@ static KCAPIClient *__sharedClient = nil;
     __sharedClient.baseReference = [[FIRDatabase database] reference];
     __sharedClient.usersReference = [__sharedClient.baseReference child:KCUsersPath];
     __sharedClient.coursesReference = [__sharedClient.baseReference child:KCCoursesPath];
+    __sharedClient.marksReference = [__sharedClient.baseReference child:KCCoursesPath];
 }
 
 - (NSString *)currentUserID {

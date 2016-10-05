@@ -241,7 +241,7 @@
                                             <outlet property="labelGPA" destination="CTN-Ug-fgY" id="lAu-UC-KoH"/>
                                             <outlet property="labelInstructorName" destination="3ZC-BA-Adp" id="MZr-9A-oh0"/>
                                             <outlet property="labelTerm" destination="8qs-ks-pUi" id="eDH-Th-KWS"/>
-                                            <segue destination="MF8-9h-dLe" kind="push" id="QMZ-U5-SZf"/>
+                                            <segue destination="dfH-pR-3w2" kind="push" id="9q0-02-KwZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -528,16 +528,16 @@
         <!--Add Class-->
         <scene sceneID="2ZP-cs-Izq">
             <objects>
-                <viewController id="dfH-pR-3w2" sceneMemberID="viewController">
+                <viewController id="dfH-pR-3w2" customClass="KCGPAMarksViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Es6-Dt-yO1"/>
                         <viewControllerLayoutGuide type="bottom" id="um8-Bb-ELH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FcO-wx-8Ht">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nab-Wz-Jj6">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nab-Wz-Jj6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -587,7 +587,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH4-XT-dSt" customClass="FabButton" customModule="Material">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH4-XT-dSt" customClass="FabButton" customModule="Material">
                                 <rect key="frame" x="254" y="385" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="7Sb-x5-C0B"/>
@@ -625,14 +625,14 @@
                                 </state>
                             </button>
                             <connections>
-                                <segue destination="d3V-qO-mW7" kind="push" id="GKn-tH-p22"/>
+                                <segue destination="d3V-qO-mW7" kind="push" id="hvL-O2-39O"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLX-Jz-rzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1318" y="2859"/>
+            <point key="canvasLocation" x="1328" y="2885"/>
         </scene>
         <!--Edit Course-->
         <scene sceneID="GBI-2Z-VMy">
@@ -643,7 +643,7 @@
                         <viewControllerLayoutGuide type="bottom" id="MM2-XB-37c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eHz-pS-PKh">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -665,7 +665,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jHC-6n-TJr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xhs-Pg-hay">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1407,9 +1407,9 @@
         <!--Add Marks-->
         <scene sceneID="Gsd-2Q-WmR">
             <objects>
-                <tableViewController id="gF2-hd-0oy" sceneMemberID="viewController">
+                <tableViewController id="gF2-hd-0oy" customClass="KCGPAMarksDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="a8Z-YT-bdO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -1555,13 +1555,22 @@
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onDoneTapped:" destination="gF2-hd-0oy" eventType="touchUpInside" id="zrL-Cn-SbS"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textfieldMark" destination="Lqu-ne-d7U" id="LJP-Ji-gRN"/>
+                        <outlet property="textfieldName" destination="zP3-mb-IN5" id="Hy7-HM-5gv"/>
+                        <outlet property="textfieldType" destination="OJX-SC-wPV" id="3sS-5K-Mk6"/>
+                        <outlet property="textfieldWeight" destination="ckx-MD-41W" id="yXr-4E-9hI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDH-FK-hih" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748" y="2859"/>
+            <point key="canvasLocation" x="1748" y="2885"/>
         </scene>
     </scenes>
     <resources>
@@ -1572,6 +1581,6 @@
         <image name="tab_bar_calc" width="28" height="19"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fBC-xz-V1v"/>
+        <segue reference="hvL-O2-39O"/>
     </inferredMetricsTieBreakers>
 </document>

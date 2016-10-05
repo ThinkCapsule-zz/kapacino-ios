@@ -1,5 +1,5 @@
 //
-//  KCGPACourseTableViewController.h
+//  KCGPAMarksDetailViewController.h
 //  Kapacino
 //
 //  Created by Ivan Cheung on 2016-10-04.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KCGPACourseDetailTableViewController : UITableViewController
+@interface KCGPAMarksDetailViewController : UITableViewController <UITableViewDataSource>
 
 @end
