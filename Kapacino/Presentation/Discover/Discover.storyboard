@@ -2016,6 +2016,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="cellAddress" destination="rwl-Fl-zcd" id="F2i-Oa-x1U"/>
                         <outlet property="labelAddress" destination="HGy-nM-dIH" id="yYR-kU-Tym"/>
                         <outlet property="labelHours" destination="qkW-gz-xNJ" id="UsL-3c-Pg3"/>
                         <outlet property="labelPhoneNumber" destination="N29-mY-J6J" id="4EZ-rO-aHu"/>

@@ -10,6 +10,7 @@
 #import "CFClient.h"
 
 @interface KCEventDetailTableViewController ()
+    @property (weak, nonatomic) IBOutlet UITableViewCell *cellAddress;
     @property (weak, nonatomic) IBOutlet UILabel *labelType;
     @property (weak, nonatomic) IBOutlet UILabel *labelAddress;
     @property (weak, nonatomic) IBOutlet UILabel *labelPhoneNumber;
@@ -56,9 +57,8 @@
     //Get the venue
     self.labelAddress.text = place.address;
     
-    [self.labelAddress setNeedsLayout];
-    [self.labelAddress layoutIfNeeded];
-    [self.view setNeedsDisplay];
+    NSArray<NSIndexPath*>* indexPaths = @[[self.tableView indexPathForCell:self.cellAddress]];
+    [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
 }
 
 - (void)didReceiveMemoryWarning {
