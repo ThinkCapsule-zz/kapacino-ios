@@ -10,6 +10,7 @@
 #import "KCAPIClient.h"
 #import "KCUserInformationViewController.h"
 #import "KCNavigationController.h"
+@import Firebase;
 
 @interface KCEmailLoginViewController ()
 
@@ -40,26 +41,35 @@
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc] init];
     [userInfo setObject:self.email forKey:@"Email"];
     
-    [[KCAPIClient sharedClient] loginUserWithEmail:self.email password:self.password success:^(FAuthData *authData) {
-        [[KCAPIClient sharedClient] getUserByID:authData.uid success:^(NSDictionary *userData, BOOL completeUserProfile) {
-            if (completeUserProfile) {
-                [self showUserInformationViewControllerWithUserInfo:[NSMutableDictionary dictionaryWithDictionary:userData]];
-            } else {
-                if (![userData isKindOfClass:[NSNull class]]) {
-                    [self showUserInformationViewControllerWithUserInfo:[NSMutableDictionary dictionaryWithDictionary:userData]];
-                } else {
-                    [self showUserInformationViewControllerWithUserInfo:userInfo];
-                }
-            }
-        } failure:nil];
-    } failure:^(NSError *error) {
-        if (error.code == -8 && [error.domain isEqualToString:@"FirebaseAuthentication"]) {
-            [[KCAPIClient sharedClient] createUserWithEmail:self.email password:self.password success:^(Firebase *userRef) {
-                [self showUserInformationViewControllerWithUserInfo:userInfo];
-            } failure:nil];
-        }
-    }];
-}
+    [[FIRAuth auth] signInWithEmail:self.email
+                           password:self.password
+                         completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+                             //TODO figure out how to get data
+                             [self showUserInformationViewControllerWithUserInfo:nil];
+                         }];
+    
+//    [[KCAPIClient sharedClient] loginUserWithEmail:self.email password:self.password completionHandler:^(FIRUser *user, NSError *error) {
+////        [[KCAPIClient sharedClient] getUserByID:authData.uid success:^(NSDictionary *userData, BOOL completeUserProfile) {
+////            if (completeUserProfile) {
+////                [self showUserInformationViewControllerWithUserInfo:[NSMutableDictionary dictionaryWithDictionary:userData]];
+////            } else {
+//                if (![user isKindOfClass:[NSNull class]]) {
+//                    [self showUserInformationViewControllerWithUserInfo:[NSMutableDictionary dictionaryWithDictionary:user]];
+//                } else {
+//                    [self showUserInformationViewControllerWithUserInfo:userInfo];
+//                }
+////            }
+//        }];
+    }
+//   failure:^(NSError *error) {
+//        if (error.code == -8 && [error.domain isEqualToString:@"FirebaseAuthentication"]) {
+//            [[KCAPIClient sharedClient] createUserWithEmail:self.email password:self.password success:^(Firebase *userRef) {
+//                [self showUserInformationViewControllerWithUserInfo:userInfo];
+//            } failure:nil];
+//        }
+//    }
+//     ];
+//}
 
 - (void)showUserInformationViewControllerWithUserInfo:(NSMutableDictionary *)userInfo {
     KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateInitialViewController];

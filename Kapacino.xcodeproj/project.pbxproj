@@ -31,7 +31,6 @@
 		444924B91CB3ECD7008737A6 /* KCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444924B81CB3ECD7008737A6 /* KCSearchViewController.m */; };
 		444924BC1CB40100008737A6 /* KCSearchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 444924BB1CB40100008737A6 /* KCSearchResultTableViewCell.m */; };
 		444F7F7F1CB00148003F7D9B /* KCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7F7E1CB00148003F7D9B /* KCUser.m */; };
-		444F7F861CB012C9003F7D9B /* KCAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7F851CB012C9003F7D9B /* KCAPIClient.m */; };
 		44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DA4DA51CA18DD700CD4A8A /* CFClassItem.m */; };
 		44E8B8F11CAE7A590081DA30 /* KCUserInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B8F01CAE7A590081DA30 /* KCUserInformationViewController.m */; };
 		44E8B8F51CAE803B0081DA30 /* KCUserInfoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8B8F41CAE803B0081DA30 /* KCUserInfoLabel.m */; };
@@ -94,12 +93,19 @@
 		C92CC94B1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CC94A1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m */; };
 		C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */; };
 		C92E3E4C1D5FB3890091A695 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92E3E4B1D5FB3890091A695 /* Home.storyboard */; };
+		C95C4A041DA4115700015865 /* CourseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A031DA4115700015865 /* CourseDataSource.m */; };
+		C95C4A081DA4125800015865 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A071DA4125800015865 /* Course.m */; };
+		C95C4A0C1DA413AC00015865 /* KCGPACourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A0B1DA413AC00015865 /* KCGPACourseCell.m */; };
+		C95C4A0D1DA4147600015865 /* KCAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7F851CB012C9003F7D9B /* KCAPIClient.m */; };
+		C95C4A0F1DA4155E00015865 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C95C4A0E1DA4155E00015865 /* GoogleService-Info.plist */; };
+		C95C4A121DA417D300015865 /* KCGPACourseDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A111DA417D300015865 /* KCGPACourseDetailTableViewController.m */; };
 		C96CEE131D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96CEE121D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.m */; };
 		C96CEE161D8C5B5200BC48FF /* KCEventDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96CEE151D8C5B5200BC48FF /* KCEventDetailTableViewController.m */; };
 		C97257BC1D55907E00F8B851 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97257BB1D55907E00F8B851 /* Settings.storyboard */; };
 		C97C35AE1D7B2CB100C48279 /* KCRestaurantDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97C35AD1D7B2CB100C48279 /* KCRestaurantDetailViewController.m */; };
 		C98751031D7DD4330080365C /* KCRestaurantDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98751021D7DD4330080365C /* KCRestaurantDetailTableViewController.m */; };
 		C9BB12FA1D8ADC1600DCB37E /* CFPlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB12F91D8ADC1600DCB37E /* CFPlaceModel.m */; };
+		C9DB46511DA4560900496CCC /* KCGPACourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DB46501DA4560900496CCC /* KCGPACourseCell.xib */; };
 		C9DF9C641D6B53C400DA8D4C /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DF9C631D6B53C400DA8D4C /* Discover.storyboard */; };
 		C9DF9C671D6B560B00DA8D4C /* KCDiscoverMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DF9C661D6B560B00DA8D4C /* KCDiscoverMenuViewController.m */; };
 		C9F540C51D7756080025FE6F /* KCArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F540C41D7756080025FE6F /* KCArticleViewController.m */; };
@@ -296,6 +302,15 @@
 		C92E3E3D1D5E95BB0091A695 /* KCDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCDiscoverViewController.h; path = Discover/KCDiscoverViewController.h; sourceTree = "<group>"; };
 		C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCDiscoverViewController.m; path = Discover/KCDiscoverViewController.m; sourceTree = "<group>"; };
 		C92E3E4B1D5FB3890091A695 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C95C4A021DA4115700015865 /* CourseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseDataSource.h; path = FirebaseDatasource/CourseDataSource.h; sourceTree = "<group>"; };
+		C95C4A031DA4115700015865 /* CourseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseDataSource.m; path = FirebaseDatasource/CourseDataSource.m; sourceTree = "<group>"; };
+		C95C4A061DA4125800015865 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		C95C4A071DA4125800015865 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		C95C4A0A1DA413AC00015865 /* KCGPACourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPACourseCell.h; sourceTree = "<group>"; };
+		C95C4A0B1DA413AC00015865 /* KCGPACourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPACourseCell.m; sourceTree = "<group>"; };
+		C95C4A0E1DA4155E00015865 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C95C4A101DA417D300015865 /* KCGPACourseDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPACourseDetailTableViewController.h; sourceTree = "<group>"; };
+		C95C4A111DA417D300015865 /* KCGPACourseDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPACourseDetailTableViewController.m; sourceTree = "<group>"; };
 		C96CEE111D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCEventDetailMoreDetailTableViewController.h; path = Discover/KCEventDetailMoreDetailTableViewController.h; sourceTree = "<group>"; };
 		C96CEE121D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCEventDetailMoreDetailTableViewController.m; path = Discover/KCEventDetailMoreDetailTableViewController.m; sourceTree = "<group>"; };
 		C96CEE141D8C5B5200BC48FF /* KCEventDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCEventDetailTableViewController.h; path = Discover/KCEventDetailTableViewController.h; sourceTree = "<group>"; };
@@ -307,6 +322,7 @@
 		C98751021D7DD4330080365C /* KCRestaurantDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCRestaurantDetailTableViewController.m; path = Discover/KCRestaurantDetailTableViewController.m; sourceTree = "<group>"; };
 		C9BB12F81D8ADC1600DCB37E /* CFPlaceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFPlaceModel.h; sourceTree = "<group>"; };
 		C9BB12F91D8ADC1600DCB37E /* CFPlaceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFPlaceModel.m; sourceTree = "<group>"; };
+		C9DB46501DA4560900496CCC /* KCGPACourseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KCGPACourseCell.xib; path = Cells/KCGPACourseCell.xib; sourceTree = "<group>"; };
 		C9DF9C631D6B53C400DA8D4C /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = Discover/Discover.storyboard; sourceTree = "<group>"; };
 		C9DF9C651D6B560B00DA8D4C /* KCDiscoverMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCDiscoverMenuViewController.h; path = Discover/KCDiscoverMenuViewController.h; sourceTree = "<group>"; };
 		C9DF9C661D6B560B00DA8D4C /* KCDiscoverMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCDiscoverMenuViewController.m; path = Discover/KCDiscoverMenuViewController.m; sourceTree = "<group>"; };
@@ -472,6 +488,8 @@
 		B60EB83E1C07513100F3044A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C95C4A051DA4124B00015865 /* FirebaseModels */,
+				C95C4A011DA40FFD00015865 /* FirebaseDatasources */,
 				444F7F7C1CB00131003F7D9B /* KCModels */,
 				B60EB84B1C0754ED00F3044A /* CFDataSource */,
 				B60EB8441C0751EA00F3044A /* CFClient */,
@@ -719,6 +737,7 @@
 		B6D5C2E11C06E92700699793 /* Kapacino */ = {
 			isa = PBXGroup;
 			children = (
+				C95C4A0E1DA4155E00015865 /* GoogleService-Info.plist */,
 				444F7F831CB011EE003F7D9B /* Networking */,
 				B6431F7E1C55BCCC00546B3A /* Resources */,
 				B6D5C2E51C06E92700699793 /* AppDelegate.h */,
@@ -778,6 +797,11 @@
 			children = (
 				C904AF6A1D58D3AC00251A01 /* KCGPAMainViewController.h */,
 				C904AF6B1D58D3AC00251A01 /* KCGPAMainViewController.m */,
+				C95C4A0A1DA413AC00015865 /* KCGPACourseCell.h */,
+				C95C4A0B1DA413AC00015865 /* KCGPACourseCell.m */,
+				C95C4A101DA417D300015865 /* KCGPACourseDetailTableViewController.h */,
+				C95C4A111DA417D300015865 /* KCGPACourseDetailTableViewController.m */,
+				C9DB46501DA4560900496CCC /* KCGPACourseCell.xib */,
 			);
 			name = New;
 			sourceTree = "<group>";
@@ -809,6 +833,24 @@
 				C9DF9C631D6B53C400DA8D4C /* Discover.storyboard */,
 			);
 			name = Discover;
+			sourceTree = "<group>";
+		};
+		C95C4A011DA40FFD00015865 /* FirebaseDatasources */ = {
+			isa = PBXGroup;
+			children = (
+				C95C4A021DA4115700015865 /* CourseDataSource.h */,
+				C95C4A031DA4115700015865 /* CourseDataSource.m */,
+			);
+			name = FirebaseDatasources;
+			sourceTree = "<group>";
+		};
+		C95C4A051DA4124B00015865 /* FirebaseModels */ = {
+			isa = PBXGroup;
+			children = (
+				C95C4A061DA4125800015865 /* Course.h */,
+				C95C4A071DA4125800015865 /* Course.m */,
+			);
+			name = FirebaseModels;
 			sourceTree = "<group>";
 		};
 		C97C35AB1D7B2C8900C48279 /* Restaurant */ = {
@@ -981,6 +1023,7 @@
 				C92E3E4C1D5FB3890091A695 /* Home.storyboard in Resources */,
 				B6431F8A1C55BCEE00546B3A /* SF-UI-Text-BoldItalic.otf in Resources */,
 				C97257BC1D55907E00F8B851 /* Settings.storyboard in Resources */,
+				C9DB46511DA4560900496CCC /* KCGPACourseCell.xib in Resources */,
 				443C48381CAD3A6A004436CD /* Login.storyboard in Resources */,
 				B6431F8D1C55BCEE00546B3A /* SF-UI-Text-Light.otf in Resources */,
 				B6431F8E1C55BCEE00546B3A /* SF-UI-Text-LightItalic.otf in Resources */,
@@ -989,6 +1032,7 @@
 				B6D5C2ED1C06E92700699793 /* Main.storyboard in Resources */,
 				B6431F941C55BCEE00546B3A /* SF-UI-Text-SemiboldItalic.otf in Resources */,
 				09A0F4BE1C9FEEC900C34901 /* GPA.storyboard in Resources */,
+				C95C4A0F1DA4155E00015865 /* GoogleService-Info.plist in Resources */,
 				B6431F921C55BCEE00546B3A /* SF-UI-Text-RegularItalic.otf in Resources */,
 				B6431F901C55BCEE00546B3A /* SF-UI-Text-MediumItalic.otf in Resources */,
 				C9DF9C641D6B53C400DA8D4C /* Discover.storyboard in Resources */,
@@ -1113,6 +1157,7 @@
 				444F7F7F1CB00148003F7D9B /* KCUser.m in Sources */,
 				B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */,
 				093A3E9F1CA2E3F000EC91FE /* KCBenchmarkCalculatorViewController.m in Sources */,
+				C95C4A081DA4125800015865 /* Course.m in Sources */,
 				443C483B1CAD487D004436CD /* KCLoginViewController.m in Sources */,
 				B6A339FB1C7C13D300F9CC9D /* CFAssetModel.m in Sources */,
 				B6D550911C55A8390091BF71 /* KCMainViewController.m in Sources */,
@@ -1138,6 +1183,7 @@
 				093A3EA31CA2E3F000EC91FE /* KCBenchmarkLabel.m in Sources */,
 				B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */,
 				444924B41CB3B9AB008737A6 /* KCSchoolInformationTableViewController.m in Sources */,
+				C95C4A0C1DA413AC00015865 /* KCGPACourseCell.m in Sources */,
 				44E8B9071CAEB4D20081DA30 /* KCUserInfoTableViewCell.m in Sources */,
 				C904AF6C1D58D3AC00251A01 /* KCGPAMainViewController.m in Sources */,
 				C9BB12FA1D8ADC1600DCB37E /* CFPlaceModel.m in Sources */,
@@ -1153,6 +1199,7 @@
 				093A3EA01CA2E3F000EC91FE /* KCClassItemsTableViewController.m in Sources */,
 				C9297FDC1D8756A500B3B1C5 /* KCDiscoverMenuCell.m in Sources */,
 				44E8B9131CAEC41B0081DA30 /* KCPickerTableViewController.m in Sources */,
+				C95C4A041DA4115700015865 /* CourseDataSource.m in Sources */,
 				093A3E9D1CA2E3F000EC91FE /* KCAddItemTableViewController.m in Sources */,
 				C96CEE161D8C5B5200BC48FF /* KCEventDetailTableViewController.m in Sources */,
 				B69EB46B1C8218E2008BA05F /* RegistrationNavigationController.m in Sources */,
@@ -1171,15 +1218,16 @@
 				444924BC1CB40100008737A6 /* KCSearchResultTableViewCell.m in Sources */,
 				44E8B8F81CAEA6350081DA30 /* KCSchoolInformationViewController.m in Sources */,
 				B6D550861C55786C0091BF71 /* KCTabBarNavigationController.m in Sources */,
+				C95C4A0D1DA4147600015865 /* KCAPIClient.m in Sources */,
 				C98751031D7DD4330080365C /* KCRestaurantDetailTableViewController.m in Sources */,
 				0980F5741C9C452D002355E8 /* CFClassModel.m in Sources */,
 				C9DF9C671D6B560B00DA8D4C /* KCDiscoverMenuViewController.m in Sources */,
 				09A0F4C51CA03C1A00C34901 /* UINavigationController+Advanced.m in Sources */,
 				093A3EA11CA2E3F000EC91FE /* KCClassViewController.m in Sources */,
 				B69EB4681C821426008BA05F /* SchoolRegistrationViewController.m in Sources */,
-				444F7F861CB012C9003F7D9B /* KCAPIClient.m in Sources */,
 				093A3E9B1CA2E3F000EC91FE /* KCClassItemTableViewCell.m in Sources */,
 				C9297FD91D8735FE00B3B1C5 /* KCHoursTableViewController.m in Sources */,
+				C95C4A121DA417D300015865 /* KCGPACourseDetailTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

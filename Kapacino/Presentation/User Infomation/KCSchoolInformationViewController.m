@@ -27,10 +27,10 @@
 - (void)updateUserInfo {
     NSString *userID = [KCAPIClient sharedClient].currentUserID ;
     [self.userInfo setValue:@"YES" forKey:@"complete"];
-    [[KCAPIClient sharedClient] updateUserWithID:userID userInfo:self.userInfo success:^(Firebase *userRef) {
-        KCLoadingPage *loadingPageViewConrtoller = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCLoadingPage"];
-        [self.navigationController setViewControllers:@[loadingPageViewConrtoller] animated:YES];
-    } failure:nil];
+//    [[KCAPIClient sharedClient] updateUserWithID:userID userInfo:self.userInfo success:^(Firebase *userRef) {
+//        KCLoadingPage *loadingPageViewConrtoller = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCLoadingPage"];
+//        [self.navigationController setViewControllers:@[loadingPageViewConrtoller] animated:YES];
+//    } failure:nil];
 }
 
 - (BOOL)checkUserInfo {

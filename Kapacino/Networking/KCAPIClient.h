@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "KCUser.h"
-#import <Firebase/Firebase.h>
+#import <FirebaseAuth/FirebaseAuth.h>
+
+@import Firebase;
 
 @interface KCAPIClient : NSObject
 
@@ -16,34 +18,30 @@
 
 + (instancetype)sharedClient;
 
-- (void)loginUserWithProvider:(NSString *)provide
-                        token:(NSString *)token
-                      success:(void (^)(FAuthData *authData))success
-                      failure:(void (^)(NSError *error))failure;
+-(FIRDatabaseReference*) baseReference;
+-(FIRDatabaseReference*) usersReference;
+-(FIRDatabaseReference*) coursesReference;
 
-- (void)loginUserWithEmail:(NSString *)email
-                  password:(NSString *)password
-                   success:(void (^)(FAuthData *authData))success
-                   failure:(void (^)(NSError *error))failure;
-
-- (void)createUserWithEmail:(NSString *)email
-                  password:(NSString *)password
-                   success:(void (^)(Firebase *userRef))success
-                   failure:(void (^)(NSError *error))failure;
-
-
-- (void)getUserByID:(NSString *)uID
-            success:(void (^)(NSDictionary *userData, BOOL completeUserProfile))success
-            failure:(void (^)(NSError *error))failure;
-
-- (void)createUserWithID:(NSString *)uID
-                userInfo:(NSDictionary *)userInfo
-                 success:(void (^)( Firebase *userRef))success
-                 failure:(void (^)(NSError *error))failure;
-
-- (void)updateUserWithID:(NSString *)uID
-                userInfo:(NSDictionary *)userInfo
-                 success:(void (^)( Firebase *userRef))success
-                 failure:(void (^)(NSError *error))failure;
+//- (void)loginUserWithProvider:(NSString *)provide
+//                        token:(NSString *)token
+//                        completionHandler:(void (^)(FIRUser *user, NSError *error)) completionHandler;
+//
+//- (void)loginUserWithEmail:(NSString *)email
+//                  password:(NSString *)password
+//                   completionHandler:(void (^)(FIRUser *user, NSError *error)) completionHandler;
+//
+//- (void)createUserWithEmail:(NSString *)email
+//                  password:(NSString *)password
+//                    completionHandler:(void (^)(FIRUser *user, NSError *error)) completionHandler;
+//
+//
+//- (void)getUserByID:(NSString *)uID
+//            completionHandler:(void (^)(FIRUser *user, NSError *error)) completionHandler;
+//
+//- (void)createUserWithID:(NSString *)uID
+//             completionHandler:(void (^)(FIRUser *user, NSError *error)) completionHandler;
+//
+//- (void)updateUserWithID:(NSString *)uID
+//            completionHandler:(void (^)(FIRUser *user, NSError *error)) completionHandler;
 
 @end
