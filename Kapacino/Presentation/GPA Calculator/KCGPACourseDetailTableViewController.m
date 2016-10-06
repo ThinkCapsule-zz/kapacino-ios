@@ -9,6 +9,8 @@
 #import "KCGPACourseDetailTableViewController.h"
 @import Firebase;
 #import "KCAPIClient.h"
+#import "Course.h"
+@import Material;
 
 @interface KCGPACourseDetailTableViewController()
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCreditWeight;
@@ -21,26 +23,40 @@
 
 @implementation KCGPACourseDetailTableViewController
 
+//TODO Show user if there is something wrong with input
+
+
 - (IBAction)onDoneTapped:(id)sender {
-    NSString *userID = [FIRAuth auth].currentUser.uid;
+//    NSString *userID = [FIRAuth auth].currentUser.uid;
     
     FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] coursesReference];
 
     NSString *key = [coursesRef childByAutoId].key;
-    NSDictionary *course = @{
-                               @"courseName": self.textfieldCourseName.text,
-                               @"courseCode": self.textfieldCourseCode.text,
-                               @"courseCode": self.textfieldCourseCode.text,
-                               @"term": self.textfieldTerm.text,
-                               @"instructor": self.textfieldInstructor.text,
-                               @"creditType": self.textfieldCreditType.text,
-                               @"creditWeight": self.textfieldCreditWeight.text,
-                           };
+    Course* course = [[Course alloc] init];
+    course.courseCode = self.textfieldCourseCode.text;
+    course.courseName = self.textfieldCourseCode.text;
+    course.term = self.textfieldTerm.text;
+    course.instructor = self.textfieldInstructor.text;
+    course.creditType = self.textfieldCreditType.text;
     
-    //TODO Use user id and access control
-    NSDictionary *childUpdates = @{key: course};
-    [coursesRef updateChildValues:childUpdates];
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    f.numberStyle = NSNumberFormatterDecimalStyle;
+    course.creditWeight = [f numberFromString:self.textfieldCreditWeight.text];
     
-    [self.navigationController popViewControllerAnimated:YES];
+    if ([course isComplete])
+    {
+        NSDictionary *courseAsDictionary = [course toDictionary];
+        
+        //TODO Use user id and access control
+        NSDictionary *childUpdates = @{key: courseAsDictionary};
+        [coursesRef updateChildValues:childUpdates];
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else
+    {
+        SnackbarController* snackbarController = [[SnackbarController alloc] init];
+//        snackbarController.snack
+    }
 }
 @end

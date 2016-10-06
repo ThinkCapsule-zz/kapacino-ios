@@ -20,7 +20,7 @@
         self.term = values[@"term"];
         self.instructor = values[@"instructor"];
         self.creditType = values[@"creditType"];
-        self.creditWeight = [values[@"creditWeight"] floatValue];
+        self.creditWeight = values[@"creditWeight"];
     }
     return self;
 }
@@ -41,4 +41,22 @@
 //            "completed": completed
 //            ]
 //}
+
+-(NSDictionary*) toDictionary
+{
+    return @{
+          @"courseName": self.courseName,
+          @"courseCode": self.courseCode,
+          @"term": self.term,
+          @"instructor": self.instructor,
+          @"creditType": self.creditType,
+          @"creditWeight": self.creditWeight,
+      };
+}
+
+-(BOOL) isComplete
+{
+    return self.courseName && self.courseCode && self.term && self.instructor && self.creditType && self.creditWeight;
+}
+
 @end

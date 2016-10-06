@@ -37,7 +37,7 @@
 {
     NSDateFormatter* dayFormatter = [[NSDateFormatter alloc] init];
     [dayFormatter setDateFormat: @"EEEE"];
-    NSString* dayOfWeek = [dayFormatter stringFromDate:[NSDate date]];
+//    NSString* dayOfWeek = [dayFormatter stringFromDate:[NSDate date]];
     
 //    NSDictionary* hoursDictionary = self.model.hours[dayOfWeek];
 //    self.labelHours.text = [NSString stringWithFormat:@"%@ to %@",  hoursDictionary[@"start"], hoursDictionary[@"end"]];
@@ -61,8 +61,9 @@
     [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void) didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
     // Dispose of any resources that can be recreated.
 }
 

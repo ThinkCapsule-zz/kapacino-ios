@@ -16,7 +16,9 @@
     @property(strong, nonatomic) NSString *term; //TODO Should be class
     @property(strong, nonatomic) NSString *instructor;
     @property(strong, nonatomic) NSString *creditType; //TODO Should be enum
-    @property(nonatomic) float creditWeight;
+    @property(nonatomic) NSNumber* creditWeight;
 
-    - (instancetype)init:(FIRDataSnapshot*) snapshot;
+    -(instancetype)init:(FIRDataSnapshot*) snapshot;
+    -(NSDictionary*) toDictionary;
+    -(BOOL) isComplete;
 @end
