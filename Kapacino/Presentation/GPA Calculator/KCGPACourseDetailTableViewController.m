@@ -10,7 +10,6 @@
 @import Firebase;
 #import "KCAPIClient.h"
 #import "Course.h"
-@import Material;
 
 @interface KCGPACourseDetailTableViewController()
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCreditWeight;
@@ -55,7 +54,7 @@
     }
     else
     {
-        SnackbarController* snackbarController = [[SnackbarController alloc] init];
+//        SnackbarController* snackbarController = [[SnackbarController alloc] init];
 //        snackbarController.snack
     }
 }

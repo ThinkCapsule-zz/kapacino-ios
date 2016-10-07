@@ -5,18 +5,34 @@ pod 'Firebase'
 pod 'FirebaseUI'
 
 use_frameworks!
-pod 'AFNetworking', '2.6.3'
-pod 'Mantle', '2.0.5'
-pod 'HexColors', '3.1.1'
+pod 'AFNetworking'
+pod 'Mantle'
+pod 'HexColors'
 pod 'KeepLayout', :git => 'https://github.com/iMartinKiss/KeepLayout.git'
 pod 'INSPullToRefresh'
-pod 'SDWebImage', '3.7.5'
+pod 'SDWebImage'
 pod 'FBSDKLoginKit'
 pod 'FBSDKCoreKit'
 pod 'Contentful'
 pod 'MMMarkdown'
 pod 'BuddyBuildSDK'
 pod 'FSImageViewer'
-pod 'FSImageViewer'
-pod 'Material', '~> 1.0'
+#pod 'Material'
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+  	puts "Processing: #{target}"
+  	#if !target.to_s().start_with?("Material")
+  		puts "\tForcing Swift version to 2.3"
+	    target.build_configurations.each do |config|
+	      config.build_settings['SWIFT_VERSION'] = '2.3'
+	    end
+    #else
+	    #puts "\tForcing Swift version to 3.0"
+	    #target.build_configurations.each do |config|
+	      #config.build_settings['SWIFT_VERSION'] = '3.0'
+	    #end
+    #end
+  end
+end
 end

@@ -38,4 +38,17 @@
             return newDictionaries;
         }];
     }
+
+    +(MTLValueTransformer*) getStringToDateTransformer
+    {
+        return [MTLValueTransformer transformerUsingForwardBlock:^id(id value, BOOL *success, NSError *__autoreleasing *error) {
+            NSString* dateAsString = (NSString*) value;
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+            NSLocale *enUSPOSIXLocale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+            [dateFormatter setLocale:enUSPOSIXLocale];
+            [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZZ"];
+            NSDate* date = [dateFormatter dateFromString: dateAsString];
+            return date;
+        }];
+    }
 @end

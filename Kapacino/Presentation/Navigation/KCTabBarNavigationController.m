@@ -44,10 +44,10 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    if (![KCAPIClient sharedClient].currentUserID) {
-        UIViewController *loginVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
-        [self presentViewController:loginVC animated:YES completion:nil];
-    }
+//    if (![KCAPIClient sharedClient].currentUserID) {
+//        UIViewController *loginVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
+//        [self presentViewController:loginVC animated:YES completion:nil];
+//    }
 }
 
 - (void)viewDidLoad {

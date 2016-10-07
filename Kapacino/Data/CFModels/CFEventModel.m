@@ -40,6 +40,12 @@
     else if ([key isEqualToString:@"gallery"]) {
         return [CFModelHelper getAssetDictionaryArrayTransformer];
     }
+    else if ([key isEqualToString:@"startTime"]) {
+        return [CFModelHelper getStringToDateTransformer];
+    }
+    else if ([key isEqualToString:@"endTime"]) {
+        return [CFModelHelper getStringToDateTransformer];
+    }
     
     return nil;
 }

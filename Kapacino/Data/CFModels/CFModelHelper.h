@@ -11,4 +11,5 @@
 @interface CFModelHelper : NSObject
     +(MTLValueTransformer*) getAssetDictionaryTransformer;
     +(MTLValueTransformer*) getAssetDictionaryArrayTransformer;
+    +(MTLValueTransformer*) getStringToDateTransformer;
 @end

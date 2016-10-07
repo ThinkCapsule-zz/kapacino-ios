@@ -53,8 +53,17 @@
     NSMutableArray *objectList = [[NSMutableArray alloc] init];
     
     for (NSDictionary *item in responseObjects) {
+        NSError* error;
+        NSObject* object = [MTLJSONAdapter modelOfClass:class fromJSONDictionary:item[@"fields"] error:&error];
         
-        [objectList addObject:[MTLJSONAdapter modelOfClass:class fromJSONDictionary:item[@"fields"] error:nil]];
+        if (error == nil)
+        {
+            [objectList addObject:object];
+        }
+        else
+        {
+            NSLog(@"Error parsing Contentful object: %@ %@", error, [error userInfo]);
+        }
     }
     
     return objectList;
