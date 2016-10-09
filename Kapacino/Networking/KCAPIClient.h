@@ -21,6 +21,7 @@
 -(FIRDatabaseReference*) baseReference;
 -(FIRDatabaseReference*) usersReference;
 -(FIRDatabaseReference*) coursesReference;
+-(FIRDatabaseReference*) marksReference;
 
 //- (void)loginUserWithProvider:(NSString *)provide
 //                        token:(NSString *)token

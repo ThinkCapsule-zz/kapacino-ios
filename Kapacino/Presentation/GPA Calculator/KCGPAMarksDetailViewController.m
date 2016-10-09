@@ -8,6 +8,7 @@
 
 #import "KCGPAMarksDetailViewController.h"
 #import "KCAPIClient.h"
+#import "Mark.h"
 @import Firebase;
 
 @interface KCGPAMarksDetailViewController ()
@@ -37,21 +38,29 @@
 - (IBAction)onDoneTapped:(id)sender {
     NSString *userID = [FIRAuth auth].currentUser.uid;
     
-    FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] coursesReference];
+    FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] marksReference];
     
     NSString *key = [coursesRef childByAutoId].key;
-    NSDictionary *course = @{
-                             @"name": self.textfieldName.text,
-                             @"type": self.textfieldType.text,
-                             @"weight": self.textfieldWeight.text,
-                             @"mark": self.textfieldMark.text
-                             };
+    Mark* mark = [[Mark alloc] init];
+    mark.name = self.textfieldName.text;
+    mark.type = self.textfieldType.text;
     
-    //TODO Use user id and access control
-    NSDictionary *childUpdates = @{key: course};
-    [coursesRef updateChildValues:childUpdates];
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    f.numberStyle = NSNumberFormatterDecimalStyle;
+    mark.weight = [f numberFromString:self.textfieldWeight.text];
+    mark.mark = [f numberFromString:self.textfieldMark.text];
     
-    [self.navigationController popViewControllerAnimated:YES];
+    if (mark.weight && mark.mark)
+    {
+        //TODO Use user id and access control
+        NSDictionary *childUpdates = @{key: [mark toDictionary]};
+        [coursesRef updateChildValues:childUpdates];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else
+    {
+        //Notify user of error
+    }
 }
 
 @end

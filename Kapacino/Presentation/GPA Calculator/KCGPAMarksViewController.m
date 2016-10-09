@@ -7,15 +7,35 @@
 //
 
 #import "KCGPAMarksViewController.h"
+#import "KCAPIClient.h"
+#import "Mark.h"
+#import "KCGPAMarkCell.h"
+@import Firebase;
 
 @interface KCGPAMarksViewController ()
-
+    @property (weak, nonatomic) IBOutlet UITableView *tableView;
+    @property (strong, nonatomic) NSMutableArray* marks;
 @end
 
 @implementation KCGPAMarksViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = self.course.courseCode;
+    self.marks = [NSMutableArray array];
+    
+    //Populate marks
+    FIRDatabaseReference *ref = [[KCAPIClient sharedClient] marksReference];
+    
+    [ref observeEventType:FIRDataEventTypeValue andPreviousSiblingKeyWithBlock:^(FIRDataSnapshot * _Nonnull snapshot, NSString * _Nullable prevKey) {
+        [self.marks removeAllObjects];
+        for (FIRDataSnapshot* item in snapshot.children) {
+            Mark* mark = [[Mark alloc] init:item];
+            [self.marks addObject:mark];
+        }
+        
+        [self.tableView reloadData];
+    }];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -30,26 +50,35 @@
 }
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.marks.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    KCGPAMarkCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     // Configure the cell...
+    Mark* mark = self.marks[indexPath.row];
+    cell.labelName.text = mark.name;
+    
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    NSString *markAsString = [formatter stringForObjectValue:mark.mark];
+    cell.labelMark.text = markAsString;
+    
+    cell.labelType.text = mark.type;
     
     return cell;
 }
-*/
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
+}
 
 /*
 // Override to support conditional editing of the table view.

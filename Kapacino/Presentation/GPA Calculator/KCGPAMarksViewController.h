@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface KCGPAMarksViewController : UIViewController
-
+#import "Course.h"
+@interface KCGPAMarksViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+    @property (strong, nonatomic) Course* course;
 @end

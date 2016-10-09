@@ -17,6 +17,8 @@ pod 'Contentful'
 pod 'MMMarkdown'
 pod 'BuddyBuildSDK'
 pod 'FSImageViewer'
+pod 'TTGSnackbar'
+
 #pod 'Material'
 
 post_install do |installer|

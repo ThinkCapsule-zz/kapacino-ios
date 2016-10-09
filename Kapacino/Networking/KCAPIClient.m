@@ -10,10 +10,9 @@
 @import Firebase;
 
 static NSString *const KCBaseUrlString = @"radiant-inferno-4979.firebaseIO.com";
-
 static NSString *const KCUsersPath= @"users";
-
 static NSString *const KCCoursesPath= @"courses";
+static NSString *const KCMarksPath= @"marks";
 
 //static NSString *const KCCoursesPath= @"marks";
 
@@ -51,7 +50,7 @@ static KCAPIClient *__sharedClient = nil;
     __sharedClient.baseReference = [[FIRDatabase database] reference];
     __sharedClient.usersReference = [__sharedClient.baseReference child:KCUsersPath];
     __sharedClient.coursesReference = [__sharedClient.baseReference child:KCCoursesPath];
-    __sharedClient.marksReference = [__sharedClient.baseReference child:KCCoursesPath];
+    __sharedClient.marksReference = [__sharedClient.baseReference child:KCMarksPath];
 }
 
 - (NSString *)currentUserID {
@@ -185,6 +184,11 @@ static KCAPIClient *__sharedClient = nil;
 -(FIRDatabaseReference *)coursesReference
 {
     return _coursesReference;
+}
+
+-(FIRDatabaseReference *)marksReference
+{
+    return _marksReference;
 }
 
 @end

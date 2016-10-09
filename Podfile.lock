@@ -136,6 +136,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - TTGSnackbar (1.1.1)
   - TwitterCore (2.5.0):
     - Fabric
   - TwitterKit (2.5.0):
@@ -158,6 +159,7 @@ DEPENDENCIES:
   - Mantle
   - MMMarkdown
   - SDWebImage
+  - TTGSnackbar
 
 EXTERNAL SOURCES:
   KeepLayout:
@@ -201,11 +203,12 @@ SPEC CHECKSUMS:
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  TTGSnackbar: 4678ad3919c22b0d098aac7e7f748787127f75fc
   TwitterCore: 95c46af93112768a7983bd370d66023553601d01
   TwitterKit: dd8042698b0ff5bd3066fa919b3b2b50d8eed829
   UAProgressView: ce49aee47c14df6dc372f6fd57852f570ca97e6b
   "\U0001F555": 2a41c1f9b76698cb697b8ec9a1db1087f5621187
 
-PODFILE CHECKSUM: 6bb17b3e05015c450a65c96d73891d3f579727eb
+PODFILE CHECKSUM: 14a1a7caa5ed1cdb4f24bdf88a764eb787478382
 
 COCOAPODS: 1.0.1

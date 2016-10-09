@@ -11,6 +11,7 @@
 #import "CourseDataSource.h"
 #import "Course.h"
 #import "KCGPACourseCell.h"
+#import "KCGPAMarksViewController.h"
 
 @import Firebase;
 @import FirebaseDatabaseUI;
@@ -23,6 +24,7 @@
 @implementation KCGPAMainViewController
 
 static NSString* kCellIdentifier = @"cell";
+static NSString* kShowMarksSegue = @"showMarks";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -116,6 +118,21 @@ static NSString* kCellIdentifier = @"cell";
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 80;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Course* course = self.courses[indexPath.row];
+    [self performSegueWithIdentifier:kShowMarksSegue sender:course];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:kShowMarksSegue])
+    {
+        KCGPAMarksViewController* vc = segue.destinationViewController;
+        vc.course = sender;
+    }
 }
 
 @end
