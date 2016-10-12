@@ -18,6 +18,7 @@ pod 'MMMarkdown'
 pod 'BuddyBuildSDK'
 pod 'FSImageViewer'
 pod 'TTGSnackbar'
+pod 'DACircularProgress'
 
 #pod 'Material'
 

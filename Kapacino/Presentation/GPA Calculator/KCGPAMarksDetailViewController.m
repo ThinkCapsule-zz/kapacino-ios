@@ -9,13 +9,15 @@
 #import "KCGPAMarksDetailViewController.h"
 #import "KCAPIClient.h"
 #import "Mark.h"
+@import TTGSnackbar;
+
 @import Firebase;
 
-@interface KCGPAMarksDetailViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *textfieldName;
-@property (weak, nonatomic) IBOutlet UITextField *textfieldType;
-@property (weak, nonatomic) IBOutlet UITextField *textfieldWeight;
-@property (weak, nonatomic) IBOutlet UITextField *textfieldMark;
+@interface KCGPAMarksDetailViewController()
+    @property (weak, nonatomic) IBOutlet UITextField *textfieldName;
+    @property (weak, nonatomic) IBOutlet UITextField *textfieldType;
+    @property (weak, nonatomic) IBOutlet UITextField *textfieldWeight;
+    @property (weak, nonatomic) IBOutlet UITextField *textfieldMark;
 @end
 
 @implementation KCGPAMarksDetailViewController
@@ -28,6 +30,17 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    if (self.mark)
+    {
+        self.textfieldName.text = self.mark.name;
+        self.textfieldType.text = self.mark.type;
+        
+        NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+        f.numberStyle = NSNumberFormatterDecimalStyle;
+        self.textfieldMark.text = [f stringFromNumber:self.mark.mark];
+        self.textfieldWeight.text = [f stringFromNumber:self.mark.weight];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,16 +63,36 @@
     mark.weight = [f numberFromString:self.textfieldWeight.text];
     mark.mark = [f numberFromString:self.textfieldMark.text];
     
-    if (mark.weight && mark.mark)
+    if (!mark.name.length)
+    {
+        //Notify user of error
+        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid name" duration:TTGSnackbarDurationShort];
+        [snackbar show];
+    }
+    else if (!mark.type.length)
+    {
+        //Notify user of error
+        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid type" duration:TTGSnackbarDurationShort];
+        [snackbar show];
+    }
+    else if (mark.weight == nil)
+    {
+        //Notify user of error
+        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid weight" duration:TTGSnackbarDurationShort];
+        [snackbar show];
+    }
+    else if (mark.mark == nil)
+    {
+        //Notify user of error
+        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid mark" duration:TTGSnackbarDurationShort];
+        [snackbar show];
+    }
+    else
     {
         //TODO Use user id and access control
         NSDictionary *childUpdates = @{key: [mark toDictionary]};
         [coursesRef updateChildValues:childUpdates];
         [self.navigationController popViewControllerAnimated:YES];
-    }
-    else
-    {
-        //Notify user of error
     }
 }
 

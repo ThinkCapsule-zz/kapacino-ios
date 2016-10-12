@@ -12,13 +12,19 @@
 #import "Course.h"
 #import "KCGPACourseCell.h"
 #import "KCGPAMarksViewController.h"
+#import "DALabeledCircularProgressView.h"
 
 @import Firebase;
 @import FirebaseDatabaseUI;
 
 @interface KCGPAMainViewController () <UITableViewDataSource, UITableViewDelegate>
+    @property (weak, nonatomic) IBOutlet DALabeledCircularProgressView *progressViewGPAOverall;
+    @property (weak, nonatomic) IBOutlet DALabeledCircularProgressView *progressViewGPACurrent;
     @property (weak, nonatomic) IBOutlet UITableView *tableView;
     @property (strong, nonatomic) NSMutableArray* courses;
+
+    @property (nonatomic) float progressCurrent;
+    @property (nonatomic) float progressOverall;
 @end
 
 @implementation KCGPAMainViewController
@@ -30,6 +36,28 @@ static NSString* kShowMarksSegue = @"showMarks";
     [super viewDidLoad];
     self.courses = [NSMutableArray array];
     [self setupTableView];
+    
+    self.progressViewGPACurrent.roundedCorners = YES;
+    self.progressViewGPACurrent.trackTintColor = [UIColor lightGrayColor];
+    self.progressViewGPACurrent.progressTintColor = [UIColor orangeColor];
+    self.progressViewGPAOverall.roundedCorners = YES;
+    self.progressViewGPAOverall.trackTintColor = [UIColor lightGrayColor];
+    self.progressViewGPAOverall.progressTintColor = [UIColor redColor];
+    
+    self.progressCurrent = 0.5;
+    self.progressOverall = 0.7;
+}
+
+-(void) setProgressCurrent:(float)progress
+{
+    self.progressViewGPACurrent.progress = progress;
+    self.progressViewGPACurrent.progressLabel.text = [NSString stringWithFormat:@"%.2f", progress];
+}
+
+-(void) setProgressOverall:(float)progress
+{
+    self.progressViewGPAOverall.progress = progress;
+    self.progressViewGPAOverall.progressLabel.text = [NSString stringWithFormat:@"%.2f", progress];
 }
 
 -(void) setupTableView

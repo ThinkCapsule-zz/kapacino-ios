@@ -126,32 +126,18 @@
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3b-sX-4E9">
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDB-RM-rIl">
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q7F-od-hWd"/>
-                                        </subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDB-RM-rIl" customClass="DALabeledCircularProgressView">
                                         <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="q7F-od-hWd" firstAttribute="leading" secondItem="nDB-RM-rIl" secondAttribute="leading" id="7Sl-2B-Eij"/>
-                                            <constraint firstItem="q7F-od-hWd" firstAttribute="top" secondItem="nDB-RM-rIl" secondAttribute="top" id="AbG-CO-Eb0"/>
                                             <constraint firstAttribute="width" secondItem="nDB-RM-rIl" secondAttribute="height" multiplier="1:1" id="FFr-85-Deq"/>
                                             <constraint firstAttribute="width" constant="100" id="JTM-sG-4WY"/>
-                                            <constraint firstAttribute="bottom" secondItem="q7F-od-hWd" secondAttribute="bottom" id="O8u-Ee-qCl"/>
-                                            <constraint firstAttribute="trailing" secondItem="q7F-od-hWd" secondAttribute="trailing" id="YCV-ud-iHz"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0C-x3-rbW">
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QND-EU-tvc"/>
-                                        </subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0C-x3-rbW" customClass="DALabeledCircularProgressView">
                                         <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="y0C-x3-rbW" secondAttribute="height" multiplier="1:1" id="1RK-7f-ItJ"/>
-                                            <constraint firstItem="QND-EU-tvc" firstAttribute="top" secondItem="y0C-x3-rbW" secondAttribute="top" id="8qV-rn-CVv"/>
-                                            <constraint firstAttribute="bottom" secondItem="QND-EU-tvc" secondAttribute="bottom" id="BpI-GY-Jxe"/>
                                             <constraint firstAttribute="width" constant="100" id="KLw-4U-d3a"/>
-                                            <constraint firstItem="QND-EU-tvc" firstAttribute="leading" secondItem="y0C-x3-rbW" secondAttribute="leading" id="NbP-1k-Kxk"/>
-                                            <constraint firstAttribute="trailing" secondItem="QND-EU-tvc" secondAttribute="trailing" id="ceu-An-30N"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current GPA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sr8-Mp-xjl">
@@ -268,6 +254,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="GPA Calculator" id="ViP-wq-37J"/>
                     <connections>
+                        <outlet property="progressViewGPACurrent" destination="nDB-RM-rIl" id="oW9-GA-flY"/>
+                        <outlet property="progressViewGPAOverall" destination="y0C-x3-rbW" id="wIx-Yb-GAF"/>
                         <outlet property="tableView" destination="fKc-Uo-VvX" id="zEa-rd-1ea"/>
                         <segue destination="dfH-pR-3w2" kind="push" identifier="showMarks" id="n1w-AH-1yF"/>
                     </connections>
@@ -301,9 +289,6 @@
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Course Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-NE-VnR">
                                                     <frame key="frameInset" minX="122" minY="12" width="156" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="wJf-oQ-pC2"/>
-                                                    </constraints>
                                                     <color key="textColor" red="0.29019609093666077" green="0.29019609093666077" blue="0.29019609093666077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -331,9 +316,6 @@
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Course Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37N-WG-mfU">
                                                     <frame key="frameInset" minX="119" minY="12" width="159" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="HxW-D1-eXI"/>
-                                                    </constraints>
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -355,9 +337,6 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="i.e. Fall - 2015" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bl1-Ud-b5x">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="s80-PC-usw"/>
-                                                    </constraints>
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -389,9 +368,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Professor Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4o-sb-sVd">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="KXd-La-RBZ"/>
-                                                    </constraints>
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -418,9 +394,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="i.e Half Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="um3-Rf-qC9">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="JcL-eP-KOE"/>
-                                                    </constraints>
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -447,9 +420,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="i.e. 1.0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b6e-5E-9Wt">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="BWu-Ya-WLL"/>
-                                                    </constraints>
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -578,7 +548,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="gF2-hd-0oy" kind="push" id="MC1-sq-ZYj"/>
+                                    <segue destination="gF2-hd-0oy" kind="push" identifier="showEditMark" id="MC1-sq-ZYj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -600,9 +570,12 @@
                                 <state key="normal" title="Edit">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onEditButtonTapped:" destination="dfH-pR-3w2" eventType="touchUpInside" id="2Qe-L4-kJl"/>
+                                </connections>
                             </button>
                             <connections>
-                                <segue destination="d3V-qO-mW7" kind="push" id="hvL-O2-39O"/>
+                                <segue destination="d3V-qO-mW7" kind="push" identifier="showEditCourse" id="hvL-O2-39O"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1379,9 +1352,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ie. Test" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zP3-mb-IN5">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="mhQ-iM-g4G"/>
-                                                    </constraints>
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -1403,9 +1373,6 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="i.e. Exam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJX-SC-wPV">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="eEr-Xc-aou"/>
-                                                    </constraints>
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -1432,9 +1399,6 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Course Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckx-MD-41W">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="NAS-Ao-XOW"/>
-                                                    </constraints>
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1466,9 +1430,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mark in %" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lqu-ne-d7U">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="LNh-HX-d20"/>
-                                                    </constraints>
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>

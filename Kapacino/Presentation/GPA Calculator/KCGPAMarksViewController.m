@@ -10,6 +10,9 @@
 #import "KCAPIClient.h"
 #import "Mark.h"
 #import "KCGPAMarkCell.h"
+#import "KCGPACourseDetailTableViewController.h"
+#import "KCGPAMarksDetailViewController.h"
+
 @import Firebase;
 
 @interface KCGPAMarksViewController ()
@@ -18,6 +21,9 @@
 @end
 
 @implementation KCGPAMarksViewController
+
+static NSString* kShowEditCourse = @"showEditCourse";
+static NSString* kShowEditMark = @"showEditMark";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,6 +55,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onEditButtonTapped:(id)sender {
+    [self performSegueWithIdentifier:kShowEditCourse sender:self.course];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:kShowEditCourse])
+    {
+        KCGPACourseDetailTableViewController* vc = segue.destinationViewController;
+        vc.course = sender;
+    }
+    else if ([segue.identifier isEqualToString:kShowEditMark])
+    {
+        KCGPAMarksDetailViewController* vc = segue.destinationViewController;
+        
+        if ([sender isKindOfClass:[Mark class]])
+        {
+            vc.mark = sender;
+        }
+    }
+}
+
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -69,7 +97,6 @@
     [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
     NSString *markAsString = [formatter stringForObjectValue:mark.mark];
     cell.labelMark.text = markAsString;
-    
     cell.labelType.text = mark.type;
     
     return cell;
@@ -78,6 +105,12 @@
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 80;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Mark* mark = self.marks[indexPath.row];
+    [self performSegueWithIdentifier:kShowEditMark sender:mark];
 }
 
 /*

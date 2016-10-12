@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Course.h"
 @interface KCGPACourseDetailTableViewController : UITableViewController
-
+    @property (strong, nonatomic) Course* course;
 @end

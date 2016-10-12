@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Mark.h"
 @interface KCGPAMarksDetailViewController : UITableViewController <UITableViewDataSource>
-
+    @property (strong, nonatomic) Mark* mark;
 @end
