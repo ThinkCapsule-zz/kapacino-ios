@@ -1430,9 +1430,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="FKq-Xt-q6U" firstAttribute="leading" secondItem="9z4-e5-wkf" secondAttribute="trailing" constant="40" id="GNY-MT-4Cb"/>
                                                 <constraint firstItem="9z4-e5-wkf" firstAttribute="leading" secondItem="mZw-t0-Wx3" secondAttribute="leadingMargin" constant="10" id="IGD-r0-uq2"/>
                                                 <constraint firstItem="FKq-Xt-q6U" firstAttribute="centerY" secondItem="9z4-e5-wkf" secondAttribute="centerY" id="IWc-uv-jJ1"/>
+                                                <constraint firstItem="FKq-Xt-q6U" firstAttribute="leading" secondItem="mZw-t0-Wx3" secondAttribute="leading" constant="60" id="RIc-Zq-o3G"/>
                                                 <constraint firstItem="HkG-X0-wRo" firstAttribute="top" secondItem="FKq-Xt-q6U" secondAttribute="bottom" id="bPA-IU-Dq9"/>
                                                 <constraint firstItem="9z4-e5-wkf" firstAttribute="top" secondItem="mZw-t0-Wx3" secondAttribute="topMargin" id="gtz-VP-Z62"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="HkG-X0-wRo" secondAttribute="bottom" id="kKr-pp-x0t"/>
