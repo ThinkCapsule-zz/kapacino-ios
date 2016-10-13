@@ -14,7 +14,7 @@
                 <navigationController id="WVm-K5-OSP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Discover" image="tab_bar_calc" id="kLo-dI-rmO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="8QO-H8-hyX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="8QO-H8-hyX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6YY-NH-Cm8" id="Whl-ok-DHK">
-                                    <frame key="frameInset" width="375" height="99"/>
+                                    <frame key="frameInset" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_building" translatesAutoresizingMaskIntoConstraints="NO" id="wTr-D3-YzW">
@@ -101,7 +101,7 @@
         <scene sceneID="xlM-Ge-pRF">
             <objects>
                 <collectionViewController id="52o-Yo-8Sa" customClass="KCDiscoverViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="JTf-HV-XCz">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="JTf-HV-XCz">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g6g-aT-ffq">
@@ -372,7 +372,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vbj-4g-0pe" id="GmC-XE-PJf">
-                                    <frame key="frameInset" width="375" height="199"/>
+                                    <frame key="frameInset" width="375" height="199.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1NG-nF-yww">
@@ -429,7 +429,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="585" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lfQ-FS-3o3" id="WdX-g7-dbZ">
-                                            <frame key="frameInset" width="585" height="43"/>
+                                            <frame key="frameInset" width="585" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_hours" translatesAutoresizingMaskIntoConstraints="NO" id="9BX-bk-yWE">
@@ -471,7 +471,7 @@
                                         <rect key="frame" x="0.0" y="44" width="585" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VxY-PD-uAG" id="JEE-3g-gA9">
-                                            <frame key="frameInset" width="585" height="43"/>
+                                            <frame key="frameInset" width="585" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL1-yp-uCV">
@@ -514,7 +514,7 @@
                                         <rect key="frame" x="0.0" y="88" width="585" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aVH-P1-g3X" id="0H5-yO-eaG">
-                                            <frame key="frameInset" width="585" height="43"/>
+                                            <frame key="frameInset" width="585" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_location" translatesAutoresizingMaskIntoConstraints="NO" id="xNY-Ee-eue">
@@ -556,7 +556,7 @@
                                         <rect key="frame" x="0.0" y="132" width="585" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cJK-PB-6i3" id="3av-bx-kM0">
-                                            <frame key="frameInset" width="585" height="43"/>
+                                            <frame key="frameInset" width="585" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_building" translatesAutoresizingMaskIntoConstraints="NO" id="RCb-2Z-dLV">
@@ -629,7 +629,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="205"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qpU-Ke-Psa" id="mkw-5D-Q3n">
-                                            <frame key="frameInset" width="600" height="204"/>
+                                            <frame key="frameInset" width="600" height="204.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_hours" translatesAutoresizingMaskIntoConstraints="NO" id="1Kn-CV-qur">
@@ -678,7 +678,7 @@
                                         <rect key="frame" x="0.0" y="205" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hdF-Va-WNW" id="apX-kH-BM0">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4b-8c-RNI">
@@ -721,7 +721,7 @@
                                         <rect key="frame" x="0.0" y="249" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LeF-va-sCz" id="S82-cI-cNh">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_cuisine" translatesAutoresizingMaskIntoConstraints="NO" id="72i-gI-TkK">
@@ -763,7 +763,7 @@
                                         <rect key="frame" x="0.0" y="293" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2St-6l-nKb" id="wsY-9T-NlI">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_onCampus" translatesAutoresizingMaskIntoConstraints="NO" id="hnM-Qw-5Cr">
@@ -804,7 +804,7 @@
                                         <rect key="frame" x="0.0" y="337" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q5u-QE-srS" id="lMD-6F-Kok">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_studentID" translatesAutoresizingMaskIntoConstraints="NO" id="dNV-kx-iOU">
@@ -847,7 +847,7 @@
                                         <rect key="frame" x="0.0" y="381" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eiy-na-6FK" id="yK7-Kh-BJ5">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_secure" translatesAutoresizingMaskIntoConstraints="NO" id="PpX-BM-FC7">
@@ -889,7 +889,7 @@
                                         <rect key="frame" x="0.0" y="425" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="apT-kd-DfM" id="L6A-tv-wrb">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_delivery" translatesAutoresizingMaskIntoConstraints="NO" id="0jk-Iy-0uD">
@@ -964,18 +964,18 @@
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="24"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c0z-Yb-zSA" id="8I9-fS-LSd">
-                                            <frame key="frameInset" width="240" height="23"/>
+                                            <frame key="frameInset" width="240" height="23.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JZW-bY-9Rc">
-                                                    <frame key="frameInset" minX="15" minY="2" width="52" height="20"/>
+                                                    <frame key="frameInset" minX="15" minY="2" width="51.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="10am - 9pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b1l-8H-P0u">
-                                                    <frame key="frameInset" minX="149" minY="2" width="76" height="20"/>
+                                                    <frame key="frameInset" minX="149.5" minY="2" width="75.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -988,18 +988,18 @@
                                         <rect key="frame" x="0.0" y="24" width="240" height="24"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MGJ-Zk-yGM" id="dll-EE-XbO">
-                                            <frame key="frameInset" width="240" height="23"/>
+                                            <frame key="frameInset" width="240" height="23.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d2u-xK-ywi">
-                                                    <frame key="frameInset" minX="15" minY="2" width="51" height="20"/>
+                                                    <frame key="frameInset" minX="15" minY="2" width="51" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="10am - 9pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uaK-0i-MDk">
-                                                    <frame key="frameInset" minX="149" minY="2" width="76" height="20"/>
+                                                    <frame key="frameInset" minX="149.5" minY="2" width="75.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1012,18 +1012,18 @@
                                         <rect key="frame" x="0.0" y="48" width="240" height="24"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GVN-xp-mX4" id="JdV-eR-n6f">
-                                            <frame key="frameInset" width="240" height="23"/>
+                                            <frame key="frameInset" width="240" height="23.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z3c-aB-qb4">
-                                                    <frame key="frameInset" minX="15" minY="2" width="74" height="20"/>
+                                                    <frame key="frameInset" minX="15" minY="2" width="73.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="10am - 9pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8tb-NT-Veu">
-                                                    <frame key="frameInset" minX="149" minY="2" width="76" height="20"/>
+                                                    <frame key="frameInset" minX="149.5" minY="2" width="75.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1036,18 +1036,18 @@
                                         <rect key="frame" x="0.0" y="72" width="240" height="24"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SPn-3A-osy" id="ZHP-mN-eiI">
-                                            <frame key="frameInset" width="240" height="23"/>
+                                            <frame key="frameInset" width="240" height="23.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Thursday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e7u-bz-RmX">
-                                                    <frame key="frameInset" minX="15" minY="2" width="57" height="20"/>
+                                                    <frame key="frameInset" minX="15" minY="2" width="57" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="10am - 9pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gPQ-x9-a5H">
-                                                    <frame key="frameInset" minX="149" minY="2" width="76" height="20"/>
+                                                    <frame key="frameInset" minX="149.5" minY="2" width="75.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1060,18 +1060,18 @@
                                         <rect key="frame" x="0.0" y="96" width="240" height="24"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TrR-z5-JIu" id="nbf-gL-fmM">
-                                            <frame key="frameInset" width="240" height="23"/>
+                                            <frame key="frameInset" width="240" height="23.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ac3-4j-VJe">
-                                                    <frame key="frameInset" minX="15" minY="2" width="39" height="20"/>
+                                                    <frame key="frameInset" minX="15" minY="2" width="38.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="10am - 9pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2nl-Wz-po4">
-                                                    <frame key="frameInset" minX="149" minY="2" width="76" height="20"/>
+                                                    <frame key="frameInset" minX="149.5" minY="2" width="75.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1084,18 +1084,18 @@
                                         <rect key="frame" x="0.0" y="120" width="240" height="24"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BpC-09-VZX" id="Bms-yV-LGf">
-                                            <frame key="frameInset" width="240" height="23"/>
+                                            <frame key="frameInset" width="240" height="23.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cLF-ed-E8U">
-                                                    <frame key="frameInset" minX="15" minY="2" width="55" height="20"/>
+                                                    <frame key="frameInset" minX="15" minY="2" width="54.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="10am - 9pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JnA-3z-jkA">
-                                                    <frame key="frameInset" minX="149" minY="2" width="76" height="20"/>
+                                                    <frame key="frameInset" minX="149.5" minY="2" width="75.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1108,18 +1108,18 @@
                                         <rect key="frame" x="0.0" y="144" width="240" height="24"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I0U-Ir-o6f" id="F9f-My-YkA">
-                                            <frame key="frameInset" width="240" height="23"/>
+                                            <frame key="frameInset" width="240" height="23.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gS9-0F-T90">
-                                                    <frame key="frameInset" minX="15" minY="2" width="46" height="20"/>
+                                                    <frame key="frameInset" minX="15" minY="2" width="46" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="10am - 9pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ga3-dC-C3b">
-                                                    <frame key="frameInset" minX="149" minY="2" width="76" height="20"/>
+                                                    <frame key="frameInset" minX="149.5" minY="2" width="75.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1209,6 +1209,12 @@
                                                             <segue destination="Cew-U7-6Xh" kind="embed" identifier="embedSegue" id="hsT-0n-Bq4"/>
                                                         </connections>
                                                     </containerView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTw-47-ray">
+                                                        <color key="backgroundColor" red="0.96470588445663452" green="0.96470588445663452" blue="0.96470588445663452" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="XqE-rV-v4r"/>
+                                                        </constraints>
+                                                    </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aN-z5-D7z">
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                         <state key="normal" title="MORE &gt;">
@@ -1222,6 +1228,7 @@
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="Yx8-Pe-PPY" firstAttribute="leading" secondItem="15y-BJ-Pgb" secondAttribute="leading" constant="10" id="Dq7-gi-Au4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fTw-47-ray" secondAttribute="trailing" constant="10" id="FIB-BG-1VZ"/>
                                                     <constraint firstItem="Yx8-Pe-PPY" firstAttribute="top" secondItem="15y-BJ-Pgb" secondAttribute="top" constant="10" id="IRr-9z-JSL"/>
                                                     <constraint firstAttribute="bottom" secondItem="4aN-z5-D7z" secondAttribute="bottom" id="KZF-Fa-gAj"/>
                                                     <constraint firstItem="bYN-ZT-ZXX" firstAttribute="leading" secondItem="15y-BJ-Pgb" secondAttribute="leading" id="MvW-77-eR7"/>
@@ -1231,9 +1238,11 @@
                                                     <constraint firstAttribute="height" constant="330" id="gNK-YA-Q3J"/>
                                                     <constraint firstAttribute="trailing" secondItem="bYN-ZT-ZXX" secondAttribute="trailing" constant="15" id="h0q-KJ-WM9"/>
                                                     <constraint firstItem="4aN-z5-D7z" firstAttribute="top" secondItem="bYN-ZT-ZXX" secondAttribute="bottom" constant="-3.5" id="mY9-aY-vBV"/>
+                                                    <constraint firstItem="fTw-47-ray" firstAttribute="leading" secondItem="15y-BJ-Pgb" secondAttribute="leading" constant="10" id="o9n-5a-Y3M"/>
                                                     <constraint firstAttribute="trailing" secondItem="4aN-z5-D7z" secondAttribute="trailing" constant="10" id="sK0-kt-bWr"/>
                                                     <constraint firstItem="Bae-fG-aHX" firstAttribute="top" secondItem="Yx8-Pe-PPY" secondAttribute="bottom" constant="10" id="tjU-z1-0tj"/>
                                                     <constraint firstAttribute="trailing" secondItem="lgg-Rw-O5J" secondAttribute="trailing" constant="10" id="uRq-ZZ-6bE"/>
+                                                    <constraint firstItem="bYN-ZT-ZXX" firstAttribute="top" secondItem="fTw-47-ray" secondAttribute="bottom" id="uSF-Vj-iZr"/>
                                                     <constraint firstAttribute="trailing" secondItem="Bae-fG-aHX" secondAttribute="trailing" constant="10" id="vr1-Rj-Py6"/>
                                                     <constraint firstItem="Bae-fG-aHX" firstAttribute="leading" secondItem="15y-BJ-Pgb" secondAttribute="leading" constant="10" id="xbE-td-fo4"/>
                                                 </constraints>
@@ -1430,7 +1439,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="205"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lFc-yJ-LaU" id="mZw-t0-Wx3">
-                                            <frame key="frameInset" width="600" height="204"/>
+                                            <frame key="frameInset" width="600" height="204.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_hours" translatesAutoresizingMaskIntoConstraints="NO" id="9z4-e5-wkf">
@@ -1479,7 +1488,7 @@
                                         <rect key="frame" x="0.0" y="205" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IWv-hA-KnS" id="av6-iS-cPG">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.reallylongnamerestaurant.com/reallylongsubdirectory" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7H-MS-dNW">
@@ -1521,7 +1530,7 @@
                                         <rect key="frame" x="0.0" y="249" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wmN-pY-86z" id="vJh-Xn-vyW">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event_email" translatesAutoresizingMaskIntoConstraints="NO" id="qf4-0W-6Qj">
@@ -1560,7 +1569,7 @@
                                         <rect key="frame" x="0.0" y="293" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3op-zH-vXv" id="Ij7-cR-CP2">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_building" translatesAutoresizingMaskIntoConstraints="NO" id="xL9-z2-b8T">
@@ -1602,7 +1611,7 @@
                                         <rect key="frame" x="0.0" y="337" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BLy-tl-o65" id="5DL-SL-7kR">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event_crowd" translatesAutoresizingMaskIntoConstraints="NO" id="1XN-3W-fAu">
@@ -1644,7 +1653,7 @@
                                         <rect key="frame" x="0.0" y="381" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VRL-Xo-P5L" id="JxZ-gm-EfZ">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event_music" translatesAutoresizingMaskIntoConstraints="NO" id="sNL-2H-Cnb">
@@ -1686,7 +1695,7 @@
                                         <rect key="frame" x="0.0" y="425" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cJM-Hu-aE1" id="NkY-tM-V3S">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11am - 11pm" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH0-p5-MjQ">
@@ -1728,7 +1737,7 @@
                                         <rect key="frame" x="0.0" y="469" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cC6-WY-VmO" id="gqL-lz-ue0">
-                                            <frame key="frameInset" width="600" height="43"/>
+                                            <frame key="frameInset" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event_dressCode" translatesAutoresizingMaskIntoConstraints="NO" id="6bC-sC-fk9">
@@ -1804,7 +1813,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="585" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ke7-he-xEe" id="upT-CT-mDs">
-                                            <frame key="frameInset" width="585" height="43"/>
+                                            <frame key="frameInset" width="585" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_hours" translatesAutoresizingMaskIntoConstraints="NO" id="myP-SE-0p2">
@@ -1815,7 +1824,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsg-1k-12o">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="wx4-Qo-515"/>
+                                                        <constraint firstAttribute="width" constant="60" id="wx4-Qo-515"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1846,12 +1855,12 @@
                                         <rect key="frame" x="0.0" y="44" width="585" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fBH-Er-tVn" id="xjR-po-V2B">
-                                            <frame key="frameInset" width="585" height="43"/>
+                                            <frame key="frameInset" width="585" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL4-du-tMQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL4-du-tMQ">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="y4q-sZ-LQf"/>
+                                                        <constraint firstAttribute="width" constant="60" id="y4q-sZ-LQf"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1889,7 +1898,7 @@
                                         <rect key="frame" x="0.0" y="88" width="585" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rwl-Fl-zcd" id="Rjn-sq-BPr">
-                                            <frame key="frameInset" width="585" height="43"/>
+                                            <frame key="frameInset" width="585" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_location" translatesAutoresizingMaskIntoConstraints="NO" id="N0w-UU-WVU">
@@ -1900,7 +1909,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcX-Su-Fpc">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="DXS-Rb-Q2X"/>
+                                                        <constraint firstAttribute="width" constant="60" id="DXS-Rb-Q2X"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1931,7 +1940,7 @@
                                         <rect key="frame" x="0.0" y="132" width="585" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J4c-vC-0y0" id="Ln8-4Q-piA">
-                                            <frame key="frameInset" width="585" height="43"/>
+                                            <frame key="frameInset" width="585" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_building" translatesAutoresizingMaskIntoConstraints="NO" id="2CH-FW-t4y">
@@ -1942,7 +1951,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laS-hl-x0E">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="qDA-oe-dAZ"/>
+                                                        <constraint firstAttribute="width" constant="60" id="qDA-oe-dAZ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
