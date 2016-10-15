@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         NSDictionary* values = snapshot.value;
-        self.uid = values[@"uid"];
+        self.key = snapshot.key;
         self.courseCode = values[@"courseCode"];
         self.courseName = values[@"courseName"];
         self.term = values[@"term"];

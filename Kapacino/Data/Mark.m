@@ -14,11 +14,12 @@
         self = [super init];
         if (self) {
             NSDictionary* values = snapshot.value;
-            self.uid = values[@"uid"];
+            self.key = snapshot.key;
             self.name = values[@"name"];
             self.mark = values[@"mark"];
             self.weight = values[@"weight"];
             self.type = values[@"type"];
+            self.courseKey = values[@"courseKey"];
         }
         return self;
     }
@@ -42,17 +43,25 @@
 
     -(NSDictionary*) toDictionary
     {
-        return @{
+        if (self.isComplete)
+        {
+            return @{
                  @"name": self.name,
                  @"mark": self.mark,
                  @"weight": self.weight,
-                 @"type": self.type
+                 @"type": self.type,
+                 @"courseKey": self.courseKey
                  };
+        }
+        else
+        {
+            return nil;
+        }
     }
 
     -(BOOL) isComplete
     {
-        return self.name && self.mark && self.weight && self.type;
+        return self.name && self.mark && self.weight && self.type && self.courseKey;
     }
 
 @end

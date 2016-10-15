@@ -17,7 +17,7 @@
 
 @interface KCGPAMarksViewController ()
     @property (weak, nonatomic) IBOutlet UITableView *tableView;
-    @property (strong, nonatomic) NSMutableArray* marks;
+    @property (strong, nonatomic) NSMutableArray<Mark*>* marks;
 @end
 
 @implementation KCGPAMarksViewController
@@ -31,9 +31,10 @@ static NSString* kShowEditMark = @"showEditMark";
     self.marks = [NSMutableArray array];
     
     //Populate marks
-    FIRDatabaseReference *ref = [[KCAPIClient sharedClient] marksReference];
-    
-    [ref observeEventType:FIRDataEventTypeValue andPreviousSiblingKeyWithBlock:^(FIRDataSnapshot * _Nonnull snapshot, NSString * _Nullable prevKey) {
+    FIRDatabaseReference *marksRef = [[KCAPIClient sharedClient] marksReference];
+    FIRDatabaseQuery* query = [marksRef queryOrderedByChild:@"courseKey"];
+    query = [query queryEqualToValue:self.course.key];
+    [query observeEventType:FIRDataEventTypeValue andPreviousSiblingKeyWithBlock:^(FIRDataSnapshot * _Nonnull snapshot, NSString * _Nullable prevKey) {
         [self.marks removeAllObjects];
         for (FIRDataSnapshot* item in snapshot.children) {
             Mark* mark = [[Mark alloc] init:item];
@@ -74,6 +75,8 @@ static NSString* kShowEditMark = @"showEditMark";
         {
             vc.mark = sender;
         }
+        
+        vc.courseKey = self.course.key;
     }
 }
 

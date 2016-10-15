@@ -10,7 +10,7 @@
 @import Firebase;
 
 @interface Course : NSObject
-    @property(strong, nonatomic) NSString *uid;
+    @property(strong, nonatomic) NSString *key;
     @property(strong, nonatomic) NSString *courseCode;
     @property(strong, nonatomic) NSString *courseName;
     @property(strong, nonatomic) NSString *term; //TODO Should be class

@@ -10,11 +10,12 @@
 @import Firebase;
 
 @interface Mark : NSObject
-    @property(strong, nonatomic) NSString *uid;
+    @property(strong, nonatomic) NSString *key;
     @property(strong, nonatomic) NSString *name;
     @property(strong, nonatomic) NSString *type;
     @property(strong, nonatomic) NSNumber *weight; //TODO Should be class
     @property(strong, nonatomic) NSNumber *mark;
+    @property(strong, nonatomic) NSString *courseKey;
 
     -(instancetype)init:(FIRDataSnapshot*) snapshot;
     -(NSDictionary*) toDictionary;

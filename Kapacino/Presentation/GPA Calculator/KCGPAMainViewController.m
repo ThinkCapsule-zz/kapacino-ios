@@ -10,6 +10,7 @@
 #import "KCAPIClient.h"
 #import "CourseDataSource.h"
 #import "Course.h"
+#import "Mark.h"
 #import "KCGPACourseCell.h"
 #import "KCGPAMarksViewController.h"
 #import "DALabeledCircularProgressView.h"
@@ -46,6 +47,58 @@ static NSString* kShowMarksSegue = @"showMarks";
     
     self.progressCurrent = 0.5;
     self.progressOverall = 0.7;
+}
+
+-(void) calculateGPA
+{
+    //Use cloud code to get mark?
+    
+    
+    //Download all marks
+    FIRDatabaseReference *courseRef = [[KCAPIClient sharedClient] coursesReference];
+    FIRDatabaseReference *markRef = [[KCAPIClient sharedClient] coursesReference];
+    
+    //TODO: Add progress icon
+    
+    //TODO: Download courses
+    
+    //TODO: Add constraint to only download marks for user
+    
+    //Download courses
+    NSDictionary<Course*, NSMutableArray<Mark*>*> *courseToMarkDictionary = [NSMutableDictionary dictionary];
+    [courseRef observeEventType:FIRDataEventTypeValue andPreviousSiblingKeyWithBlock:^(FIRDataSnapshot * _Nonnull snapshot, NSString * _Nullable prevKey) {
+        [self.courses removeAllObjects];
+        for (FIRDataSnapshot* item in snapshot.children) {
+            Course* course = [[Course alloc] init:item];
+            [self.courses addObject:course];
+            
+//            //Get marks for course
+//            [[markRef queryEqualToValue:course.key]
+//             observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull marksSnapshot) {
+//                 for (FIRDataSnapshot* markItem in marksSnapshot.children)
+//                 {
+//                     Mark* mark = [[Mark alloc] init:markItem];
+//                     
+//                     NSMutableArray* marks = courseToMarkDictionary[course];
+//                     if (!marks)
+//                     {
+//                         marks = [NSMutableArray<Mark*> array];
+//                     }
+//                     
+//                     [marks addObject:mark];
+//                 }
+//             }];
+        }
+        
+        //TODO: Remove progress icon
+        
+        //TODO: Calculate GPA
+//        NSNumber* numberOfCourses = self.courses.count;
+//        NSNumber* gpa = sum(marks% * credits)/numberOfCourses;
+        
+        //Reload table
+        [self.tableView reloadData];
+    }];
 }
 
 -(void) setProgressCurrent:(float)progress
