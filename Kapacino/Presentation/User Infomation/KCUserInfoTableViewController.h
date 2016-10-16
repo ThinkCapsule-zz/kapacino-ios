@@ -10,10 +10,11 @@
 #import "KCPickerTableViewController.h"
 #import "KCUserInfoTableViewCell.h"
 #import "KCSearchViewController.h"
+#import "User.h"
 
 @interface KCUserInfoTableViewController : UITableViewController <KCSearchViewControllerDelegate, UITextFieldDelegate, KCPickerTableViewControllerDelegate>
 
-@property (strong, nonatomic) NSMutableDictionary *userInfo;
+@property (strong, nonatomic) User *user;
 
 - (void)prepareForSegueWithPickerController:(KCPickerTableViewController *)controller cell:(KCUserInfoTableViewCell *)cell;
 

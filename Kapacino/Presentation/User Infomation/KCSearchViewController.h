@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
 @protocol KCSearchViewControllerDelegate;
 
@@ -14,7 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *categoryNameLabel;
 @property (strong, nonatomic) NSString *categoryName;
-@property (strong, nonatomic) NSMutableDictionary *userInfo;
+@property (strong, nonatomic) User *user;
 
 @property (nonatomic, weak) id<KCSearchViewControllerDelegate> delegate;
 
@@ -23,6 +24,6 @@
 
 @protocol KCSearchViewControllerDelegate <NSObject>
 
-- (void)searchViewController:(KCSearchViewController *)controller didChangeUserInfo:(NSMutableDictionary *)userInfo;
+- (void)searchViewController:(KCSearchViewController *)controller didChangeUserInfo:(User *)user;
 
 @end

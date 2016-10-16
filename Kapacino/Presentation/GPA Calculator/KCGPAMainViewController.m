@@ -72,22 +72,22 @@ static NSString* kShowMarksSegue = @"showMarks";
             Course* course = [[Course alloc] init:item];
             [self.courses addObject:course];
             
-//            //Get marks for course
-//            [[markRef queryEqualToValue:course.key]
-//             observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull marksSnapshot) {
-//                 for (FIRDataSnapshot* markItem in marksSnapshot.children)
-//                 {
-//                     Mark* mark = [[Mark alloc] init:markItem];
-//                     
-//                     NSMutableArray* marks = courseToMarkDictionary[course];
-//                     if (!marks)
-//                     {
-//                         marks = [NSMutableArray<Mark*> array];
-//                     }
-//                     
-//                     [marks addObject:mark];
-//                 }
-//             }];
+            //Get marks for course
+            [[markRef queryEqualToValue:course.key]
+             observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull marksSnapshot) {
+                 for (FIRDataSnapshot* markItem in marksSnapshot.children)
+                 {
+                     Mark* mark = [[Mark alloc] init:markItem];
+                     
+                     NSMutableArray* marks = courseToMarkDictionary[course];
+                     if (!marks)
+                     {
+                         marks = [NSMutableArray<Mark*> array];
+                     }
+                     
+                     [marks addObject:mark];
+                 }
+             }];
         }
         
         //TODO: Remove progress icon
