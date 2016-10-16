@@ -22,7 +22,9 @@
     @property (weak, nonatomic) IBOutlet DALabeledCircularProgressView *progressViewGPAOverall;
     @property (weak, nonatomic) IBOutlet DALabeledCircularProgressView *progressViewGPACurrent;
     @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
     @property (strong, nonatomic) NSMutableArray* courses;
+    @property (strong, nonatomic) NSMutableDictionary<NSString*, NSMutableArray<Mark*>*> *courseToMarkDictionary;
 
     @property (nonatomic) float progressCurrent;
     @property (nonatomic) float progressOverall;
@@ -47,6 +49,8 @@ static NSString* kShowMarksSegue = @"showMarks";
     
     self.progressCurrent = 0.5;
     self.progressOverall = 0.7;
+    
+    [self calculateGPA];
 }
 
 -(void) calculateGPA
@@ -56,7 +60,7 @@ static NSString* kShowMarksSegue = @"showMarks";
     
     //Download all marks
     FIRDatabaseReference *courseRef = [[KCAPIClient sharedClient] coursesReference];
-    FIRDatabaseReference *markRef = [[KCAPIClient sharedClient] coursesReference];
+    FIRDatabaseReference *marksRef = [[KCAPIClient sharedClient] marksReference];
     
     //TODO: Add progress icon
     
@@ -65,40 +69,76 @@ static NSString* kShowMarksSegue = @"showMarks";
     //TODO: Add constraint to only download marks for user
     
     //Download courses
-    NSDictionary<Course*, NSMutableArray<Mark*>*> *courseToMarkDictionary = [NSMutableDictionary dictionary];
-    [courseRef observeEventType:FIRDataEventTypeValue andPreviousSiblingKeyWithBlock:^(FIRDataSnapshot * _Nonnull snapshot, NSString * _Nullable prevKey) {
+    self.courseToMarkDictionary = [NSMutableDictionary dictionary];
+    [courseRef observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
         [self.courses removeAllObjects];
         for (FIRDataSnapshot* item in snapshot.children) {
             Course* course = [[Course alloc] init:item];
             [self.courses addObject:course];
             
-//            //Get marks for course
-//            [[markRef queryEqualToValue:course.key]
-//             observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull marksSnapshot) {
-//                 for (FIRDataSnapshot* markItem in marksSnapshot.children)
-//                 {
-//                     Mark* mark = [[Mark alloc] init:markItem];
-//                     
-//                     NSMutableArray* marks = courseToMarkDictionary[course];
-//                     if (!marks)
-//                     {
-//                         marks = [NSMutableArray<Mark*> array];
-//                     }
-//                     
-//                     [marks addObject:mark];
-//                 }
-//             }];
+            //Get marks for course
+            FIRDatabaseQuery* query = [marksRef queryOrderedByChild:@"courseKey"];
+            query = [query queryEqualToValue:course.key];
+            [query observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull marksSnapshot) {
+                 for (FIRDataSnapshot* markItem in marksSnapshot.children)
+                 {
+                     Mark* mark = [[Mark alloc] init:markItem];
+                     
+                     NSMutableArray* marks = self.courseToMarkDictionary[course.key];
+                     if (!marks)
+                     {
+                         marks = [NSMutableArray<Mark*> array];
+                     }
+                     
+                     [marks addObject:mark];
+                     
+                     self.courseToMarkDictionary[course.key] = marks;
+                 }
+                 
+                 [self updateGPA];
+                
+                //TODO: Remove progress icon
+             }];
         }
-        
-        //TODO: Remove progress icon
-        
-        //TODO: Calculate GPA
-//        NSNumber* numberOfCourses = self.courses.count;
-//        NSNumber* gpa = sum(marks% * credits)/numberOfCourses;
         
         //Reload table
         [self.tableView reloadData];
     }];
+}
+
+-(void) updateGPA
+{
+    float currentGPANumerator = 0;
+    float overallGPANumerator = 0;
+    float currentGPADenominator = 0;
+    float overallGPADenominator = 0;
+    for (Course* course in self.courses)
+    {
+        float markforCourse = 0;
+        for (Mark* mark in self.courseToMarkDictionary[course.key])
+        {
+            markforCourse = markforCourse + ([mark.mark floatValue] * [mark.weight floatValue]);
+        }
+        
+        float markforCourseAndCourseCredit = markforCourse * [course.creditWeight floatValue];
+        if ([self isCourseInCurrentTerm:course])
+        {
+            currentGPANumerator = currentGPANumerator + markforCourseAndCourseCredit;
+            currentGPADenominator = currentGPADenominator + markforCourse;
+        }
+        
+        overallGPANumerator = overallGPANumerator + markforCourseAndCourseCredit;
+        overallGPADenominator = overallGPADenominator + markforCourse;
+    }
+    
+    //Divide numerator by denominator
+    self.progressCurrent = currentGPADenominator > 0 ? currentGPANumerator/currentGPADenominator : 0;
+    self.progressOverall = overallGPADenominator > 0 ? overallGPANumerator/overallGPADenominator : 0;
+}
+
+-(BOOL) isCourseInCurrentTerm:(Course*) course
+{
+    return YES;
 }
 
 -(void) setProgressCurrent:(float)progress

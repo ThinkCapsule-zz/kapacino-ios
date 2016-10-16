@@ -30,7 +30,7 @@
     if (self.course)
     {
         self.textfieldCourseName.text = self.course.courseName;
-        self.textfieldCourseCode.text = self.course.term;
+        self.textfieldCourseCode.text = self.course.courseCode;
         self.textfieldTerm.text = self.course.term;
         self.textfieldCreditType.text = self.course.creditType;
         self.textfieldInstructor.text = self.course.instructor;
@@ -46,60 +46,64 @@
     
     FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] coursesReference];
 
-    NSString *key = [coursesRef childByAutoId].key;
-    Course* course = [[Course alloc] init];
-    course.courseCode = self.textfieldCourseCode.text;
-    course.courseName = self.textfieldCourseName.text;
-    course.term = self.textfieldTerm.text;
-    course.instructor = self.textfieldInstructor.text;
-    course.creditType = self.textfieldCreditType.text;
+    if (!self.course)
+    {
+        self.course = [[Course alloc] init];
+        self.course.key = [coursesRef childByAutoId].key;
+    }
+    
+    self.course.courseCode = self.textfieldCourseCode.text;
+    self.course.courseName = self.textfieldCourseName.text;
+    self.course.term = self.textfieldTerm.text;
+    self.course.instructor = self.textfieldInstructor.text;
+    self.course.creditType = self.textfieldCreditType.text;
     
     NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
     f.numberStyle = NSNumberFormatterDecimalStyle;
-    course.creditWeight = [f numberFromString:self.textfieldCreditWeight.text];
+    self.course.creditWeight = [f numberFromString:self.textfieldCreditWeight.text];
     
-    if (!course.courseCode.length)
+    if (!self.course.courseCode.length)
     {
         //Notify user of error
         TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid course code" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
-    else if (!course.courseName.length)
+    else if (!self.course.courseName.length)
     {
         //Notify user of error
         TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid course name" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
-    else if (!course.term.length)
+    else if (!self.course.term.length)
     {
         //Notify user of error
         TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid term" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
-    else if (!course.instructor.length)
+    else if (!self.course.instructor.length)
     {
         //Notify user of error
         TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid instructor" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
-    else if (!course.creditType.length)
+    else if (!self.course.creditType.length)
     {
         //Notify user of error
         TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid credit type" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
-    else if (course.creditWeight == nil)
+    else if (self.course.creditWeight == nil)
     {
         //Notify user of error
         TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid credit weight" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
-    else if ([course isComplete])
+    else if ([self.course isComplete])
     {
-        NSDictionary *courseAsDictionary = [course toDictionary];
+        NSDictionary *courseAsDictionary = [self.course toDictionary];
         
         //TODO Use user id and access control
-        NSDictionary *childUpdates = @{key: courseAsDictionary};
+        NSDictionary *childUpdates = @{self.course.key: courseAsDictionary};
         [coursesRef updateChildValues:childUpdates];
         
         [self.navigationController popViewControllerAnimated:YES];
