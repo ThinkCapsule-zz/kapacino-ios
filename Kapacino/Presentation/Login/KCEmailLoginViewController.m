@@ -43,9 +43,10 @@
     
     [[FIRAuth auth] signInWithEmail:self.email
                            password:self.password
-                         completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+                         completion:^(FIRUser * _Nullable userASFIRUser, NSError * _Nullable error) {
                              //TODO figure out how to get data
-                             [self showUserInformationViewControllerWithUserInfo:nil];
+                             User* user = [[User alloc] init:userASFIRUser];
+                             [self showUserInformationViewControllerWithUser:user];
                          }];
     
 //    [[KCAPIClient sharedClient] loginUserWithEmail:self.email password:self.password completionHandler:^(FIRUser *user, NSError *error) {
@@ -71,9 +72,9 @@
 //     ];
 //}
 
-- (void)showUserInformationViewControllerWithUserInfo:(NSMutableDictionary *)userInfo {
+- (void)showUserInformationViewControllerWithUser:(User *)user {
     KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateInitialViewController];
-    userInfoVC.userInfo = userInfo;
+    userInfoVC.user = user;
     [self.navigationController setViewControllers:@[userInfoVC] animated:YES];
 }
 

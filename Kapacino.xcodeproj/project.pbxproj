@@ -107,6 +107,7 @@
 		C9BB12FA1D8ADC1600DCB37E /* CFPlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB12F91D8ADC1600DCB37E /* CFPlaceModel.m */; };
 		C9BB6ADD1DA9A25900D2819F /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB6ADC1DA9A25900D2819F /* Mark.m */; };
 		C9BB6AE01DA9C5C100D2819F /* KCGPAMarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB6ADF1DA9C5C100D2819F /* KCGPAMarkCell.m */; };
+		C9CB51931DB3EE2E0092AF0C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB51921DB3EE2E0092AF0C /* User.m */; };
 		C9DF9C641D6B53C400DA8D4C /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DF9C631D6B53C400DA8D4C /* Discover.storyboard */; };
 		C9DF9C671D6B560B00DA8D4C /* KCDiscoverMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DF9C661D6B560B00DA8D4C /* KCDiscoverMenuViewController.m */; };
 		C9F143031DA48100007E2BB8 /* KCGPAMarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F143021DA48100007E2BB8 /* KCGPAMarksViewController.m */; };
@@ -329,6 +330,8 @@
 		C9BB6ADC1DA9A25900D2819F /* Mark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mark.m; sourceTree = "<group>"; };
 		C9BB6ADE1DA9C5C100D2819F /* KCGPAMarkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCGPAMarkCell.h; path = Cells/KCGPAMarkCell.h; sourceTree = "<group>"; };
 		C9BB6ADF1DA9C5C100D2819F /* KCGPAMarkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCGPAMarkCell.m; path = Cells/KCGPAMarkCell.m; sourceTree = "<group>"; };
+		C9CB51911DB3EE2E0092AF0C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C9CB51921DB3EE2E0092AF0C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C9DF9C631D6B53C400DA8D4C /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = Discover/Discover.storyboard; sourceTree = "<group>"; };
 		C9DF9C651D6B560B00DA8D4C /* KCDiscoverMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCDiscoverMenuViewController.h; path = Discover/KCDiscoverMenuViewController.h; sourceTree = "<group>"; };
 		C9DF9C661D6B560B00DA8D4C /* KCDiscoverMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCDiscoverMenuViewController.m; path = Discover/KCDiscoverMenuViewController.m; sourceTree = "<group>"; };
@@ -866,6 +869,8 @@
 				C9BB6ADC1DA9A25900D2819F /* Mark.m */,
 				C95C4A061DA4125800015865 /* Course.h */,
 				C95C4A071DA4125800015865 /* Course.m */,
+				C9CB51911DB3EE2E0092AF0C /* User.h */,
+				C9CB51921DB3EE2E0092AF0C /* User.m */,
 			);
 			name = FirebaseModels;
 			sourceTree = "<group>";
@@ -1170,6 +1175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9CB51931DB3EE2E0092AF0C /* User.m in Sources */,
 				B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */,
 				444F7F7F1CB00148003F7D9B /* KCUser.m in Sources */,
 				B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */,

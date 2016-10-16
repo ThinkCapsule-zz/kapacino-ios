@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "KCViewController.h"
+#import "User.h"
 
 @interface KCSchoolInformationViewController : KCViewController
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
-@property (strong, nonatomic) NSMutableDictionary *userInfo;
+@property (strong, nonatomic) User *user;
 
 @end

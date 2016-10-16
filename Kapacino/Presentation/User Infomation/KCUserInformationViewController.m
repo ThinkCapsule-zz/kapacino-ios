@@ -25,11 +25,11 @@
 }
 
 - (BOOL)checkUserInfo {
-    self.userInfo = self.userInfoTebleViewController.userInfo;
-    NSString *userName = [self.userInfo objectForKey:@"Name"];
-    NSString *gender = [self.userInfo objectForKey:@"Gender"];
-    NSString *country = [self.userInfo objectForKey:@"Country"];
-    NSString *hometown = [self.userInfo objectForKey:@"Hometown"];
+    self.user = self.userInfoTebleViewController.user;
+    NSString *userName = self.user.name; // [self.userInfo objectForKey:@"Name"];
+    NSString *gender = self.user.gender;
+    NSString *country = self.user.country;
+    NSString *hometown = self.user.hometown;
     if (!userName.length || !gender || !country || !hometown) {
         return NO;
     }
@@ -46,10 +46,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController isKindOfClass:[KCUserInfoTableViewController class]]) {
         self.userInfoTebleViewController = segue.destinationViewController;
-        self.userInfoTebleViewController.userInfo = self.userInfo;
+        self.userInfoTebleViewController.user = self.user;
     } else if ([segue.identifier isEqualToString:@"showSchoolInfo"]) {
         KCSchoolInformationViewController *schoolInformationViewController = segue.destinationViewController;
-        schoolInformationViewController.userInfo = self.userInfo;
+        schoolInformationViewController.user = self.user;
     }
 }
 

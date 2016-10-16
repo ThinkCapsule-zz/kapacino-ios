@@ -44,6 +44,17 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    [[FIRAuth auth] addAuthStateDidChangeListener:^(FIRAuth *_Nonnull auth,
+                                                    FIRUser *_Nullable user) {
+        if (user != nil) {
+            // User is signed in.
+        } else {
+            // No user is signed in.
+            UIViewController *loginVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
+            [self presentViewController:loginVC animated:YES completion:nil];
+        }
+    }];
+    
 //    if (![KCAPIClient sharedClient].currentUserID) {
 //        UIViewController *loginVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
 //        [self presentViewController:loginVC animated:YES completion:nil];

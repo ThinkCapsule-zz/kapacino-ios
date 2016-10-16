@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "User.h"
 @interface KCUserInfoTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *title;
 @property (strong, nonatomic) IBOutlet UITextField *subTitle;
+@property (strong, nonatomic) User *user;
 
 + (UINib *)nib;
 

@@ -24,21 +24,23 @@
     self.pageControl.currentPage = 2;
 }
 
-- (void)updateUserInfo {
+- (void)updateuser {
     NSString *userID = [KCAPIClient sharedClient].currentUserID ;
-    [self.userInfo setValue:@"YES" forKey:@"complete"];
-//    [[KCAPIClient sharedClient] updateUserWithID:userID userInfo:self.userInfo success:^(Firebase *userRef) {
+    [self.user setValue:@"YES" forKey:@"complete"];
+//    [[KCAPIClient sharedClient] updateUserWithID:userID user:self.user success:^(Firebase *userRef) {
 //        KCLoadingPage *loadingPageViewConrtoller = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCLoadingPage"];
 //        [self.navigationController setViewControllers:@[loadingPageViewConrtoller] animated:YES];
 //    } failure:nil];
 }
 
-- (BOOL)checkUserInfo {
-    self.userInfo = self.schoolInformationTableViewController.userInfo;
-    NSString *countryOfSchool = [self.userInfo objectForKey:@"Country of school"];
-    NSString *school = [self.userInfo objectForKey:@"School"];
-    NSString *major = [self.userInfo objectForKey:@"Major"];
-    NSString *currently = [self.userInfo objectForKey:@"I'm currently a(n)"];
+- (BOOL)checkuser {
+    self.user = self.schoolInformationTableViewController.user;
+    
+    //TODO Get school info from id
+    NSString *countryOfSchool = @"Canada";
+    NSString *school = @"UWaterloo";
+    NSString *major = self.user.major;
+    NSString *currently = self.user.locationCurrent;
     if (!countryOfSchool || !school || !major || !currently) {
         return NO;
     }
@@ -46,15 +48,15 @@
 }
 
 - (IBAction)startExploringButtonAction:(UIButton *)sender {
-    if ([self checkUserInfo]) {
-        [self updateUserInfo];
+    if ([self checkuser]) {
+        [self updateuser];
     }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController isKindOfClass:[KCSchoolInformationTableViewController class]]) {
         self.schoolInformationTableViewController = segue.destinationViewController;
-        self.schoolInformationTableViewController.userInfo = self.userInfo;
+        self.schoolInformationTableViewController.user = self.user;
     }
 }
 

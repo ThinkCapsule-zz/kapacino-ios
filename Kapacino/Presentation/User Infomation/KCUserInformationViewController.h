@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "KCViewController.h"
+#import "User.h"
 
 @interface KCUserInformationViewController : KCViewController
 
-@property (strong, nonatomic) NSMutableDictionary *userInfo;
+@property (strong, nonatomic) User *user;
 
 @end

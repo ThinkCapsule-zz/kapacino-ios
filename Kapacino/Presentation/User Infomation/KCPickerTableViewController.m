@@ -35,12 +35,12 @@
     }
 }
 
-- (NSMutableDictionary *)userInfo {
-    if (!_userInfo) {
-        _userInfo = [[NSMutableDictionary alloc] init];
-    }
-    return _userInfo;
-}
+//- (NSMutableDictionary *)userInfo {
+//    if (!_userInfo) {
+//        _userInfo = [[NSMutableDictionary alloc] init];
+//    }
+//    return _userInfo;
+//}
 
 #pragma mark - Table view data source
 
@@ -66,9 +66,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     KCPickerTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     NSString *key = [self.categoryName substringToIndex:self.categoryName.length - 1];
-    [self.userInfo setValue:cell.title.text forKey:key];
+    [self.user setValue:cell.title.text forKey:key];
     if ([self.delegate respondsToSelector:@selector(pickerTableViewController:didChangeUserInfo:)]) {
-        [self.delegate pickerTableViewController:self didChangeUserInfo:self.userInfo];
+        [self.delegate pickerTableViewController:self didChangeUserInfo:self.user];
     }
 }
 
