@@ -45,8 +45,7 @@ static KCAPIClient *__sharedClient = nil;
 }
 
 + (void)initializeWithBaseURL:(NSString *)baseURL {
-    __sharedClient = [[self alloc] init];
-    [FIRApp configure];
+    __sharedClient = [[self alloc] init];    
     __sharedClient.baseReference = [[FIRDatabase database] reference];
     __sharedClient.usersReference = [__sharedClient.baseReference child:KCUsersPath];
     __sharedClient.coursesReference = [__sharedClient.baseReference child:KCCoursesPath];

@@ -24,7 +24,8 @@
     @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
     @property (strong, nonatomic) NSMutableArray* courses;
-    @property (strong, nonatomic) NSMutableDictionary<NSString*, NSMutableArray<Mark*>*> *courseToMarkDictionary;
+    @property (strong, nonatomic) NSMutableDictionary<NSString*, NSMutableArray<Mark*>*> *courseToMarksDictionary;
+    @property (strong, nonatomic) NSMutableDictionary<NSString*, NSNumber*> *courseToMarkDictionary;
 
     @property (nonatomic) float progressCurrent;
     @property (nonatomic) float progressOverall;
@@ -64,11 +65,10 @@ static NSString* kShowMarksSegue = @"showMarks";
     
     //TODO: Add progress icon
     
-    //TODO: Download courses
-    
     //TODO: Add constraint to only download marks for user
     
     //Download courses
+    self.courseToMarksDictionary = [NSMutableDictionary dictionary];
     self.courseToMarkDictionary = [NSMutableDictionary dictionary];
     [courseRef observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
         [self.courses removeAllObjects];
@@ -84,7 +84,7 @@ static NSString* kShowMarksSegue = @"showMarks";
                  {
                      Mark* mark = [[Mark alloc] init:markItem];
                      
-                     NSMutableArray* marks = self.courseToMarkDictionary[course.key];
+                     NSMutableArray* marks = self.courseToMarksDictionary[course.key];
                      if (!marks)
                      {
                          marks = [NSMutableArray<Mark*> array];
@@ -92,12 +92,13 @@ static NSString* kShowMarksSegue = @"showMarks";
                      
                      [marks addObject:mark];
                      
-                     self.courseToMarkDictionary[course.key] = marks;
+                     self.courseToMarksDictionary[course.key] = marks;
                  }
                  
                  [self updateGPA];
                 
                 //TODO: Remove progress icon
+                
              }];
         }
         
@@ -115,25 +116,34 @@ static NSString* kShowMarksSegue = @"showMarks";
     for (Course* course in self.courses)
     {
         float markforCourse = 0;
-        for (Mark* mark in self.courseToMarkDictionary[course.key])
+        float sumOfWeights = 0;
+        for (Mark* mark in self.courseToMarksDictionary[course.key])
         {
-            markforCourse = markforCourse + ([mark.mark floatValue] * [mark.weight floatValue]);
+            markforCourse = markforCourse + ([mark.mark floatValue] * [mark.weight floatValue] / 100.0);
+            sumOfWeights = sumOfWeights + [mark.weight floatValue];
         }
         
-        float markforCourseAndCourseCredit = markforCourse * [course.creditWeight floatValue];
+        markforCourse = sumOfWeights > 0 ? markforCourse/sumOfWeights * 100 : 0;
+        
+        self.courseToMarkDictionary[course.key] = @(markforCourse);
+        
+        float courseCredit = [course.creditWeight floatValue];
+        float markforCourseAndCourseCredit = markforCourse * courseCredit;
         if ([self isCourseInCurrentTerm:course])
         {
             currentGPANumerator = currentGPANumerator + markforCourseAndCourseCredit;
-            currentGPADenominator = currentGPADenominator + markforCourse;
+            currentGPADenominator = currentGPADenominator + courseCredit;
         }
         
         overallGPANumerator = overallGPANumerator + markforCourseAndCourseCredit;
-        overallGPADenominator = overallGPADenominator + markforCourse;
+        overallGPADenominator = overallGPADenominator + courseCredit;
     }
     
     //Divide numerator by denominator
     self.progressCurrent = currentGPADenominator > 0 ? currentGPANumerator/currentGPADenominator : 0;
     self.progressOverall = overallGPADenominator > 0 ? overallGPANumerator/overallGPADenominator : 0;
+    
+    [self.tableView reloadData];
 }
 
 -(BOOL) isCourseInCurrentTerm:(Course*) course
@@ -231,7 +241,9 @@ static NSString* kShowMarksSegue = @"showMarks";
     cell.labelCourseCode.text = course.courseCode;
     cell.labelInstructorName.text = course.instructor;
     cell.labelTerm.text = course.term;
-    cell.labelGPA.text = @"N/A";
+    
+    NSNumber* courseMark = self.courseToMarkDictionary[course.key];
+    cell.labelGPA.text = courseMark ? [courseMark stringValue] : @"N/A";
     
     return cell;
 }

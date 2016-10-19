@@ -12,6 +12,7 @@
 #import "KCNavigationController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <BuddyBuildSDK/BuddyBuildSDK.h>
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -37,6 +38,9 @@
     [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor clearColor]} forState:UIControlStateNormal];
     [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor clearColor]} forState:UIControlStateHighlighted];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    //Configure Firebase
+    [FIRApp configure];
     
     return YES;
 }
