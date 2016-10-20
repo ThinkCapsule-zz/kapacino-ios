@@ -133,6 +133,7 @@ PODS:
   - Mantle (2.0.7):
     - Mantle/extobjc (= 2.0.7)
   - Mantle/extobjc (2.0.7)
+  - MLPAutoCompleteTextField (1.6)
   - MMMarkdown (0.5.5)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -159,6 +160,7 @@ DEPENDENCIES:
   - INSPullToRefresh
   - KeepLayout (from `https://github.com/iMartinKiss/KeepLayout.git`)
   - Mantle
+  - MLPAutoCompleteTextField (from `https://github.com/ivanmkc/MLPAutoCompleteTextField.git`)
   - MMMarkdown
   - SDWebImage
   - TTGSnackbar
@@ -166,11 +168,16 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   KeepLayout:
     :git: https://github.com/iMartinKiss/KeepLayout.git
+  MLPAutoCompleteTextField:
+    :git: https://github.com/ivanmkc/MLPAutoCompleteTextField.git
 
 CHECKOUT OPTIONS:
   KeepLayout:
     :commit: 48e6405e434c16655a943d68c805dbbf0faadf7a
     :git: https://github.com/iMartinKiss/KeepLayout.git
+  MLPAutoCompleteTextField:
+    :commit: ebaf05dba7bfe5ed3014e11def08954e4e04ab43
+    :git: https://github.com/ivanmkc/MLPAutoCompleteTextField.git
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
@@ -204,6 +211,7 @@ SPEC CHECKSUMS:
   Interstellar: 40fc666872436d6c1b3524c59437ebdb5dec1c6a
   KeepLayout: 1881e51638fab0a0748890748de8deb9f01891a1
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  MLPAutoCompleteTextField: 02700789c32dce9b3a7e9991810adf5edb757d80
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   TTGSnackbar: 4678ad3919c22b0d098aac7e7f748787127f75fc
@@ -212,6 +220,6 @@ SPEC CHECKSUMS:
   UAProgressView: ce49aee47c14df6dc372f6fd57852f570ca97e6b
   "\U0001F555": 2a41c1f9b76698cb697b8ec9a1db1087f5621187
 
-PODFILE CHECKSUM: 4a97d41e47e5d7d714bf580738a9031dfb6b6bde
+PODFILE CHECKSUM: c2eede8cd6afa51db9a80cf2cceede7b7df4c1eb
 
 COCOAPODS: 1.0.1

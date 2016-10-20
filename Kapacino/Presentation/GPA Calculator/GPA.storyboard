@@ -90,7 +90,7 @@
                 <navigationController id="8YX-3n-X0U" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="GPA Calculator" image="tab_bar_calc" id="JTg-sn-EGm"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zs9-Xb-YjJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="zs9-Xb-YjJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1270,7 +1270,7 @@
                 <navigationController id="YeU-0E-Dsi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="GPA Calculator" image="tab_bar_calc" id="fU9-wa-ziK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="iYO-AP-vuN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="iYO-AP-vuN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1318,20 +1318,21 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="sm4-b2-oNM" firstAttribute="leading" secondItem="PEg-0C-83A" secondAttribute="leadingMargin" constant="10" id="1gE-fS-8yz"/>
+                                                <constraint firstAttribute="trailing" secondItem="zP3-mb-IN5" secondAttribute="trailing" id="UYe-HB-ZFc"/>
                                                 <constraint firstItem="zP3-mb-IN5" firstAttribute="leading" secondItem="PEg-0C-83A" secondAttribute="leadingMargin" constant="120" id="cBv-I2-oGI"/>
                                                 <constraint firstItem="sm4-b2-oNM" firstAttribute="centerY" secondItem="PEg-0C-83A" secondAttribute="centerY" id="jum-Vy-1Eg"/>
                                                 <constraint firstItem="zP3-mb-IN5" firstAttribute="centerY" secondItem="PEg-0C-83A" secondAttribute="centerY" id="t3X-a8-Bma"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4fB-g8-kWT">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4fB-g8-kWT">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4fB-g8-kWT" id="X4A-Bi-MEg">
                                             <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="i.e. Exam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJX-SC-wPV">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="i.e. Exam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJX-SC-wPV" customClass="MLPAutoCompleteTextField">
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -1344,6 +1345,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="SfE-EN-Rtw" firstAttribute="leading" secondItem="X4A-Bi-MEg" secondAttribute="leadingMargin" constant="10" id="D83-rr-A6i"/>
+                                                <constraint firstAttribute="trailing" secondItem="OJX-SC-wPV" secondAttribute="trailing" id="ISG-Y5-OVp"/>
                                                 <constraint firstItem="OJX-SC-wPV" firstAttribute="centerY" secondItem="X4A-Bi-MEg" secondAttribute="centerY" id="iRY-ci-7Fb"/>
                                                 <constraint firstItem="SfE-EN-Rtw" firstAttribute="centerY" secondItem="X4A-Bi-MEg" secondAttribute="centerY" id="qkU-Ab-8If"/>
                                                 <constraint firstItem="OJX-SC-wPV" firstAttribute="leading" secondItem="X4A-Bi-MEg" secondAttribute="leadingMargin" constant="120" id="vIC-2G-TqS"/>
@@ -1371,6 +1373,7 @@
                                             <constraints>
                                                 <constraint firstItem="Kmv-kH-uUV" firstAttribute="centerY" secondItem="4l1-Db-h6T" secondAttribute="centerY" id="QgD-fJ-qsc"/>
                                                 <constraint firstItem="Kmv-kH-uUV" firstAttribute="leading" secondItem="4l1-Db-h6T" secondAttribute="leadingMargin" constant="10" id="TjQ-25-J7J"/>
+                                                <constraint firstAttribute="trailing" secondItem="ckx-MD-41W" secondAttribute="trailing" id="kf0-TG-MZS"/>
                                                 <constraint firstItem="ckx-MD-41W" firstAttribute="centerY" secondItem="4l1-Db-h6T" secondAttribute="centerY" id="mTh-0F-FCh"/>
                                                 <constraint firstItem="ckx-MD-41W" firstAttribute="leading" secondItem="4l1-Db-h6T" secondAttribute="leadingMargin" constant="120" id="vF5-e5-N4l"/>
                                             </constraints>
@@ -1395,6 +1398,7 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Lqu-ne-d7U" secondAttribute="trailing" id="Dox-hl-q35"/>
                                                 <constraint firstItem="pJL-Az-sw8" firstAttribute="leading" secondItem="FrB-N0-QzI" secondAttribute="leadingMargin" constant="10" id="leF-NP-8n3"/>
                                                 <constraint firstItem="pJL-Az-sw8" firstAttribute="centerY" secondItem="FrB-N0-QzI" secondAttribute="centerY" id="mVU-kx-kil"/>
                                                 <constraint firstItem="Lqu-ne-d7U" firstAttribute="centerY" secondItem="FrB-N0-QzI" secondAttribute="centerY" id="pkx-6u-EYP"/>

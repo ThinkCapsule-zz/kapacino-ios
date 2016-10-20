@@ -154,13 +154,13 @@ static NSString* kShowMarksSegue = @"showMarks";
 -(void) setProgressCurrent:(float)progress
 {
     self.progressViewGPACurrent.progress = progress;
-    self.progressViewGPACurrent.progressLabel.text = [NSString stringWithFormat:@"%.2f", progress];
+    self.progressViewGPACurrent.progressLabel.text = [NSString stringWithFormat:@"%.0f", progress];
 }
 
 -(void) setProgressOverall:(float)progress
 {
     self.progressViewGPAOverall.progress = progress;
-    self.progressViewGPAOverall.progressLabel.text = [NSString stringWithFormat:@"%.2f", progress];
+    self.progressViewGPAOverall.progressLabel.text = [NSString stringWithFormat:@"%.0f", progress];
 }
 
 -(void) setupTableView
@@ -243,7 +243,11 @@ static NSString* kShowMarksSegue = @"showMarks";
     cell.labelTerm.text = course.term;
     
     NSNumber* courseMark = self.courseToMarkDictionary[course.key];
-    cell.labelGPA.text = courseMark ? [courseMark stringValue] : @"N/A";
+    
+    NSNumberFormatter* formatter = [[NSNumberFormatter alloc] init];
+    formatter.numberStyle = NSNumberFormatterDecimalStyle;
+    formatter.maximumFractionDigits = 0;
+    cell.labelGPA.text = courseMark ? [formatter stringFromNumber:courseMark] : @"N/A";
     
     return cell;
 }

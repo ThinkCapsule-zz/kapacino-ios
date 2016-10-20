@@ -9,15 +9,20 @@
 #import "KCGPAMarksDetailViewController.h"
 #import "KCAPIClient.h"
 #import "Mark.h"
+#import "MLPAutoCompleteTextField.h"
+#import "MarkTypeDatasource.h"
+
 @import TTGSnackbar;
 
 @import Firebase;
 
 @interface KCGPAMarksDetailViewController()
     @property (weak, nonatomic) IBOutlet UITextField *textfieldName;
-    @property (weak, nonatomic) IBOutlet UITextField *textfieldType;
+    @property (weak, nonatomic) IBOutlet MLPAutoCompleteTextField *textfieldType;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldWeight;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldMark;
+
+    @property (strong, nonatomic) MarkTypeDatasource* markDatasource;
 @end
 
 @implementation KCGPAMarksDetailViewController
@@ -41,7 +46,24 @@
         self.textfieldMark.text = [f stringFromNumber:self.mark.mark];
         self.textfieldWeight.text = [f stringFromNumber:self.mark.weight];
     }
+    
+    //Mark type autocomplete
+    self.markDatasource = [[MarkTypeDatasource alloc] init];
+    self.textfieldType.autoCompleteDataSource = self.markDatasource;
+    // Parent correction
+    self.textfieldType.autoCompleteParentView = self.view;
+    self.textfieldType.showAutoCompleteTableWhenEditingBegins = YES;
+    
+    // Offset correction
+    CGPoint pt = [self.textfieldType convertPoint:CGPointMake(0, self.textfieldType.frame.origin.y) toView:self.view];
+    self.textfieldType.autoCompleteTableOriginOffset = CGSizeMake(0, pt.y);
+    
+//    self.textfieldType.autocompleteType = HTAutocompleteTypeEmail;
+//    self.datasource= [[TestDatasource alloc] init];
+//    self.textfieldType.autoCompleteDataSource = self.datasource;
 }
+
+//-(UITextField*) auto
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
