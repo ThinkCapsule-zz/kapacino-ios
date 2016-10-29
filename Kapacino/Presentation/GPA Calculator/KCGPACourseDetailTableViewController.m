@@ -47,7 +47,8 @@
         //TODO Get instructor name from id
         self.textfieldInstructor.text = self.course.instructorId;
         
-//        self.textfieldInstructor.text
+        InfoProfessor* professor = [[ProfessorInfoDatasource instance] getById:self.course.instructorId];
+        self.textfieldInstructor.text = professor.fullName;
         
 //        NSNumberFormatter* formatter = [[NSNumberFormatter alloc] init];
         self.textfieldCreditWeight.text = [NSString stringWithFormat:@"%@", self.course.creditWeight];

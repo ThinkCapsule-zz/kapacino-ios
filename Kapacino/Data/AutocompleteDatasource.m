@@ -11,6 +11,7 @@
 
 @interface AutocompleteDatasource()
     @property (strong, nonatomic) NSArray* data;
+    @property (strong, nonatomic) NSMutableDictionary* idToDataMap;
 @end
 
 @implementation AutocompleteDatasource
@@ -35,6 +36,18 @@
         NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
         
         self.data = [MTLJSONAdapter modelsOfClass:[self getDataClass] fromJSONArray:jsonArray error:&error];
+        
+        //Store data in dictionary
+        self.idToDataMap = [[NSMutableDictionary alloc] init];
+        for (id data in self.data)
+        {
+            NSString* key = [data valueForKey:@"uid"];
+            
+            if (key)
+            {
+                self.idToDataMap[key] = data;
+            }
+        }
         
         return self;
     }
@@ -66,6 +79,11 @@
     -(NSString*) getDataFilename
     {
         return nil;
+    }
+
+    -(id) getById:(NSString*) uid
+    {
+        return self.idToDataMap[uid];
     }
 
 //    -(AutocompleteDatasource*) sharedInstance

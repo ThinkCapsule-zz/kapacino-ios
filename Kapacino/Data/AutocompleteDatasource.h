@@ -14,4 +14,5 @@
 //    -(AutocompleteDatasource*) sharedInstance;
     -(NSString*) getDataFilename;
     -(Class) getDataClass;
+    -(id) getById:(NSString*) uid;
 @end
