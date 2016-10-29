@@ -14,6 +14,8 @@
 #import "KCGPACourseCell.h"
 #import "KCGPAMarksViewController.h"
 #import "DALabeledCircularProgressView.h"
+#import "ProfessorInfoDatasource.h"
+#import "InfoProfessor.h"
 
 @import Firebase;
 @import FirebaseDatabaseUI;
@@ -241,7 +243,8 @@ static NSString* kShowMarksSegue = @"showMarks";
     cell.labelCourseCode.text = course.courseCode;
     
     //TODO Get professor name from id
-    cell.labelInstructorName.text = course.instructorId;
+    InfoProfessor* professor = [[ProfessorInfoDatasource instance] getById:course.instructorId];
+    cell.labelInstructorName.text =  professor.fullName;;
     
     cell.labelTerm.text = course.term;
     
