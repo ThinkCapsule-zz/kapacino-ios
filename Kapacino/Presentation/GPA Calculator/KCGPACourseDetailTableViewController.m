@@ -8,14 +8,17 @@
 
 #import "KCGPACourseDetailTableViewController.h"
 @import Firebase;
+@import TTGSnackbar;
+
 #import "KCAPIClient.h"
 #import "Course.h"
-@import TTGSnackbar;
+#import "ProfessorInfoDatasource.h"
+#import "InfoProfessor.h"
 
 @interface KCGPACourseDetailTableViewController()
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCreditWeight;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCreditType;
-    @property (weak, nonatomic) IBOutlet UITextField *textfieldInstructor;
+    @property (weak, nonatomic) IBOutlet MLPAutoCompleteTextField *textfieldInstructor;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldTerm;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCourseName;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCourseCode;
@@ -24,20 +27,36 @@
 @implementation KCGPACourseDetailTableViewController
 
 //TODO Show user if there is something wrong with input
-
 -(void) viewDidLoad
 {
+    //Mark type autocomplete
+    self.textfieldInstructor.autoCompleteDataSource = [ProfessorInfoDatasource instance];
+    // Parent correction
+    self.textfieldInstructor.autoCompleteParentView = self.view;
+    self.textfieldInstructor.showAutoCompleteTableWhenEditingBegins = YES;
+    self.textfieldInstructor.autoCompleteDelegate = self;
+    
     if (self.course)
     {
         self.textfieldCourseName.text = self.course.courseName;
         self.textfieldCourseCode.text = self.course.courseCode;
         self.textfieldTerm.text = self.course.term;
         self.textfieldCreditType.text = self.course.creditType;
-        self.textfieldInstructor.text = self.course.instructor;
+//        self.textfieldCreditWeight.text = self.course.creditWeight
+        
+        //TODO Get instructor name from id
+        self.textfieldInstructor.text = self.course.instructorId;
+        
+//        self.textfieldInstructor.text
         
 //        NSNumberFormatter* formatter = [[NSNumberFormatter alloc] init];
-//        formatter.f
         self.textfieldCreditWeight.text = [NSString stringWithFormat:@"%@", self.course.creditWeight];
+    }
+    else
+    {
+        FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] coursesReference];
+        self.course = [[Course alloc] init];
+        self.course.key = [coursesRef childByAutoId].key;
     }
 }
 
@@ -45,17 +64,10 @@
 //    NSString *userID = [FIRAuth auth].currentUser.uid;
     
     FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] coursesReference];
-
-    if (!self.course)
-    {
-        self.course = [[Course alloc] init];
-        self.course.key = [coursesRef childByAutoId].key;
-    }
     
     self.course.courseCode = self.textfieldCourseCode.text;
     self.course.courseName = self.textfieldCourseName.text;
     self.course.term = self.textfieldTerm.text;
-    self.course.instructor = self.textfieldInstructor.text;
     self.course.creditType = self.textfieldCreditType.text;
     
     NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
@@ -80,7 +92,7 @@
         TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid term" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
-    else if (!self.course.instructor.length)
+    else if (!self.course.instructorId.length)
     {
         //Notify user of error
         TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid instructor" duration:TTGSnackbarDurationShort];
@@ -115,4 +127,13 @@
         [snackbar show];
     }
 }
+
+-(void) autoCompleteTextField:(MLPAutoCompleteTextField *)textField didSelectAutoCompleteString:(NSString *)selectedString withAutoCompleteObject:(id<MLPAutoCompletionObject>)selectedObject forRowAtIndexPath:(NSIndexPath *)indexPath
+    {
+        if (textField == self.textfieldInstructor)
+        {
+            InfoProfessor* professor = (InfoProfessor*) selectedObject;
+            self.course.instructorId = professor.uid;
+        }
+    }
 @end

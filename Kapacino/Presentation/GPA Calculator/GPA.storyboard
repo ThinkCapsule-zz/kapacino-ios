@@ -367,16 +367,18 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Professor Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4o-sb-sVd">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Professor Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4o-sb-sVd" customClass="MLPAutoCompleteTextField">
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="G4o-sb-sVd" firstAttribute="centerY" secondItem="mK1-Ar-BAW" secondAttribute="centerY" id="6Mn-GO-F3B"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="G4o-sb-sVd" secondAttribute="bottom" id="MoJ-iJ-3nP"/>
+                                                <constraint firstItem="G4o-sb-sVd" firstAttribute="top" secondItem="mK1-Ar-BAW" secondAttribute="topMargin" id="R1j-5K-b0C"/>
                                                 <constraint firstItem="G4o-sb-sVd" firstAttribute="leading" secondItem="mK1-Ar-BAW" secondAttribute="leadingMargin" constant="120" id="gfL-hO-yT4"/>
                                                 <constraint firstItem="KFl-2I-Dg4" firstAttribute="centerY" secondItem="mK1-Ar-BAW" secondAttribute="centerY" id="jo4-RJ-dby"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="G4o-sb-sVd" secondAttribute="trailing" id="qTh-NN-4Ai"/>
                                                 <constraint firstItem="KFl-2I-Dg4" firstAttribute="leading" secondItem="mK1-Ar-BAW" secondAttribute="leadingMargin" constant="10" id="sUR-hf-dcP"/>
                                             </constraints>
                                         </tableViewCellContentView>

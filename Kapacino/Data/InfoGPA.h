@@ -1,5 +1,5 @@
 //
-//  Term.h
+//  InfoGPA.h
 //  Kapacino
 //
 //  Created by Ivan Cheung on 2016-10-18.
@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
 
-@interface Term : NSObject
-//    @property NSString* 
+@interface InfoGPA : MTLModel <MTLJSONSerializing>
+
 @end

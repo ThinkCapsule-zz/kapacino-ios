@@ -1,0 +1,9027 @@
+[
+  {
+	"SchoolID": "CA00001",
+	"Name": "University of Toronto",
+	"Location": "Toronto"
+  },
+  {
+	"SchoolID": "CA00002",
+	"Name": "The University of British Columbia",
+	"Location": "Vancouver"
+  },
+  {
+	"SchoolID": "CA00003",
+	"Name": "McGill University",
+	"Location": "montral"
+  },
+  {
+	"SchoolID": "CA00004",
+	"Name": "University of Waterloo",
+	"Location": "Waterloo"
+  },
+  {
+	"SchoolID": "CA00005",
+	"Name": "University of Alberta",
+	"Location": "Edmonton"
+  },
+  {
+	"SchoolID": "CA00006",
+	"Name": "Simon Fraser University",
+	"Location": "Burnaby"
+  },
+  {
+	"SchoolID": "CA00007",
+	"Name": "University of Calgary",
+	"Location": "Calgary"
+  },
+  {
+	"SchoolID": "CA00008",
+	"Name": "York University",
+	"Location": "Toronto"
+  },
+  {
+	"SchoolID": "CA00009",
+	"Name": "University of Victoria",
+	"Location": "Victoria"
+  },
+  {
+	"SchoolID": "CA00010",
+	"Name": "Queen's University",
+	"Location": "Kingston"
+  },
+  {
+	"SchoolID": "CA00011",
+	"Name": "The University of Western Ontario",
+	"Location": "London"
+  },
+  {
+	"SchoolID": "CA00012",
+	"Name": "McMaster University",
+	"Location": "Hamilton"
+  },
+  {
+	"SchoolID": "CA00013",
+	"Name": "universit de montral",
+	"Location": "montral"
+  },
+  {
+	"SchoolID": "CA00014",
+	"Name": "University of Ottawa",
+	"Location": "Ottawa"
+  },
+  {
+	"SchoolID": "CA00015",
+	"Name": "universit Laval",
+	"Location": "Quebec City"
+  },
+  {
+	"SchoolID": "CA00016",
+	"Name": "Carleton University",
+	"Location": "Ottawa"
+  },
+  {
+	"SchoolID": "CA00017",
+	"Name": "University of Saskatchewan",
+	"Location": "Saskatoon"
+  },
+  {
+	"SchoolID": "CA00018",
+	"Name": "Concordia University",
+	"Location": "montral"
+  },
+  {
+	"SchoolID": "CA00019",
+	"Name": "University of Guelph",
+	"Location": "Guelph"
+  },
+  {
+	"SchoolID": "CA00020",
+	"Name": "Ryerson University",
+	"Location": "Toronto"
+  },
+  {
+	"SchoolID": "CA00021",
+	"Name": "Dalhousie University",
+	"Location": "Halifax"
+  },
+  {
+	"SchoolID": "CA00022",
+	"Name": "universit du qubec  montral",
+	"Location": "montral"
+  },
+  {
+	"SchoolID": "CA00023",
+	"Name": "University of Manitoba",
+	"Location": "Winnipeg"
+  },
+  {
+	"SchoolID": "CA00024",
+	"Name": "Memorial University of Newfoundland",
+	"Location": "St John's"
+  },
+  {
+	"SchoolID": "CA00025",
+	"Name": "universit de Sherbrooke",
+	"Location": "Sherbrooke"
+  },
+  {
+	"SchoolID": "CA00026",
+	"Name": "University of Regina",
+	"Location": "Regina"
+  },
+  {
+	"SchoolID": "CA00027",
+	"Name": "University of New Brunswick",
+	"Location": "Fredericton"
+  },
+  {
+	"SchoolID": "CA00028",
+	"Name": "University of Windsor",
+	"Location": "Windsor"
+  },
+  {
+	"SchoolID": "CA00029",
+	"Name": "Brock University",
+	"Location": "St. Catharines"
+  },
+  {
+	"SchoolID": "CA00030",
+	"Name": "Wilfrid Laurier University",
+	"Location": "Waterloo"
+  },
+  {
+	"SchoolID": "CA00031",
+	"Name": "British Columbia Institute of Technology",
+	"Location": "Burnaby"
+  },
+  {
+	"SchoolID": "CA00032",
+	"Name": "The University of Winnipeg",
+	"Location": "Winnipeg"
+  },
+  {
+	"SchoolID": "CA00033",
+	"Name": "University of Lethbridge",
+	"Location": "Lethbridge"
+  },
+  {
+	"SchoolID": "CA00034",
+	"Name": "Acadia University",
+	"Location": "Wolfville"
+  },
+  {
+	"SchoolID": "CA00035",
+	"Name": "universit du qubec",
+	"Location": "Quebec City"
+  },
+  {
+	"SchoolID": "CA00036",
+	"Name": "Lakehead University",
+	"Location": "Thunder Bay"
+  },
+  {
+	"SchoolID": "CA00037",
+	"Name": "cole Polytechnique de montral",
+	"Location": "montral"
+  },
+  {
+	"SchoolID": "CA00038",
+	"Name": "University of Prince Edward Island",
+	"Location": "Charlottetown"
+  },
+  {
+	"SchoolID": "CA00039",
+	"Name": "L'universit du Qubec  Chicoutimi",
+	"Location": "Chicoutimi"
+  },
+  {
+	"SchoolID": "CA00040",
+	"Name": "Trent University",
+	"Location": "Peterborough"
+  },
+  {
+	"SchoolID": "CA00041",
+	"Name": "HEC montral",
+	"Location": "montral"
+  },
+  {
+	"SchoolID": "CA00042",
+	"Name": "colede Technologie Sup_rieure",
+	"Location": "montral"
+  },
+  {
+	"SchoolID": "CA00043",
+	"Name": "Vancouver Island University",
+	"Location": "Nanaimo"
+  },
+  {
+	"SchoolID": "CA00044",
+	"Name": "St. Francis Xavier University",
+	"Location": "Antigonish"
+  },
+  {
+	"SchoolID": "CA00045",
+	"Name": "Mount Allison University",
+	"Location": "Sackville"
+  },
+  {
+	"SchoolID": "CA00046",
+	"Name": "Laurentian University",
+	"Location": "Sudbury"
+  },
+  {
+	"SchoolID": "CA00047",
+	"Name": "Thompson Rivers University",
+	"Location": "Kamloops"
+  },
+  {
+	"SchoolID": "CA00048",
+	"Name": "Northern Alberta Institute of Technology",
+	"Location": "Edmonton"
+  },
+  {
+	"SchoolID": "CA00049",
+	"Name": "Royal Roads University",
+	"Location": "Victoria"
+  },
+  {
+	"SchoolID": "CA00050",
+	"Name": "Mount Royal University",
+	"Location": "Calgary"
+  },
+  {
+	"SchoolID": "CA00051",
+	"Name": "universit de Moncton",
+	"Location": "Moncton"
+  },
+  {
+	"SchoolID": "CA00052",
+	"Name": "University of Northern British Columbia",
+	"Location": "Prince George"
+  },
+  {
+	"SchoolID": "CA00053",
+	"Name": "Saint Mary's University",
+	"Location": "Halifax"
+  },
+  {
+	"SchoolID": "CA00054",
+	"Name": "Trinity Western University",
+	"Location": "Langley"
+  },
+  {
+	"SchoolID": "CA00055",
+	"Name": "University of Ontario Institute of Technology",
+	"Location": "Oshawa"
+  },
+  {
+	"SchoolID": "CA00056",
+	"Name": "MacEwan University",
+	"Location": "Edmonton"
+  },
+  {
+	"SchoolID": "CA00057",
+	"Name": "Nipissing University",
+	"Location": "North Bay"
+  },
+  {
+	"SchoolID": "CA00058",
+	"Name": "Brandon University",
+	"Location": "Brandon"
+  },
+  {
+	"SchoolID": "CA00059",
+	"Name": "Kwantlen Polytechnic University",
+	"Location": "Surrey"
+  },
+  {
+	"SchoolID": "CA00060",
+	"Name": "Mount Saint Vincent University",
+	"Location": "Halifax"
+  },
+  {
+	"SchoolID": "CA00061",
+	"Name": "Bishop's University",
+	"Location": "Sherbrooke"
+  },
+  {
+	"SchoolID": "CA00062",
+	"Name": "University of the Fraser Valley",
+	"Location": "Abbotsford"
+  },
+  {
+	"SchoolID": "CA00063",
+	"Name": "SAIT Polytechnic",
+	"Location": "Calgary"
+  },
+  {
+	"SchoolID": "CA00064",
+	"Name": "OCAD University",
+	"Location": "Toronto"
+  },
+  {
+	"SchoolID": "CA00065",
+	"Name": "Universit du Qubec  Trois-Rivires",
+	"Location": "Trois-Rivires"
+  },
+  {
+	"SchoolID": "CA00066",
+	"Name": "Universit du Qubec en Outaouais",
+	"Location": "Gatineau"
+  },
+  {
+	"SchoolID": "CA00067",
+	"Name": "Collge militaire royal du Canada",
+	"Location": "Kingston"
+  },
+  {
+	"SchoolID": "CA00068",
+	"Name": "Capilano University",
+	"Location": "North Vancouver"
+  },
+  {
+	"SchoolID": "CA00069",
+	"Name": "Cape Breton University",
+	"Location": "Sydney"
+  },
+  {
+	"SchoolID": "CA00070",
+	"Name": "Emily Carr University of Art and Design",
+	"Location": "Vancouver"
+  },
+  {
+	"SchoolID": "CA00071",
+	"Name": "universit du qubec  Rimouski",
+	"Location": "Rimouski"
+  },
+  {
+	"SchoolID": "CA00072",
+	"Name": "Universit du Qubec en Abitibi-Tmiscamingue",
+	"Location": "Rouyn-Noranda"
+  },
+  {
+	"SchoolID": "CA00073",
+	"Name": "Algoma University",
+	"Location": "Sault Ste. Marie"
+  },
+  {
+	"SchoolID": "CA00074",
+	"Name": "St. Thomas University",
+	"Location": "Fredericton"
+  },
+  {
+	"SchoolID": "CA00075",
+	"Name": "universit de Saint-Boniface",
+	"Location": "Winnipeg"
+  },
+  {
+	"SchoolID": "CA00076",
+	"Name": "cole Nationale d'Administration Publique",
+	"Location": "Quebec City"
+  },
+  {
+	"SchoolID": "CA00077",
+	"Name": "NSCAD University",
+	"Location": "Halifax"
+  },
+  {
+	"SchoolID": "CA00078",
+	"Name": "Canadian Mennonite University",
+	"Location": "Winnipeg"
+  },
+  {
+	"SchoolID": "CA00079",
+	"Name": "Redeemer University College",
+	"Location": "Ancaster"
+  },
+  {
+	"SchoolID": "CA00080",
+	"Name": "Yorkville University",
+	"Location": "Fredericton"
+  },
+  {
+	"SchoolID": "CA00081",
+	"Name": "University of King's College",
+	"Location": "Halifax"
+  },
+  {
+	"SchoolID": "CA00082",
+	"Name": "The King's University",
+	"Location": "Edmonton"
+  },
+  {
+	"SchoolID": "CA00083",
+	"Name": "universit Sainte-Anne",
+	"Location": "Pointe de l'_lise"
+  },
+  {
+	"SchoolID": "CA00084",
+	"Name": "Kingswood University",
+	"Location": "Sussex"
+  },
+  {
+	"SchoolID": "CA00085",
+	"Name": "Luther College",
+	"Location": "Regina"
+  },
+  {
+	"SchoolID": "CA00086",
+	"Name": "Ambrose University",
+	"Location": "Calgary"
+  },
+  {
+	"SchoolID": "CA00087",
+	"Name": "Concordia University of Edmonton",
+	"Location": "Edmonton"
+  },
+  {
+	"SchoolID": "CA00088",
+	"Name": "Burman University",
+	"Location": "Lacombe"
+  },
+  {
+	"SchoolID": "CA00089",
+	"Name": "St. Thomas More College",
+	"Location": "Saskatoon"
+  },
+  {
+	"SchoolID": "CA00090",
+	"Name": "Campion College at the University of Regina",
+	"Location": "Regina"
+  },
+  {
+	"SchoolID": "CA00091",
+	"Name": "Collge Universitaire Dominicain",
+	"Location": "Ottawa"
+  },
+  {
+	"SchoolID": "CA00092",
+	"Name": "First Nations University of Canada",
+	"Location": "Regina"
+  },
+  {
+	"SchoolID": "CA00093",
+	"Name": "University Canada West",
+	"Location": "Vancouver"
+  },
+  {
+	"SchoolID": "CA00094",
+	"Name": "Nicola Valley Institute of Technology",
+	"Location": "Merritt"
+  },
+  {
+	"SchoolID": "CA00095",
+	"Name": "College of the North Atlantic",
+	"Location": "Stephenville"
+  },
+  {
+	"SchoolID": "CA00096",
+	"Name": "Crandall University",
+	"Location": "Moncton"
+  },
+  {
+	"SchoolID": "CA00097",
+	"Name": "St. Mary's University",
+	"Location": "Calgary"
+  },
+  {
+	"SchoolID": "CA00098",
+	"Name": "St. Stephen's University",
+	"Location": "St. Stephen"
+  },
+  {
+	"SchoolID": "CA00099",
+	"Name": "Aurora College",
+	"Location": "Forth Smith"
+  },
+  {
+	"SchoolID": "US00001",
+	"Name": "Massachusetts Institute of Technology",
+	"Location": "Cambridge"
+  },
+  {
+	"SchoolID": "US00002",
+	"Name": "Stanford University",
+	"Location": "Stanford"
+  },
+  {
+	"SchoolID": "US00003",
+	"Name": "Harvard University",
+	"Location": "Cambridge"
+  },
+  {
+	"SchoolID": "US00004",
+	"Name": "University of California, Berkeley",
+	"Location": "Berkeley"
+  },
+  {
+	"SchoolID": "US00005",
+	"Name": "Cornell University",
+	"Location": "Ithaca"
+  },
+  {
+	"SchoolID": "US00006",
+	"Name": "University of Washington",
+	"Location": "Seattle"
+  },
+  {
+	"SchoolID": "US00007",
+	"Name": "University of Michigan",
+	"Location": "Ann Arbor"
+  },
+  {
+	"SchoolID": "US00008",
+	"Name": "Purdue University",
+	"Location": "West Lafayette"
+  },
+  {
+	"SchoolID": "US00009",
+	"Name": "Penn State University",
+	"Location": "University Park"
+  },
+  {
+	"SchoolID": "US00010",
+	"Name": "University of California, Los Angeles",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US00011",
+	"Name": "Columbia University in the City of New York",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00012",
+	"Name": "University of Wisconsin-Madison",
+	"Location": "Madison"
+  },
+  {
+	"SchoolID": "US00013",
+	"Name": "The University of Texas at Austin",
+	"Location": "Austin"
+  },
+  {
+	"SchoolID": "US00014",
+	"Name": "University of Pennsylvania",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US00015",
+	"Name": "University of Minnesota",
+	"Location": "Minneapolis"
+  },
+  {
+	"SchoolID": "US00016",
+	"Name": "Princeton University",
+	"Location": "Princeton"
+  },
+  {
+	"SchoolID": "US00017",
+	"Name": "New York University",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00018",
+	"Name": "Carnegie Mellon University",
+	"Location": "Pittsburgh"
+  },
+  {
+	"SchoolID": "US00019",
+	"Name": "Yale University",
+	"Location": "New Haven"
+  },
+  {
+	"SchoolID": "US00020",
+	"Name": "University of California, Davis",
+	"Location": "Davis"
+  },
+  {
+	"SchoolID": "US00021",
+	"Name": "University of California, San Diego",
+	"Location": "San Diego"
+  },
+  {
+	"SchoolID": "US00022",
+	"Name": "University of Illinois at Urbana-Champaign",
+	"Location": "Champaign"
+  },
+  {
+	"SchoolID": "US00023",
+	"Name": "University of Florida",
+	"Location": "Gainesville"
+  },
+  {
+	"SchoolID": "US00024",
+	"Name": "University of California, Irvine",
+	"Location": "Irvine"
+  },
+  {
+	"SchoolID": "US00025",
+	"Name": "University of Maryland",
+	"Location": "College Park"
+  },
+  {
+	"SchoolID": "US00026",
+	"Name": "University of Southern California",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US00027",
+	"Name": "Michigan State University",
+	"Location": "East Lansing"
+  },
+  {
+	"SchoolID": "US00028",
+	"Name": "University of Chicago",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00029",
+	"Name": "University of North Carolina at Chapel Hill",
+	"Location": "Chapel Hill"
+  },
+  {
+	"SchoolID": "US00030",
+	"Name": "Arizona State University",
+	"Location": "Tempe"
+  },
+  {
+	"SchoolID": "US00031",
+	"Name": "Rutgers, The State University of New Jersey",
+	"Location": "New Brunswick"
+  },
+  {
+	"SchoolID": "US00032",
+	"Name": "Duke University",
+	"Location": "Durham"
+  },
+  {
+	"SchoolID": "US00033",
+	"Name": "Texas A&M University",
+	"Location": "College Station"
+  },
+  {
+	"SchoolID": "US00034",
+	"Name": "University of Virginia",
+	"Location": "Charlottesville"
+  },
+  {
+	"SchoolID": "US00035",
+	"Name": "University of Arizona",
+	"Location": "Tucson"
+  },
+  {
+	"SchoolID": "US00036",
+	"Name": "University of Colorado Boulder",
+	"Location": "Boulder"
+  },
+  {
+	"SchoolID": "US00037",
+	"Name": "Johns Hopkins University",
+	"Location": "Baltimore"
+  },
+  {
+	"SchoolID": "US00038",
+	"Name": "Indiana University",
+	"Location": "Bloomington"
+  },
+  {
+	"SchoolID": "US00039",
+	"Name": "North Carolina State University",
+	"Location": "Raleigh"
+  },
+  {
+	"SchoolID": "US00040",
+	"Name": "Boston University",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US00041",
+	"Name": "University of Utah",
+	"Location": "Salt Lake City"
+  },
+  {
+	"SchoolID": "US00042",
+	"Name": "Northwestern University",
+	"Location": "Evanston"
+  },
+  {
+	"SchoolID": "US00043",
+	"Name": "The Ohio State University",
+	"Location": "Columbus"
+  },
+  {
+	"SchoolID": "US00044",
+	"Name": "Virginia Polytechnic Institute and State University",
+	"Location": "Blacksburg"
+  },
+  {
+	"SchoolID": "US00045",
+	"Name": "Georgia Institute of Technology",
+	"Location": "Atlanta"
+  },
+  {
+	"SchoolID": "US00046",
+	"Name": "Washington University in St. Louis",
+	"Location": "St. Louis"
+  },
+  {
+	"SchoolID": "US00047",
+	"Name": "California Institute of Technology",
+	"Location": "Pasadena"
+  },
+  {
+	"SchoolID": "US00048",
+	"Name": "University of California, Santa Barbara",
+	"Location": "Santa Barbara"
+  },
+  {
+	"SchoolID": "US00049",
+	"Name": "University of Pittsburgh",
+	"Location": "Pittsburgh"
+  },
+  {
+	"SchoolID": "US00050",
+	"Name": "Oregon State University",
+	"Location": "Corvallis"
+  },
+  {
+	"SchoolID": "US00051",
+	"Name": "Vanderbilt University",
+	"Location": "Nashville"
+  },
+  {
+	"SchoolID": "US00052",
+	"Name": "University of Iowa",
+	"Location": "Iowa City"
+  },
+  {
+	"SchoolID": "US00053",
+	"Name": "Tufts University",
+	"Location": "Medford"
+  },
+  {
+	"SchoolID": "US00054",
+	"Name": "University of Georgia",
+	"Location": "Athens"
+  },
+  {
+	"SchoolID": "US00055",
+	"Name": "University of Delaware",
+	"Location": "Newark"
+  },
+  {
+	"SchoolID": "US00056",
+	"Name": "Colorado State University",
+	"Location": "Fort Collins"
+  },
+  {
+	"SchoolID": "US00057",
+	"Name": "Georgetown University",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US00058",
+	"Name": "Iowa State University of Science and Technology",
+	"Location": "Ames"
+  },
+  {
+	"SchoolID": "US00059",
+	"Name": "University of South Florida",
+	"Location": "Tampa"
+  },
+  {
+	"SchoolID": "US00060",
+	"Name": "Brigham Young University",
+	"Location": "Provo"
+  },
+  {
+	"SchoolID": "US00061",
+	"Name": "George Washington University",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US00062",
+	"Name": "Florida State University",
+	"Location": "Tallahassee"
+  },
+  {
+	"SchoolID": "US00063",
+	"Name": "University of Oregon",
+	"Location": "Eugene"
+  },
+  {
+	"SchoolID": "US00064",
+	"Name": "George Mason University",
+	"Location": "Fairfax"
+  },
+  {
+	"SchoolID": "US00065",
+	"Name": "Washington State University",
+	"Location": "Pullman"
+  },
+  {
+	"SchoolID": "US00066",
+	"Name": "University of Massachusetts Amherst",
+	"Location": "Amherst"
+  },
+  {
+	"SchoolID": "US00067",
+	"Name": "University of Nebraska-Lincoln",
+	"Location": "Lincoln"
+  },
+  {
+	"SchoolID": "US00068",
+	"Name": "Georgia State University",
+	"Location": "Atlanta"
+  },
+  {
+	"SchoolID": "US00069",
+	"Name": "Brown University",
+	"Location": "Providence"
+  },
+  {
+	"SchoolID": "US00070",
+	"Name": "Rice University",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US00071",
+	"Name": "University of Notre Dame",
+	"Location": "Notre Dame"
+  },
+  {
+	"SchoolID": "US00072",
+	"Name": "University at Buffalo, State University of New York",
+	"Location": "Buffalo"
+  },
+  {
+	"SchoolID": "US00073",
+	"Name": "University of Houston",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US00074",
+	"Name": "Dartmouth College",
+	"Location": "Hanover"
+  },
+  {
+	"SchoolID": "US00075",
+	"Name": "University of California, Santa Cruz",
+	"Location": "Santa Cruz"
+  },
+  {
+	"SchoolID": "US00076",
+	"Name": "Emory University",
+	"Location": "Atlanta"
+  },
+  {
+	"SchoolID": "US00077",
+	"Name": "University of Rochester",
+	"Location": "Rochester"
+  },
+  {
+	"SchoolID": "US00078",
+	"Name": "University of California, Riverside",
+	"Location": "Riverside"
+  },
+  {
+	"SchoolID": "US00079",
+	"Name": "The University of Tennessee",
+	"Location": "Knoxville"
+  },
+  {
+	"SchoolID": "US00080",
+	"Name": "University of California, San Francisco",
+	"Location": "San Francisco"
+  },
+  {
+	"SchoolID": "US00081",
+	"Name": "University of Missouri",
+	"Location": "Columbia"
+  },
+  {
+	"SchoolID": "US00082",
+	"Name": "University of Kentucky",
+	"Location": "Lexington"
+  },
+  {
+	"SchoolID": "US00083",
+	"Name": "University of Kansas",
+	"Location": "Lawrence"
+  },
+  {
+	"SchoolID": "US00084",
+	"Name": "University of Illinois at Chicago",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00085",
+	"Name": "University of Connecticut",
+	"Location": "Storrs"
+  },
+  {
+	"SchoolID": "US00086",
+	"Name": "Rochester Institute of Technology",
+	"Location": "Rochester"
+  },
+  {
+	"SchoolID": "US00087",
+	"Name": "University of Central Florida",
+	"Location": "Orlando"
+  },
+  {
+	"SchoolID": "US00088",
+	"Name": "University of South Carolina",
+	"Location": "Columbia"
+  },
+  {
+	"SchoolID": "US00089",
+	"Name": "University of New Mexico",
+	"Location": "Albuquerque"
+  },
+  {
+	"SchoolID": "US00090",
+	"Name": "San Diego State University",
+	"Location": "San Diego"
+  },
+  {
+	"SchoolID": "US00091",
+	"Name": "University of North Texas",
+	"Location": "Denton"
+  },
+  {
+	"SchoolID": "US00092",
+	"Name": "Rensselaer Polytechnic Institute",
+	"Location": "Troy"
+  },
+  {
+	"SchoolID": "US00093",
+	"Name": "Syracuse University",
+	"Location": "Syracuse"
+  },
+  {
+	"SchoolID": "US00094",
+	"Name": "University of Cincinnati",
+	"Location": "Cincinnati"
+  },
+  {
+	"SchoolID": "US00095",
+	"Name": "University of Miami",
+	"Location": "Coral Gables"
+  },
+  {
+	"SchoolID": "US00096",
+	"Name": "The University of Alabama",
+	"Location": "Tuscaloosa"
+  },
+  {
+	"SchoolID": "US00097",
+	"Name": "Drexel University",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US00098",
+	"Name": "Temple University",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US00099",
+	"Name": "The University of Oklahoma",
+	"Location": "Norman"
+  },
+  {
+	"SchoolID": "US00100",
+	"Name": "Louisiana State University",
+	"Location": "Baton Rouge"
+  },
+  {
+	"SchoolID": "US00101",
+	"Name": "Portland State University",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US00102",
+	"Name": "Boston College",
+	"Location": "Chestnut Hill"
+  },
+  {
+	"SchoolID": "US00103",
+	"Name": "Liberty University",
+	"Location": "Lynchburg"
+  },
+  {
+	"SchoolID": "US00104",
+	"Name": "Clemson University",
+	"Location": "Clemson"
+  },
+  {
+	"SchoolID": "US00105",
+	"Name": "Florida International University",
+	"Location": "Miami"
+  },
+  {
+	"SchoolID": "US00106",
+	"Name": "University of Vermont",
+	"Location": "Burlington"
+  },
+  {
+	"SchoolID": "US00107",
+	"Name": "Oklahoma State University",
+	"Location": "Stillwater"
+  },
+  {
+	"SchoolID": "US00108",
+	"Name": "Fordham University",
+	"Location": "The Bronx"
+  },
+  {
+	"SchoolID": "US00109",
+	"Name": "San Jose State University",
+	"Location": "San Jose"
+  },
+  {
+	"SchoolID": "US00110",
+	"Name": "Virginia Commonwealth University",
+	"Location": "Richmond"
+  },
+  {
+	"SchoolID": "US00111",
+	"Name": "Kent State University",
+	"Location": "Kent"
+  },
+  {
+	"SchoolID": "US00112",
+	"Name": "American University",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US00113",
+	"Name": "Utah State University",
+	"Location": "Logan"
+  },
+  {
+	"SchoolID": "US00114",
+	"Name": "Michigan Technological University",
+	"Location": "Houghton"
+  },
+  {
+	"SchoolID": "US00115",
+	"Name": "University of New Hampshire",
+	"Location": "Durham"
+  },
+  {
+	"SchoolID": "US00116",
+	"Name": "California State University, Fullerton",
+	"Location": "Fullerton"
+  },
+  {
+	"SchoolID": "US00117",
+	"Name": "San Francisco State University",
+	"Location": "San Francisco"
+  },
+  {
+	"SchoolID": "US00118",
+	"Name": "The University of Texas at Dallas",
+	"Location": "Richardson"
+  },
+  {
+	"SchoolID": "US00119",
+	"Name": "California State University, Northridge",
+	"Location": "Northridge"
+  },
+  {
+	"SchoolID": "US00120",
+	"Name": "The University of Tennessee at Martin",
+	"Location": "Martin"
+  },
+  {
+	"SchoolID": "US00121",
+	"Name": "West Virginia University",
+	"Location": "Morgantown"
+  },
+  {
+	"SchoolID": "US00122",
+	"Name": "Wayne State University",
+	"Location": "Detroit"
+  },
+  {
+	"SchoolID": "US00123",
+	"Name": "University of Maryland, Baltimore County",
+	"Location": "Baltimore"
+  },
+  {
+	"SchoolID": "US00124",
+	"Name": "Auburn University",
+	"Location": "Auburn"
+  },
+  {
+	"SchoolID": "US00125",
+	"Name": "Texas Tech University",
+	"Location": "Lubbock"
+  },
+  {
+	"SchoolID": "US00126",
+	"Name": "California Polytechnic State University, San Luis Obispo",
+	"Location": "San Luis Obispo"
+  },
+  {
+	"SchoolID": "US00127",
+	"Name": "DePaul University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00128",
+	"Name": "University of Wisconsin-Milwaukee",
+	"Location": "Milwaukee"
+  },
+  {
+	"SchoolID": "US00129",
+	"Name": "Case Western Reserve University",
+	"Location": "Cleveland"
+  },
+  {
+	"SchoolID": "US00130",
+	"Name": "University at Albany, State University of New York",
+	"Location": "Albany"
+  },
+  {
+	"SchoolID": "US00131",
+	"Name": "Baylor University",
+	"Location": "Waco"
+  },
+  {
+	"SchoolID": "US00132",
+	"Name": "The University of Texas at Arlington",
+	"Location": "Arlington"
+  },
+  {
+	"SchoolID": "US00133",
+	"Name": "Loyola University Chicago",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00134",
+	"Name": "Indiana University - Purdue University Indianapolis",
+	"Location": "Indianapolis"
+  },
+  {
+	"SchoolID": "US00135",
+	"Name": "Northern Illinois University",
+	"Location": "DeKalb"
+  },
+  {
+	"SchoolID": "US00136",
+	"Name": "Northern Arizona University",
+	"Location": "Flagstaff"
+  },
+  {
+	"SchoolID": "US00137",
+	"Name": "University of Arkansas",
+	"Location": "Fayetteville"
+  },
+  {
+	"SchoolID": "US00138",
+	"Name": "Tulane University",
+	"Location": "New Orleans"
+  },
+  {
+	"SchoolID": "US00139",
+	"Name": "Southern Methodist University",
+	"Location": "Dallas"
+  },
+  {
+	"SchoolID": "US00140",
+	"Name": "Southern New Hampshire University",
+	"Location": "Manchester"
+  },
+  {
+	"SchoolID": "US00141",
+	"Name": "University of Missouri-Kansas City",
+	"Location": "Kansas City"
+  },
+  {
+	"SchoolID": "US00142",
+	"Name": "Illinois Institute of Technology",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00143",
+	"Name": "Stony Brook University",
+	"Location": "Stony Brook"
+  },
+  {
+	"SchoolID": "US00144",
+	"Name": "University of Alabama at Birmingham",
+	"Location": "Birmingham"
+  },
+  {
+	"SchoolID": "US00145",
+	"Name": "Swarthmore College",
+	"Location": "Swarthmore"
+  },
+  {
+	"SchoolID": "US00146",
+	"Name": "University of Rhode Island",
+	"Location": "Kingston"
+  },
+  {
+	"SchoolID": "US00147",
+	"Name": "University of Denver",
+	"Location": "Denver"
+  },
+  {
+	"SchoolID": "US00148",
+	"Name": "Brandeis University",
+	"Location": "Waltham"
+  },
+  {
+	"SchoolID": "US00149",
+	"Name": "The College of William and Mary",
+	"Location": "Williamsburg"
+  },
+  {
+	"SchoolID": "US00150",
+	"Name": "New Mexico State University",
+	"Location": "Las Cruces"
+  },
+  {
+	"SchoolID": "US00151",
+	"Name": "California State University, Long Beach",
+	"Location": "Long Beach"
+  },
+  {
+	"SchoolID": "US00152",
+	"Name": "University of Idaho",
+	"Location": "Moscow"
+  },
+  {
+	"SchoolID": "US00153",
+	"Name": "Mississippi State University",
+	"Location": "Starkville"
+  },
+  {
+	"SchoolID": "US00154",
+	"Name": "Grand Canyon University",
+	"Location": "Phoenix"
+  },
+  {
+	"SchoolID": "US00155",
+	"Name": "University of Maryland University College",
+	"Location": "Adelphi"
+  },
+  {
+	"SchoolID": "US00156",
+	"Name": "East Carolina University",
+	"Location": "Greenville"
+  },
+  {
+	"SchoolID": "US00157",
+	"Name": "Western Michigan University",
+	"Location": "Kalamazoo"
+  },
+  {
+	"SchoolID": "US00158",
+	"Name": "Northeastern University",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US00159",
+	"Name": "Montana State University",
+	"Location": "Bozeman"
+  },
+  {
+	"SchoolID": "US00160",
+	"Name": "University of Nevada, Reno",
+	"Location": "Reno"
+  },
+  {
+	"SchoolID": "US00161",
+	"Name": "Kansas State University",
+	"Location": "Manhattan"
+  },
+  {
+	"SchoolID": "US00162",
+	"Name": "Ohio University",
+	"Location": "Athens"
+  },
+  {
+	"SchoolID": "US00163",
+	"Name": "Florida Atlantic University",
+	"Location": "Boca Raton"
+  },
+  {
+	"SchoolID": "US00164",
+	"Name": "Nova Southeastern University",
+	"Location": "Fort Lauderdale"
+  },
+  {
+	"SchoolID": "US00165",
+	"Name": "Santa Clara University",
+	"Location": "Santa Clara"
+  },
+  {
+	"SchoolID": "US00166",
+	"Name": "James Madison University",
+	"Location": "Harrisonburg"
+  },
+  {
+	"SchoolID": "US00167",
+	"Name": "University of Nevada, Las Vegas",
+	"Location": "Las Vegas"
+  },
+  {
+	"SchoolID": "US00168",
+	"Name": "The New School",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00169",
+	"Name": "Saint Louis University",
+	"Location": "St. Louis"
+  },
+  {
+	"SchoolID": "US00170",
+	"Name": "University of Wyoming",
+	"Location": "Laramie"
+  },
+  {
+	"SchoolID": "US00171",
+	"Name": "New Jersey Institute of Technology",
+	"Location": "Newark"
+  },
+  {
+	"SchoolID": "US00172",
+	"Name": "Worcester Polytechnic Institute",
+	"Location": "Worcester"
+  },
+  {
+	"SchoolID": "US00173",
+	"Name": "Oregon Health and Science University",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US00174",
+	"Name": "Wake Forest University",
+	"Location": "Winston Salem"
+  },
+  {
+	"SchoolID": "US00175",
+	"Name": "University of North Carolina at Charlotte",
+	"Location": "Charlotte"
+  },
+  {
+	"SchoolID": "US00176",
+	"Name": "University of Dayton",
+	"Location": "Dayton"
+  },
+  {
+	"SchoolID": "US00177",
+	"Name": "Lehigh University",
+	"Location": "Bethlehem"
+  },
+  {
+	"SchoolID": "US00178",
+	"Name": "California State University, Sacramento",
+	"Location": "Sacramento"
+  },
+  {
+	"SchoolID": "US00179",
+	"Name": "University of Mississippi",
+	"Location": "Oxford"
+  },
+  {
+	"SchoolID": "US00180",
+	"Name": "Southern Illinois University Carbondale",
+	"Location": "Carbondale"
+  },
+  {
+	"SchoolID": "US00181",
+	"Name": "The University of Texas MD Anderson Cancer Center",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US00182",
+	"Name": "Old Dominion University",
+	"Location": "Norfolk"
+  },
+  {
+	"SchoolID": "US00183",
+	"Name": "Binghamton University, State University of New York",
+	"Location": "Vestal"
+  },
+  {
+	"SchoolID": "US00184",
+	"Name": "Bowling Green State University",
+	"Location": "Bowling Green"
+  },
+  {
+	"SchoolID": "US00185",
+	"Name": "Appalachian State University",
+	"Location": "Boone"
+  },
+  {
+	"SchoolID": "US00186",
+	"Name": "DeVry University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00187",
+	"Name": "University of Louisville",
+	"Location": "Louisville"
+  },
+  {
+	"SchoolID": "US00188",
+	"Name": "Kennesaw State University",
+	"Location": "Kennesaw"
+  },
+  {
+	"SchoolID": "US00189",
+	"Name": "University of Alaska Fairbanks",
+	"Location": "Fairbanks"
+  },
+  {
+	"SchoolID": "US00190",
+	"Name": "Calvin College",
+	"Location": "Grand Rapids"
+  },
+  {
+	"SchoolID": "US00191",
+	"Name": "Texas State University",
+	"Location": "San Marcos"
+  },
+  {
+	"SchoolID": "US00192",
+	"Name": "University of Akron",
+	"Location": "Akron"
+  },
+  {
+	"SchoolID": "US00193",
+	"Name": "Lamar University",
+	"Location": "Beaumont"
+  },
+  {
+	"SchoolID": "US00194",
+	"Name": "California State University, Chico",
+	"Location": "Chico"
+  },
+  {
+	"SchoolID": "US00195",
+	"Name": "Ball State University",
+	"Location": "Muncie"
+  },
+  {
+	"SchoolID": "US00196",
+	"Name": "Boise State University",
+	"Location": "Boise"
+  },
+  {
+	"SchoolID": "US00197",
+	"Name": "Pace University",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00198",
+	"Name": "University of San Francisco",
+	"Location": "San Francisco"
+  },
+  {
+	"SchoolID": "US00199",
+	"Name": "University of Colorado Denver",
+	"Location": "Denver"
+  },
+  {
+	"SchoolID": "US00200",
+	"Name": "California State Polytechnic University, Pomona",
+	"Location": "Pomona"
+  },
+  {
+	"SchoolID": "US00201",
+	"Name": "Western Washington University",
+	"Location": "Bellingham"
+  },
+  {
+	"SchoolID": "US00202",
+	"Name": "The University of Texas at San Antonio",
+	"Location": "San Antonio"
+  },
+  {
+	"SchoolID": "US00203",
+	"Name": "University of Northern Iowa",
+	"Location": "Cedar Falls"
+  },
+  {
+	"SchoolID": "US00204",
+	"Name": "California State University, Dominguez Hills",
+	"Location": "Carson"
+  },
+  {
+	"SchoolID": "US00205",
+	"Name": "University of Massachusetts Boston",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US00206",
+	"Name": "Carleton College",
+	"Location": "Northfield"
+  },
+  {
+	"SchoolID": "US00207",
+	"Name": "Mount Holyoke College",
+	"Location": "South Hadley"
+  },
+  {
+	"SchoolID": "US00208",
+	"Name": "Villanova University",
+	"Location": "Villanova"
+  },
+  {
+	"SchoolID": "US00209",
+	"Name": "Middle Tennessee State University",
+	"Location": "Murfreesboro"
+  },
+  {
+	"SchoolID": "US00210",
+	"Name": "Grand Valley State University",
+	"Location": "Allendale"
+  },
+  {
+	"SchoolID": "US00211",
+	"Name": "University of Massachusetts Lowell",
+	"Location": "Lowell"
+  },
+  {
+	"SchoolID": "US00212",
+	"Name": "University of North Carolina at Greensboro",
+	"Location": "Greensboro"
+  },
+  {
+	"SchoolID": "US00213",
+	"Name": "Towson University",
+	"Location": "Towson"
+  },
+  {
+	"SchoolID": "US00214",
+	"Name": "California State University, Los Angeles",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US00215",
+	"Name": "Bryn Mawr College",
+	"Location": "Bryn Mawr"
+  },
+  {
+	"SchoolID": "US00216",
+	"Name": "Wesleyan University",
+	"Location": "Middletown"
+  },
+  {
+	"SchoolID": "US00217",
+	"Name": "Middlebury College",
+	"Location": "Middlebury"
+  },
+  {
+	"SchoolID": "US00218",
+	"Name": "Bucknell University",
+	"Location": "Lewisburg"
+  },
+  {
+	"SchoolID": "US00219",
+	"Name": "Creighton University",
+	"Location": "Omaha"
+  },
+  {
+	"SchoolID": "US00220",
+	"Name": "The University of Texas at El Paso",
+	"Location": "El Paso"
+  },
+  {
+	"SchoolID": "US00221",
+	"Name": "Embry-Riddle Aeronautical University",
+	"Location": "Daytona Beach"
+  },
+  {
+	"SchoolID": "US00222",
+	"Name": "Smith College",
+	"Location": "Northampton"
+  },
+  {
+	"SchoolID": "US00223",
+	"Name": "The University of Maine",
+	"Location": "Orono"
+  },
+  {
+	"SchoolID": "US00224",
+	"Name": "Pepperdine University",
+	"Location": "Malibu"
+  },
+  {
+	"SchoolID": "US00225",
+	"Name": "Marquette University",
+	"Location": "Milwaukee"
+  },
+  {
+	"SchoolID": "US00226",
+	"Name": "University of Memphis",
+	"Location": "Memphis"
+  },
+  {
+	"SchoolID": "US00227",
+	"Name": "University of San Diego",
+	"Location": "San Diego"
+  },
+  {
+	"SchoolID": "US00228",
+	"Name": "University of Maryland, Baltimore",
+	"Location": "Baltimore"
+  },
+  {
+	"SchoolID": "US00229",
+	"Name": "University of Richmond",
+	"Location": "Richmond"
+  },
+  {
+	"SchoolID": "US00230",
+	"Name": "Clark University",
+	"Location": "Worcester"
+  },
+  {
+	"SchoolID": "US00231",
+	"Name": "Wright State University",
+	"Location": "Dayton"
+  },
+  {
+	"SchoolID": "US00232",
+	"Name": "Berklee College of Music",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US00233",
+	"Name": "Western Kentucky University",
+	"Location": "Bowling Green"
+  },
+  {
+	"SchoolID": "US00234",
+	"Name": "University of North Dakota",
+	"Location": "Grand Forks"
+  },
+  {
+	"SchoolID": "US00235",
+	"Name": "The University of Montana",
+	"Location": "Missoula"
+  },
+  {
+	"SchoolID": "US00236",
+	"Name": "Williams College",
+	"Location": "Williamstown"
+  },
+  {
+	"SchoolID": "US00237",
+	"Name": "Missouri State University",
+	"Location": "Springfield"
+  },
+  {
+	"SchoolID": "US00238",
+	"Name": "North Dakota State University",
+	"Location": "Fargo"
+  },
+  {
+	"SchoolID": "US00239",
+	"Name": "University of Missouri-St. Louis",
+	"Location": "St. Louis"
+  },
+  {
+	"SchoolID": "US00240",
+	"Name": "University of Toledo",
+	"Location": "Toledo"
+  },
+  {
+	"SchoolID": "US00241",
+	"Name": "University of Nebraska at Omaha",
+	"Location": "Omaha"
+  },
+  {
+	"SchoolID": "US00242",
+	"Name": "California State University, Fresno",
+	"Location": "Fresno"
+  },
+  {
+	"SchoolID": "US00243",
+	"Name": "Vassar College",
+	"Location": "Poughkeepsie"
+  },
+  {
+	"SchoolID": "US00244",
+	"Name": "Sonoma State University",
+	"Location": "Rohnert Park"
+  },
+  {
+	"SchoolID": "US00245",
+	"Name": "Idaho State University",
+	"Location": "Pocatello"
+  },
+  {
+	"SchoolID": "US00246",
+	"Name": "University of Wisconsin-Stevens Point",
+	"Location": "Stevens Point"
+  },
+  {
+	"SchoolID": "US00247",
+	"Name": "Quinnipiac University",
+	"Location": "Hamden"
+  },
+  {
+	"SchoolID": "US00248",
+	"Name": "Yeshiva University",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00249",
+	"Name": "University of Southern Mississippi",
+	"Location": "Hattiesburg"
+  },
+  {
+	"SchoolID": "US00250",
+	"Name": "Humboldt State University",
+	"Location": "Arcata"
+  },
+  {
+	"SchoolID": "US00251",
+	"Name": "Eastern Michigan University",
+	"Location": "Ypsilanti"
+  },
+  {
+	"SchoolID": "US00252",
+	"Name": "Cleveland State University",
+	"Location": "Cleveland"
+  },
+  {
+	"SchoolID": "US00253",
+	"Name": "Savannah College of Art and Design",
+	"Location": "Savannah"
+  },
+  {
+	"SchoolID": "US00254",
+	"Name": "Oakland University",
+	"Location": "Rochester Hills"
+  },
+  {
+	"SchoolID": "US00255",
+	"Name": "Central Michigan University",
+	"Location": "Mount Pleasant"
+  },
+  {
+	"SchoolID": "US00256",
+	"Name": "Buffalo State College",
+	"Location": "Buffalo"
+  },
+  {
+	"SchoolID": "US00257",
+	"Name": "Wellesley College",
+	"Location": "Wellesley"
+  },
+  {
+	"SchoolID": "US00258",
+	"Name": "Amherst College",
+	"Location": "Amherst"
+  },
+  {
+	"SchoolID": "US00259",
+	"Name": "The Catholic University of America",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US00260",
+	"Name": "Harvey Mudd College",
+	"Location": "Claremont"
+  },
+  {
+	"SchoolID": "US00261",
+	"Name": "Miami University",
+	"Location": "Oxford"
+  },
+  {
+	"SchoolID": "US00262",
+	"Name": "Baylor College of Medicine",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US00263",
+	"Name": "The University of Texas Medical Branch at Galveston",
+	"Location": "Galveston"
+  },
+  {
+	"SchoolID": "US00264",
+	"Name": "Florida Institute of Technology",
+	"Location": "Melbourne"
+  },
+  {
+	"SchoolID": "US00265",
+	"Name": "Marist College",
+	"Location": "Poughkeepsie"
+  },
+  {
+	"SchoolID": "US00266",
+	"Name": "Colby College",
+	"Location": "Waterville"
+  },
+  {
+	"SchoolID": "US00267",
+	"Name": "Hofstra University",
+	"Location": "Hempstead"
+  },
+  {
+	"SchoolID": "US00268",
+	"Name": "Oberlin College",
+	"Location": "Oberlin"
+  },
+  {
+	"SchoolID": "US00269",
+	"Name": "Central Washington University",
+	"Location": "Ellensburg"
+  },
+  {
+	"SchoolID": "US00270",
+	"Name": "University of Alabama in Huntsville",
+	"Location": "Huntsville"
+  },
+  {
+	"SchoolID": "US00271",
+	"Name": "Rasmussen College",
+	"Location": "Eden Prairie"
+  },
+  {
+	"SchoolID": "US00272",
+	"Name": "Seton Hall University",
+	"Location": "South Orange"
+  },
+  {
+	"SchoolID": "US00273",
+	"Name": "Brigham Young University-Idaho",
+	"Location": "Rexburg"
+  },
+  {
+	"SchoolID": "US00274",
+	"Name": "Sam Houston State University",
+	"Location": "Huntsville"
+  },
+  {
+	"SchoolID": "US00275",
+	"Name": "Kenyon College",
+	"Location": "Gambier"
+  },
+  {
+	"SchoolID": "US00276",
+	"Name": "College of Charleston",
+	"Location": "Charleston"
+  },
+  {
+	"SchoolID": "US00277",
+	"Name": "Medical University of South Carolina",
+	"Location": "Charleston"
+  },
+  {
+	"SchoolID": "US00278",
+	"Name": "Loyola Marymount University",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US00279",
+	"Name": "University of North Carolina Wilmington",
+	"Location": "Wilmington"
+  },
+  {
+	"SchoolID": "US00280",
+	"Name": "United States Naval Academy",
+	"Location": "Annapolis"
+  },
+  {
+	"SchoolID": "US00281",
+	"Name": "Texas Christian University",
+	"Location": "Fort Worth"
+  },
+  {
+	"SchoolID": "US00282",
+	"Name": "Earlham College",
+	"Location": "Richmond"
+  },
+  {
+	"SchoolID": "US00283",
+	"Name": "Montclair State University",
+	"Location": "Upper Montclair"
+  },
+  {
+	"SchoolID": "US00284",
+	"Name": "Eastern Kentucky University",
+	"Location": "Richmond"
+  },
+  {
+	"SchoolID": "US00285",
+	"Name": "East Tennessee State University",
+	"Location": "Johnson City"
+  },
+  {
+	"SchoolID": "US00286",
+	"Name": "Minnesota State University, Mankato",
+	"Location": "Mankato"
+  },
+  {
+	"SchoolID": "US00287",
+	"Name": "University of Massachusetts Dartmouth",
+	"Location": "North Dartmouth"
+  },
+  {
+	"SchoolID": "US00288",
+	"Name": "Webster University",
+	"Location": "St. Louis"
+  },
+  {
+	"SchoolID": "US00289",
+	"Name": "Biola University",
+	"Location": "La Mirada"
+  },
+  {
+	"SchoolID": "US00290",
+	"Name": "New Mexico Institute of Mining and Technology",
+	"Location": "Socorro"
+  },
+  {
+	"SchoolID": "US00291",
+	"Name": "The University of Texas Health Science Center at San Antonio",
+	"Location": "San Antonio"
+  },
+  {
+	"SchoolID": "US00292",
+	"Name": "Chapman University",
+	"Location": "Orange"
+  },
+  {
+	"SchoolID": "US00293",
+	"Name": "Haverford College",
+	"Location": "Haverford"
+  },
+  {
+	"SchoolID": "US00294",
+	"Name": "University of St. Thomas",
+	"Location": "St. Paul"
+  },
+  {
+	"SchoolID": "US00295",
+	"Name": "Marshall University",
+	"Location": "Huntington"
+  },
+  {
+	"SchoolID": "US00296",
+	"Name": "University of North Florida",
+	"Location": "Jacksonville"
+  },
+  {
+	"SchoolID": "US00297",
+	"Name": "Colorado School of Mines",
+	"Location": "Golden"
+  },
+  {
+	"SchoolID": "US00298",
+	"Name": "Indiana State University",
+	"Location": "Terre Haute"
+  },
+  {
+	"SchoolID": "US00299",
+	"Name": "United States Military Academy",
+	"Location": "West Point"
+  },
+  {
+	"SchoolID": "US00300",
+	"Name": "Bowdoin College",
+	"Location": "Brunswick"
+  },
+  {
+	"SchoolID": "US00301",
+	"Name": "Howard University",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US00302",
+	"Name": "University of Massachusetts Medical School",
+	"Location": "Worcester"
+  },
+  {
+	"SchoolID": "US00303",
+	"Name": "Southern Illinois University Edwardsville",
+	"Location": "Edwardsville"
+  },
+  {
+	"SchoolID": "US00304",
+	"Name": "Wichita State University",
+	"Location": "Wichita"
+  },
+  {
+	"SchoolID": "US00305",
+	"Name": "Davidson College",
+	"Location": "Davidson"
+  },
+  {
+	"SchoolID": "US00306",
+	"Name": "Medical College of Wisconsin",
+	"Location": "Milwaukee"
+  },
+  {
+	"SchoolID": "US00307",
+	"Name": "Babson College",
+	"Location": "Babson Park"
+  },
+  {
+	"SchoolID": "US00308",
+	"Name": "California State University, San Bernardino",
+	"Location": "San Bernardino"
+  },
+  {
+	"SchoolID": "US00309",
+	"Name": "University of Wisconsin-Green Bay",
+	"Location": "Green Bay"
+  },
+  {
+	"SchoolID": "US00310",
+	"Name": "Ithaca College",
+	"Location": "Ithaca"
+  },
+  {
+	"SchoolID": "US00311",
+	"Name": "Academy of Art University",
+	"Location": "San Francisco"
+  },
+  {
+	"SchoolID": "US00312",
+	"Name": "Weber State University",
+	"Location": "Ogden"
+  },
+  {
+	"SchoolID": "US00313",
+	"Name": "State University of New York at Oswego",
+	"Location": "Oswego"
+  },
+  {
+	"SchoolID": "US00314",
+	"Name": "Bard College",
+	"Location": "Annandale-on-Hudson"
+  },
+  {
+	"SchoolID": "US00315",
+	"Name": "Indiana University of Pennsylvania",
+	"Location": "Indiana"
+  },
+  {
+	"SchoolID": "US00316",
+	"Name": "The Evergreen State College",
+	"Location": "Olympia"
+  },
+  {
+	"SchoolID": "US00317",
+	"Name": "California State University San Marcos",
+	"Location": "San Marcos"
+  },
+  {
+	"SchoolID": "US00318",
+	"Name": "Elon University",
+	"Location": "Elon"
+  },
+  {
+	"SchoolID": "US00319",
+	"Name": "Washington and Lee University",
+	"Location": "Lexington"
+  },
+  {
+	"SchoolID": "US00320",
+	"Name": "University of Wisconsin-Eau Claire",
+	"Location": "Eau Claire"
+  },
+  {
+	"SchoolID": "US00321",
+	"Name": "University of Colorado at Colorado Springs",
+	"Location": "Colorado Springs"
+  },
+  {
+	"SchoolID": "US00322",
+	"Name": "Seattle University",
+	"Location": "Seattle"
+  },
+  {
+	"SchoolID": "US00323",
+	"Name": "School of Visual Arts",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00324",
+	"Name": "University of Arkansas at Little Rock",
+	"Location": "Little Rock"
+  },
+  {
+	"SchoolID": "US00325",
+	"Name": "University of Texas Southwestern Medical Center",
+	"Location": "Dallas"
+  },
+  {
+	"SchoolID": "US00326",
+	"Name": "The Rockefeller University",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00327",
+	"Name": "Western Illinois University",
+	"Location": "Macomb"
+  },
+  {
+	"SchoolID": "US00328",
+	"Name": "University of West Florida",
+	"Location": "Pensacola"
+  },
+  {
+	"SchoolID": "US00329",
+	"Name": "Georgia Southern University",
+	"Location": "Statesboro"
+  },
+  {
+	"SchoolID": "US00330",
+	"Name": "Strayer University",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US00331",
+	"Name": "California State University Stanislaus",
+	"Location": "Turlock"
+  },
+  {
+	"SchoolID": "US00332",
+	"Name": "Rowan University",
+	"Location": "Glassboro"
+  },
+  {
+	"SchoolID": "US00333",
+	"Name": "The College of New Jersey",
+	"Location": "Ewing"
+  },
+  {
+	"SchoolID": "US00334",
+	"Name": "Shippensburg University of Pennsylvania",
+	"Location": "Shippensburg"
+  },
+  {
+	"SchoolID": "US00335",
+	"Name": "Missouri University of Science and Technology",
+	"Location": "Rolla"
+  },
+  {
+	"SchoolID": "US00336",
+	"Name": "Illinois State University",
+	"Location": "Normal"
+  },
+  {
+	"SchoolID": "US00337",
+	"Name": "University of South Dakota",
+	"Location": "Vermillion"
+  },
+  {
+	"SchoolID": "US00338",
+	"Name": "Mayo Medical School",
+	"Location": "Rochester"
+  },
+  {
+	"SchoolID": "US00339",
+	"Name": "Wheaton College",
+	"Location": "Wheaton"
+  },
+  {
+	"SchoolID": "US00340",
+	"Name": "Pomona College",
+	"Location": "Claremont"
+  },
+  {
+	"SchoolID": "US00341",
+	"Name": "University of Nebraska Medical Center",
+	"Location": "Omaha"
+  },
+  {
+	"SchoolID": "US00342",
+	"Name": "Trinity College",
+	"Location": "Hartford"
+  },
+  {
+	"SchoolID": "US00343",
+	"Name": "Furman University",
+	"Location": "Greenville"
+  },
+  {
+	"SchoolID": "US00344",
+	"Name": "St. Cloud State University",
+	"Location": "St. Cloud"
+  },
+  {
+	"SchoolID": "US00345",
+	"Name": "Reed College",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US00346",
+	"Name": "Simmons College",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US00347",
+	"Name": "Arkansas State University",
+	"Location": "Jonesboro"
+  },
+  {
+	"SchoolID": "US00348",
+	"Name": "Clarkson University",
+	"Location": "Potsdam"
+  },
+  {
+	"SchoolID": "US00349",
+	"Name": "Radford University",
+	"Location": "Radford"
+  },
+  {
+	"SchoolID": "US00350",
+	"Name": "College of Saint Benedict and Saint John's University",
+	"Location": "St. Joseph"
+  },
+  {
+	"SchoolID": "US00351",
+	"Name": "University of Baltimore",
+	"Location": "Baltimore"
+  },
+  {
+	"SchoolID": "US00352",
+	"Name": "Regent University",
+	"Location": "Virginia Beach"
+  },
+  {
+	"SchoolID": "US00353",
+	"Name": "St. John's University",
+	"Location": "Queens"
+  },
+  {
+	"SchoolID": "US00354",
+	"Name": "Ferris State University",
+	"Location": "Big Rapids"
+  },
+  {
+	"SchoolID": "US00355",
+	"Name": "Central Connecticut State University",
+	"Location": "New Britain"
+  },
+  {
+	"SchoolID": "US00356",
+	"Name": "Duquesne University",
+	"Location": "Pittsburgh"
+  },
+  {
+	"SchoolID": "US00357",
+	"Name": "Bentley University",
+	"Location": "Waltham"
+  },
+  {
+	"SchoolID": "US00358",
+	"Name": "Stetson University",
+	"Location": "DeLand"
+  },
+  {
+	"SchoolID": "US00359",
+	"Name": "Florida Gulf Coast University",
+	"Location": "Fort Myers"
+  },
+  {
+	"SchoolID": "US00360",
+	"Name": "Trinity University",
+	"Location": "San Antonio"
+  },
+  {
+	"SchoolID": "US00361",
+	"Name": "Bradley University",
+	"Location": "Peoria"
+  },
+  {
+	"SchoolID": "US00362",
+	"Name": "Azusa Pacific University",
+	"Location": "Azusa"
+  },
+  {
+	"SchoolID": "US00363",
+	"Name": "Gallaudet University",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US00364",
+	"Name": "University of Evansville",
+	"Location": "Evansville"
+  },
+  {
+	"SchoolID": "US00365",
+	"Name": "Stevens Institute of Technology",
+	"Location": "Hoboken"
+  },
+  {
+	"SchoolID": "US00366",
+	"Name": "Eastern Washington University",
+	"Location": "Cheney"
+  },
+  {
+	"SchoolID": "US00367",
+	"Name": "Loyola University Maryland",
+	"Location": "Baltimore"
+  },
+  {
+	"SchoolID": "US00368",
+	"Name": "Columbia College Chicago",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00369",
+	"Name": "Rhode Island School of Design",
+	"Location": "Providence"
+  },
+  {
+	"SchoolID": "US00370",
+	"Name": "California State University, East Bay",
+	"Location": "Hayward"
+  },
+  {
+	"SchoolID": "US00371",
+	"Name": "Hobart and William Smith Colleges",
+	"Location": "Geneva"
+  },
+  {
+	"SchoolID": "US00372",
+	"Name": "Stephen F. Austin State University",
+	"Location": "Nacogdoches"
+  },
+  {
+	"SchoolID": "US00373",
+	"Name": "Loyola University New Orleans",
+	"Location": "New Orleans"
+  },
+  {
+	"SchoolID": "US00374",
+	"Name": "Willamette University",
+	"Location": "Salem"
+  },
+  {
+	"SchoolID": "US00375",
+	"Name": "Bates College",
+	"Location": "Lewiston"
+  },
+  {
+	"SchoolID": "US00376",
+	"Name": "Hanover College",
+	"Location": "Hanover"
+  },
+  {
+	"SchoolID": "US00377",
+	"Name": "Indiana University - Purdue University Fort Wayne",
+	"Location": "Fort Wayne"
+  },
+  {
+	"SchoolID": "US00378",
+	"Name": "University of Hartford",
+	"Location": "West Hartford"
+  },
+  {
+	"SchoolID": "US00379",
+	"Name": "Dickinson College",
+	"Location": "Carlisle"
+  },
+  {
+	"SchoolID": "US00380",
+	"Name": "The University of Tulsa",
+	"Location": "Tulsa"
+  },
+  {
+	"SchoolID": "US00381",
+	"Name": "Northern Michigan University",
+	"Location": "Marquette"
+  },
+  {
+	"SchoolID": "US00382",
+	"Name": "Baker College",
+	"Location": "Allen Park"
+  },
+  {
+	"SchoolID": "US00383",
+	"Name": "Fashion Institute of Technology",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00384",
+	"Name": "Frostburg State University",
+	"Location": "Frostburg"
+  },
+  {
+	"SchoolID": "US00385",
+	"Name": "Fairleigh Dickinson University",
+	"Location": "Teaneck"
+  },
+  {
+	"SchoolID": "US00386",
+	"Name": "Louisiana Tech University",
+	"Location": "Ruston"
+  },
+  {
+	"SchoolID": "US00387",
+	"Name": "Mercer University",
+	"Location": "Macon"
+  },
+  {
+	"SchoolID": "US00388",
+	"Name": "Eastern Illinois University",
+	"Location": "Charleston"
+  },
+  {
+	"SchoolID": "US00389",
+	"Name": "Gonzaga University",
+	"Location": "Spokane"
+  },
+  {
+	"SchoolID": "US00390",
+	"Name": "University of California, Merced",
+	"Location": "Merced"
+  },
+  {
+	"SchoolID": "US00391",
+	"Name": "University of Wisconsin-Oshkosh",
+	"Location": "Oshkosh"
+  },
+  {
+	"SchoolID": "US00392",
+	"Name": "University of Wisconsin-Whitewater",
+	"Location": "Whitewater"
+  },
+  {
+	"SchoolID": "US00393",
+	"Name": "Milwaukee School of Engineering",
+	"Location": "Milwaukee"
+  },
+  {
+	"SchoolID": "US00394",
+	"Name": "Valdosta State University",
+	"Location": "Valdosta"
+  },
+  {
+	"SchoolID": "US00395",
+	"Name": "Icahn School of Medicine at Mount Sinai",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00396",
+	"Name": "Utah Valley University",
+	"Location": "Orem"
+  },
+  {
+	"SchoolID": "US00397",
+	"Name": "SUNY Cortland",
+	"Location": "Cortland"
+  },
+  {
+	"SchoolID": "US00398",
+	"Name": "Plymouth State University",
+	"Location": "Plymouth"
+  },
+  {
+	"SchoolID": "US00399",
+	"Name": "Butler University",
+	"Location": "Indianapolis"
+  },
+  {
+	"SchoolID": "US00400",
+	"Name": "Long Island University",
+	"Location": "Brooklyn"
+  },
+  {
+	"SchoolID": "US00401",
+	"Name": "University of Louisiana at Lafayette",
+	"Location": "Lafayette"
+  },
+  {
+	"SchoolID": "US00402",
+	"Name": "Hamilton College",
+	"Location": "Clinton"
+  },
+  {
+	"SchoolID": "US00403",
+	"Name": "Saint Joseph's University",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US00404",
+	"Name": "St. Olaf College",
+	"Location": "Northfield"
+  },
+  {
+	"SchoolID": "US00405",
+	"Name": "University of Wisconsin-Stout",
+	"Location": "Menomonie"
+  },
+  {
+	"SchoolID": "US00406",
+	"Name": "University of West Georgia",
+	"Location": "Carrollton"
+  },
+  {
+	"SchoolID": "US00407",
+	"Name": "University of Wisconsin-La Crosse",
+	"Location": "La Crosse"
+  },
+  {
+	"SchoolID": "US00408",
+	"Name": "University of New Orleans",
+	"Location": "New Orleans"
+  },
+  {
+	"SchoolID": "US00409",
+	"Name": "Andrews University",
+	"Location": "Berrien Springs"
+  },
+  {
+	"SchoolID": "US00410",
+	"Name": "West Chester University of Pennsylvania",
+	"Location": "West Chester"
+  },
+  {
+	"SchoolID": "US00411",
+	"Name": "Colgate University",
+	"Location": "Hamilton"
+  },
+  {
+	"SchoolID": "US00412",
+	"Name": "Suffolk University",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US00413",
+	"Name": "Emerson College",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US00414",
+	"Name": "University of Illinois at Springfield",
+	"Location": "Springfield"
+  },
+  {
+	"SchoolID": "US00415",
+	"Name": "Union College",
+	"Location": "Schenectady"
+  },
+  {
+	"SchoolID": "US00416",
+	"Name": "Lewis and Clark College",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US00417",
+	"Name": "University of Northern Colorado",
+	"Location": "Greeley"
+  },
+  {
+	"SchoolID": "US00418",
+	"Name": "The University of Tennessee at Chattanooga",
+	"Location": "Chattanooga"
+  },
+  {
+	"SchoolID": "US00419",
+	"Name": "Rose-Hulman Institute of Technology",
+	"Location": "Terre Haute"
+  },
+  {
+	"SchoolID": "US00420",
+	"Name": "Loma Linda University",
+	"Location": "Loma Linda"
+  },
+  {
+	"SchoolID": "US00421",
+	"Name": "Occidental College",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US00422",
+	"Name": "Regis University",
+	"Location": "Denver"
+  },
+  {
+	"SchoolID": "US00423",
+	"Name": "Drew University",
+	"Location": "Madison"
+  },
+  {
+	"SchoolID": "US00424",
+	"Name": "California Institute of the Arts",
+	"Location": "Valencia"
+  },
+  {
+	"SchoolID": "US00425",
+	"Name": "University of Bridgeport",
+	"Location": "Bridgeport"
+  },
+  {
+	"SchoolID": "US00426",
+	"Name": "Truman State University",
+	"Location": "Kirksville"
+  },
+  {
+	"SchoolID": "US00427",
+	"Name": "Macalester College",
+	"Location": "St. Paul"
+  },
+  {
+	"SchoolID": "US00428",
+	"Name": "University of Central Arkansas",
+	"Location": "Conway"
+  },
+  {
+	"SchoolID": "US00429",
+	"Name": "Drake University",
+	"Location": "Des Moines"
+  },
+  {
+	"SchoolID": "US00430",
+	"Name": "Adelphi University",
+	"Location": "Garden City"
+  },
+  {
+	"SchoolID": "US00431",
+	"Name": "Monmouth University",
+	"Location": "West Long Branch"
+  },
+  {
+	"SchoolID": "US00432",
+	"Name": "Fort Hays State University",
+	"Location": "Hays"
+  },
+  {
+	"SchoolID": "US00433",
+	"Name": "Rider University",
+	"Location": "Lawrenceville"
+  },
+  {
+	"SchoolID": "US00434",
+	"Name": "Northern Kentucky University",
+	"Location": "Highland Heights"
+  },
+  {
+	"SchoolID": "US00435",
+	"Name": "Valparaiso University",
+	"Location": "Valparaiso"
+  },
+  {
+	"SchoolID": "US00436",
+	"Name": "Texas A&M University-Corpus Christi",
+	"Location": "Corpus Christi"
+  },
+  {
+	"SchoolID": "US00437",
+	"Name": "DePauw University",
+	"Location": "Greencastle"
+  },
+  {
+	"SchoolID": "US00438",
+	"Name": "Art Center College of Design",
+	"Location": "Pasadena"
+  },
+  {
+	"SchoolID": "US00439",
+	"Name": "Seattle Pacific University",
+	"Location": "Seattle"
+  },
+  {
+	"SchoolID": "US00440",
+	"Name": "Emporia State University",
+	"Location": "Emporia"
+  },
+  {
+	"SchoolID": "US00441",
+	"Name": "University of the Pacific",
+	"Location": "Stockton"
+  },
+  {
+	"SchoolID": "US00442",
+	"Name": "Colorado College",
+	"Location": "Colorado Springs"
+  },
+  {
+	"SchoolID": "US00443",
+	"Name": "Connecticut College",
+	"Location": "New London"
+  },
+  {
+	"SchoolID": "US00444",
+	"Name": "Bridgewater State University",
+	"Location": "Bridgewater"
+  },
+  {
+	"SchoolID": "US00445",
+	"Name": "Skidmore College",
+	"Location": "Saratoga Springs"
+  },
+  {
+	"SchoolID": "US00446",
+	"Name": "Lafayette College",
+	"Location": "Easton"
+  },
+  {
+	"SchoolID": "US00447",
+	"Name": "Hampshire College",
+	"Location": "Amherst"
+  },
+  {
+	"SchoolID": "US00448",
+	"Name": "Thomas Jefferson University",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US00449",
+	"Name": "Abilene Christian University",
+	"Location": "Abilene"
+  },
+  {
+	"SchoolID": "US00450",
+	"Name": "State University of New York College at Plattsburgh",
+	"Location": "Plattsburgh"
+  },
+  {
+	"SchoolID": "US00451",
+	"Name": "University of New England",
+	"Location": "Biddeford"
+  },
+  {
+	"SchoolID": "US00452",
+	"Name": "Whitman College",
+	"Location": "Walla Walla"
+  },
+  {
+	"SchoolID": "US00453",
+	"Name": "Southeast Missouri State University",
+	"Location": "Cape Girardeau"
+  },
+  {
+	"SchoolID": "US00454",
+	"Name": "Metropolitan State University of Denver",
+	"Location": "Denver"
+  },
+  {
+	"SchoolID": "US00455",
+	"Name": "Rollins College",
+	"Location": "Winter Park"
+  },
+  {
+	"SchoolID": "US00456",
+	"Name": "Pitzer College",
+	"Location": "Claremont"
+  },
+  {
+	"SchoolID": "US00457",
+	"Name": "SUNY College at Oneonta",
+	"Location": "Oneonta"
+  },
+  {
+	"SchoolID": "US00458",
+	"Name": "Hillsdale College",
+	"Location": "Hillsdale"
+  },
+  {
+	"SchoolID": "US00459",
+	"Name": "North Carolina Agricultural and Technical State University",
+	"Location": "Greensboro"
+  },
+  {
+	"SchoolID": "US00460",
+	"Name": "Widener University",
+	"Location": "Chester"
+  },
+  {
+	"SchoolID": "US00461",
+	"Name": "Coastal Carolina University",
+	"Location": "Conway"
+  },
+  {
+	"SchoolID": "US00462",
+	"Name": "Hope College",
+	"Location": "Holland"
+  },
+  {
+	"SchoolID": "US00463",
+	"Name": "State University of New York at New Paltz",
+	"Location": "New Paltz"
+  },
+  {
+	"SchoolID": "US00464",
+	"Name": "The Juilliard School",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00465",
+	"Name": "Claremont Graduate University",
+	"Location": "Claremont"
+  },
+  {
+	"SchoolID": "US00466",
+	"Name": "Cedarville University",
+	"Location": "Cedarville"
+  },
+  {
+	"SchoolID": "US00467",
+	"Name": "Western Carolina University",
+	"Location": "Cullowhee"
+  },
+  {
+	"SchoolID": "US00468",
+	"Name": "Lock Haven University",
+	"Location": "Lock Haven"
+  },
+  {
+	"SchoolID": "US00469",
+	"Name": "The State University of New York at Potsdam",
+	"Location": "Potsdam"
+  },
+  {
+	"SchoolID": "US00470",
+	"Name": "Texas Woman's University",
+	"Location": "Denton"
+  },
+  {
+	"SchoolID": "US00471",
+	"Name": "Youngstown State University",
+	"Location": "Youngstown"
+  },
+  {
+	"SchoolID": "US00472",
+	"Name": "Pacific University",
+	"Location": "Forest Grove"
+  },
+  {
+	"SchoolID": "US00473",
+	"Name": "South Dakota State University",
+	"Location": "Brookings"
+  },
+  {
+	"SchoolID": "US00474",
+	"Name": "National University",
+	"Location": "La Jolla"
+  },
+  {
+	"SchoolID": "US00475",
+	"Name": "Samford University",
+	"Location": "Birmingham"
+  },
+  {
+	"SchoolID": "US00476",
+	"Name": "Xavier University",
+	"Location": "Cincinnati"
+  },
+  {
+	"SchoolID": "US00477",
+	"Name": "Grinnell College",
+	"Location": "Grinnell"
+  },
+  {
+	"SchoolID": "US00478",
+	"Name": "Salisbury University",
+	"Location": "Salisbury"
+  },
+  {
+	"SchoolID": "US00479",
+	"Name": "Northeastern Illinois University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00480",
+	"Name": "Pratt Institute",
+	"Location": "Brooklyn"
+  },
+  {
+	"SchoolID": "US00481",
+	"Name": "The Culinary Institute of America",
+	"Location": "Hyde Park"
+  },
+  {
+	"SchoolID": "US00482",
+	"Name": "Franklin and Marshall College",
+	"Location": "Lancaster"
+  },
+  {
+	"SchoolID": "US00483",
+	"Name": "Gettysburg College",
+	"Location": "Gettysburg"
+  },
+  {
+	"SchoolID": "US00484",
+	"Name": "Colorado Technical University",
+	"Location": "Colorado Springs"
+  },
+  {
+	"SchoolID": "US00485",
+	"Name": "University of Arkansas for Medical Sciences",
+	"Location": "Little Rock"
+  },
+  {
+	"SchoolID": "US00486",
+	"Name": "University of South Alabama",
+	"Location": "Mobile"
+  },
+  {
+	"SchoolID": "US00487",
+	"Name": "College of the Holy Cross",
+	"Location": "Worcester"
+  },
+  {
+	"SchoolID": "US00488",
+	"Name": "Augustana College",
+	"Location": "Rock Island"
+  },
+  {
+	"SchoolID": "US00489",
+	"Name": "Texas Tech University Health Sciences Center",
+	"Location": "Lubbock"
+  },
+  {
+	"SchoolID": "US00490",
+	"Name": "Bethel University",
+	"Location": "St. Paul"
+  },
+  {
+	"SchoolID": "US00491",
+	"Name": "SUNY College of Environmental Science and Forestry",
+	"Location": "Syracuse"
+  },
+  {
+	"SchoolID": "US00492",
+	"Name": "Naval Postgraduate School",
+	"Location": "Monterey"
+  },
+  {
+	"SchoolID": "US00493",
+	"Name": "Bloomsburg University of Pennsylvania",
+	"Location": "Bloomsburg"
+  },
+  {
+	"SchoolID": "US00494",
+	"Name": "Austin Peay State University",
+	"Location": "Clarksville"
+  },
+  {
+	"SchoolID": "US00495",
+	"Name": "St. Edward's University",
+	"Location": "Austin"
+  },
+  {
+	"SchoolID": "US00496",
+	"Name": "Troy University",
+	"Location": "Troy"
+  },
+  {
+	"SchoolID": "US00497",
+	"Name": "Agnes Scott College",
+	"Location": "Decatur"
+  },
+  {
+	"SchoolID": "US00498",
+	"Name": "SUNY Empire State College",
+	"Location": "Saratoga Springs"
+  },
+  {
+	"SchoolID": "US00499",
+	"Name": "West Texas A&M University",
+	"Location": "Canyon"
+  },
+  {
+	"SchoolID": "US00500",
+	"Name": "Indiana Wesleyan University",
+	"Location": "Marion"
+  },
+  {
+	"SchoolID": "US00501",
+	"Name": "Western Oregon University",
+	"Location": "Monmouth"
+  },
+  {
+	"SchoolID": "US00502",
+	"Name": "Hamline University",
+	"Location": "St. Paul"
+  },
+  {
+	"SchoolID": "US00503",
+	"Name": "Alfred University",
+	"Location": "Alfred"
+  },
+  {
+	"SchoolID": "US00504",
+	"Name": "Beloit College",
+	"Location": "Beloit"
+  },
+  {
+	"SchoolID": "US00505",
+	"Name": "Maryland Institute College of Art",
+	"Location": "Baltimore"
+  },
+  {
+	"SchoolID": "US00506",
+	"Name": "The University of Oklahoma Health Sciences Center",
+	"Location": "Oklahoma City"
+  },
+  {
+	"SchoolID": "US00507",
+	"Name": "Uniformed Services University of the Health Sciences",
+	"Location": "Bethesda"
+  },
+  {
+	"SchoolID": "US00508",
+	"Name": "SUNY Upstate Medical University",
+	"Location": "Syracuse"
+  },
+  {
+	"SchoolID": "US00509",
+	"Name": "Pacific Lutheran University",
+	"Location": "Tacoma"
+  },
+  {
+	"SchoolID": "US00510",
+	"Name": "Barnard College",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00511",
+	"Name": "The Cooper Union for the Advancement of Science and Art",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00512",
+	"Name": "Goucher College",
+	"Location": "Towson"
+  },
+  {
+	"SchoolID": "US00513",
+	"Name": "California College of the Arts",
+	"Location": "Oakland"
+  },
+  {
+	"SchoolID": "US00514",
+	"Name": "Indiana University Bloomington",
+	"Location": "Bloomington"
+  },
+  {
+	"SchoolID": "US00515",
+	"Name": "The College of Wooster",
+	"Location": "Wooster"
+  },
+  {
+	"SchoolID": "US00516",
+	"Name": "Bluffton University",
+	"Location": "Bluffton"
+  },
+  {
+	"SchoolID": "US00517",
+	"Name": "California State University, Monterey Bay",
+	"Location": "Seaside"
+  },
+  {
+	"SchoolID": "US00518",
+	"Name": "Tennessee Technological University",
+	"Location": "Cookeville"
+  },
+  {
+	"SchoolID": "US00519",
+	"Name": "University of North Carolina at Asheville",
+	"Location": "Asheville"
+  },
+  {
+	"SchoolID": "US00520",
+	"Name": "Lawrence University",
+	"Location": "Appleton"
+  },
+  {
+	"SchoolID": "US00521",
+	"Name": "St. Lawrence University",
+	"Location": "Canton"
+  },
+  {
+	"SchoolID": "US00522",
+	"Name": "Pittsburg State University",
+	"Location": "Pittsburg"
+  },
+  {
+	"SchoolID": "US00523",
+	"Name": "Rhode Island College",
+	"Location": "Providence"
+  },
+  {
+	"SchoolID": "US00524",
+	"Name": "Tarleton State University",
+	"Location": "Stephenville"
+  },
+  {
+	"SchoolID": "US00525",
+	"Name": "Elmhurst College",
+	"Location": "Elmhurst"
+  },
+  {
+	"SchoolID": "US00526",
+	"Name": "William Paterson University",
+	"Location": "Wayne"
+  },
+  {
+	"SchoolID": "US00527",
+	"Name": "The University of Texas Health Science Center at Houston",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US00528",
+	"Name": "Gordon College",
+	"Location": "Wenham"
+  },
+  {
+	"SchoolID": "US00529",
+	"Name": "Canisius College",
+	"Location": "Buffalo"
+  },
+  {
+	"SchoolID": "US00530",
+	"Name": "University of New Haven",
+	"Location": "West Haven"
+  },
+  {
+	"SchoolID": "US00531",
+	"Name": "SUNY Geneseo",
+	"Location": "Geneseo"
+  },
+  {
+	"SchoolID": "US00532",
+	"Name": "Armstrong Atlantic State University",
+	"Location": "Savannah"
+  },
+  {
+	"SchoolID": "US00533",
+	"Name": "Southeastern Louisiana University",
+	"Location": "Hammond"
+  },
+  {
+	"SchoolID": "US00534",
+	"Name": "School of the Art Institute of Chicago",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00535",
+	"Name": "New York Institute of Technology",
+	"Location": "Old Westbury"
+  },
+  {
+	"SchoolID": "US00536",
+	"Name": "The Richard Stockton College of New Jersey",
+	"Location": "Pomona"
+  },
+  {
+	"SchoolID": "US00537",
+	"Name": "Texas A&M University-Commerce",
+	"Location": "Commerce"
+  },
+  {
+	"SchoolID": "US00538",
+	"Name": "Georgia Regents University",
+	"Location": "Augusta"
+  },
+  {
+	"SchoolID": "US00539",
+	"Name": "Seton Hill University",
+	"Location": "Greensburg"
+  },
+  {
+	"SchoolID": "US00540",
+	"Name": "Murray State University",
+	"Location": "Murray"
+  },
+  {
+	"SchoolID": "US00541",
+	"Name": "California Lutheran University",
+	"Location": "Thousand Oaks"
+  },
+  {
+	"SchoolID": "US00542",
+	"Name": "University of Detroit Mercy",
+	"Location": "Detroit"
+  },
+  {
+	"SchoolID": "US00543",
+	"Name": "Belmont University",
+	"Location": "Nashville"
+  },
+  {
+	"SchoolID": "US00544",
+	"Name": "Winthrop University",
+	"Location": "Rock Hill"
+  },
+  {
+	"SchoolID": "US00545",
+	"Name": "Berry College",
+	"Location": "Mount Berry"
+  },
+  {
+	"SchoolID": "US00546",
+	"Name": "Champlain College",
+	"Location": "Burlington"
+  },
+  {
+	"SchoolID": "US00547",
+	"Name": "Johnson and Wales University",
+	"Location": "Providence"
+  },
+  {
+	"SchoolID": "US00548",
+	"Name": "Hult International Business School",
+	"Location": "Cambridge"
+  },
+  {
+	"SchoolID": "US00549",
+	"Name": "University of Southern Indiana",
+	"Location": "Evansville"
+  },
+  {
+	"SchoolID": "US00550",
+	"Name": "Millersville University of Pennsylvania",
+	"Location": "Millersville"
+  },
+  {
+	"SchoolID": "US00551",
+	"Name": "Saint Leo University",
+	"Location": "Saint Leo"
+  },
+  {
+	"SchoolID": "US00552",
+	"Name": "Berea College",
+	"Location": "Berea"
+  },
+  {
+	"SchoolID": "US00553",
+	"Name": "Saint Mary's College of California",
+	"Location": "Moraga"
+  },
+  {
+	"SchoolID": "US00554",
+	"Name": "Barry University",
+	"Location": "Miami Shores"
+  },
+  {
+	"SchoolID": "US00555",
+	"Name": "Ashland University",
+	"Location": "Ashland"
+  },
+  {
+	"SchoolID": "US00556",
+	"Name": "Florida Agricultural and Mechanical University",
+	"Location": "Tallahassee"
+  },
+  {
+	"SchoolID": "US00557",
+	"Name": "Argosy University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00558",
+	"Name": "Sweet Briar College",
+	"Location": "Sweet Briar"
+  },
+  {
+	"SchoolID": "US00559",
+	"Name": "University of Nebraska at Kearney",
+	"Location": "Kearney"
+  },
+  {
+	"SchoolID": "US00560",
+	"Name": "Longwood University",
+	"Location": "Farmville"
+  },
+  {
+	"SchoolID": "US00561",
+	"Name": "Lesley University",
+	"Location": "Cambridge"
+  },
+  {
+	"SchoolID": "US00562",
+	"Name": "Wabash College",
+	"Location": "Crawfordsville"
+  },
+  {
+	"SchoolID": "US00563",
+	"Name": "Concordia University",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US00564",
+	"Name": "Northwest Missouri State University",
+	"Location": "Maryville"
+  },
+  {
+	"SchoolID": "US00565",
+	"Name": "Georgia College and State University",
+	"Location": "Milledgeville"
+  },
+  {
+	"SchoolID": "US00566",
+	"Name": "La Salle University",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US00567",
+	"Name": "Campbell University",
+	"Location": "Buies Creek"
+  },
+  {
+	"SchoolID": "US00568",
+	"Name": "Kutztown University of Pennsylvania",
+	"Location": "Kutztown"
+  },
+  {
+	"SchoolID": "US00569",
+	"Name": "Messiah College",
+	"Location": "Grantham"
+  },
+  {
+	"SchoolID": "US00570",
+	"Name": "Texas A&M University-Kingsville",
+	"Location": "Kingsville"
+  },
+  {
+	"SchoolID": "US00571",
+	"Name": "North Carolina Central University",
+	"Location": "Durham"
+  },
+  {
+	"SchoolID": "US00572",
+	"Name": "Arcadia University",
+	"Location": "Glenside"
+  },
+  {
+	"SchoolID": "US00573",
+	"Name": "Le Moyne College",
+	"Location": "Syracuse"
+  },
+  {
+	"SchoolID": "US00574",
+	"Name": "Bellevue University",
+	"Location": "Bellevue"
+  },
+  {
+	"SchoolID": "US00575",
+	"Name": "Kean University",
+	"Location": "Union"
+  },
+  {
+	"SchoolID": "US00576",
+	"Name": "Minnesota State University Moorhead",
+	"Location": "Moorhead"
+  },
+  {
+	"SchoolID": "US00577",
+	"Name": "Sacred Heart University",
+	"Location": "Fairfield"
+  },
+  {
+	"SchoolID": "US00578",
+	"Name": "University of Central Oklahoma",
+	"Location": "Edmond"
+  },
+  {
+	"SchoolID": "US00579",
+	"Name": "Tennessee State University",
+	"Location": "Nashville"
+  },
+  {
+	"SchoolID": "US00580",
+	"Name": "Norwich University",
+	"Location": "Northfield"
+  },
+  {
+	"SchoolID": "US00581",
+	"Name": "Southern Oregon University",
+	"Location": "Ashland"
+  },
+  {
+	"SchoolID": "US00582",
+	"Name": "University of Indianapolis",
+	"Location": "Indianapolis"
+  },
+  {
+	"SchoolID": "US00583",
+	"Name": "Arkansas Tech University",
+	"Location": "Russellville"
+  },
+  {
+	"SchoolID": "US00584",
+	"Name": "University of Central Missouri",
+	"Location": "Warrensburg"
+  },
+  {
+	"SchoolID": "US00585",
+	"Name": "Denison University",
+	"Location": "Granville"
+  },
+  {
+	"SchoolID": "US00586",
+	"Name": "Illinois Wesleyan University",
+	"Location": "Bloomington"
+  },
+  {
+	"SchoolID": "US00587",
+	"Name": "National Defense University",
+	"Location": "Fort Lesley J McNair"
+  },
+  {
+	"SchoolID": "US00588",
+	"Name": "Southern Utah University",
+	"Location": "Cedar City"
+  },
+  {
+	"SchoolID": "US00589",
+	"Name": "California State University, Bakersfield",
+	"Location": "Bakersfield"
+  },
+  {
+	"SchoolID": "US00590",
+	"Name": "Mills College",
+	"Location": "Oakland"
+  },
+  {
+	"SchoolID": "US00591",
+	"Name": "Golden Gate University",
+	"Location": "San Francisco"
+  },
+  {
+	"SchoolID": "US00592",
+	"Name": "Augsburg College",
+	"Location": "Minneapolis"
+  },
+  {
+	"SchoolID": "US00593",
+	"Name": "Westmont College",
+	"Location": "Santa Barbara"
+  },
+  {
+	"SchoolID": "US00594",
+	"Name": "Columbia College",
+	"Location": "Columbia"
+  },
+  {
+	"SchoolID": "US00595",
+	"Name": "Jacksonville State University",
+	"Location": "Jacksonville"
+  },
+  {
+	"SchoolID": "US00596",
+	"Name": "Roosevelt University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00597",
+	"Name": "Saint Anselm College",
+	"Location": "Manchester"
+  },
+  {
+	"SchoolID": "US00598",
+	"Name": "Fairfield University",
+	"Location": "Fairfield"
+  },
+  {
+	"SchoolID": "US00599",
+	"Name": "Saint Michael's College",
+	"Location": "Colchester"
+  },
+  {
+	"SchoolID": "US00600",
+	"Name": "University of Mary Washington",
+	"Location": "Fredericksburg"
+  },
+  {
+	"SchoolID": "US00601",
+	"Name": "Harding University",
+	"Location": "Searcy"
+  },
+  {
+	"SchoolID": "US00602",
+	"Name": "University of North Carolina at Pembroke",
+	"Location": "Pembroke"
+  },
+  {
+	"SchoolID": "US00603",
+	"Name": "Roger Williams University",
+	"Location": "Bristol"
+  },
+  {
+	"SchoolID": "US00604",
+	"Name": "Dakota State University",
+	"Location": "Madison"
+  },
+  {
+	"SchoolID": "US00605",
+	"Name": "Rhodes College",
+	"Location": "Memphis"
+  },
+  {
+	"SchoolID": "US00606",
+	"Name": "Kettering University",
+	"Location": "Flint"
+  },
+  {
+	"SchoolID": "US00607",
+	"Name": "Baldwin Wallace University",
+	"Location": "Berea"
+  },
+  {
+	"SchoolID": "US00608",
+	"Name": "Providence College",
+	"Location": "Providence"
+  },
+  {
+	"SchoolID": "US00609",
+	"Name": "Wilkes University",
+	"Location": "Wilkes-Barre"
+  },
+  {
+	"SchoolID": "US00610",
+	"Name": "Purchase College, State University of New York",
+	"Location": "Purchase"
+  },
+  {
+	"SchoolID": "US00611",
+	"Name": "University of Scranton",
+	"Location": "Scranton"
+  },
+  {
+	"SchoolID": "US00612",
+	"Name": "Louisiana State University Health Sciences Center",
+	"Location": "New Orleans"
+  },
+  {
+	"SchoolID": "US00613",
+	"Name": "University of Michigan-Flint",
+	"Location": "Flint"
+  },
+  {
+	"SchoolID": "US00614",
+	"Name": "Claremont McKenna College",
+	"Location": "Claremont"
+  },
+  {
+	"SchoolID": "US00615",
+	"Name": "John Carroll University",
+	"Location": "Cleveland"
+  },
+  {
+	"SchoolID": "US00616",
+	"Name": "Lawrence Technological University",
+	"Location": "Southfield"
+  },
+  {
+	"SchoolID": "US00617",
+	"Name": "Northwest Nazarene University",
+	"Location": "Nampa"
+  },
+  {
+	"SchoolID": "US00618",
+	"Name": "Capital University",
+	"Location": "Columbus"
+  },
+  {
+	"SchoolID": "US00619",
+	"Name": "High Point University",
+	"Location": "High Point"
+  },
+  {
+	"SchoolID": "US00620",
+	"Name": "Maharishi University of Management",
+	"Location": "Fairfield"
+  },
+  {
+	"SchoolID": "US00621",
+	"Name": "University of Houston-Clear Lake",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US00622",
+	"Name": "Elizabethtown College",
+	"Location": "Elizabethtown"
+  },
+  {
+	"SchoolID": "US00623",
+	"Name": "Bastyr University",
+	"Location": "Kenmore"
+  },
+  {
+	"SchoolID": "US00624",
+	"Name": "Park University",
+	"Location": "Parkville"
+  },
+  {
+	"SchoolID": "US00625",
+	"Name": "Saint Mary's University of Minnesota",
+	"Location": "Winona"
+  },
+  {
+	"SchoolID": "US00626",
+	"Name": "North Park University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00627",
+	"Name": "Drury University",
+	"Location": "Springfield"
+  },
+  {
+	"SchoolID": "US00628",
+	"Name": "Touro College",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00629",
+	"Name": "St. Catherine University",
+	"Location": "St. Paul"
+  },
+  {
+	"SchoolID": "US00630",
+	"Name": "Lake Superior State University",
+	"Location": "Sault Ste. Marie"
+  },
+  {
+	"SchoolID": "US00631",
+	"Name": "Ohio Northern University",
+	"Location": "Ada"
+  },
+  {
+	"SchoolID": "US00632",
+	"Name": "Goshen College",
+	"Location": "Goshen"
+  },
+  {
+	"SchoolID": "US00633",
+	"Name": "George Fox University",
+	"Location": "Newberg"
+  },
+  {
+	"SchoolID": "US00634",
+	"Name": "University of Hawaii at Manoa",
+	"Location": "Honolulu"
+  },
+  {
+	"SchoolID": "US00635",
+	"Name": "Salem State University",
+	"Location": "Salem"
+  },
+  {
+	"SchoolID": "US00636",
+	"Name": "University of Southern Maine",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US00637",
+	"Name": "Southern Connecticut State University",
+	"Location": "New Haven"
+  },
+  {
+	"SchoolID": "US00638",
+	"Name": "University of Redlands",
+	"Location": "Redlands"
+  },
+  {
+	"SchoolID": "US00639",
+	"Name": "Olivet Nazarene University",
+	"Location": "Bourbonnais"
+  },
+  {
+	"SchoolID": "US00640",
+	"Name": "Carson-Newman College",
+	"Location": "Jefferson City"
+  },
+  {
+	"SchoolID": "US00641",
+	"Name": "Kalamazoo College",
+	"Location": "Kalamazoo"
+  },
+  {
+	"SchoolID": "US00642",
+	"Name": "The Citadel, The Military College of South Carolina",
+	"Location": "Charleston"
+  },
+  {
+	"SchoolID": "US00643",
+	"Name": "University of Portland",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US00644",
+	"Name": "Saginaw Valley State University",
+	"Location": "University Center"
+  },
+  {
+	"SchoolID": "US00645",
+	"Name": "Albion College",
+	"Location": "Albion"
+  },
+  {
+	"SchoolID": "US00646",
+	"Name": "Bernard M Baruch College, CUNY",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00647",
+	"Name": "Morgan State University",
+	"Location": "Baltimore"
+  },
+  {
+	"SchoolID": "US00648",
+	"Name": "Concordia University Wisconsin",
+	"Location": "Mequon"
+  },
+  {
+	"SchoolID": "US00649",
+	"Name": "University of the District of Columbia",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US00650",
+	"Name": "SUNY Downstate Medical Center",
+	"Location": "Brooklyn"
+  },
+  {
+	"SchoolID": "US00651",
+	"Name": "Washington College",
+	"Location": "Chestertown"
+  },
+  {
+	"SchoolID": "US00652",
+	"Name": "Colorado Christian University",
+	"Location": "Lakewood"
+  },
+  {
+	"SchoolID": "US00653",
+	"Name": "State University of New York at Fredonia",
+	"Location": "Fredonia"
+  },
+  {
+	"SchoolID": "US00654",
+	"Name": "University of Wisconsin-Platteville",
+	"Location": "Platteville"
+  },
+  {
+	"SchoolID": "US00655",
+	"Name": "Lynn University",
+	"Location": "Boca Raton"
+  },
+  {
+	"SchoolID": "US00656",
+	"Name": "Ramapo College of New Jersey",
+	"Location": "Mahwah"
+  },
+  {
+	"SchoolID": "US00657",
+	"Name": "Southwestern University",
+	"Location": "Georgetown"
+  },
+  {
+	"SchoolID": "US00658",
+	"Name": "Angelo State University",
+	"Location": "San Angelo"
+  },
+  {
+	"SchoolID": "US00659",
+	"Name": "Philadelphia University",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US00660",
+	"Name": "Susquehanna University",
+	"Location": "Selinsgrove"
+  },
+  {
+	"SchoolID": "US00661",
+	"Name": "Slippery Rock University of Pennsylvania",
+	"Location": "Slippery Rock"
+  },
+  {
+	"SchoolID": "US00662",
+	"Name": "The University of Texas at Tyler",
+	"Location": "Tyler"
+  },
+  {
+	"SchoolID": "US00663",
+	"Name": "Hendrix College",
+	"Location": "Conway"
+  },
+  {
+	"SchoolID": "US00664",
+	"Name": "Virginia Military Institute",
+	"Location": "Lexington"
+  },
+  {
+	"SchoolID": "US00665",
+	"Name": "University of California, Hastings College of the Law",
+	"Location": "San Francisco"
+  },
+  {
+	"SchoolID": "US00666",
+	"Name": "McDaniel College",
+	"Location": "Westminster"
+  },
+  {
+	"SchoolID": "US00667",
+	"Name": "California State University Channel Islands",
+	"Location": "Camarillo"
+  },
+  {
+	"SchoolID": "US00668",
+	"Name": "California Institute of Integral Studies",
+	"Location": "San Francisco"
+  },
+  {
+	"SchoolID": "US00669",
+	"Name": "Western Connecticut State University",
+	"Location": "Danbury"
+  },
+  {
+	"SchoolID": "US00670",
+	"Name": "Mississippi College",
+	"Location": "Clinton"
+  },
+  {
+	"SchoolID": "US00671",
+	"Name": "Oregon Institute of Technology",
+	"Location": "Klamath Falls"
+  },
+  {
+	"SchoolID": "US00672",
+	"Name": "Bellarmine University",
+	"Location": "Louisville"
+  },
+  {
+	"SchoolID": "US00673",
+	"Name": "Marietta College",
+	"Location": "Marietta"
+  },
+  {
+	"SchoolID": "US00674",
+	"Name": "Bryant University",
+	"Location": "Smithfield"
+  },
+  {
+	"SchoolID": "US00675",
+	"Name": "Sarah Lawrence College",
+	"Location": "Bronxville"
+  },
+  {
+	"SchoolID": "US00676",
+	"Name": "St. Mary's University",
+	"Location": "San Antonio"
+  },
+  {
+	"SchoolID": "US00677",
+	"Name": "Washburn University",
+	"Location": "Topeka"
+  },
+  {
+	"SchoolID": "US00678",
+	"Name": "The University of the Arts",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US00679",
+	"Name": "Fort Lewis College",
+	"Location": "Durango"
+  },
+  {
+	"SchoolID": "US00680",
+	"Name": "Franklin University",
+	"Location": "Columbus"
+  },
+  {
+	"SchoolID": "US00681",
+	"Name": "Chatham University",
+	"Location": "Pittsburgh"
+  },
+  {
+	"SchoolID": "US00682",
+	"Name": "Winona State University",
+	"Location": "Winona"
+  },
+  {
+	"SchoolID": "US00683",
+	"Name": "University of Wisconsin-Parkside",
+	"Location": "Kenosha"
+  },
+  {
+	"SchoolID": "US00684",
+	"Name": "Siena College",
+	"Location": "Loudonville"
+  },
+  {
+	"SchoolID": "US00685",
+	"Name": "Assumption College",
+	"Location": "Worcester"
+  },
+  {
+	"SchoolID": "US00686",
+	"Name": "Sewanee: The University of the South",
+	"Location": "Sewanee"
+  },
+  {
+	"SchoolID": "US00687",
+	"Name": "Luther College",
+	"Location": "Decorah"
+  },
+  {
+	"SchoolID": "US00688",
+	"Name": "Clayton State University",
+	"Location": "Morrow"
+  },
+  {
+	"SchoolID": "US00689",
+	"Name": "National-Louis University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00690",
+	"Name": "Edinboro University of Pennsylvania",
+	"Location": "Edinboro"
+  },
+  {
+	"SchoolID": "US00691",
+	"Name": "Gustavus Adolphus College",
+	"Location": "St. Peter"
+  },
+  {
+	"SchoolID": "US00692",
+	"Name": "University of Wisconsin-River Falls",
+	"Location": "River Falls"
+  },
+  {
+	"SchoolID": "US00693",
+	"Name": "University of Puget Sound",
+	"Location": "Tacoma"
+  },
+  {
+	"SchoolID": "US00694",
+	"Name": "Wofford College",
+	"Location": "Spartanburg"
+  },
+  {
+	"SchoolID": "US00695",
+	"Name": "Jacksonville University",
+	"Location": "Jacksonville"
+  },
+  {
+	"SchoolID": "US00696",
+	"Name": "The University of Findlay",
+	"Location": "Findlay"
+  },
+  {
+	"SchoolID": "US00697",
+	"Name": "Oral Roberts University",
+	"Location": "Tulsa"
+  },
+  {
+	"SchoolID": "US00698",
+	"Name": "University of Louisiana at Monroe",
+	"Location": "Monroe"
+  },
+  {
+	"SchoolID": "US00699",
+	"Name": "University of North Alabama",
+	"Location": "Florence"
+  },
+  {
+	"SchoolID": "US00700",
+	"Name": "Muhlenberg College",
+	"Location": "Allentown"
+  },
+  {
+	"SchoolID": "US00701",
+	"Name": "Dixie State University",
+	"Location": "St. George"
+  },
+  {
+	"SchoolID": "US00702",
+	"Name": "Benedictine University",
+	"Location": "Lisle"
+  },
+  {
+	"SchoolID": "US00703",
+	"Name": "Northwood University",
+	"Location": "Midland"
+  },
+  {
+	"SchoolID": "US00704",
+	"Name": "Juniata College",
+	"Location": "Huntingdon"
+  },
+  {
+	"SchoolID": "US00705",
+	"Name": "Spelman College",
+	"Location": "Atlanta"
+  },
+  {
+	"SchoolID": "US00706",
+	"Name": "St. Bonaventure University",
+	"Location": "St. Bonaventure"
+  },
+  {
+	"SchoolID": "US00707",
+	"Name": "Concordia University, Saint Paul",
+	"Location": "St. Paul"
+  },
+  {
+	"SchoolID": "US00708",
+	"Name": "Moody Bible Institute",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00709",
+	"Name": "Davenport University",
+	"Location": "Grand Rapids"
+  },
+  {
+	"SchoolID": "US00710",
+	"Name": "Northeastern State University",
+	"Location": "Tahlequah"
+  },
+  {
+	"SchoolID": "US00711",
+	"Name": "Hawaii Pacific University",
+	"Location": "Honolulu"
+  },
+  {
+	"SchoolID": "US00712",
+	"Name": "Niagara University",
+	"Location": "Lewiston"
+  },
+  {
+	"SchoolID": "US00713",
+	"Name": "Knox College",
+	"Location": "Galesburg"
+  },
+  {
+	"SchoolID": "US00714",
+	"Name": "Eckerd College",
+	"Location": "St. Petersburg"
+  },
+  {
+	"SchoolID": "US00715",
+	"Name": "The University of Tampa",
+	"Location": "Tampa"
+  },
+  {
+	"SchoolID": "US00716",
+	"Name": "University of Dallas",
+	"Location": "Irving"
+  },
+  {
+	"SchoolID": "US00717",
+	"Name": "Brigham Young University-Hawaii",
+	"Location": "Laie"
+  },
+  {
+	"SchoolID": "US00718",
+	"Name": "Eastern New Mexico University",
+	"Location": "Portales"
+  },
+  {
+	"SchoolID": "US00719",
+	"Name": "Hunter College, CUNY",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00720",
+	"Name": "Utica College",
+	"Location": "Utica"
+  },
+  {
+	"SchoolID": "US00721",
+	"Name": "Hampton University",
+	"Location": "Hampton"
+  },
+  {
+	"SchoolID": "US00722",
+	"Name": "University of the Ozarks",
+	"Location": "Clarksville"
+  },
+  {
+	"SchoolID": "US00723",
+	"Name": "Pennsylvania College of Technology",
+	"Location": "Williamsport"
+  },
+  {
+	"SchoolID": "US00724",
+	"Name": "Muskingum University",
+	"Location": "New Concord"
+  },
+  {
+	"SchoolID": "US00725",
+	"Name": "Purdue University Northwest",
+	"Location": "Hammond"
+  },
+  {
+	"SchoolID": "US00726",
+	"Name": "Lewis University",
+	"Location": "Romeoville"
+  },
+  {
+	"SchoolID": "US00727",
+	"Name": "University of Mississippi Medical Center",
+	"Location": "Jackson"
+  },
+  {
+	"SchoolID": "US00728",
+	"Name": "The College of St. Scholastica",
+	"Location": "Duluth"
+  },
+  {
+	"SchoolID": "US00729",
+	"Name": "Lander University",
+	"Location": "Greenwood"
+  },
+  {
+	"SchoolID": "US00730",
+	"Name": "The College at Brockport",
+	"Location": "Brockport"
+  },
+  {
+	"SchoolID": "US00731",
+	"Name": "Midwestern State University",
+	"Location": "Wichita Falls"
+  },
+  {
+	"SchoolID": "US00732",
+	"Name": "Hood College",
+	"Location": "Frederick"
+  },
+  {
+	"SchoolID": "US00733",
+	"Name": "Dallas Baptist University",
+	"Location": "Dallas"
+  },
+  {
+	"SchoolID": "US00734",
+	"Name": "Lindenwood University",
+	"Location": "St. Charles"
+  },
+  {
+	"SchoolID": "US00735",
+	"Name": "Wheelock College",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US00736",
+	"Name": "Northwestern State University of Louisiana",
+	"Location": "Natchitoches"
+  },
+  {
+	"SchoolID": "US00737",
+	"Name": "Christian Brothers University",
+	"Location": "Memphis"
+  },
+  {
+	"SchoolID": "US00738",
+	"Name": "LeTourneau University",
+	"Location": "Longview"
+  },
+  {
+	"SchoolID": "US00739",
+	"Name": "South Dakota School of Mines and Technology",
+	"Location": "Rapid City"
+  },
+  {
+	"SchoolID": "US00740",
+	"Name": "Oklahoma City University",
+	"Location": "Oklahoma City"
+  },
+  {
+	"SchoolID": "US00741",
+	"Name": "Fresno Pacific University",
+	"Location": "Fresno"
+  },
+  {
+	"SchoolID": "US00742",
+	"Name": "St. John Fisher College",
+	"Location": "Rochester"
+  },
+  {
+	"SchoolID": "US00743",
+	"Name": "Eastern Mennonite University",
+	"Location": "Harrisonburg"
+  },
+  {
+	"SchoolID": "US00744",
+	"Name": "Tuskegee University",
+	"Location": "Tuskegee"
+  },
+  {
+	"SchoolID": "US00745",
+	"Name": "Keene State College",
+	"Location": "Keene"
+  },
+  {
+	"SchoolID": "US00746",
+	"Name": "Wentworth Institute of Technology",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US00747",
+	"Name": "Bob Jones University",
+	"Location": "Greenville"
+  },
+  {
+	"SchoolID": "US00748",
+	"Name": "Texas Southern University",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US00749",
+	"Name": "Saint Ambrose University",
+	"Location": "Davenport"
+  },
+  {
+	"SchoolID": "US00750",
+	"Name": "Linfield College",
+	"Location": "McMinnville"
+  },
+  {
+	"SchoolID": "US00751",
+	"Name": "Thunderbird School of Global Management",
+	"Location": "Glendale"
+  },
+  {
+	"SchoolID": "US00752",
+	"Name": "Jackson State University",
+	"Location": "Jackson"
+  },
+  {
+	"SchoolID": "US00753",
+	"Name": "Brooklyn College",
+	"Location": "Brooklyn"
+  },
+  {
+	"SchoolID": "US00754",
+	"Name": "Clark Atlanta University",
+	"Location": "Atlanta"
+  },
+  {
+	"SchoolID": "US00755",
+	"Name": "The Graduate Center, CUNY",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00756",
+	"Name": "Naropa University",
+	"Location": "Boulder"
+  },
+  {
+	"SchoolID": "US00757",
+	"Name": "Whittier College",
+	"Location": "Whittier"
+  },
+  {
+	"SchoolID": "US00758",
+	"Name": "Concordia University",
+	"Location": "Irvine"
+  },
+  {
+	"SchoolID": "US00759",
+	"Name": "University of La Verne",
+	"Location": "La Verne"
+  },
+  {
+	"SchoolID": "US00760",
+	"Name": "McNeese State University",
+	"Location": "Lake Charles"
+  },
+  {
+	"SchoolID": "US00761",
+	"Name": "D'Youville College",
+	"Location": "Buffalo"
+  },
+  {
+	"SchoolID": "US00762",
+	"Name": "Otis College of Art and Design",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US00763",
+	"Name": "University of North Georgia",
+	"Location": "Dahlonega"
+  },
+  {
+	"SchoolID": "US00764",
+	"Name": "Prairie View A&M University",
+	"Location": "Prairie View"
+  },
+  {
+	"SchoolID": "US00765",
+	"Name": "Augustana College",
+	"Location": "Sioux Falls"
+  },
+  {
+	"SchoolID": "US00766",
+	"Name": "Aurora University",
+	"Location": "Aurora"
+  },
+  {
+	"SchoolID": "US00767",
+	"Name": "New Jersey City University",
+	"Location": "Jersey City"
+  },
+  {
+	"SchoolID": "US00768",
+	"Name": "Edgewood College",
+	"Location": "Madison"
+  },
+  {
+	"SchoolID": "US00769",
+	"Name": "Western University of Health Sciences",
+	"Location": "Pomona"
+  },
+  {
+	"SchoolID": "US00770",
+	"Name": "Winston-Salem State University",
+	"Location": "Winston Salem"
+  },
+  {
+	"SchoolID": "US00771",
+	"Name": "Ursinus College",
+	"Location": "Collegeville"
+  },
+  {
+	"SchoolID": "US00772",
+	"Name": "Grove City College",
+	"Location": "Grove City"
+  },
+  {
+	"SchoolID": "US00773",
+	"Name": "New York Law School",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00774",
+	"Name": "The John Marshall Law School",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00775",
+	"Name": "Fayetteville State University",
+	"Location": "Fayetteville"
+  },
+  {
+	"SchoolID": "US00776",
+	"Name": "Millikin University",
+	"Location": "Decatur"
+  },
+  {
+	"SchoolID": "US00777",
+	"Name": "Lewis-Clark State College",
+	"Location": "Lewiston"
+  },
+  {
+	"SchoolID": "US00778",
+	"Name": "Oklahoma Christian University",
+	"Location": "Edmond"
+  },
+  {
+	"SchoolID": "US00779",
+	"Name": "Carthage College",
+	"Location": "Kenosha"
+  },
+  {
+	"SchoolID": "US00780",
+	"Name": "University of Alaska Anchorage",
+	"Location": "Anchorage"
+  },
+  {
+	"SchoolID": "US00781",
+	"Name": "Lehman College, CUNY",
+	"Location": "The Bronx"
+  },
+  {
+	"SchoolID": "US00782",
+	"Name": "National American University",
+	"Location": "Rapid City"
+  },
+  {
+	"SchoolID": "US00783",
+	"Name": "St. Norbert College",
+	"Location": "De Pere"
+  },
+  {
+	"SchoolID": "US00784",
+	"Name": "Berkeley College",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00785",
+	"Name": "Auburn University at Montgomery",
+	"Location": "Montgomery"
+  },
+  {
+	"SchoolID": "US00786",
+	"Name": "Southern Nazarene University",
+	"Location": "Bethany"
+  },
+  {
+	"SchoolID": "US00787",
+	"Name": "Allegheny College",
+	"Location": "Meadville"
+  },
+  {
+	"SchoolID": "US00788",
+	"Name": "The City College of New York",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00789",
+	"Name": "John Jay College of Criminal Justice",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00790",
+	"Name": "Concordia College",
+	"Location": "Moorhead"
+  },
+  {
+	"SchoolID": "US00791",
+	"Name": "University of Houston-Downtown",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US00792",
+	"Name": "Morehead State University",
+	"Location": "Morehead"
+  },
+  {
+	"SchoolID": "US00793",
+	"Name": "Minneapolis College of Art and Design",
+	"Location": "Minneapolis"
+  },
+  {
+	"SchoolID": "US00794",
+	"Name": "Dowling College",
+	"Location": "Oakdale"
+  },
+  {
+	"SchoolID": "US00795",
+	"Name": "St. Mary's College of Maryland",
+	"Location": "St. Mary's City"
+  },
+  {
+	"SchoolID": "US00796",
+	"Name": "The University of Tennessee Health Science Center",
+	"Location": "Memphis"
+  },
+  {
+	"SchoolID": "US00797",
+	"Name": "Marymount University",
+	"Location": "Arlington"
+  },
+  {
+	"SchoolID": "US00798",
+	"Name": "Salve Regina University",
+	"Location": "Newport"
+  },
+  {
+	"SchoolID": "US00799",
+	"Name": "Cornell College",
+	"Location": "Mount Vernon"
+  },
+  {
+	"SchoolID": "US00800",
+	"Name": "Alabama A&M University",
+	"Location": "Normal"
+  },
+  {
+	"SchoolID": "US00801",
+	"Name": "Governors State University",
+	"Location": "University Park"
+  },
+  {
+	"SchoolID": "US00802",
+	"Name": "Alabama State University",
+	"Location": "Montgomery"
+  },
+  {
+	"SchoolID": "US00803",
+	"Name": "Iona College",
+	"Location": "New Rochelle"
+  },
+  {
+	"SchoolID": "US00804",
+	"Name": "Xavier University of Louisiana",
+	"Location": "New Orleans"
+  },
+  {
+	"SchoolID": "US00805",
+	"Name": "Saint Xavier University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00806",
+	"Name": "University of St. Francis",
+	"Location": "Joliet"
+  },
+  {
+	"SchoolID": "US00807",
+	"Name": "Northern State University",
+	"Location": "Aberdeen"
+  },
+  {
+	"SchoolID": "US00808",
+	"Name": "University of Saint Joseph",
+	"Location": "West Hartford"
+  },
+  {
+	"SchoolID": "US00809",
+	"Name": "Alliant International University",
+	"Location": "San Francisco"
+  },
+  {
+	"SchoolID": "US00810",
+	"Name": "Christopher Newport University",
+	"Location": "Newport News"
+  },
+  {
+	"SchoolID": "US00811",
+	"Name": "Midwestern University",
+	"Location": "Downers Grove"
+  },
+  {
+	"SchoolID": "US00812",
+	"Name": "Wilmington University",
+	"Location": "New Castle"
+  },
+  {
+	"SchoolID": "US00813",
+	"Name": "York College of Pennsylvania",
+	"Location": "York"
+  },
+  {
+	"SchoolID": "US00814",
+	"Name": "Vermont Law School",
+	"Location": "South Royalton"
+  },
+  {
+	"SchoolID": "US00815",
+	"Name": "Montana Tech",
+	"Location": "Butte"
+  },
+  {
+	"SchoolID": "US00816",
+	"Name": "University of the Incarnate Word",
+	"Location": "San Antonio"
+  },
+  {
+	"SchoolID": "US00817",
+	"Name": "East Stroudsburg University",
+	"Location": "East Stroudsburg"
+  },
+  {
+	"SchoolID": "US00818",
+	"Name": "Franklin W. Olin College of Engineering",
+	"Location": "Needham"
+  },
+  {
+	"SchoolID": "US00819",
+	"Name": "Wittenberg University",
+	"Location": "Springfield"
+  },
+  {
+	"SchoolID": "US00820",
+	"Name": "Hollins University",
+	"Location": "Roanoke"
+  },
+  {
+	"SchoolID": "US00821",
+	"Name": "Flagler College",
+	"Location": "St. Augustine"
+  },
+  {
+	"SchoolID": "US00822",
+	"Name": "SIT Graduate Institute",
+	"Location": "Brattleboro"
+  },
+  {
+	"SchoolID": "US00823",
+	"Name": "Virginia State University",
+	"Location": "Petersburg"
+  },
+  {
+	"SchoolID": "US00824",
+	"Name": "Chicago State University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US00825",
+	"Name": "Manhattan College",
+	"Location": "The Bronx"
+  },
+  {
+	"SchoolID": "US00826",
+	"Name": "Lincoln Memorial University",
+	"Location": "Harrogate"
+  },
+  {
+	"SchoolID": "US00827",
+	"Name": "Otterbein University",
+	"Location": "Westerville"
+  },
+  {
+	"SchoolID": "US00828",
+	"Name": "Southwestern College",
+	"Location": "Winfield"
+  },
+  {
+	"SchoolID": "US00829",
+	"Name": "The University of Texas at Brownsville",
+	"Location": "Brownsville"
+  },
+  {
+	"SchoolID": "US00830",
+	"Name": "Stonehill College",
+	"Location": "Easton"
+  },
+  {
+	"SchoolID": "US00831",
+	"Name": "Guilford College",
+	"Location": "Greensboro"
+  },
+  {
+	"SchoolID": "US00832",
+	"Name": "Westminster College",
+	"Location": "Salt Lake City"
+  },
+  {
+	"SchoolID": "US00833",
+	"Name": "Lebanon Valley College",
+	"Location": "Annville"
+  },
+  {
+	"SchoolID": "US00834",
+	"Name": "Eastern Oregon University",
+	"Location": "La Grande"
+  },
+  {
+	"SchoolID": "US00835",
+	"Name": "University of Wisconsin-Superior",
+	"Location": "Superior"
+  },
+  {
+	"SchoolID": "US00836",
+	"Name": "Eastern Connecticut State University",
+	"Location": "Willimantic"
+  },
+  {
+	"SchoolID": "US00837",
+	"Name": "City University of Seattle",
+	"Location": "Bellevue"
+  },
+  {
+	"SchoolID": "US00838",
+	"Name": "DeSales University",
+	"Location": "Center Valley"
+  },
+  {
+	"SchoolID": "US00839",
+	"Name": "Robert Morris University",
+	"Location": "Moon Township"
+  },
+  {
+	"SchoolID": "US00840",
+	"Name": "Birmingham-Southern College",
+	"Location": "Birmingham"
+  },
+  {
+	"SchoolID": "US00841",
+	"Name": "Delaware State University",
+	"Location": "Dover"
+  },
+  {
+	"SchoolID": "US00842",
+	"Name": "Roanoke College",
+	"Location": "Salem"
+  },
+  {
+	"SchoolID": "US00843",
+	"Name": "Queens University of Charlotte",
+	"Location": "Charlotte"
+  },
+  {
+	"SchoolID": "US00844",
+	"Name": "Oglethorpe University",
+	"Location": "Atlanta"
+  },
+  {
+	"SchoolID": "US00845",
+	"Name": "Bennington College",
+	"Location": "Bennington"
+  },
+  {
+	"SchoolID": "US00846",
+	"Name": "Bridgewater College",
+	"Location": "Bridgewater"
+  },
+  {
+	"SchoolID": "US00847",
+	"Name": "Marywood University",
+	"Location": "Scranton"
+  },
+  {
+	"SchoolID": "US00848",
+	"Name": "Lipscomb University",
+	"Location": "Nashville"
+  },
+  {
+	"SchoolID": "US00849",
+	"Name": "Shenandoah University",
+	"Location": "Winchester"
+  },
+  {
+	"SchoolID": "US00850",
+	"Name": "Ringling College of Art and Design",
+	"Location": "Sarasota"
+  },
+  {
+	"SchoolID": "US00851",
+	"Name": "Penn State College of Medicine",
+	"Location": "Hershey"
+  },
+  {
+	"SchoolID": "US00852",
+	"Name": "Union University",
+	"Location": "Jackson"
+  },
+  {
+	"SchoolID": "US00853",
+	"Name": "United States Merchant Marine Academy",
+	"Location": "Kings Point"
+  },
+  {
+	"SchoolID": "US00854",
+	"Name": "John Brown University",
+	"Location": "Siloam Springs"
+  },
+  {
+	"SchoolID": "US00855",
+	"Name": "Dominican University",
+	"Location": "River Forest"
+  },
+  {
+	"SchoolID": "US00856",
+	"Name": "Wheaton College",
+	"Location": "Norton"
+  },
+  {
+	"SchoolID": "US00857",
+	"Name": "Alverno College",
+	"Location": "Milwaukee"
+  },
+  {
+	"SchoolID": "US00858",
+	"Name": "Centenary College of Louisiana",
+	"Location": "Shreveport"
+  },
+  {
+	"SchoolID": "US00859",
+	"Name": "Hampden-Sydney College",
+	"Location": "Hampden-Sydney"
+  },
+  {
+	"SchoolID": "US00860",
+	"Name": "Springfield College",
+	"Location": "Springfield"
+  },
+  {
+	"SchoolID": "US00861",
+	"Name": "La Sierra University",
+	"Location": "Riverside"
+  },
+  {
+	"SchoolID": "US00862",
+	"Name": "Henderson State University",
+	"Location": "Arkadelphia"
+  },
+  {
+	"SchoolID": "US00863",
+	"Name": "Lynchburg College",
+	"Location": "Lynchburg"
+  },
+  {
+	"SchoolID": "US00864",
+	"Name": "Indiana University South Bend",
+	"Location": "South Bend"
+  },
+  {
+	"SchoolID": "US00865",
+	"Name": "King's College",
+	"Location": "Wilkes Barre"
+  },
+  {
+	"SchoolID": "US00866",
+	"Name": "Manchester College",
+	"Location": "North Manchester"
+  },
+  {
+	"SchoolID": "US00867",
+	"Name": "Upper Iowa University",
+	"Location": "Fayette"
+  },
+  {
+	"SchoolID": "US00868",
+	"Name": "Ohio Wesleyan University",
+	"Location": "Delaware"
+  },
+  {
+	"SchoolID": "US00869",
+	"Name": "Florida Southern College",
+	"Location": "Lakeland"
+  },
+  {
+	"SchoolID": "US00870",
+	"Name": "Simpson College",
+	"Location": "Indianola"
+  },
+  {
+	"SchoolID": "US00871",
+	"Name": "Fisk University",
+	"Location": "Nashville"
+  },
+  {
+	"SchoolID": "US00872",
+	"Name": "Anderson University",
+	"Location": "Anderson"
+  },
+  {
+	"SchoolID": "US00873",
+	"Name": "Mercyhurst College",
+	"Location": "Erie"
+  },
+  {
+	"SchoolID": "US00874",
+	"Name": "Carroll College",
+	"Location": "Helena"
+  },
+  {
+	"SchoolID": "US00875",
+	"Name": "Southern Arkansas University",
+	"Location": "Magnolia"
+  },
+  {
+	"SchoolID": "US00876",
+	"Name": "Adams State College",
+	"Location": "Alamosa"
+  },
+  {
+	"SchoolID": "US00877",
+	"Name": "Saint Mary's College",
+	"Location": "Notre Dame"
+  },
+  {
+	"SchoolID": "US00878",
+	"Name": "The University of Texas-Pan American",
+	"Location": "Edinburg"
+  },
+  {
+	"SchoolID": "US00879",
+	"Name": "University of Maryland Eastern Shore",
+	"Location": "Princess Anne"
+  },
+  {
+	"SchoolID": "US00880",
+	"Name": "Gannon University",
+	"Location": "Erie"
+  },
+  {
+	"SchoolID": "US00881",
+	"Name": "Keiser University",
+	"Location": "Daytona Beach"
+  },
+  {
+	"SchoolID": "US00882",
+	"Name": "Mount St. Mary's University",
+	"Location": "Emmitsburg"
+  },
+  {
+	"SchoolID": "US00883",
+	"Name": "Hartwick College",
+	"Location": "Oneonta"
+  },
+  {
+	"SchoolID": "US00884",
+	"Name": "Maryville University",
+	"Location": "St. Louis"
+  },
+  {
+	"SchoolID": "US00885",
+	"Name": "Austin College",
+	"Location": "Sherman"
+  },
+  {
+	"SchoolID": "US00886",
+	"Name": "Boston Architectural College",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US00887",
+	"Name": "Texas A&M International University",
+	"Location": "Laredo"
+  },
+  {
+	"SchoolID": "US00888",
+	"Name": "Cameron University",
+	"Location": "Lawton"
+  },
+  {
+	"SchoolID": "US00889",
+	"Name": "Eastern University",
+	"Location": "St. Davids"
+  },
+  {
+	"SchoolID": "US00890",
+	"Name": "Concordia University Chicago",
+	"Location": "River Forest"
+  },
+  {
+	"SchoolID": "US00891",
+	"Name": "Coe College",
+	"Location": "Cedar Rapids"
+  },
+  {
+	"SchoolID": "US00892",
+	"Name": "University of Northwestern - St. Paul",
+	"Location": "St. Paul"
+  },
+  {
+	"SchoolID": "US00893",
+	"Name": "Spring Hill College",
+	"Location": "Mobile"
+  },
+  {
+	"SchoolID": "US00894",
+	"Name": "Nebraska Wesleyan University",
+	"Location": "Lincoln"
+  },
+  {
+	"SchoolID": "US00895",
+	"Name": "Palm Beach Atlantic University",
+	"Location": "West Palm Beach"
+  },
+  {
+	"SchoolID": "US00896",
+	"Name": "Columbus State University",
+	"Location": "Columbus"
+  },
+  {
+	"SchoolID": "US00897",
+	"Name": "Dordt College",
+	"Location": "Sioux Center"
+  },
+  {
+	"SchoolID": "US00898",
+	"Name": "Western New Mexico University",
+	"Location": "Silver City"
+  },
+  {
+	"SchoolID": "US00899",
+	"Name": "Nazareth College",
+	"Location": "Rochester"
+  },
+  {
+	"SchoolID": "US00900",
+	"Name": "Millsaps College",
+	"Location": "Jackson"
+  },
+  {
+	"SchoolID": "US00901",
+	"Name": "Our Lady of the Lake University",
+	"Location": "San Antonio"
+  },
+  {
+	"SchoolID": "US00902",
+	"Name": "Cleveland Institute of Art",
+	"Location": "Cleveland"
+  },
+  {
+	"SchoolID": "US00903",
+	"Name": "Western State Colorado University",
+	"Location": "Gunnison"
+  },
+  {
+	"SchoolID": "US00904",
+	"Name": "Everest University",
+	"Location": "Tampa"
+  },
+  {
+	"SchoolID": "US00905",
+	"Name": "SUNY College of Technology at Alfred",
+	"Location": "Alfred"
+  },
+  {
+	"SchoolID": "US00906",
+	"Name": "Indiana University Southeast",
+	"Location": "New Albany"
+  },
+  {
+	"SchoolID": "US00907",
+	"Name": "Montana State University Billings",
+	"Location": "Billings"
+  },
+  {
+	"SchoolID": "US00908",
+	"Name": "Bemidji State University",
+	"Location": "Bemidji"
+  },
+  {
+	"SchoolID": "US00909",
+	"Name": "Antioch University",
+	"Location": "Yellow Springs"
+  },
+  {
+	"SchoolID": "US00910",
+	"Name": "Stevenson University",
+	"Location": "Stevenson"
+  },
+  {
+	"SchoolID": "US00911",
+	"Name": "Ottawa University",
+	"Location": "Ottawa"
+  },
+  {
+	"SchoolID": "US00912",
+	"Name": "Colorado Mesa University",
+	"Location": "Grand Junction"
+  },
+  {
+	"SchoolID": "US00913",
+	"Name": "Marylhurst University",
+	"Location": "Marylhurst"
+  },
+  {
+	"SchoolID": "US00914",
+	"Name": "Louisiana State University in Shreveport",
+	"Location": "Shreveport"
+  },
+  {
+	"SchoolID": "US00915",
+	"Name": "University of St. Thomas",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US00916",
+	"Name": "Saint Martin's University",
+	"Location": "Lacey"
+  },
+  {
+	"SchoolID": "US00917",
+	"Name": "Bowie State University",
+	"Location": "Bowie"
+  },
+  {
+	"SchoolID": "US00918",
+	"Name": "Western New England University",
+	"Location": "Springfield"
+  },
+  {
+	"SchoolID": "US00919",
+	"Name": "Indiana University Northwest",
+	"Location": "Gary"
+  },
+  {
+	"SchoolID": "US00920",
+	"Name": "Lycoming College",
+	"Location": "Williamsport"
+  },
+  {
+	"SchoolID": "US00921",
+	"Name": "Moravian College",
+	"Location": "Bethlehem"
+  },
+  {
+	"SchoolID": "US00922",
+	"Name": "Missouri Valley College",
+	"Location": "Marshall"
+  },
+  {
+	"SchoolID": "US00923",
+	"Name": "California Maritime Academy",
+	"Location": "Vallejo"
+  },
+  {
+	"SchoolID": "US00924",
+	"Name": "Meredith College",
+	"Location": "Raleigh"
+  },
+  {
+	"SchoolID": "US00925",
+	"Name": "Marlboro College",
+	"Location": "Marlboro"
+  },
+  {
+	"SchoolID": "US00926",
+	"Name": "Asbury University",
+	"Location": "Wilmore"
+  },
+  {
+	"SchoolID": "US00927",
+	"Name": "Rockhurst University",
+	"Location": "Kansas City"
+  },
+  {
+	"SchoolID": "US00928",
+	"Name": "Brooklyn Law School",
+	"Location": "Brooklyn"
+  },
+  {
+	"SchoolID": "US00929",
+	"Name": "The College of Saint Rose",
+	"Location": "Albany"
+  },
+  {
+	"SchoolID": "US00930",
+	"Name": "Brenau University",
+	"Location": "Gainesville"
+  },
+  {
+	"SchoolID": "US00931",
+	"Name": "The American College",
+	"Location": "Bryn Mawr"
+  },
+  {
+	"SchoolID": "US00932",
+	"Name": "Quincy University",
+	"Location": "Quincy"
+  },
+  {
+	"SchoolID": "US00933",
+	"Name": "Albany Medical College",
+	"Location": "Albany"
+  },
+  {
+	"SchoolID": "US00934",
+	"Name": "Central College",
+	"Location": "Pella"
+  },
+  {
+	"SchoolID": "US00935",
+	"Name": "Bryant and Stratton College",
+	"Location": "Buffalo"
+  },
+  {
+	"SchoolID": "US00936",
+	"Name": "Viterbo University",
+	"Location": "La Crosse"
+  },
+  {
+	"SchoolID": "US00937",
+	"Name": "Missouri Western State University",
+	"Location": "St. Joseph"
+  },
+  {
+	"SchoolID": "US00938",
+	"Name": "California Baptist University",
+	"Location": "Riverside"
+  },
+  {
+	"SchoolID": "US00939",
+	"Name": "Pennsylvania Academy of the Fine Arts",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US00940",
+	"Name": "North Carolina Wesleyan College",
+	"Location": "Rocky Mount"
+  },
+  {
+	"SchoolID": "US00941",
+	"Name": "Clarion University of Pennsylvania",
+	"Location": "Clarion"
+  },
+  {
+	"SchoolID": "US00942",
+	"Name": "Trinity International University",
+	"Location": "Deerfield"
+  },
+  {
+	"SchoolID": "US00943",
+	"Name": "Curry College",
+	"Location": "Milton"
+  },
+  {
+	"SchoolID": "US00944",
+	"Name": "The Sage Colleges",
+	"Location": "Troy"
+  },
+  {
+	"SchoolID": "US00945",
+	"Name": "Chamberlain College of Nursing",
+	"Location": "St. Louis"
+  },
+  {
+	"SchoolID": "US00946",
+	"Name": "Buena Vista University",
+	"Location": "Storm Lake"
+  },
+  {
+	"SchoolID": "US00947",
+	"Name": "Evangel University",
+	"Location": "Springfield"
+  },
+  {
+	"SchoolID": "US00948",
+	"Name": "Great Basin College",
+	"Location": "Elko"
+  },
+  {
+	"SchoolID": "US00949",
+	"Name": "Framingham State University",
+	"Location": "Framingham"
+  },
+  {
+	"SchoolID": "US00950",
+	"Name": "Brown Mackie College",
+	"Location": "Salina"
+  },
+  {
+	"SchoolID": "US00951",
+	"Name": "University of Mary Hardin-Baylor",
+	"Location": "Belton"
+  },
+  {
+	"SchoolID": "US00952",
+	"Name": "Southwest Minnesota State University",
+	"Location": "Marshall"
+  },
+  {
+	"SchoolID": "US00953",
+	"Name": "South Carolina State University",
+	"Location": "Orangeburg"
+  },
+  {
+	"SchoolID": "US00954",
+	"Name": "Delta State University",
+	"Location": "Cleveland"
+  },
+  {
+	"SchoolID": "US00955",
+	"Name": "John F. Kennedy University",
+	"Location": "Pleasant Hill"
+  },
+  {
+	"SchoolID": "US00956",
+	"Name": "Point Loma Nazarene University",
+	"Location": "San Diego"
+  },
+  {
+	"SchoolID": "US00957",
+	"Name": "Trinity Washington University",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US00958",
+	"Name": "Pacific Union College",
+	"Location": "Angwin"
+  },
+  {
+	"SchoolID": "US00959",
+	"Name": "Georgetown College",
+	"Location": "Georgetown"
+  },
+  {
+	"SchoolID": "US00960",
+	"Name": "Wagner College",
+	"Location": "Staten Island"
+  },
+  {
+	"SchoolID": "US00961",
+	"Name": "Gardner-Webb University",
+	"Location": "Boiling Springs"
+  },
+  {
+	"SchoolID": "US00962",
+	"Name": "Kentucky State University",
+	"Location": "Frankfort"
+  },
+  {
+	"SchoolID": "US00963",
+	"Name": "Life University",
+	"Location": "Marietta"
+  },
+  {
+	"SchoolID": "US00964",
+	"Name": "Mississippi University for Women",
+	"Location": "Columbus"
+  },
+  {
+	"SchoolID": "US00965",
+	"Name": "Walla Walla University",
+	"Location": "College Place"
+  },
+  {
+	"SchoolID": "US00966",
+	"Name": "Southern Adventist University",
+	"Location": "Collegedale"
+  },
+  {
+	"SchoolID": "US00967",
+	"Name": "Manhattan School of Music",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US00968",
+	"Name": "Metropolitan State University",
+	"Location": "St. Paul"
+  },
+  {
+	"SchoolID": "US00969",
+	"Name": "Merrimack College",
+	"Location": "North Andover"
+  },
+  {
+	"SchoolID": "US00970",
+	"Name": "Warren Wilson College",
+	"Location": "Swannanoa"
+  },
+  {
+	"SchoolID": "US00971",
+	"Name": "Aquinas College",
+	"Location": "Grand Rapids"
+  },
+  {
+	"SchoolID": "US00972",
+	"Name": "Rosalind Franklin University of Medicine and Science",
+	"Location": "North Chicago"
+  },
+  {
+	"SchoolID": "US00973",
+	"Name": "Taylor University",
+	"Location": "Upland"
+  },
+  {
+	"SchoolID": "US00974",
+	"Name": "St. Thomas University",
+	"Location": "Miami Gardens"
+  },
+  {
+	"SchoolID": "US00975",
+	"Name": "The Master's College",
+	"Location": "Santa Clarita"
+  },
+  {
+	"SchoolID": "US00976",
+	"Name": "College of the Atlantic",
+	"Location": "Bar Harbor"
+  },
+  {
+	"SchoolID": "US00977",
+	"Name": "Spring Arbor University",
+	"Location": "Spring Arbor"
+  },
+  {
+	"SchoolID": "US00978",
+	"Name": "Wartburg College",
+	"Location": "Waverly"
+  },
+  {
+	"SchoolID": "US00979",
+	"Name": "Morehouse College",
+	"Location": "Atlanta"
+  },
+  {
+	"SchoolID": "US00980",
+	"Name": "Texas A&M University at Galveston",
+	"Location": "Galveston"
+  },
+  {
+	"SchoolID": "US00981",
+	"Name": "Southern California Institute of Architecture",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US00982",
+	"Name": "New England Conservatory",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US00983",
+	"Name": "Wayne State College",
+	"Location": "Wayne"
+  },
+  {
+	"SchoolID": "US00984",
+	"Name": "Franciscan University of Steubenville",
+	"Location": "Steubenville"
+  },
+  {
+	"SchoolID": "US00985",
+	"Name": "A.T. Still University",
+	"Location": "Kirksville"
+  },
+  {
+	"SchoolID": "US00986",
+	"Name": "Randolph-Macon College",
+	"Location": "Ashland"
+  },
+  {
+	"SchoolID": "US00987",
+	"Name": "New Mexico Highlands University",
+	"Location": "Las Vegas"
+  },
+  {
+	"SchoolID": "US00988",
+	"Name": "Daemen College",
+	"Location": "Amherst"
+  },
+  {
+	"SchoolID": "US00989",
+	"Name": "University of Montevallo",
+	"Location": "Montevallo"
+  },
+  {
+	"SchoolID": "US00990",
+	"Name": "Colorado State University-Pueblo",
+	"Location": "Pueblo"
+  },
+  {
+	"SchoolID": "US00991",
+	"Name": "Mary Baldwin College",
+	"Location": "Staunton"
+  },
+  {
+	"SchoolID": "US00992",
+	"Name": "Houston Baptist University",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US00993",
+	"Name": "Endicott College",
+	"Location": "Beverly"
+  },
+  {
+	"SchoolID": "US00994",
+	"Name": "New College of Florida",
+	"Location": "Sarasota"
+  },
+  {
+	"SchoolID": "US00995",
+	"Name": "Benedictine College",
+	"Location": "Atchison"
+  },
+  {
+	"SchoolID": "US00996",
+	"Name": "Notre Dame of Maryland University",
+	"Location": "Baltimore"
+  },
+  {
+	"SchoolID": "US00997",
+	"Name": "Westminster College",
+	"Location": "New Wilmington"
+  },
+  {
+	"SchoolID": "US00998",
+	"Name": "San Francisco Art Institute",
+	"Location": "San Francisco"
+  },
+  {
+	"SchoolID": "US00999",
+	"Name": "Worcester State University",
+	"Location": "Worcester"
+  },
+  {
+	"SchoolID": "US01000",
+	"Name": "Lincoln University",
+	"Location": "Lincoln"
+  },
+  {
+	"SchoolID": "US01001",
+	"Name": "King College",
+	"Location": "Bristol"
+  },
+  {
+	"SchoolID": "US01002",
+	"Name": "Clarke University",
+	"Location": "Dubuque"
+  },
+  {
+	"SchoolID": "US01003",
+	"Name": "The Boston Conservatory",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US01004",
+	"Name": "Presbyterian College",
+	"Location": "Clinton"
+  },
+  {
+	"SchoolID": "US01005",
+	"Name": "Geneva College",
+	"Location": "Beaver Falls"
+  },
+  {
+	"SchoolID": "US01006",
+	"Name": "Fielding Graduate University",
+	"Location": "Santa Barbara"
+  },
+  {
+	"SchoolID": "US01007",
+	"Name": "Eastern Virginia Medical School",
+	"Location": "Norfolk"
+  },
+  {
+	"SchoolID": "US01008",
+	"Name": "Concordia University",
+	"Location": "Seward"
+  },
+  {
+	"SchoolID": "US01009",
+	"Name": "Chadron State College",
+	"Location": "Chadron"
+  },
+  {
+	"SchoolID": "US01010",
+	"Name": "Fontbonne University",
+	"Location": "St. Louis"
+  },
+  {
+	"SchoolID": "US01011",
+	"Name": "Wheeling Jesuit University",
+	"Location": "Wheeling"
+  },
+  {
+	"SchoolID": "US01012",
+	"Name": "The Curtis Institute of Music",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US01013",
+	"Name": "Lake Forest College",
+	"Location": "Lake Forest"
+  },
+  {
+	"SchoolID": "US01014",
+	"Name": "Heidelberg University",
+	"Location": "Tiffin"
+  },
+  {
+	"SchoolID": "US01015",
+	"Name": "Goddard College",
+	"Location": "Plainfield"
+  },
+  {
+	"SchoolID": "US01016",
+	"Name": "Oakwood University",
+	"Location": "Huntsville"
+  },
+  {
+	"SchoolID": "US01017",
+	"Name": "Ouachita Baptist University",
+	"Location": "Arkadelphia"
+  },
+  {
+	"SchoolID": "US01018",
+	"Name": "Farmingdale State College",
+	"Location": "Farmingdale"
+  },
+  {
+	"SchoolID": "US01019",
+	"Name": "Oklahoma Baptist University",
+	"Location": "Shawnee"
+  },
+  {
+	"SchoolID": "US01020",
+	"Name": "Emmanuel College",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US01021",
+	"Name": "Pfeiffer University",
+	"Location": "Misenheimer"
+  },
+  {
+	"SchoolID": "US01022",
+	"Name": "Molloy College",
+	"Location": "Rockville Centre"
+  },
+  {
+	"SchoolID": "US01023",
+	"Name": "Scripps College",
+	"Location": "Claremont"
+  },
+  {
+	"SchoolID": "US01024",
+	"Name": "Lee University",
+	"Location": "Cleveland"
+  },
+  {
+	"SchoolID": "US01025",
+	"Name": "College of Mount St. Joseph",
+	"Location": "Cincinnati"
+  },
+  {
+	"SchoolID": "US01026",
+	"Name": "Hardin-Simmons University",
+	"Location": "Abilene"
+  },
+  {
+	"SchoolID": "US01027",
+	"Name": "The University of Texas of the Permian Basin",
+	"Location": "Odessa"
+  },
+  {
+	"SchoolID": "US01028",
+	"Name": "Keck Graduate Institute of Applied Life Sciences",
+	"Location": "Claremont"
+  },
+  {
+	"SchoolID": "US01029",
+	"Name": "Baker University",
+	"Location": "Baldwin City"
+  },
+  {
+	"SchoolID": "US01030",
+	"Name": "Massachusetts College of Art and Design",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US01031",
+	"Name": "The College of New Rochelle",
+	"Location": "New Rochelle"
+  },
+  {
+	"SchoolID": "US01032",
+	"Name": "Doane University",
+	"Location": "Crete"
+  },
+  {
+	"SchoolID": "US01033",
+	"Name": "Mount Saint Mary College",
+	"Location": "Newburgh"
+  },
+  {
+	"SchoolID": "US01034",
+	"Name": "Lincoln University",
+	"Location": "Jefferson City"
+  },
+  {
+	"SchoolID": "US01035",
+	"Name": "Misericordia University",
+	"Location": "Dallas"
+  },
+  {
+	"SchoolID": "US01036",
+	"Name": "Elizabeth City State University",
+	"Location": "Elizabeth City"
+  },
+  {
+	"SchoolID": "US01037",
+	"Name": "Belhaven University",
+	"Location": "Jackson"
+  },
+  {
+	"SchoolID": "US01038",
+	"Name": "Vanguard University of Southern California",
+	"Location": "Costa Mesa"
+  },
+  {
+	"SchoolID": "US01039",
+	"Name": "Middle Georgia State College",
+	"Location": "Macon"
+  },
+  {
+	"SchoolID": "US01040",
+	"Name": "Transylvania University",
+	"Location": "Lexington"
+  },
+  {
+	"SchoolID": "US01041",
+	"Name": "Saint Vincent College",
+	"Location": "Latrobe"
+  },
+  {
+	"SchoolID": "US01042",
+	"Name": "Sterling College",
+	"Location": "Sterling"
+  },
+  {
+	"SchoolID": "US01043",
+	"Name": "Point Park University",
+	"Location": "Pittsburgh"
+  },
+  {
+	"SchoolID": "US01044",
+	"Name": "Whitworth University",
+	"Location": "Spokane"
+  },
+  {
+	"SchoolID": "US01045",
+	"Name": "New England College",
+	"Location": "Henniker"
+  },
+  {
+	"SchoolID": "US01046",
+	"Name": "East Central University",
+	"Location": "Ada"
+  },
+  {
+	"SchoolID": "US01047",
+	"Name": "Greenville College",
+	"Location": "Greenville"
+  },
+  {
+	"SchoolID": "US01048",
+	"Name": "Kendall College",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US01049",
+	"Name": "Virginia Wesleyan College",
+	"Location": "Norfolk"
+  },
+  {
+	"SchoolID": "US01050",
+	"Name": "McKendree University",
+	"Location": "Lebanon"
+  },
+  {
+	"SchoolID": "US01051",
+	"Name": "Dominican University of California",
+	"Location": "San Rafael"
+  },
+  {
+	"SchoolID": "US01052",
+	"Name": "Northwest University",
+	"Location": "Kirkland"
+  },
+  {
+	"SchoolID": "US01053",
+	"Name": "New York Medical College",
+	"Location": "Valhalla"
+  },
+  {
+	"SchoolID": "US01054",
+	"Name": "University of West Alabama",
+	"Location": "Livingston"
+  },
+  {
+	"SchoolID": "US01055",
+	"Name": "Alvernia University",
+	"Location": "Reading"
+  },
+  {
+	"SchoolID": "US01056",
+	"Name": "Nicholls State University",
+	"Location": "Thibodaux"
+  },
+  {
+	"SchoolID": "US01057",
+	"Name": "Tabor College",
+	"Location": "Hillsboro"
+  },
+  {
+	"SchoolID": "US01058",
+	"Name": "Wingate University",
+	"Location": "Wingate"
+  },
+  {
+	"SchoolID": "US01059",
+	"Name": "Centre College",
+	"Location": "Danville"
+  },
+  {
+	"SchoolID": "US01060",
+	"Name": "Cedar Crest College",
+	"Location": "Allentown"
+  },
+  {
+	"SchoolID": "US01061",
+	"Name": "Grace College",
+	"Location": "Winona Lake"
+  },
+  {
+	"SchoolID": "US01062",
+	"Name": "Woodbury University",
+	"Location": "Burbank"
+  },
+  {
+	"SchoolID": "US01063",
+	"Name": "Daytona State College",
+	"Location": "Daytona Beach"
+  },
+  {
+	"SchoolID": "US01064",
+	"Name": "Marian University",
+	"Location": "Indianapolis"
+  },
+  {
+	"SchoolID": "US01065",
+	"Name": "Caldwell College",
+	"Location": "Caldwell"
+  },
+  {
+	"SchoolID": "US01066",
+	"Name": "Southwestern Oklahoma State University",
+	"Location": "Weatherford"
+  },
+  {
+	"SchoolID": "US01067",
+	"Name": "Southwestern Adventist University",
+	"Location": "Keene"
+  },
+  {
+	"SchoolID": "US01068",
+	"Name": "Saint Joseph's College of Maine",
+	"Location": "Standish"
+  },
+  {
+	"SchoolID": "US01069",
+	"Name": "Wisconsin Lutheran College",
+	"Location": "Milwaukee"
+  },
+  {
+	"SchoolID": "US01070",
+	"Name": "Regis College",
+	"Location": "Weston"
+  },
+  {
+	"SchoolID": "US01071",
+	"Name": "Columbus College of Art and Design",
+	"Location": "Columbus"
+  },
+  {
+	"SchoolID": "US01072",
+	"Name": "Bard College at Simon's Rock",
+	"Location": "Great Barrington"
+  },
+  {
+	"SchoolID": "US01073",
+	"Name": "MCPHS University",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US01074",
+	"Name": "Lakeland College",
+	"Location": "Plymouth"
+  },
+  {
+	"SchoolID": "US01075",
+	"Name": "Malone University",
+	"Location": "Canton"
+  },
+  {
+	"SchoolID": "US01076",
+	"Name": "Paine College",
+	"Location": "Augusta"
+  },
+  {
+	"SchoolID": "US01077",
+	"Name": "Georgia Southwestern State University",
+	"Location": "Americus"
+  },
+  {
+	"SchoolID": "US01078",
+	"Name": "Trevecca Nazarene University",
+	"Location": "Nashville"
+  },
+  {
+	"SchoolID": "US01079",
+	"Name": "Southeastern University",
+	"Location": "Lakeland"
+  },
+  {
+	"SchoolID": "US01080",
+	"Name": "Chaminade University of Honolulu",
+	"Location": "Honolulu"
+  },
+  {
+	"SchoolID": "US01081",
+	"Name": "Monroe College",
+	"Location": "Bronx"
+  },
+  {
+	"SchoolID": "US01082",
+	"Name": "United States Coast Guard Academy",
+	"Location": "New London"
+  },
+  {
+	"SchoolID": "US01083",
+	"Name": "Immaculata University",
+	"Location": "Immaculata"
+  },
+  {
+	"SchoolID": "US01084",
+	"Name": "Carlow University",
+	"Location": "Pittsburgh"
+  },
+  {
+	"SchoolID": "US01085",
+	"Name": "Johnson C. Smith University",
+	"Location": "Charlotte"
+  },
+  {
+	"SchoolID": "US01086",
+	"Name": "Bank Street College of Education",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US01087",
+	"Name": "Missouri Southern State University",
+	"Location": "Joplin"
+  },
+  {
+	"SchoolID": "US01088",
+	"Name": "Samuel Merritt University",
+	"Location": "Oakland"
+  },
+  {
+	"SchoolID": "US01089",
+	"Name": "Faulkner University",
+	"Location": "Montgomery"
+  },
+  {
+	"SchoolID": "US01090",
+	"Name": "Mercy College",
+	"Location": "Dobbs Ferry"
+  },
+  {
+	"SchoolID": "US01091",
+	"Name": "Prescott College",
+	"Location": "Prescott"
+  },
+  {
+	"SchoolID": "US01092",
+	"Name": "Saint Francis University",
+	"Location": "Loretto"
+  },
+  {
+	"SchoolID": "US01093",
+	"Name": "Sul Ross State University",
+	"Location": "Alpine"
+  },
+  {
+	"SchoolID": "US01094",
+	"Name": "Bethel College",
+	"Location": "North Newton"
+  },
+  {
+	"SchoolID": "US01095",
+	"Name": "Fort Valley State University",
+	"Location": "Fort Valley"
+  },
+  {
+	"SchoolID": "US01096",
+	"Name": "University of Charleston",
+	"Location": "Charleston"
+  },
+  {
+	"SchoolID": "US01097",
+	"Name": "Houghton College",
+	"Location": "Houghton"
+  },
+  {
+	"SchoolID": "US01098",
+	"Name": "Saint Joseph's College",
+	"Location": "Rensselaer"
+  },
+  {
+	"SchoolID": "US01099",
+	"Name": "Adrian College",
+	"Location": "Adrian"
+  },
+  {
+	"SchoolID": "US01100",
+	"Name": "Montreat College",
+	"Location": "Montreat"
+  },
+  {
+	"SchoolID": "US01101",
+	"Name": "Elmira College",
+	"Location": "Elmira"
+  },
+  {
+	"SchoolID": "US01102",
+	"Name": "Green Mountain College",
+	"Location": "Poultney"
+  },
+  {
+	"SchoolID": "US01103",
+	"Name": "Pine Manor College",
+	"Location": "Chestnut Hill"
+  },
+  {
+	"SchoolID": "US01104",
+	"Name": "Saint Peter's University",
+	"Location": "Jersey City"
+  },
+  {
+	"SchoolID": "US01105",
+	"Name": "Northwestern College",
+	"Location": "Orange City"
+  },
+  {
+	"SchoolID": "US01106",
+	"Name": "College for Creative Studies",
+	"Location": "Detroit"
+  },
+  {
+	"SchoolID": "US01107",
+	"Name": "Pacific Northwest College of Art",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US01108",
+	"Name": "Norfolk State University",
+	"Location": "Norfolk"
+  },
+  {
+	"SchoolID": "US01109",
+	"Name": "California University of Pennsylvania",
+	"Location": "California"
+  },
+  {
+	"SchoolID": "US01110",
+	"Name": "Sullivan University",
+	"Location": "Louisville"
+  },
+  {
+	"SchoolID": "US01111",
+	"Name": "Alaska Pacific University",
+	"Location": "Anchorage"
+  },
+  {
+	"SchoolID": "US01112",
+	"Name": "Alcorn State University",
+	"Location": "Lorman"
+  },
+  {
+	"SchoolID": "US01113",
+	"Name": "South Texas College of Law",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US01114",
+	"Name": "Ferrum College",
+	"Location": "Ferrum"
+  },
+  {
+	"SchoolID": "US01115",
+	"Name": "Black Hills State University",
+	"Location": "Spearfish"
+  },
+  {
+	"SchoolID": "US01116",
+	"Name": "Southwestern Law School",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US01117",
+	"Name": "Soka University of America",
+	"Location": "Aliso Viejo"
+  },
+  {
+	"SchoolID": "US01118",
+	"Name": "Ripon College",
+	"Location": "Ripon"
+  },
+  {
+	"SchoolID": "US01119",
+	"Name": "Morehouse School of Medicine",
+	"Location": "Atlanta"
+  },
+  {
+	"SchoolID": "US01120",
+	"Name": "Francis Marion University",
+	"Location": "Florence"
+  },
+  {
+	"SchoolID": "US01121",
+	"Name": "Bethune-Cookman University",
+	"Location": "Daytona Beach"
+  },
+  {
+	"SchoolID": "US01122",
+	"Name": "University of the Cumberlands",
+	"Location": "Williamsburg"
+  },
+  {
+	"SchoolID": "US01123",
+	"Name": "SUNY Canton",
+	"Location": "Canton"
+  },
+  {
+	"SchoolID": "US01124",
+	"Name": "Shawnee State University",
+	"Location": "Portsmouth"
+  },
+  {
+	"SchoolID": "US01125",
+	"Name": "Loras College",
+	"Location": "Dubuque"
+  },
+  {
+	"SchoolID": "US01126",
+	"Name": "Missouri Baptist University",
+	"Location": "Saint Louis"
+  },
+  {
+	"SchoolID": "US01127",
+	"Name": "Grambling State University",
+	"Location": "Grambling"
+  },
+  {
+	"SchoolID": "US01128",
+	"Name": "Rivier University",
+	"Location": "Nashua"
+  },
+  {
+	"SchoolID": "US01129",
+	"Name": "Stephens College",
+	"Location": "Columbia"
+  },
+  {
+	"SchoolID": "US01130",
+	"Name": "School of the Museum of Fine Arts",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US01131",
+	"Name": "Colby-Sawyer College",
+	"Location": "New London"
+  },
+  {
+	"SchoolID": "US01132",
+	"Name": "Wayland Baptist University",
+	"Location": "Plainview"
+  },
+  {
+	"SchoolID": "US01133",
+	"Name": "SUNY Polytechnic Institute",
+	"Location": "Utica"
+  },
+  {
+	"SchoolID": "US01134",
+	"Name": "Cardinal Stritch University",
+	"Location": "Milwaukee"
+  },
+  {
+	"SchoolID": "US01135",
+	"Name": "Charles R. Drew University of Medicine and Science",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US01136",
+	"Name": "College of Staten Island",
+	"Location": "Staten Island"
+  },
+  {
+	"SchoolID": "US01137",
+	"Name": "Bay Path College",
+	"Location": "Longmeadow"
+  },
+  {
+	"SchoolID": "US01138",
+	"Name": "Felician College",
+	"Location": "Lodi"
+  },
+  {
+	"SchoolID": "US01139",
+	"Name": "American International College",
+	"Location": "Springfield"
+  },
+  {
+	"SchoolID": "US01140",
+	"Name": "Coppin State University",
+	"Location": "Baltimore"
+  },
+  {
+	"SchoolID": "US01141",
+	"Name": "Rocky Mountain College",
+	"Location": "Billings"
+  },
+  {
+	"SchoolID": "US01142",
+	"Name": "University of Jamestown",
+	"Location": "Jamestown"
+  },
+  {
+	"SchoolID": "US01143",
+	"Name": "Dean College",
+	"Location": "Franklin"
+  },
+  {
+	"SchoolID": "US01144",
+	"Name": "New England Institute of Technology",
+	"Location": "East Greenwich"
+  },
+  {
+	"SchoolID": "US01145",
+	"Name": "Shepherd University",
+	"Location": "Shepherdstown"
+  },
+  {
+	"SchoolID": "US01146",
+	"Name": "Concordia University Texas",
+	"Location": "Austin"
+  },
+  {
+	"SchoolID": "US01147",
+	"Name": "University of North Carolina School of the Arts",
+	"Location": "Winston Salem"
+  },
+  {
+	"SchoolID": "US01148",
+	"Name": "University of Arkansas at Monticello",
+	"Location": "Monticello"
+  },
+  {
+	"SchoolID": "US01149",
+	"Name": "University of Houston-Victoria",
+	"Location": "Victoria"
+  },
+  {
+	"SchoolID": "US01150",
+	"Name": "Cleveland Institute of Music",
+	"Location": "Cleveland"
+  },
+  {
+	"SchoolID": "US01151",
+	"Name": "Franklin Pierce University",
+	"Location": "Rindge"
+  },
+  {
+	"SchoolID": "US01152",
+	"Name": "Campbellsville University",
+	"Location": "Campbellsville"
+  },
+  {
+	"SchoolID": "US01153",
+	"Name": "Centenary College",
+	"Location": "Hackettstown"
+  },
+  {
+	"SchoolID": "US01154",
+	"Name": "Dalton State College",
+	"Location": "Dalton"
+  },
+  {
+	"SchoolID": "US01155",
+	"Name": "St. Francis College",
+	"Location": "Brooklyn Heights"
+  },
+  {
+	"SchoolID": "US01156",
+	"Name": "Neumann University",
+	"Location": "Aston"
+  },
+  {
+	"SchoolID": "US01157",
+	"Name": "Minot State University",
+	"Location": "Minot"
+  },
+  {
+	"SchoolID": "US01158",
+	"Name": "Hiram College",
+	"Location": "Hiram"
+  },
+  {
+	"SchoolID": "US01159",
+	"Name": "Manhattanville College",
+	"Location": "Purchase"
+  },
+  {
+	"SchoolID": "US01160",
+	"Name": "University of Dubuque",
+	"Location": "Dubuque"
+  },
+  {
+	"SchoolID": "US01161",
+	"Name": "Lasell College",
+	"Location": "Newton"
+  },
+  {
+	"SchoolID": "US01162",
+	"Name": "Unity College",
+	"Location": "Unity"
+  },
+  {
+	"SchoolID": "US01163",
+	"Name": "William Peace University",
+	"Location": "Raleigh"
+  },
+  {
+	"SchoolID": "US01164",
+	"Name": "Catawba College",
+	"Location": "Salisbury"
+  },
+  {
+	"SchoolID": "US01165",
+	"Name": "Columbia International University",
+	"Location": "Columbia"
+  },
+  {
+	"SchoolID": "US01166",
+	"Name": "Thomas Aquinas College",
+	"Location": "Santa Paula"
+  },
+  {
+	"SchoolID": "US01167",
+	"Name": "Belmont Abbey College",
+	"Location": "Belmont"
+  },
+  {
+	"SchoolID": "US01168",
+	"Name": "Cornish College of the Arts",
+	"Location": "Seattle"
+  },
+  {
+	"SchoolID": "US01169",
+	"Name": "Freed-Hardeman University",
+	"Location": "Henderson"
+  },
+  {
+	"SchoolID": "US01170",
+	"Name": "Mansfield University of Pennsylvania",
+	"Location": "Mansfield"
+  },
+  {
+	"SchoolID": "US01171",
+	"Name": "Lenoir-Rhyne University",
+	"Location": "Hickory"
+  },
+  {
+	"SchoolID": "US01172",
+	"Name": "SUNY Maritime College",
+	"Location": "Throggs Neck"
+  },
+  {
+	"SchoolID": "US01173",
+	"Name": "Bloomfield College",
+	"Location": "Bloomfield"
+  },
+  {
+	"SchoolID": "US01174",
+	"Name": "Texas Wesleyan University",
+	"Location": "Fort Worth"
+  },
+  {
+	"SchoolID": "US01175",
+	"Name": "University of Hawaii at Hilo",
+	"Location": "Hilo"
+  },
+  {
+	"SchoolID": "US01176",
+	"Name": "Illinois College",
+	"Location": "Jacksonville"
+  },
+  {
+	"SchoolID": "US01177",
+	"Name": "Trinity Christian College",
+	"Location": "Palos Heights"
+  },
+  {
+	"SchoolID": "US01178",
+	"Name": "SUNY Delhi",
+	"Location": "Delhi"
+  },
+  {
+	"SchoolID": "US01179",
+	"Name": "Daniel Webster College",
+	"Location": "Nashua"
+  },
+  {
+	"SchoolID": "US01180",
+	"Name": "Medaille College",
+	"Location": "Buffalo"
+  },
+  {
+	"SchoolID": "US01181",
+	"Name": "Mount Mercy University",
+	"Location": "Cedar Rapids"
+  },
+  {
+	"SchoolID": "US01182",
+	"Name": "Maine College of Art",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US01183",
+	"Name": "Antioch University New England",
+	"Location": "Keene"
+  },
+  {
+	"SchoolID": "US01184",
+	"Name": "Maryville College",
+	"Location": "Maryville"
+  },
+  {
+	"SchoolID": "US01185",
+	"Name": "McMurry University",
+	"Location": "Abilene"
+  },
+  {
+	"SchoolID": "US01186",
+	"Name": "Charleston Southern University",
+	"Location": "Charleston"
+  },
+  {
+	"SchoolID": "US01187",
+	"Name": "University of Mary",
+	"Location": "Bismarck"
+  },
+  {
+	"SchoolID": "US01188",
+	"Name": "Shorter University",
+	"Location": "Rome"
+  },
+  {
+	"SchoolID": "US01189",
+	"Name": "Ohio Dominican University",
+	"Location": "Columbus"
+  },
+  {
+	"SchoolID": "US01190",
+	"Name": "United States Air Force Academy",
+	"Location": "Colorado Springs"
+  },
+  {
+	"SchoolID": "US01191",
+	"Name": "West Virginia Wesleyan College",
+	"Location": "Buckhannon"
+  },
+  {
+	"SchoolID": "US01192",
+	"Name": "New England Law | Boston",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US01193",
+	"Name": "Tusculum College",
+	"Location": "Greeneville"
+  },
+  {
+	"SchoolID": "US01194",
+	"Name": "Georgian Court University",
+	"Location": "Lakewood"
+  },
+  {
+	"SchoolID": "US01195",
+	"Name": "Tiffin University",
+	"Location": "Tiffin"
+  },
+  {
+	"SchoolID": "US01196",
+	"Name": "Roberts Wesleyan College",
+	"Location": "Rochester"
+  },
+  {
+	"SchoolID": "US01197",
+	"Name": "Post University",
+	"Location": "Waterbury"
+  },
+  {
+	"SchoolID": "US01198",
+	"Name": "Savannah State University",
+	"Location": "Savannah"
+  },
+  {
+	"SchoolID": "US01199",
+	"Name": "Converse College",
+	"Location": "Spartanburg"
+  },
+  {
+	"SchoolID": "US01200",
+	"Name": "Southern University and A&M College",
+	"Location": "Baton Rouge"
+  },
+  {
+	"SchoolID": "US01201",
+	"Name": "Salem College",
+	"Location": "Winston Salem"
+  },
+  {
+	"SchoolID": "US01202",
+	"Name": "Mount Ida College",
+	"Location": "Newton"
+  },
+  {
+	"SchoolID": "US01203",
+	"Name": "Massachusetts Maritime Academy",
+	"Location": "Buzzards Bay"
+  },
+  {
+	"SchoolID": "US01204",
+	"Name": "University of Advancing Technology",
+	"Location": "Tempe"
+  },
+  {
+	"SchoolID": "US01205",
+	"Name": "William Carey University",
+	"Location": "Hattiesburg"
+  },
+  {
+	"SchoolID": "US01206",
+	"Name": "Rocky Mountain College of Art and Design",
+	"Location": "Denver"
+  },
+  {
+	"SchoolID": "US01207",
+	"Name": "York College, City University of New York",
+	"Location": "Jamaica"
+  },
+  {
+	"SchoolID": "US01208",
+	"Name": "Cambridge College",
+	"Location": "Cambridge"
+  },
+  {
+	"SchoolID": "US01209",
+	"Name": "Wells College",
+	"Location": "Aurora"
+  },
+  {
+	"SchoolID": "US01210",
+	"Name": "Northland College",
+	"Location": "Ashland"
+  },
+  {
+	"SchoolID": "US01211",
+	"Name": "Massachusetts College of Liberal Arts",
+	"Location": "North Adams"
+  },
+  {
+	"SchoolID": "US01212",
+	"Name": "Reinhardt University",
+	"Location": "Waleska"
+  },
+  {
+	"SchoolID": "US01213",
+	"Name": "Chestnut Hill College",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US01214",
+	"Name": "Keuka College",
+	"Location": "Keuka Park"
+  },
+  {
+	"SchoolID": "US01215",
+	"Name": "Central State University",
+	"Location": "Wilberforce"
+  },
+  {
+	"SchoolID": "US01216",
+	"Name": "Madonna University",
+	"Location": "Livonia"
+  },
+  {
+	"SchoolID": "US01217",
+	"Name": "Warner Pacific College",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US01218",
+	"Name": "Lubbock Christian University",
+	"Location": "Lubbock"
+  },
+  {
+	"SchoolID": "US01219",
+	"Name": "Piedmont College",
+	"Location": "Demorest"
+  },
+  {
+	"SchoolID": "US01220",
+	"Name": "Dillard University",
+	"Location": "New Orleans"
+  },
+  {
+	"SchoolID": "US01221",
+	"Name": "Cornerstone University",
+	"Location": "Grand Rapids"
+  },
+  {
+	"SchoolID": "US01222",
+	"Name": "Texas A&M University-Texarkana",
+	"Location": "Texarkana"
+  },
+  {
+	"SchoolID": "US01223",
+	"Name": "University of the Sciences in Philadelphia",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US01224",
+	"Name": "San Francisco Conservatory of Music",
+	"Location": "San Francisco"
+  },
+  {
+	"SchoolID": "US01225",
+	"Name": "Des Moines University",
+	"Location": "Des Moines"
+  },
+  {
+	"SchoolID": "US01226",
+	"Name": "Kansas City Art Institute",
+	"Location": "Kansas City"
+  },
+  {
+	"SchoolID": "US01227",
+	"Name": "Cogswell Polytechnical College",
+	"Location": "Sunnyvale"
+  },
+  {
+	"SchoolID": "US01228",
+	"Name": "Benedict College",
+	"Location": "Columbia"
+  },
+  {
+	"SchoolID": "US01229",
+	"Name": "Eastern Nazarene College",
+	"Location": "Quincy"
+  },
+  {
+	"SchoolID": "US01230",
+	"Name": "Emory and Henry College",
+	"Location": "Emory"
+  },
+  {
+	"SchoolID": "US01231",
+	"Name": "Fitchburg State University",
+	"Location": "Fitchburg"
+  },
+  {
+	"SchoolID": "US01232",
+	"Name": "North Central College",
+	"Location": "Naperville"
+  },
+  {
+	"SchoolID": "US01233",
+	"Name": "Southwestern Assemblies of God University",
+	"Location": "Waxahachie"
+  },
+  {
+	"SchoolID": "US01234",
+	"Name": "Saint Mary-of-the-Woods College",
+	"Location": "Saint Mary-of-the-Woods"
+  },
+  {
+	"SchoolID": "US01235",
+	"Name": "Virginia Union University",
+	"Location": "Richmond"
+  },
+  {
+	"SchoolID": "US01236",
+	"Name": "Northwestern Health Sciences University",
+	"Location": "Bloomington"
+  },
+  {
+	"SchoolID": "US01237",
+	"Name": "University of Mount Union",
+	"Location": "Alliance"
+  },
+  {
+	"SchoolID": "US01238",
+	"Name": "Rockford College",
+	"Location": "Rockford"
+  },
+  {
+	"SchoolID": "US01239",
+	"Name": "United States Sports Academy",
+	"Location": "Daphne"
+  },
+  {
+	"SchoolID": "US01240",
+	"Name": "Mount Vernon Nazarene University",
+	"Location": "Mount Vernon"
+  },
+  {
+	"SchoolID": "US01241",
+	"Name": "Mitchell Hamline School of Law",
+	"Location": "St. Paul"
+  },
+  {
+	"SchoolID": "US01242",
+	"Name": "Robert Morris University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US01243",
+	"Name": "Albany State University",
+	"Location": "Albany"
+  },
+  {
+	"SchoolID": "US01244",
+	"Name": "Gwynedd-Mercy University",
+	"Location": "Gwynedd Valley"
+  },
+  {
+	"SchoolID": "US01245",
+	"Name": "Athens State University",
+	"Location": "Athens"
+  },
+  {
+	"SchoolID": "US01246",
+	"Name": "Louisiana College",
+	"Location": "Pineville"
+  },
+  {
+	"SchoolID": "US01247",
+	"Name": "Franklin College",
+	"Location": "Franklin"
+  },
+  {
+	"SchoolID": "US01248",
+	"Name": "Methodist University",
+	"Location": "Fayetteville"
+  },
+  {
+	"SchoolID": "US01249",
+	"Name": "Toccoa Falls College",
+	"Location": "Toccoa Falls"
+  },
+  {
+	"SchoolID": "US01250",
+	"Name": "West Virginia State University",
+	"Location": "Institute"
+  },
+  {
+	"SchoolID": "US01251",
+	"Name": "American Jewish University",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US01252",
+	"Name": "Lancaster Bible College",
+	"Location": "Lancaster"
+  },
+  {
+	"SchoolID": "US01253",
+	"Name": "Adler University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US01254",
+	"Name": "Montana State University-Northern",
+	"Location": "Havre"
+  },
+  {
+	"SchoolID": "US01255",
+	"Name": "Morningside College",
+	"Location": "Sioux City"
+  },
+  {
+	"SchoolID": "US01256",
+	"Name": "Moore College of Art and Design",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US01257",
+	"Name": "Schreiner University",
+	"Location": "Kerrville"
+  },
+  {
+	"SchoolID": "US01258",
+	"Name": "Crown College",
+	"Location": "St. Bonifacius"
+  },
+  {
+	"SchoolID": "US01259",
+	"Name": "Walsh University",
+	"Location": "North Canton"
+  },
+  {
+	"SchoolID": "US01260",
+	"Name": "National University of Health Sciences",
+	"Location": "Lombard"
+  },
+  {
+	"SchoolID": "US01261",
+	"Name": "Dominican College",
+	"Location": "Orangeburg"
+  },
+  {
+	"SchoolID": "US01262",
+	"Name": "Rush University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US01263",
+	"Name": "Holy Names University",
+	"Location": "Oakland"
+  },
+  {
+	"SchoolID": "US01264",
+	"Name": "Dakota Wesleyan University",
+	"Location": "Mitchell"
+  },
+  {
+	"SchoolID": "US01265",
+	"Name": "Thomas College",
+	"Location": "Waterville"
+  },
+  {
+	"SchoolID": "US01266",
+	"Name": "Carroll University",
+	"Location": "Waukesha"
+  },
+  {
+	"SchoolID": "US01267",
+	"Name": "MidAmerica Nazarene University",
+	"Location": "Olathe"
+  },
+  {
+	"SchoolID": "US01268",
+	"Name": "Newberry College",
+	"Location": "Newberry"
+  },
+  {
+	"SchoolID": "US01269",
+	"Name": "Delaware Valley University",
+	"Location": "Doylestown"
+  },
+  {
+	"SchoolID": "US01270",
+	"Name": "Sierra Nevada College",
+	"Location": "Incline Village"
+  },
+  {
+	"SchoolID": "US01271",
+	"Name": "Bennett College",
+	"Location": "Greensboro"
+  },
+  {
+	"SchoolID": "US01272",
+	"Name": "Trine University",
+	"Location": "Angola"
+  },
+  {
+	"SchoolID": "US01273",
+	"Name": "Claflin University",
+	"Location": "Orangeburg"
+  },
+  {
+	"SchoolID": "US01274",
+	"Name": "Concord University",
+	"Location": "Athens"
+  },
+  {
+	"SchoolID": "US01275",
+	"Name": "Bryan College",
+	"Location": "Dayton"
+  },
+  {
+	"SchoolID": "US01276",
+	"Name": "Oklahoma Wesleyan University",
+	"Location": "Bartlesville"
+  },
+  {
+	"SchoolID": "US01277",
+	"Name": "College of Our Lady of the Elms",
+	"Location": "Chicopee"
+  },
+  {
+	"SchoolID": "US01278",
+	"Name": "Fairmont State University",
+	"Location": "Fairmont"
+  },
+  {
+	"SchoolID": "US01279",
+	"Name": "Brevard College",
+	"Location": "Brevard"
+  },
+  {
+	"SchoolID": "US01280",
+	"Name": "Walsh College",
+	"Location": "Troy"
+  },
+  {
+	"SchoolID": "US01281",
+	"Name": "LaGrange College",
+	"Location": "LaGrange"
+  },
+  {
+	"SchoolID": "US01282",
+	"Name": "University of Mobile",
+	"Location": "Mobile"
+  },
+  {
+	"SchoolID": "US01283",
+	"Name": "Maryland University of Integrative Health",
+	"Location": "Laurel"
+  },
+  {
+	"SchoolID": "US01284",
+	"Name": "Benjamin Franklin Institute of Technology",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US01285",
+	"Name": "University of Arkansas at Pine Bluff",
+	"Location": "Pine Bluff"
+  },
+  {
+	"SchoolID": "US01286",
+	"Name": "Thomas More College",
+	"Location": "Crestview Hills"
+  },
+  {
+	"SchoolID": "US01287",
+	"Name": "Milligan College",
+	"Location": "Elizabethton"
+  },
+  {
+	"SchoolID": "US01288",
+	"Name": "New York School of Interior Design",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US01289",
+	"Name": "East Texas Baptist University",
+	"Location": "Marshall"
+  },
+  {
+	"SchoolID": "US01290",
+	"Name": "Hastings College",
+	"Location": "Hastings"
+  },
+  {
+	"SchoolID": "US01291",
+	"Name": "Queens College, City University of New York",
+	"Location": "Flushing"
+  },
+  {
+	"SchoolID": "US01292",
+	"Name": "Mars Hill University",
+	"Location": "Mars Hill"
+  },
+  {
+	"SchoolID": "US01293",
+	"Name": "Notre Dame College",
+	"Location": "Cleveland"
+  },
+  {
+	"SchoolID": "US01294",
+	"Name": "College of Saint Mary",
+	"Location": "Omaha"
+  },
+  {
+	"SchoolID": "US01295",
+	"Name": "Briar Cliff University",
+	"Location": "Sioux City"
+  },
+  {
+	"SchoolID": "US01296",
+	"Name": "Rosemont College",
+	"Location": "Rosemont"
+  },
+  {
+	"SchoolID": "US01297",
+	"Name": "SUNY College at Old Westbury",
+	"Location": "Old Westbury"
+  },
+  {
+	"SchoolID": "US01298",
+	"Name": "Alma College",
+	"Location": "Alma"
+  },
+  {
+	"SchoolID": "US01299",
+	"Name": "Maine Maritime Academy",
+	"Location": "Castine"
+  },
+  {
+	"SchoolID": "US01300",
+	"Name": "Hope International University",
+	"Location": "Fullerton"
+  },
+  {
+	"SchoolID": "US01301",
+	"Name": "Landmark College",
+	"Location": "Putney"
+  },
+  {
+	"SchoolID": "US01302",
+	"Name": "The Chicago School of Professional Psychology",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US01303",
+	"Name": "Wilson College",
+	"Location": "Chambersburg"
+  },
+  {
+	"SchoolID": "US01304",
+	"Name": "University of Sioux Falls",
+	"Location": "Sioux Falls"
+  },
+  {
+	"SchoolID": "US01305",
+	"Name": "Antioch University Los Angeles",
+	"Location": "Culver City"
+  },
+  {
+	"SchoolID": "US01306",
+	"Name": "Valley City State University",
+	"Location": "Valley City"
+  },
+  {
+	"SchoolID": "US01307",
+	"Name": "Southeastern Oklahoma State University",
+	"Location": "Durant"
+  },
+  {
+	"SchoolID": "US01308",
+	"Name": "Southern University at New Orleans",
+	"Location": "New Orleans"
+  },
+  {
+	"SchoolID": "US01309",
+	"Name": "Lees-McRae College",
+	"Location": "Banner Elk"
+  },
+  {
+	"SchoolID": "US01310",
+	"Name": "Covenant College",
+	"Location": "Lookout Mountain"
+  },
+  {
+	"SchoolID": "US01311",
+	"Name": "Albright College",
+	"Location": "Reading"
+  },
+  {
+	"SchoolID": "US01312",
+	"Name": "Mount Mary College",
+	"Location": "Milwaukee"
+  },
+  {
+	"SchoolID": "US01313",
+	"Name": "Huntington University",
+	"Location": "Huntington"
+  },
+  {
+	"SchoolID": "US01314",
+	"Name": "Coker College",
+	"Location": "Hartsville"
+  },
+  {
+	"SchoolID": "US01315",
+	"Name": "Union College",
+	"Location": "Lincoln"
+  },
+  {
+	"SchoolID": "US01316",
+	"Name": "Southern Wesleyan University",
+	"Location": "Central"
+  },
+  {
+	"SchoolID": "US01317",
+	"Name": "Granite State College",
+	"Location": "Concord"
+  },
+  {
+	"SchoolID": "US01318",
+	"Name": "Corban University",
+	"Location": "Salem"
+  },
+  {
+	"SchoolID": "US01319",
+	"Name": "William Penn University",
+	"Location": "Oskaloosa"
+  },
+  {
+	"SchoolID": "US01320",
+	"Name": "Becker College",
+	"Location": "Worcester"
+  },
+  {
+	"SchoolID": "US01321",
+	"Name": "Adventist University of Health Sciences",
+	"Location": "Orlando"
+  },
+  {
+	"SchoolID": "US01322",
+	"Name": "Waynesburg University",
+	"Location": "Waynesburg"
+  },
+  {
+	"SchoolID": "US01323",
+	"Name": "La Roche College",
+	"Location": "Pittsburgh"
+  },
+  {
+	"SchoolID": "US01324",
+	"Name": "Mississippi Valley State University",
+	"Location": "Itta Bena"
+  },
+  {
+	"SchoolID": "US01325",
+	"Name": "St. Louis College of Pharmacy",
+	"Location": "St. Louis"
+  },
+  {
+	"SchoolID": "US01326",
+	"Name": "Lindsey Wilson College",
+	"Location": "Columbia"
+  },
+  {
+	"SchoolID": "US01327",
+	"Name": "Pacifica Graduate Institute",
+	"Location": "Carpinteria"
+  },
+  {
+	"SchoolID": "US01328",
+	"Name": "Heritage University",
+	"Location": "Toppenish"
+  },
+  {
+	"SchoolID": "US01329",
+	"Name": "Texas Lutheran University",
+	"Location": "Seguin"
+  },
+  {
+	"SchoolID": "US01330",
+	"Name": "Olivet College",
+	"Location": "Olivet"
+  },
+  {
+	"SchoolID": "US01331",
+	"Name": "LIM College",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US01332",
+	"Name": "McPherson College",
+	"Location": "McPherson"
+  },
+  {
+	"SchoolID": "US01333",
+	"Name": "Erskine College",
+	"Location": "Due West"
+  },
+  {
+	"SchoolID": "US01334",
+	"Name": "College of Saint Elizabeth",
+	"Location": "Morristown"
+  },
+  {
+	"SchoolID": "US01335",
+	"Name": "Wesley College",
+	"Location": "Dover"
+  },
+  {
+	"SchoolID": "US01336",
+	"Name": "Graceland University",
+	"Location": "Lamoni"
+  },
+  {
+	"SchoolID": "US01337",
+	"Name": "Nichols College",
+	"Location": "Dudley"
+  },
+  {
+	"SchoolID": "US01338",
+	"Name": "Limestone College",
+	"Location": "Gaffney"
+  },
+  {
+	"SchoolID": "US01339",
+	"Name": "University of Maine at Augusta",
+	"Location": "Augusta"
+  },
+  {
+	"SchoolID": "US01340",
+	"Name": "Milwaukee Institute of Art and Design",
+	"Location": "Milwaukee"
+  },
+  {
+	"SchoolID": "US01341",
+	"Name": "Westminster College",
+	"Location": "Fulton"
+  },
+  {
+	"SchoolID": "US01342",
+	"Name": "Cazenovia College",
+	"Location": "Cazenovia"
+  },
+  {
+	"SchoolID": "US01343",
+	"Name": "Keystone College",
+	"Location": "La Plume"
+  },
+  {
+	"SchoolID": "US01344",
+	"Name": "Southwest Baptist University",
+	"Location": "Bolivar"
+  },
+  {
+	"SchoolID": "US01345",
+	"Name": "Marygrove College",
+	"Location": "Detroit"
+  },
+  {
+	"SchoolID": "US01346",
+	"Name": "Thomas Jefferson School of Law",
+	"Location": "San Diego"
+  },
+  {
+	"SchoolID": "US01347",
+	"Name": "Langston University",
+	"Location": "Langston"
+  },
+  {
+	"SchoolID": "US01348",
+	"Name": "The College of Idaho",
+	"Location": "Caldwell"
+  },
+  {
+	"SchoolID": "US01349",
+	"Name": "Nyack College",
+	"Location": "Nyack"
+  },
+  {
+	"SchoolID": "US01350",
+	"Name": "Husson University",
+	"Location": "Bangor"
+  },
+  {
+	"SchoolID": "US01351",
+	"Name": "SUNY Cobleskill",
+	"Location": "Cobleskill"
+  },
+  {
+	"SchoolID": "US01352",
+	"Name": "MacMurray College",
+	"Location": "Jacksonville"
+  },
+  {
+	"SchoolID": "US01353",
+	"Name": "Avila University",
+	"Location": "Kansas City"
+  },
+  {
+	"SchoolID": "US01354",
+	"Name": "Friends University",
+	"Location": "Wichita"
+  },
+  {
+	"SchoolID": "US01355",
+	"Name": "Vermont Technical College",
+	"Location": "Randolph"
+  },
+  {
+	"SchoolID": "US01356",
+	"Name": "Union Institute and University",
+	"Location": "Cincinnati"
+  },
+  {
+	"SchoolID": "US01357",
+	"Name": "Columbia College",
+	"Location": "Columbia"
+  },
+  {
+	"SchoolID": "US01358",
+	"Name": "Peru State College",
+	"Location": "Peru"
+  },
+  {
+	"SchoolID": "US01359",
+	"Name": "St. Thomas Aquinas College",
+	"Location": "Sparkill"
+  },
+  {
+	"SchoolID": "US01360",
+	"Name": "University of Alaska Southeast",
+	"Location": "Juneau"
+  },
+  {
+	"SchoolID": "US01361",
+	"Name": "Phillips Graduate University",
+	"Location": "Chatsworth"
+  },
+  {
+	"SchoolID": "US01362",
+	"Name": "Central Penn College",
+	"Location": "Summerdale"
+  },
+  {
+	"SchoolID": "US01363",
+	"Name": "Goldey-Beacom College",
+	"Location": "Wilmington"
+  },
+  {
+	"SchoolID": "US01364",
+	"Name": "Alderson Broaddus University",
+	"Location": "Philippi"
+  },
+  {
+	"SchoolID": "US01365",
+	"Name": "Edward Waters College",
+	"Location": "Jacksonville"
+  },
+  {
+	"SchoolID": "US01366",
+	"Name": "Cranbrook Academy of Art",
+	"Location": "Bloomfield Hills"
+  },
+  {
+	"SchoolID": "US01367",
+	"Name": "Thiel College",
+	"Location": "Greenville"
+  },
+  {
+	"SchoolID": "US01368",
+	"Name": "Johnson University",
+	"Location": "Knoxville"
+  },
+  {
+	"SchoolID": "US01369",
+	"Name": "Northwestern Oklahoma State University",
+	"Location": "Alva"
+  },
+  {
+	"SchoolID": "US01370",
+	"Name": "California Western School of Law",
+	"Location": "San Diego"
+  },
+  {
+	"SchoolID": "US01371",
+	"Name": "Florida Memorial University",
+	"Location": "Miami Gardens"
+  },
+  {
+	"SchoolID": "US01372",
+	"Name": "St. Joseph's College",
+	"Location": "Brooklyn"
+  },
+  {
+	"SchoolID": "US01373",
+	"Name": "Oklahoma Panhandle State University",
+	"Location": "Goodwell"
+  },
+  {
+	"SchoolID": "US01374",
+	"Name": "Eureka College",
+	"Location": "Eureka"
+  },
+  {
+	"SchoolID": "US01375",
+	"Name": "Multnomah University",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US01376",
+	"Name": "College of Mount Saint Vincent",
+	"Location": "The Bronx"
+  },
+  {
+	"SchoolID": "US01377",
+	"Name": "Charter Oak State College",
+	"Location": "New Britain"
+  },
+  {
+	"SchoolID": "US01378",
+	"Name": "Tougaloo College",
+	"Location": "Tougaloo"
+  },
+  {
+	"SchoolID": "US01379",
+	"Name": "Union College",
+	"Location": "Barbourville"
+  },
+  {
+	"SchoolID": "US01380",
+	"Name": "Mount Aloysius College",
+	"Location": "Cresson"
+  },
+  {
+	"SchoolID": "US01381",
+	"Name": "University of Saint Mary",
+	"Location": "Leavenworth"
+  },
+  {
+	"SchoolID": "US01382",
+	"Name": "Castleton State College",
+	"Location": "Castleton"
+  },
+  {
+	"SchoolID": "US01383",
+	"Name": "Albany Law School",
+	"Location": "Albany"
+  },
+  {
+	"SchoolID": "US01384",
+	"Name": "William Woods University",
+	"Location": "Fulton"
+  },
+  {
+	"SchoolID": "US01385",
+	"Name": "Wilberforce University",
+	"Location": "Wilberforce"
+  },
+  {
+	"SchoolID": "US01386",
+	"Name": "Holy Family University",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US01387",
+	"Name": "Hannibal-LaGrange University",
+	"Location": "Hannibal"
+  },
+  {
+	"SchoolID": "US01388",
+	"Name": "Martin Luther College",
+	"Location": "New Ulm"
+  },
+  {
+	"SchoolID": "US01389",
+	"Name": "Urbana University",
+	"Location": "Urbana"
+  },
+  {
+	"SchoolID": "US01390",
+	"Name": "Philander Smith College",
+	"Location": "Little Rock"
+  },
+  {
+	"SchoolID": "US01391",
+	"Name": "Rock Valley College",
+	"Location": "Rockford"
+  },
+  {
+	"SchoolID": "US01392",
+	"Name": "Mount Carmel College of Nursing",
+	"Location": "Columbus"
+  },
+  {
+	"SchoolID": "US01393",
+	"Name": "New York City College of Technology, CUNY",
+	"Location": "Brooklyn"
+  },
+  {
+	"SchoolID": "US01394",
+	"Name": "Bluefield College",
+	"Location": "Bluefield"
+  },
+  {
+	"SchoolID": "US01395",
+	"Name": "Calumet College of St. Joseph",
+	"Location": "Whiting"
+  },
+  {
+	"SchoolID": "US01396",
+	"Name": "Notre Dame de Namur University",
+	"Location": "Belmont"
+  },
+  {
+	"SchoolID": "US01397",
+	"Name": "SUNY College of Optometry",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US01398",
+	"Name": "Fisher College",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US01399",
+	"Name": "MGH Institute of Health Professions",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US01400",
+	"Name": "Kentucky Wesleyan College",
+	"Location": "Owensboro"
+  },
+  {
+	"SchoolID": "US01401",
+	"Name": "Southern Vermont College",
+	"Location": "Bennington"
+  },
+  {
+	"SchoolID": "US01402",
+	"Name": "Principia College",
+	"Location": "Elsah"
+  },
+  {
+	"SchoolID": "US01403",
+	"Name": "Marian University",
+	"Location": "Fond du Lac"
+  },
+  {
+	"SchoolID": "US01404",
+	"Name": "Bethany College",
+	"Location": "Lindsborg"
+  },
+  {
+	"SchoolID": "US01405",
+	"Name": "Randolph College",
+	"Location": "Lynchburg"
+  },
+  {
+	"SchoolID": "US01406",
+	"Name": "The University of Virginia's College at Wise",
+	"Location": "Wise"
+  },
+  {
+	"SchoolID": "US01407",
+	"Name": "University of Maine at Farmington",
+	"Location": "Farmington"
+  },
+  {
+	"SchoolID": "US01408",
+	"Name": "Clarkson College",
+	"Location": "Omaha"
+  },
+  {
+	"SchoolID": "US01409",
+	"Name": "Concordia University",
+	"Location": "Ann Arbor"
+  },
+  {
+	"SchoolID": "US01410",
+	"Name": "West Liberty University",
+	"Location": "West Liberty"
+  },
+  {
+	"SchoolID": "US01411",
+	"Name": "Culver-Stockton College",
+	"Location": "Canton"
+  },
+  {
+	"SchoolID": "US01412",
+	"Name": "Nazarene Bible College",
+	"Location": "Colorado Springs"
+  },
+  {
+	"SchoolID": "US01413",
+	"Name": "Spalding University",
+	"Location": "Louisville"
+  },
+  {
+	"SchoolID": "US01414",
+	"Name": "Catholic Theological Union",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US01415",
+	"Name": "Nebraska Methodist College",
+	"Location": "Omaha"
+  },
+  {
+	"SchoolID": "US01416",
+	"Name": "Anna Maria College",
+	"Location": "Paxton"
+  },
+  {
+	"SchoolID": "US01417",
+	"Name": "College of the Ozarks",
+	"Location": "Point Lookout"
+  },
+  {
+	"SchoolID": "US01418",
+	"Name": "Medgar Evers College",
+	"Location": "Brooklyn"
+  },
+  {
+	"SchoolID": "US01419",
+	"Name": "Huston-Tillotson University",
+	"Location": "Austin"
+  },
+  {
+	"SchoolID": "US01420",
+	"Name": "Williams Baptist College",
+	"Location": "Walnut Ridge"
+  },
+  {
+	"SchoolID": "US01421",
+	"Name": "Alice Lloyd College",
+	"Location": "Pippa Passes"
+  },
+  {
+	"SchoolID": "US01422",
+	"Name": "Newman University",
+	"Location": "Wichita"
+  },
+  {
+	"SchoolID": "US01423",
+	"Name": "William Jessup University",
+	"Location": "Rocklin"
+  },
+  {
+	"SchoolID": "US01424",
+	"Name": "Anderson University",
+	"Location": "Anderson"
+  },
+  {
+	"SchoolID": "US01425",
+	"Name": "Air Force Institute of Technology",
+	"Location": "Wright-Patterson Air Force Base"
+  },
+  {
+	"SchoolID": "US01426",
+	"Name": "Cabrini College",
+	"Location": "Radnor"
+  },
+  {
+	"SchoolID": "US01427",
+	"Name": "Meharry Medical College",
+	"Location": "Nashville"
+  },
+  {
+	"SchoolID": "US01428",
+	"Name": "University of Arkansas at Fort Smith",
+	"Location": "Fort Smith"
+  },
+  {
+	"SchoolID": "US01429",
+	"Name": "Great Lakes Christian College",
+	"Location": "Lansing"
+  },
+  {
+	"SchoolID": "US01430",
+	"Name": "Maranatha Baptist University",
+	"Location": "Watertown"
+  },
+  {
+	"SchoolID": "US01431",
+	"Name": "The University of Montana Western",
+	"Location": "Dillon"
+  },
+  {
+	"SchoolID": "US01432",
+	"Name": "Warner University",
+	"Location": "Lake Wales"
+  },
+  {
+	"SchoolID": "US01433",
+	"Name": "Mitchell College",
+	"Location": "New London"
+  },
+  {
+	"SchoolID": "US01434",
+	"Name": "Cairn University",
+	"Location": "Langhorne"
+  },
+  {
+	"SchoolID": "US01435",
+	"Name": "Hilbert College",
+	"Location": "Hamburg"
+  },
+  {
+	"SchoolID": "US01436",
+	"Name": "Goodwin College",
+	"Location": "East Hartford"
+  },
+  {
+	"SchoolID": "US01437",
+	"Name": "Schiller International University",
+	"Location": "Largo"
+  },
+  {
+	"SchoolID": "US01438",
+	"Name": "Shaw University",
+	"Location": "Raleigh"
+  },
+  {
+	"SchoolID": "US01439",
+	"Name": "Jones College",
+	"Location": "Jacksonville"
+  },
+  {
+	"SchoolID": "US01440",
+	"Name": "University of Mount Olive",
+	"Location": "Mount Olive"
+  },
+  {
+	"SchoolID": "US01441",
+	"Name": "Emmaus Bible College",
+	"Location": "Dubuque"
+  },
+  {
+	"SchoolID": "US01442",
+	"Name": "Pacific Oaks College",
+	"Location": "Pasadena"
+  },
+  {
+	"SchoolID": "US01443",
+	"Name": "North Central University",
+	"Location": "Minneapolis"
+  },
+  {
+	"SchoolID": "US01444",
+	"Name": "Summit University",
+	"Location": "Clarks Summit"
+  },
+  {
+	"SchoolID": "US01445",
+	"Name": "Mount Saint Mary's University",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US01446",
+	"Name": "Memphis College of Art",
+	"Location": "Memphis"
+  },
+  {
+	"SchoolID": "US01447",
+	"Name": "Thomas University",
+	"Location": "Thomasville"
+  },
+  {
+	"SchoolID": "US01448",
+	"Name": "Jarvis Christian College",
+	"Location": "Hawkins"
+  },
+  {
+	"SchoolID": "US01449",
+	"Name": "Judson University",
+	"Location": "Elgin"
+  },
+  {
+	"SchoolID": "US01450",
+	"Name": "Lincoln University",
+	"Location": "Oakland"
+  },
+  {
+	"SchoolID": "US01451",
+	"Name": "Albertus Magnus College",
+	"Location": "New Haven"
+  },
+  {
+	"SchoolID": "US01452",
+	"Name": "Emmanuel College",
+	"Location": "Franklin Springs"
+  },
+  {
+	"SchoolID": "US01453",
+	"Name": "William James College",
+	"Location": "Newton"
+  },
+  {
+	"SchoolID": "US01454",
+	"Name": "Grace Bible College",
+	"Location": "Wyoming"
+  },
+  {
+	"SchoolID": "US01455",
+	"Name": "Mount Marty College",
+	"Location": "Yankton"
+  },
+  {
+	"SchoolID": "US01456",
+	"Name": "Santa Fe University of Art and Design",
+	"Location": "Santa Fe"
+  },
+  {
+	"SchoolID": "US01457",
+	"Name": "Boston Graduate School of Psychoanalysis",
+	"Location": "Brookline"
+  },
+  {
+	"SchoolID": "US01458",
+	"Name": "West Virginia University Institute of Technology",
+	"Location": "Montgomery"
+  },
+  {
+	"SchoolID": "US01459",
+	"Name": "Voorhees College",
+	"Location": "Denmark"
+  },
+  {
+	"SchoolID": "US01460",
+	"Name": "Northeast Ohio Medical University",
+	"Location": "Rootstown"
+  },
+  {
+	"SchoolID": "US01461",
+	"Name": "Montserrat College of Art",
+	"Location": "Beverly"
+  },
+  {
+	"SchoolID": "US01462",
+	"Name": "Hebrew College",
+	"Location": "Newton Centre"
+  },
+  {
+	"SchoolID": "US01463",
+	"Name": "Bluefield State College",
+	"Location": "Bluefield"
+  },
+  {
+	"SchoolID": "US01464",
+	"Name": "Washington and Jefferson College",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US01465",
+	"Name": "Ozark Christian College",
+	"Location": "Joplin"
+  },
+  {
+	"SchoolID": "US01466",
+	"Name": "Chipola College",
+	"Location": "Marianna"
+  },
+  {
+	"SchoolID": "US01467",
+	"Name": "The University of Texas Health Science Center at Tyler",
+	"Location": "Tyler"
+  },
+  {
+	"SchoolID": "US01468",
+	"Name": "Lane College",
+	"Location": "Jackson"
+  },
+  {
+	"SchoolID": "US01469",
+	"Name": "Paul Smith's College",
+	"Location": "Paul Smiths"
+  },
+  {
+	"SchoolID": "US01470",
+	"Name": "Art Academy of Cincinnati",
+	"Location": "Cincinnati"
+  },
+  {
+	"SchoolID": "US01471",
+	"Name": "Capitol Technology University",
+	"Location": "Laurel"
+  },
+  {
+	"SchoolID": "US01472",
+	"Name": "Silver Lake College of the Holy Family",
+	"Location": "Manitowoc"
+  },
+  {
+	"SchoolID": "US01473",
+	"Name": "Bay State College",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US01474",
+	"Name": "Defiance College",
+	"Location": "Defiance"
+  },
+  {
+	"SchoolID": "US01475",
+	"Name": "Newbury College",
+	"Location": "Brookline"
+  },
+  {
+	"SchoolID": "US01476",
+	"Name": "Faith Baptist Bible College and Theological Seminary",
+	"Location": "Ankeny"
+  },
+  {
+	"SchoolID": "US01477",
+	"Name": "Tennessee Wesleyan University",
+	"Location": "Athens"
+  },
+  {
+	"SchoolID": "US01478",
+	"Name": "University of Saint Francis",
+	"Location": "Fort Wayne"
+  },
+  {
+	"SchoolID": "US01479",
+	"Name": "Lincoln Christian University",
+	"Location": "Lincoln"
+  },
+  {
+	"SchoolID": "US01480",
+	"Name": "College of St. Joseph",
+	"Location": "Rutland"
+  },
+  {
+	"SchoolID": "US01481",
+	"Name": "Allen University",
+	"Location": "Columbia"
+  },
+  {
+	"SchoolID": "US01482",
+	"Name": "Adler Graduate School",
+	"Location": "Richfield"
+  },
+  {
+	"SchoolID": "US01483",
+	"Name": "Ohio Valley University",
+	"Location": "Vienna"
+  },
+  {
+	"SchoolID": "US01484",
+	"Name": "Massachusetts School of Law at Andover",
+	"Location": "Andover"
+  },
+  {
+	"SchoolID": "US01485",
+	"Name": "Texas College",
+	"Location": "Tyler"
+  },
+  {
+	"SchoolID": "US01486",
+	"Name": "Westfield State University",
+	"Location": "Westfield"
+  },
+  {
+	"SchoolID": "US01487",
+	"Name": "Vaughn College of Aeronautics and Technology",
+	"Location": "Flushing"
+  },
+  {
+	"SchoolID": "US01488",
+	"Name": "Cumberland University",
+	"Location": "Lebanon"
+  },
+  {
+	"SchoolID": "US01489",
+	"Name": "York College",
+	"Location": "York"
+  },
+  {
+	"SchoolID": "US01490",
+	"Name": "New York Academy of Art",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US01491",
+	"Name": "Cheyney University of Pennsylvania",
+	"Location": "Cheyney"
+  },
+  {
+	"SchoolID": "US01492",
+	"Name": "Appalachian Bible College",
+	"Location": "Mount Hope"
+  },
+  {
+	"SchoolID": "US01493",
+	"Name": "Central Methodist University",
+	"Location": "Fayette"
+  },
+  {
+	"SchoolID": "US01494",
+	"Name": "Barclay College",
+	"Location": "Haviland"
+  },
+  {
+	"SchoolID": "US01495",
+	"Name": "Johnson State College",
+	"Location": "Johnson"
+  },
+  {
+	"SchoolID": "US01496",
+	"Name": "Beacon College",
+	"Location": "Leesburg"
+  },
+  {
+	"SchoolID": "US01497",
+	"Name": "University of Great Falls",
+	"Location": "Great Falls"
+  },
+  {
+	"SchoolID": "US01498",
+	"Name": "Taliesin, the Frank Lloyd Wright School of Architecture",
+	"Location": "Scottsdale"
+  },
+  {
+	"SchoolID": "US01499",
+	"Name": "Salus University",
+	"Location": "Elkins Park"
+  },
+  {
+	"SchoolID": "US01500",
+	"Name": "Livingstone College",
+	"Location": "Salisbury"
+  },
+  {
+	"SchoolID": "US01501",
+	"Name": "Menlo College",
+	"Location": "Atherton"
+  },
+  {
+	"SchoolID": "US01502",
+	"Name": "University of Maine at Machias",
+	"Location": "Machias"
+  },
+  {
+	"SchoolID": "US01503",
+	"Name": "Burlington College",
+	"Location": "Burlington"
+  },
+  {
+	"SchoolID": "US01504",
+	"Name": "Grand View University",
+	"Location": "Des Moines"
+  },
+  {
+	"SchoolID": "US01505",
+	"Name": "University of Hawaii-West Oahu",
+	"Location": "Pearl City"
+  },
+  {
+	"SchoolID": "US01506",
+	"Name": "Indiana University East",
+	"Location": "Richmond"
+  },
+  {
+	"SchoolID": "US01507",
+	"Name": "Southern College of Optometry",
+	"Location": "Memphis"
+  },
+  {
+	"SchoolID": "US01508",
+	"Name": "Ursuline College",
+	"Location": "Pepper Pike"
+  },
+  {
+	"SchoolID": "US01509",
+	"Name": "Barton College",
+	"Location": "Wilson"
+  },
+  {
+	"SchoolID": "US01510",
+	"Name": "University of Science and Arts of Oklahoma",
+	"Location": "Chickasha"
+  },
+  {
+	"SchoolID": "US01511",
+	"Name": "Bethany College",
+	"Location": "Bethany"
+  },
+  {
+	"SchoolID": "US01512",
+	"Name": "Trinity College of Florida",
+	"Location": "Trinity"
+  },
+  {
+	"SchoolID": "US01513",
+	"Name": "Thomas More College of Liberal Arts",
+	"Location": "Merrimack"
+  },
+  {
+	"SchoolID": "US01514",
+	"Name": "Lyndon State College",
+	"Location": "Lyndonville"
+  },
+  {
+	"SchoolID": "US01515",
+	"Name": "LeMoyne-Owen College",
+	"Location": "Memphis"
+  },
+  {
+	"SchoolID": "US01516",
+	"Name": "The Institute of World Politics",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US01517",
+	"Name": "San Diego Christian College",
+	"Location": "El Cajon"
+  },
+  {
+	"SchoolID": "US01518",
+	"Name": "Simpson University",
+	"Location": "Redding"
+  },
+  {
+	"SchoolID": "US01519",
+	"Name": "Morris College",
+	"Location": "Sumter"
+  },
+  {
+	"SchoolID": "US01520",
+	"Name": "Mayville State University",
+	"Location": "Mayville"
+  },
+  {
+	"SchoolID": "US01521",
+	"Name": "Glenville State College",
+	"Location": "Glenville"
+  },
+  {
+	"SchoolID": "US01522",
+	"Name": "Indiana Institute of Technology",
+	"Location": "Fort Wayne"
+  },
+  {
+	"SchoolID": "US01523",
+	"Name": "Greensboro College",
+	"Location": "Greensboro"
+  },
+  {
+	"SchoolID": "US01524",
+	"Name": "Saybrook University",
+	"Location": "San Francisco"
+  },
+  {
+	"SchoolID": "US01525",
+	"Name": "Talladega College",
+	"Location": "Talladega"
+  },
+  {
+	"SchoolID": "US01526",
+	"Name": "Washington Adventist University",
+	"Location": "Takoma Park"
+  },
+  {
+	"SchoolID": "US01527",
+	"Name": "Oak Hills Christian College",
+	"Location": "Bemidji"
+  },
+  {
+	"SchoolID": "US01528",
+	"Name": "Western State University College of Law",
+	"Location": "Fullerton"
+  },
+  {
+	"SchoolID": "US01529",
+	"Name": "Rochester College",
+	"Location": "Rochester Hills"
+  },
+  {
+	"SchoolID": "US01530",
+	"Name": "Harris-Stowe State University",
+	"Location": "St. Louis"
+  },
+  {
+	"SchoolID": "US01531",
+	"Name": "Brewton-Parker College",
+	"Location": "Mount Vernon"
+  },
+  {
+	"SchoolID": "US01532",
+	"Name": "The New England College of Optometry",
+	"Location": "Boston"
+  },
+  {
+	"SchoolID": "US01533",
+	"Name": "Siena Heights University",
+	"Location": "Adrian"
+  },
+  {
+	"SchoolID": "US01534",
+	"Name": "Kuyper College",
+	"Location": "Grand Rapids"
+  },
+  {
+	"SchoolID": "US01535",
+	"Name": "Judson College",
+	"Location": "Marion"
+  },
+  {
+	"SchoolID": "US01536",
+	"Name": "Peirce College",
+	"Location": "Philadelphia"
+  },
+  {
+	"SchoolID": "US01537",
+	"Name": "Rust College",
+	"Location": "Holly Springs"
+  },
+  {
+	"SchoolID": "US01538",
+	"Name": "Dallas Christian College",
+	"Location": "Dallas"
+  },
+  {
+	"SchoolID": "US01539",
+	"Name": "Amridge University",
+	"Location": "Montgomery"
+  },
+  {
+	"SchoolID": "US01540",
+	"Name": "Manhattan Christian College",
+	"Location": "Manhattan"
+  },
+  {
+	"SchoolID": "US01541",
+	"Name": "Miles College",
+	"Location": "Fairfield"
+  },
+  {
+	"SchoolID": "US01542",
+	"Name": "Concordia College-New York",
+	"Location": "Bronxville"
+  },
+  {
+	"SchoolID": "US01543",
+	"Name": "Pikeville College",
+	"Location": "Pikeville"
+  },
+  {
+	"SchoolID": "US01544",
+	"Name": "Howard Payne University",
+	"Location": "Brownwood"
+  },
+  {
+	"SchoolID": "US01545",
+	"Name": "Midway College",
+	"Location": "Midway"
+  },
+  {
+	"SchoolID": "US01546",
+	"Name": "Iowa Wesleyan University",
+	"Location": "Mount Pleasant"
+  },
+  {
+	"SchoolID": "US01547",
+	"Name": "The Baptist College of Florida",
+	"Location": "Graceville"
+  },
+  {
+	"SchoolID": "US01548",
+	"Name": "Blue Mountain College",
+	"Location": "Blue Mountain"
+  },
+  {
+	"SchoolID": "US01549",
+	"Name": "Brescia University",
+	"Location": "Owensboro"
+  },
+  {
+	"SchoolID": "US01550",
+	"Name": "St Andrews University",
+	"Location": "Laurinburg"
+  },
+  {
+	"SchoolID": "US01551",
+	"Name": "Kansas Wesleyan University",
+	"Location": "Salina"
+  },
+  {
+	"SchoolID": "US01552",
+	"Name": "Bethel College",
+	"Location": "McKenzie"
+  },
+  {
+	"SchoolID": "US01553",
+	"Name": "Patten University",
+	"Location": "Oakland"
+  },
+  {
+	"SchoolID": "US01554",
+	"Name": "St. Gregory_s University",
+	"Location": "Shawnee"
+  },
+  {
+	"SchoolID": "US01555",
+	"Name": "Mount Washington College",
+	"Location": "Manchester"
+  },
+  {
+	"SchoolID": "US01556",
+	"Name": "Florida College",
+	"Location": "Temple Terrace"
+  },
+  {
+	"SchoolID": "US01557",
+	"Name": "Lourdes University",
+	"Location": "Sylvania"
+  },
+  {
+	"SchoolID": "US01558",
+	"Name": "Tennessee Temple University",
+	"Location": "Chattanooga"
+  },
+  {
+	"SchoolID": "US01559",
+	"Name": "Wesleyan College",
+	"Location": "Macon"
+  },
+  {
+	"SchoolID": "US01560",
+	"Name": "Saint Augustine's College",
+	"Location": "Raleigh"
+  },
+  {
+	"SchoolID": "US01561",
+	"Name": "University of Maine at Presque Isle",
+	"Location": "Presque Isle"
+  },
+  {
+	"SchoolID": "US01562",
+	"Name": "Indiana University Kokomo",
+	"Location": "Kokomo"
+  },
+  {
+	"SchoolID": "US01563",
+	"Name": "Alaska Bible College",
+	"Location": "Glennallen"
+  },
+  {
+	"SchoolID": "US01564",
+	"Name": "Metropolitan College of New York",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US01565",
+	"Name": "Everglades University",
+	"Location": "Boca Raton"
+  },
+  {
+	"SchoolID": "US01566",
+	"Name": "Pennsylvania College of Art and Design",
+	"Location": "Lancaster"
+  },
+  {
+	"SchoolID": "US01567",
+	"Name": "Life Pacific College",
+	"Location": "San Dimas"
+  },
+  {
+	"SchoolID": "US01568",
+	"Name": "Martin University",
+	"Location": "Indianapolis"
+  },
+  {
+	"SchoolID": "US01569",
+	"Name": "Lake Erie College",
+	"Location": "Painesville"
+  },
+  {
+	"SchoolID": "US01570",
+	"Name": "Frederick S. Pardee RAND Graduate School",
+	"Location": "Santa Monica"
+  },
+  {
+	"SchoolID": "US01571",
+	"Name": "Palo Alto University",
+	"Location": "Palo Alto"
+  },
+  {
+	"SchoolID": "US01572",
+	"Name": "Antioch University Santa Barbara",
+	"Location": "Santa Barbara"
+  },
+  {
+	"SchoolID": "US01573",
+	"Name": "Chowan University",
+	"Location": "Murfreesboro"
+  },
+  {
+	"SchoolID": "US01574",
+	"Name": "VanderCook College of Music",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US01575",
+	"Name": "Our Lady of Holy Cross College",
+	"Location": "New Orleans"
+  },
+  {
+	"SchoolID": "US01576",
+	"Name": "North Greenville University",
+	"Location": "Tigerville"
+  },
+  {
+	"SchoolID": "US01577",
+	"Name": "University of Valley Forge",
+	"Location": "Phoenixville"
+  },
+  {
+	"SchoolID": "US01578",
+	"Name": "Piedmont International University",
+	"Location": "Winston Salem"
+  },
+  {
+	"SchoolID": "US01579",
+	"Name": "Albany College of Pharmacy and Health Sciences",
+	"Location": "Albany"
+  },
+  {
+	"SchoolID": "US01580",
+	"Name": "Trocaire College",
+	"Location": "Buffalo"
+  },
+  {
+	"SchoolID": "US01581",
+	"Name": "Humphreys College",
+	"Location": "Stockton"
+  },
+  {
+	"SchoolID": "US01582",
+	"Name": "St. Vincent's College",
+	"Location": "Bridgeport"
+  },
+  {
+	"SchoolID": "US01583",
+	"Name": "Antioch University Seattle",
+	"Location": "Seattle"
+  },
+  {
+	"SchoolID": "US01584",
+	"Name": "University of the Southwest",
+	"Location": "Hobbs"
+  },
+  {
+	"SchoolID": "US01585",
+	"Name": "Crossroads College",
+	"Location": "Rochester"
+  },
+  {
+	"SchoolID": "US01586",
+	"Name": "Amberton University",
+	"Location": "Garland"
+  },
+  {
+	"SchoolID": "US01587",
+	"Name": "Holy Apostles College and Seminary",
+	"Location": "Cromwell"
+  },
+  {
+	"SchoolID": "US01588",
+	"Name": "Bryn Athyn College",
+	"Location": "Bryn Athyn"
+  },
+  {
+	"SchoolID": "US01589",
+	"Name": "Midland University",
+	"Location": "Fremont"
+  },
+  {
+	"SchoolID": "US01590",
+	"Name": "New York College of Podiatric Medicine",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US01591",
+	"Name": "Davis College",
+	"Location": "Johnson City"
+  },
+  {
+	"SchoolID": "US01592",
+	"Name": "Southwestern College",
+	"Location": "Santa Fe"
+  },
+  {
+	"SchoolID": "US01593",
+	"Name": "Davis and Elkins College",
+	"Location": "Elkins"
+  },
+  {
+	"SchoolID": "US01594",
+	"Name": "Marshall B. Ketchum University",
+	"Location": "Fullerton"
+  },
+  {
+	"SchoolID": "US01595",
+	"Name": "Shimer College",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US01596",
+	"Name": "Western International University",
+	"Location": "Phoenix"
+  },
+  {
+	"SchoolID": "US01597",
+	"Name": "Oakland City University",
+	"Location": "Oakland City"
+  },
+  {
+	"SchoolID": "US01598",
+	"Name": "Northern New Mexico College",
+	"Location": "Espanola"
+  },
+  {
+	"SchoolID": "US01599",
+	"Name": "Sterling College",
+	"Location": "Craftsbury Common"
+  },
+  {
+	"SchoolID": "US01600",
+	"Name": "University of Western States",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US01601",
+	"Name": "Stillman College",
+	"Location": "Tuscaloosa"
+  },
+  {
+	"SchoolID": "US01602",
+	"Name": "Salem International University",
+	"Location": "Salem"
+  },
+  {
+	"SchoolID": "US01603",
+	"Name": "Blackburn College",
+	"Location": "Carlinville"
+  },
+  {
+	"SchoolID": "US01604",
+	"Name": "Cleary University",
+	"Location": "Ann Arbor"
+  },
+  {
+	"SchoolID": "US01605",
+	"Name": "The National Hispanic University",
+	"Location": "San Jose"
+  },
+  {
+	"SchoolID": "US01606",
+	"Name": "Harrington College of Design",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US01607",
+	"Name": "West Virginia School of Osteopathic Medicine",
+	"Location": "Lewisburg"
+  },
+  {
+	"SchoolID": "US01608",
+	"Name": "American College of Education",
+	"Location": "Indianapolis"
+  },
+  {
+	"SchoolID": "US01609",
+	"Name": "Gratz College",
+	"Location": "Melrose Park"
+  },
+  {
+	"SchoolID": "US01610",
+	"Name": "Welch College",
+	"Location": "Nashville"
+  },
+  {
+	"SchoolID": "US01611",
+	"Name": "Grace University",
+	"Location": "Omaha"
+  },
+  {
+	"SchoolID": "US01612",
+	"Name": "Paul Quinn College",
+	"Location": "Dallas"
+  },
+  {
+	"SchoolID": "US01613",
+	"Name": "Lyon College",
+	"Location": "Batesville"
+  },
+  {
+	"SchoolID": "US01614",
+	"Name": "Wiley College",
+	"Location": "Marshall"
+  },
+  {
+	"SchoolID": "US01615",
+	"Name": "Briarcliffe College",
+	"Location": "Bethpage"
+  },
+  {
+	"SchoolID": "US01616",
+	"Name": "Marymount Manhattan College",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US01617",
+	"Name": "Webber International University",
+	"Location": "Babson Park"
+  },
+  {
+	"SchoolID": "US01618",
+	"Name": "Lake Forest Graduate School of Management",
+	"Location": "Lake Forest"
+  },
+  {
+	"SchoolID": "US01619",
+	"Name": "University of the Rockies",
+	"Location": "Colorado Springs"
+  },
+  {
+	"SchoolID": "US01620",
+	"Name": "Virginia Intermont College",
+	"Location": "Bristol"
+  },
+  {
+	"SchoolID": "US01621",
+	"Name": "Villa Maria College",
+	"Location": "Cheektowaga"
+  },
+  {
+	"SchoolID": "US01622",
+	"Name": "Trinity Bible College",
+	"Location": "Ellendale"
+  },
+  {
+	"SchoolID": "US01623",
+	"Name": "God's Bible School and College",
+	"Location": "Cincinnati"
+  },
+  {
+	"SchoolID": "US01624",
+	"Name": "Dominican School of Philosophy and Theology",
+	"Location": "Berkeley"
+  },
+  {
+	"SchoolID": "US01625",
+	"Name": "Webb Institute",
+	"Location": "Glen Cove"
+  },
+  {
+	"SchoolID": "US01626",
+	"Name": "University of Maine at Fort Kent",
+	"Location": "Fort Kent"
+  },
+  {
+	"SchoolID": "US01627",
+	"Name": "Lincoln College of New England",
+	"Location": "Southington"
+  },
+  {
+	"SchoolID": "US01628",
+	"Name": "Our Lady of the Lake College",
+	"Location": "Baton Rouge"
+  },
+  {
+	"SchoolID": "US01629",
+	"Name": "CUNY School of Law",
+	"Location": "Flushing"
+  },
+  {
+	"SchoolID": "US01630",
+	"Name": "East-West University",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US01631",
+	"Name": "Arlington Baptist College",
+	"Location": "Arlington"
+  },
+  {
+	"SchoolID": "US01632",
+	"Name": "Labour College",
+	"Location": "Milton"
+  },
+  {
+	"SchoolID": "US01633",
+	"Name": "Pennsylvania Institute of Technology",
+	"Location": "Media"
+  },
+  {
+	"SchoolID": "US01634",
+	"Name": "Clearwater Christian College",
+	"Location": "Clearwater"
+  },
+  {
+	"SchoolID": "US01635",
+	"Name": "Averett University",
+	"Location": "Danville"
+  },
+  {
+	"SchoolID": "US01636",
+	"Name": "Central Baptist College",
+	"Location": "Conway"
+  },
+  {
+	"SchoolID": "US01637",
+	"Name": "Potomac College",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US01638",
+	"Name": "Dickinson State University",
+	"Location": "Dickinson"
+  },
+  {
+	"SchoolID": "US01639",
+	"Name": "Illinois College of Optometry",
+	"Location": "Chicago"
+  },
+  {
+	"SchoolID": "US01640",
+	"Name": "Kettering College",
+	"Location": "Kettering"
+  },
+  {
+	"SchoolID": "US01641",
+	"Name": "Calvary Bible College",
+	"Location": "Kansas City"
+  },
+  {
+	"SchoolID": "US01642",
+	"Name": "Kentucky Christian University",
+	"Location": "Grayson"
+  },
+  {
+	"SchoolID": "US01643",
+	"Name": "American Film Institute Conservatory",
+	"Location": "Los Angeles"
+  },
+  {
+	"SchoolID": "US01644",
+	"Name": "Mid-Atlantic Christian University",
+	"Location": "Elizabeth City"
+  },
+  {
+	"SchoolID": "US01645",
+	"Name": "William Jewell College",
+	"Location": "Liberty"
+  },
+  {
+	"SchoolID": "US01646",
+	"Name": "Point University",
+	"Location": "East Point"
+  },
+  {
+	"SchoolID": "US01647",
+	"Name": "Five Towns College",
+	"Location": "Dix Hills"
+  },
+  {
+	"SchoolID": "US01648",
+	"Name": "Neumont University",
+	"Location": "South Jordan"
+  },
+  {
+	"SchoolID": "US01649",
+	"Name": "The New England Institute of Art",
+	"Location": "Brookline"
+  },
+  {
+	"SchoolID": "US01650",
+	"Name": "Martin Methodist College",
+	"Location": "Pulaski"
+  },
+  {
+	"SchoolID": "US01651",
+	"Name": "Concordia College Alabama",
+	"Location": "Selma"
+  },
+  {
+	"SchoolID": "US01652",
+	"Name": "Truett-McConnell College",
+	"Location": "Cleveland"
+  },
+  {
+	"SchoolID": "US01653",
+	"Name": "Oregon College of Art and Craft",
+	"Location": "Portland"
+  },
+  {
+	"SchoolID": "US01654",
+	"Name": "St. Catharine College",
+	"Location": "Springfield"
+  },
+  {
+	"SchoolID": "US01655",
+	"Name": "Baptist Bible College",
+	"Location": "Springfield"
+  },
+  {
+	"SchoolID": "US01656",
+	"Name": "Northwest Christian University",
+	"Location": "Eugene"
+  },
+  {
+	"SchoolID": "US01657",
+	"Name": "The King's University",
+	"Location": "Van Nuys"
+  },
+  {
+	"SchoolID": "US01658",
+	"Name": "Conway School of Landscape Design",
+	"Location": "Conway"
+  },
+  {
+	"SchoolID": "US01659",
+	"Name": "Boise Bible College",
+	"Location": "Boise"
+  },
+  {
+	"SchoolID": "US01660",
+	"Name": "National Labor College",
+	"Location": "Silver Spring"
+  },
+  {
+	"SchoolID": "US01661",
+	"Name": "Maria College",
+	"Location": "Albany"
+  },
+  {
+	"SchoolID": "US01662",
+	"Name": "Central Christian College of the Bible",
+	"Location": "Moberly"
+  },
+  {
+	"SchoolID": "US01663",
+	"Name": "Trinity Lutheran College",
+	"Location": "Everett"
+  },
+  {
+	"SchoolID": "US01664",
+	"Name": "Central Bible College",
+	"Location": "Springfield"
+  },
+  {
+	"SchoolID": "US01665",
+	"Name": "Arkansas Baptist College",
+	"Location": "Little Rock"
+  },
+  {
+	"SchoolID": "US01666",
+	"Name": "Southeastern Bible College",
+	"Location": "Birmingham"
+  },
+  {
+	"SchoolID": "US01667",
+	"Name": "Clear Creek Baptist Bible College",
+	"Location": "Pineville"
+  },
+  {
+	"SchoolID": "US01668",
+	"Name": "Arizona Christian University",
+	"Location": "Phoenix"
+  },
+  {
+	"SchoolID": "US01669",
+	"Name": "Nebraska Christian College",
+	"Location": "Papillion"
+  },
+  {
+	"SchoolID": "US01670",
+	"Name": "The Art Institute of Pittsburgh",
+	"Location": "Pittsburgh"
+  },
+  {
+	"SchoolID": "US01671",
+	"Name": "The Wright Institute",
+	"Location": "Berkeley"
+  },
+  {
+	"SchoolID": "US01672",
+	"Name": "Pontifical Faculty of the Immaculate Conception",
+	"Location": "Washington"
+  },
+  {
+	"SchoolID": "US01673",
+	"Name": "Donnelly College",
+	"Location": "Kansas City"
+  },
+  {
+	"SchoolID": "US01674",
+	"Name": "Heritage Christian University",
+	"Location": "Florence"
+  },
+  {
+	"SchoolID": "US01675",
+	"Name": "Southwestern Christian University",
+	"Location": "Bethany"
+  },
+  {
+	"SchoolID": "US01676",
+	"Name": "Resurrection University",
+	"Location": "Oak Park"
+  },
+  {
+	"SchoolID": "US01677",
+	"Name": "Blessing-Rieman College of Nursing",
+	"Location": "Quincy"
+  },
+  {
+	"SchoolID": "US01678",
+	"Name": "Boricua College",
+	"Location": "New York City"
+  },
+  {
+	"SchoolID": "US01679",
+	"Name": "College of Biblical Studies",
+	"Location": "Houston"
+  },
+  {
+	"SchoolID": "US01680",
+	"Name": "San Joaquin College of Law",
+	"Location": "Clovis"
+  },
+  {
+	"SchoolID": "US01681",
+	"Name": "Saint Francis Medical Center College of Nursing",
+	"Location": "Peoria"
+  },
+  {
+	"SchoolID": "US01682",
+	"Name": "Pillar College",
+	"Location": "Newark"
+  },
+  {
+	"SchoolID": "US01683",
+	"Name": "Michigan School of Professional Psychology",
+	"Location": "Farmington Hills"
+  },
+  {
+	"SchoolID": "US01684",
+	"Name": "Marian Court College",
+	"Location": "Swampscott"
+  },
+  {
+	"SchoolID": "US01685",
+	"Name": "New Hope Christian College",
+	"Location": "Eugene"
+  },
+  {
+	"SchoolID": "US01686",
+	"Name": "Northpoint Bible College",
+	"Location": "Haverhill"
+  },
+  {
+	"SchoolID": "US01687",
+	"Name": "The University of West Los Angeles",
+	"Location": "Inglewood"
+  },
+  {
+	"SchoolID": "US01688",
+	"Name": "St. Louis Christian College",
+	"Location": "Florissant"
+  },
+  {
+	"SchoolID": "US01689",
+	"Name": "Bellin College",
+	"Location": "Green Bay"
+  },
+  {
+	"SchoolID": "US01690",
+	"Name": "Ecclesia College",
+	"Location": "Springdale"
+  },
+  {
+	"SchoolID": "US01691",
+	"Name": "Tri-State Bible College",
+	"Location": "South Point"
+  },
+  {
+	"SchoolID": "US01692",
+	"Name": "American Baptist College",
+	"Location": "Nashville"
+  },
+  {
+	"SchoolID": "US01693",
+	"Name": "Harding School of Theology",
+	"Location": "Memphis"
+  },
+  {
+	"SchoolID": "US01694",
+	"Name": "The National Graduate School of Quality Management",
+	"Location": "Falmouth"
+  },
+  {
+	"SchoolID": "US01695",
+	"Name": "Ohio University Southern",
+	"Location": "Ironton"
+  },
+  {
+	"SchoolID": "US01696",
+	"Name": "Beulah Heights University",
+	"Location": "Atlanta"
+  },
+  {
+	"SchoolID": "US01697",
+	"Name": "John Wesley University",
+	"Location": "High Point"
+  },
+  {
+	"SchoolID": "US01698",
+	"Name": "Crossroads Bible College",
+	"Location": "Indianapolis"
+  },
+  {
+	"SchoolID": "US01699",
+	"Name": "Baptist University of the Americas",
+	"Location": "San Antonio"
+  },
+  {
+	"SchoolID": "US01700",
+	"Name": "Southwest University of Visual Arts",
+	"Location": "Tucson"
+  },
+  {
+	"SchoolID": "US01701",
+	"Name": "Rosedale Bible College",
+	"Location": "Irwin"
+  },
+  {
+	"SchoolID": "US01702",
+	"Name": "WON Institute of Graduate Studies",
+	"Location": "Glenside"
+  },
+  {
+	"SchoolID": "US01703",
+	"Name": "Ohio University-Chillicothe",
+	"Location": "Chillicothe"
+  },
+  {
+	"SchoolID": "US01704",
+	"Name": "Bethesda University",
+	"Location": "Anaheim"
+  },
+  {
+	"SchoolID": "US01705",
+	"Name": "Southeastern Baptist College",
+	"Location": "Laurel"
+  },
+  {
+	"SchoolID": "US01706",
+	"Name": "Irell and Manella Graduate School of Biological Sciences",
+	"Location": "Duarte"
+  }
+]

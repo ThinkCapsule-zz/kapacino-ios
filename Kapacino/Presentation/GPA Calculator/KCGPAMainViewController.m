@@ -239,7 +239,10 @@ static NSString* kShowMarksSegue = @"showMarks";
     Course* course = self.courses[indexPath.row];
     
     cell.labelCourseCode.text = course.courseCode;
-    cell.labelInstructorName.text = course.instructor;
+    
+    //TODO Get professor name from id
+    cell.labelInstructorName.text = course.instructorId;
+    
     cell.labelTerm.text = course.term;
     
     NSNumber* courseMark = self.courseToMarkDictionary[course.key];

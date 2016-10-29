@@ -1,13 +1,13 @@
 //
-//  SchoolCourse.m
+//  Term.h
 //  Kapacino
 //
 //  Created by Ivan Cheung on 2016-10-18.
 //  Copyright © 2016 ThinkCapsule. All rights reserved.
 //
 
-#import "SchoolCourse.h"
+#import <Foundation/Foundation.h>
 
-@implementation SchoolCourse
-
+@interface InfoTerm : NSObject
+//    @property NSString* 
 @end

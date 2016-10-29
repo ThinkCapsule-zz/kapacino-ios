@@ -18,7 +18,7 @@
         self.courseCode = values[@"courseCode"];
         self.courseName = values[@"courseName"];
         self.term = values[@"term"];
-        self.instructor = values[@"instructor"];
+        self.instructorId = values[@"instructorId"];
         self.creditType = values[@"creditType"];
         self.creditWeight = values[@"creditWeight"];
     }
@@ -48,7 +48,7 @@
           @"courseName": self.courseName,
           @"courseCode": self.courseCode,
           @"term": self.term,
-          @"instructor": self.instructor,
+          @"instructorId": self.instructorId,
           @"creditType": self.creditType,
           @"creditWeight": self.creditWeight,
       };
@@ -56,7 +56,7 @@
 
 -(BOOL) isComplete
 {
-    return self.courseName && self.courseCode && self.term && self.instructor && self.creditType && self.creditWeight;
+    return self.courseName && self.courseCode && self.term && self.instructorId && self.creditType && self.creditWeight;
 }
 
 @end
