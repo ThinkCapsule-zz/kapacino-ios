@@ -111,6 +111,9 @@
 		C985F0301DB6E8D2002F1869 /* InfoSchoolCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = C985F02F1DB6E8D2002F1869 /* InfoSchoolCourse.m */; };
 		C985F0331DB6ECD3002F1869 /* InfoTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = C985F0321DB6ECD3002F1869 /* InfoTerm.m */; };
 		C98751031D7DD4330080365C /* KCRestaurantDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98751021D7DD4330080365C /* KCRestaurantDetailTableViewController.m */; };
+		C98AF3991DC66AF5008CABC2 /* GPAInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C98AF3981DC66AF5008CABC2 /* GPAInfoDatasource.m */; };
+		C98AF39C1DC6715C008CABC2 /* CourseInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C98AF39B1DC6715C008CABC2 /* CourseInfoDatasource.m */; };
+		C98AF39F1DC67171008CABC2 /* UniversityInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C98AF39E1DC67171008CABC2 /* UniversityInfoDatasource.m */; };
 		C9BB12FA1D8ADC1600DCB37E /* CFPlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB12F91D8ADC1600DCB37E /* CFPlaceModel.m */; };
 		C9BB6ADD1DA9A25900D2819F /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB6ADC1DA9A25900D2819F /* Mark.m */; };
 		C9BB6AE01DA9C5C100D2819F /* KCGPAMarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB6ADF1DA9C5C100D2819F /* KCGPAMarkCell.m */; };
@@ -346,6 +349,12 @@
 		C985F0321DB6ECD3002F1869 /* InfoTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTerm.m; sourceTree = "<group>"; };
 		C98751011D7DD4330080365C /* KCRestaurantDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCRestaurantDetailTableViewController.h; path = Discover/KCRestaurantDetailTableViewController.h; sourceTree = "<group>"; };
 		C98751021D7DD4330080365C /* KCRestaurantDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCRestaurantDetailTableViewController.m; path = Discover/KCRestaurantDetailTableViewController.m; sourceTree = "<group>"; };
+		C98AF3971DC66AF5008CABC2 /* GPAInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPAInfoDatasource.h; path = AutocompleteDatasources/GPAInfoDatasource.h; sourceTree = "<group>"; };
+		C98AF3981DC66AF5008CABC2 /* GPAInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPAInfoDatasource.m; path = AutocompleteDatasources/GPAInfoDatasource.m; sourceTree = "<group>"; };
+		C98AF39A1DC6715C008CABC2 /* CourseInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseInfoDatasource.h; path = AutocompleteDatasources/CourseInfoDatasource.h; sourceTree = "<group>"; };
+		C98AF39B1DC6715C008CABC2 /* CourseInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseInfoDatasource.m; path = AutocompleteDatasources/CourseInfoDatasource.m; sourceTree = "<group>"; };
+		C98AF39D1DC67171008CABC2 /* UniversityInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UniversityInfoDatasource.h; path = AutocompleteDatasources/UniversityInfoDatasource.h; sourceTree = "<group>"; };
+		C98AF39E1DC67171008CABC2 /* UniversityInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UniversityInfoDatasource.m; path = AutocompleteDatasources/UniversityInfoDatasource.m; sourceTree = "<group>"; };
 		C9BB12F81D8ADC1600DCB37E /* CFPlaceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFPlaceModel.h; sourceTree = "<group>"; };
 		C9BB12F91D8ADC1600DCB37E /* CFPlaceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFPlaceModel.m; sourceTree = "<group>"; };
 		C9BB6ADB1DA9A25900D2819F /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
@@ -862,6 +871,12 @@
 				C9166ACB1DB93FDF00B1D751 /* ProfessorInfoDatasource.m */,
 				C9F6D5161DC27CF00093CCC3 /* AutocompleteDatasource.h */,
 				C9F6D5171DC27CF00093CCC3 /* AutocompleteDatasource.m */,
+				C98AF3971DC66AF5008CABC2 /* GPAInfoDatasource.h */,
+				C98AF3981DC66AF5008CABC2 /* GPAInfoDatasource.m */,
+				C98AF39A1DC6715C008CABC2 /* CourseInfoDatasource.h */,
+				C98AF39B1DC6715C008CABC2 /* CourseInfoDatasource.m */,
+				C98AF39D1DC67171008CABC2 /* UniversityInfoDatasource.h */,
+				C98AF39E1DC67171008CABC2 /* UniversityInfoDatasource.m */,
 			);
 			name = AutocompleteDatasources;
 			sourceTree = "<group>";
@@ -1245,10 +1260,12 @@
 				C9F6D51D1DC297330093CCC3 /* MarkTypeDatasource.m in Sources */,
 				443C483B1CAD487D004436CD /* KCLoginViewController.m in Sources */,
 				B6A339FB1C7C13D300F9CC9D /* CFAssetModel.m in Sources */,
+				C98AF3991DC66AF5008CABC2 /* GPAInfoDatasource.m in Sources */,
 				B6D550911C55A8390091BF71 /* KCMainViewController.m in Sources */,
 				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,
 				C985F0331DB6ECD3002F1869 /* InfoTerm.m in Sources */,
 				B69EB46E1C8222CA008BA05F /* UIColor+KCAdditions.m in Sources */,
+				C98AF39C1DC6715C008CABC2 /* CourseInfoDatasource.m in Sources */,
 				C9F540C91D775AF80025FE6F /* CFRestaurantModel.m in Sources */,
 				B69EB4611C820BE8008BA05F /* PreflightManager.m in Sources */,
 				44E8B8FF1CAEA73B0081DA30 /* KCViewController.m in Sources */,
@@ -1300,6 +1317,7 @@
 				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,
 				44461DD91CB274730018E13E /* KCLoginRoundedButton.m in Sources */,
 				443879771CB6B3DC00071AB8 /* KCLoadingPage.m in Sources */,
+				C98AF39F1DC67171008CABC2 /* UniversityInfoDatasource.m in Sources */,
 				C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */,
 				44461DD61CB2728D0018E13E /* KCLoginNavigationBar.m in Sources */,
 				C92CC94B1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m in Sources */,

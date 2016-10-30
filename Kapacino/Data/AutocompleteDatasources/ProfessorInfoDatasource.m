@@ -10,7 +10,6 @@
 #import "InfoProfessor.h"
 
 @interface ProfessorInfoDatasource()
-    @property (strong, nonatomic) NSArray* data;
 @end
 
 @implementation ProfessorInfoDatasource

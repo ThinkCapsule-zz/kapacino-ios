@@ -9,5 +9,4 @@
 #import <Foundation/Foundation.h>
 #import "AutocompleteDatasource.h"
 @interface ProfessorInfoDatasource : AutocompleteDatasource
-//    -(MarkTypeDatasource*) sharedInstance;
 @end
