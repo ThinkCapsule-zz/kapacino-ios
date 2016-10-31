@@ -30,8 +30,6 @@ static NSString* kShowEditMark = @"showEditMark";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    InfoSchoolCourse* course = [[CourseInfoDatasource instance] getById:self.course.courseId];
-    self.navigationItem.title = course.code;
     self.marks = [NSMutableArray array];
     
     //Populate marks
@@ -53,6 +51,12 @@ static NSString* kShowEditMark = @"showEditMark";
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    InfoSchoolCourse* course = [[CourseInfoDatasource instance] getById:self.course.courseId];
+    self.navigationItem.title = course.code;
 }
 
 - (void)didReceiveMemoryWarning {
