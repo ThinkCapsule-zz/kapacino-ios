@@ -74,7 +74,17 @@
 }
 
 - (IBAction)onDoneTapped:(id)sender {
-//    NSString *userID = [FIRAuth auth].currentUser.uid;
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void) viewWillDisappear:(BOOL)animated
+{
+    [self saveData];
+}
+
+-(void) saveData
+{
+    //    NSString *userID = [FIRAuth auth].currentUser.uid;
     
     FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] coursesReference];
     
@@ -116,8 +126,6 @@
         //TODO Use user id and access control
         NSDictionary *childUpdates = @{self.course.key: courseAsDictionary};
         [coursesRef updateChildValues:childUpdates];
-        
-        [self.navigationController popViewControllerAnimated:YES];
     }
     else
     {
