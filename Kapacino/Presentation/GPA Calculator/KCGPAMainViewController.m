@@ -16,6 +16,8 @@
 #import "DALabeledCircularProgressView.h"
 #import "ProfessorInfoDatasource.h"
 #import "InfoProfessor.h"
+#import "InfoSchoolCourse.h"
+#import "CourseInfoDatasource.h"
 
 @import Firebase;
 @import FirebaseDatabaseUI;
@@ -240,7 +242,9 @@ static NSString* kShowMarksSegue = @"showMarks";
     
     Course* course = self.courses[indexPath.row];
     
-    cell.labelCourseCode.text = course.courseCode;
+    InfoSchoolCourse* courseInfo = [[CourseInfoDatasource instance] getById:course.courseId];
+    self.navigationItem.title = courseInfo.code;
+    cell.labelCourseCode.text = courseInfo.code;
     
     //TODO Get professor name from id
     InfoProfessor* professor = [[ProfessorInfoDatasource instance] getById:course.instructorId];

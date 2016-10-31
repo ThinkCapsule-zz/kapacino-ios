@@ -15,8 +15,7 @@
     if (self) {
         NSDictionary* values = snapshot.value;
         self.key = snapshot.key;
-        self.courseCode = values[@"courseCode"];
-        self.courseName = values[@"courseName"];
+        self.courseId = values[@"courseId"];
         self.term = values[@"term"];
         self.instructorId = values[@"instructorId"];
         self.creditType = values[@"creditType"];
@@ -45,8 +44,7 @@
 -(NSDictionary*) toDictionary
 {
     return @{
-          @"courseName": self.courseName,
-          @"courseCode": self.courseCode,
+          @"courseId": self.courseId,
           @"term": self.term,
           @"instructorId": self.instructorId,
           @"creditType": self.creditType,
@@ -56,7 +54,7 @@
 
 -(BOOL) isComplete
 {
-    return self.courseName && self.courseCode && self.term && self.instructorId && self.creditType && self.creditWeight;
+    return self.courseId && self.term && self.instructorId && self.creditType && self.creditWeight;
 }
 
 @end

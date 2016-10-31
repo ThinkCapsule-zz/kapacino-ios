@@ -11,8 +11,7 @@
 
 @interface Course : NSObject
     @property(strong, nonatomic) NSString *key;
-    @property(strong, nonatomic) NSString *courseCode;
-    @property(strong, nonatomic) NSString *courseName;
+    @property(strong, nonatomic) NSString *courseId;
     @property(strong, nonatomic) NSString *term; //TODO Should be class
     @property(strong, nonatomic) NSString *instructorId;
     @property(strong, nonatomic) NSString *creditType; //TODO Should be enum

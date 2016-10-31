@@ -12,6 +12,8 @@
 #import "KCGPAMarkCell.h"
 #import "KCGPACourseDetailTableViewController.h"
 #import "KCGPAMarksDetailViewController.h"
+#import "InfoSchoolCourse.h"
+#import "CourseInfoDatasource.h"
 
 @import Firebase;
 
@@ -27,7 +29,9 @@ static NSString* kShowEditMark = @"showEditMark";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = self.course.courseCode;
+    
+    InfoSchoolCourse* course = [[CourseInfoDatasource instance] getById:self.course.courseId];
+    self.navigationItem.title = course.code;
     self.marks = [NSMutableArray array];
     
     //Populate marks

@@ -14,13 +14,15 @@
 #import "Course.h"
 #import "ProfessorInfoDatasource.h"
 #import "InfoProfessor.h"
+#import "CourseInfoDatasource.h"
+#import "InfoSchoolCourse.h"
 
 @interface KCGPACourseDetailTableViewController()
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCreditWeight;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCreditType;
     @property (weak, nonatomic) IBOutlet MLPAutoCompleteTextField *textfieldInstructor;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldTerm;
-    @property (weak, nonatomic) IBOutlet UITextField *textfieldCourseName;
+    @property (weak, nonatomic) IBOutlet MLPAutoCompleteTextField *textfieldCourseName;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCourseCode;
 @end
 
@@ -29,6 +31,7 @@
 //TODO Show user if there is something wrong with input
 -(void) viewDidLoad
 {
+    //TODO Filter for professors from the given school
     //Mark type autocomplete
     self.textfieldInstructor.autoCompleteDataSource = [ProfessorInfoDatasource instance];
     // Parent correction
@@ -36,19 +39,28 @@
     self.textfieldInstructor.showAutoCompleteTableWhenEditingBegins = YES;
     self.textfieldInstructor.autoCompleteDelegate = self;
     
+    self.textfieldCourseName.autoCompleteDataSource = [CourseInfoDatasource instance];
+    // Parent correction
+    self.textfieldCourseName.autoCompleteParentView = self.view;
+    self.textfieldCourseName.showAutoCompleteTableWhenEditingBegins = YES;
+    self.textfieldCourseName.autoCompleteDelegate = self;
+    
     if (self.course)
     {
-        self.textfieldCourseName.text = self.course.courseName;
-        self.textfieldCourseCode.text = self.course.courseCode;
+//        self.textfieldCourseName.text = self.course.courseName;
         self.textfieldTerm.text = self.course.term;
         self.textfieldCreditType.text = self.course.creditType;
 //        self.textfieldCreditWeight.text = self.course.creditWeight
         
-        //TODO Get instructor name from id
+        //Get instructor name from id
         self.textfieldInstructor.text = self.course.instructorId;
-        
         InfoProfessor* professor = [[ProfessorInfoDatasource instance] getById:self.course.instructorId];
         self.textfieldInstructor.text = professor.fullName;
+        
+        self.textfieldCourseName.text = self.course.instructorId;
+        InfoSchoolCourse* course = [[CourseInfoDatasource instance] getById:self.course.courseId];
+        self.textfieldCourseName.text = course.name;
+        self.textfieldCourseCode.text = course.code;
         
 //        NSNumberFormatter* formatter = [[NSNumberFormatter alloc] init];
         self.textfieldCreditWeight.text = [NSString stringWithFormat:@"%@", self.course.creditWeight];
@@ -66,8 +78,6 @@
     
     FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] coursesReference];
     
-    self.course.courseCode = self.textfieldCourseCode.text;
-    self.course.courseName = self.textfieldCourseName.text;
     self.course.term = self.textfieldTerm.text;
     self.course.creditType = self.textfieldCreditType.text;
     
@@ -75,19 +85,7 @@
     f.numberStyle = NSNumberFormatterDecimalStyle;
     self.course.creditWeight = [f numberFromString:self.textfieldCreditWeight.text];
     
-    if (!self.course.courseCode.length)
-    {
-        //Notify user of error
-        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid course code" duration:TTGSnackbarDurationShort];
-        [snackbar show];
-    }
-    else if (!self.course.courseName.length)
-    {
-        //Notify user of error
-        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid course name" duration:TTGSnackbarDurationShort];
-        [snackbar show];
-    }
-    else if (!self.course.term.length)
+    if (!self.course.term.length)
     {
         //Notify user of error
         TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid term" duration:TTGSnackbarDurationShort];
@@ -135,6 +133,12 @@
         {
             InfoProfessor* professor = (InfoProfessor*) selectedObject;
             self.course.instructorId = professor.uid;
+        }
+        else if (textField == self.textfieldCourseName)
+        {
+            InfoSchoolCourse* course = (InfoSchoolCourse*) selectedObject;
+            self.course.courseId = course.uid;
+            self.textfieldCourseCode.text = course.code;
         }
     }
 @end
