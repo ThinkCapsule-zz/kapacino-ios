@@ -163,7 +163,7 @@
                                     <outlet property="delegate" destination="VmG-UG-ckm" id="bAV-VF-AK9"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bl2-1S-EeD" customClass="FabButton" customModule="Material">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bl2-1S-EeD">
                                 <rect key="frame" x="309" y="484" width="50" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1066,7 +1066,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hvL-O2-39O"/>
+        <segue reference="6wG-H9-rHC"/>
         <segue reference="eEM-0b-S34"/>
     </inferredMetricsTieBreakers>
 </document>
