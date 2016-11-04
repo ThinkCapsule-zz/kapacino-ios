@@ -50,9 +50,9 @@
 -(void) autoCompleteTextField:(MLPAutoCompleteTextField *)textField didSelectAutoCompleteString:(NSString *)selectedString withAutoCompleteObject:(id<MLPAutoCompletionObject>)selectedObject forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    if ([self.delegate respondsToSelector:@selector(didAutocompleteSelectObject:)])
+    if ([self.delegate respondsToSelector:@selector(didAutocompleteSelectString:withObject:)])
     {
-        [self.delegate didAutocompleteSelectObject:selectedObject];
+        [self.delegate didAutocompleteSelectString:selectedString withObject:selectedObject];
     }
     
     [self.navigationController popViewControllerAnimated:YES];

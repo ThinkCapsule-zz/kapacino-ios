@@ -125,14 +125,35 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
     }
 }
 
+- (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+}
+
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    switch (indexPath.row) {
+    long row = indexPath.row;
+    
+    if (row == 1)
+    {
+        row = 0;
+    }
+    
+    switch (row) {
         case 0:
-            [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(indexPath.row)];
+            [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(row)];
+            break;
+        case 2:
+            [self.textfieldTerm becomeFirstResponder];
             break;
         case 3:
-            [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(indexPath.row)];
+            [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(row)];
+            break;
+        case 4:
+            [self.textfieldCreditType becomeFirstResponder];
+            break;
+        case 5:
+            [self.textfieldCreditWeight becomeFirstResponder];
             break;
         default:
             break;
@@ -167,17 +188,17 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
     }
 }
 
--(void) didAutocompleteSelectObject:(id<MLPAutoCompletionObject>) selectedObject
+-(void) didAutocompleteSelectString:(NSString *)string withObject:(id<MLPAutoCompletionObject>)object
 {
-    if ([selectedObject isKindOfClass:[InfoProfessor class]])
+    if ([object isKindOfClass:[InfoProfessor class]])
     {
-        InfoProfessor* professor = (InfoProfessor*) selectedObject;
+        InfoProfessor* professor = (InfoProfessor*) object;
         self.textfieldInstructor.text = professor.fullName;
         self.course.instructorId = professor.uid;
     }
-    else if ([selectedObject isKindOfClass:[InfoSchoolCourse class]])
+    else if ([object isKindOfClass:[InfoSchoolCourse class]])
     {
-        InfoSchoolCourse* course = (InfoSchoolCourse*) selectedObject;
+        InfoSchoolCourse* course = (InfoSchoolCourse*) object;
         self.course.courseId = course.uid;
         self.textfieldCourseName.text = course.name;
         self.textfieldCourseCode.text = course.code;

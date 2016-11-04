@@ -13,12 +13,13 @@
 #import "MarkTypeDatasource.h"
 
 @import TTGSnackbar;
-
 @import Firebase;
+
+static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
 
 @interface KCGPAMarksDetailViewController()
     @property (weak, nonatomic) IBOutlet UITextField *textfieldName;
-    @property (weak, nonatomic) IBOutlet MLPAutoCompleteTextField *textfieldType;
+    @property (weak, nonatomic) IBOutlet UITextField *textfieldType;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldWeight;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldMark;
 
@@ -45,22 +46,7 @@
         f.numberStyle = NSNumberFormatterDecimalStyle;
         self.textfieldMark.text = [f stringFromNumber:self.mark.mark];
         self.textfieldWeight.text = [f stringFromNumber:self.mark.weight];
-    }
-    
-    //Mark type autocomplete
-    self.markDatasource = [[MarkTypeDatasource alloc] init];
-    self.textfieldType.autoCompleteDataSource = self.markDatasource;
-    // Parent correction
-    self.textfieldType.autoCompleteParentView = self.view;
-    self.textfieldType.showAutoCompleteTableWhenEditingBegins = YES;
-    
-    // Offset correction
-    CGPoint pt = [self.textfieldType convertPoint:CGPointMake(0, self.textfieldType.frame.origin.y) toView:self.view];
-    self.textfieldType.autoCompleteTableOriginOffset = CGSizeMake(0, pt.y);
-    
-//    self.textfieldType.autocompleteType = HTAutocompleteTypeEmail;
-//    self.datasource= [[TestDatasource alloc] init];
-//    self.textfieldType.autoCompleteDataSource = self.datasource;
+    }    
 }
 
 //-(UITextField*) auto
@@ -132,5 +118,61 @@
         [marksRef updateChildValues:childUpdates];        
     }
 }
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+            [self.textfieldName becomeFirstResponder];
+            break;
+        case 1:
+            [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(indexPath.row)];
+            break;
+        case 2:
+            [self.textfieldWeight becomeFirstResponder];
+            break;
+        case 3:
+            [self.textfieldMark becomeFirstResponder];
+            break;
+        default:
+            break;
+    }
+}
+
+- (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+}
+
+-(void) configureAutocompleteWithRow:(KCGPAAutocompleteViewController*) vc andRow:(NSNumber*) row
+{
+    switch (row.intValue) {
+        case 1:
+            vc.autoCompleteDataSource = [MarkTypeDatasource new];
+            vc.title = @"Type";
+            vc.defaultText = self.textfieldType.text;
+            break;
+        default:
+            break;
+    }
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:kShowAutocompleteSegue])
+    {
+        KCGPAAutocompleteViewController* vc = segue.destinationViewController;
+        vc.delegate = self;
+        
+        [self configureAutocompleteWithRow:vc andRow:sender];
+    }
+}
+
+-(void) didAutocompleteSelectString:(NSString *)string withObject:(id<MLPAutoCompletionObject>)object
+{
+    self.textfieldType.text = string;
+    self.mark.type = string;
+}
+
 
 @end

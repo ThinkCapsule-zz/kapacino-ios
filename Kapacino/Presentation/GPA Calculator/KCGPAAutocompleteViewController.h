@@ -10,7 +10,9 @@
 #import "MLPAutoCompleteTextField.h"
 
 @protocol KCCPAAutocompleteDelegate <NSObject>
--(void) didAutocompleteSelectObject:(id<MLPAutoCompletionObject>) object;
+    @optional
+    -(void) didAutocompleteSelectString:(NSString*) string withObject:(id<MLPAutoCompletionObject>) object;
+
 @end
 
 @interface KCGPAAutocompleteViewController : UIViewController <MLPAutoCompleteTextFieldDelegate>
