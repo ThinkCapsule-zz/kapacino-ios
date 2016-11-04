@@ -16,6 +16,8 @@
 @import Firebase;
 
 static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
+static NSString *const kShowWeightSegue = @"showWeight";
+static NSString *const kShowMarkSegue = @"showMark";
 
 @interface KCGPAMarksDetailViewController()
     @property (weak, nonatomic) IBOutlet UITextField *textfieldName;
@@ -24,6 +26,8 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
     @property (weak, nonatomic) IBOutlet UITextField *textfieldMark;
 
     @property (strong, nonatomic) MarkTypeDatasource* markDatasource;
+
+    @property (strong, nonatomic) NSString* lastSegueIdentifier;
 @end
 
 @implementation KCGPAMarksDetailViewController
@@ -129,10 +133,10 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
             [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(indexPath.row)];
             break;
         case 2:
-            [self.textfieldWeight becomeFirstResponder];
+            [self performSegueWithIdentifier:kShowWeightSegue sender:self.mark.weight];
             break;
         case 3:
-            [self.textfieldMark becomeFirstResponder];
+            [self performSegueWithIdentifier:kShowMarkSegue sender:self.mark.mark];
             break;
         default:
             break;
@@ -166,6 +170,20 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
         
         [self configureAutocompleteWithRow:vc andRow:sender];
     }
+    else if ([segue.identifier isEqualToString:kShowWeightSegue])
+    {
+        KCGPAMarksPercentageViewController* vc = segue.destinationViewController;
+        vc.delegate = self;
+        vc.defaultPercentage = self.mark.weight.floatValue;
+    }
+    else if ([segue.identifier isEqualToString:kShowMarkSegue])
+    {
+        KCGPAMarksPercentageViewController* vc = segue.destinationViewController;
+        vc.delegate = self;
+        vc.defaultPercentage = self.mark.mark.floatValue;
+    }
+    
+    self.lastSegueIdentifier = segue.identifier;
 }
 
 -(void) didAutocompleteSelectString:(NSString *)string withObject:(id<MLPAutoCompletionObject>)object
@@ -174,5 +192,21 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
     self.mark.type = string;
 }
 
+-(void) didPercentageChange:(float)percentage
+{
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    f.numberStyle = NSNumberFormatterDecimalStyle;
+    
+    if ([self.lastSegueIdentifier isEqualToString:kShowWeightSegue])
+    {
+        self.textfieldWeight.text = [f stringFromNumber:@(percentage)];
+        self.mark.weight = @(percentage);
+    }
+    else if ([self.lastSegueIdentifier isEqualToString:kShowMarkSegue])
+    {
+        self.textfieldMark.text = [f stringFromNumber:@(percentage)];
+        self.mark.mark = @(percentage);
+    }
+}
 
 @end

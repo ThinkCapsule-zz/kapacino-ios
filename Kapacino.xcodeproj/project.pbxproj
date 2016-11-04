@@ -90,6 +90,7 @@
 		C9297FD91D8735FE00B3B1C5 /* KCHoursTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9297FD81D8735FE00B3B1C5 /* KCHoursTableViewController.m */; };
 		C9297FDC1D8756A500B3B1C5 /* KCDiscoverMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9297FDB1D8756A500B3B1C5 /* KCDiscoverMenuCell.m */; };
 		C9297FE01D87618C00B3B1C5 /* KCEventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9297FDF1D87618C00B3B1C5 /* KCEventDetailViewController.m */; };
+		C92BE60F1DCC610500C0B528 /* KCGPAMarksPercentageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92BE60E1DCC610500C0B528 /* KCGPAMarksPercentageViewController.m */; };
 		C92CC9481D865B6D00A3C4A2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92CC9471D865B6D00A3C4A2 /* MapKit.framework */; };
 		C92CC94B1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CC94A1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m */; };
 		C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */; };
@@ -315,6 +316,8 @@
 		C9297FDB1D8756A500B3B1C5 /* KCDiscoverMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCDiscoverMenuCell.m; sourceTree = "<group>"; };
 		C9297FDE1D87618C00B3B1C5 /* KCEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCEventDetailViewController.h; sourceTree = "<group>"; };
 		C9297FDF1D87618C00B3B1C5 /* KCEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCEventDetailViewController.m; sourceTree = "<group>"; };
+		C92BE60D1DCC610500C0B528 /* KCGPAMarksPercentageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPAMarksPercentageViewController.h; sourceTree = "<group>"; };
+		C92BE60E1DCC610500C0B528 /* KCGPAMarksPercentageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPAMarksPercentageViewController.m; sourceTree = "<group>"; };
 		C92CC9471D865B6D00A3C4A2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C92CC9491D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCRestaurantDetailMoreDetailTableViewController.h; path = Discover/KCRestaurantDetailMoreDetailTableViewController.h; sourceTree = "<group>"; };
 		C92CC94A1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCRestaurantDetailMoreDetailTableViewController.m; path = Discover/KCRestaurantDetailMoreDetailTableViewController.m; sourceTree = "<group>"; };
@@ -863,6 +866,8 @@
 				C9BB6ADF1DA9C5C100D2819F /* KCGPAMarkCell.m */,
 				C97A4B611DCC2FE300C22ABB /* KCGPAAutocompleteViewController.h */,
 				C97A4B621DCC2FE300C22ABB /* KCGPAAutocompleteViewController.m */,
+				C92BE60D1DCC610500C0B528 /* KCGPAMarksPercentageViewController.h */,
+				C92BE60E1DCC610500C0B528 /* KCGPAMarksPercentageViewController.m */,
 			);
 			name = New;
 			sourceTree = "<group>";
@@ -1268,6 +1273,7 @@
 				C98AF3991DC66AF5008CABC2 /* GPAInfoDatasource.m in Sources */,
 				B6D550911C55A8390091BF71 /* KCMainViewController.m in Sources */,
 				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,
+				C92BE60F1DCC610500C0B528 /* KCGPAMarksPercentageViewController.m in Sources */,
 				C985F0331DB6ECD3002F1869 /* InfoTerm.m in Sources */,
 				B69EB46E1C8222CA008BA05F /* UIColor+KCAdditions.m in Sources */,
 				C98AF39C1DC6715C008CABC2 /* CourseInfoDatasource.m in Sources */,
