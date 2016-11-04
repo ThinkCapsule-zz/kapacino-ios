@@ -67,11 +67,8 @@ static NSString *const kShowMarkSegue = @"showMark";
     }
 }
 
--(void) viewWillDisappear:(BOOL)animated
-{
-    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
-        [self saveData];
-    }
+-(BOOL) navigationShouldPopOnBackButton {
+    return [self saveData];
 }
 
 -(BOOL) saveData

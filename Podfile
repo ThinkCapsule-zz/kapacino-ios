@@ -21,6 +21,7 @@ pod 'TTGSnackbar'
 pod 'DACircularProgress'
 pod 'MLPAutoCompleteTextField', :git => 'https://github.com/ivanmkc/MLPAutoCompleteTextField.git'
 pod 'DOSingleton'
+pod 'BackButtonHandler'
 
 #pod 'Material'
 

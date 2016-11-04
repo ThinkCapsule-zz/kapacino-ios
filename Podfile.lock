@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - BackButtonHandler (1.0.0)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -149,6 +150,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - BackButtonHandler
   - BuddyBuildSDK
   - Contentful
   - DACircularProgress
@@ -183,6 +185,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  BackButtonHandler: 8ace60d1e870b4242b5d462203d6ecbe9e40e652
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   BuddyBuildSDK: f4682598772ae66c9ef5554d2d78d0a19fb413a0
   Contentful: 6d36bfcaaa655c2649b95f5da7d48b3292a4b6cb
@@ -223,6 +226,6 @@ SPEC CHECKSUMS:
   UAProgressView: ce49aee47c14df6dc372f6fd57852f570ca97e6b
   "\U0001F555": 2a41c1f9b76698cb697b8ec9a1db1087f5621187
 
-PODFILE CHECKSUM: 1f9c985e66d49abf97f7bbac2c530179ed5b6453
+PODFILE CHECKSUM: 499fada11e2f6a4446331273c51a778aae568c0f
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0.beta.1

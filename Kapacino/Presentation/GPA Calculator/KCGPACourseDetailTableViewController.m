@@ -64,17 +64,17 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
 }
 
 - (IBAction)onDoneTapped:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
--(void) viewWillDisappear:(BOOL)animated
-{
-    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
-        [self saveData];
+    if ([self saveData])
+    {
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 
--(void) saveData
+-(BOOL) navigationShouldPopOnBackButton {
+    return [self saveData];
+}
+
+-(BOOL) saveData
 {
     //    NSString *userID = [FIRAuth auth].currentUser.uid;
     
@@ -118,6 +118,7 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
         //TODO Use user id and access control
         NSDictionary *childUpdates = @{self.course.key: courseAsDictionary};
         [coursesRef updateChildValues:childUpdates];
+        return YES;
     }
     else
     {
@@ -125,6 +126,8 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
         TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid course details" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
+    
+    return NO;
 }
 
 - (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
