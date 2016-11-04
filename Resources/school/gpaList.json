@@ -1,0 +1,128 @@
+[
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00001",
+	"Alpha": "A+",
+	"Min": 90,
+	"Max": 100,
+	"O-Scale": 4,
+	"4-Scale": 4
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00002",
+	"Alpha": "A",
+	"Min": 85,
+	"Max": 89,
+	"O-Scale": 3.9,
+	"4-Scale": 3.9
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00003",
+	"Alpha": "A",
+	"Min": 80,
+	"Max": 84,
+	"O-Scale": 3.7,
+	"4-Scale": 3.7
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00004",
+	"Alpha": "B",
+	"Min": 77,
+	"Max": 79,
+	"O-Scale": 3.3,
+	"4-Scale": 3.3
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00005",
+	"Alpha": "B",
+	"Min": 73,
+	"Max": 76,
+	"O-Scale": 3,
+	"4-Scale": 3
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00006",
+	"Alpha": "B",
+	"Min": 70,
+	"Max": 72,
+	"O-Scale": 2.7,
+	"4-Scale": 2.7
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00007",
+	"Alpha": "C",
+	"Min": 67,
+	"Max": 69,
+	"O-Scale": 2.3,
+	"4-Scale": 2.3
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00008",
+	"Alpha": "C",
+	"Min": 63,
+	"Max": 66,
+	"O-Scale": 2,
+	"4-Scale": 2
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00009",
+	"Alpha": "C",
+	"Min": 60,
+	"Max": 62,
+	"O-Scale": 1.7,
+	"4-Scale": 1.7
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00010",
+	"Alpha": "D",
+	"Min": 57,
+	"Max": 59,
+	"O-Scale": 1.3,
+	"4-Scale": 1.3
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00011",
+	"Alpha": "D",
+	"Min": 53,
+	"Max": 56,
+	"O-Scale": 1,
+	"4-Scale": 1
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00012",
+	"Alpha": "D",
+	"Min": 50,
+	"Max": 52,
+	"O-Scale": 0.7,
+	"4-Scale": 0.7
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00013",
+	"Alpha": "E",
+	"Min": 40,
+	"Max": 49,
+	"O-Scale": 0,
+	"4-Scale": 0
+  },
+  {
+	"schoolID": "CA00011",
+	"GPAID": "G00014",
+	"Alpha": "F",
+	"Min": 0,
+	"Max": 39,
+	"O-Scale": 0,
+	"4-Scale": 0
+  }
+]

@@ -104,6 +104,7 @@
 		C96CEE131D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96CEE121D8C59AA00BC48FF /* KCEventDetailMoreDetailTableViewController.m */; };
 		C96CEE161D8C5B5200BC48FF /* KCEventDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96CEE151D8C5B5200BC48FF /* KCEventDetailTableViewController.m */; };
 		C97257BC1D55907E00F8B851 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97257BB1D55907E00F8B851 /* Settings.storyboard */; };
+		C97A4B631DCC2FE300C22ABB /* KCGPAAutocompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97A4B621DCC2FE300C22ABB /* KCGPAAutocompleteViewController.m */; };
 		C97C35AE1D7B2CB100C48279 /* KCRestaurantDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97C35AD1D7B2CB100C48279 /* KCRestaurantDetailViewController.m */; };
 		C985F0271DB6E7DF002F1869 /* InfoProfessor.m in Sources */ = {isa = PBXBuildFile; fileRef = C985F0261DB6E7DF002F1869 /* InfoProfessor.m */; };
 		C985F02A1DB6E831002F1869 /* InfoGPA.m in Sources */ = {isa = PBXBuildFile; fileRef = C985F0291DB6E831002F1869 /* InfoGPA.m */; };
@@ -335,6 +336,8 @@
 		C96CEE141D8C5B5200BC48FF /* KCEventDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCEventDetailTableViewController.h; path = Discover/KCEventDetailTableViewController.h; sourceTree = "<group>"; };
 		C96CEE151D8C5B5200BC48FF /* KCEventDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCEventDetailTableViewController.m; path = Discover/KCEventDetailTableViewController.m; sourceTree = "<group>"; };
 		C97257BB1D55907E00F8B851 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		C97A4B611DCC2FE300C22ABB /* KCGPAAutocompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPAAutocompleteViewController.h; sourceTree = "<group>"; };
+		C97A4B621DCC2FE300C22ABB /* KCGPAAutocompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPAAutocompleteViewController.m; sourceTree = "<group>"; };
 		C97C35AC1D7B2CB100C48279 /* KCRestaurantDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCRestaurantDetailViewController.h; path = Discover/KCRestaurantDetailViewController.h; sourceTree = "<group>"; };
 		C97C35AD1D7B2CB100C48279 /* KCRestaurantDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCRestaurantDetailViewController.m; path = Discover/KCRestaurantDetailViewController.m; sourceTree = "<group>"; };
 		C985F0251DB6E7DF002F1869 /* InfoProfessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoProfessor.h; sourceTree = "<group>"; };
@@ -858,6 +861,8 @@
 				C9F143051DA48134007E2BB8 /* KCGPAMarksDetailViewController.m */,
 				C9BB6ADE1DA9C5C100D2819F /* KCGPAMarkCell.h */,
 				C9BB6ADF1DA9C5C100D2819F /* KCGPAMarkCell.m */,
+				C97A4B611DCC2FE300C22ABB /* KCGPAAutocompleteViewController.h */,
+				C97A4B621DCC2FE300C22ABB /* KCGPAAutocompleteViewController.m */,
 			);
 			name = New;
 			sourceTree = "<group>";
@@ -1311,6 +1316,7 @@
 				C9F143061DA48134007E2BB8 /* KCGPAMarksDetailViewController.m in Sources */,
 				C96CEE161D8C5B5200BC48FF /* KCEventDetailTableViewController.m in Sources */,
 				B69EB46B1C8218E2008BA05F /* RegistrationNavigationController.m in Sources */,
+				C97A4B631DCC2FE300C22ABB /* KCGPAAutocompleteViewController.m in Sources */,
 				44E8B8F51CAE803B0081DA30 /* KCUserInfoLabel.m in Sources */,
 				C985F02A1DB6E831002F1869 /* InfoGPA.m in Sources */,
 				C9BB6AE01DA9C5C100D2819F /* KCGPAMarkCell.m in Sources */,

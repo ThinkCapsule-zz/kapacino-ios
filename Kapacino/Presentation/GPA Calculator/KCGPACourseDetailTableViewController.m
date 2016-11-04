@@ -17,12 +17,14 @@
 #import "CourseInfoDatasource.h"
 #import "InfoSchoolCourse.h"
 
+static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
+
 @interface KCGPACourseDetailTableViewController()
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCreditWeight;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCreditType;
-    @property (weak, nonatomic) IBOutlet MLPAutoCompleteTextField *textfieldInstructor;
+    @property (weak, nonatomic) IBOutlet UITextField *textfieldInstructor;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldTerm;
-    @property (weak, nonatomic) IBOutlet MLPAutoCompleteTextField *textfieldCourseName;
+    @property (weak, nonatomic) IBOutlet UITextField *textfieldCourseName;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCourseCode;
 @end
 
@@ -32,18 +34,6 @@
 -(void) viewDidLoad
 {
     //TODO Filter for professors from the given school
-    //Mark type autocomplete
-    self.textfieldInstructor.autoCompleteDataSource = [ProfessorInfoDatasource instance];
-    // Parent correction
-    self.textfieldInstructor.autoCompleteParentView = self.view;
-    self.textfieldInstructor.showAutoCompleteTableWhenEditingBegins = YES;
-    self.textfieldInstructor.autoCompleteDelegate = self;
-    
-    self.textfieldCourseName.autoCompleteDataSource = [CourseInfoDatasource instance];
-    // Parent correction
-    self.textfieldCourseName.autoCompleteParentView = self.view;
-    self.textfieldCourseName.showAutoCompleteTableWhenEditingBegins = YES;
-    self.textfieldCourseName.autoCompleteDelegate = self;
     
     if (self.course)
     {
@@ -135,18 +125,63 @@
     }
 }
 
--(void) autoCompleteTextField:(MLPAutoCompleteTextField *)textField didSelectAutoCompleteString:(NSString *)selectedString withAutoCompleteObject:(id<MLPAutoCompletionObject>)selectedObject forRowAtIndexPath:(NSIndexPath *)indexPath
-    {
-        if (textField == self.textfieldInstructor)
-        {
-            InfoProfessor* professor = (InfoProfessor*) selectedObject;
-            self.course.instructorId = professor.uid;
-        }
-        else if (textField == self.textfieldCourseName)
-        {
-            InfoSchoolCourse* course = (InfoSchoolCourse*) selectedObject;
-            self.course.courseId = course.uid;
-            self.textfieldCourseCode.text = course.code;
-        }
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+            [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(indexPath.row)];
+            break;
+        case 3:
+            [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(indexPath.row)];
+            break;
+        default:
+            break;
     }
+}
+
+-(void) configureAutocompleteWithRow:(KCGPAAutocompleteViewController*) vc andRow:(NSNumber*) row
+{
+    switch (row.intValue) {
+        case 0:
+            vc.autoCompleteDataSource = [CourseInfoDatasource sharedInstance];
+            vc.title = @"Course Name";
+            vc.defaultText = self.textfieldCourseName.text;
+            break;
+        case 3:
+            vc.autoCompleteDataSource = [ProfessorInfoDatasource sharedInstance];
+            vc.title = @"Instructor";
+            vc.defaultText = self.textfieldInstructor.text;
+        default:
+            break;
+    }
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:kShowAutocompleteSegue])
+    {
+        KCGPAAutocompleteViewController* vc = segue.destinationViewController;
+        vc.delegate = self;
+        
+        [self configureAutocompleteWithRow:vc andRow:sender];
+    }
+}
+
+-(void) didAutocompleteSelectObject:(id<MLPAutoCompletionObject>) selectedObject
+{
+    if ([selectedObject isKindOfClass:[InfoProfessor class]])
+    {
+        InfoProfessor* professor = (InfoProfessor*) selectedObject;
+        self.textfieldInstructor.text = professor.fullName;
+        self.course.instructorId = professor.uid;
+    }
+    else if ([selectedObject isKindOfClass:[InfoSchoolCourse class]])
+    {
+        InfoSchoolCourse* course = (InfoSchoolCourse*) selectedObject;
+        self.course.courseId = course.uid;
+        self.textfieldCourseName.text = course.name;
+        self.textfieldCourseCode.text = course.code;
+    }
+}
+
 @end

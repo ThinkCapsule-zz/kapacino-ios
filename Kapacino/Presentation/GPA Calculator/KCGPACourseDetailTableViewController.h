@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Course.h"
 #import "MLPAutoCompleteTextField.h"
+#import "KCGPAAutocompleteViewController.h"
 
-@interface KCGPACourseDetailTableViewController : UITableViewController <MLPAutoCompleteTextFieldDelegate>
+@interface KCGPACourseDetailTableViewController : UITableViewController <MLPAutoCompleteTextFieldDelegate, KCCPAAutocompleteDelegate>
     @property (strong, nonatomic) Course* course;
 @end
