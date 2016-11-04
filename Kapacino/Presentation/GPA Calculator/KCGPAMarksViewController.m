@@ -132,17 +132,21 @@ static NSString* kShowEditMark = @"showEditMark";
 }
 */
 
-/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    FIRDatabaseReference *marksRef = [[KCAPIClient sharedClient] marksReference];
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+        //Get course at indexPath
+        Mark* mark = self.marks[indexPath.row];
+        
+        [self.marks removeObjectAtIndex:indexPath.row];
+        
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        
+        //Remove the course
+        [[marksRef child:mark.key] removeValue];
+    }
 }
-*/
 
 /*
 // Override to support rearranging the table view.

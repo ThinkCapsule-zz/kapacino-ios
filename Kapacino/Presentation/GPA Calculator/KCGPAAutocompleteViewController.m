@@ -29,7 +29,12 @@
         self.textfieldAutocomplete.maximumNumberOfAutoCompleteRows = 15;
     }
     
-    self.textfieldAutocomplete.placeholder = self.defaultText;
+    NSLog(@"defaultText: %@", self.defaultText);
+    
+    if (self.defaultText && ![self.defaultText isEqualToString:@""])
+    {
+        self.textfieldAutocomplete.placeholder = self.defaultText;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -16,7 +16,7 @@
 @end
 
 @interface KCGPAAutocompleteViewController : UIViewController <MLPAutoCompleteTextFieldDelegate>
-    @property (strong) id <MLPAutoCompleteTextFieldDataSource> autoCompleteDataSource;
-    @property (strong) NSString* defaultText;
+    @property (strong, nonatomic) id <MLPAutoCompleteTextFieldDataSource> autoCompleteDataSource;
+    @property (strong, nonatomic) NSString* defaultText;
     @property (weak) id <KCCPAAutocompleteDelegate> delegate;
 @end

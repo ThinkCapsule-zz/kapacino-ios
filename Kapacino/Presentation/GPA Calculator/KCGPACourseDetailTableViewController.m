@@ -69,7 +69,9 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
 
 -(void) viewWillDisappear:(BOOL)animated
 {
-    [self saveData];
+    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+        [self saveData];
+    }
 }
 
 -(void) saveData

@@ -282,4 +282,19 @@ static NSString* kShowMarksSegue = @"showMarks";
     }
 }
 
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    FIRDatabaseReference *coursesRef = [[KCAPIClient sharedClient] coursesReference];
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //Get course at indexPath
+        Course* course = self.courses[indexPath.row];
+        
+        [self.courses removeObjectAtIndex:indexPath.row];
+        
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        
+        //Remove the course
+        [[coursesRef child:course.key] removeValue];
+    }
+}
 @end

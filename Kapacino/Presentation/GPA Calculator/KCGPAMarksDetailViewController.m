@@ -61,15 +61,20 @@ static NSString *const kShowMarkSegue = @"showMark";
 }
 
 - (IBAction)onDoneTapped:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    if ([self saveData])
+    {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 -(void) viewWillDisappear:(BOOL)animated
 {
-    [self saveData];
+    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+        [self saveData];
+    }
 }
 
--(void) saveData
+-(BOOL) saveData
 {
     NSString *userID = [FIRAuth auth].currentUser.uid;
     
@@ -94,33 +99,36 @@ static NSString *const kShowMarkSegue = @"showMark";
     if (!self.mark.name.length)
     {
         //Notify user of error
-        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid name" duration:TTGSnackbarDurationShort];
+        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Could not save: Invalid name" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
     else if (!self.mark.type.length)
     {
         //Notify user of error
-        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid type" duration:TTGSnackbarDurationShort];
+        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Could not save: Invalid type" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
     else if (self.mark.weight == nil)
     {
         //Notify user of error
-        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid weight" duration:TTGSnackbarDurationShort];
+        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Could not save: Invalid weight" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
     else if (self.mark.mark == nil)
     {
         //Notify user of error
-        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Invalid mark" duration:TTGSnackbarDurationShort];
+        TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:@"Could not save: Invalid mark" duration:TTGSnackbarDurationShort];
         [snackbar show];
     }
     else
     {
         //TODO Use user id and access control
         NSDictionary *childUpdates = @{self.mark.key: [self.mark toDictionary]};
-        [marksRef updateChildValues:childUpdates];        
+        [marksRef updateChildValues:childUpdates];
+        return YES;
     }
+    
+    return NO;
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
