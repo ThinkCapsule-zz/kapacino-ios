@@ -511,7 +511,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwu-Pm-8aP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2286" y="1865"/>
+            <point key="canvasLocation" x="2326" y="2215"/>
         </scene>
         <!--ANAT123-->
         <scene sceneID="2ZP-cs-Izq">
@@ -888,13 +888,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The weight for each of your assignment/test/exam/project is provided on your “course outlines”." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyQ-II-HJc">
-                                <rect key="frame" x="10" y="422" width="339" height="39"/>
+                                <rect key="frame" x="10" y="421" width="339" height="39"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.57647061347961426" green="0.56862747669219971" blue="0.56862747669219971" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To put in your final grade, set the weight to 100% and under “Add Marks” select type “Final Grade”." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0E-hT-P8n">
-                                <rect key="frame" x="10" y="471" width="355" height="39"/>
+                                <rect key="frame" x="10" y="470" width="355" height="39"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.57647061349999995" green="0.56862747670000002" blue="0.56862747670000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>

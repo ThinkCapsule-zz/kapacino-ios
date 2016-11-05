@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.pickerView selectRow:self.defaultIndex inComponent:0 animated:YES];
+    [self updateRowColor:self.pickerView didSelectRow:self.defaultIndex inComponent:0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,9 +28,26 @@
 
 -(void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
+    [self updateRowColor:pickerView didSelectRow:row inComponent:component];
+    
     if ([self.delegate respondsToSelector:@selector(didPickerSelectString:forSender:)])
     {
         [self.delegate didPickerSelectString:self.candidates[row] forSender:self.sender];
+    }
+}
+
+-(void) updateRowColor:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    UILabel *labelSelected = (UILabel*)[pickerView viewForRow:row forComponent:component];
+    if (row == [self.pickerView selectedRowInComponent:component])
+    {
+        labelSelected.textColor = [UIColor whiteColor];
+        labelSelected.backgroundColor = [UIColor colorWithRed:255/255 green:102/255 blue:102/255 alpha:1];
+    }
+    else
+    {
+        labelSelected.textColor = [UIColor colorWithRed:155/255 green:155/255 blue:155/255 alpha:1];
+        labelSelected.backgroundColor = [UIColor whiteColor];
     }
 }
 
@@ -47,6 +65,24 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
     return self.candidates.count;
+}
+
+
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
+{
+    UILabel* tView = (UILabel*)view;
+    if (!tView)
+    {
+        tView = [[UILabel alloc] init];
+        tView.font = [UIFont fontWithName:@"Avenir" size:24];
+        tView.textAlignment = NSTextAlignmentCenter;
+        tView.numberOfLines=3;
+    }
+    
+    // Fill the label text here
+    tView.text= self.candidates[row];
+    
+    return tView;
 }
 
 /*

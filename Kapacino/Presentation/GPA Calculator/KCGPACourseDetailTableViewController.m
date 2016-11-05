@@ -250,6 +250,11 @@ static NSString *const kShowPicker = @"showPicker";
 {
     UITextField* textfield = (UITextField*) sender;
     textfield.text = string;
+    
+    if (textfield == self.textfieldTerm)
+    {
+        self.course.term = string;
+    }
 }
 
 @end
