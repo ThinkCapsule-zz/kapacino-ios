@@ -9,15 +9,14 @@
 #import "KCGPAMarksDetailViewController.h"
 #import "KCAPIClient.h"
 #import "Mark.h"
-#import "MLPAutoCompleteTextField.h"
 #import "MarkTypeDatasource.h"
 
 @import TTGSnackbar;
 @import Firebase;
 
-static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
 static NSString *const kShowWeightSegue = @"showWeight";
 static NSString *const kShowMarkSegue = @"showMark";
+static NSString *const kShowPickerSegue = @"showPicker";
 
 @interface KCGPAMarksDetailViewController()
     @property (weak, nonatomic) IBOutlet UITextField *textfieldName;
@@ -135,7 +134,7 @@ static NSString *const kShowMarkSegue = @"showMark";
             [self.textfieldName becomeFirstResponder];
             break;
         case 1:
-            [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(indexPath.row)];
+            [self performSegueWithIdentifier:kShowPickerSegue sender:self.textfieldType];
             break;
         case 2:
             [self performSegueWithIdentifier:kShowWeightSegue sender:self.mark.weight];
@@ -153,29 +152,9 @@ static NSString *const kShowMarkSegue = @"showMark";
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
--(void) configureAutocompleteWithRow:(KCGPAAutocompleteViewController*) vc andRow:(NSNumber*) row
-{
-    switch (row.intValue) {
-        case 1:
-            vc.autoCompleteDataSource = [MarkTypeDatasource new];
-            vc.title = @"Type";
-            vc.defaultText = self.textfieldType.text;
-            break;
-        default:
-            break;
-    }
-}
-
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:kShowAutocompleteSegue])
-    {
-        KCGPAAutocompleteViewController* vc = segue.destinationViewController;
-        vc.delegate = self;
-        
-        [self configureAutocompleteWithRow:vc andRow:sender];
-    }
-    else if ([segue.identifier isEqualToString:kShowWeightSegue])
+    if ([segue.identifier isEqualToString:kShowWeightSegue])
     {
         KCGPAMarksPercentageViewController* vc = segue.destinationViewController;
         vc.delegate = self;
@@ -187,14 +166,30 @@ static NSString *const kShowMarkSegue = @"showMark";
         vc.delegate = self;
         vc.defaultPercentage = self.mark.mark.floatValue;
     }
+    else if ([segue.identifier isEqualToString:kShowPickerSegue])
+    {
+        KCGPAPickerViewController* vc = segue.destinationViewController;
+        vc.delegate = self;
+        
+        NSArray* candidates = @[
+                                @"Attendance",
+                                @"Essay",
+                                @"Exam",
+                                @"Midterm Exam",
+                                @"Final Exam",
+                                @"Assignment",
+                                @"Quiz"];
+        vc.candidates = candidates;
+        
+        if (self.mark.type)
+        {
+            vc.defaultIndex = (int) [vc.candidates indexOfObject:self.mark.type];
+        }
+        
+        vc.sender = sender;
+    }
     
     self.lastSegueIdentifier = segue.identifier;
-}
-
--(void) didAutocompleteSelectString:(NSString *)string withObject:(id<MLPAutoCompletionObject>)object
-{
-    self.textfieldType.text = string;
-    self.mark.type = string;
 }
 
 -(void) didPercentageChange:(float)percentage
@@ -211,6 +206,17 @@ static NSString *const kShowMarkSegue = @"showMark";
     {
         self.textfieldMark.text = [f stringFromNumber:@(percentage)];
         self.mark.mark = @(percentage);
+    }
+}
+
+-(void) didPickerSelectString:(NSString *)string forSender:(id) sender
+{
+    UITextField* textfield = (UITextField*) sender;
+    textfield.text = string;
+    
+    if (textfield == self.textfieldType)
+    {
+        self.mark.type = string;
     }
 }
 

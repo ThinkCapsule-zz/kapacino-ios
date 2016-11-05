@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "Mark.h"
-#import "KCGPAAutocompleteViewController.h"
 #import "KCGPAMarksPercentageViewController.h"
+#import "KCGPAPickerViewController.h"
 
-@interface KCGPAMarksDetailViewController : UITableViewController <KCGPAAutocompleteDelegate, KCGPAMarksPercentageDelegate>
+@interface KCGPAMarksDetailViewController : UITableViewController <KCGPAMarksPercentageDelegate, KCGPAPickerDelegate>
     @property (strong, nonatomic) Mark* mark;
     @property (strong, nonatomic) NSString* courseKey;
 @end
