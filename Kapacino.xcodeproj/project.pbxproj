@@ -95,6 +95,7 @@
 		C92CC94B1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CC94A1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m */; };
 		C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */; };
 		C92E3E4C1D5FB3890091A695 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92E3E4B1D5FB3890091A695 /* Home.storyboard */; };
+		C94814F51DCD4A8800405143 /* KCGPAPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94814F41DCD4A8800405143 /* KCGPAPickerViewController.m */; };
 		C94DCBB81DC253FE003A30BB /* school in Resources */ = {isa = PBXBuildFile; fileRef = C94DCBB71DC253FE003A30BB /* school */; };
 		C95C4A041DA4115700015865 /* CourseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A031DA4115700015865 /* CourseDataSource.m */; };
 		C95C4A081DA4125800015865 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A071DA4125800015865 /* Course.m */; };
@@ -324,6 +325,8 @@
 		C92E3E3D1D5E95BB0091A695 /* KCDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCDiscoverViewController.h; path = Discover/KCDiscoverViewController.h; sourceTree = "<group>"; };
 		C92E3E3E1D5E95BB0091A695 /* KCDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCDiscoverViewController.m; path = Discover/KCDiscoverViewController.m; sourceTree = "<group>"; };
 		C92E3E4B1D5FB3890091A695 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C94814F31DCD4A8800405143 /* KCGPAPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPAPickerViewController.h; sourceTree = "<group>"; };
+		C94814F41DCD4A8800405143 /* KCGPAPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPAPickerViewController.m; sourceTree = "<group>"; };
 		C94DCBB71DC253FE003A30BB /* school */ = {isa = PBXFileReference; lastKnownFileType = folder; path = school; sourceTree = "<group>"; };
 		C95C4A021DA4115700015865 /* CourseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseDataSource.h; path = FirebaseDatasource/CourseDataSource.h; sourceTree = "<group>"; };
 		C95C4A031DA4115700015865 /* CourseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseDataSource.m; path = FirebaseDatasource/CourseDataSource.m; sourceTree = "<group>"; };
@@ -868,6 +871,8 @@
 				C97A4B621DCC2FE300C22ABB /* KCGPAAutocompleteViewController.m */,
 				C92BE60D1DCC610500C0B528 /* KCGPAMarksPercentageViewController.h */,
 				C92BE60E1DCC610500C0B528 /* KCGPAMarksPercentageViewController.m */,
+				C94814F31DCD4A8800405143 /* KCGPAPickerViewController.h */,
+				C94814F41DCD4A8800405143 /* KCGPAPickerViewController.m */,
 			);
 			name = New;
 			sourceTree = "<group>";
@@ -1220,7 +1225,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CAEB33E63D34D5F52737C349 /* [CP] Check Pods Manifest.lock */ = {
@@ -1235,7 +1240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EC0127C673DCCC8DF2BC74DB /* 📦 Copy Pods Resources */ = {
@@ -1333,6 +1338,7 @@
 				C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */,
 				44461DD61CB2728D0018E13E /* KCLoginNavigationBar.m in Sources */,
 				C92CC94B1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m in Sources */,
+				C94814F51DCD4A8800405143 /* KCGPAPickerViewController.m in Sources */,
 				B60EB8511C07552000F3044A /* CFDataSourceConstants.m in Sources */,
 				C97C35AE1D7B2CB100C48279 /* KCRestaurantDetailViewController.m in Sources */,
 				C985F02D1DB6E83B002F1869 /* InfoSchool.m in Sources */,

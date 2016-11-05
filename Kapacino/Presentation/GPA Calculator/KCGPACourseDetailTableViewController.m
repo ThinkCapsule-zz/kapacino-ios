@@ -18,6 +18,7 @@
 #import "InfoSchoolCourse.h"
 
 static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
+static NSString *const kShowPicker = @"showPicker";
 
 @interface KCGPACourseDetailTableViewController()
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCreditWeight;
@@ -149,7 +150,7 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
             [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(row)];
             break;
         case 2:
-            [self.textfieldTerm becomeFirstResponder];
+            [self performSegueWithIdentifier:kShowPicker sender:self.textfieldTerm];
             break;
         case 3:
             [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(row)];
@@ -191,6 +192,41 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
         
         [self configureAutocompleteWithRow:vc andRow:sender];
     }
+    else if ([segue.identifier isEqualToString:kShowPicker])
+    {
+        KCGPAPickerViewController* vc = segue.destinationViewController;
+        vc.delegate = self;
+        
+        //Get current year
+        NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:[NSDate date]];
+        int year = (int) components.year;
+        
+        vc.candidates = [self getTermsForYear:year-4 toYear:year+4];
+        if (self.course.term)
+        {
+            vc.defaultIndex = (int) [vc.candidates indexOfObject:self.course.term];
+        }
+        else
+        {
+            vc.defaultIndex = (int) vc.candidates.count/2;
+        }
+        
+        vc.sender = sender;
+    }
+}
+
+-(NSArray*) getTermsForYear:(int) start toYear:(int) end
+{
+    NSMutableArray* terms = [NSMutableArray array];
+    
+    for (int year = start; year <= end; year++)
+    {
+        [terms addObject:[NSString stringWithFormat:@"Spring - %d", year]];
+        [terms addObject:[NSString stringWithFormat:@"Fall - %d", year]];
+        [terms addObject:[NSString stringWithFormat:@"Winter - %d", year]];
+    }
+    
+    return terms;
 }
 
 -(void) didAutocompleteSelectString:(NSString *)string withObject:(id<MLPAutoCompletionObject>)object
@@ -208,6 +244,12 @@ static NSString *const kShowAutocompleteSegue = @"showAutocomplete";
         self.textfieldCourseName.text = course.name;
         self.textfieldCourseCode.text = course.code;
     }
+}
+
+-(void) didPickerSelectString:(NSString *)string forSender:(id) sender
+{
+    UITextField* textfield = (UITextField*) sender;
+    textfield.text = string;
 }
 
 @end
