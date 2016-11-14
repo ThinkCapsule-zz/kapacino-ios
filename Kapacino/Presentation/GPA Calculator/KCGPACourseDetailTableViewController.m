@@ -72,7 +72,12 @@ static NSString *const kShowPicker = @"showPicker";
 }
 
 -(BOOL) navigationShouldPopOnBackButton {
-    return [self saveData];
+    BOOL isSaved = [self saveData];
+    
+    TTGSnackbar* snackbar = [[TTGSnackbar alloc] initWithMessage:isSaved ? @"Saved" : @"Invalid data. Could not save" duration:TTGSnackbarDurationShort];
+    [snackbar show];
+    
+    return YES;
 }
 
 -(BOOL) saveData

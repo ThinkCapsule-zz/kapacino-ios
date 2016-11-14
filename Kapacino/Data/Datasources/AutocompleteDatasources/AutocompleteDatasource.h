@@ -8,11 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "MLPAutoCompleteTextFieldDatasource.h"
-#import "DOSingleton.h"
+#import "JsonDatasource.h"
 
-@interface AutocompleteDatasource : DOSingleton <MLPAutoCompleteTextFieldDataSource>
+@interface AutocompleteDatasource : JsonDatasource <MLPAutoCompleteTextFieldDataSource>
 //    -(AutocompleteDatasource*) sharedInstance;
-    -(NSString*) getDataFilename;
-    -(Class) getDataClass;
-    -(id) getById:(NSString*) uid;
 @end

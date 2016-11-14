@@ -18,6 +18,8 @@
 #import "InfoProfessor.h"
 #import "InfoSchoolCourse.h"
 #import "CourseInfoDatasource.h"
+#import "InfoGPA.h"
+#import "GPAInfoDatasource.h"
 
 @import Firebase;
 @import FirebaseDatabaseUI;
@@ -26,6 +28,7 @@
     @property (weak, nonatomic) IBOutlet DALabeledCircularProgressView *progressViewGPAOverall;
     @property (weak, nonatomic) IBOutlet DALabeledCircularProgressView *progressViewGPACurrent;
     @property (weak, nonatomic) IBOutlet UITableView *tableView;
+    @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControlGPA;
 
     @property (strong, nonatomic) NSMutableArray* courses;
     @property (strong, nonatomic) NSMutableDictionary<NSString*, NSMutableArray<Mark*>*> *courseToMarksDictionary;
@@ -33,6 +36,17 @@
 
     @property (nonatomic) float progressCurrent;
     @property (nonatomic) float progressOverall;
+
+    enum GPAMode
+    {
+        GPAMode_GPA,
+        GPAMode_Percentage
+    };
+
+    @property (nonatomic) enum GPAMode mode;
+
+    @property GPAInfoDatasource* gpaInfo;
+    @property (strong, nonatomic) NSString* schoolId;
 @end
 
 @implementation KCGPAMainViewController
@@ -45,6 +59,8 @@ static NSString* kShowMarksSegue = @"showMarks";
     self.courses = [NSMutableArray array];
     [self setupTableView];
     
+    self.gpaInfo = [GPAInfoDatasource instance];
+    
     self.progressViewGPACurrent.roundedCorners = YES;
     self.progressViewGPACurrent.trackTintColor = [UIColor lightGrayColor];
     self.progressViewGPACurrent.progressTintColor = [UIColor orangeColor];
@@ -55,7 +71,19 @@ static NSString* kShowMarksSegue = @"showMarks";
     self.progressCurrent = 0.5;
     self.progressOverall = 0.7;
     
+    self.mode = GPAMode_GPA;
+    
+    //TODO fix this
+    self.schoolId = @"CA00011";
+    
     [self calculateGPA];
+}
+
+-(void) setMode:(enum GPAMode)mode
+{
+    _mode = mode;
+    self.progressCurrent = self.progressCurrent;
+    self.progressOverall = self.progressOverall;
 }
 
 -(void) calculateGPA
@@ -152,19 +180,59 @@ static NSString* kShowMarksSegue = @"showMarks";
 
 -(BOOL) isCourseInCurrentTerm:(Course*) course
 {
+    //TODO fix this
     return YES;
 }
 
 -(void) setProgressCurrent:(float)progress
 {
-    self.progressViewGPACurrent.progress = progress;
-    self.progressViewGPACurrent.progressLabel.text = [NSString stringWithFormat:@"%.0f", progress];
+    _progressCurrent = progress;
+    
+    float progressModified = progress;
+    
+    if (self.mode == GPAMode_Percentage)
+    {
+        progressModified = [self convertPercentageToGPA:progress];
+    }
+    
+    self.progressViewGPACurrent.progress = progressModified;
+    self.progressViewGPACurrent.progressLabel.text = [NSString stringWithFormat:@"%.0f", progressModified];
 }
 
 -(void) setProgressOverall:(float)progress
 {
-    self.progressViewGPAOverall.progress = progress;
-    self.progressViewGPAOverall.progressLabel.text = [NSString stringWithFormat:@"%.0f", progress];
+    _progressOverall = progress;
+    
+    float progressModified = progress;
+    
+    if (self.mode == GPAMode_Percentage)
+    {
+        progressModified = [self convertPercentageToGPA:progress];
+    }
+    
+    self.progressViewGPAOverall.progress = progressModified;
+    self.progressViewGPAOverall.progressLabel.text = [NSString stringWithFormat:@"%.0f", progressModified];
+}
+
+-(float) convertPercentageToGPA:(float) percentage
+{
+    float percentageModified = percentage;
+
+    NSArray* gpaInfoForSchool = [self.gpaInfo.data filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(InfoGPA* object, NSDictionary *bindings) {
+        return [object.schoolId isEqualToString:self.schoolId];
+    }]];
+    
+    //Get percentages
+    for (InfoGPA* info in gpaInfoForSchool)
+    {
+        float progressCeil = ceilf(percentage);
+        if (progressCeil >= info.min && progressCeil <= info.max)
+        {
+            percentageModified = info.oScale;
+        }
+    }
+    
+    return percentageModified;
 }
 
 -(void) setupTableView
@@ -180,32 +248,6 @@ static NSString* kShowMarksSegue = @"showMarks";
         
         [self.tableView reloadData];
     }];
-    
-//    self.dataSource = [[CourseDataSource alloc] initWithRef:ref
-//                                                 modelClass:[Course class]
-//                                                   nibNamed:@"KCGPACourseCell"
-//                                        cellReuseIdentifier:@"cell"
-//                                                       view:self.tableView];
-//    [self.tableView registerClass:[KCGPACourseCell class] forCellReuseIdentifier:@"cell"];
-    
-//    [self.dataSource populateCellWithBlock:^void(KCGPACourseCell * cell, Course * course) {
-//        /* Populate cell with contents of the snapshot */
-//        cell.labelCourseCode.text = course.courseCode;
-//        cell.labelInstructorName.text = course.instructor;
-//        cell.labelTerm.text = course.term;
-//        cell.labelGPA.text = @"N/A";
-////        cell.textLabel.text = course.courseCode;
-//     }];
-}
-
-- (void) save
-{
-    NSString *userID = [KCAPIClient sharedClient].currentUserID ;
-//    [self.userInfo setValue:@"YES" forKey:@"complete"];
-//    [[KCAPIClient sharedClient] updateUserWithID:userID userInfo:nil success:^(Firebase *userRef) {
-////        KCLoadingPage *loadingPageViewConrtoller = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCLoadingPage"];
-////        [self.navigationController setViewControllers:@[loadingPageViewConrtoller] animated:YES];
-//    } failure:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -213,16 +255,7 @@ static NSString* kShowMarksSegue = @"showMarks";
     // Dispose of any resources that can be recreated.
 }
 
-/*
 #pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -297,4 +330,12 @@ static NSString* kShowMarksSegue = @"showMarks";
         [[coursesRef child:course.key] removeValue];
     }
 }
+
+- (IBAction)onSegmentGPAChanged:(UISegmentedControl*)sender {
+    if (sender == self.segmentControlGPA)
+    {
+        self.mode = self.segmentControlGPA.selectedSegmentIndex == 0 ? GPAMode_GPA : GPAMode_Percentage;
+    }
+}
+
 @end

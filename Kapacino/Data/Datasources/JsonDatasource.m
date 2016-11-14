@@ -1,22 +1,20 @@
 //
-//  AutocompleteDatasource.m
+//  JsonDatasource.m
 //  Kapacino
 //
-//  Created by Ivan Cheung on 2016-10-27.
+//  Created by Ivan Cheung on 2016-11-06.
 //  Copyright © 2016 ThinkCapsule. All rights reserved.
 //
 
-#import "AutocompleteDatasource.h"
+#import "JsonDatasource.h"
 #import <Mantle/Mantle.h>
 
-@interface AutocompleteDatasource()
-    @property (strong, nonatomic) NSArray* data;
+@interface JsonDatasource()
+    @property (strong, readwrite) NSArray* data;
     @property (strong, nonatomic) NSMutableDictionary* idToDataMap;
 @end
 
-@implementation AutocompleteDatasource
-    static AutocompleteDatasource* instance;
-
+@implementation JsonDatasource
     -(id) init
     {
         if (!self.isInitialized) {
@@ -52,25 +50,7 @@
         return self;
     }
 
-    -(void) autoCompleteTextField:(MLPAutoCompleteTextField *)textField possibleCompletionsForString:(NSString *)string completionHandler:(void (^)(NSArray *))handler
-    {
-        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
-        dispatch_async(queue, ^{
-//            NSArray *countries =
-//            @[
-//              @"Essay",
-//              @"Exam",
-//              @"Assignment",
-//              @"Quiz"];
-//            
-//            //Sort
-//            countries = [countries sortedArrayUsingSelector:@selector(compare:)];
-            
-            handler(self.data);
-        });
-    }
-
-#pragma Override functions
+    #pragma Override functions
     -(Class) getDataClass
     {
         return nil;
@@ -86,8 +66,4 @@
         return self.idToDataMap[uid];
     }
 
-//    -(AutocompleteDatasource*) sharedInstance
-//    {
-//        return nil;
-//    }
 @end

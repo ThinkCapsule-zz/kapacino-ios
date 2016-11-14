@@ -83,7 +83,6 @@
 		B6DC35CE1C55BA4700ED0ABC /* KCFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DC35CD1C55BA4700ED0ABC /* KCFeedCell.xib */; };
 		B6FCB92A1C8420030072AFC8 /* KCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FCB9291C8420030072AFC8 /* KCNavigationController.m */; };
 		C904AF6C1D58D3AC00251A01 /* KCGPAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C904AF6B1D58D3AC00251A01 /* KCGPAMainViewController.m */; };
-		C9166ACC1DB93FDF00B1D751 /* ProfessorInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9166ACB1DB93FDF00B1D751 /* ProfessorInfoDatasource.m */; };
 		C9169BA91D7F517700CC507C /* CFModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C9169BA81D7F517700CC507C /* CFModelHelper.m */; };
 		C9169BAC1D7F5C3700CC507C /* KCImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9169BAB1D7F5C3700CC507C /* KCImageCell.m */; };
 		C923ACCF1D627A870088530B /* CFEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C923ACCE1D627A870088530B /* CFEventModel.m */; };
@@ -97,6 +96,13 @@
 		C92E3E4C1D5FB3890091A695 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92E3E4B1D5FB3890091A695 /* Home.storyboard */; };
 		C94814F51DCD4A8800405143 /* KCGPAPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94814F41DCD4A8800405143 /* KCGPAPickerViewController.m */; };
 		C94DCBB81DC253FE003A30BB /* school in Resources */ = {isa = PBXBuildFile; fileRef = C94DCBB71DC253FE003A30BB /* school */; };
+		C9570B1D1DCFCF2900397212 /* AutocompleteDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9570B101DCFCF2900397212 /* AutocompleteDatasource.m */; };
+		C9570B1E1DCFCF2900397212 /* CourseInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9570B121DCFCF2900397212 /* CourseInfoDatasource.m */; };
+		C9570B1F1DCFCF2900397212 /* MarkTypeDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9570B141DCFCF2900397212 /* MarkTypeDatasource.m */; };
+		C9570B201DCFCF2900397212 /* ProfessorInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9570B161DCFCF2900397212 /* ProfessorInfoDatasource.m */; };
+		C9570B211DCFCF2900397212 /* UniversityInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9570B181DCFCF2900397212 /* UniversityInfoDatasource.m */; };
+		C9570B221DCFCF2900397212 /* GPAInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9570B1A1DCFCF2900397212 /* GPAInfoDatasource.m */; };
+		C9570B231DCFCF2900397212 /* JsonDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9570B1C1DCFCF2900397212 /* JsonDatasource.m */; };
 		C95C4A041DA4115700015865 /* CourseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A031DA4115700015865 /* CourseDataSource.m */; };
 		C95C4A081DA4125800015865 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A071DA4125800015865 /* Course.m */; };
 		C95C4A0C1DA413AC00015865 /* KCGPACourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A0B1DA413AC00015865 /* KCGPACourseCell.m */; };
@@ -114,9 +120,6 @@
 		C985F0301DB6E8D2002F1869 /* InfoSchoolCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = C985F02F1DB6E8D2002F1869 /* InfoSchoolCourse.m */; };
 		C985F0331DB6ECD3002F1869 /* InfoTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = C985F0321DB6ECD3002F1869 /* InfoTerm.m */; };
 		C98751031D7DD4330080365C /* KCRestaurantDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98751021D7DD4330080365C /* KCRestaurantDetailTableViewController.m */; };
-		C98AF3991DC66AF5008CABC2 /* GPAInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C98AF3981DC66AF5008CABC2 /* GPAInfoDatasource.m */; };
-		C98AF39C1DC6715C008CABC2 /* CourseInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C98AF39B1DC6715C008CABC2 /* CourseInfoDatasource.m */; };
-		C98AF39F1DC67171008CABC2 /* UniversityInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C98AF39E1DC67171008CABC2 /* UniversityInfoDatasource.m */; };
 		C9BB12FA1D8ADC1600DCB37E /* CFPlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB12F91D8ADC1600DCB37E /* CFPlaceModel.m */; };
 		C9BB6ADD1DA9A25900D2819F /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB6ADC1DA9A25900D2819F /* Mark.m */; };
 		C9BB6AE01DA9C5C100D2819F /* KCGPAMarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB6ADF1DA9C5C100D2819F /* KCGPAMarkCell.m */; };
@@ -127,8 +130,6 @@
 		C9F143061DA48134007E2BB8 /* KCGPAMarksDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F143051DA48134007E2BB8 /* KCGPAMarksDetailViewController.m */; };
 		C9F540C51D7756080025FE6F /* KCArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F540C41D7756080025FE6F /* KCArticleViewController.m */; };
 		C9F540C91D775AF80025FE6F /* CFRestaurantModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F540C81D775AF80025FE6F /* CFRestaurantModel.m */; };
-		C9F6D5181DC27CF00093CCC3 /* AutocompleteDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F6D5171DC27CF00093CCC3 /* AutocompleteDatasource.m */; };
-		C9F6D51D1DC297330093CCC3 /* MarkTypeDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F6D51C1DC297330093CCC3 /* MarkTypeDatasource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -303,8 +304,6 @@
 		B6FCB9291C8420030072AFC8 /* KCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCNavigationController.m; sourceTree = "<group>"; };
 		C904AF6A1D58D3AC00251A01 /* KCGPAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPAMainViewController.h; sourceTree = "<group>"; };
 		C904AF6B1D58D3AC00251A01 /* KCGPAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPAMainViewController.m; sourceTree = "<group>"; };
-		C9166ACA1DB93FDF00B1D751 /* ProfessorInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfessorInfoDatasource.h; path = AutocompleteDatasources/ProfessorInfoDatasource.h; sourceTree = "<group>"; };
-		C9166ACB1DB93FDF00B1D751 /* ProfessorInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfessorInfoDatasource.m; path = AutocompleteDatasources/ProfessorInfoDatasource.m; sourceTree = "<group>"; };
 		C9169BA71D7F517700CC507C /* CFModelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFModelHelper.h; sourceTree = "<group>"; };
 		C9169BA81D7F517700CC507C /* CFModelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFModelHelper.m; sourceTree = "<group>"; };
 		C9169BAA1D7F5C3700CC507C /* KCImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCImageCell.h; path = Discover/KCImageCell.h; sourceTree = "<group>"; };
@@ -328,6 +327,20 @@
 		C94814F31DCD4A8800405143 /* KCGPAPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPAPickerViewController.h; sourceTree = "<group>"; };
 		C94814F41DCD4A8800405143 /* KCGPAPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPAPickerViewController.m; sourceTree = "<group>"; };
 		C94DCBB71DC253FE003A30BB /* school */ = {isa = PBXFileReference; lastKnownFileType = folder; path = school; sourceTree = "<group>"; };
+		C9570B0F1DCFCF2900397212 /* AutocompleteDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutocompleteDatasource.h; sourceTree = "<group>"; };
+		C9570B101DCFCF2900397212 /* AutocompleteDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutocompleteDatasource.m; sourceTree = "<group>"; };
+		C9570B111DCFCF2900397212 /* CourseInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseInfoDatasource.h; sourceTree = "<group>"; };
+		C9570B121DCFCF2900397212 /* CourseInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseInfoDatasource.m; sourceTree = "<group>"; };
+		C9570B131DCFCF2900397212 /* MarkTypeDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkTypeDatasource.h; sourceTree = "<group>"; };
+		C9570B141DCFCF2900397212 /* MarkTypeDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkTypeDatasource.m; sourceTree = "<group>"; };
+		C9570B151DCFCF2900397212 /* ProfessorInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfessorInfoDatasource.h; sourceTree = "<group>"; };
+		C9570B161DCFCF2900397212 /* ProfessorInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessorInfoDatasource.m; sourceTree = "<group>"; };
+		C9570B171DCFCF2900397212 /* UniversityInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversityInfoDatasource.h; sourceTree = "<group>"; };
+		C9570B181DCFCF2900397212 /* UniversityInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniversityInfoDatasource.m; sourceTree = "<group>"; };
+		C9570B191DCFCF2900397212 /* GPAInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAInfoDatasource.h; sourceTree = "<group>"; };
+		C9570B1A1DCFCF2900397212 /* GPAInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAInfoDatasource.m; sourceTree = "<group>"; };
+		C9570B1B1DCFCF2900397212 /* JsonDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonDatasource.h; sourceTree = "<group>"; };
+		C9570B1C1DCFCF2900397212 /* JsonDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonDatasource.m; sourceTree = "<group>"; };
 		C95C4A021DA4115700015865 /* CourseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseDataSource.h; path = FirebaseDatasource/CourseDataSource.h; sourceTree = "<group>"; };
 		C95C4A031DA4115700015865 /* CourseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseDataSource.m; path = FirebaseDatasource/CourseDataSource.m; sourceTree = "<group>"; };
 		C95C4A061DA4125800015865 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
@@ -358,12 +371,6 @@
 		C985F0321DB6ECD3002F1869 /* InfoTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTerm.m; sourceTree = "<group>"; };
 		C98751011D7DD4330080365C /* KCRestaurantDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCRestaurantDetailTableViewController.h; path = Discover/KCRestaurantDetailTableViewController.h; sourceTree = "<group>"; };
 		C98751021D7DD4330080365C /* KCRestaurantDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCRestaurantDetailTableViewController.m; path = Discover/KCRestaurantDetailTableViewController.m; sourceTree = "<group>"; };
-		C98AF3971DC66AF5008CABC2 /* GPAInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPAInfoDatasource.h; path = AutocompleteDatasources/GPAInfoDatasource.h; sourceTree = "<group>"; };
-		C98AF3981DC66AF5008CABC2 /* GPAInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPAInfoDatasource.m; path = AutocompleteDatasources/GPAInfoDatasource.m; sourceTree = "<group>"; };
-		C98AF39A1DC6715C008CABC2 /* CourseInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseInfoDatasource.h; path = AutocompleteDatasources/CourseInfoDatasource.h; sourceTree = "<group>"; };
-		C98AF39B1DC6715C008CABC2 /* CourseInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseInfoDatasource.m; path = AutocompleteDatasources/CourseInfoDatasource.m; sourceTree = "<group>"; };
-		C98AF39D1DC67171008CABC2 /* UniversityInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UniversityInfoDatasource.h; path = AutocompleteDatasources/UniversityInfoDatasource.h; sourceTree = "<group>"; };
-		C98AF39E1DC67171008CABC2 /* UniversityInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UniversityInfoDatasource.m; path = AutocompleteDatasources/UniversityInfoDatasource.m; sourceTree = "<group>"; };
 		C9BB12F81D8ADC1600DCB37E /* CFPlaceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFPlaceModel.h; sourceTree = "<group>"; };
 		C9BB12F91D8ADC1600DCB37E /* CFPlaceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFPlaceModel.m; sourceTree = "<group>"; };
 		C9BB6ADB1DA9A25900D2819F /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
@@ -383,10 +390,6 @@
 		C9F540C41D7756080025FE6F /* KCArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCArticleViewController.m; sourceTree = "<group>"; };
 		C9F540C71D775AF80025FE6F /* CFRestaurantModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFRestaurantModel.h; sourceTree = "<group>"; };
 		C9F540C81D775AF80025FE6F /* CFRestaurantModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFRestaurantModel.m; sourceTree = "<group>"; };
-		C9F6D5161DC27CF00093CCC3 /* AutocompleteDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutocompleteDatasource.h; sourceTree = "<group>"; };
-		C9F6D5171DC27CF00093CCC3 /* AutocompleteDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutocompleteDatasource.m; sourceTree = "<group>"; };
-		C9F6D51B1DC297330093CCC3 /* MarkTypeDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarkTypeDatasource.h; path = AutocompleteDatasources/MarkTypeDatasource.h; sourceTree = "<group>"; };
-		C9F6D51C1DC297330093CCC3 /* MarkTypeDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarkTypeDatasource.m; path = AutocompleteDatasources/MarkTypeDatasource.m; sourceTree = "<group>"; };
 		F48C0B83AAA8002187C17D0A /* Pods-Kapacino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kapacino.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kapacino/Pods-Kapacino.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -545,7 +548,7 @@
 		B60EB83E1C07513100F3044A /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				C9166AC91DB93FB700B1D751 /* AutocompleteDatasources */,
+				C9570B0D1DCFCF2900397212 /* Datasources */,
 				C985F0241DB6E7CE002F1869 /* InfoModels */,
 				C95C4A051DA4124B00015865 /* FirebaseModels */,
 				C95C4A011DA40FFD00015865 /* FirebaseDatasources */,
@@ -877,25 +880,6 @@
 			name = New;
 			sourceTree = "<group>";
 		};
-		C9166AC91DB93FB700B1D751 /* AutocompleteDatasources */ = {
-			isa = PBXGroup;
-			children = (
-				C9F6D51B1DC297330093CCC3 /* MarkTypeDatasource.h */,
-				C9F6D51C1DC297330093CCC3 /* MarkTypeDatasource.m */,
-				C9166ACA1DB93FDF00B1D751 /* ProfessorInfoDatasource.h */,
-				C9166ACB1DB93FDF00B1D751 /* ProfessorInfoDatasource.m */,
-				C9F6D5161DC27CF00093CCC3 /* AutocompleteDatasource.h */,
-				C9F6D5171DC27CF00093CCC3 /* AutocompleteDatasource.m */,
-				C98AF3971DC66AF5008CABC2 /* GPAInfoDatasource.h */,
-				C98AF3981DC66AF5008CABC2 /* GPAInfoDatasource.m */,
-				C98AF39A1DC6715C008CABC2 /* CourseInfoDatasource.h */,
-				C98AF39B1DC6715C008CABC2 /* CourseInfoDatasource.m */,
-				C98AF39D1DC67171008CABC2 /* UniversityInfoDatasource.h */,
-				C98AF39E1DC67171008CABC2 /* UniversityInfoDatasource.m */,
-			);
-			name = AutocompleteDatasources;
-			sourceTree = "<group>";
-		};
 		C9297FDD1D87616E00B3B1C5 /* Event */ = {
 			isa = PBXGroup;
 			children = (
@@ -923,6 +907,35 @@
 				C9DF9C631D6B53C400DA8D4C /* Discover.storyboard */,
 			);
 			name = Discover;
+			sourceTree = "<group>";
+		};
+		C9570B0D1DCFCF2900397212 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				C9570B0E1DCFCF2900397212 /* AutocompleteDatasources */,
+				C9570B191DCFCF2900397212 /* GPAInfoDatasource.h */,
+				C9570B1A1DCFCF2900397212 /* GPAInfoDatasource.m */,
+				C9570B1B1DCFCF2900397212 /* JsonDatasource.h */,
+				C9570B1C1DCFCF2900397212 /* JsonDatasource.m */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		C9570B0E1DCFCF2900397212 /* AutocompleteDatasources */ = {
+			isa = PBXGroup;
+			children = (
+				C9570B0F1DCFCF2900397212 /* AutocompleteDatasource.h */,
+				C9570B101DCFCF2900397212 /* AutocompleteDatasource.m */,
+				C9570B111DCFCF2900397212 /* CourseInfoDatasource.h */,
+				C9570B121DCFCF2900397212 /* CourseInfoDatasource.m */,
+				C9570B131DCFCF2900397212 /* MarkTypeDatasource.h */,
+				C9570B141DCFCF2900397212 /* MarkTypeDatasource.m */,
+				C9570B151DCFCF2900397212 /* ProfessorInfoDatasource.h */,
+				C9570B161DCFCF2900397212 /* ProfessorInfoDatasource.m */,
+				C9570B171DCFCF2900397212 /* UniversityInfoDatasource.h */,
+				C9570B181DCFCF2900397212 /* UniversityInfoDatasource.m */,
+			);
+			path = AutocompleteDatasources;
 			sourceTree = "<group>";
 		};
 		C95C4A011DA40FFD00015865 /* FirebaseDatasources */ = {
@@ -1269,22 +1282,21 @@
 				B636C2B41C0787A9003C1E44 /* CFListingModel.m in Sources */,
 				444F7F7F1CB00148003F7D9B /* KCUser.m in Sources */,
 				B636C2B71C0787D5003C1E44 /* CFVideoModel.m in Sources */,
-				C9F6D5181DC27CF00093CCC3 /* AutocompleteDatasource.m in Sources */,
 				093A3E9F1CA2E3F000EC91FE /* KCBenchmarkCalculatorViewController.m in Sources */,
 				C95C4A081DA4125800015865 /* Course.m in Sources */,
-				C9F6D51D1DC297330093CCC3 /* MarkTypeDatasource.m in Sources */,
 				443C483B1CAD487D004436CD /* KCLoginViewController.m in Sources */,
 				B6A339FB1C7C13D300F9CC9D /* CFAssetModel.m in Sources */,
-				C98AF3991DC66AF5008CABC2 /* GPAInfoDatasource.m in Sources */,
 				B6D550911C55A8390091BF71 /* KCMainViewController.m in Sources */,
 				B636C2BD1C078ABA003C1E44 /* CFClientHelper.m in Sources */,
 				C92BE60F1DCC610500C0B528 /* KCGPAMarksPercentageViewController.m in Sources */,
 				C985F0331DB6ECD3002F1869 /* InfoTerm.m in Sources */,
 				B69EB46E1C8222CA008BA05F /* UIColor+KCAdditions.m in Sources */,
-				C98AF39C1DC6715C008CABC2 /* CourseInfoDatasource.m in Sources */,
 				C9F540C91D775AF80025FE6F /* CFRestaurantModel.m in Sources */,
 				B69EB4611C820BE8008BA05F /* PreflightManager.m in Sources */,
+				C9570B231DCFCF2900397212 /* JsonDatasource.m in Sources */,
+				C9570B1E1DCFCF2900397212 /* CourseInfoDatasource.m in Sources */,
 				44E8B8FF1CAEA73B0081DA30 /* KCViewController.m in Sources */,
+				C9570B1D1DCFCF2900397212 /* AutocompleteDatasource.m in Sources */,
 				444924B91CB3ECD7008737A6 /* KCSearchViewController.m in Sources */,
 				B6431F981C55BD4C00546B3A /* UIFont+KCAdditions.m in Sources */,
 				B60EB8481C0751FD00F3044A /* CFClient.m in Sources */,
@@ -1305,6 +1317,7 @@
 				B60EB84E1C0754FE00F3044A /* CFDataSource.m in Sources */,
 				444924B41CB3B9AB008737A6 /* KCSchoolInformationTableViewController.m in Sources */,
 				C95C4A0C1DA413AC00015865 /* KCGPACourseCell.m in Sources */,
+				C9570B201DCFCF2900397212 /* ProfessorInfoDatasource.m in Sources */,
 				44E8B9071CAEB4D20081DA30 /* KCUserInfoTableViewCell.m in Sources */,
 				C904AF6C1D58D3AC00251A01 /* KCGPAMainViewController.m in Sources */,
 				C9F143031DA48100007E2BB8 /* KCGPAMarksViewController.m in Sources */,
@@ -1317,24 +1330,25 @@
 				B69EB4651C82140F008BA05F /* UserRegistrationViewController.m in Sources */,
 				B6D5C2E41C06E92700699793 /* main.m in Sources */,
 				C9169BA91D7F517700CC507C /* CFModelHelper.m in Sources */,
+				C9570B211DCFCF2900397212 /* UniversityInfoDatasource.m in Sources */,
 				44DA4DA61CA18DD700CD4A8A /* CFClassItem.m in Sources */,
 				093A3EA01CA2E3F000EC91FE /* KCClassItemsTableViewController.m in Sources */,
 				C9297FDC1D8756A500B3B1C5 /* KCDiscoverMenuCell.m in Sources */,
 				44E8B9131CAEC41B0081DA30 /* KCPickerTableViewController.m in Sources */,
 				C95C4A041DA4115700015865 /* CourseDataSource.m in Sources */,
 				093A3E9D1CA2E3F000EC91FE /* KCAddItemTableViewController.m in Sources */,
-				C9166ACC1DB93FDF00B1D751 /* ProfessorInfoDatasource.m in Sources */,
 				C9F143061DA48134007E2BB8 /* KCGPAMarksDetailViewController.m in Sources */,
 				C96CEE161D8C5B5200BC48FF /* KCEventDetailTableViewController.m in Sources */,
 				B69EB46B1C8218E2008BA05F /* RegistrationNavigationController.m in Sources */,
 				C97A4B631DCC2FE300C22ABB /* KCGPAAutocompleteViewController.m in Sources */,
 				44E8B8F51CAE803B0081DA30 /* KCUserInfoLabel.m in Sources */,
 				C985F02A1DB6E831002F1869 /* InfoGPA.m in Sources */,
+				C9570B1F1DCFCF2900397212 /* MarkTypeDatasource.m in Sources */,
 				C9BB6AE01DA9C5C100D2819F /* KCGPAMarkCell.m in Sources */,
 				B636C2B11C078799003C1E44 /* CFBlogModel.m in Sources */,
+				C9570B221DCFCF2900397212 /* GPAInfoDatasource.m in Sources */,
 				44461DD91CB274730018E13E /* KCLoginRoundedButton.m in Sources */,
 				443879771CB6B3DC00071AB8 /* KCLoadingPage.m in Sources */,
-				C98AF39F1DC67171008CABC2 /* UniversityInfoDatasource.m in Sources */,
 				C92E3E3F1D5E95BB0091A695 /* KCDiscoverViewController.m in Sources */,
 				44461DD61CB2728D0018E13E /* KCLoginNavigationBar.m in Sources */,
 				C92CC94B1D87313600A3C4A2 /* KCRestaurantDetailMoreDetailTableViewController.m in Sources */,

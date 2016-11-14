@@ -10,5 +10,11 @@
 #import <Mantle/Mantle.h>
 
 @interface InfoGPA : MTLModel <MTLJSONSerializing>
-
+    @property (strong, nonatomic) NSString* uid;
+    @property (strong, nonatomic) NSString* schoolId;
+    @property (strong, nonatomic) NSString* alpha;
+    @property (nonatomic) int min;
+    @property (nonatomic) int max;
+    @property (nonatomic) float fourScale;
+    @property (nonatomic) float oScale;
 @end

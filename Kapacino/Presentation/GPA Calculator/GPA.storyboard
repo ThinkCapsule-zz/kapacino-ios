@@ -24,7 +24,7 @@
                 <navigationController id="8YX-3n-X0U" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="GPA Calculator" image="tab_bar_calc" id="JTg-sn-EGm"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zs9-Xb-YjJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="zs9-Xb-YjJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,6 +58,9 @@
                                     <segment title="GPA"/>
                                     <segment title="Percentage"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onSegmentGPAChanged:" destination="VmG-UG-ckm" eventType="valueChanged" id="kIY-8s-feP"/>
+                                </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3b-sX-4E9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="181"/>
@@ -202,6 +205,7 @@
                     <connections>
                         <outlet property="progressViewGPACurrent" destination="nDB-RM-rIl" id="oW9-GA-flY"/>
                         <outlet property="progressViewGPAOverall" destination="y0C-x3-rbW" id="wIx-Yb-GAF"/>
+                        <outlet property="segmentControlGPA" destination="77M-7E-C5Q" id="OAY-sZ-xHW"/>
                         <outlet property="tableView" destination="fKc-Uo-VvX" id="zEa-rd-1ea"/>
                         <segue destination="dfH-pR-3w2" kind="push" identifier="showMarks" id="n1w-AH-1yF"/>
                     </connections>
@@ -467,7 +471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEp-UT-opi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1866" y="1241"/>
+            <point key="canvasLocation" x="2452" y="2122"/>
         </scene>
         <!--Autocomplete View Controller-->
         <scene sceneID="akb-tP-T6e">
@@ -511,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwu-Pm-8aP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2326" y="2215"/>
+            <point key="canvasLocation" x="1866" y="1418"/>
         </scene>
         <!--ANAT123-->
         <scene sceneID="2ZP-cs-Izq">
@@ -788,7 +792,6 @@
                         <outlet property="textfieldName" destination="zP3-mb-IN5" id="Hy7-HM-5gv"/>
                         <outlet property="textfieldType" destination="OJX-SC-wPV" id="3sS-5K-Mk6"/>
                         <outlet property="textfieldWeight" destination="ckx-MD-41W" id="yXr-4E-9hI"/>
-                        <segue destination="CkI-8Y-Y4S" kind="push" identifier="showAutocomplete" id="eEM-0b-S34"/>
                         <segue destination="uvt-pP-Xmn" kind="push" identifier="showWeight" id="9xa-qo-jXa"/>
                         <segue destination="FiU-hz-8Zz" kind="push" identifier="showMark" id="lBG-1Q-6QJ"/>
                         <segue destination="2S7-t8-hdA" kind="push" identifier="showPicker" id="aKh-SC-afo"/>
@@ -888,13 +891,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The weight for each of your assignment/test/exam/project is provided on your “course outlines”." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyQ-II-HJc">
-                                <rect key="frame" x="10" y="421" width="339" height="39"/>
+                                <rect key="frame" x="10" y="421" width="339" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.57647061347961426" green="0.56862747669219971" blue="0.56862747669219971" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To put in your final grade, set the weight to 100% and under “Add Marks” select type “Final Grade”." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0E-hT-P8n">
-                                <rect key="frame" x="10" y="470" width="355" height="39"/>
+                                <rect key="frame" x="10" y="469.5" width="355" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.57647061349999995" green="0.56862747670000002" blue="0.56862747670000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1035,13 +1038,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To find the percentage, you divide the mark you received by the total score." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfH-0g-9lw">
-                                <rect key="frame" x="10" y="421" width="339" height="39"/>
+                                <rect key="frame" x="10" y="421" width="339" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.57647061349999995" green="0.56862747670000002" blue="0.56862747670000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i.e. 24/45 = 53%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0Y-OP-6ox">
-                                <rect key="frame" x="10" y="470" width="355" height="20"/>
+                                <rect key="frame" x="10" y="469.5" width="355" height="20"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.57647061349999995" green="0.56862747670000002" blue="0.56862747670000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1105,7 +1108,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="6wG-H9-rHC"/>
-        <segue reference="eEM-0b-S34"/>
         <segue reference="aKh-SC-afo"/>
     </inferredMetricsTieBreakers>
 </document>
