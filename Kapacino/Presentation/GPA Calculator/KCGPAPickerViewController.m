@@ -17,7 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.pickerView selectRow:self.defaultIndex inComponent:0 animated:YES];
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     [self updateRowColor:self.pickerView didSelectRow:self.defaultIndex inComponent:0];
 }
 
@@ -42,11 +46,11 @@
     if (row == [self.pickerView selectedRowInComponent:component])
     {
         labelSelected.textColor = [UIColor whiteColor];
-        labelSelected.backgroundColor = [UIColor colorWithRed:255/255 green:102/255 blue:102/255 alpha:1];
+        labelSelected.backgroundColor = [UIColor colorWithRed:255.0f/255 green:102.0f/255 blue:102.0f/255 alpha:1];
     }
     else
     {
-        labelSelected.textColor = [UIColor colorWithRed:155/255 green:155/255 blue:155/255 alpha:1];
+        labelSelected.textColor = [UIColor colorWithRed:155.0f/255 green:155.0f/255 blue:155.0f/255 alpha:1];
         labelSelected.backgroundColor = [UIColor whiteColor];
     }
 }

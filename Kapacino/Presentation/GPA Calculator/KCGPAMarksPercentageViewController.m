@@ -22,9 +22,13 @@ static float kProgressStep = 1;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIColor* pink = [UIColor colorWithRed:255.0f/255 green:102.0f/255 blue:102.0f/255 alpha:1];
     self.progressCircle.roundedCorners = YES;
-    self.progressCircle.trackTintColor = [UIColor lightGrayColor];
-    self.progressCircle.progressTintColor = [UIColor orangeColor];
+    self.progressCircle.trackTintColor = [UIColor colorWithRed:216.0f/255 green:216.0f/255 blue:216.0f/255 alpha:1];
+    self.progressCircle.progressTintColor = pink;
+    self.progressCircle.progressLabel.textColor = pink;
+    self.progressCircle.progressLabel.font = [self.progressCircle.progressLabel.font fontWithSize:40];
+
     
     self.progressCurrent = self.defaultPercentage;
     self.slider.value = self.defaultPercentage;
@@ -47,8 +51,8 @@ static float kProgressStep = 1;
 
 -(void) setProgressCurrent:(float)progress
 {
-    self.progressCircle.progress = progress;
-    self.progressCircle.progressLabel.text = [NSString stringWithFormat:@"%.0f", progress];
+    self.progressCircle.progress = progress/100;
+    self.progressCircle.progressLabel.text = [NSString stringWithFormat:@"%.0f%%", progress];
     
     if ([self.delegate respondsToSelector:@selector(didPercentageChange:)])
     {

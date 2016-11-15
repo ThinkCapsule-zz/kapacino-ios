@@ -33,6 +33,9 @@
     @property (strong, nonatomic) NSMutableDictionary<NSString*, NSMutableArray<Mark*>*> *courseToMarksDictionary;
     @property (strong, nonatomic) NSMutableDictionary<NSString*, NSNumber*> *courseToMarkDictionary;
 
+    @property (weak, nonatomic) IBOutlet UILabel *labelCurrent;
+    @property (weak, nonatomic) IBOutlet UILabel *labelOverall;
+
     @property (nonatomic) float progressCurrent;
     @property (nonatomic) float progressOverall;
 
@@ -85,6 +88,9 @@ static NSString* kShowMarksSegue = @"showMarks";
     _mode = mode;
     self.progressCurrent = self.progressCurrent;
     self.progressOverall = self.progressOverall;
+    
+    self.labelCurrent.text = mode == GPAMode_GPA ? @"Current GPA" : @"Current %";
+    self.labelOverall.text = mode == GPAMode_GPA ? @"Overall GPA" : @"Overall %";
 }
 
 -(void) calculateGPA
