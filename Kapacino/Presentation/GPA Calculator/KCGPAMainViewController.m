@@ -37,6 +37,8 @@
     @property (nonatomic) float progressCurrent;
     @property (nonatomic) float progressOverall;
 
+    @property (nonatomic) float gpaMax;
+
     enum GPAMode
     {
         GPAMode_GPA,
@@ -59,7 +61,8 @@ static NSString* kShowMarksSegue = @"showMarks";
     self.courses = [NSMutableArray array];
     [self setupTableView];
     
-    self.gpaInfo = [GPAInfoDatasource instance];
+    self.schoolId = @"CA00011";
+    [self processGPAInfo];
     
     self.progressViewGPACurrent.roundedCorners = YES;
     self.progressViewGPACurrent.trackTintColor = [UIColor lightGrayColor];
@@ -74,7 +77,6 @@ static NSString* kShowMarksSegue = @"showMarks";
     self.mode = GPAMode_GPA;
     
     //TODO fix this
-    self.schoolId = @"CA00011";
     
     [self calculateGPA];
 }
@@ -190,12 +192,16 @@ static NSString* kShowMarksSegue = @"showMarks";
     
     float progressModified = progress;
     
-    if (self.mode == GPAMode_Percentage)
+    if (self.mode == GPAMode_GPA)
     {
         progressModified = [self convertPercentageToGPA:progress];
+        self.progressViewGPACurrent.progress = progressModified/self.gpaMax;
+    }
+    else
+    {
+        self.progressViewGPACurrent.progress = progressModified/100;
     }
     
-    self.progressViewGPACurrent.progress = progressModified;
     self.progressViewGPACurrent.progressLabel.text = [NSString stringWithFormat:@"%.0f", progressModified];
 }
 
@@ -205,13 +211,36 @@ static NSString* kShowMarksSegue = @"showMarks";
     
     float progressModified = progress;
     
-    if (self.mode == GPAMode_Percentage)
+    if (self.mode == GPAMode_GPA)
     {
         progressModified = [self convertPercentageToGPA:progress];
+        self.progressViewGPAOverall.progress = progressModified/self.gpaMax;
+    }
+    else
+    {
+        self.progressViewGPAOverall.progress = progressModified/100;
     }
     
-    self.progressViewGPAOverall.progress = progressModified;
     self.progressViewGPAOverall.progressLabel.text = [NSString stringWithFormat:@"%.0f", progressModified];
+}
+
+-(void) processGPAInfo
+{
+    self.gpaInfo = [GPAInfoDatasource instance];
+    
+    NSArray* gpaInfoForSchool = [self.gpaInfo.data filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(InfoGPA* object, NSDictionary *bindings) {
+        return [object.schoolId isEqualToString:self.schoolId];
+    }]];
+    
+    self.gpaMax = 0;
+    
+    //Get percentages
+    for (InfoGPA* info in gpaInfoForSchool)
+    {
+        self.gpaMax = fmax(self.gpaMax, info.oScale);
+    }
+    
+    return;
 }
 
 -(float) convertPercentageToGPA:(float) percentage
