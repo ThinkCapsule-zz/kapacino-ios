@@ -8,7 +8,6 @@
 
 #import "KCGPAMainViewController.h"
 #import "KCAPIClient.h"
-#import "CourseDataSource.h"
 #import "Course.h"
 #import "Mark.h"
 #import "KCGPACourseCell.h"

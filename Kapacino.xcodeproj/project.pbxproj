@@ -103,7 +103,6 @@
 		C9570B211DCFCF2900397212 /* UniversityInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9570B181DCFCF2900397212 /* UniversityInfoDatasource.m */; };
 		C9570B221DCFCF2900397212 /* GPAInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9570B1A1DCFCF2900397212 /* GPAInfoDatasource.m */; };
 		C9570B231DCFCF2900397212 /* JsonDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9570B1C1DCFCF2900397212 /* JsonDatasource.m */; };
-		C95C4A041DA4115700015865 /* CourseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A031DA4115700015865 /* CourseDataSource.m */; };
 		C95C4A081DA4125800015865 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A071DA4125800015865 /* Course.m */; };
 		C95C4A0C1DA413AC00015865 /* KCGPACourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C4A0B1DA413AC00015865 /* KCGPACourseCell.m */; };
 		C95C4A0D1DA4147600015865 /* KCAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 444F7F851CB012C9003F7D9B /* KCAPIClient.m */; };
@@ -341,8 +340,6 @@
 		C9570B1A1DCFCF2900397212 /* GPAInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAInfoDatasource.m; sourceTree = "<group>"; };
 		C9570B1B1DCFCF2900397212 /* JsonDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonDatasource.h; sourceTree = "<group>"; };
 		C9570B1C1DCFCF2900397212 /* JsonDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonDatasource.m; sourceTree = "<group>"; };
-		C95C4A021DA4115700015865 /* CourseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseDataSource.h; path = FirebaseDatasource/CourseDataSource.h; sourceTree = "<group>"; };
-		C95C4A031DA4115700015865 /* CourseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseDataSource.m; path = FirebaseDatasource/CourseDataSource.m; sourceTree = "<group>"; };
 		C95C4A061DA4125800015865 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 		C95C4A071DA4125800015865 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		C95C4A0A1DA413AC00015865 /* KCGPACourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPACourseCell.h; sourceTree = "<group>"; };
@@ -551,7 +548,6 @@
 				C9570B0D1DCFCF2900397212 /* Datasources */,
 				C985F0241DB6E7CE002F1869 /* InfoModels */,
 				C95C4A051DA4124B00015865 /* FirebaseModels */,
-				C95C4A011DA40FFD00015865 /* FirebaseDatasources */,
 				444F7F7C1CB00131003F7D9B /* KCModels */,
 				B60EB84B1C0754ED00F3044A /* CFDataSource */,
 				B60EB8441C0751EA00F3044A /* CFClient */,
@@ -936,15 +932,6 @@
 				C9570B181DCFCF2900397212 /* UniversityInfoDatasource.m */,
 			);
 			path = AutocompleteDatasources;
-			sourceTree = "<group>";
-		};
-		C95C4A011DA40FFD00015865 /* FirebaseDatasources */ = {
-			isa = PBXGroup;
-			children = (
-				C95C4A021DA4115700015865 /* CourseDataSource.h */,
-				C95C4A031DA4115700015865 /* CourseDataSource.m */,
-			);
-			name = FirebaseDatasources;
 			sourceTree = "<group>";
 		};
 		C95C4A051DA4124B00015865 /* FirebaseModels */ = {
@@ -1335,7 +1322,6 @@
 				093A3EA01CA2E3F000EC91FE /* KCClassItemsTableViewController.m in Sources */,
 				C9297FDC1D8756A500B3B1C5 /* KCDiscoverMenuCell.m in Sources */,
 				44E8B9131CAEC41B0081DA30 /* KCPickerTableViewController.m in Sources */,
-				C95C4A041DA4115700015865 /* CourseDataSource.m in Sources */,
 				093A3E9D1CA2E3F000EC91FE /* KCAddItemTableViewController.m in Sources */,
 				C9F143061DA48134007E2BB8 /* KCGPAMarksDetailViewController.m in Sources */,
 				C96CEE161D8C5B5200BC48FF /* KCEventDetailTableViewController.m in Sources */,
@@ -1515,7 +1501,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F48C0B83AAA8002187C17D0A /* Pods-Kapacino.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -1543,7 +1529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A67147A85E09555BA0A5F8C8 /* Pods-Kapacino.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
