@@ -182,8 +182,11 @@ static NSString* kShowMarksSegue = @"showMarks";
 
 -(BOOL) isCourseInCurrentTerm:(Course*) course
 {
-    //TODO fix this
-    return YES;
+    //Get current year
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:[NSDate date]];
+    int year = (int) components.year;
+    NSString* yearString = [NSString stringWithFormat:@"%d", year];
+    return [course.term containsString:yearString];
 }
 
 -(void) setProgressCurrent:(float)progress
@@ -202,7 +205,7 @@ static NSString* kShowMarksSegue = @"showMarks";
         self.progressViewGPACurrent.progress = progressModified/100;
     }
     
-    self.progressViewGPACurrent.progressLabel.text = [NSString stringWithFormat:@"%.0f", progressModified];
+    self.progressViewGPACurrent.progressLabel.text = [NSString stringWithFormat:@"%.1f", progressModified];
 }
 
 -(void) setProgressOverall:(float)progress
@@ -221,7 +224,7 @@ static NSString* kShowMarksSegue = @"showMarks";
         self.progressViewGPAOverall.progress = progressModified/100;
     }
     
-    self.progressViewGPAOverall.progressLabel.text = [NSString stringWithFormat:@"%.0f", progressModified];
+    self.progressViewGPAOverall.progressLabel.text = [NSString stringWithFormat:@"%.1f", progressModified];
 }
 
 -(void) processGPAInfo
