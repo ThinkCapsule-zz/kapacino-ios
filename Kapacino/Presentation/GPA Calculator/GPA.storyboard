@@ -205,6 +205,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="OMO-Pz-loB"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonAdd" destination="bl2-1S-EeD" id="DXR-E0-kfr"/>
                         <outlet property="labelCurrent" destination="sr8-Mp-xjl" id="Qnd-W4-BEI"/>
                         <outlet property="labelOverall" destination="POx-qB-IG0" id="5I2-hX-sh5"/>
                         <outlet property="progressViewGPACurrent" destination="nDB-RM-rIl" id="oW9-GA-flY"/>
@@ -852,7 +853,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35Q-7K-E2m">
                                         <rect key="frame" x="109" y="8" width="256" height="1"/>
-                                        <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.23808164878954963" blue="0.33247879728013841" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="yfR-Ja-4Xl"/>
                                         </constraints>
@@ -962,6 +963,7 @@
                     <connections>
                         <outlet property="progressCircle" destination="kte-vS-MMY" id="WqY-Ji-lKN"/>
                         <outlet property="slider" destination="2MY-ly-3sd" id="htx-m3-0Km"/>
+                        <outlet property="viewColorBar" destination="35Q-7K-E2m" id="29y-9k-lbb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbD-lR-Eti" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1127,7 +1129,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hvL-O2-39O"/>
         <segue reference="08E-4j-9Ka"/>
+        <segue reference="6wG-H9-rHC"/>
     </inferredMetricsTieBreakers>
 </document>

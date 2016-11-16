@@ -38,6 +38,7 @@
 
     @property (nonatomic) float progressCurrent;
     @property (nonatomic) float progressOverall;
+    @property (weak, nonatomic) IBOutlet UIButton *buttonAdd;
 
     @property (nonatomic) float gpaMax;
 
@@ -66,12 +67,15 @@ static NSString* kShowMarksSegue = @"showMarks";
     self.schoolId = @"CA00011";
     [self processGPAInfo];
     
+    UIColor* pink = self.buttonAdd.backgroundColor;
+    UIColor* grey = [UIColor colorWithRed:216.0f/255 green:216.0f/255 blue:216.0f/255 alpha:1];
     self.progressViewGPACurrent.roundedCorners = YES;
-    self.progressViewGPACurrent.trackTintColor = [UIColor lightGrayColor];
-    self.progressViewGPACurrent.progressTintColor = [UIColor orangeColor];
+    self.progressViewGPACurrent.trackTintColor = grey;
+    self.progressViewGPACurrent.progressTintColor = pink;
+    
     self.progressViewGPAOverall.roundedCorners = YES;
-    self.progressViewGPAOverall.trackTintColor = [UIColor lightGrayColor];
-    self.progressViewGPAOverall.progressTintColor = [UIColor redColor];
+    self.progressViewGPAOverall.trackTintColor = grey;
+    self.progressViewGPAOverall.progressTintColor = pink;
     
     self.progressCurrent = 0.5;
     self.progressOverall = 0.7;

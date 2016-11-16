@@ -10,6 +10,7 @@
 #import "DALabeledCircularProgressView.h"
 
 @interface KCGPAMarksPercentageViewController ()
+    @property (weak, nonatomic) IBOutlet UIView *viewColorBar;
     @property (weak, nonatomic) IBOutlet DALabeledCircularProgressView *progressCircle;
     @property (weak, nonatomic) IBOutlet UISlider *slider;
     @property (nonatomic) float progressCurrent;
@@ -22,7 +23,7 @@ static float kProgressStep = 1;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIColor* pink = [UIColor colorWithRed:255.0f/255 green:102.0f/255 blue:102.0f/255 alpha:1];
+    UIColor* pink = self.viewColorBar.backgroundColor;
     self.progressCircle.roundedCorners = YES;
     self.progressCircle.trackTintColor = [UIColor colorWithRed:216.0f/255 green:216.0f/255 blue:216.0f/255 alpha:1];
     self.progressCircle.progressTintColor = pink;
