@@ -83,7 +83,10 @@ static NSString* kShowMarksSegue = @"showMarks";
     self.mode = GPAMode_GPA;
     
     //TODO fix this
-    
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
     [self calculateGPA];
 }
 

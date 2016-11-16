@@ -1111,6 +1111,7 @@
                     <connections>
                         <outlet property="progressCircle" destination="mqs-XS-8gp" id="YEm-4H-L5c"/>
                         <outlet property="slider" destination="p3V-RW-4Zw" id="FeG-sZ-d6v"/>
+                        <outlet property="viewColorBar" destination="NKM-jh-Lec" id="f3N-RK-svV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1A7-kn-oTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
