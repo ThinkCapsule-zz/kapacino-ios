@@ -27,6 +27,8 @@ static NSString *const kShowPicker = @"showPicker";
     @property (weak, nonatomic) IBOutlet UITextField *textfieldTerm;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCourseName;
     @property (weak, nonatomic) IBOutlet UITextField *textfieldCourseCode;
+
+    @property (strong, nonatomic) NSString* schoolId;
 @end
 
 @implementation KCGPACourseDetailTableViewController
@@ -62,6 +64,10 @@ static NSString *const kShowPicker = @"showPicker";
         self.course = [[Course alloc] init];
         self.course.key = [coursesRef childByAutoId].key;
     }
+    
+    self.schoolId = @"CA00011";
+    
+    [ProfessorInfoDatasource sharedInstance].predicate = [NSPredicate predicateWithFormat:@"schoolId == %@", self.schoolId];
 }
 
 - (IBAction)onDoneTapped:(id)sender {

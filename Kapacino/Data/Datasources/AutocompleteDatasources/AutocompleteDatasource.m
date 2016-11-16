@@ -26,8 +26,9 @@
 //            
 //            //Sort
 //            countries = [countries sortedArrayUsingSelector:@selector(compare:)];
+            NSArray* filteredArray = self.predicate ? [self.data filteredArrayUsingPredicate:self.predicate] : self.data;
             
-            handler(self.data);
+            handler(filteredArray);
         });
     }
 //    -(AutocompleteDatasource*) sharedInstance

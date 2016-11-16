@@ -11,5 +11,5 @@
 #import "JsonDatasource.h"
 
 @interface AutocompleteDatasource : JsonDatasource <MLPAutoCompleteTextFieldDataSource>
-//    -(AutocompleteDatasource*) sharedInstance;
+    @property (strong, nonatomic) NSPredicate* predicate;
 @end
