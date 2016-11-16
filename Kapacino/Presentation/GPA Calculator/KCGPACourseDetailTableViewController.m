@@ -161,7 +161,7 @@ static NSString *const kShowPicker = @"showPicker";
             [self performSegueWithIdentifier:kShowAutocompleteSegue sender:@(row)];
             break;
         case 4:
-            [self.textfieldCreditType becomeFirstResponder];
+            [self performSegueWithIdentifier:kShowPicker sender:self.textfieldCreditType];
             break;
         case 5:
             [self.textfieldCreditWeight becomeFirstResponder];
@@ -202,19 +202,47 @@ static NSString *const kShowPicker = @"showPicker";
         KCGPAPickerViewController* vc = segue.destinationViewController;
         vc.delegate = self;
         
-        //Get current year
-        NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:[NSDate date]];
-        int year = (int) components.year;
+        NSArray* candidates;
+        int defaultIndex;
         
-        vc.candidates = [self getTermsForYear:year-4 toYear:year+4];
-        if (self.course.term)
+        if (sender == self.textfieldCreditType)
         {
-            vc.defaultIndex = (int) [vc.candidates indexOfObject:self.course.term];
+            candidates = @[
+                            @"One Semester Course",
+                            @"Two Semester Course",
+                            @"Three Semester Course",
+                            @"Four Semester Course"];
+            
+            if (self.course.creditType)
+            {
+                defaultIndex = (int) [vc.candidates indexOfObject:self.course.creditType];
+            }
+            else
+            {
+                defaultIndex = (int) vc.candidates.count/2;
+            }
         }
         else
         {
-            vc.defaultIndex = (int) vc.candidates.count/2;
+            //Get current year
+            NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:[NSDate date]];
+            int year = (int) components.year;
+            
+            candidates = [self getTermsForYear:year-4 toYear:year+4];
+            
+            if (self.course.term)
+            {
+                defaultIndex = (int) [vc.candidates indexOfObject:self.course.term];
+            }
+            else
+            {
+                defaultIndex = (int) vc.candidates.count/2;
+            }
         }
+        
+        vc.candidates = candidates;
+        
+        vc.defaultIndex = defaultIndex;
         
         vc.sender = sender;
     }
@@ -259,6 +287,10 @@ static NSString *const kShowPicker = @"showPicker";
     if (textfield == self.textfieldTerm)
     {
         self.course.term = string;
+    }
+    else
+    {
+        self.course.creditType = string;
     }
 }
 

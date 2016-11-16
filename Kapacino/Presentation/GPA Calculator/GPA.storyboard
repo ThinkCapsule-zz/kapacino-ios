@@ -24,7 +24,7 @@
                 <navigationController id="8YX-3n-X0U" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="GPA Calculator" image="tab_bar_calc" id="JTg-sn-EGm"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zs9-Xb-YjJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="zs9-Xb-YjJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -201,7 +201,9 @@
                             <constraint firstItem="77M-7E-C5Q" firstAttribute="centerX" secondItem="MKg-2A-IJh" secondAttribute="centerX" id="z7x-Ns-ljV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="GPA Calculator" id="ViP-wq-37J"/>
+                    <navigationItem key="navigationItem" title="GPA Calculator" id="ViP-wq-37J">
+                        <barButtonItem key="backBarButtonItem" title=" " id="OMO-Pz-loB"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="labelCurrent" destination="sr8-Mp-xjl" id="Qnd-W4-BEI"/>
                         <outlet property="labelOverall" destination="POx-qB-IG0" id="5I2-hX-sh5"/>
@@ -357,7 +359,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="i.e Half Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="um3-Rf-qC9">
+                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="i.e Half Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="um3-Rf-qC9">
                                                     <rect key="frame" x="128" y="12" width="239" height="20"/>
                                                     <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.29019609089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
@@ -411,6 +413,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Class" id="UYp-qv-1Le">
+                        <barButtonItem key="backBarButtonItem" title=" " id="J1p-F4-EbS"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="jsg-ez-f3f">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hbA-Dw-5IV">
                                 <rect key="frame" x="288" y="7" width="71" height="30"/>
@@ -452,7 +455,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4p-g3-kBy">
-                                <rect key="frame" x="0.0" y="194" width="375" height="216"/>
+                                <rect key="frame" x="24" y="194" width="327" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="2S7-t8-hdA" id="aj3-cD-Pvt"/>
                                     <outlet property="delegate" destination="2S7-t8-hdA" id="m3F-xw-TaI"/>
@@ -462,11 +465,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Y4p-g3-kBy" firstAttribute="centerY" secondItem="d9H-Sg-j6B" secondAttribute="centerY" id="7sm-5R-NfB"/>
-                            <constraint firstItem="Y4p-g3-kBy" firstAttribute="leading" secondItem="d9H-Sg-j6B" secondAttribute="leading" id="8nI-yk-PKX"/>
-                            <constraint firstAttribute="trailing" secondItem="Y4p-g3-kBy" secondAttribute="trailing" id="K29-9u-Zfq"/>
+                            <constraint firstItem="Y4p-g3-kBy" firstAttribute="leading" secondItem="d9H-Sg-j6B" secondAttribute="leading" constant="24" id="8nI-yk-PKX"/>
+                            <constraint firstAttribute="trailing" secondItem="Y4p-g3-kBy" secondAttribute="trailing" constant="24" id="K29-9u-Zfq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="64a-B6-Kgv"/>
+                    <navigationItem key="navigationItem" id="64a-B6-Kgv">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="VHH-9S-GIy">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OJa-c7-iqI">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onDoneTapped:" destination="2S7-t8-hdA" eventType="touchUpInside" id="5Kq-h5-qgd"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="pickerView" destination="Y4p-g3-kBy" id="aqQ-Hf-g4e"/>
                     </connections>
@@ -620,6 +636,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ANAT123" id="WMJ-8P-LkY">
+                        <barButtonItem key="backBarButtonItem" title=" " id="h57-sB-Y1g"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Y3j-9e-en4">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Uy-mC-sLG">
                                 <rect key="frame" x="288" y="7" width="71" height="30"/>
@@ -776,6 +793,7 @@
                         </sections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Marks" id="x1K-Fg-Shv">
+                        <barButtonItem key="backBarButtonItem" title=" " id="y9h-6w-H79"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="ppv-Hl-sxK">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nsG-EF-04s">
                                 <rect key="frame" x="288" y="7" width="71" height="30"/>
@@ -893,13 +911,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The weight for each of your assignment/test/exam/project is provided on your “course outlines”." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyQ-II-HJc">
-                                <rect key="frame" x="10" y="421" width="339" height="39"/>
+                                <rect key="frame" x="10" y="421" width="339" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.57647061347961426" green="0.56862747669219971" blue="0.56862747669219971" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To put in your final grade, set the weight to 100% and under “Add Marks” select type “Final Grade”." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0E-hT-P8n">
-                                <rect key="frame" x="10" y="470" width="355" height="39"/>
+                                <rect key="frame" x="10" y="469.5" width="355" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.57647061349999995" green="0.56862747670000002" blue="0.56862747670000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1040,13 +1058,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To find the percentage, you divide the mark you received by the total score." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfH-0g-9lw">
-                                <rect key="frame" x="10" y="421" width="339" height="39"/>
+                                <rect key="frame" x="10" y="421" width="339" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.57647061349999995" green="0.56862747670000002" blue="0.56862747670000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i.e. 24/45 = 53%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0Y-OP-6ox">
-                                <rect key="frame" x="10" y="470" width="355" height="20"/>
+                                <rect key="frame" x="10" y="469.5" width="355" height="20"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.57647061349999995" green="0.56862747670000002" blue="0.56862747670000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1109,7 +1127,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6wG-H9-rHC"/>
-        <segue reference="aKh-SC-afo"/>
+        <segue reference="hvL-O2-39O"/>
+        <segue reference="08E-4j-9Ka"/>
     </inferredMetricsTieBreakers>
 </document>

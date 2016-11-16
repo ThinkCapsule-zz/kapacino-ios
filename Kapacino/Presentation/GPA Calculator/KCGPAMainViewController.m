@@ -313,7 +313,6 @@ static NSString* kShowMarksSegue = @"showMarks";
     Course* course = self.courses[indexPath.row];
     
     InfoSchoolCourse* courseInfo = [[CourseInfoDatasource instance] getById:course.courseId];
-    self.navigationItem.title = courseInfo.code;
     cell.labelCourseCode.text = courseInfo.code;
     
     //TODO Get professor name from id

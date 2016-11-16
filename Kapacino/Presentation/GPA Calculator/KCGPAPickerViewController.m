@@ -17,13 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.pickerView selectRow:self.defaultIndex inComponent:0 animated:NO];
 }
 
--(void) viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    [self updateRowColor:self.pickerView didSelectRow:self.defaultIndex inComponent:0];
-}
+//-(void) viewDidAppear:(BOOL)animated
+//{
+//    [super viewDidAppear:animated];
+////    [self updateRowColor:self.pickerView didSelectRow:self.defaultIndex inComponent:0];
+//    
+//    
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -81,12 +84,22 @@
         tView.font = [UIFont fontWithName:@"Avenir" size:24];
         tView.textAlignment = NSTextAlignmentCenter;
         tView.numberOfLines=3;
+        tView.textAlignment = NSTextAlignmentLeft;
     }
     
     // Fill the label text here
-    tView.text= self.candidates[row];
+    tView.text = [NSString stringWithFormat:@"   %@", self.candidates[row]];
     
     return tView;
+}
+
+-(CGFloat) pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component
+{
+    return 80;
+}
+
+- (IBAction)onDoneTapped:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
