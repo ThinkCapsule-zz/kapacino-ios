@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "KCViewController.h"
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
-@interface KCLoginViewController : KCViewController
+@interface KCLoginViewController : KCViewController <FBSDKLoginButtonDelegate>
 
 @end

@@ -45,8 +45,8 @@
                            password:self.password
                          completion:^(FIRUser * _Nullable userASFIRUser, NSError * _Nullable error) {
                              //TODO figure out how to get data
-                             User* user = [[User alloc] init:userASFIRUser];
-                             [self showUserInformationViewControllerWithUser:user];
+//                             User* user = [[User alloc] init:userASFIRUser];
+//                             [self showUserInformationViewControllerWithUser:user];
                          }];
     
 //    [[KCAPIClient sharedClient] loginUserWithEmail:self.email password:self.password completionHandler:^(FIRUser *user, NSError *error) {

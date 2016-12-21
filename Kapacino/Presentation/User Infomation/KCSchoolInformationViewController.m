@@ -39,8 +39,8 @@
     //TODO Get school info from id
     NSString *countryOfSchool = @"Canada";
     NSString *school = @"UWaterloo";
-    NSString *major = self.user.major;
-    NSString *currently = self.user.locationCurrent;
+    NSString *major = nil;
+    NSString *currently = self.user.userInfo.locationCurrent;
     if (!countryOfSchool || !school || !major || !currently) {
         return NO;
     }

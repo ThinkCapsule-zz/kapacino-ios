@@ -106,8 +106,8 @@ static NSString* kShowMarksSegue = @"showMarks";
     
     
     //Download all marks
-    FIRDatabaseReference *courseRef = [[KCAPIClient sharedClient] coursesReference];
-    FIRDatabaseReference *marksRef = [[KCAPIClient sharedClient] marksReference];
+    FIRDatabaseReference *courseRef = [[KCAPIClient sharedClient] coursesReferenceForCurrentUser];
+    FIRDatabaseReference *marksRef = [[KCAPIClient sharedClient] marksReferenceForCurrentUser];
     
     //TODO: Add progress icon
     
@@ -281,7 +281,7 @@ static NSString* kShowMarksSegue = @"showMarks";
 
 -(void) setupTableView
 {
-    FIRDatabaseReference *ref = [[KCAPIClient sharedClient] coursesReference];
+    FIRDatabaseReference *ref = [[KCAPIClient sharedClient] coursesReferenceForCurrentUser];
     
     [ref observeEventType:FIRDataEventTypeValue andPreviousSiblingKeyWithBlock:^(FIRDataSnapshot * _Nonnull snapshot, NSString * _Nullable prevKey) {
         [self.courses removeAllObjects];
@@ -360,7 +360,7 @@ static NSString* kShowMarksSegue = @"showMarks";
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    FIRDatabaseReference *coursesRef = [[KCAPIClient sharedClient] coursesReference];
+    FIRDatabaseReference *coursesRef = [[KCAPIClient sharedClient] coursesReferenceForCurrentUser];
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         //Get course at indexPath
         Course* course = self.courses[indexPath.row];

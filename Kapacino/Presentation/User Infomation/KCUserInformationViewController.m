@@ -27,9 +27,9 @@
 - (BOOL)checkUserInfo {
     self.user = self.userInfoTebleViewController.user;
     NSString *userName = self.user.name; // [self.userInfo objectForKey:@"Name"];
-    NSString *gender = self.user.gender;
-    NSString *country = self.user.country;
-    NSString *hometown = self.user.hometown;
+    NSString *gender = self.user.userInfo.gender;
+    NSString *country = self.user.userInfo.country;
+    NSString *hometown = self.user.userInfo.hometown;
     if (!userName.length || !gender || !country || !hometown) {
         return NO;
     }

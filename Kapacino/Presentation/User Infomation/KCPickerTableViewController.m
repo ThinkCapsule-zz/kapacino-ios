@@ -65,10 +65,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     KCPickerTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    NSString *key = [self.categoryName substringToIndex:self.categoryName.length - 1];
-    [self.user setValue:cell.title.text forKey:key];
     if ([self.delegate respondsToSelector:@selector(pickerTableViewController:didChangeUserInfo:)]) {
-        [self.delegate pickerTableViewController:self didChangeUserInfo:self.user];
+        [self.delegate pickerTableViewController:self didChangeUserInfo:cell.title.text];
     }
 }
 

@@ -53,12 +53,9 @@
 }
 
 - (void)searchControllerSetValue:(NSString *)value {
-    NSString *key = [self.categoryName substringToIndex:self.categoryName.length - 1];
-    [self.user setValue:value forKey:key];
     if ([self.delegate respondsToSelector:@selector(searchViewController:didChangeUserInfo:)] ) {
-        [self.delegate searchViewController:self didChangeUserInfo:self.user];
+        [self.delegate searchViewController:self didChangeUserInfo:value];
     }
-
 }
 
 #pragma mark - Table view data source

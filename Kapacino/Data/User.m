@@ -9,17 +9,25 @@
 #import "User.h"
 
 @implementation User
-    - (instancetype)init:(FIRDataSnapshot*) snapshot
+    - (instancetype)initWithUser:(FIRUser*) user
     {
         self = [super init];
         if (self) {
-            NSDictionary* values = snapshot.value;
-            self.key = snapshot.key;
-            self.name = values[@"name"];
-//            self.mark = values[@"mark"];
-//            self.weight = values[@"weight"];
-//            self.type = values[@"type"];
-//            self.courseKey = values[@"courseKey"];
+            self.key = user.uid;
+            self.name = user.displayName;
+            self.email = user.email;
+        }
+        return self;
+    }
+
+    - (instancetype)initWithUser:(FIRUser*) user andInfo:(UserInfo*) userInfo
+    {
+        self = [super init];
+        if (self) {
+            self.key = user.uid;
+            self.name = user.displayName;
+            self.email = user.email;
+            self.userInfo = userInfo;
         }
         return self;
     }
@@ -30,11 +38,8 @@
         {
             return @{
                      @"name": self.name,
-//                     @"mark": self.mark,
-//                     @"weight": self.weight,
-//                     @"type": self.type,
-//                     @"courseKey": self.courseKey
-                     };
+                     @"email": self.email
+                 };
         }
         else
         {
@@ -44,6 +49,6 @@
 
     -(BOOL) isComplete
     {
-        return self.name;
+        return self.name && self.email && [self.userInfo isComplete];
     }
 @end

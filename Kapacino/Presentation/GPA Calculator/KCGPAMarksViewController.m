@@ -34,7 +34,7 @@ static NSString* kShowEditMark = @"showEditMark";
     self.marks = [NSMutableArray array];
     
     //Populate marks
-    FIRDatabaseReference *marksRef = [[KCAPIClient sharedClient] marksReference];
+    FIRDatabaseReference *marksRef = [[KCAPIClient sharedClient] marksReferenceForCurrentUser];
     FIRDatabaseQuery* query = [marksRef queryOrderedByChild:@"courseKey"];
     query = [query queryEqualToValue:self.course.key];
     [query observeEventType:FIRDataEventTypeValue andPreviousSiblingKeyWithBlock:^(FIRDataSnapshot * _Nonnull snapshot, NSString * _Nullable prevKey) {
@@ -135,7 +135,7 @@ static NSString* kShowEditMark = @"showEditMark";
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    FIRDatabaseReference *marksRef = [[KCAPIClient sharedClient] marksReference];
+    FIRDatabaseReference *marksRef = [[KCAPIClient sharedClient] marksReferenceForCurrentUser];
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         //Get course at indexPath
         Mark* mark = self.marks[indexPath.row];

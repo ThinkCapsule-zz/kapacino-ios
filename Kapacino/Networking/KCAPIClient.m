@@ -7,6 +7,7 @@
 //
 
 #import "KCAPIClient.h"
+#import "UserInfo.h"
 @import Firebase;
 
 static NSString *const KCBaseUrlString = @"radiant-inferno-4979.firebaseIO.com";
@@ -188,6 +189,39 @@ static KCAPIClient *__sharedClient = nil;
 -(FIRDatabaseReference *)marksReference
 {
     return _marksReference;
+}
+
+-(FIRDatabaseReference *)coursesReferenceForCurrentUser
+{
+    NSString *userId = [FIRAuth auth].currentUser.uid;
+    return userId != nil ? [[self coursesReference] child:userId] : nil;
+}
+
+-(FIRDatabaseReference *)marksReferenceForCurrentUser
+{
+    NSString *userId = [FIRAuth auth].currentUser.uid;
+    return userId != nil ? [[self marksReference] child:userId] : nil;
+}
+
+-(FIRDatabaseReference *) usersReferenceForCurrentUser
+{
+    NSString *userId = [FIRAuth auth].currentUser.uid;
+    return userId != nil ? [[self usersReference] child:userId] : nil;
+}
+
+-(void)checkCompletionStatusWithCompletionHandler:(void (^)(BOOL))completionHandler
+{
+    [[self usersReferenceForCurrentUser] observeEventType:FIRDataEventTypeValue
+                                                withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+                                                    UserInfo* userInfo = [[UserInfo alloc] init:snapshot];
+                                                    completionHandler(userInfo.isComplete);
+//                                                    if (snapshot.value != [NSNull null]) {
+//                                                        BOOL isComplete = [snapshot.value objectForKey:@"complete"];
+//                                                        completionHandler(isComplete);
+//                                                    } else {
+//                                                        completionHandler(false);
+//                                                    }
+                                                }];
 }
 
 @end

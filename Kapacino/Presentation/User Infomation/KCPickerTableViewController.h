@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "User.h";
 
 @protocol KCPickerTableViewControllerDelegate;
 
@@ -15,7 +14,6 @@
 
 @property (strong, nonatomic) NSArray *items;
 @property (strong, nonatomic) NSString *categoryName;
-@property (strong, nonatomic) User *user;
 
 @property (nonatomic, weak) id<KCPickerTableViewControllerDelegate> delegate;
 
@@ -25,7 +23,7 @@
 
 @optional
 
-- (void)pickerTableViewController:(KCPickerTableViewController *)controller didChangeUserInfo:(NSMutableDictionary *)userInfo;
+- (void)pickerTableViewController:(KCPickerTableViewController *)controller didChangeUserInfo:(NSString*) info;
 
 @end
 

@@ -16,6 +16,9 @@
 #import "PreflightManager.h"
 #import "KCNavigationController.h"
 #import "KCAPIClient.h"
+#import "KCUserInformationViewController.h"
+#import "User.h"
+#import "KCAPIClient.h"
 
 typedef NS_ENUM(NSInteger, KCTabBarItems) {
     KCTabBarItems_Home = 0,
@@ -44,15 +47,29 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+//    [[FIRAuth auth] signOut:nil];
+    
     [[FIRAuth auth] addAuthStateDidChangeListener:^(FIRAuth *_Nonnull auth,
                                                     FIRUser *_Nullable user) {
-//        if (user != nil) {
-//            // User is signed in.
-//        } else {
-//            // No user is signed in.
-//            UIViewController *loginVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
-//            [self presentViewController:loginVC animated:YES completion:nil];
-//        }
+        if (user != nil) {
+            // User is signed in.
+            [[[KCAPIClient sharedClient] usersReferenceForCurrentUser] observeEventType:FIRDataEventTypeValue
+                withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+                    UserInfo* userInfo = [[UserInfo alloc] init:snapshot];
+                    if (!userInfo.isComplete)
+                    {
+                        KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateInitialViewController];
+                        userInfoVC.user = [[User alloc] initWithUser:user andInfo:userInfo];
+                        UINavigationController* navController = [[UINavigationController alloc]initWithRootViewController:userInfoVC];
+                        
+                        [self presentViewController:navController animated:YES completion:nil];
+                    }
+                }];
+        } else {
+            // No user is signed in.
+            UIViewController *loginVC = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
+            [self presentViewController:loginVC animated:YES completion:nil];
+        }
     }];
     
 //    if (![KCAPIClient sharedClient].currentUserID) {

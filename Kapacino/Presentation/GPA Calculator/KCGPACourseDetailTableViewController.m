@@ -60,7 +60,7 @@ static NSString *const kShowPicker = @"showPicker";
     }
     else
     {
-        FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] coursesReference];
+        FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] coursesReferenceForCurrentUser];
         self.course = [[Course alloc] init];
         self.course.key = [coursesRef childByAutoId].key;
     }
@@ -90,7 +90,7 @@ static NSString *const kShowPicker = @"showPicker";
 {
     //    NSString *userID = [FIRAuth auth].currentUser.uid;
     
-    FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] coursesReference];
+    FIRDatabaseReference* coursesRef = [[KCAPIClient sharedClient] coursesReferenceForCurrentUser];
     
     self.course.term = self.textfieldTerm.text;
     self.course.creditType = self.textfieldCreditType.text;

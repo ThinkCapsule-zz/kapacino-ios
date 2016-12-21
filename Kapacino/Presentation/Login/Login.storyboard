@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="xIP-t7-D5n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="xIP-t7-D5n">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -40,18 +43,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="zX9-Sf-i9a"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="zX9-Sf-i9a">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kapacino_logo" translatesAutoresizingMaskIntoConstraints="NO" id="gcq-8g-LeF">
+                                <rect key="frame" x="30" y="203.5" width="315" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="Jvs-kL-BYS"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your daily campus fix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGy-yl-EQQ">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="23.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-JQ-Ffm" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="30" y="516" width="315" height="39"/>
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.3529411764705882" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="Yed-pJ-tJD"/>
@@ -66,6 +74,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwD-2V-Acs">
+                                <rect key="frame" x="30" y="457" width="315" height="39"/>
                                 <color key="backgroundColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="lru-N3-nBf"/>
@@ -103,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4B1-y6-d61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="470"/>
+            <point key="canvasLocation" x="700" y="498"/>
         </scene>
         <!--Email Login View Controller-->
         <scene sceneID="98P-Ib-f19">
@@ -118,6 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="on6-lX-qVi">
+                                <rect key="frame" x="50" y="164" width="275" height="30"/>
                                 <color key="textColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
@@ -126,6 +136,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRa-Nn-xm8">
+                                <rect key="frame" x="50" y="214" width="275" height="30"/>
                                 <color key="textColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
@@ -134,6 +145,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSl-8C-4bD" customClass="KCLoginRoundedButton">
+                                <rect key="frame" x="50" y="324" width="275" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -164,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDx-7J-hSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="899" y="449"/>
+            <point key="canvasLocation" x="1179" y="498"/>
         </scene>
     </scenes>
     <resources>

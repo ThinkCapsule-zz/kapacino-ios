@@ -15,7 +15,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *categoryNameLabel;
 @property (strong, nonatomic) NSString *categoryName;
-@property (strong, nonatomic) User *user;
 
 @property (nonatomic, weak) id<KCSearchViewControllerDelegate> delegate;
 
@@ -24,6 +23,6 @@
 
 @protocol KCSearchViewControllerDelegate <NSObject>
 
-- (void)searchViewController:(KCSearchViewController *)controller didChangeUserInfo:(User *)user;
+- (void)searchViewController:(KCSearchViewController *)controller didChangeUserInfo:(NSString *)info;
 
 @end

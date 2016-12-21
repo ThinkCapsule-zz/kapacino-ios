@@ -77,9 +77,7 @@ static NSString *const kShowPickerSegue = @"showPicker";
 
 -(BOOL) saveData
 {
-    NSString *userID = [FIRAuth auth].currentUser.uid;
-    
-    FIRDatabaseReference* marksRef = [[KCAPIClient sharedClient] marksReference];
+    FIRDatabaseReference* marksRef = [[KCAPIClient sharedClient] marksReferenceForCurrentUser];
     
     //If it's a new mark
     if (!self.mark)
