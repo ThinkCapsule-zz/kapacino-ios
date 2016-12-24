@@ -9,5 +9,17 @@
 #import "InfoSchool.h"
 
 @implementation InfoSchool
++ (NSDictionary *)JSONKeyPathsByPropertyKey
+{
+    return @{
+             @"uid" : @"SchoolID",
+             @"name" : @"Name",
+             @"location" : @"Location"
+             };
+}
 
+-(NSString*) autocompleteString
+{
+    return [NSString stringWithFormat:@"%@ (%@)", self.name, self.location];
+}
 @end

@@ -20,7 +20,9 @@
     @property (strong, nonatomic) NSString* schoolId;
     @property (strong, nonatomic) NSString* major;
     @property (strong, nonatomic) NSString* minor;
+    @property (strong, nonatomic) NSString* faculty;
     @property (strong, nonatomic) NSString* yearOfStudy; //This would change? Also, should be enum
+    @property (strong, nonatomic) NSString* universityEmail;
 
     -(instancetype)init:(FIRDataSnapshot*) snapshot;
     -(NSDictionary*) toDictionary;

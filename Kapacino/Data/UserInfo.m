@@ -50,6 +50,6 @@
 
     -(BOOL) isComplete
     {
-        return self.yearOfStudy && self.schoolId && self.major && self.minor;
+        return self.locationCurrent && self.country && self.hometown && self.yearOfStudy && self.gender && self.schoolId && self.major && self.minor && self.yearOfStudy;
     }
 @end

@@ -209,18 +209,24 @@ static KCAPIClient *__sharedClient = nil;
     return userId != nil ? [[self usersReference] child:userId] : nil;
 }
 
+-(void) saveUser:(User*) user withCompletionHandler:(void (^)(NSError * error)) completionHandler
+{
+    NSDictionary *infoDictionary = [user.userInfo toDictionary];
+    
+    //TODO Save email, password, etc
+    
+    //Use user id and access control
+    [self.usersReferenceForCurrentUser updateChildValues:infoDictionary withCompletionBlock:^(NSError * _Nullable error, FIRDatabaseReference * _Nonnull ref) {
+        completionHandler(error);
+    }];
+}
+
 -(void)checkCompletionStatusWithCompletionHandler:(void (^)(BOOL))completionHandler
 {
     [[self usersReferenceForCurrentUser] observeEventType:FIRDataEventTypeValue
                                                 withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
                                                     UserInfo* userInfo = [[UserInfo alloc] init:snapshot];
                                                     completionHandler(userInfo.isComplete);
-//                                                    if (snapshot.value != [NSNull null]) {
-//                                                        BOOL isComplete = [snapshot.value objectForKey:@"complete"];
-//                                                        completionHandler(isComplete);
-//                                                    } else {
-//                                                        completionHandler(false);
-//                                                    }
                                                 }];
 }
 

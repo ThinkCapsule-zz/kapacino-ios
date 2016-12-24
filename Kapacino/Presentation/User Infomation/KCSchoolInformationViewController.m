@@ -24,13 +24,16 @@
     self.pageControl.currentPage = 2;
 }
 
-- (void)updateuser {
-    NSString *userID = [KCAPIClient sharedClient].currentUserID ;
-    [self.user setValue:@"YES" forKey:@"complete"];
-//    [[KCAPIClient sharedClient] updateUserWithID:userID user:self.user success:^(Firebase *userRef) {
-//        KCLoadingPage *loadingPageViewConrtoller = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCLoadingPage"];
-//        [self.navigationController setViewControllers:@[loadingPageViewConrtoller] animated:YES];
-//    } failure:nil];
+- (IBAction)onNextButtonTapped:(id)sender {
+    if ([self.user isComplete])
+    {
+        [[KCAPIClient sharedClient] saveUser:self.user withCompletionHandler:^(NSError *error)
+         {
+             KCLoadingPage *loadingPageViewConrtoller = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCLoadingPage"];
+             
+             [self presentViewController:loadingPageViewConrtoller animated:YES completion:nil];
+         }];
+    }
 }
 
 - (BOOL)checkuser {
@@ -45,12 +48,6 @@
         return NO;
     }
     return YES;
-}
-
-- (IBAction)startExploringButtonAction:(UIButton *)sender {
-    if ([self checkuser]) {
-        [self updateuser];
-    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

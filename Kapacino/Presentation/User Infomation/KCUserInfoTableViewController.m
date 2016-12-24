@@ -8,6 +8,8 @@
 
 #import "KCUserInfoTableViewController.h"
 #import "KCSearchViewController.h"
+#import "UniversityInfoDatasource.h"
+#import "InfoSchool.h"
 
 @interface KCUserInfoTableViewController ()
 
@@ -16,6 +18,8 @@
 @end
 
 @implementation KCUserInfoTableViewController
+
+NSString* const SEGUE_SCHOOL = @"showSchoolsSegue";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,10 +36,13 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    KCUserInfoTableViewCell* cell = (KCUserInfoTableViewCell *) sender;
+    
     if ([sender isKindOfClass:[KCUserInfoTableViewCell class]] && [segue.destinationViewController isKindOfClass:[KCPickerTableViewController class]]) {
         [self prepareForSegueWithPickerController:segue.destinationViewController cell:sender];
-    } else if ([sender isKindOfClass:[KCUserInfoTableViewCell class]] && [segue.destinationViewController isKindOfClass:[KCSearchViewController class]]) {
-        [self prepareForSegueWithSearchViewController:segue.destinationViewController cell:sender];
+    } else if ([segue.identifier isEqualToString:SEGUE_SCHOOL]) {
+        NSArray* items = [[UniversityInfoDatasource sharedInstance] data];
+        [self prepareForSegueWithSearchViewController:segue.destinationViewController withCategoryName:cell.title.text withItems:items];
     }
 }
 
@@ -43,14 +50,16 @@
 //    if ([cell.title.text isEqualToString:@"Name*"]) {
 //        cell.subTitle.text = self.user.name;
 //    } else
-    if ([cell.title.text isEqualToString:@"University*"]) {
-        //TODO Get university from id
-        cell.subTitle.text = self.user.userInfo.schoolId;
-    } else if ([cell.title.text isEqualToString:@"Major*"]) {
+    if ([cell.title.text isEqualToString:@"UNIVERSITY"]) {
+        //Get university from id
+        InfoSchool* schoolInfo = [[UniversityInfoDatasource sharedInstance] getById:self.user.userInfo.schoolId];
+//        NSLog(@"schoolName: %@", schoolName);
+        cell.subTitle.text = schoolInfo.name;
+    } else if ([cell.title.text isEqualToString:@"MAJOR"]) {
         cell.subTitle.text = self.user.userInfo.major;
-    } else if ([cell.title.text isEqualToString:@"Minor*"]) {
+    } else if ([cell.title.text isEqualToString:@"MINOR"]) {
         cell.subTitle.text = self.user.userInfo.minor;
-    } else if ([cell.title.text isEqualToString:@"Year of Study*"]) {
+    } else if ([cell.title.text isEqualToString:@"YEAR OF STUDY"]) {
         cell.subTitle.text = self.user.userInfo.yearOfStudy;
     }
 }
@@ -59,49 +68,36 @@
     controller.delegate = self;
     controller.categoryName = cell.title.text;
     
-    if ([cell.title.text isEqualToString:@"Major*"]) {
+    if ([cell.title.text isEqualToString:@"MAJOR"]) {
         NSArray *items = @[ @"USA", @"Canada", @"UK" ];
         controller.items = items;
-    } else if ([cell.title.text isEqualToString:@"Minor*"]) {
+    } else if ([cell.title.text isEqualToString:@"MINOR"]) {
         NSArray *items = @[ @"New-York", @"Toronto", @"London", @"L.A.", @"Ottava", @"Liverpool" ];
         controller.items = items;
-    } else if ([cell.title.text isEqualToString:@"Year of Study*"]) {
+    } else if ([cell.title.text isEqualToString:@"YEAR OF STUDY"]) {
         NSArray *items = @[ @"Freshman (First Year)", @"Sophomore (Second Year)", @"Senior (Third Year)", @"Senior (Fourth Year)" ];
         controller.items = items;
     }
-    
-//    if ([cell.title.text isEqualToString:@"Gender*"]) {
-//        NSArray *items = @[ @"Female", @"Male", @"Other" ];
-//        controller.items = items;
-//    } else if ([cell.title.text isEqualToString:@"Country*"]) {
-//        NSArray *items = @[ @"USA", @"Canada", @"UK" ];
-//        controller.items = items;
-//    } else if ([cell.title.text isEqualToString:@"Hometown*"]) {
-//        NSArray *items = @[ @"New-York", @"Toronto", @"London", @"L.A.", @"Ottava", @"Liverpool" ];
-//        controller.items = items;
-//    }
 }
 
-- (void)prepareForSegueWithSearchViewController:(KCSearchViewController *)controller cell:(KCUserInfoTableViewCell *)cell {
+- (void)prepareForSegueWithSearchViewController:(KCSearchViewController *)controller withCategoryName:(NSString *)categoryName withItems:(NSArray*)items{
     controller.delegate = self;
-    controller.categoryName = cell.title.text;
+    controller.categoryName = categoryName;
+    controller.items = items;
+    controller.idKeyPath = @"uid";
+    controller.nameKeyPath = @"name";
 }
-//
-//- (IBAction)nameTextFieldEditingChanged:(UITextField *)sender {
-////    [self.userInfo setObject:sender.text forKey:@"Name"];
-//}
 
 - (void)pickerTableViewController:(KCPickerTableViewController *)controller didChangeUserInfo:(NSString *) info {
-
-    if ([controller.categoryName isEqualToString:@"Major*"])
+    if ([controller.categoryName isEqualToString:@"MAJOR"])
     {
         self.user.userInfo.major = info;
     }
-    else if ([controller.categoryName isEqualToString:@"Minor*"])
+    else if ([controller.categoryName isEqualToString:@"MINOR"])
     {
         self.user.userInfo.minor = info;
     }
-    else if ([controller.categoryName isEqualToString:@"Year of Study*"])
+    else if ([controller.categoryName isEqualToString:@"YEAR OF STUDY"])
     {
         self.user.userInfo.yearOfStudy = info;
     }
@@ -110,7 +106,7 @@
 }
 
 - (void)searchViewController:(KCSearchViewController *)controller didChangeUserInfo:(NSString *) info {
-    if ([controller.categoryName isEqualToString:@"University*"])
+    if ([controller.categoryName isEqualToString:@"UNIVERSITY"])
     {
         self.user.userInfo.schoolId = info;
     }
@@ -122,5 +118,4 @@
     [textField endEditing:YES];
     return YES;
 }
-
 @end

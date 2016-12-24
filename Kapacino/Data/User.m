@@ -16,6 +16,7 @@
             self.key = user.uid;
             self.name = user.displayName;
             self.email = user.email;
+            self.userInfo = [[UserInfo alloc] init];
         }
         return self;
     }

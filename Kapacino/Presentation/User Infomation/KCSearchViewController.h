@@ -13,6 +13,9 @@
 
 @interface KCSearchViewController : UIViewController
 
+@property (strong, nonatomic) NSArray *items;
+@property (strong, nonatomic) NSString *idKeyPath;
+@property (strong, nonatomic) NSString *nameKeyPath;
 @property (weak, nonatomic) IBOutlet UILabel *categoryNameLabel;
 @property (strong, nonatomic) NSString *categoryName;
 

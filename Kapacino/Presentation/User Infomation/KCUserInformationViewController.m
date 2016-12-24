@@ -19,6 +19,8 @@
 
 @implementation KCUserInformationViewController
 
+NSString* const SEGUE_MORE = @"moreInfoSegue";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = NO;
@@ -27,27 +29,33 @@
 - (BOOL)checkUserInfo {
     self.user = self.userInfoTebleViewController.user;
     NSString *userName = self.user.name; // [self.userInfo objectForKey:@"Name"];
-    NSString *gender = self.user.userInfo.gender;
-    NSString *country = self.user.userInfo.country;
-    NSString *hometown = self.user.userInfo.hometown;
-    if (!userName.length || !gender || !country || !hometown) {
+    NSString *school = self.user.userInfo.schoolId;
+    NSString *major = self.user.userInfo.major;
+    NSString *minor = self.user.userInfo.minor;
+    NSString *yearOfStudy = self.user.userInfo.yearOfStudy;
+    if (!userName.length || !school || !yearOfStudy || !major || !minor) {
         return NO;
     }
     return YES;
 }
 
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    if ([identifier isEqualToString:@"showSchoolInfo"]) {
-        return [self checkUserInfo];
+- (IBAction)onNextButtonTapped:(id)sender {
+    if ([self checkUserInfo])
+    {
+        [self performSegueWithIdentifier:SEGUE_MORE sender:nil];
     }
-    return YES;
 }
+
+//- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+//
+//    return YES;
+//}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController isKindOfClass:[KCUserInfoTableViewController class]]) {
         self.userInfoTebleViewController = segue.destinationViewController;
         self.userInfoTebleViewController.user = self.user;
-    } else if ([segue.identifier isEqualToString:@"showSchoolInfo"]) {
+    } else if ([segue.identifier isEqualToString:SEGUE_MORE]) {
         KCSchoolInformationViewController *schoolInformationViewController = segue.destinationViewController;
         schoolInformationViewController.user = self.user;
     }

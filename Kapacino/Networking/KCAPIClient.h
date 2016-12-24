@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <FirebaseAuth/FirebaseAuth.h>
+#import "User.h"
 
 @import Firebase;
 
@@ -24,7 +25,9 @@
 
 -(FIRDatabaseReference *)coursesReferenceForCurrentUser;
 -(FIRDatabaseReference *)marksReferenceForCurrentUser;
--(FIRDatabaseReference *) usersReferenceForCurrentUser;
+-(FIRDatabaseReference *)usersReferenceForCurrentUser;
+
+-(void) saveUser:(User*) user withCompletionHandler:(void (^)(NSError * error)) completionHandler;
 
 -(void)checkCompletionStatusWithCompletionHandler:(void (^)(BOOL))completionHandler;
 //- (void)loginUserWithProvider:(NSString *)provide

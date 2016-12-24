@@ -12,7 +12,6 @@
 
 @interface KCSearchViewController ()<UITextFieldDelegate, UITableViewDelegate>
 
-@property (strong, nonatomic) NSMutableArray *allCities;
 @property (weak, nonatomic) IBOutlet UITableView *searchResultTableView;
 @property (strong, nonatomic) NSArray *searchResult;
 @property (strong, nonatomic) NSString *searchString;
@@ -24,38 +23,66 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self loadJSON];
+//    [self loadJSON];
     self.searchTextField.autocapitalizationType = UITextAutocapitalizationTypeSentences;
     self.categoryNameLabel.text = self.categoryName;
+    [self showDefaultItems];
 }
 
-- (NSMutableArray *)allCities {
-    if (!_allCities) {
-        _allCities = [[NSMutableArray alloc] init];
+-(void) setSearchResult:(NSArray *)searchResult
+{
+    NSArray* sortedResults;
+    if (self.nameKeyPath)
+    {
+        sortedResults = [searchResult sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+            return [obj1 valueForKeyPath:self.nameKeyPath] > [obj1 valueForKeyPath:self.nameKeyPath];
+        }];
     }
-    return _allCities;
-}
-
-- (void)loadJSON {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"countriesToCities" ofType:@"json"];
-    NSString *myJSON = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUnicodeStringEncoding error:nil];
-    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:[myJSON dataUsingEncoding:NSUnicodeStringEncoding] options:kNilOptions error:nil];
-    self.allCities = [json objectForKey:@"Canada"];
-
+    else
+    {
+        sortedResults = [searchResult sortedArrayUsingSelector:@selector(compare:)];
+    }
+    
+    _searchResult = sortedResults;
 }
 
 - (void)searchItemWithString:(NSString *)string {
-    NSPredicate *namePredicate = [NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", string];
-    NSArray *searchResult = [self.allCities filteredArrayUsingPredicate:namePredicate];
-    self.searchResult = searchResult;
-    self.searchString = string;
-    [self.searchResultTableView reloadData];
+    if (self.items)
+    {
+        if (string.length)
+        {
+            NSPredicate *namePredicate;
+            if (self.nameKeyPath)
+            {
+                namePredicate = [NSPredicate predicateWithFormat:@"%K beginswith[c] %@", self.nameKeyPath, string];
+            }
+            else
+            {
+                namePredicate = [NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", string];
+            }
+            
+            NSArray *searchResult = [self.items filteredArrayUsingPredicate:namePredicate];
+            self.searchResult = searchResult;
+            self.searchString = string;
+            [self.searchResultTableView reloadData];
+        }
+        else
+        {
+            [self showDefaultItems];
+        }
+    }
 }
 
 - (void)searchControllerSetValue:(NSString *)value {
     if ([self.delegate respondsToSelector:@selector(searchViewController:didChangeUserInfo:)] ) {
         [self.delegate searchViewController:self didChangeUserInfo:value];
     }
+}
+
+-(void) showDefaultItems
+{
+    self.searchResult = self.items;
+    [self.searchResultTableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -71,10 +98,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     KCSearchResultTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"searchResultCell" forIndexPath:indexPath];
     
-    NSString *cityName = [self.searchResult objectAtIndex:indexPath.row];
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:cityName];
+    NSObject* item = [self.searchResult objectAtIndex:indexPath.row];
+    NSString *itemName = self.nameKeyPath ? [item valueForKeyPath:self.nameKeyPath] : item;
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:itemName];
     UIColor *color = [UIColor kc_ApplicationColor];
-    NSRange range = [cityName rangeOfString:[cityName substringToIndex:self.searchString.length]];
+    NSRange range = [itemName rangeOfString:[itemName substringToIndex:self.searchString.length]];
     [attributedString addAttributes:@{ NSForegroundColorAttributeName:color } range:range];
     
     cell.title.attributedText = attributedString;
@@ -82,11 +110,12 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-     NSString *cityName = [self.searchResult objectAtIndex:indexPath.row];
-    self.searchTextField.text = cityName;
-    [self searchControllerSetValue:cityName];
+    NSObject *item = [self.searchResult objectAtIndex:indexPath.row];
+    NSString* itemName = self.nameKeyPath ? [item valueForKeyPath:self.nameKeyPath] : item;
+    NSString* itemId = self.idKeyPath ? [item valueForKeyPath:self.idKeyPath] : item;
+    self.searchTextField.text = itemName;
+    [self searchControllerSetValue:itemId];
 }
-
 
 - (IBAction)searchTextFieldEditingChanged:(UITextField *)sender {
     [self searchItemWithString:sender.text];

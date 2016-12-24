@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
+#import "MLPAutoCompletionObject.h"
 
-@interface InfoSchool : NSObject
-
+@interface InfoSchool : MTLModel <MTLJSONSerializing, MLPAutoCompletionObject>
+@property (strong, nonatomic) NSString* uid;
+@property (strong, nonatomic) NSString* name;
+@property (strong, nonatomic) NSString* location;
 @end
