@@ -1,0 +1,1370 @@
+[
+ {
+   "minorID": "MI0000001",
+   "schoolID": "CA00011",
+   "facultyID": "F000010",
+   "minor": "Law: Business Law"
+ },
+ {
+   "minorID": "MI0000002",
+   "schoolID": "CA00011",
+   "facultyID": "F000010",
+   "minor": "Law: Criminal Law"
+ },
+ {
+   "minorID": "MI0000003",
+   "schoolID": "CA00011",
+   "facultyID": "F000010",
+   "minor": "Law: Government and Public Administration"
+ },
+ {
+   "minorID": "MI0000004",
+   "schoolID": "CA00011",
+   "facultyID": "F000010",
+   "minor": "Law: International Law"
+ },
+ {
+   "minorID": "MI0000005",
+   "schoolID": "CA00011",
+   "facultyID": "F000010",
+   "minor": "Law: Intellectual Property, Information and Technology"
+ },
+ {
+   "minorID": "MI0000006",
+   "schoolID": "CA00011",
+   "facultyID": "F000010",
+   "minor": "Law: Labour, Employment and Social Justice"
+ },
+ {
+   "minorID": "MI0000007",
+   "schoolID": "CA00011",
+   "facultyID": "F000010",
+   "minor": "Law: Litigation"
+ },
+ {
+   "minorID": "MI0000008",
+   "schoolID": "CA00011",
+   "facultyID": "F000010",
+   "minor": "Law: Universal and Specialty Practice"
+ },
+ {
+   "minorID": "MI0000009",
+   "schoolID": "CA00011",
+   "facultyID": "F000011",
+   "minor": "Medicine: Oral Maxillofacial Surgery"
+ },
+ {
+   "minorID": "MI0000010",
+   "schoolID": "CA00011",
+   "facultyID": "F000011",
+   "minor": "Dentistry: Orthodontics"
+ },
+ {
+   "minorID": "MI0000011",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Applied Behavior Analysis"
+ },
+ {
+   "minorID": "MI0000012",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Curriculum and Pedagogy"
+ },
+ {
+   "minorID": "MI0000013",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Early Childhood Education"
+ },
+ {
+   "minorID": "MI0000014",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Educational Leadership"
+ },
+ {
+   "minorID": "MI0000015",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Focal Area Aboriginal Education"
+ },
+ {
+   "minorID": "MI0000016",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Equity, Diversity, and Social Justice"
+ },
+ {
+   "minorID": "MI0000017",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: International Education"
+ },
+ {
+   "minorID": "MI0000018",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Mathematics Education"
+ },
+ {
+   "minorID": "MI0000019",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Multiliteracies"
+ },
+ {
+   "minorID": "MI0000020",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: International School Leadership"
+ },
+ {
+   "minorID": "MI0000021",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Teaching English to Speakers of Other Languages"
+ },
+ {
+   "minorID": "MI0000022",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Teaching Students with Exceptionalities"
+ },
+ {
+   "minorID": "MI0000023",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Primary/Junior"
+ },
+ {
+   "minorID": "MI0000024",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Junior/Intermediate"
+ },
+ {
+   "minorID": "MI0000025",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education: Intermediate/Senior"
+ },
+ {
+   "minorID": "MI0000026",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Advanced Chemistry"
+ },
+ {
+   "minorID": "MI0000027",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Advanced Physics"
+ },
+ {
+   "minorID": "MI0000028",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Applications of Computer Science"
+ },
+ {
+   "minorID": "MI0000029",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Computer Algebra"
+ },
+ {
+   "minorID": "MI0000030",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Conceptual Astronomy"
+ },
+ {
+   "minorID": "MI0000031",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "High Performance Computing"
+ },
+ {
+   "minorID": "MI0000032",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Materials Chemistry"
+ },
+ {
+   "minorID": "MI0000033",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Mathematical and Numerical Methods"
+ },
+ {
+   "minorID": "MI0000034",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Physics of Materials"
+ },
+ {
+   "minorID": "MI0000035",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Planetary Science & Space Exploration"
+ },
+ {
+   "minorID": "MI0000036",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Software Engineering"
+ },
+ {
+   "minorID": "MI0000037",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Theoretical Computer Science"
+ },
+ {
+   "minorID": "MI0000038",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Environment and Culture"
+ },
+ {
+   "minorID": "MI0000039",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Feminist Theory"
+ },
+ {
+   "minorID": "MI0000040",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Gender, Sexuality and Culture"
+ },
+ {
+   "minorID": "MI0000041",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Refugee and Migrant Studies"
+ },
+ {
+   "minorID": "MI0000042",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Transitional Justice and Post-Conflict Reconstruction"
+ },
+ {
+   "minorID": "MI0000043",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Game Development"
+ },
+ {
+   "minorID": "MI0000044",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Creative Writing"
+ },
+ {
+   "minorID": "MI0000045",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Digital Humanities"
+ },
+ {
+   "minorID": "MI0000046",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Digital Spanish"
+ },
+ {
+   "minorID": "MI0000047",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "English for Teachers"
+ },
+ {
+   "minorID": "MI0000048",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Ethics"
+ },
+ {
+   "minorID": "MI0000049",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Feminist, Queer & Critical Race Theory"
+ },
+ {
+   "minorID": "MI0000050",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "General Cinema Studies"
+ },
+ {
+   "minorID": "MI0000051",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "General English"
+ },
+ {
+   "minorID": "MI0000052",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "German"
+ },
+ {
+   "minorID": "MI0000053",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Greek"
+ },
+ {
+   "minorID": "MI0000054",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Greek and Latin"
+ },
+ {
+   "minorID": "MI0000055",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Greek and Latin Literature"
+ },
+ {
+   "minorID": "MI0000056",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Greek and Roman Archaeology"
+ },
+ {
+   "minorID": "MI0000057",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Intercultural Communications for Arabic"
+ },
+ {
+   "minorID": "MI0000058",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Intercultural Communications for Japanese"
+ },
+ {
+   "minorID": "MI0000059",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Latin"
+ },
+ {
+   "minorID": "MI0000060",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Philosophy of Science"
+ },
+ {
+   "minorID": "MI0000061",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Popular Literature and Cultural Studies"
+ },
+ {
+   "minorID": "MI0000062",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Writing Studies"
+ },
+ {
+   "minorID": "MI0000063",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Art History"
+ },
+ {
+   "minorID": "MI0000064",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Art History and Criticism"
+ },
+ {
+   "minorID": "MI0000065",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Arts & Humanities (SASAH)"
+ },
+ {
+   "minorID": "MI0000066",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Classical Studies"
+ },
+ {
+   "minorID": "MI0000067",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Comparative Literature and Culture"
+ },
+ {
+   "minorID": "MI0000068",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Creative Writing and English Language & Literature"
+ },
+ {
+   "minorID": "MI0000069",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "English Language and Literature"
+ },
+ {
+   "minorID": "MI0000070",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Film Studies"
+ },
+ {
+   "minorID": "MI0000071",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "French Studies"
+ },
+ {
+   "minorID": "MI0000072",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "German Language and Culture"
+ },
+ {
+   "minorID": "MI0000073",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Global Gender Studies"
+ },
+ {
+   "minorID": "MI0000074",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Italian Language and Culture"
+ },
+ {
+   "minorID": "MI0000075",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Linguistics"
+ },
+ {
+   "minorID": "MI0000076",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Medieval Studies"
+ },
+ {
+   "minorID": "MI0000077",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Museum and Curatorial Studies"
+ },
+ {
+   "minorID": "MI0000078",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Philosophy"
+ },
+ {
+   "minorID": "MI0000079",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Sexuality Studies"
+ },
+ {
+   "minorID": "MI0000080",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Spanish Language and Linguistics"
+ },
+ {
+   "minorID": "MI0000081",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Spanish Language and Hispanic Cultures"
+ },
+ {
+   "minorID": "MI0000082",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Studio Arts"
+ },
+ {
+   "minorID": "MI0000083",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Theatre Studies"
+ },
+ {
+   "minorID": "MI0000084",
+   "schoolID": "CA00011",
+   "facultyID": "F000001",
+   "minor": "Women's Studies"
+ },
+ {
+   "minorID": "MI0000085",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Chemical Engineering: Chemical"
+ },
+ {
+   "minorID": "MI0000086",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Chemical Engineering: Biochemical"
+ },
+ {
+   "minorID": "MI0000087",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Chemical Engineering: Environmental"
+ },
+ {
+   "minorID": "MI0000088",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Civil Engineering: Structural"
+ },
+ {
+   "minorID": "MI0000089",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Civil Engineering: Environmental"
+ },
+ {
+   "minorID": "MI0000090",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Civil Engineering: International Development"
+ },
+ {
+   "minorID": "MI0000091",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Computer Engineering: Software Systems"
+ },
+ {
+   "minorID": "MI0000092",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Computer Engineering: Ubiquitous Computing"
+ },
+ {
+   "minorID": "MI0000093",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Computer Engineering: Electronic Devices"
+ },
+ {
+   "minorID": "MI0000094",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Electrical Engineering: Wireless Communication"
+ },
+ {
+   "minorID": "MI0000095",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Electrical Engineering: Power Systems"
+ },
+ {
+   "minorID": "MI0000096",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Electrical Engineering: Biomedical Signals and Systems"
+ },
+ {
+   "minorID": "MI0000097",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Green Process Engineering"
+ },
+ {
+   "minorID": "MI0000098",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Integrated Engineering"
+ },
+ {
+   "minorID": "MI0000099",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Mechanical Engineering"
+ },
+ {
+   "minorID": "MI0000100",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Mechatronic Systems Engineering"
+ },
+ {
+   "minorID": "MI0000101",
+   "schoolID": "CA00011",
+   "facultyID": "F000005",
+   "minor": "Software Engineering: Health Informatics"
+ },
+ {
+   "minorID": "MI0000102",
+   "schoolID": "CA00011",
+   "facultyID": "F000007",
+   "minor": "Health Sciences"
+ },
+ {
+   "minorID": "MI0000103",
+   "schoolID": "CA00011",
+   "facultyID": "F000007",
+   "minor": "Health and Aging"
+ },
+ {
+   "minorID": "MI0000104",
+   "schoolID": "CA00011",
+   "facultyID": "F000007",
+   "minor": "Health Promotion"
+ },
+ {
+   "minorID": "MI0000105",
+   "schoolID": "CA00011",
+   "facultyID": "F000007",
+   "minor": "Health Sciences with Biology"
+ },
+ {
+   "minorID": "MI0000106",
+   "schoolID": "CA00011",
+   "facultyID": "F000007",
+   "minor": "Rehabilitation Sciences"
+ },
+ {
+   "minorID": "MI0000107",
+   "schoolID": "CA00011",
+   "facultyID": "F000015",
+   "minor": "Kinesiology"
+ },
+ {
+   "minorID": "MI0000108",
+   "schoolID": "CA00011",
+   "facultyID": "F000015",
+   "minor": "Fitness and Exercise Prescription"
+ },
+ {
+   "minorID": "MI0000109",
+   "schoolID": "CA00011",
+   "facultyID": "F000015",
+   "minor": "Sport Management"
+ },
+ {
+   "minorID": "MI0000110",
+   "schoolID": "CA00011",
+   "facultyID": "F000015",
+   "minor": "Rehabilitation Sciences"
+ },
+ {
+   "minorID": "MI0000111",
+   "schoolID": "CA00011",
+   "facultyID": "F000016",
+   "minor": "Nursing"
+ },
+ {
+   "minorID": "MI0000112",
+   "schoolID": "CA00011",
+   "facultyID": "F000008",
+   "minor": "Media, Information & Technoculture"
+ },
+ {
+   "minorID": "MI0000113",
+   "schoolID": "CA00011",
+   "facultyID": "F000008",
+   "minor": "Media & the Public Interest"
+ },
+ {
+   "minorID": "MI0000114",
+   "schoolID": "CA00011",
+   "facultyID": "F000012",
+   "minor": "Music"
+ },
+ {
+   "minorID": "MI0000115",
+   "schoolID": "CA00011",
+   "facultyID": "F000012",
+   "minor": "Music Composition"
+ },
+ {
+   "minorID": "MI0000116",
+   "schoolID": "CA00011",
+   "facultyID": "F000012",
+   "minor": "Music Education"
+ },
+ {
+   "minorID": "MI0000117",
+   "schoolID": "CA00011",
+   "facultyID": "F000012",
+   "minor": "Music History"
+ },
+ {
+   "minorID": "MI0000118",
+   "schoolID": "CA00011",
+   "facultyID": "F000012",
+   "minor": "Music Performance"
+ },
+ {
+   "minorID": "MI0000119",
+   "schoolID": "CA00011",
+   "facultyID": "F000012",
+   "minor": "Music Theory"
+ },
+ {
+   "minorID": "MI0000120",
+   "schoolID": "CA00011",
+   "facultyID": "F000012",
+   "minor": "Musical Arts"
+ },
+ {
+   "minorID": "MI0000121",
+   "schoolID": "CA00011",
+   "facultyID": "F000012",
+   "minor": "Music Administrative Studies"
+ },
+ {
+   "minorID": "MI0000122",
+   "schoolID": "CA00011",
+   "facultyID": "F000012",
+   "minor": "Popular Music Studies"
+ },
+ {
+   "minorID": "MI0000123",
+   "schoolID": "CA00011",
+   "facultyID": "F000012",
+   "minor": "Western-Fanshawe Collaborative Program in Music Recording Arts"
+ },
+ {
+   "minorID": "MI0000124",
+   "schoolID": "CA00011",
+   "facultyID": "F000012",
+   "minor": "Dance"
+ },
+ {
+   "minorID": "MI0000125",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Actuarial Science"
+ },
+ {
+   "minorID": "MI0000126",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Animal Behaviour"
+ },
+ {
+   "minorID": "MI0000127",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Applied Mathematics"
+ },
+ {
+   "minorID": "MI0000128",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Applied Mathematics Methods"
+ },
+ {
+   "minorID": "MI0000129",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Applied Statistics"
+ },
+ {
+   "minorID": "MI0000130",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Astrophysics"
+ },
+ {
+   "minorID": "MI0000131",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Biochemistry and Chemistry"
+ },
+ {
+   "minorID": "MI0000132",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Biodiversity and Conservation"
+ },
+ {
+   "minorID": "MI0000133",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Bioinformatics"
+ },
+ {
+   "minorID": "MI0000134",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Biology"
+ },
+ {
+   "minorID": "MI0000135",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Chemical Biology"
+ },
+ {
+   "minorID": "MI0000136",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Chemistry"
+ },
+ {
+   "minorID": "MI0000137",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Computer Science"
+ },
+ {
+   "minorID": "MI0000138",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Ecosystem Health"
+ },
+ {
+   "minorID": "MI0000139",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Environmental Geoscience"
+ },
+ {
+   "minorID": "MI0000140",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Environmental Science"
+ },
+ {
+   "minorID": "MI0000141",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Financial Modelling"
+ },
+ {
+   "minorID": "MI0000142",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Genetics"
+ },
+ {
+   "minorID": "MI0000143",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Genetics and Biochemistry"
+ },
+ {
+   "minorID": "MI0000144",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Geology"
+ },
+ {
+   "minorID": "MI0000145",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Geology and Biology"
+ },
+ {
+   "minorID": "MI0000146",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Geophysics"
+ },
+ {
+   "minorID": "MI0000147",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Honors Environmental Geoscience Program"
+ },
+ {
+   "minorID": "MI0000148",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Honors Geology Program"
+ },
+ {
+   "minorID": "MI0000149",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Honors Geophysics Program"
+ },
+ {
+   "minorID": "MI0000150",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Information Systems"
+ },
+ {
+   "minorID": "MI0000151",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Integrated Science"
+ },
+ {
+   "minorID": "MI0000152",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Materials Science"
+ },
+ {
+   "minorID": "MI0000153",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Mathematical Sciences"
+ },
+ {
+   "minorID": "MI0000154",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Mathematics"
+ },
+ {
+   "minorID": "MI0000155",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Mathematics in Society"
+ },
+ {
+   "minorID": "MI0000156",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Medical Biophysics (Biological Science concentration)"
+ },
+ {
+   "minorID": "MI0000157",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Medical Biophysics (Physical Science concentration)"
+ },
+ {
+   "minorID": "MI0000158",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Neuroscience"
+ },
+ {
+   "minorID": "MI0000159",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Physics"
+ },
+ {
+   "minorID": "MI0000160",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Scientific Computing and Numerical Methods"
+ },
+ {
+   "minorID": "MI0000161",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Statistics"
+ },
+ {
+   "minorID": "MI0000162",
+   "schoolID": "CA00011",
+   "facultyID": "F000013",
+   "minor": "Theoretical Physics"
+ },
+ {
+   "minorID": "MI0000163",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Biochemistry"
+ },
+ {
+   "minorID": "MI0000164",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Biochemistry and Cell Biology"
+ },
+ {
+   "minorID": "MI0000165",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Biochemistry and Pathology of Human Disease"
+ },
+ {
+   "minorID": "MI0000166",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Biochemistry of Infection and Immunity"
+ },
+ {
+   "minorID": "MI0000167",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Chemical Biology"
+ },
+ {
+   "minorID": "MI0000168",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Computational Biochemistry"
+ },
+ {
+   "minorID": "MI0000169",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Epidemiology and Biostatistics"
+ },
+ {
+   "minorID": "MI0000170",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Interdisciplinary Medical Sciences (IMS)"
+ },
+ {
+   "minorID": "MI0000171",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Medical Biophysics (Clinical Physics concentration)"
+ },
+ {
+   "minorID": "MI0000172",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Medical Biophysics (Medical Science concentration)"
+ },
+ {
+   "minorID": "MI0000173",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Medical Biophysics and Biochemistry"
+ },
+ {
+   "minorID": "MI0000174",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Medical Cell Biology"
+ },
+ {
+   "minorID": "MI0000175",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Medical Health Informatics"
+ },
+ {
+   "minorID": "MI0000176",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Microbiology and Immunology"
+ },
+ {
+   "minorID": "MI0000177",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Microbiology and Immunology with Pathology"
+ },
+ {
+   "minorID": "MI0000178",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "One Health"
+ },
+ {
+   "minorID": "MI0000179",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Pathology"
+ },
+ {
+   "minorID": "MI0000180",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Pharmacology"
+ },
+ {
+   "minorID": "MI0000181",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Physiology"
+ },
+ {
+   "minorID": "MI0000182",
+   "schoolID": "CA00011",
+   "facultyID": "F000017",
+   "minor": "Physiology and Pharmacology"
+ },
+ {
+   "minorID": "MI0000183",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "American Cultural Studies"
+ },
+ {
+   "minorID": "MI0000184",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "American Studies"
+ },
+ {
+   "minorID": "MI0000185",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Animal Behaviour"
+ },
+ {
+   "minorID": "MI0000186",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Anthropology"
+ },
+ {
+   "minorID": "MI0000187",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Bioarcheological Anthropology"
+ },
+ {
+   "minorID": "MI0000188",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Canadian-American Relations"
+ },
+ {
+   "minorID": "MI0000189",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Criminology"
+ },
+ {
+   "minorID": "MI0000190",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Developmental Cognitive Neuroscience"
+ },
+ {
+   "minorID": "MI0000191",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Economics"
+ },
+ {
+   "minorID": "MI0000192",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Economics, Politics and Philosophy"
+ },
+ {
+   "minorID": "MI0000193",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Environment and Health"
+ },
+ {
+   "minorID": "MI0000194",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Financial Economics"
+ },
+ {
+   "minorID": "MI0000195",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "First Nations Studies"
+ },
+ {
+   "minorID": "MI0000196",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Geographic Information Science"
+ },
+ {
+   "minorID": "MI0000197",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Geography"
+ },
+ {
+   "minorID": "MI0000198",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Geography and Commercial Aviation Management"
+ },
+ {
+   "minorID": "MI0000199",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Global Economics"
+ },
+ {
+   "minorID": "MI0000200",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Global Gender Studies"
+ },
+ {
+   "minorID": "MI0000201",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "History"
+ },
+ {
+   "minorID": "MI0000202",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "International Relations"
+ },
+ {
+   "minorID": "MI0000203",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Jewish Studies"
+ },
+ {
+   "minorID": "MI0000204",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Linguistic Anthropology"
+ },
+ {
+   "minorID": "MI0000205",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Linguistics"
+ },
+ {
+   "minorID": "MI0000206",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Middle East Studies"
+ },
+ {
+   "minorID": "MI0000207",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Neuroscience"
+ },
+ {
+   "minorID": "MI0000208",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Physical Geography"
+ },
+ {
+   "minorID": "MI0000209",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Political Science"
+ },
+ {
+   "minorID": "MI0000210",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Psychology"
+ },
+ {
+   "minorID": "MI0000211",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Sexuality Studies"
+ },
+ {
+   "minorID": "MI0000212",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Sociocultural Anthropology"
+ },
+ {
+   "minorID": "MI0000213",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Sociology"
+ },
+ {
+   "minorID": "MI0000214",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Sociology of Population, Aging and Health"
+ },
+ {
+   "minorID": "MI0000215",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Urban Development"
+ },
+ {
+   "minorID": "MI0000216",
+   "schoolID": "CA00011",
+   "facultyID": "F000014",
+   "minor": "Women�s Studies"
+ },
+ {
+   "minorID": "MI0000217",
+   "schoolID": "CA00011",
+   "facultyID": "F000018",
+   "minor": "Accounting"
+ },
+ {
+   "minorID": "MI0000218",
+   "schoolID": "CA00011",
+   "facultyID": "F000018",
+   "minor": "Commercial Aviation Management (CAM)"
+ },
+ {
+   "minorID": "MI0000219",
+   "schoolID": "CA00011",
+   "facultyID": "F000018",
+   "minor": "Consumer Behavior"
+ },
+ {
+   "minorID": "MI0000220",
+   "schoolID": "CA00011",
+   "facultyID": "F000018",
+   "minor": "Finance"
+ },
+ {
+   "minorID": "MI0000221",
+   "schoolID": "CA00011",
+   "facultyID": "F000018",
+   "minor": "Human Resource Management"
+ },
+ {
+   "minorID": "MI0000222",
+   "schoolID": "CA00011",
+   "facultyID": "F000018",
+   "minor": "Public Administration"
+ },
+ {
+   "minorID": "MI0000223",
+   "schoolID": "CA00011",
+   "facultyID": "F000002",
+   "minor": "Ivey"
+ },
+ {
+   "minorID": "MI0000224",
+   "schoolID": "CA00011",
+   "facultyID": "F000011",
+   "minor": "Medicine"
+ },
+ {
+   "minorID": "MI0000225",
+   "schoolID": "CA00011",
+   "facultyID": "F000011",
+   "minor": "Dentistry"
+ },
+ {
+   "minorID": "MI0000226",
+   "schoolID": "CA00011",
+   "facultyID": "F000010",
+   "minor": "Law"
+ },
+ {
+   "minorID": "MI0000227",
+   "schoolID": "CA00011",
+   "facultyID": "F000019",
+   "minor": "Social Work"
+ },
+ {
+   "minorID": "MI0000228",
+   "schoolID": "CA00011",
+   "facultyID": "F000004",
+   "minor": "Education"
+ }
+]

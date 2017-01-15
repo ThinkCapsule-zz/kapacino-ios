@@ -1,0 +1,944 @@
+[
+ {
+   "MajorID": "MA0000001",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Art History"
+ },
+ {
+   "MajorID": "MA0000002",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Art History and Criticism"
+ },
+ {
+   "MajorID": "MA0000003",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Arts & Humanities (SASAH)"
+ },
+ {
+   "MajorID": "MA0000004",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Classical Studies"
+ },
+ {
+   "MajorID": "MA0000005",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Comparative Literature and Culture"
+ },
+ {
+   "MajorID": "MA0000006",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Creative Writing and English Language & Literature"
+ },
+ {
+   "MajorID": "MA0000007",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "English Language and Literature"
+ },
+ {
+   "MajorID": "MA0000008",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Film Studies"
+ },
+ {
+   "MajorID": "MA0000009",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "French Studies"
+ },
+ {
+   "MajorID": "MA0000010",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "German Language and Culture"
+ },
+ {
+   "MajorID": "MA0000011",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Global Gender Studies"
+ },
+ {
+   "MajorID": "MA0000012",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Italian Language and Culture"
+ },
+ {
+   "MajorID": "MA0000013",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Linguistics"
+ },
+ {
+   "MajorID": "MA0000014",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Medieval Studies"
+ },
+ {
+   "MajorID": "MA0000015",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Museum and Curatorial Studies"
+ },
+ {
+   "MajorID": "MA0000016",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Philosophy"
+ },
+ {
+   "MajorID": "MA0000017",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Sexuality Studies"
+ },
+ {
+   "MajorID": "MA0000018",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Spanish Language and Linguistics"
+ },
+ {
+   "MajorID": "MA0000019",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Spanish Language and Hispanic Cultures"
+ },
+ {
+   "MajorID": "MA0000020",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Studio Arts"
+ },
+ {
+   "MajorID": "MA0000021",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Theatre Studies"
+ },
+ {
+   "MajorID": "MA0000022",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000001",
+   "Major": "Women's Studies"
+ },
+ {
+   "MajorID": "MA0000023",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000005",
+   "Major": "Chemical Engineering"
+ },
+ {
+   "MajorID": "MA0000024",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000005",
+   "Major": "Civil Engineering"
+ },
+ {
+   "MajorID": "MA0000025",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000005",
+   "Major": "Computer Engineering"
+ },
+ {
+   "MajorID": "MA0000026",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000005",
+   "Major": "Green Process Engineering"
+ },
+ {
+   "MajorID": "MA0000027",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000005",
+   "Major": "Integrated Engineering"
+ },
+ {
+   "MajorID": "MA0000028",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000005",
+   "Major": "Mechanical Engineering"
+ },
+ {
+   "MajorID": "MA0000029",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000005",
+   "Major": "Mechatronic Systems Engineering"
+ },
+ {
+   "MajorID": "MA0000030",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000005",
+   "Major": "Software Engineering"
+ },
+ {
+   "MajorID": "MA0000031",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000007",
+   "Major": "Health Sciences"
+ },
+ {
+   "MajorID": "MA0000032",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000007",
+   "Major": "Health and Aging"
+ },
+ {
+   "MajorID": "MA0000033",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000007",
+   "Major": "Health Promotion"
+ },
+ {
+   "MajorID": "MA0000034",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000007",
+   "Major": "Health Sciences with Biology"
+ },
+ {
+   "MajorID": "MA0000035",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000007",
+   "Major": "Rehabilitation Sciences"
+ },
+ {
+   "MajorID": "MA0000036",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000015",
+   "Major": "Kinesiology"
+ },
+ {
+   "MajorID": "MA0000037",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000015",
+   "Major": "Fitness and Exercise Prescription"
+ },
+ {
+   "MajorID": "MA0000038",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000015",
+   "Major": "Sport Management"
+ },
+ {
+   "MajorID": "MA0000039",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000015",
+   "Major": "Rehabilitation Sciences"
+ },
+ {
+   "MajorID": "MA0000040",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000016",
+   "Major": "Nursing"
+ },
+ {
+   "MajorID": "MA0000041",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000008",
+   "Major": "Media, Information & Technoculture"
+ },
+ {
+   "MajorID": "MA0000042",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000008",
+   "Major": "Media & the Public Interest"
+ },
+ {
+   "MajorID": "MA0000043",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000012",
+   "Major": "Music"
+ },
+ {
+   "MajorID": "MA0000044",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000012",
+   "Major": "Music Composition"
+ },
+ {
+   "MajorID": "MA0000045",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000012",
+   "Major": "Music Education"
+ },
+ {
+   "MajorID": "MA0000046",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000012",
+   "Major": "Music History"
+ },
+ {
+   "MajorID": "MA0000047",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000012",
+   "Major": "Music Performance"
+ },
+ {
+   "MajorID": "MA0000048",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000012",
+   "Major": "Music Theory"
+ },
+ {
+   "MajorID": "MA0000049",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000012",
+   "Major": "Musical Arts"
+ },
+ {
+   "MajorID": "MA0000050",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000012",
+   "Major": "Music Administrative Studies"
+ },
+ {
+   "MajorID": "MA0000051",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000012",
+   "Major": "Popular Music Studies"
+ },
+ {
+   "MajorID": "MA0000052",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000012",
+   "Major": "Western-Fanshawe Collaborative Program in Music Recording Arts"
+ },
+ {
+   "MajorID": "MA0000053",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000012",
+   "Major": "Dance"
+ },
+ {
+   "MajorID": "MA0000054",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Actuarial Science"
+ },
+ {
+   "MajorID": "MA0000055",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Animal Behaviour"
+ },
+ {
+   "MajorID": "MA0000056",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Applied Mathematics"
+ },
+ {
+   "MajorID": "MA0000057",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Applied Mathematics Methods"
+ },
+ {
+   "MajorID": "MA0000058",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Applied Statistics"
+ },
+ {
+   "MajorID": "MA0000059",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Astrophysics"
+ },
+ {
+   "MajorID": "MA0000060",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Biochemistry and Chemistry"
+ },
+ {
+   "MajorID": "MA0000061",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Biodiversity and Conservation"
+ },
+ {
+   "MajorID": "MA0000062",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Bioinformatics"
+ },
+ {
+   "MajorID": "MA0000063",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Biology"
+ },
+ {
+   "MajorID": "MA0000064",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Chemical Biology"
+ },
+ {
+   "MajorID": "MA0000065",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Chemistry"
+ },
+ {
+   "MajorID": "MA0000066",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Computer Science"
+ },
+ {
+   "MajorID": "MA0000067",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Ecosystem Health"
+ },
+ {
+   "MajorID": "MA0000068",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Environmental Geoscience"
+ },
+ {
+   "MajorID": "MA0000069",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Environmental Science"
+ },
+ {
+   "MajorID": "MA0000070",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Financial Modelling"
+ },
+ {
+   "MajorID": "MA0000071",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Genetics"
+ },
+ {
+   "MajorID": "MA0000072",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Genetics and Biochemistry"
+ },
+ {
+   "MajorID": "MA0000073",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Geology"
+ },
+ {
+   "MajorID": "MA0000074",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Geology and Biology"
+ },
+ {
+   "MajorID": "MA0000075",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Geophysics"
+ },
+ {
+   "MajorID": "MA0000076",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Honors Environmental Geoscience Program"
+ },
+ {
+   "MajorID": "MA0000077",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Honors Geology Program"
+ },
+ {
+   "MajorID": "MA0000078",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Honors Geophysics Program"
+ },
+ {
+   "MajorID": "MA0000079",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Information Systems"
+ },
+ {
+   "MajorID": "MA0000080",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Integrated Science"
+ },
+ {
+   "MajorID": "MA0000081",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Materials Science"
+ },
+ {
+   "MajorID": "MA0000082",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Mathematical Sciences"
+ },
+ {
+   "MajorID": "MA0000083",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Mathematics"
+ },
+ {
+   "MajorID": "MA0000084",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Mathematics in Society"
+ },
+ {
+   "MajorID": "MA0000085",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Medical Biophysics (Biological Science concentration)"
+ },
+ {
+   "MajorID": "MA0000086",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Medical Biophysics (Physical Science concentration)"
+ },
+ {
+   "MajorID": "MA0000087",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Neuroscience"
+ },
+ {
+   "MajorID": "MA0000088",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Physics"
+ },
+ {
+   "MajorID": "MA0000089",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Scientific Computing and Numerical Methods"
+ },
+ {
+   "MajorID": "MA0000090",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Statistics"
+ },
+ {
+   "MajorID": "MA0000091",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000013",
+   "Major": "Theoretical Physics"
+ },
+ {
+   "MajorID": "MA0000092",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Biochemistry"
+ },
+ {
+   "MajorID": "MA0000093",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Biochemistry and Cell Biology"
+ },
+ {
+   "MajorID": "MA0000094",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Biochemistry and Pathology of Human Disease"
+ },
+ {
+   "MajorID": "MA0000095",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Biochemistry of Infection and Immunity"
+ },
+ {
+   "MajorID": "MA0000096",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Chemical Biology"
+ },
+ {
+   "MajorID": "MA0000097",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Computational Biochemistry"
+ },
+ {
+   "MajorID": "MA0000098",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Epidemiology and Biostatistics"
+ },
+ {
+   "MajorID": "MA0000099",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Interdisciplinary Medical Sciences (IMS)"
+ },
+ {
+   "MajorID": "MA0000100",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Medical Biophysics (Clinical Physics concentration)"
+ },
+ {
+   "MajorID": "MA0000101",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Medical Biophysics (Medical Science concentration)"
+ },
+ {
+   "MajorID": "MA0000102",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Medical Biophysics and Biochemistry"
+ },
+ {
+   "MajorID": "MA0000103",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Medical Cell Biology"
+ },
+ {
+   "MajorID": "MA0000104",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Medical Health Informatics"
+ },
+ {
+   "MajorID": "MA0000105",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Microbiology and Immunology"
+ },
+ {
+   "MajorID": "MA0000106",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Microbiology and Immunology with Pathology"
+ },
+ {
+   "MajorID": "MA0000107",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "One Health"
+ },
+ {
+   "MajorID": "MA0000108",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Pathology"
+ },
+ {
+   "MajorID": "MA0000109",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Pharmacology"
+ },
+ {
+   "MajorID": "MA0000110",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Physiology"
+ },
+ {
+   "MajorID": "MA0000111",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000017",
+   "Major": "Physiology and Pharmacology"
+ },
+ {
+   "MajorID": "MA0000112",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "American Cultural Studies"
+ },
+ {
+   "MajorID": "MA0000113",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "American Studies"
+ },
+ {
+   "MajorID": "MA0000114",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Animal Behaviour"
+ },
+ {
+   "MajorID": "MA0000115",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Anthropology"
+ },
+ {
+   "MajorID": "MA0000116",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Bioarcheological Anthropology"
+ },
+ {
+   "MajorID": "MA0000117",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Canadian-American Relations"
+ },
+ {
+   "MajorID": "MA0000118",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Criminology"
+ },
+ {
+   "MajorID": "MA0000119",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Developmental Cognitive Neuroscience"
+ },
+ {
+   "MajorID": "MA0000120",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Economics"
+ },
+ {
+   "MajorID": "MA0000121",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Economics, Politics and Philosophy"
+ },
+ {
+   "MajorID": "MA0000122",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Environment and Health"
+ },
+ {
+   "MajorID": "MA0000123",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Financial Economics"
+ },
+ {
+   "MajorID": "MA0000124",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "First Nations Studies"
+ },
+ {
+   "MajorID": "MA0000125",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Geographic Information Science"
+ },
+ {
+   "MajorID": "MA0000126",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Geography"
+ },
+ {
+   "MajorID": "MA0000127",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Geography and Commercial Aviation Management"
+ },
+ {
+   "MajorID": "MA0000128",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Global Economics"
+ },
+ {
+   "MajorID": "MA0000129",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Global Gender Studies"
+ },
+ {
+   "MajorID": "MA0000130",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "History"
+ },
+ {
+   "MajorID": "MA0000131",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "International Relations"
+ },
+ {
+   "MajorID": "MA0000132",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Jewish Studies"
+ },
+ {
+   "MajorID": "MA0000133",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Linguistic Anthropology"
+ },
+ {
+   "MajorID": "MA0000134",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Linguistics"
+ },
+ {
+   "MajorID": "MA0000135",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Middle East Studies"
+ },
+ {
+   "MajorID": "MA0000136",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Neuroscience"
+ },
+ {
+   "MajorID": "MA0000137",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Physical Geography"
+ },
+ {
+   "MajorID": "MA0000138",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Political Science"
+ },
+ {
+   "MajorID": "MA0000139",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Psychology"
+ },
+ {
+   "MajorID": "MA0000140",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Sexuality Studies"
+ },
+ {
+   "MajorID": "MA0000141",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Sociocultural Anthropology"
+ },
+ {
+   "MajorID": "MA0000142",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Sociology"
+ },
+ {
+   "MajorID": "MA0000143",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Sociology of Population, Aging and Health"
+ },
+ {
+   "MajorID": "MA0000144",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Urban Development"
+ },
+ {
+   "MajorID": "MA0000145",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000014",
+   "Major": "Women�s Studies"
+ },
+ {
+   "MajorID": "MA0000146",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000018",
+   "Major": "Accounting"
+ },
+ {
+   "MajorID": "MA0000147",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000018",
+   "Major": "Commercial Aviation Management (CAM)"
+ },
+ {
+   "MajorID": "MA0000148",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000018",
+   "Major": "Consumer Behavior"
+ },
+ {
+   "MajorID": "MA0000149",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000018",
+   "Major": "Finance"
+ },
+ {
+   "MajorID": "MA0000150",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000018",
+   "Major": "Human Resource Management"
+ },
+ {
+   "MajorID": "MA0000151",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000018",
+   "Major": "Public Administration"
+ },
+ {
+   "MajorID": "MA0000152",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000002",
+   "Major": "Ivey"
+ },
+ {
+   "MajorID": "MA0000153",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000011",
+   "Major": "Medicine"
+ },
+ {
+   "MajorID": "MA0000154",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000011",
+   "Major": "Dentistry"
+ },
+ {
+   "MajorID": "MA0000155",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000010",
+   "Major": "Law"
+ },
+ {
+   "MajorID": "MA0000156",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000019",
+   "Major": "Social Work"
+ },
+ {
+   "MajorID": "MA0000157",
+   "SchoolID": "CA00011",
+   "FacultyID": "F000004",
+   "Major": "Education"
+ }
+]

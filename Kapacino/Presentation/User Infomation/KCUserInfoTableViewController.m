@@ -9,6 +9,8 @@
 #import "KCUserInfoTableViewController.h"
 #import "KCSearchViewController.h"
 #import "UniversityInfoDatasource.h"
+#import "MajorInfoDatasource.h"
+#import "MinorInfoDatasource.h"
 #import "InfoSchool.h"
 
 @interface KCUserInfoTableViewController ()
@@ -69,11 +71,39 @@ NSString* const SEGUE_SCHOOL = @"showSchoolsSegue";
     controller.categoryName = cell.title.text;
     
     if ([cell.title.text isEqualToString:@"MAJOR"]) {
-        NSArray *items = @[ @"USA", @"Canada", @"UK" ];
-        controller.items = items;
+        NSArray *items = [[MajorInfoDatasource sharedInstance] data];
+        NSArray *objectsForSchool;
+        if (self.user.userInfo.schoolId)
+        {
+            NSPredicate* predicate = [NSPredicate predicateWithFormat:@"%K = %@", @"schoolId", self.user.userInfo.schoolId];
+            objectsForSchool = [items filteredArrayUsingPredicate:predicate];
+        }
+        else
+        {
+            objectsForSchool = items;
+        }
+        
+        //Get names
+        NSArray* names = [objectsForSchool valueForKey:@"name"];
+        
+        controller.items = names;
     } else if ([cell.title.text isEqualToString:@"MINOR"]) {
-        NSArray *items = @[ @"New-York", @"Toronto", @"London", @"L.A.", @"Ottava", @"Liverpool" ];
-        controller.items = items;
+        NSArray *items = [[MinorInfoDatasource sharedInstance] data];
+        NSArray *objectsForSchool;
+        if (self.user.userInfo.schoolId)
+        {
+            NSPredicate* predicate = [NSPredicate predicateWithFormat:@"%K = %@", @"schoolId", self.user.userInfo.schoolId];
+            objectsForSchool = [items filteredArrayUsingPredicate:predicate];
+        }
+        else
+        {
+            objectsForSchool = items;
+        }
+        
+        //Get names
+        NSArray* names = [objectsForSchool valueForKey:@"name"];
+        
+        controller.items = names;
     } else if ([cell.title.text isEqualToString:@"YEAR OF STUDY"]) {
         NSArray *items = @[ @"Freshman (First Year)", @"Sophomore (Second Year)", @"Senior (Third Year)", @"Senior (Fourth Year)" ];
         controller.items = items;
