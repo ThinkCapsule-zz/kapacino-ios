@@ -123,6 +123,8 @@
 		C9A07FFE1E2B0724008FBBD4 /* InfoMajor.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A07FFD1E2B0724008FBBD4 /* InfoMajor.m */; };
 		C9A080011E2B08B9008FBBD4 /* InfoMinor.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A080001E2B08B9008FBBD4 /* InfoMinor.m */; };
 		C9A080041E2B103F008FBBD4 /* MinorInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A080031E2B103F008FBBD4 /* MinorInfoDatasource.m */; };
+		C9A080071E2BE106008FBBD4 /* InfoFaculty.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A080061E2BE106008FBBD4 /* InfoFaculty.m */; };
+		C9A0800A1E2BE330008FBBD4 /* FacultyInfoDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A080091E2BE330008FBBD4 /* FacultyInfoDatasource.m */; };
 		C9BB12FA1D8ADC1600DCB37E /* CFPlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB12F91D8ADC1600DCB37E /* CFPlaceModel.m */; };
 		C9BB6ADD1DA9A25900D2819F /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB6ADC1DA9A25900D2819F /* Mark.m */; };
 		C9BB6AE01DA9C5C100D2819F /* KCGPAMarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB6ADF1DA9C5C100D2819F /* KCGPAMarkCell.m */; };
@@ -381,6 +383,10 @@
 		C9A080001E2B08B9008FBBD4 /* InfoMinor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoMinor.m; sourceTree = "<group>"; };
 		C9A080021E2B103F008FBBD4 /* MinorInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinorInfoDatasource.h; sourceTree = "<group>"; };
 		C9A080031E2B103F008FBBD4 /* MinorInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinorInfoDatasource.m; sourceTree = "<group>"; };
+		C9A080051E2BE106008FBBD4 /* InfoFaculty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoFaculty.h; sourceTree = "<group>"; };
+		C9A080061E2BE106008FBBD4 /* InfoFaculty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoFaculty.m; sourceTree = "<group>"; };
+		C9A080081E2BE330008FBBD4 /* FacultyInfoDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacultyInfoDatasource.h; sourceTree = "<group>"; };
+		C9A080091E2BE330008FBBD4 /* FacultyInfoDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacultyInfoDatasource.m; sourceTree = "<group>"; };
 		C9BB12F81D8ADC1600DCB37E /* CFPlaceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFPlaceModel.h; sourceTree = "<group>"; };
 		C9BB12F91D8ADC1600DCB37E /* CFPlaceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFPlaceModel.m; sourceTree = "<group>"; };
 		C9BB6ADB1DA9A25900D2819F /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
@@ -938,6 +944,8 @@
 				C9A080031E2B103F008FBBD4 /* MinorInfoDatasource.m */,
 				C9A07FF91E2B0479008FBBD4 /* MajorInfoDatasource.h */,
 				C9A07FFA1E2B0479008FBBD4 /* MajorInfoDatasource.m */,
+				C9A080081E2BE330008FBBD4 /* FacultyInfoDatasource.h */,
+				C9A080091E2BE330008FBBD4 /* FacultyInfoDatasource.m */,
 			);
 			path = AutocompleteDatasources;
 			sourceTree = "<group>";
@@ -981,6 +989,8 @@
 				C985F0261DB6E7DF002F1869 /* InfoProfessor.m */,
 				C985F0281DB6E831002F1869 /* InfoGPA.h */,
 				C985F0291DB6E831002F1869 /* InfoGPA.m */,
+				C9A080051E2BE106008FBBD4 /* InfoFaculty.h */,
+				C9A080061E2BE106008FBBD4 /* InfoFaculty.m */,
 				C9A07FFF1E2B08B9008FBBD4 /* InfoMinor.h */,
 				C9A080001E2B08B9008FBBD4 /* InfoMinor.m */,
 				C9A07FFC1E2B0724008FBBD4 /* InfoMajor.h */,
@@ -1329,6 +1339,7 @@
 				44E8B9071CAEB4D20081DA30 /* KCUserInfoTableViewCell.m in Sources */,
 				C904AF6C1D58D3AC00251A01 /* KCGPAMainViewController.m in Sources */,
 				C9F143031DA48100007E2BB8 /* KCGPAMarksViewController.m in Sources */,
+				C9A0800A1E2BE330008FBBD4 /* FacultyInfoDatasource.m in Sources */,
 				C9BB12FA1D8ADC1600DCB37E /* CFPlaceModel.m in Sources */,
 				C9F540C51D7756080025FE6F /* KCArticleViewController.m in Sources */,
 				B636C2AE1C078786003C1E44 /* CFArticleModel.m in Sources */,
@@ -1336,6 +1347,7 @@
 				B6DC35CC1C55BA1B00ED0ABC /* KCFeedCell.m in Sources */,
 				44E8B8F11CAE7A590081DA30 /* KCUserInformationViewController.m in Sources */,
 				B69EB4651C82140F008BA05F /* UserRegistrationViewController.m in Sources */,
+				C9A080071E2BE106008FBBD4 /* InfoFaculty.m in Sources */,
 				B6D5C2E41C06E92700699793 /* main.m in Sources */,
 				C9169BA91D7F517700CC507C /* CFModelHelper.m in Sources */,
 				C9570B211DCFCF2900397212 /* UniversityInfoDatasource.m in Sources */,

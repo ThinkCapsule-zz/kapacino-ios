@@ -50,6 +50,6 @@
 
     -(BOOL) isComplete
     {
-        return self.name && self.email && [self.userInfo isComplete];
+        return self.name && [self.userInfo isComplete];
     }
 @end

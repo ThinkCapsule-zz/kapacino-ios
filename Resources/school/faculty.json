@@ -1,0 +1,217 @@
+[
+ {
+   "facultyID": "F000001",
+   "schoolID": "CA00011",
+   "faculty": "FACULTY OF ARTS AND HUMANITIES"
+ },
+ {
+   "facultyID": "F000002",
+   "schoolID": "CA00011",
+   "faculty": "RICHARD IVEY SCHOOL OF BUSINESS"
+ },
+ {
+   "facultyID": "F000003",
+   "schoolID": "CA00011",
+   "faculty": "CERTIFICATES AND DIPLOMAS"
+ },
+ {
+   "facultyID": "F000004",
+   "schoolID": "CA00011",
+   "faculty": "FACULTY OF EDUCATION"
+ },
+ {
+   "facultyID": "F000005",
+   "schoolID": "CA00011",
+   "faculty": "FACULTY OF ENGINEERING"
+ },
+ {
+   "facultyID": "F000006",
+   "schoolID": "CA00011",
+   "faculty": "THE SCHOOL OF GRADUATE AND POSTDOCTORAL STUDIES"
+ },
+ {
+   "facultyID": "F000007",
+   "schoolID": "CA00011",
+   "faculty": "FACULTY OF HEALTH SCIENCES"
+ },
+ {
+   "facultyID": "F000008",
+   "schoolID": "CA00011",
+   "faculty": "FACULTY OF INFORMATION AND MEDIA STUDIES"
+ },
+ {
+   "facultyID": "F000009",
+   "schoolID": "CA00011",
+   "faculty": "INTER-FACULTY DEPARTMENTS/MODULES/PROGRAMS"
+ },
+ {
+   "facultyID": "F000010",
+   "schoolID": "CA00011",
+   "faculty": "FACULTY OF LAW"
+ },
+ {
+   "facultyID": "F000011",
+   "schoolID": "CA00011",
+   "faculty": "SCHULICH SCHOOL OF MEDICINE & DENTISTRY"
+ },
+ {
+   "facultyID": "F000012",
+   "schoolID": "CA00011",
+   "faculty": "DON WRIGHT FACULTY OF MUSIC"
+ },
+ {
+   "facultyID": "F000013",
+   "schoolID": "CA00011",
+   "faculty": "FACULTY OF SCIENCE, including BMSc"
+ },
+ {
+   "facultyID": "F000014",
+   "schoolID": "CA00011",
+   "faculty": "FACULTY OF SOCIAL SCIENCE"
+ },
+ {
+   "facultyID": "F000015",
+   "schoolID": "CA00011",
+   "faculty": "KINESIOLOGY"
+ },
+ {
+   "facultyID": "F000016",
+   "schoolID": "CA00011",
+   "faculty": "NURSING"
+ },
+ {
+   "facultyID": "F000017",
+   "schoolID": "CA00011",
+   "faculty": "MEDICAL SCIENCES"
+ },
+ {
+   "facultyID": "F000018",
+   "schoolID": "CA00011",
+   "faculty": "MANAGEMENT AND ORGANIZATIONAL STUDIES"
+ },
+ {
+   "facultyID": "F000019",
+   "schoolID": "CA00011",
+   "faculty": "SCHOOL OF SOCIAL WORK"
+ },
+ {
+   "facultyID": "F000020",
+   "schoolID": "CA00010",
+   "faculty": "Faculty of Arts and Science"
+ },
+ {
+   "facultyID": "F000021",
+   "schoolID": "CA00010",
+   "faculty": "Faculty of Education"
+ },
+ {
+   "facultyID": "F000022",
+   "schoolID": "CA00010",
+   "faculty": "Faculty of Engineering and Applied Science"
+ },
+ {
+   "facultyID": "F000023",
+   "schoolID": "CA00010",
+   "faculty": "Faculty of Health Sciences"
+ },
+ {
+   "facultyID": "F000024",
+   "schoolID": "CA00010",
+   "faculty": "Faculty of Law"
+ },
+ {
+   "facultyID": "F000025",
+   "schoolID": "CA00010",
+   "faculty": "Smith School of Business"
+ },
+ {
+   "facultyID": "F000026",
+   "schoolID": "CA00010",
+   "faculty": "School of Graduate Studies"
+ },
+ {
+   "facultyID": "F000027",
+   "schoolID": "CA00010",
+   "faculty": "School of Policy Studies"
+ },
+ {
+   "facultyID": "F000028",
+   "schoolID": "CA00030",
+   "faculty": "Business and Economics"
+ },
+ {
+   "facultyID": "F000029",
+   "schoolID": "CA00030",
+   "faculty": "Education"
+ },
+ {
+   "facultyID": "F000030",
+   "schoolID": "CA00030",
+   "faculty": "Arts"
+ },
+ {
+   "facultyID": "F000031",
+   "schoolID": "CA00030",
+   "faculty": "Human and Social Sciences"
+ },
+ {
+   "facultyID": "F000032",
+   "schoolID": "CA00030",
+   "faculty": "International Policy and Governance"
+ },
+ {
+   "facultyID": "F000033",
+   "schoolID": "CA00030",
+   "faculty": "Liberal Arts"
+ },
+ {
+   "facultyID": "F000034",
+   "schoolID": "CA00030",
+   "faculty": "Music"
+ },
+ {
+   "facultyID": "F000035",
+   "schoolID": "CA00030",
+   "faculty": "Science"
+ },
+ {
+   "facultyID": "F000036",
+   "schoolID": "CA00030",
+   "faculty": "Social Work"
+ },
+ {
+   "facultyID": "F000037",
+   "schoolID": "CA00030",
+   "faculty": "Waterloo Lutheran Seminary"
+ },
+ {
+   "facultyID": "F000038",
+   "schoolID": "CA00004",
+   "faculty": "Applied Health Sciences"
+ },
+ {
+   "facultyID": "F000039",
+   "schoolID": "CA00004",
+   "faculty": "Arts"
+ },
+ {
+   "facultyID": "F000040",
+   "schoolID": "CA00004",
+   "faculty": "Engineering"
+ },
+ {
+   "facultyID": "F000041",
+   "schoolID": "CA00004",
+   "faculty": "Environment"
+ },
+ {
+   "facultyID": "F000042",
+   "schoolID": "CA00004",
+   "faculty": "Mathematics"
+ },
+ {
+   "facultyID": "F000043",
+   "schoolID": "CA00004",
+   "faculty": "Science"
+ }
+]

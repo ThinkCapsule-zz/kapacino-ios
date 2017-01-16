@@ -22,7 +22,7 @@
             self.major = values[@"major"];
             self.minor = values[@"minor"];
             self.yearOfStudy = values[@"yearOfStudy"];
-            self.locationCurrent = values[@"locationCurrent"];
+//            self.locationCurrent = values[@"locationCurrent"];
         }
         return self;
     }
@@ -32,7 +32,6 @@
         if (self.isComplete)
         {
             return @{
-                     @"locationCurrent": self.locationCurrent,
                      @"country": self.country,
                      @"hometown": self.hometown,
                      @"gender": self.gender,
@@ -40,6 +39,7 @@
                      @"major": self.major,
                      @"minor": self.minor,
                      @"yearOfStudy": self.yearOfStudy,
+                     @"universityEmail": self.universityEmail
                      };
         }
         else
@@ -50,6 +50,6 @@
 
     -(BOOL) isComplete
     {
-        return self.locationCurrent && self.country && self.hometown && self.yearOfStudy && self.gender && self.schoolId && self.major && self.minor && self.yearOfStudy;
+        return self.country && self.hometown && self.yearOfStudy && self.gender && self.schoolId && self.major && self.minor && self.universityEmail;
     }
 @end

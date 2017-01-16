@@ -8,9 +8,9 @@
 
 #import "KCSchoolInformationTableViewController.h"
 #import "KCSearchViewController.h"
-//#import "UniversityInfoDatasource.h"
-//#import "CityInfoDatasource.h"
+#import "FacultyInfoDatasource.h"
 #import "InfoSchool.h"
+#import "InfoFaculty.h"
 
 @interface KCSchoolInformationTableViewController ()
 @property (strong, nonatomic) NSDictionary *countriesToCitiesMap;
@@ -55,6 +55,26 @@ NSString* const SEGUE_FACULTY = @"showFacultySegue";
         [self prepareForSegueWithSearchViewController:segue.destinationViewController withCategoryName:cell.title.text withItems:items];
     }
     else if ([segue.identifier isEqualToString:SEGUE_FACULTY]) {
+        NSArray *items = [[FacultyInfoDatasource sharedInstance] data];
+        NSArray *objectsForSchool;
+        if (self.user.userInfo.schoolId)
+        {
+            NSPredicate* predicate = [NSPredicate predicateWithFormat:@"%K = %@", @"schoolId", self.user.userInfo.schoolId];
+            objectsForSchool = [items filteredArrayUsingPredicate:predicate];
+        }
+        else
+        {
+            objectsForSchool = items;
+        }
+        
+        KCSearchViewController* controller = (KCSearchViewController *)segue.destinationViewController;
+        controller.delegate = self;
+        controller.categoryName = cell.title.text;
+        controller.items = items;
+        controller.idKeyPath = @"uid";
+        controller.nameKeyPath = @"name";
+        
+//        [self prepareForSegueWithSearchViewController:segue.destinationViewController withCategoryName:cell.title.text withItems:facultyNames];
 //        NSArray* items = self.countriesToCitiesMap[self.user.userInfo.country];
 //        [self prepareForSegueWithSearchViewController:segue.destinationViewController withCategoryName:cell.title.text withItems:items];
     }
@@ -73,7 +93,10 @@ NSString* const SEGUE_FACULTY = @"showFacultySegue";
     } else if ([cell.title.text isEqualToString:@"HOMETOWN"]) {
         cell.subTitle.text = self.user.userInfo.hometown;
     } else if ([cell.title.text isEqualToString:@"FACULTY"]) {
-        cell.subTitle.text = self.user.userInfo.faculty;
+        //Get faculty
+        InfoFaculty* faculty = [[FacultyInfoDatasource sharedInstance] getById:self.user.userInfo.faculty];
+        
+        cell.subTitle.text = faculty.name;
     } else if ([cell.title.text isEqualToString:@"UNIVERSITY EMAIL"]) {
         cell.subTitle.text = self.user.userInfo.universityEmail;
     }

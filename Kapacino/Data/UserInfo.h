@@ -15,7 +15,7 @@
     @property(strong, nonatomic) NSString *gender;
     @property(strong, nonatomic) NSString *hometown;
     @property(strong, nonatomic) NSString *country;
-    @property(strong, nonatomic) NSString *locationCurrent;
+//    @property(strong, nonatomic) NSString *locationCurrent;
 
     @property (strong, nonatomic) NSString* schoolId;
     @property (strong, nonatomic) NSString* major;

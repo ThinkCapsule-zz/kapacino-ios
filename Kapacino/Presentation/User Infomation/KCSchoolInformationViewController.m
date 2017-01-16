@@ -36,15 +36,17 @@
     }
 }
 
+//TODO Remove if not used
 - (BOOL)checkuser {
     self.user = self.schoolInformationTableViewController.user;
     
     //TODO Get school info from id
-    NSString *countryOfSchool = @"Canada";
-    NSString *school = @"UWaterloo";
-    NSString *major = nil;
-    NSString *currently = self.user.userInfo.locationCurrent;
-    if (!countryOfSchool || !school || !major || !currently) {
+//    NSString *countryOfSchool = self.user.userInfo.schoolId;
+    NSString *school = self.user.userInfo.schoolId;
+    NSString *major = self.user.userInfo.major;
+    NSString *minor = self.user.userInfo.minor;
+//    NSString *currently = self.user.userInfo.locationCurrent;
+    if (!school || !major || !minor) {
         return NO;
     }
     return YES;

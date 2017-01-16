@@ -148,4 +148,9 @@ NSString* const SEGUE_SCHOOL = @"showSchoolsSegue";
     [textField endEditing:YES];
     return YES;
 }
+
+- (IBAction)onUniversityEmailChanged:(UITextField*)sender {
+    self.user.email = sender.text;
+}
+
 @end
