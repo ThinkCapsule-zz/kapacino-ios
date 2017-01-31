@@ -10,9 +10,14 @@
 #import "KCViewController.h"
 #import "User.h"
 
+@protocol KCSchoolInformationViewControllerDelegate <NSObject>
+-(void) onInfoFinished;
+@end
+
 @interface KCSchoolInformationViewController : KCViewController
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (strong, nonatomic) User *user;
+@property (weak, nonatomic) id<KCSchoolInformationViewControllerDelegate> delegate;
 
 @end

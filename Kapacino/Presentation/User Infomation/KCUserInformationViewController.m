@@ -8,7 +8,6 @@
 
 #import "KCUserInformationViewController.h"
 #import "KCUserInfoTableViewController.h"
-#import "KCSchoolInformationViewController.h"
 #import "KCAPIClient.h"
 
 @interface KCUserInformationViewController ()
@@ -46,11 +45,6 @@ NSString* const SEGUE_MORE = @"moreInfoSegue";
     }
 }
 
-//- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-//
-//    return YES;
-//}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController isKindOfClass:[KCUserInfoTableViewController class]]) {
         self.userInfoTebleViewController = segue.destinationViewController;
@@ -58,6 +52,15 @@ NSString* const SEGUE_MORE = @"moreInfoSegue";
     } else if ([segue.identifier isEqualToString:SEGUE_MORE]) {
         KCSchoolInformationViewController *schoolInformationViewController = segue.destinationViewController;
         schoolInformationViewController.user = self.user;
+        schoolInformationViewController.delegate = self;
+    }
+}
+
+-(void) onInfoFinished
+{
+    if ([self.delegate respondsToSelector:@selector(onInfoFinished)])
+    {
+        [self.delegate onInfoFinished];
     }
 }
 

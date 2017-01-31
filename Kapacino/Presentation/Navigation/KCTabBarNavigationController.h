@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KCUserInformationViewController.h"
 
-@interface KCTabBarNavigationController : UITabBarController
+@interface KCTabBarNavigationController : UITabBarController <KCUserInformationViewControllerDelegate>
 
 @end

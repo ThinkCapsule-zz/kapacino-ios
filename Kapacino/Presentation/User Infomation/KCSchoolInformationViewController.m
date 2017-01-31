@@ -12,9 +12,7 @@
 #import "KCLoadingPage.h"
 
 @interface KCSchoolInformationViewController ()
-
-@property (strong, nonatomic) KCSchoolInformationTableViewController *schoolInformationTableViewController;
-
+    @property (strong, nonatomic) KCSchoolInformationTableViewController *schoolInformationTableViewController;    
 @end
 
 @implementation KCSchoolInformationViewController
@@ -29,27 +27,12 @@
     {
         [[KCAPIClient sharedClient] saveUser:self.user withCompletionHandler:^(NSError *error)
          {
-             KCLoadingPage *loadingPageViewConrtoller = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateViewControllerWithIdentifier:@"KCLoadingPage"];
-             
-             [self presentViewController:loadingPageViewConrtoller animated:YES completion:nil];
+             if ([self.delegate respondsToSelector:@selector(onInfoFinished)])
+             {
+                 [self.delegate onInfoFinished];
+             }
          }];
     }
-}
-
-//TODO Remove if not used
-- (BOOL)checkuser {
-    self.user = self.schoolInformationTableViewController.user;
-    
-    //TODO Get school info from id
-//    NSString *countryOfSchool = self.user.userInfo.schoolId;
-    NSString *school = self.user.userInfo.schoolId;
-    NSString *major = self.user.userInfo.major;
-    NSString *minor = self.user.userInfo.minor;
-//    NSString *currently = self.user.userInfo.locationCurrent;
-    if (!school || !major || !minor) {
-        return NO;
-    }
-    return YES;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

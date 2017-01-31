@@ -22,6 +22,8 @@
             self.major = values[@"major"];
             self.minor = values[@"minor"];
             self.yearOfStudy = values[@"yearOfStudy"];
+            self.universityEmail = values[@"universityEmail"];
+            self.faculty = values[@"faculty"];
 //            self.locationCurrent = values[@"locationCurrent"];
         }
         return self;
@@ -31,16 +33,22 @@
     {
         if (self.isComplete)
         {
-            return @{
+            NSMutableDictionary* info = [@{
                      @"country": self.country,
                      @"hometown": self.hometown,
-                     @"gender": self.gender,
                      @"schoolId": self.schoolId,
                      @"major": self.major,
                      @"minor": self.minor,
                      @"yearOfStudy": self.yearOfStudy,
                      @"universityEmail": self.universityEmail
-                     };
+                     } mutableCopy];
+            
+            if (self.gender)
+            {
+                info[@"gender"] = self.gender;
+            }
+                      
+            return info;
         }
         else
         {
@@ -50,6 +58,6 @@
 
     -(BOOL) isComplete
     {
-        return self.country && self.hometown && self.yearOfStudy && self.gender && self.schoolId && self.major && self.minor && self.universityEmail;
+        return self.country && self.hometown && self.yearOfStudy && self.schoolId && self.major && self.minor && self.universityEmail;
     }
 @end

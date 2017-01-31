@@ -37,9 +37,40 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
                                          .tokenString];
         [[FIRAuth auth] signInWithCredential:credential
                                   completion:^(FIRUser *user, NSError *error) {
-            //TODO Save profile info from Facebook in Firebase
-            //Dismiss
-            [self dismissViewControllerAnimated:YES completion:nil];
+//            //Save profile info from Facebook in Firebase
+//            NSArray* providerData = user.providerData;
+//            for (id<FIRUserInfo> profile in providerData)
+//            {
+//                NSString* providerId = profile.providerID;
+//                NSString* uid = profile.uid;  // Provider-specific UID
+//                NSString* name = profile.displayName;
+//                NSString* email = profile.email;
+//                NSString* photoUrl = profile.photoURL;
+//            }
+                                      
+              if ([FBSDKAccessToken currentAccessToken])
+              {
+                  NSDictionary *permissions = @{@"fields" : @"id,name,email,birthday,gender"};
+                  [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:permissions]
+                   startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+                       if (!error) {
+                           NSString* gender = result[@"gender"];
+                           
+                           if (gender)
+                           {
+                               FIRDatabaseReference* usersRef = [[KCAPIClient sharedClient] usersReferenceForCurrentUser];
+                                NSDictionary *genderUpdate = @{@"gender": gender};
+                                [usersRef updateChildValues:genderUpdate];
+                           }
+
+                           //Dismiss
+                           [self dismissViewControllerAnimated:YES completion:nil];
+                       }
+                       else{
+                           NSLog(@"%@", [error localizedDescription]);
+                       }
+                   }];
+              }
           }];
     }
     else
@@ -50,6 +81,7 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
 
 -(void) loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
 {
+//    FBSDKLoginManager *facebookLogin = [[FBSDKLoginManager alloc] init];
     
 }
 

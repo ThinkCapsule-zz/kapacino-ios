@@ -16,7 +16,6 @@
 #import "PreflightManager.h"
 #import "KCNavigationController.h"
 #import "KCAPIClient.h"
-#import "KCUserInformationViewController.h"
 #import "User.h"
 #import "KCAPIClient.h"
 
@@ -60,6 +59,8 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
                     {
                         KCUserInformationViewController *userInfoVC = [[UIStoryboard storyboardWithName:@"User Information" bundle:nil] instantiateInitialViewController];
                         userInfoVC.user = [[User alloc] initWithUser:user andInfo:userInfo];
+                        userInfoVC.delegate = self;
+                        
                         UINavigationController* navController = [[UINavigationController alloc]initWithRootViewController:userInfoVC];
                         
                         [self presentViewController:navController animated:YES completion:nil];
@@ -142,6 +143,11 @@ typedef NS_ENUM(NSInteger, KCTabBarItems) {
     }
     return _settingsVC;
     
+}
+
+-(void) onInfoFinished
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
