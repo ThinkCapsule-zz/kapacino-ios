@@ -7,6 +7,8 @@
 //
 
 #import "KCSettingsViewController.h"
+#import <Firebase/Firebase.h>
+#import <FBSDKLoginKit/FBSDKLoginManager.h>
 
 @interface KCSettingsViewController()
     @property (strong, nonatomic) NSArray* settingOptions;
@@ -19,7 +21,7 @@
         
         self.title = @"Settings";
         
-        self.settingOptions = @[@"Privacy Statement", @"Setting2"];
+        self.settingOptions = @[@"Privacy Statement", @"Logout"];
     }
 
     - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;              // Default is 1 if not
@@ -42,16 +44,36 @@
         return cell;
     }
 
+    -(void) logout
+    {
+        NSError* error;
+        FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
+        [loginManager logOut];
+        [[FIRAuth auth] signOut:&error];
+        if (error != nil)
+        {
+            
+        }
+        else
+        {
+            
+        }
+    }
+
     - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     {
-        NSString* setting = self.settingOptions[indexPath.row];
-//        switch (setting) {
-//            case "Privacy Statement":
+//        NSString* setting = self.settingOptions[indexPath.row];
+        
+        switch (indexPath.row) {
+            case 0:
                 [self performSegueWithIdentifier:@"showPrivacyStatement" sender:nil];
-//                break;
-//                
-//            default:
-//                break;
-//        }
+                break;
+            case 1:
+                [self logout];
+                break;
+                
+            default:
+                break;
+        }
     }
 @end
