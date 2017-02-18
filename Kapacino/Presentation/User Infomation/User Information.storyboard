@@ -80,6 +80,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Information verification" id="d3O-oD-RGr"/>
                     <connections>
+                        <outlet property="buttonNext" destination="Gl4-A4-OmO" id="eok-9k-A4R"/>
                         <segue destination="PpT-aX-XaC" kind="push" identifier="moreInfoSegue" id="pSe-SN-OYG"/>
                     </connections>
                 </viewController>
@@ -142,6 +143,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="School of interest" id="Zlk-RI-UcK"/>
                     <connections>
+                        <outlet property="buttonNext" destination="RcL-2h-0Nf" id="iLD-lF-2cg"/>
                         <outlet property="pageControl" destination="pSV-hL-JfD" id="BpN-sS-Pdd"/>
                     </connections>
                 </viewController>
@@ -831,7 +833,7 @@
         <simulatedScreenMetrics key="destination" type="retina5_5.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="nNx-vY-eiB"/>
         <segue reference="nlD-Ac-PPW"/>
+        <segue reference="JHH-hz-aH7"/>
     </inferredMetricsTieBreakers>
 </document>

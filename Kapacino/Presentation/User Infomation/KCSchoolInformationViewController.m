@@ -12,7 +12,10 @@
 #import "KCLoadingPage.h"
 
 @interface KCSchoolInformationViewController ()
-    @property (strong, nonatomic) KCSchoolInformationTableViewController *schoolInformationTableViewController;    
+@property (weak, nonatomic) IBOutlet UIButton *buttonNext;
+    @property (strong, nonatomic) KCSchoolInformationTableViewController *schoolInformationTableViewController;
+
+    @property (strong, nonatomic) UIColor* originalNextButtonColour;
 @end
 
 @implementation KCSchoolInformationViewController
@@ -20,6 +23,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.pageControl.currentPage = 2;
+    
+    self.originalNextButtonColour = self.buttonNext.backgroundColor;
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self updateNextButton];
+}
+
+-(void) updateNextButton
+{
+    BOOL isComplete = [self.user isComplete];
+    self.buttonNext.enabled = isComplete;
+    [self.buttonNext setBackgroundColor:isComplete ? self.originalNextButtonColour : [UIColor lightGrayColor]];
 }
 
 - (IBAction)onNextButtonTapped:(id)sender {
@@ -39,7 +58,13 @@
     if ([segue.destinationViewController isKindOfClass:[KCSchoolInformationTableViewController class]]) {
         self.schoolInformationTableViewController = segue.destinationViewController;
         self.schoolInformationTableViewController.user = self.user;
+        self.schoolInformationTableViewController.delegate = self;
     }
+}
+
+-(void) onUniversityEmailChanged
+{
+    [self updateNextButton];
 }
 
 @end

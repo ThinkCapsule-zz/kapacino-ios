@@ -22,6 +22,12 @@
     self.headerLabel.text = self.categoryName;
 }
 
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = NO;
+}
+
 - (void)viewWillLayoutSubviews {
     [super viewDidLayoutSubviews];
     
@@ -65,9 +71,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     KCPickerTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
     if ([self.delegate respondsToSelector:@selector(pickerTableViewController:didChangeUserInfo:)]) {
         [self.delegate pickerTableViewController:self didChangeUserInfo:cell.title.text];
     }
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

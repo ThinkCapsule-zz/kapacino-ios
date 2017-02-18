@@ -8,6 +8,10 @@
 
 #import "KCUserInfoTableViewController.h"
 
-@interface KCSchoolInformationTableViewController : KCUserInfoTableViewController
+@protocol KCSchoolInformationTableViewControllerDelegate <NSObject>
+    -(void) onUniversityEmailChanged;
+@end
 
+@interface KCSchoolInformationTableViewController : KCUserInfoTableViewController
+    @property (strong, nonatomic) id<KCSchoolInformationTableViewControllerDelegate> delegate;
 @end

@@ -127,8 +127,6 @@ NSString* const SEGUE_FACULTY = @"showFacultySegue";
         self.user.userInfo.hometown = info;
     } else if ([controller.categoryName isEqualToString:@"FACULTY"]) {
         self.user.userInfo.faculty = info;
-    } else if ([controller.categoryName isEqualToString:@"UNIVERSITY EMAIL"]) {
-        self.user.userInfo.universityEmail = info;
     }
     
     [self.tableView reloadData];
@@ -141,5 +139,11 @@ NSString* const SEGUE_FACULTY = @"showFacultySegue";
 
 - (IBAction)onUniversityEmailChanged:(UITextField*) textField {
     self.user.userInfo.universityEmail = textField.text;
+    
+    if ([self.delegate respondsToSelector:@selector(onUniversityEmailChanged)])
+    {
+        [self.delegate onUniversityEmailChanged];
+    }
 }
+
 @end

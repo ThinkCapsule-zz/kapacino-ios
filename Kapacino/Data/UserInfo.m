@@ -58,6 +58,7 @@
 
     -(BOOL) isComplete
     {
-        return self.country && self.hometown && self.yearOfStudy && self.schoolId && self.major && self.minor && self.universityEmail;
+        BOOL isUniversityEmailValid = self.universityEmail && (self.universityEmail.length > 0);
+        return self.country && self.hometown && self.yearOfStudy && self.schoolId && self.major && self.minor && isUniversityEmailValid;
     }
 @end

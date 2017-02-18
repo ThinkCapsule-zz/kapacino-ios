@@ -29,6 +29,12 @@
     [self showDefaultItems];
 }
 
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = NO;
+}
+
 -(void) setSearchResult:(NSArray *)searchResult
 {
     NSArray* sortedResults;
@@ -76,6 +82,11 @@
 - (void)searchControllerSetValue:(NSString *)value {
     if ([self.delegate respondsToSelector:@selector(searchViewController:didChangeUserInfo:)] ) {
         [self.delegate searchViewController:self didChangeUserInfo:value];
+    }
+    
+    if (value)
+    {
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 

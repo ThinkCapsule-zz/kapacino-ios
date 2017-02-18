@@ -13,7 +13,8 @@
 @interface KCUserInformationViewController ()
 
 @property (strong, nonatomic) KCUserInfoTableViewController *userInfoTebleViewController;
-
+@property (weak, nonatomic) IBOutlet UIButton *buttonNext;
+@property (strong, nonatomic) UIColor* originalNextButtonColour;
 @end
 
 @implementation KCUserInformationViewController
@@ -22,7 +23,24 @@ NSString* const SEGUE_MORE = @"moreInfoSegue";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.hidden = NO;
+    
+    self.originalNextButtonColour = self.buttonNext.backgroundColor;
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBar.hidden = YES;
+    
+    [self updateNextButton];
+}
+
+-(void) updateNextButton
+{
+    BOOL isComplete = [self checkUserInfo];
+    self.buttonNext.enabled = isComplete;
+    [self.buttonNext setBackgroundColor:isComplete ? self.originalNextButtonColour : [UIColor lightGrayColor]];
 }
 
 - (BOOL)checkUserInfo {
