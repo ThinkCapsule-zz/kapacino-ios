@@ -18,7 +18,7 @@
         <scene sceneID="okV-zV-7Iw">
             <objects>
                 <navigationController id="xIP-t7-D5n" customClass="KCNavigationController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pa1-75-6iO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pa1-75-6iO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -109,6 +109,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YPO-Ts-cds"/>
+                    <connections>
+                        <outlet property="buttonFacebookLogin" destination="8KG-JQ-Ffm" id="Ndq-sO-ORl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4B1-y6-d61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

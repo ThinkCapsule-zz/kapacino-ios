@@ -13,10 +13,18 @@
 #import "KCNavigationController.h"
 
 @interface KCLoginViewController ()
+@property (weak, nonatomic) IBOutlet FBSDKLoginButton *buttonFacebookLogin;
 
 @end
 
 @implementation KCLoginViewController
+
+-(void) viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.buttonFacebookLogin.readPermissions =  @[@"public_profile", @"email"];
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -51,6 +59,14 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
                                FIRDatabaseReference* usersRef = [[KCAPIClient sharedClient] usersReferenceForCurrentUser];
                                 NSDictionary *genderUpdate = @{@"gender": gender};
                                 [usersRef updateChildValues:genderUpdate];
+                           }
+                           
+                           NSString* email = result[@"email"];
+                           
+                           //Update email
+                           if (email)
+                           {
+                               [[[FIRAuth auth] currentUser] updateEmail:email completion:nil];
                            }
 
                            //Dismiss
