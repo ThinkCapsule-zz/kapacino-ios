@@ -20,13 +20,14 @@
     [self.pickerView selectRow:self.defaultIndex inComponent:0 animated:NO];
 }
 
-//-(void) viewDidAppear:(BOOL)animated
-//{
+-(void) viewDidAppear:(BOOL)animated
+{
+    self.navigationController.navigationBar.hidden = NO;
 //    [super viewDidAppear:animated];
 ////    [self updateRowColor:self.pickerView didSelectRow:self.defaultIndex inComponent:0];
 //    
 //    
-//}
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

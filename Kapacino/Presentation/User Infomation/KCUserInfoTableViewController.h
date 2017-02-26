@@ -11,8 +11,9 @@
 #import "KCUserInfoTableViewCell.h"
 #import "KCSearchViewController.h"
 #import "User.h"
+#import "KCGPAPickerViewController.h"
 
-@interface KCUserInfoTableViewController : UITableViewController <KCSearchViewControllerDelegate, UITextFieldDelegate, KCPickerTableViewControllerDelegate>
+@interface KCUserInfoTableViewController : UITableViewController <KCSearchViewControllerDelegate, UITextFieldDelegate, KCPickerTableViewControllerDelegate, KCGPAPickerDelegate>
 
 @property (strong, nonatomic) User *user;
 

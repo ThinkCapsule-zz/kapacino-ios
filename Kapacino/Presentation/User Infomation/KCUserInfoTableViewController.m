@@ -22,6 +22,7 @@
 @implementation KCUserInfoTableViewController
 
 NSString* const SEGUE_SCHOOL = @"showSchoolsSegue";
+NSString* const SEGUE_PICKER_NEW = @"showPickerNew";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,9 +41,10 @@ NSString* const SEGUE_SCHOOL = @"showSchoolsSegue";
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     KCUserInfoTableViewCell* cell = (KCUserInfoTableViewCell *) sender;
     
-    if ([sender isKindOfClass:[KCUserInfoTableViewCell class]] && [segue.destinationViewController isKindOfClass:[KCPickerTableViewController class]]) {
+    if ([sender isKindOfClass:[KCUserInfoTableViewCell class]] && [segue.destinationViewController isKindOfClass:[KCGPAPickerViewController class]]) {
         [self prepareForSegueWithPickerController:segue.destinationViewController cell:sender];
-    } else if ([segue.identifier isEqualToString:SEGUE_SCHOOL]) {
+    }
+    else if ([segue.identifier isEqualToString:SEGUE_SCHOOL]) {
         NSArray* items = [[UniversityInfoDatasource sharedInstance] data];
         [self prepareForSegueWithSearchViewController:segue.destinationViewController withCategoryName:cell.title.text withItems:items];
     }
@@ -66,9 +68,9 @@ NSString* const SEGUE_SCHOOL = @"showSchoolsSegue";
     }
 }
 
-- (void)prepareForSegueWithPickerController:(KCPickerTableViewController *)controller cell:(KCUserInfoTableViewCell *)cell {
+- (void)prepareForSegueWithPickerController:(KCGPAPickerViewController *)controller cell:(KCUserInfoTableViewCell *)cell {
     controller.delegate = self;
-    controller.categoryName = cell.title.text;
+    controller.sender = cell.title.text;
     
     if ([cell.title.text isEqualToString:@"MAJOR"]) {
         NSArray *items = [[MajorInfoDatasource sharedInstance] data];
@@ -86,7 +88,7 @@ NSString* const SEGUE_SCHOOL = @"showSchoolsSegue";
         //Get names
         NSArray* names = [objectsForSchool valueForKey:@"name"];
         
-        controller.items = names;
+        controller.candidates = names;
     } else if ([cell.title.text isEqualToString:@"MINOR"]) {
         NSArray *items = [[MinorInfoDatasource sharedInstance] data];
         NSArray *objectsForSchool;
@@ -103,10 +105,10 @@ NSString* const SEGUE_SCHOOL = @"showSchoolsSegue";
         //Get names
         NSArray* names = [objectsForSchool valueForKey:@"name"];
         
-        controller.items = names;
+        controller.candidates = names;
     } else if ([cell.title.text isEqualToString:@"YEAR OF STUDY"]) {
         NSArray *items = @[ @"Freshman (First Year)", @"Sophomore (Second Year)", @"Senior (Third Year)", @"Senior (Fourth Year)" ];
-        controller.items = items;
+        controller.candidates = items;
     }
 }
 
@@ -128,6 +130,25 @@ NSString* const SEGUE_SCHOOL = @"showSchoolsSegue";
         self.user.userInfo.minor = info;
     }
     else if ([controller.categoryName isEqualToString:@"YEAR OF STUDY"])
+    {
+        self.user.userInfo.yearOfStudy = info;
+    }
+    
+    [self.tableView reloadData];
+}
+
+-(void)didPickerSelectString:(NSString *)info forSender:(id) sender
+{
+    NSString* categoryName = (NSString*) sender;
+    if ([categoryName isEqualToString:@"MAJOR"])
+    {
+        self.user.userInfo.major = info;
+    }
+    else if ([categoryName isEqualToString:@"MINOR"])
+    {
+        self.user.userInfo.minor = info;
+    }
+    else if ([categoryName isEqualToString:@"YEAR OF STUDY"])
     {
         self.user.userInfo.yearOfStudy = info;
     }
