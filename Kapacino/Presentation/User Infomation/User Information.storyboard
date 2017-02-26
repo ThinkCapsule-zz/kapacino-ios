@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="C1R-Fb-Pwx">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12100" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="C1R-Fb-Pwx">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12072"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="143" y="145"/>
         </scene>
-        <!--School of interest-->
+        <!--School Information View Controller-->
         <scene sceneID="EFC-Bq-XKL">
             <objects>
                 <viewController id="PpT-aX-XaC" customClass="KCSchoolInformationViewController" sceneMemberID="viewController">
@@ -141,7 +141,7 @@
                             <constraint firstItem="RcL-2h-0Nf" firstAttribute="leading" secondItem="fhK-9o-mFQ" secondAttribute="leading" id="ulQ-he-ovF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="School of interest" id="Zlk-RI-UcK"/>
+                    <navigationItem key="navigationItem" id="Zlk-RI-UcK"/>
                     <connections>
                         <outlet property="buttonNext" destination="RcL-2h-0Nf" id="iLD-lF-2cg"/>
                         <outlet property="pageControl" destination="pSV-hL-JfD" id="BpN-sS-Pdd"/>
@@ -834,6 +834,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="nlD-Ac-PPW"/>
-        <segue reference="JHH-hz-aH7"/>
+        <segue reference="nNx-vY-eiB"/>
     </inferredMetricsTieBreakers>
 </document>

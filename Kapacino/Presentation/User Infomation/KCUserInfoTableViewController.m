@@ -138,7 +138,17 @@ NSString* const SEGUE_SCHOOL = @"showSchoolsSegue";
 - (void)searchViewController:(KCSearchViewController *)controller didChangeUserInfo:(NSString *) info {
     if ([controller.categoryName isEqualToString:@"UNIVERSITY"])
     {
+        //If the school changed reset major and minor
+        if (self.user.userInfo.schoolId != info)
+        {
+            self.user.userInfo.major = nil;
+            self.user.userInfo.minor = nil;
+            self.user.userInfo.faculty = nil;
+        }
+        
         self.user.userInfo.schoolId = info;
+        
+        [self.tableView reloadData];
     }
     
     [self.tableView reloadData];
