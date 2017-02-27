@@ -10,10 +10,6 @@
 #import "KCViewController.h"
 #import "User.h"
 
-@protocol KCSchoolInformationTableViewControllerDelegate
-
-@end
-
 @protocol KCSchoolInformationViewControllerDelegate <NSObject>
 -(void) onInfoFinished;
 @end
