@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "KCViewController.h"
+#import "KCSchoolInformationTableViewController.h"
 #import "User.h"
 
 @protocol KCSchoolInformationViewControllerDelegate <NSObject>
