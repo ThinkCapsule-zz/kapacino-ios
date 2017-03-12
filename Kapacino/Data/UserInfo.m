@@ -15,15 +15,18 @@
         if (self) {
             NSDictionary* values = snapshot.value;
             self.key = snapshot.key;
-            self.country = values[@"country"];
-            self.hometown = values[@"hometown"];
-            self.gender = values[@"gender"];
-            self.schoolId = values[@"schoolId"];
-            self.major = values[@"major"];
-            self.minor = values[@"minor"];
-            self.yearOfStudy = values[@"yearOfStudy"];
-            self.universityEmail = values[@"universityEmail"];
-            self.faculty = values[@"faculty"];
+            if (values != nil)
+            {
+                self.country = values[@"country"];
+                self.hometown = values[@"hometown"];
+                self.gender = values[@"gender"];
+                self.schoolId = values[@"schoolId"];
+                self.major = values[@"major"];
+                self.minor = values[@"minor"];
+                self.yearOfStudy = values[@"yearOfStudy"];
+                self.universityEmail = values[@"universityEmail"];
+                self.faculty = values[@"faculty"];
+            }
 //            self.locationCurrent = values[@"locationCurrent"];
         }
         return self;
