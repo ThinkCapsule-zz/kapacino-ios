@@ -17,7 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.pickerView selectRow:self.defaultIndex inComponent:0 animated:NO];
+    if (self.defaultIndex >= 0 && self.defaultIndex < self.candidates.count)
+    {
+        [self.pickerView selectRow:self.defaultIndex inComponent:0 animated:NO];
+    }
 }
 
 -(void) viewDidAppear:(BOOL)animated
@@ -40,7 +43,10 @@
     
     if ([self.delegate respondsToSelector:@selector(didPickerSelectString:forSender:)])
     {
-        [self.delegate didPickerSelectString:self.candidates[row] forSender:self.sender];
+        if (row >= 0 && row < self.candidates.count)
+        {
+            [self.delegate didPickerSelectString:self.candidates[row] forSender:self.sender];
+        }
     }
 }
 

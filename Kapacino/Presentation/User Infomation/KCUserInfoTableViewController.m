@@ -89,6 +89,7 @@ NSString* const SEGUE_PICKER_NEW = @"showPickerNew";
         NSArray* names = [objectsForSchool valueForKey:@"name"];
         
         controller.candidates = names;
+        controller.defaultIndex = (int) [names indexOfObject:self.user.userInfo.major];
     } else if ([cell.title.text isEqualToString:@"MINOR"]) {
         NSArray *items = [[MinorInfoDatasource sharedInstance] data];
         NSArray *objectsForSchool;
@@ -106,9 +107,11 @@ NSString* const SEGUE_PICKER_NEW = @"showPickerNew";
         NSArray* names = [objectsForSchool valueForKey:@"name"];
         
         controller.candidates = names;
+        controller.defaultIndex = (int) [names indexOfObject:self.user.userInfo.minor];
     } else if ([cell.title.text isEqualToString:@"YEAR OF STUDY"]) {
         NSArray *items = @[ @"Freshman (First Year)", @"Sophomore (Second Year)", @"Senior (Third Year)", @"Senior (Fourth Year)" ];
         controller.candidates = items;
+        controller.defaultIndex = (int) [items indexOfObject:self.user.userInfo.yearOfStudy];
     }
 }
 
