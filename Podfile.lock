@@ -27,105 +27,102 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
-  - BuddyBuildSDK (1.0.12)
+  - BuddyBuildSDK (1.0.16)
   - DACircularProgress (2.3.1)
   - DOSingleton (0.1.0)
   - EGOCache (2.1.3)
-  - Fabric (1.6.11)
-  - FBSDKCoreKit (4.17.0):
+  - Fabric (1.6.12)
+  - FBSDKCoreKit (4.24.0):
     - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.17.0):
+  - FBSDKLoginKit (4.24.0):
     - FBSDKCoreKit
-  - Firebase (3.9.0):
-    - Firebase/Core (= 3.9.0)
-  - Firebase/Auth (3.9.0):
+  - Firebase (4.0.4):
+    - Firebase/Core (= 4.0.4)
+  - Firebase/Auth (4.0.4):
     - Firebase/Core
-    - FirebaseAuth (= 3.0.6)
-  - Firebase/Core (3.9.0):
-    - FirebaseAnalytics (= 3.5.1)
-    - FirebaseCore (= 3.4.4)
-  - Firebase/Database (3.9.0):
+    - FirebaseAuth (= 4.0.0)
+  - Firebase/Core (4.0.4):
+    - FirebaseAnalytics (= 4.0.2)
+    - FirebaseCore (= 4.0.4)
+  - Firebase/Database (4.0.4):
     - Firebase/Core
-    - FirebaseDatabase (= 3.1.0)
-  - Firebase/Storage (3.9.0):
+    - FirebaseDatabase (= 4.0.0)
+  - Firebase/Storage (4.0.4):
     - Firebase/Core
-    - FirebaseStorage (= 1.0.4)
-  - FirebaseAnalytics (3.5.1):
-    - FirebaseCore (~> 3.4)
-    - FirebaseInstanceID (~> 1.0)
-    - GoogleInterchangeUtilities (~> 1.2)
-    - GoogleSymbolUtilities (~> 1.1)
+    - FirebaseStorage (= 2.0.0)
+  - FirebaseAnalytics (4.0.2):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseAuth (3.0.6):
-    - FirebaseAnalytics (~> 3.4)
+  - FirebaseAuth (4.0.0):
+    - FirebaseAnalytics (~> 4.0)
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (3.4.4):
-    - GoogleInterchangeUtilities (~> 1.2)
+  - FirebaseCore (4.0.4):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseDatabase (3.1.0):
-    - FirebaseAnalytics (~> 3.4)
-  - FirebaseInstanceID (1.0.8)
-  - FirebaseStorage (1.0.4):
-    - FirebaseAnalytics (~> 3.4)
+    - nanopb (~> 0.3)
+  - FirebaseDatabase (4.0.0):
+    - FirebaseAnalytics (~> 4.0)
+  - FirebaseInstanceID (2.0.0):
+    - FirebaseCore (~> 4.0)
+  - FirebaseStorage (2.0.0):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseUI (1.0.0):
-    - FirebaseUI/All (= 1.0.0)
-  - FirebaseUI/All (1.0.0):
+  - FirebaseUI (4.1.1):
+    - FirebaseUI/All (= 4.1.1)
+  - FirebaseUI/All (4.1.1):
     - FirebaseUI/Auth
     - FirebaseUI/Database
     - FirebaseUI/Facebook
     - FirebaseUI/Google
+    - FirebaseUI/Phone
     - FirebaseUI/Storage
     - FirebaseUI/Twitter
-  - FirebaseUI/Auth (1.0.0):
+  - FirebaseUI/Auth (4.1.1):
     - Firebase/Auth
-  - FirebaseUI/Database (1.0.0):
+  - FirebaseUI/Database (4.1.1):
     - Firebase/Database
-  - FirebaseUI/Facebook (1.0.0):
+  - FirebaseUI/Facebook (4.1.1):
     - FBSDKLoginKit (~> 4.0)
     - FirebaseUI/Auth
-  - FirebaseUI/Google (1.0.0):
+  - FirebaseUI/Google (4.1.1):
     - FirebaseUI/Auth
     - GoogleSignIn (~> 4.0)
-  - FirebaseUI/Storage (1.0.0):
+  - FirebaseUI/Phone (4.1.1):
+    - FirebaseUI/Auth
+  - FirebaseUI/Storage (4.1.1):
     - Firebase/Storage
-    - SDWebImage
-  - FirebaseUI/Twitter (1.0.0):
+    - SDWebImage (~> 4.0)
+  - FirebaseUI/Twitter (4.1.1):
     - FirebaseUI/Auth
     - TwitterKit (~> 2.4)
   - FSImageViewer (3.4):
     - AFNetworking (~> 2.5)
     - EGOCache (~> 2.1)
     - UAProgressView (~> 0.1)
-  - GoogleAppUtilities (1.1.2):
-    - GoogleSymbolUtilities (~> 1.1)
-  - GoogleInterchangeUtilities (1.2.2):
-    - GoogleSymbolUtilities (~> 1.1)
-  - GoogleSignIn (4.0.1):
-    - GoogleAppUtilities (~> 1.1)
+  - GoogleSignIn (4.0.2):
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
     - GTMOAuth2 (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleSymbolUtilities (1.1.2)
-  - GoogleToolboxForMac/DebugUtils (2.1.0):
-    - GoogleToolboxForMac/Defines (= 2.1.0)
-  - GoogleToolboxForMac/Defines (2.1.0)
-  - GoogleToolboxForMac/NSData+zlib (2.1.0):
-    - GoogleToolboxForMac/Defines (= 2.1.0)
-  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.0):
-    - GoogleToolboxForMac/DebugUtils (= 2.1.0)
-    - GoogleToolboxForMac/Defines (= 2.1.0)
-    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.0)
-  - GoogleToolboxForMac/NSString+URLArguments (2.1.0)
+  - GoogleToolboxForMac/DebugUtils (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.1):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.1)
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMOAuth2 (1.1.4):
     - GTMSessionFetcher (~> 1.1)
-  - GTMSessionFetcher (1.1.7):
-    - GTMSessionFetcher/Full (= 1.1.7)
-  - GTMSessionFetcher/Core (1.1.7)
-  - GTMSessionFetcher/Full (1.1.7):
-    - GTMSessionFetcher/Core (= 1.1.7)
-  - HexColors (4.0.0)
+  - GTMSessionFetcher (1.1.11):
+    - GTMSessionFetcher/Full (= 1.1.11)
+  - GTMSessionFetcher/Core (1.1.11)
+  - GTMSessionFetcher/Full (1.1.11):
+    - GTMSessionFetcher/Core (= 1.1.11)
   - INSPullToRefresh (1.1.5)
   - KeepLayout (1.7.0):
     - KeepLayout/Swift (= 1.7.0)
@@ -137,46 +134,49 @@ PODS:
   - Mantle/extobjc (2.1.0)
   - MLPAutoCompleteTextField (1.6)
   - MMMarkdown (0.5.5)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
-  - TTGSnackbar (1.3.1)
-  - TwitterCore (2.6.0):
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - TTGSnackbar (1.5.2)
+  - TwitterCore (2.8.0):
     - Fabric
-  - TwitterKit (2.6.0):
-    - TwitterCore (= 2.6.0)
+  - TwitterKit (2.8.1):
+    - TwitterCore (>= 2.8)
   - UAProgressView (0.1.3)
 
 DEPENDENCIES:
-  - AFNetworking
-  - BackButtonHandler
+  - AFNetworking (~> 2.6)
+  - BackButtonHandler (~> 1.0)
   - BuddyBuildSDK
-  - DACircularProgress
-  - DOSingleton
-  - FBSDKCoreKit
-  - FBSDKLoginKit
+  - DACircularProgress (~> 2.3)
+  - DOSingleton (~> 0.1)
+  - FBSDKCoreKit (~> 4.24)
+  - FBSDKLoginKit (~> 4.24)
   - Firebase
   - FirebaseUI
-  - FSImageViewer
-  - HexColors
-  - INSPullToRefresh
-  - KeepLayout (from `https://github.com/Tricertops/KeepLayout.git`, branch `swift-3`)
-  - Mantle
+  - FSImageViewer (~> 3.4)
+  - INSPullToRefresh (~> 1.1)
+  - KeepLayout (from `https://github.com/Tricertops/KeepLayout.git`)
+  - Mantle (~> 2.1)
   - MLPAutoCompleteTextField (from `https://github.com/ivanmkc/MLPAutoCompleteTextField.git`)
-  - MMMarkdown
-  - SDWebImage
-  - TTGSnackbar
+  - MMMarkdown (~> 0.5)
+  - SDWebImage (~> 4.0)
+  - TTGSnackbar (~> 1.5)
 
 EXTERNAL SOURCES:
   KeepLayout:
-    :branch: swift-3
     :git: https://github.com/Tricertops/KeepLayout.git
   MLPAutoCompleteTextField:
     :git: https://github.com/ivanmkc/MLPAutoCompleteTextField.git
 
 CHECKOUT OPTIONS:
   KeepLayout:
-    :commit: 96ceb239acbda397fa3461d0d947f086547616af
+    :commit: 3138ca7b6d61c51105718ae4f6b685f6c7b5cc70
     :git: https://github.com/Tricertops/KeepLayout.git
   MLPAutoCompleteTextField:
     :commit: 914d80a2336af6fa21c921db3f4040a9dd76abaa
@@ -186,41 +186,38 @@ SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   BackButtonHandler: 8ace60d1e870b4242b5d462203d6ecbe9e40e652
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  BuddyBuildSDK: f4682598772ae66c9ef5554d2d78d0a19fb413a0
+  BuddyBuildSDK: 2c5469eee2981a3365386e46393e97068d75e4f4
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DOSingleton: 113abf2d078b681df57cee973a9b6ed1478343d9
   EGOCache: f0295dbe041156acabd39021354ad1045ee49e72
-  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
-  FBSDKCoreKit: 30a21d2d7b92984b3d80497113433c00824c35e9
-  FBSDKLoginKit: 42b7129ac0373ca99eaf4cbebf4d07bd42371f59
-  Firebase: ff77ffb77b317c3720fef57a60e9335cebf962e6
-  FirebaseAnalytics: 6e58fc9b397664369ac7617fb0ba93fab6ba7b5b
-  FirebaseAuth: 96e9674ff31d6e1f826d53e26aa003a57cab0295
-  FirebaseCore: d0ed25f27b6f9158eccc439f1be6f92e81207e28
-  FirebaseDatabase: 3ebb2edb6007c3f0f87b248f3fa212bde56a1468
-  FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
-  FirebaseStorage: c50aa353bf484072704e73b4aff1bd47adb735c4
-  FirebaseUI: 82bd64fc3fc5a9451c37a720aee813990e727cf1
+  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
+  FBSDKCoreKit: f8c9eb0dd34a9cd277c7b60da4b32226d142502d
+  FBSDKLoginKit: 1214c6d5a1c4995b694d8db8a9ba6910c6028acf
+  Firebase: 1492bf04e1b73a7353b4fb2cf5a20bac9692f341
+  FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
+  FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
+  FirebaseCore: cfc042628ef9f20debe09c0eb683135fcd404cb4
+  FirebaseDatabase: d829b3a8c3e2ac7a16773c5df226966b0805dfc2
+  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
+  FirebaseStorage: 8110a1ed2034c8fbfd83890d2acc9cdbbd99afec
+  FirebaseUI: 5ebebe2c096c71f20abd1d43d0388958373bdaa0
   FSImageViewer: 0dea92069cce74a800b75cb8777c923f2be59124
-  GoogleAppUtilities: a8a552aa74f6597f805e45b5a3962766c3134973
-  GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
-  GoogleSignIn: a8694c0a8e6d1b0ec77c58014de5bfd4ba2fa766
-  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
-  GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
+  GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
-  GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
-  HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
+  GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
   INSPullToRefresh: 112ae2c295d2b3a76daa9dff86e7ef40ed002c47
   KeepLayout: 1881e51638fab0a0748890748de8deb9f01891a1
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   MLPAutoCompleteTextField: 02700789c32dce9b3a7e9991810adf5edb757d80
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  TTGSnackbar: 3c00315fa9261bd583de6c0ceaaf3693175ff655
-  TwitterCore: 150e8d2538b867bdde9ef9b61c6b755c2523c25e
-  TwitterKit: 3d72f0b25f2cc281f996e976928d2defe28702cb
+  nanopb: 22bc080fa3955e2116b6ff3ee6c2cb3c15ab97cb
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  TTGSnackbar: ca69045c72188fef27f575581052d72aff15abe2
+  TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
+  TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
   UAProgressView: ce49aee47c14df6dc372f6fd57852f570ca97e6b
 
-PODFILE CHECKSUM: a8db1bf900ea5df2a0114118f917781280a05a47
+PODFILE CHECKSUM: bd2d58fbecafa1e94037b6c16317f84bfddb136e
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.2.0

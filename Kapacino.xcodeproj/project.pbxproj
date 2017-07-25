@@ -1543,6 +1543,7 @@
 				CODE_SIGN_ENTITLEMENTS = Kapacino/Kapacino.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z6VJV3KRT7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/MMMarkdown/build/Debug-iphoneos",
@@ -1572,6 +1573,7 @@
 				CODE_SIGN_ENTITLEMENTS = Kapacino/Kapacino.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z6VJV3KRT7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/MMMarkdown/build/Debug-iphoneos",
